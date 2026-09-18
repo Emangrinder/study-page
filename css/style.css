@@ -83,6 +83,11 @@ html, body {
 }
 .back-btn:active { transform: scale(0.94); }
 
+.topbar-title {
+  flex: 1;
+  min-width: 0;
+}
+
 .topbar h1 {
   font-size: 19px;
   margin: 0;
@@ -242,13 +247,6 @@ html, body {
   border-radius: 999px;
   transition: width 0.25s ease;
 }
-.progress-count {
-  font-size: 13px;
-  color: var(--text-muted);
-  font-variant-numeric: tabular-nums;
-  flex-shrink: 0;
-}
-
 .card-stage-tag {
   text-align: center;
   font-size: 12px;
@@ -373,13 +371,6 @@ html, body {
 .study-actions button:active { transform: scale(0.97); }
 .study-actions .understood-btn { color: var(--understood); }
 .study-actions .again-btn { color: var(--again); }
-
-.study-tip {
-  text-align: center;
-  font-size: 12.5px;
-  color: var(--text-muted);
-  margin-top: 14px;
-}
 
 /* ---------- Session complete ---------- */
 .session-complete {

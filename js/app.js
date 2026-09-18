@@ -88,15 +88,16 @@
     return node;
   }
 
-  function topBar(title, subtitle, backPath) {
+  function topBar(title, subtitle, backPath, rightEl) {
     var bar = el("div", { className: "topbar" });
     var back = el("button", { className: "back-btn", text: "‹", attrs: { "aria-label": "Back" } });
     back.addEventListener("click", function () { navigate(backPath); });
     bar.appendChild(back);
-    var titleWrap = el("div");
+    var titleWrap = el("div", { className: "topbar-title" });
     titleWrap.appendChild(el("h1", { text: title }));
     if (subtitle) titleWrap.appendChild(el("div", { className: "subtitle", text: subtitle }));
     bar.appendChild(titleWrap);
+    if (rightEl) bar.appendChild(rightEl);
     return bar;
   }
 
@@ -236,7 +237,8 @@
 
     clearApp();
     var page = el("div", { className: "page study-wrap" });
-    page.appendChild(topBar("Study", deck.name, "/deck/" + encodeURIComponent(topicId) + "/" + encodeURIComponent(deckId)));
+    var shuffleBtn = el("button", { className: "back-btn", text: "🔀", attrs: { "aria-label": "Randomize order" } });
+    page.appendChild(topBar("Study", deck.name, "/deck/" + encodeURIComponent(topicId) + "/" + encodeURIComponent(deckId), shuffleBtn));
 
     var body = el("div", { className: "study-wrap" });
     body.appendChild(el("p", { text: "Loading…", className: "empty-state" }));
@@ -246,17 +248,18 @@
     loadDeckCards(deck).then(function (cards) {
       body.innerHTML = "";
       if (!cards.length) {
+        shuffleBtn.style.display = "none";
         var empty = el("div", { className: "empty-state" });
         empty.appendChild(el("div", { className: "icon", text: "📭" }));
         empty.appendChild(el("p", { text: "This deck has no cards yet." }));
         body.appendChild(empty);
         return;
       }
-      startStudySession(body, topic, deck, cards);
+      startStudySession(body, topic, deck, cards, shuffleBtn);
     });
   }
 
-  function startStudySession(container, topic, deck, cards) {
+  function startStudySession(container, topic, deck, cards, shuffleBtn) {
     var totalCount = cards.length;
     var queue = cards.map(function (_, i) { return i; });
     var flipStage = 0;
@@ -269,9 +272,7 @@
     var progressBar = el("div", { className: "progress-bar" });
     var progressFill = el("div", { className: "fill" });
     progressBar.appendChild(progressFill);
-    var progressCount = el("div", { className: "progress-count" });
     progressRow.appendChild(progressBar);
-    progressRow.appendChild(progressCount);
     container.appendChild(progressRow);
 
     var stageTag = el("div", { className: "card-stage-tag" });
@@ -292,11 +293,6 @@
     actions.appendChild(understoodBtn);
     container.appendChild(actions);
 
-    container.appendChild(el("div", {
-      className: "study-tip",
-      text: "Tap card to flip · swipe left = Again · swipe right = Understood"
-    }));
-
     var cardEl = null;
     var busy = false;
 
@@ -305,8 +301,18 @@
       var studied = totalCount - remaining;
       var pct = totalCount ? Math.round((studied / totalCount) * 100) : 0;
       progressFill.style.width = pct + "%";
-      progressCount.textContent = remaining + " left · " + totalCount + " total";
     }
+
+    function shuffleQueue() {
+      if (busy || queue.length < 2) return;
+      for (var i = queue.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var tmp = queue[i]; queue[i] = queue[j]; queue[j] = tmp;
+      }
+      renderCurrentCard();
+    }
+
+    if (shuffleBtn) shuffleBtn.addEventListener("click", shuffleQueue);
 
     function stageLabel(idx, total) {
       var labels = ["Term", "Spelled Out", "Definition", "Example"];
