@@ -59,7 +59,8 @@ html, body {
 
 /* ---------- Top bar ---------- */
 .topbar {
-  display: flex;
+  display: grid;
+  grid-template-columns: 40px 1fr 40px;
   align-items: center;
   gap: 10px;
   min-height: 44px;
@@ -84,8 +85,8 @@ html, body {
 .back-btn:active { transform: scale(0.94); }
 
 .topbar-title {
-  flex: 1;
   min-width: 0;
+  text-align: center;
 }
 
 .topbar h1 {
@@ -247,17 +248,6 @@ html, body {
   border-radius: 999px;
   transition: width 0.25s ease;
 }
-.card-stage-tag {
-  text-align: center;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 10px;
-  min-height: 16px;
-}
-
 .card-stage {
   display: flex;
   gap: 6px;
@@ -361,12 +351,12 @@ html, body {
   background: var(--surface);
   color: var(--text);
   font-weight: 700;
-  font-size: 14px;
+  font-size: 22px;
+  line-height: 1;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
 }
 .study-actions button:active { transform: scale(0.97); }
 .study-actions .understood-btn { color: var(--understood); }

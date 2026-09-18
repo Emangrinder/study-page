@@ -275,9 +275,6 @@
     progressRow.appendChild(progressBar);
     container.appendChild(progressRow);
 
-    var stageTag = el("div", { className: "card-stage-tag" });
-    container.appendChild(stageTag);
-
     var stack = el("div", { className: "card-stack" });
     container.appendChild(stack);
 
@@ -285,10 +282,10 @@
     container.appendChild(dotsWrap);
 
     var actions = el("div", { className: "study-actions" });
-    var againBtn = el("button", { className: "again-btn" });
-    againBtn.innerHTML = "↻&nbsp; Again";
-    var understoodBtn = el("button", { className: "understood-btn" });
-    understoodBtn.innerHTML = "✓&nbsp; Understood";
+    var againBtn = el("button", { className: "again-btn", attrs: { "aria-label": "Again" } });
+    againBtn.innerHTML = "↻";
+    var understoodBtn = el("button", { className: "understood-btn", attrs: { "aria-label": "Understood" } });
+    understoodBtn.innerHTML = "✓";
     actions.appendChild(againBtn);
     actions.appendChild(understoodBtn);
     container.appendChild(actions);
@@ -314,11 +311,6 @@
 
     if (shuffleBtn) shuffleBtn.addEventListener("click", shuffleQueue);
 
-    function stageLabel(idx, total) {
-      var labels = ["Term", "Spelled Out", "Definition", "Example"];
-      return labels[idx] || ("Stage " + (idx + 1));
-    }
-
     function renderCurrentCard() {
       stack.innerHTML = "";
       if (queue.length === 0) {
@@ -343,7 +335,6 @@
 
       stack.appendChild(cardEl);
 
-      stageTag.textContent = stageLabel(0, stages.length) + (stages.length > 1 ? "  •  tap to reveal" : "");
       renderDots(stages.length, 0);
       updateProgress();
 
@@ -444,8 +435,6 @@
         content.style.opacity = 1;
         busy = false;
       }, 110);
-      stageTag.textContent = stageLabel(flipStage, stages.length) +
-        (flipStage === stages.length - 1 ? "  •  tap to restart" : "  •  tap to reveal");
       renderDots(stages.length, flipStage);
     }
 
