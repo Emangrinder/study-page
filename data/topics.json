@@ -1,0 +1,36 @@
+[
+  {
+    "id": "security-plus",
+    "name": "Security+",
+    "subtitle": "CompTIA SY0-701",
+    "decks": [
+      {
+        "id": "acronyms",
+        "name": "Acronyms",
+        "subtitle": "Term → spelled out → definition",
+        "dataFile": "data/security-plus-acronyms.json"
+      },
+      {
+        "id": "sections",
+        "name": "Sections",
+        "subtitle": "Domain-by-domain objectives",
+        "comingSoon": true,
+        "note": "Coming soon — section-by-section objective breakdowns (1.1–5.6) from the cram guide."
+      }
+    ]
+  },
+  {
+    "id": "ccna",
+    "name": "CCNA",
+    "subtitle": "Cisco Certified Network Associate",
+    "comingSoon": true,
+    "decks": []
+  },
+  {
+    "id": "aws-saa",
+    "name": "AWS SAA",
+    "subtitle": "AWS Solutions Architect – Associate",
+    "comingSoon": true,
+    "decks": []
+  }
+]
