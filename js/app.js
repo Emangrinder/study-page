@@ -284,20 +284,21 @@
     container.appendChild(dotsWrap);
 
     var actions = el("div", { className: "study-actions" });
-    var removeBtn = el("button", { className: "remove-btn" });
-    removeBtn.innerHTML = "✕&nbsp; Remove";
-    var keepBtn = el("button", { className: "keep-btn" });
-    keepBtn.innerHTML = "✓&nbsp; Keep";
-    actions.appendChild(removeBtn);
-    actions.appendChild(keepBtn);
+    var againBtn = el("button", { className: "again-btn" });
+    againBtn.innerHTML = "↻&nbsp; Again";
+    var understoodBtn = el("button", { className: "understood-btn" });
+    understoodBtn.innerHTML = "✓&nbsp; Understood";
+    actions.appendChild(againBtn);
+    actions.appendChild(understoodBtn);
     container.appendChild(actions);
 
     container.appendChild(el("div", {
       className: "study-tip",
-      text: "Tap card to flip · swipe left to keep · swipe right to remove from session"
+      text: "Tap card to flip · swipe left = Again · swipe right = Understood"
     }));
 
     var cardEl = null;
+    var busy = false;
 
     function updateProgress() {
       var remaining = queue.length;
@@ -322,16 +323,17 @@
       var card = cards[cardIndex];
       var stages = cardStages(card);
       flipStage = 0;
+      busy = false;
 
       cardEl = el("div", { className: "study-card" });
       cardEl.setAttribute("data-flip-stage", "0");
       var content = el("div", { className: "content", text: stages[0] });
       cardEl.appendChild(content);
 
-      var keepFlag = el("div", { className: "swipe-flag keep", text: "Keep" });
-      var removeFlag = el("div", { className: "swipe-flag remove", text: "Remove" });
-      cardEl.appendChild(keepFlag);
-      cardEl.appendChild(removeFlag);
+      var againFlag = el("div", { className: "swipe-flag again", text: "Again" });
+      var understoodFlag = el("div", { className: "swipe-flag understood", text: "Understood" });
+      cardEl.appendChild(againFlag);
+      cardEl.appendChild(understoodFlag);
 
       stack.appendChild(cardEl);
 
@@ -339,7 +341,7 @@
       renderDots(stages.length, 0);
       updateProgress();
 
-      attachGestures(cardEl, stages, content, keepFlag, removeFlag);
+      attachGestures(cardEl, stages, content, againFlag, understoodFlag);
     }
 
     function renderDots(total, activeIdx) {
@@ -351,9 +353,9 @@
       }
     }
 
-    function attachGestures(cardEl, stages, content, keepFlag, removeFlag) {
+    function attachGestures(cardEl, stages, content, againFlag, understoodFlag) {
       function onPointerDown(e) {
-        if (pointerId !== null) return;
+        if (busy || pointerId !== null) return;
         pointerId = e.pointerId;
         dragging = true;
         startX = e.clientX;
@@ -376,11 +378,11 @@
           cardEl.style.transform = "translateX(" + dx + "px) rotate(" + rot + "deg)";
           var t = Math.min(Math.abs(dx) / 110, 1);
           if (dx < 0) {
-            keepFlag.style.opacity = t;
-            removeFlag.style.opacity = 0;
+            againFlag.style.opacity = t;
+            understoodFlag.style.opacity = 0;
           } else if (dx > 0) {
-            removeFlag.style.opacity = t;
-            keepFlag.style.opacity = 0;
+            understoodFlag.style.opacity = t;
+            againFlag.style.opacity = 0;
           }
         }
       }
@@ -393,23 +395,25 @@
 
         var THRESHOLD = 90;
         if (lockedAxis === "x" && Math.abs(dx) > THRESHOLD) {
+          busy = true;
+          cardEl.style.pointerEvents = "none";
           var goingRight = dx > 0;
           var flyX = goingRight ? window.innerWidth : -window.innerWidth;
           cardEl.style.transform = "translateX(" + flyX + "px) rotate(" + (dx / 18) + "deg)";
           cardEl.style.opacity = "0";
           setTimeout(function () {
             if (goingRight) {
-              queue.shift(); // remove from session
+              queue.shift(); // understood: remove from session
             } else {
-              queue.push(queue.shift()); // keep: move to back
+              queue.push(queue.shift()); // again: move to back
             }
             renderCurrentCard();
           }, 180);
         } else {
           // snap back (not a decisive swipe)
           cardEl.style.transform = "translateX(0) rotate(0)";
-          keepFlag.style.opacity = 0;
-          removeFlag.style.opacity = 0;
+          againFlag.style.opacity = 0;
+          understoodFlag.style.opacity = 0;
           if (lockedAxis === null || (Math.abs(dx) < 6 && Math.abs(dy) < 6)) {
             handleTap(stages, content);
           }
@@ -424,13 +428,15 @@
     }
 
     function handleTap(stages, content) {
-      if (stages.length <= 1) return;
+      if (busy || stages.length <= 1) return;
+      busy = true;
       flipStage = (flipStage + 1) % stages.length;
       content.style.opacity = 0;
       setTimeout(function () {
         content.textContent = stages[flipStage];
         cardEl.setAttribute("data-flip-stage", String(flipStage));
         content.style.opacity = 1;
+        busy = false;
       }, 110);
       stageTag.textContent = stageLabel(flipStage, stages.length) +
         (flipStage === stages.length - 1 ? "  •  tap to restart" : "  •  tap to reveal");
@@ -438,10 +444,12 @@
     }
 
     function swipeAway(direction) {
-      // direction: 'keep' (left) or 'remove' (right)
-      if (!cardEl) return;
+      // direction: 'again' (left, requeue) or 'understood' (right, remove from session)
+      if (busy || !cardEl) return;
+      busy = true;
+      cardEl.style.pointerEvents = "none";
       cardEl.style.transition = "transform 0.25s ease";
-      var goingRight = direction === "remove";
+      var goingRight = direction === "understood";
       var flyX = goingRight ? window.innerWidth : -window.innerWidth;
       cardEl.style.transform = "translateX(" + flyX + "px) rotate(" + (goingRight ? 10 : -10) + "deg)";
       cardEl.style.opacity = "0";
@@ -455,8 +463,8 @@
       }, 180);
     }
 
-    removeBtn.addEventListener("click", function () { swipeAway("remove"); });
-    keepBtn.addEventListener("click", function () { swipeAway("keep"); });
+    understoodBtn.addEventListener("click", function () { swipeAway("understood"); });
+    againBtn.addEventListener("click", function () { swipeAway("again"); });
 
     function renderComplete() {
       container.innerHTML = "";
