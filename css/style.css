@@ -309,6 +309,11 @@ html, body {
   color: var(--text);
 }
 
+.stage-block.stage-secondary {
+  color: var(--text-muted);
+  opacity: 0.75;
+}
+
 .stage-block.stage-term {
   font-size: 32px;
   font-weight: 800;

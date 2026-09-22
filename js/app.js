@@ -350,7 +350,7 @@
     function renderStageBlocks(stagesWrap, stages, uptoIdx, animateLast) {
       stagesWrap.innerHTML = "";
       for (var i = 0; i <= uptoIdx; i++) {
-        var cls = "stage-block stage-" + i + (i === 0 ? " stage-term" : "");
+        var cls = "stage-block stage-" + i + (i === 0 ? " stage-term" : "") + (i === 1 ? " stage-secondary" : "");
         if (animateLast && i === uptoIdx && uptoIdx > 0) cls += " stage-enter";
         stagesWrap.appendChild(el("div", { className: cls, text: stages[i] }));
       }
