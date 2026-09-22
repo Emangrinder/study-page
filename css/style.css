@@ -290,17 +290,38 @@ html, body {
   user-select: none;
   -webkit-user-select: none;
   will-change: transform;
+  overflow-y: auto;
 }
 
-.study-card .content {
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 1.4;
-  transition: opacity 0.12s ease;
+.stage-stack {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
-.study-card[data-flip-stage="0"] .content {
-  font-size: 34px;
+
+.stage-block {
+  width: 100%;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.45;
+  color: var(--text);
+}
+
+.stage-block.stage-term {
+  font-size: 32px;
+  font-weight: 800;
   letter-spacing: 0.01em;
+}
+
+.stage-block.stage-enter {
+  animation: stageIn 0.25s ease;
+}
+
+@keyframes stageIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 .study-card .hint {
   position: absolute;

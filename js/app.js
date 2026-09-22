@@ -325,8 +325,9 @@
 
       cardEl = el("div", { className: "study-card" });
       cardEl.setAttribute("data-flip-stage", "0");
-      var content = el("div", { className: "content", text: stages[0] });
-      cardEl.appendChild(content);
+      var stagesWrap = el("div", { className: "stage-stack" });
+      cardEl.appendChild(stagesWrap);
+      renderStageBlocks(stagesWrap, stages, 0);
 
       var againFlag = el("div", { className: "swipe-flag again", text: "Again" });
       var understoodFlag = el("div", { className: "swipe-flag understood", text: "Understood" });
@@ -338,7 +339,16 @@
       renderDots(stages.length, 0);
       updateProgress();
 
-      attachGestures(cardEl, stages, content, againFlag, understoodFlag);
+      attachGestures(cardEl, stages, stagesWrap, againFlag, understoodFlag);
+    }
+
+    function renderStageBlocks(stagesWrap, stages, uptoIdx) {
+      stagesWrap.innerHTML = "";
+      for (var i = 0; i <= uptoIdx; i++) {
+        var cls = "stage-block stage-" + i + (i === 0 ? " stage-term" : "");
+        if (i === uptoIdx && uptoIdx > 0) cls += " stage-enter";
+        stagesWrap.appendChild(el("div", { className: cls, text: stages[i] }));
+      }
     }
 
     function renderDots(total, activeIdx) {
@@ -350,7 +360,7 @@
       }
     }
 
-    function attachGestures(cardEl, stages, content, againFlag, understoodFlag) {
+    function attachGestures(cardEl, stages, stagesWrap, againFlag, understoodFlag) {
       function onPointerDown(e) {
         if (busy || pointerId !== null) return;
         pointerId = e.pointerId;
@@ -412,7 +422,7 @@
           againFlag.style.opacity = 0;
           understoodFlag.style.opacity = 0;
           if (lockedAxis === null || (Math.abs(dx) < 6 && Math.abs(dy) < 6)) {
-            handleTap(stages, content);
+            handleTap(stages, stagesWrap);
           }
         }
         lockedAxis = null;
@@ -424,18 +434,14 @@
       cardEl.addEventListener("pointercancel", onPointerUp);
     }
 
-    function handleTap(stages, content) {
+    function handleTap(stages, stagesWrap) {
       if (busy || stages.length <= 1) return;
       busy = true;
       flipStage = (flipStage + 1) % stages.length;
-      content.style.opacity = 0;
-      setTimeout(function () {
-        content.textContent = stages[flipStage];
-        cardEl.setAttribute("data-flip-stage", String(flipStage));
-        content.style.opacity = 1;
-        busy = false;
-      }, 110);
+      renderStageBlocks(stagesWrap, stages, flipStage);
+      cardEl.setAttribute("data-flip-stage", String(flipStage));
       renderDots(stages.length, flipStage);
+      setTimeout(function () { busy = false; }, 180);
     }
 
     function swipeAway(direction) {
