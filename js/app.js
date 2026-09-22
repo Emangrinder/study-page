@@ -297,7 +297,8 @@
     var busy = false;
 
     function updateProgress() {
-      var pct = totalCount ? Math.round((seenIndices.size / totalCount) * 100) : 0;
+      var denom = queue.length;
+      var pct = denom ? Math.round((seenIndices.size / denom) * 100) : 0;
       progressFill.style.width = pct + "%";
     }
 
@@ -307,6 +308,7 @@
         var j = Math.floor(Math.random() * (i + 1));
         var tmp = queue[i]; queue[i] = queue[j]; queue[j] = tmp;
       }
+      seenIndices.clear();
       renderCurrentCard();
     }
 
@@ -325,6 +327,10 @@
       flipStage = initStage;
       busy = false;
       currentStages = stages;
+      if (seenIndices.has(cardIndex)) {
+        // Wrapped back around to a card already shown this lap — start a fresh lap.
+        seenIndices.clear();
+      }
       seenIndices.add(cardIndex);
 
       cardEl = el("div", { className: "study-card card-enter" });
@@ -415,7 +421,7 @@
           cardEl.style.opacity = "0";
           setTimeout(function () {
             if (goingRight) {
-              queue.shift(); // understood: remove from session
+              seenIndices.delete(queue.shift()); // understood: remove from session
             } else {
               queue.push(queue.shift()); // again: move to back
             }
@@ -465,7 +471,7 @@
       cardEl.style.opacity = "0";
       setTimeout(function () {
         if (goingRight) {
-          queue.shift();
+          seenIndices.delete(queue.shift());
         } else {
           queue.push(queue.shift());
         }
