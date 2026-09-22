@@ -262,6 +262,7 @@
   function startStudySession(container, topic, deck, cards, shuffleBtn) {
     var totalCount = cards.length;
     var queue = cards.map(function (_, i) { return i; });
+    var seenIndices = new Set();
     var flipStage = 0;
     var dragging = false;
     var startX = 0, startY = 0, dx = 0, dy = 0;
@@ -296,9 +297,7 @@
     var busy = false;
 
     function updateProgress() {
-      var remaining = queue.length;
-      var studied = totalCount - remaining;
-      var pct = totalCount ? Math.round((studied / totalCount) * 100) : 0;
+      var pct = totalCount ? Math.round((seenIndices.size / totalCount) * 100) : 0;
       progressFill.style.width = pct + "%";
     }
 
@@ -326,6 +325,7 @@
       flipStage = initStage;
       busy = false;
       currentStages = stages;
+      seenIndices.add(cardIndex);
 
       cardEl = el("div", { className: "study-card card-enter" });
       cardEl.setAttribute("data-flip-stage", String(initStage));
