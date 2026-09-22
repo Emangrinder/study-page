@@ -320,14 +320,15 @@
       var cardIndex = queue[0];
       var card = cards[cardIndex];
       var stages = cardStages(card);
-      flipStage = 0;
+      var initStage = Math.min(1, stages.length - 1);
+      flipStage = initStage;
       busy = false;
 
       cardEl = el("div", { className: "study-card" });
-      cardEl.setAttribute("data-flip-stage", "0");
+      cardEl.setAttribute("data-flip-stage", String(initStage));
       var stagesWrap = el("div", { className: "stage-stack" });
       cardEl.appendChild(stagesWrap);
-      renderStageBlocks(stagesWrap, stages, 0);
+      renderStageBlocks(stagesWrap, stages, initStage, false);
 
       var againFlag = el("div", { className: "swipe-flag again", text: "Again" });
       var understoodFlag = el("div", { className: "swipe-flag understood", text: "Understood" });
@@ -336,17 +337,17 @@
 
       stack.appendChild(cardEl);
 
-      renderDots(stages.length, 0);
+      renderDots(stages.length, initStage);
       updateProgress();
 
       attachGestures(cardEl, stages, stagesWrap, againFlag, understoodFlag);
     }
 
-    function renderStageBlocks(stagesWrap, stages, uptoIdx) {
+    function renderStageBlocks(stagesWrap, stages, uptoIdx, animateLast) {
       stagesWrap.innerHTML = "";
       for (var i = 0; i <= uptoIdx; i++) {
         var cls = "stage-block stage-" + i + (i === 0 ? " stage-term" : "");
-        if (i === uptoIdx && uptoIdx > 0) cls += " stage-enter";
+        if (animateLast && i === uptoIdx && uptoIdx > 0) cls += " stage-enter";
         stagesWrap.appendChild(el("div", { className: cls, text: stages[i] }));
       }
     }
@@ -435,10 +436,12 @@
     }
 
     function handleTap(stages, stagesWrap) {
-      if (busy || stages.length <= 1) return;
+      var initStage = Math.min(1, stages.length - 1);
+      if (busy || stages.length <= initStage + 1) return;
       busy = true;
-      flipStage = (flipStage + 1) % stages.length;
-      renderStageBlocks(stagesWrap, stages, flipStage);
+      flipStage = flipStage + 1;
+      if (flipStage >= stages.length) flipStage = initStage;
+      renderStageBlocks(stagesWrap, stages, flipStage, true);
       cardEl.setAttribute("data-flip-stage", String(flipStage));
       renderDots(stages.length, flipStage);
       setTimeout(function () { busy = false; }, 180);
