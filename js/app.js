@@ -327,7 +327,7 @@
       busy = false;
       currentStages = stages;
 
-      cardEl = el("div", { className: "study-card" });
+      cardEl = el("div", { className: "study-card card-enter" });
       cardEl.setAttribute("data-flip-stage", String(initStage));
       var stagesWrap = el("div", { className: "stage-stack" });
       currentStagesWrap = stagesWrap;
@@ -455,13 +455,13 @@
 
     function swipeAway(direction) {
       // direction: 'again' (left, requeue) or 'understood' (right, remove from session)
+      // Used by tap and the action buttons — a plain crossfade in place, no directional
+      // slide (that's reserved for an actual drag-release, handled in onPointerUp).
       if (busy || !cardEl) return;
       busy = true;
       cardEl.style.pointerEvents = "none";
-      cardEl.style.transition = "transform 0.25s ease";
+      cardEl.style.transition = "opacity 0.18s ease";
       var goingRight = direction === "understood";
-      var flyX = goingRight ? window.innerWidth : -window.innerWidth;
-      cardEl.style.transform = "translateX(" + flyX + "px) rotate(" + (goingRight ? 10 : -10) + "deg)";
       cardEl.style.opacity = "0";
       setTimeout(function () {
         if (goingRight) {
