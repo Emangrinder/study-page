@@ -1,0 +1,141 @@
+[
+  {
+    "t": "Router/switch planes",
+    "e": "Data (forwarding) plane: normal user traffic forwarded through the device · Control plane: decisions about how to forward traffic (e.g. routing protocol/STP updates) · Management plane: how the device itself is configured and monitored (CLI, GUI, SNMP, API)",
+    "d": "In a traditional model, all three run independently, decentralised, on every device."
+  },
+  {
+    "t": "Software-Defined Networking (SDN/SDA)",
+    "e": "Centralises control-plane functions in a controller, while data-plane functions stay decentralised since they need specialised hardware (ASICs, TCAM) on each device",
+    "d": "The controller talks to network devices via a Southbound Interface (SBI) and to administrators/automation software via a Northbound Interface (NBI)."
+  },
+  {
+    "t": "SDN application plane",
+    "e": "SDN adds a fourth plane: applications that talk to the controller via its NBI",
+    "d": "When a configuration change is requested, the controller decides how to implement it and pushes changes to devices via SBI."
+  },
+  {
+    "t": "Example Southbound Interfaces (SBIs)",
+    "e": "OpenPK: Cisco-proprietary API using Java, C or Python · OpenFlow: imperative SDN model, sends detailed instructions to devices · OpFlex: declarative SDN model, sends intent and leaves implementation to devices · NETCONF: open standard using XML and RPC, usually over SSH · RESTCONF: open standard using JSON/XML and REST, usually over HTTPS"
+  },
+  {
+    "t": "Example Northbound Interfaces (NBIs)",
+    "e": "REST, using JSON over HTTP (usually) · Open Society Gateway initiative (OSGi), Java-based"
+  },
+  {
+    "t": "Open SDN, OpenFlow and OpenDaylight",
+    "e": "Open SDN is a model from the Open Networking Foundation, centred on the OpenFlow SBI",
+    "d": "OpenDaylight (ODL) is the most popular Open SDN controller — open-source, maintained by The Linux Foundation, supporting other SBIs beyond OpenFlow, with an OSGi Java API and REST API for NBI."
+  },
+  {
+    "t": "Cisco ACI",
+    "e": "Application Centric Infrastructure — an intent-based, data-centre-focused SDA model using a spine-leaf topology (all spine switches connect to all leaf switches, but no spine-spine or leaf-leaf links)",
+    "d": "Controlled by an Application Policy Infrastructure Controller (APIC), which translates administrator-defined Endpoint Group (EPG) policies into device configuration pushed via OpFlex."
+  },
+  {
+    "t": "APIC-EM",
+    "e": "A now-discontinued Cisco controller that enabled SDN for devices without specialised SBI support, using existing tools (Telnet/SSH, SNMP) instead",
+    "d": "Left the control plane untouched, focusing on management-plane functions. Its features have mostly been folded into Cisco DNA Center (DNAC)."
+  },
+  {
+    "t": "Cisco Software-Defined Access (SDA)",
+    "e": "An SDA model for enterprise campuses, made of a physical underlay (devices, cabling, wireless links) and a logical overlay carried over VXLAN tunnels",
+    "d": "A greenfield deployment builds an all-new underlay; a brownfield deployment reuses existing infrastructure, requiring care over device compatibility."
+  },
+  {
+    "t": "SDA underlay routing",
+    "e": "In greenfield deployments, switch-to-switch traffic is fully routed (Layer 3) rather than switched (Layer 2), typically using IS-IS",
+    "d": "This removes the need for Spanning Tree, since a routed underlay avoids Layer 2 loops without blocking any links."
+  },
+  {
+    "t": "SDA Edge Nodes and Control Node",
+    "e": "SDA Edge Nodes are Layer 3 switches replacing traditional access switches, acting as the default gateway for endpoints (making FHRP unnecessary)",
+    "d": "The SDA Control Node is a LISP map server: when a packet arrives, its Edge Node looks up the destination's Endpoint Identifier at the Control Node, which returns the Routing Locator (RLOC) of the correct egress Edge Node."
+  },
+  {
+    "t": "SDA Border Nodes",
+    "e": "Switches that connect the SDA fabric to endpoints beyond its control, usually WAN routers"
+  },
+  {
+    "t": "Cisco DNA Center (DNAC)",
+    "e": "The controller for an SDA network — controls both underlay and overlay in greenfield deployments, but only the overlay when the underlay is pre-existing and manually configured",
+    "d": "Uses a REST API for NBI, and SSH/Telnet (legacy devices) or RESTCONF/NETCONF (SDA-native devices) for SBI."
+  },
+  {
+    "t": "SDA security model",
+    "e": "Replaces traditional ACLs with policies based on Scalable Group Tags (SGTs): administrators define endpoint groups and set which group can communicate with which other group",
+    "d": "Greatly simplifies access security management compared to traditional ACLs in large deployments."
+  },
+  {
+    "t": "REST API attributes",
+    "e": "Client/server architecture · Stateless operation (each call processed independently) · Clear cacheable/uncacheable statement · Uniform interface · Layered · Code-on-demand",
+    "d": "REST APIs support CRUD actions, typically mapped onto HTTP verbs: Create→POST, Read→GET, Update→PATCH/PUT, Delete→DELETE."
+  },
+  {
+    "t": "JSON",
+    "e": "JavaScript Object Notation — the primary data serialisation format for CCNA, easy for both humans and machines to read",
+    "d": "Consists of objects (unordered key-value pairs, which can nest) and arrays (ordered lists of values), corresponding to Python dictionaries and lists respectively. YAML (a JSON superset) and XML are the other common serialisation languages."
+  },
+  {
+    "t": "Configuration drift and management tools",
+    "e": "As networks grow, small untracked changes cause configuration drift — divergence between individual devices and the approved reference configuration",
+    "d": "Configuration management tools solve this via centralised config provisioning (templates + variables, validated before upload) and monitoring/enforcement of divergence."
+  },
+  {
+    "t": "Ansible",
+    "e": "A push-model, agentless tool written in Python — it doesn't rely on software running on target devices, but logs in itself via SSH or NETCONF to make changes",
+    "d": "Configuration consists of Playbooks (actions to take), an Inventory (devices, grouped, with variables), Templates (for config files) and Variables (fed into templates)."
+  },
+  {
+    "t": "Puppet",
+    "e": "A pull-model, agent-based tool written in Ruby — an agent on the device connects to the Puppet Master to report changes and check for updates",
+    "d": "Devices without agent support can use a proxy agent connecting via SSH. Communicates over HTTPS port 8140. Configuration centres on declarative Manifest files, backed by Resources, Classes and Modules."
+  },
+  {
+    "t": "Chef",
+    "e": "Similar to Puppet — pull-model, agent-based, written in Ruby, communicating over HTTPS port 443",
+    "d": "Can also run standalone using cookbooks stored locally or in a .tar.gz archive. Its components are Recipes (gathered into Cookbooks) and Runlists (which recipe applies to which host)."
+  },
+  {
+    "t": "EIGRP composite metric",
+    "e": "Can factor in delay, bandwidth, load and reliability, though by default only delay and bandwidth are considered"
+  },
+  {
+    "t": "EIGRP's three tables",
+    "e": "Neighbour table: directly connected routers, discovered via Hellos to multicast 224.0.0.10 · Topology table: every route learned via EIGRP (not just the best ones), calculated with the Diffusing Update Algorithm (DUAL) to guarantee loop-free paths · Routing table: only the best route(s) per destination, called successors"
+  },
+  {
+    "t": "EIGRP topology table metrics",
+    "e": "Advertised/reported distance: the distance to the destination as reported by the next-hop router · Computed distance: reported distance plus this router's own distance to that next-hop router, used as the overall metric",
+    "d": "The lowest (best) computed distance to a network is its feasible distance."
+  },
+  {
+    "t": "EIGRP feasible successors",
+    "e": "A backup route with the second-best metric, kept in the topology table as a fallback for the successor",
+    "d": "To qualify, its reported distance must be lower than the successor's feasible distance (the feasibility condition), guaranteeing a loop-free backup path. If the successor fails and there's no feasible successor, the router must query neighbours for a new one."
+  },
+  {
+    "t": "EIGRP timers and transport",
+    "e": "Hello interval defaults to 5 seconds, Hold timer to 15 seconds",
+    "d": "EIGRP messages use a specialised Reliable Transport Protocol at Layer 4, and EIGRP is protocol-independent — it can carry routes for Layer 3 protocols other than IP."
+  },
+  {
+    "t": "EIGRP load balancing",
+    "e": "maximum-paths sets how many equal-metric routes (up to 32, default 4) to install for Equal Cost load balancing",
+    "d": "Unlike OSPF, EIGRP also supports Unequal Cost load balancing: the variance parameter (default 1) allows any path whose computed distance is less than feasible distance × variance and which satisfies the feasibility condition."
+  },
+  {
+    "t": "RIP metric and limits",
+    "e": "Uses hop count as its only metric, with a maximum of 15 hops",
+    "d": "Performs Equal Cost Multi-Path load balancing across up to 4 paths by default."
+  },
+  {
+    "t": "RIPv1 vs RIPv2",
+    "e": "RIPv1 doesn't send subnet mask info, so it can't support VLSM (all subnets in a network must share one mask) and sends broadcast updates every 30 seconds, with no authentication",
+    "d": "RIPv2 supports VLSM, uses multicast 224.0.0.9 for updates, and supports authentication."
+  },
+  {
+    "t": "IOS image feature sets",
+    "e": "K9: includes SSH and IPSec · WAN: includes EoMPLS, VPLS and Hierarchical QoS · NPE: export-restricted, no SSH/IPSec/cryptography · IP Services: full routing protocol functionality · Advanced IP Services: advanced IPv4/IPv6, Layer 3 VPNs, MPLS · Advanced Enterprise Services: adds AppleTalk and ATM support"
+  }
+]

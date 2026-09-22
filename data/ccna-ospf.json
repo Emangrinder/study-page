@@ -1,0 +1,188 @@
+[
+  {
+    "t": "IGP vs EGP",
+    "e": "Interior Gateway Protocols route within a single organisation's Autonomous System; Exterior Gateway Protocols route between organisations over the Internet",
+    "d": "BGP (Border Gateway Protocol) is the only EGP in use today."
+  },
+  {
+    "t": "Distance vector routing protocols",
+    "e": "Each router tells its directly connected neighbours all the networks it knows, along with its own distance to each",
+    "d": "Sometimes called \"routing by rumour\" — a router has no topology information beyond what its neighbours have advertised."
+  },
+  {
+    "t": "Link state routing protocols",
+    "e": "Each router describes itself and its directly connected interfaces/neighbours; this information is flooded unchanged to every router in the area",
+    "d": "Every router ends up with the full topology and independently calculates the best routes from it."
+  },
+  {
+    "t": "RIP",
+    "e": "Routing Information Protocol",
+    "d": "Distance vector IGP. Uses hop count as its metric, max 15 hops. RIPv2 supports VLSM; RIPv1 does not. Rarely used outside very small or lab networks."
+  },
+  {
+    "t": "IGRP",
+    "e": "Interior Gateway Routing Protocol",
+    "d": "Cisco-proprietary, distance vector IGP (now obsolete). Calculates a composite metric from bandwidth and optionally delay, load, reliability and MTU. Superseded by EIGRP; doesn't support VLSM."
+  },
+  {
+    "t": "EIGRP",
+    "e": "Enhanced Interior Gateway Routing Protocol",
+    "d": "Originally Cisco-proprietary but now published. Advanced distance vector IGP, calculating a composite metric similarly to IGRP."
+  },
+  {
+    "t": "OSPF",
+    "e": "Open Shortest Path First",
+    "d": "Link state IGP. Refers to OSPFv2 unless stated otherwise. Uses cost as its metric, automatically derived from interface bandwidth by default."
+  },
+  {
+    "t": "IS-IS",
+    "e": "Intermediate System to Intermediate System",
+    "d": "Link state IGP, used mainly in Service Provider networks. Its metric acts like hop count unless manually configured — it doesn't automatically factor in bandwidth."
+  },
+  {
+    "t": "OSPF Router ID selection",
+    "e": "1) Manually via router-id a.b.c.d 2) Highest IP of a loopback interface 3) Highest IP of a regular interface",
+    "d": "Whichever rule matches first applies."
+  },
+  {
+    "t": "OSPF neighbour discovery",
+    "e": "Routers send Hello packets to multicast 224.0.0.5, containing their own RID and a list of RIDs already seen",
+    "d": "After the initial Hello both routers are in Init state; once they've both seen each other's RID, they become 2-way neighbours."
+  },
+  {
+    "t": "OSPF LSA exchange",
+    "e": "Full (fully adjacent) neighbours have exchanged Database Description packets (DBD) then any LSAs one has that the other doesn't, via Link-State Updates (LSUs)",
+    "d": "Not all 2-way neighbours become full neighbours — see DR/BDR."
+  },
+  {
+    "t": "OSPF Hello/Dead behaviour",
+    "e": "Routers exchange Hellos continually at set intervals; if no Hello arrives within the Dead interval (a multiple of Hello) the neighbour is considered dead",
+    "d": "The router(s) that noticed the failure flood LSAs reflecting the change so others update their LSDBs and recalculate routes."
+  },
+  {
+    "t": "OSPF periodic LSA refresh",
+    "e": "Routers reflood each LSA every 30 minutes by default, regardless of link changes",
+    "d": "The refresh timer is separate per LSA, avoiding a network-wide surge from reflooding everything simultaneously."
+  },
+  {
+    "t": "OSPF DR and BDR",
+    "e": "On a broadcast segment (e.g. Ethernet) with multiple routers, one is elected Designated Router and another Backup Designated Router; the rest become DROther",
+    "d": "All routers become full neighbours with the DR and BDR (which act as hubs of information) but not with each other, reducing LSA traffic. DR/BDR are elected per broadcast network, not per router, and aren't used on point-to-point links."
+  },
+  {
+    "t": "OSPF DR/BDR election",
+    "e": "Highest OSPF interface priority wins DR, second-highest becomes BDR; highest RID breaks ties",
+    "d": "Once elected there's no pre-emption — a new router joining, or a priority change, won't trigger a fresh election while the current DR/BDR are still up."
+  },
+  {
+    "t": "OSPF neighbour state progression",
+    "e": "Down → Init → 2-Way → Exstart → Exchange → Loading → Full"
+  },
+  {
+    "t": "OSPFv2 vs OSPFv3",
+    "e": "OSPFv2 supports IPv4 only; OSPFv3 supports both IPv4 and IPv6",
+    "d": "OSPFv2 is commonly used in IPv4-only networks; OSPFv3 is required for IPv6."
+  },
+  {
+    "t": "Why multi-area OSPF design",
+    "e": "A single flat area means every router holds the full topology, which can exhaust router memory and forces a full reconvergence on any change",
+    "d": "OSPF instead segments large networks into areas — a rule of thumb is up to 50 routers per area."
+  },
+  {
+    "t": "OSPF area hierarchy",
+    "e": "Area 0 (backbone/transit area) carries all inter-area traffic by default; regular (nonbackbone) areas connect end users to the backbone",
+    "d": "Small networks don't need this and can run everything in Area 0."
+  },
+  {
+    "t": "Backbone Router",
+    "e": "An OSPF router with all of its interfaces in Area 0"
+  },
+  {
+    "t": "Area Border Router (ABR)",
+    "e": "A router with interfaces in multiple areas",
+    "d": "Separates LSA flooding zones, is the primary point for (manually configured) area address summarisation, commonly sources default routes into its areas, and maintains a separate LSDB per connected area. Ideally connects to just two areas — the backbone plus one other — with three as the practical upper limit."
+  },
+  {
+    "t": "Internal Router",
+    "e": "A router with all of its OSPF interfaces in one, non-backbone area",
+    "d": "Learns inter-area routes to other areas from its ABR."
+  },
+  {
+    "t": "Autonomous System Boundary Router (ASBR)",
+    "e": "A router that redistributes routes from another routing protocol or static routes into OSPF",
+    "d": "Routes redistributed into OSPF this way appear as External Routes."
+  },
+  {
+    "t": "OSPF network command",
+    "e": "(config-router)# network ip-address wildcard-mask area area-id",
+    "d": "Enables OSPF on any interface whose IP falls within the given range, and advertises that interface's configured network and mask."
+  },
+  {
+    "t": "OSPF wildcard mask",
+    "e": "The inverse of a subnet mask — subtract each octet from 255",
+    "d": "A 255.255.0.0 subnet mask becomes wildcard 0.0.255.255; a 255.255.255.252 mask becomes wildcard 0.0.0.3."
+  },
+  {
+    "t": "OSPF passive-interface",
+    "e": "Advertises the connected subnet but sends no OSPF messages on that interface",
+    "d": "Useful when there's no other router on the segment, or when there's a foreign-organisation OSPF router present that shouldn't see your internal topology. passive-interface default makes all interfaces passive by default; no passive-interface ifname re-activates specific ones."
+  },
+  {
+    "t": "default-information originate",
+    "e": "Injects the router's own static default route into OSPF, making it an ASBR",
+    "d": "The \"always\" keyword advertises the default route regardless of whether it's actually working."
+  },
+  {
+    "t": "OSPF cost formula",
+    "e": "Cost = Reference Bandwidth ÷ Interface Bandwidth",
+    "d": "Default reference bandwidth is 100 Mbps, so both FastEthernet (100 Mbps) and GigabitEthernet (1000 Mbps) round up to a cost of 1 — meaning OSPF treats all links ≥100 Mbps as equal unless the reference bandwidth is manually raised."
+  },
+  {
+    "t": "Manually setting OSPF interface cost",
+    "e": "ip ospf cost n directly sets a cost (recommended, doesn't affect anything else) · bandwidth speed sets a notional interface speed in Kbits, which is used to calculate cost"
+  },
+  {
+    "t": "OSPF load balancing",
+    "e": "maximum-paths n balances load across up to n equal-cost, equal-Administrative-Distance paths",
+    "d": "OSPF cannot do unequal-cost load balancing — EIGRP would be needed for that."
+  },
+  {
+    "t": "OSPF network type: Broadcast",
+    "e": "DR/BDR elections yes, manual neighbours no, Hello/Dead 10/40 seconds",
+    "d": "Default for Ethernet and FDDI."
+  },
+  {
+    "t": "OSPF network type: Point-to-point",
+    "e": "DR/BDR elections no, manual neighbours no, Hello/Dead 10/40 seconds",
+    "d": "Default for PPP and HDLC links."
+  },
+  {
+    "t": "OSPF network type: Non-broadcast",
+    "e": "DR/BDR elections yes, manual neighbours required, Hello/Dead 30/120 seconds",
+    "d": "Default for X.25 and Frame Relay; requires a neighbor command since it can't multicast Hellos."
+  },
+  {
+    "t": "OSPF neighbor command",
+    "e": "(config-router)# neighbor address",
+    "d": "Required whenever an OSPF network type doesn't support automatic neighbour discovery (non-broadcast types)."
+  },
+  {
+    "t": "OSPF neighbour relationship requirements",
+    "e": "Interfaces up/up, in the same subnet, in the same area, matching Hello/Dead timers, unique RIDs, and (if used) matching authentication",
+    "d": "If unmet, routers won't even show as neighbours."
+  },
+  {
+    "t": "OSPF neighbour relationship — MTU and network type",
+    "e": "Matching MTU and matching OSPF network type are also required",
+    "d": "Unlike the other requirements, a mismatch here still lets routers see each other as neighbours — but LSAs won't actually be exchanged, so OSPF silently fails to work."
+  },
+  {
+    "t": "Shutting down an OSPF process",
+    "e": "(config-router) shutdown",
+    "d": "Retains configuration but stops all OSPF activity: clears the LSDB, drops neighbour relationships, and removes OSPF-learned routes from the routing table."
+  },
+  {
+    "t": "OSPF status commands",
+    "e": "show ip protocols (works even in user mode) · show ip ospf interface · show ip ospf neighbour · show ip ospf database (the LSDB) · show ip ospf rib · show ip route ospf"
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "t": "Routers vs switches",
+    "e": "Routers forward traffic based on the Layer 3 destination IP address; switches forward based on the Layer 2 MAC address (Layer 3 switches are an exception)",
+    "d": "IP addresses on a router are configured per physical interface (or subinterface), not per VLAN. Routers also have no MAC address table."
+  },
+  {
+    "t": "Router aux port",
+    "e": "An auxiliary port, configured under line aux 0, that can be connected to an external modem or phone line for emergency out-of-band access",
+    "d": "Faster interfaces are typically used for this purpose in modern networks instead."
+  },
+  {
+    "t": "Router status commands",
+    "e": "show ip interface brief gives a brief summary; show protocols and show interfaces give longer summaries; show ip interface gives full status",
+    "d": "Routers don't support \"show interfaces status\" — that's switch-only."
+  },
+  {
+    "t": "Route types",
+    "e": "Local (route to a configured interface's own IP) · Connected (route to an interface's subnet) · Static (manually defined) · Dynamic (learned via a routing protocol) · Default/gateway of last resort (used when nothing else matches)"
+  },
+  {
+    "t": "Static route — next-hop vs outbound interface",
+    "e": "ip route subnet mask nexthop specifies the next router's IP; ip route subnet mask interface specifies the outbound interface directly (shown as \"directly connected\")",
+    "d": "The next-hop option is generally preferred, but the interface option is useful when the next-hop IP might change, e.g. it's assigned via DHCP."
+  },
+  {
+    "t": "Static route validation",
+    "e": "IOS checks that the outbound interface is up, or that it has a route to the specified next-hop IP, before adding a static route",
+    "d": "If the check fails the route isn't added at all, even once the issue is fixed later — add the permanent keyword to override this."
+  },
+  {
+    "t": "Default static route",
+    "e": "ip route 0.0.0.0 0.0.0.0 nexthop/interface",
+    "d": "Acts as a catch-all \"last resort\" route, typically sending traffic destined for the Internet out of the internal network."
+  },
+  {
+    "t": "Route selection — 1st: Longest prefix match",
+    "e": "When multiple routes match a destination, the one with the longest (most specific) prefix is used",
+    "d": "E.g. a /24 route to a destination wins over a matching /16 route, even though both technically match."
+  },
+  {
+    "t": "Route selection — 2nd: Administrative Distance",
+    "e": "When multiple routes exist to the exact same network and prefix, the one with the lowest Administrative Distance (0-255) is installed",
+    "d": "The others are kept in their routing protocol's own database in case the preferred route is later removed."
+  },
+  {
+    "t": "Administrative Distance values",
+    "e": "Connected 0 · Static 1 · EIGRP summary 5 · eBGP 20 · Internal EIGRP 90 · IGRP 100 · OSPF 110 · IS-IS 115 · RIP 120 · External EIGRP 170 · iBGP 200 · DHCP default gateway 254 · Unknown 255",
+    "d": "Lower is always preferred."
+  },
+  {
+    "t": "Floating static route",
+    "e": "A static route configured with a higher-than-default Administrative Distance so a dynamic route is preferred over it",
+    "d": "Used to provide a backup path (often over a lower-bandwidth link) that only takes over once the dynamic route disappears from the routing table."
+  },
+  {
+    "t": "Route selection — 3rd: Metric",
+    "e": "When routes tie on both destination and Administrative Distance, the one with the best metric (the routing protocol's own notion of \"best path\") is installed",
+    "d": "RIP uses hop count; EIGRP uses \"metric\"; OSPF uses \"cost\" — both EIGRP and OSPF automatically factor in link bandwidth, unlike RIP."
+  },
+  {
+    "t": "ECMP and unequal-cost load balancing",
+    "e": "Equal Cost Multi-Path (ECMP) load-balances traffic when a router learns multiple routes with identical Administrative Distance and metric",
+    "d": "EIGRP is the exception that can also do Unequal Cost Multi-Path load balancing if configured."
+  },
+  {
+    "t": "Reading a \"show ip route\" line",
+    "e": "O 10.2.2.0/30 [110/128] via 10.2.2.5, Serial0/0/1",
+    "d": "An OSPF-learned route (O) to 10.2.2.0/30 with Administrative Distance 110 and metric 128, next-hop 10.2.2.5, outbound via Serial0/0/1."
+  },
+  {
+    "t": "Router with separate interfaces (LAN routing)",
+    "e": "Each VLAN/IP subnet gets its own dedicated physical router interface",
+    "d": "Rarely used in practice — you run out of router interfaces as VLANs grow, and routed traffic must physically travel to and from the router over Ethernet cabling."
+  },
+  {
+    "t": "Router-On-A-Stick (ROAS)",
+    "e": "Multiple VLANs are trunked to a single router interface, with each VLAN routed via its own subinterface",
+    "d": "Subinterfaces are named e.g. Gi0/0.10 and each needs encapsulation dot1q n (add the native keyword for the native VLAN) plus its own IP address."
+  },
+  {
+    "t": "Layer 3 switch routing",
+    "e": "A switch that supports both Layer 2 frame forwarding and Layer 3 IP routing, using either SVI-based routing or routed physical ports (no switchport)",
+    "d": "Requires sdm prefer lanbase-routing (on some models) plus ip routing enabled globally. This is the most common approach in modern networks since routing happens across the switch backbone instead of over external cabling."
+  },
+  {
+    "t": "IPv4 ping",
+    "e": "Requires both a route to the pinged host and a route back from that host to you",
+    "d": "Entering \"ping\" with no parameters prompts for all parameters including source IP — useful for reverse route testing. Can use hostnames if a DNS server is configured."
+  },
+  {
+    "t": "traceroute",
+    "e": "Shows every hop to a destination by manipulating a test packet's TTL, starting at 1 and incrementing until the destination is reached",
+    "d": "IOS traceroute encapsulates UDP inside IP packets, while most other operating systems use ICMP echo requests — so the two can be differently affected by security rules on the path."
+  },
+  {
+    "t": "SSH from a router's CLI",
+    "e": "ssh -l username address",
+    "d": "Initiates an outbound SSH session from EXEC mode."
+  }
+]

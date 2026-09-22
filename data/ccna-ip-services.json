@@ -1,0 +1,216 @@
+[
+  {
+    "t": "Syslog logging targets",
+    "e": "Console (users on the console port) · Monitor (Telnet/SSH users, who must run \"terminal monitor\" to actually see messages) · Buffer (logged to RAM, viewed with \"show logging\") · Syslog/host (sent to a remote syslog server)"
+  },
+  {
+    "t": "Syslog severity levels",
+    "e": "1 Emergency · 2 Alert · 3 Critical · 4 Error · 5 Warning · 6 Notification · 7 Informational · 8 Debug",
+    "d": "Filtering by level shows that level and everything more severe (lower-numbered); \"debug\" shows everything."
+  },
+  {
+    "t": "Syslog message formatting",
+    "e": "service timestamp enables/disables timestamps on log messages; service sequence-numbers enables/disables sequence numbers"
+  },
+  {
+    "t": "IOS debugging",
+    "e": "The debug EXEC command enables detailed logging for a specific service, generating severity-7 messages sent only to targets with that severity enabled"
+  },
+  {
+    "t": "NTP strata",
+    "e": "NTP servers use very precise clocks and offer time to other hosts; the stratum number indicates accuracy — lower is more accurate",
+    "d": "A host using its own clock as a source sets its own stratum; a host getting time from another sets its stratum to one higher than its source."
+  },
+  {
+    "t": "NTP client and static client mode",
+    "e": "ntp server address configures a device as an NTP client",
+    "d": "Cisco devices set as NTP clients automatically also act as NTP servers themselves for others — \"static client mode\"."
+  },
+  {
+    "t": "NTP master and broadcast client",
+    "e": "ntp master [stratum] makes a device offer its own clock as a time source, defaulting to stratum 8",
+    "d": "ntp broadcast client makes an interface listen for NTP broadcasts from any server. ntp server and ntp master can be combined for redundancy: the device uses the external server but falls back to its own clock if that connection fails."
+  },
+  {
+    "t": "NTP on a loopback interface",
+    "e": "Preferable to using a physical interface's IP for NTP: a loopback is a virtual interface that's always up (unless manually shut down)",
+    "d": "If a physical interface goes down, services bound to its IP become unreachable via any path; a loopback IP stays reachable via any surviving path, provided it's advertised in the routing protocol. Set with \"ntp source loopback 0\"."
+  },
+  {
+    "t": "NTP authentication",
+    "e": "ntp authenticate enables it · ntp authentication-key key-number md5 key defines an MD5 key · ntp trusted-key key-number trusts it · the client's ntp server command references the key ID it expects the server to sign with",
+    "d": "On the NTP server, only ntp authenticate and ntp authentication-key are needed."
+  },
+  {
+    "t": "CDP vs LLDP",
+    "e": "CDP (Cisco Discovery Protocol) is Cisco-proprietary and enabled by default; LLDP (Link-layer Discovery Protocol) is an open standard, disabled by default",
+    "d": "CDP can identify a neighbour's platform/model and conveys VTP information; LLDP can only identify software version and distinguishes installed vs enabled capabilities. Both operate at Layer 2 and only discover directly connected neighbours."
+  },
+  {
+    "t": "CDP/LLDP default timers",
+    "e": "CDP: 60 second Hello, 180 second holdtime · LLDP: 30 second Hello, 120 second holdtime",
+    "d": "LLDP additionally allows enabling transmit and receive independently per interface, so a device can silently gather neighbour information without advertising itself."
+  },
+  {
+    "t": "Reading CDP/LLDP neighbour output",
+    "e": "\"Local interface\" is the interface on the host doing the query; \"Port ID\" is the interface on the host being queried"
+  },
+  {
+    "t": "NAT address terminology",
+    "e": "Inside local: the host's actual private IP, as configured on it · Inside global: the NAT'd address the host is reached by from outside · Outside local: the outside host's IP as it appears to the inside network · Outside global: the outside host's real IP as assigned by its own owner",
+    "d": "For standard one-way NAT, outside local and outside global are usually reported as the same address."
+  },
+  {
+    "t": "NAT types",
+    "e": "Static: fixed 1:1 mapping, commonly used for servers that need a permanent public IP · Dynamic: maps inside addresses to a pool of outside addresses as connections are initiated · Dynamic with overload (PAT): maps many inside addresses and ports to one shared outside address, the most common way to give ordinary hosts Internet access"
+  },
+  {
+    "t": "Static NAT configuration",
+    "e": "ip nat inside / ip nat outside declare the internal/external interfaces; ip nat inside source static inside_local inside_global creates one mapping (issued once per mapping)"
+  },
+  {
+    "t": "Dynamic NAT configuration",
+    "e": "Define an ACL matching the inside addresses to translate, define a pool of inside global addresses with ip nat pool, then link them with ip nat inside source list acl pool pool-name"
+  },
+  {
+    "t": "PAT (NAT overload) configuration",
+    "e": "Same as dynamic NAT, but the final command references an outbound interface instead of a pool and adds the overload keyword: ip nat inside source list acl interface ifname overload"
+  },
+  {
+    "t": "NAT verification and management",
+    "e": "show ip nat translations shows the mapping table · show ip nat statistics · debug ip nat · clear ip nat translation clears the table"
+  },
+  {
+    "t": "QoS purpose",
+    "e": "Gives different applications their required treatment during temporary periods of network congestion, based on their sensitivity to bandwidth, delay, loss and jitter",
+    "d": "Real-time traffic like voice and video is very sensitive to delay, loss and jitter even though it needs comparatively little bandwidth; batch data traffic is not."
+  },
+  {
+    "t": "QoS classification and marking",
+    "e": "Classification identifies packets by matching header fields; marking tags them accordingly. Neither affects forwarding on its own — only a policy acting on the marking does",
+    "d": "Best practice is to classify and mark as close to the source as possible (ideally the access switch), so devices further along can just trust the marking."
+  },
+  {
+    "t": "QoS trust boundary",
+    "e": "End devices other than IP phones or Telepresence units shouldn't be trusted to mark their own traffic, since that would let rogue users prioritise their own traffic",
+    "d": "mls qos trust cos extend trust to a connected device's markings (common between switches); switchport extend cos n instructs an attached IP phone to mark its PC port's traffic with a given (often 0/best-effort) CoS value, overriding the PC."
+  },
+  {
+    "t": "QoS marking fields",
+    "e": "DSCP (Differentiated Services Code Point): 6 bits in an IPv4/IPv6 header (Layer 3), backwards compatible with IP Precedence · CoS/PCP: 3 bits in an 802.1Q tag (Layer 2, trunk links only) · IP Precedence: 3 bits, superseded by DSCP · TIP: 3 bits in an 802.11 header · EXP: 3 bits in an MPLS label"
+  },
+  {
+    "t": "DiffServ marking classes",
+    "e": "Expedited Forwarding (EF/DSCP 46): low loss, delay and jitter — used for voice · Assured Forwarding (AFxy): 4 queues (x, 1=worst to 4=best) × 3 drop priorities (y, 1=best to 3=worst) · Class Selector (CSx): maps old IP Precedence values to DSCP",
+    "d": "Recommended usage: EF for voice, AF4y for interactive video, AF3y for streaming video, AF2y for high-priority data, CS0 for standard best-effort data."
+  },
+  {
+    "t": "Queueing and congestion",
+    "e": "Queueing only happens when a link is congested, e.g. a speed mismatch between an incoming Gigabit interface and a slower outbound WAN link",
+    "d": "A standard queue with no QoS policy uses FIFO (First In First Out), which can let voice packets get stuck behind bulk data during congestion."
+  },
+  {
+    "t": "CBWFQ and LLQ",
+    "e": "Class-Based Weighted Fair Queueing (CBWFQ) gives a minimum bandwidth guarantee to specified traffic classes during congestion",
+    "d": "Low Latency Queueing (LLQ) is CBWFQ plus a strict priority queue, whose packets always jump to the front — ideal for real-time voice."
+  },
+  {
+    "t": "LLQ priority queue limits",
+    "e": "The priority queue's bandwidth share is capped, defaulting to a maximum of 33%, and going above that isn't recommended",
+    "d": "Otherwise the priority queue could starve all other traffic entirely (100% usage would leave 0% for everything else). Call Admission Control (CAC) on voice servers can limit concurrent calls so the priority queue never actually needs more bandwidth than it's been given."
+  },
+  {
+    "t": "Traffic shaping vs policing",
+    "e": "Both measure traffic rate through an interface and act if it exceeds a configured limit",
+    "d": "Shaping buffers excess traffic to smooth it to the desired rate (typically used outbound by customers); policing drops or re-marks excess traffic to enforce the limit (typically used inbound by service providers on customer-facing interfaces)."
+  },
+  {
+    "t": "Congestion avoidance — tail drop and global synchronisation",
+    "e": "Tail drop happens when an outbound queue is full and further packets are simply dropped",
+    "d": "This shrinks the TCP windows of all affected flows at once (\"global synchronisation\"), so they all slow down and speed up together, underutilising the link."
+  },
+  {
+    "t": "RED and WRED",
+    "e": "Random Early Detection randomly drops packets before a queue actually fills up, at a rate based on how full it already is, to signal individual flows to slow down before congestion peaks",
+    "d": "Weighted RED (WRED) extends this by dropping lower-priority packets more often, breaking global synchronisation while also protecting more important traffic."
+  },
+  {
+    "t": "Wireless QoS service levels",
+    "e": "Platinum: VoIP, CAPWAP control tunnels · Gold: video, mission-critical interactive traffic · Silver: best-effort, the default · Bronze: guest services"
+  },
+  {
+    "t": "First Hop Redundancy Protocols (FHRP)",
+    "e": "Provide redundancy for a subnet's default gateway, since a host can only configure one default gateway at a time",
+    "d": "Two or more routers share a virtual IP (and virtual MAC); one is active and serves traffic, the rest are standby, with automatic failover if the active router fails."
+  },
+  {
+    "t": "HSRP",
+    "e": "Hot Standby Router Protocol, Cisco-proprietary",
+    "d": "The active router owns the virtual IP/MAC that hosts use as their default gateway; if it fails, a standby router takes over the virtual IP and MAC with no change needed on hosts. Configured per-interface with \"standby group-id ip virtual-ip\"."
+  },
+  {
+    "t": "HSRP per-subnet load balancing",
+    "e": "Different subnets can use different routers as active, e.g. subnet A uses R1 active/R2 standby while subnet B uses R2 active/R1 standby",
+    "d": "Spreads load across routers, unlike a single subnet where one router always handles all traffic."
+  },
+  {
+    "t": "GLBP",
+    "e": "Gateway Load Balancing Protocol, Cisco-proprietary",
+    "d": "Unlike HSRP/VRRP, load-balances traffic from a single subnet across up to four Active Virtual Forwarders (AVFs), coordinated by one Active Virtual Gateway (AVG) which answers ARP requests for the shared virtual IP with different AVFs' virtual MACs."
+  },
+  {
+    "t": "VRRP",
+    "e": "Virtual Router Redundancy Protocol",
+    "d": "An open standard (unlike HSRP and GLBP), operating very similarly to HSRP, with one master router and one or more backup routers."
+  },
+  {
+    "t": "FHRP addressing",
+    "e": "HSRPv1: MAC 00:00:0c:07:ac:XX, multicast 224.0.0.2 · HSRPv2 (IPv4): MAC 00:00:0c:9f:fX:XX, multicast 224.0.0.102 · GLBP: MAC 00:07:B4:0X:XX:YY, multicast 224.0.0.102 · VRRP: MAC 00:00:5E:00:01:XX, multicast 224.0.0.18",
+    "d": "XX represents the group ID in hex; YY in GLBP is the AVF number."
+  },
+  {
+    "t": "SNMP roles",
+    "e": "Network devices are SNMP agents, gathering information as variables in a Management Information Base (MIB)",
+    "d": "Agents exchange information with SNMP managers, typically Network Management Station (NMS) servers, which poll agents and compile/present the data."
+  },
+  {
+    "t": "SNMP polling vs notifications",
+    "e": "Managers usually poll agents with Get/GetNext/GetBulk Requests, and agents respond with Get Responses",
+    "d": "Agents can also proactively notify managers via Traps (UDP, no reliability — if lost, it's lost) or Informs (added in SNMPv2, reliable — the agent expects an acknowledgment and resends if none arrives)."
+  },
+  {
+    "t": "SNMP MIBs and OIDs",
+    "e": "MIB variables are identified by tree-structured Object IDs (OIDs), given as either numbers or names, e.g. iso.org.dod.internet.private.enterprise.cisco.ciscomgmt.ciscoflash.group (1.3.6.1.4.1.9.9.10)",
+    "d": "Part of each MIB is standardised in RFCs; the rest is vendor-defined."
+  },
+  {
+    "t": "SNMP versions",
+    "e": "SNMPv1 and SNMPv2c use communities — pre-shared passwords exchanged in cleartext",
+    "d": "SNMPv3 adds authentication with a username and hashed password, message integrity, and optional encryption."
+  },
+  {
+    "t": "FTP connections",
+    "e": "Uses two TCP connections: control (port 21 by default) and data",
+    "d": "In active mode, the client opens the control connection then tells the server (via PORT) to connect back to a client-chosen port for data. In passive mode, the client sends PASV and the server tells the client (via PORT) which port to connect to for data. A NAT or firewall between client and server can break FTP unless it supports FTP application inspection."
+  },
+  {
+    "t": "FTPS",
+    "e": "FTP Secure — FTP built on TLS encryption",
+    "d": "Explicit mode uses one port (21) for both connections, starting in plain FTP and upgrading via an AUTH command (backwards compatible). Implicit mode connects straight to ports 990 (control) and 989 (data) in TLS, with no explicit AUTH."
+  },
+  {
+    "t": "SFTP and TFTP",
+    "e": "SFTP (SSH File Transfer Protocol) is unrelated to FTP but serves the same purpose, using SSH (port 22) for encryption and authentication",
+    "d": "TFTP (Trivial File Transfer Protocol) is a stripped-down protocol on UDP port 69, with very basic application-layer error recovery, resulting in slow transfers."
+  },
+  {
+    "t": "IOS file systems",
+    "e": "Types include Opaque (aliases), Network, Disk (flash drives), Usbflash and NVRAM (used for startup-config by default)",
+    "d": "show file systems lists them; dir shows a directory's contents; show flash shows the default flash file system; copy copies files; verify /md5 checks a file's MD5 hash."
+  },
+  {
+    "t": "Copying files over the network in IOS",
+    "e": "copy tftp dest launches the TFTP client interactively · copy ftp://user:pass@host/filename dest runs the FTP client in batch mode",
+    "d": "ip ftp username / ip ftp password set default FTP credentials so they don't need to be typed in the URL each time."
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "t": "Classful IPv4 addressing — Class A",
+    "e": "1.0.0.0-126.255.255.255, unicast, default /8 mask"
+  },
+  {
+    "t": "Classful IPv4 addressing — Class B",
+    "e": "128.0.0.0-191.255.255.255, unicast, default /16 mask"
+  },
+  {
+    "t": "Classful IPv4 addressing — Class C",
+    "e": "192.0.0.0-223.255.255.255, unicast, default /24 mask"
+  },
+  {
+    "t": "Classful IPv4 addressing — Class D and E",
+    "e": "Class D: 224.0.0.0-239.255.255.255, multicast · Class E: 240.0.0.0-255.255.255.255, reserved"
+  },
+  {
+    "t": "Reserved IPv4 address ranges",
+    "e": "Addresses beginning with 0 and 127 are reserved",
+    "d": "127.x.x.x is reserved for loopback addresses."
+  },
+  {
+    "t": "Subnet mask notations",
+    "e": "Binary (e.g. 11111111.11111111.11111111.00000000) · Dotted-decimal notation/DDN (e.g. 255.255.255.0) · Prefix/CIDR slash notation (e.g. /24)",
+    "d": "All three represent exactly the same mask."
+  },
+  {
+    "t": "Valid subnet mask structure",
+    "e": "A contiguous block of 1s followed by a contiguous block of 0s in binary",
+    "d": "A mask like 11100011... with 1s and 0s interleaved is never valid."
+  },
+  {
+    "t": "Subnetting — number of subnets",
+    "e": "2^N, where N is the number of bits borrowed from the host portion into the network portion",
+    "d": "E.g. subnetting a /16 into /19s borrows 3 bits (19-16), giving 2^3 = 8 subnets."
+  },
+  {
+    "t": "Subnetting — usable hosts per subnet",
+    "e": "2^H − 2, where H is the number of remaining host bits",
+    "d": "Two addresses are reserved per subnet: the lowest is the Subnet/Network ID, the highest is the broadcast address."
+  },
+  {
+    "t": "Subnet, broadcast and usable host addresses",
+    "e": "The lowest address in a subnet is its network address; the highest is its broadcast address",
+    "d": "Everything in between is usable and can be allocated to hosts."
+  }
+]

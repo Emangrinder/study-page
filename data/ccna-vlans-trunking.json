@@ -1,0 +1,94 @@
+[
+  {
+    "t": "Usable VLAN ID ranges",
+    "e": "Standard range 1-1001, extended range 1006-4094",
+    "d": "The extended range is enabled only on newer Cisco devices."
+  },
+  {
+    "t": "Disabling a VLAN",
+    "e": "shutdown under (config-vlan), or (config)# shutdown vlan n",
+    "d": "A common cause of \"VLAN not working\" faults — check the VLAN hasn't been shut down, and neither has its SVI."
+  },
+  {
+    "t": "Trunking protocols: 802.1Q vs ISL",
+    "e": "802.1Q is the IEEE standard; ISL (Inter-Switch Link) is Cisco-proprietary and deprecated",
+    "d": "Dot1q is the only supported option on newer switch models — entering the encapsulation command gives an error because it's non-configurable there."
+  },
+  {
+    "t": "switchport mode access",
+    "e": "Forces a port to never trunk",
+    "d": "Disables DTP negotiation on that port."
+  },
+  {
+    "t": "switchport mode trunk",
+    "e": "Forces a port to always trunk"
+  },
+  {
+    "t": "switchport mode dynamic auto",
+    "e": "Default mode on newer switches",
+    "d": "Trunks if the other side is set to trunk or dynamic desirable; access otherwise. Two dynamic-auto ports facing each other result in access mode."
+  },
+  {
+    "t": "switchport mode dynamic desirable",
+    "e": "Default mode on older switches; actively initiates trunking negotiation",
+    "d": "Trunks if the other side is dynamic auto, dynamic desirable, or trunk. Two dynamic-desirable ports facing each other result in a trunk."
+  },
+  {
+    "t": "DTP",
+    "e": "Dynamic Trunking Protocol",
+    "d": "Negotiates trunking dynamically. DTP frames travel over the native VLAN, so native VLAN settings must match on both switches. A link fails if one side is set to trunk and the other to access."
+  },
+  {
+    "t": "DTP and VTP interaction",
+    "e": "If VTP is enabled (even in transparent mode), the VTP domain name must match on both switches for DTP to succeed",
+    "d": "A subtle gotcha: two switches can otherwise be correctly configured for trunking and still fail to form one because of a VTP domain mismatch."
+  },
+  {
+    "t": "switchport trunk allowed vlan",
+    "e": "Restricts which VLANs are allowed to pass over a trunk",
+    "d": "Can be specified multiple times to build up the allowed list."
+  },
+  {
+    "t": "show interfaces trunk",
+    "e": "Shows all trunking ports, including VLANs allowed on each port and VLANs pruned by Spanning Tree",
+    "d": "show interfaces ifname switchport shows the settings (access/trunk/voice VLAN etc.) of one given port."
+  },
+  {
+    "t": "Voice VLAN",
+    "e": "Lets a single switch port carry both an IP phone's voice traffic and an attached PC's data traffic",
+    "d": "The phone has a built-in internal switch that trunks the voice VLAN and access VLAN traffic upstream, even though the switch port itself is configured as an access port."
+  },
+  {
+    "t": "Voice VLAN configuration",
+    "e": "switchport mode access + switchport access vlan x + switchport voice vlan y",
+    "d": "x is the data/access VLAN for the attached PC; y is the dedicated voice VLAN for the phone itself."
+  },
+  {
+    "t": "VTP",
+    "e": "VLAN Trunking Protocol",
+    "d": "Synchronises VLAN information (IDs and names) between switches on a trunk. It's recommended to disable it (vtp mode transparent or off), since a single misconfiguration can add, change or remove VLANs across the whole campus."
+  },
+  {
+    "t": "VTP server mode",
+    "e": "Default mode; creates/modifies/deletes VLANs, stores them in NVRAM, and originates and forwards VTP advertisements"
+  },
+  {
+    "t": "VTP client mode",
+    "e": "Listens for and forwards VTP advertisements; cannot add, modify or delete VLANs locally, and its VLAN database is not stored in NVRAM"
+  },
+  {
+    "t": "VTP transparent mode",
+    "e": "Does not originate advertisements or use them to populate its own VLAN database, but does forward them between other switches",
+    "d": "Maintains its own VLAN database in NVRAM. This is the recommended mode — manually configure identical VLANs on every switch instead."
+  },
+  {
+    "t": "VTP bomb",
+    "e": "If an external switch with a higher configuration revision number joins the network, it overwrites VLAN configuration on all switches and can destroy campus-wide connectivity",
+    "d": "Whichever VTP server has the highest configuration revision number becomes the one whose advertisements are used by everyone else."
+  },
+  {
+    "t": "VTPv3 primary server",
+    "e": "VTPv3 designates one VTP server as primary; other servers act as clients in all but name and can't originate config changes",
+    "d": "Solves the VTP bomb problem. Primary status can be password protected. VTPv3 also supports extended VLANs (1006-4094) and propagates MST instance information, unlike VTPv1/v2."
+  }
+]

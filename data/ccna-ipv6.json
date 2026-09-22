@@ -1,0 +1,122 @@
+[
+  {
+    "t": "IPv4-to-IPv6 protocol replacements",
+    "e": "ARP → Neighbour Discovery Protocol · ICMP → ICMPv6 · OSPFv2 → OSPFv3 · RIP → RIPng · EIGRP → EIGRPv6 · BGP → MP BGP-4"
+  },
+  {
+    "t": "IPv6 address format",
+    "e": "128 bits long, written as 8 groups of four hex digits (\"quartets\"), compared to a 32-bit IPv4 address"
+  },
+  {
+    "t": "IPv6 address abbreviation",
+    "e": "Leading zeros within each quartet are dropped (a quartet of 0000 becomes a single 0); one run of two or more all-zero quartets can be abbreviated to \"::\"",
+    "d": "Only one \"::\" is allowed per address, since otherwise the number of zero quartets it represents would be ambiguous."
+  },
+  {
+    "t": "IPv6 address types by first hex digits",
+    "e": "Global unicast: any value not otherwise reserved, usually 2 or 3 · Unique local: FD · Multicast: FF · Link-local: FE80::/10"
+  },
+  {
+    "t": "Global unicast address",
+    "e": "A public, Internet-routable IPv6 address",
+    "d": "IANA assigns blocks to Regional Internet Registries, which assign to ISPs, who assign to subscribers. The Global Routing Prefix (set by the RIR and ISP) determines how many bits remain for subnet and host portions."
+  },
+  {
+    "t": "Assigning IPv6 addresses to hosts",
+    "e": "Statically · via DHCPv6 · via Stateless Address Autoconfiguration (SLAAC)"
+  },
+  {
+    "t": "Unique local address",
+    "e": "A private IPv6 address, in the format FDnn:nnnn:nnnn:ssss:hhhh:hhhh:hhhh:hhhh",
+    "d": "nn is a pseudo-random Global ID (kept random to avoid conflicts if two networks later merge), ss is the subnet, hhhh...hhhh is the interface ID."
+  },
+  {
+    "t": "Enabling IPv6 routing",
+    "e": "(config)# ipv6 unicast-routing"
+  },
+  {
+    "t": "IPv6 verification commands",
+    "e": "show ipv6 interface brief (all interfaces, no prefix length) · show ipv6 interface ifname (fuller detail) · show ipv6 route, optionally filtered by type (connected, static, local...)",
+    "d": "Mirror the equivalent IPv4 commands."
+  },
+  {
+    "t": "Static IPv6 address configuration",
+    "e": "ipv6 address address/prefix-length sets the full address manually · ipv6 address prefix/64 eui-64 generates the host portion from the interface's MAC address, leaving the right side as ::"
+  },
+  {
+    "t": "EUI-64",
+    "e": "Automatically generates the 64-bit host portion of an IPv6 address from a 48-bit MAC address",
+    "d": "Given MAC xx:xx:xx:xx:xx:xx, EUI-64 produces pppp:pppp:pppp:xixx:xxFF:FExx:xxxx — p is the prefix, x comes straight from the MAC, i is the MAC with its 7th bit flipped, and FFFE is always inserted in the middle."
+  },
+  {
+    "t": "Dynamic IPv6 addressing commands",
+    "e": "ipv6 address dhcp (via DHCPv6) or ipv6 address autoconfig (via SLAAC)"
+  },
+  {
+    "t": "IPv6 link-local address",
+    "e": "Used only for unicast traffic relevant to the local link (e.g. NDP) and never routed; also typically used as the next-hop address in static IPv6 routes",
+    "d": "Formed by adding an EUI-64 interface ID to the 64-bit prefix FE80::. IOS auto-generates one for any interface with at least one other IPv6 unicast address, or when ipv6 enable is used to create just a link-local address with no unicast address."
+  },
+  {
+    "t": "Key IPv6 multicast addresses",
+    "e": "FF02::1 all nodes · FF02::2 all IPv6 routers · FF02::5 all OSPF routers · FF02::6 all Designated Routers · FF02::9 all RIPng routers · FF02:A all EIGRPv6 routers · FF02::1:1 all DHCP Relay Agents",
+    "d": "IPv6 has no broadcast traffic, but FF02::1 has essentially the same effect."
+  },
+  {
+    "t": "IPv6 address scopes",
+    "e": "Interface-local (FF01): stays inside the device · Link-local (FF02): won't be routed across router interfaces · Site-local (FF05): broader, limited to a site by routers · Organisation-local (FF08): can span a whole organisation · Global (FF0E): no limits"
+  },
+  {
+    "t": "Solicited-node multicast address",
+    "e": "Formed with prefix FF02::1:FF00:0/104 plus the last 6 hex digits of the IPv6 address being discovered",
+    "d": "Used by Neighbour Discovery Protocol so that only the correct host is subscribed to and responds."
+  },
+  {
+    "t": "IPv6 loopback and unspecified addresses",
+    "e": "Loopback: ::1 · Unspecified/unknown address: :: (all zeros)"
+  },
+  {
+    "t": "IPv6 anycast",
+    "e": "Two or more hosts are configured with the same IPv6 address and provide the same service; routers forward packets to the nearest one",
+    "d": "E.g. two DNS servers both configured with 2001:0db8::10 — if one fails, routers reconverge and the service stays reachable via the other."
+  },
+  {
+    "t": "IPv6 local and connected routes",
+    "e": "Local routes have a /128 prefix, matching just the interface's own address",
+    "d": "Connected and local routes are created only for global unicast and unique local addresses — never for link-local addresses."
+  },
+  {
+    "t": "IPv6 static route syntax by link type",
+    "e": "Ethernet with global/unique-local next-hop: ipv6 route prefix/len nexthop · Ethernet with a link-local next-hop: ipv6 route prefix/len ifname nexthop (interface needed since a link-local address alone doesn't say which link) · Serial/point-to-point: ipv6 route prefix/len ifname",
+    "d": "A static default route uses ::/0 as the prefix; a host route uses /128."
+  },
+  {
+    "t": "Floating IPv6 static route",
+    "e": "Append a higher Administrative Distance value (e.g. 130) to an ipv6 route command",
+    "d": "Makes the static route act as a fallback, used only if a dynamically learned route disappears."
+  },
+  {
+    "t": "NDP tasks",
+    "e": "IPv6-to-MAC address discovery · detecting routers on the subnet · subnet/prefix discovery for SLAAC · Duplicate Address Detection (DAD)",
+    "d": "Performs the roles of ARP and then some."
+  },
+  {
+    "t": "NDP Neighbour Solicitation/Advertisement",
+    "e": "A host sends a multicast Neighbour Solicitation (NS) for a target's IPv6 address; the target replies with a unicast Neighbour Advertisement (NA)",
+    "d": "NAs can also be sent unsolicited to FF02::1 (all-nodes) to announce a host's IPv6/MAC address to everyone. show ipv6 neighbours lists discovered hosts, analogous to show mac address-table dynamic."
+  },
+  {
+    "t": "NDP Router Solicitation/Advertisement",
+    "e": "A host sends a Router Solicitation (RS) to FF02::2 (all-routers); routers respond with a Router Advertisement (RA), unicast or to FF02::1",
+    "d": "The RA contains the router's subnet ID, prefix length and link-local address."
+  },
+  {
+    "t": "SLAAC process",
+    "e": "A host uses NDP RS/RA to discover the subnet ID and prefix length, generates an interface ID (via EUI-64 or randomly), then runs DAD to confirm the resulting address is unused"
+  },
+  {
+    "t": "Duplicate Address Detection (DAD)",
+    "e": "A host sends a Neighbour Solicitation for its own proposed IPv6 address",
+    "d": "If any other host responds, the address is already in use and a different one must be chosen."
+  }
+]

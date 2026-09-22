@@ -1,0 +1,112 @@
+[
+  {
+    "t": "Three-tier campus LAN design",
+    "e": "Access, Distribution and Core layers, each with their own design principles",
+    "d": "Splitting the topology this way aids scalability, performance and security in a Campus LAN."
+  },
+  {
+    "t": "Access layer",
+    "e": "Where end hosts (desktops, servers, IP phones) connect to the network",
+    "d": "Designed for a high port count at an affordable cost. Client access security measures are enabled here."
+  },
+  {
+    "t": "Distribution layer",
+    "e": "Aggregates uplinks from Access layer switches, typically deployed in redundant pairs",
+    "d": "End hosts don't normally connect here directly. Most software policy, such as QoS, is enabled at this layer."
+  },
+  {
+    "t": "Core layer",
+    "e": "Aggregates uplinks from Distribution layer switches, also typically deployed in redundant pairs, carrying traffic between different parts of the campus",
+    "d": "Designed purely for speed and resiliency — software policy should be avoided here since it slows the switch down."
+  },
+  {
+    "t": "Collapsed Distribution/Core and SOHO designs",
+    "e": "Smaller campuses can combine Distribution and Core layer functions on the same hardware (\"collapsed core\")",
+    "d": "An even simpler Small Office/Home Office design uses one all-in-one router combining router, firewall, switch and wireless AP functions."
+  },
+  {
+    "t": "Power over Ethernet (PoE)",
+    "e": "Lets Power Sourcing Equipment (PSE), usually a switch, supply power to a Powered Device (PD), such as an IP phone or AP, over the Ethernet cable",
+    "d": "Auto-negotiation determines the PoE power class (how much power to supply), using CDP/LLDP messages alongside the negotiation itself."
+  },
+  {
+    "t": "PoE standards",
+    "e": "Cisco Inline Power (Cisco-proprietary, 2 wire pairs, 7W at PSE) · PoE/802.3af (2 pairs, 15W) · PoE+/802.3at (2 pairs, 30W) · UPoE/802.3bt (4 pairs, 60W) · UPoE+/802.3bt (4 pairs, 100W)"
+  },
+  {
+    "t": "PoE power policing",
+    "e": "power inline police protects against a PD drawing more power than it was assigned; by default the interface logs an error and enters err-disabled state, needing a restart",
+    "d": "power inline police action log instead just logs the event and restarts the port immediately. errdisable recovery cause inline-power enables automatic recovery."
+  },
+  {
+    "t": "Metro Ethernet",
+    "e": "A service provider WAN service connecting customer offices over Ethernet, so from the customer's point of view their offices look connected to one large Ethernet switch",
+    "d": "Since offices share a Layer 2 domain, hosts in different offices can be in the same IP subnet — useful for Disaster Recovery, where services can fail over to another site keeping the same IP address."
+  },
+  {
+    "t": "Metro Ethernet terminology",
+    "e": "Point of Presence (PoP): where the provider installs a switch near the customer · Customer Edge (CE) / Provider Edge (PE): devices at the edge of each network · User Network Interface (UNI): the (Ethernet) access link between customer and PoP",
+    "d": "Since MetroE delivers an Ethernet service, a customer can connect to it via a switch instead of a router."
+  },
+  {
+    "t": "Metro Ethernet topologies",
+    "e": "Ethernet Line Service (E-Line): point-to-point between two sites, with multiple E-Lines able to share one physical access link · Ethernet LAN Service (E-LAN): full mesh, acts like an ordinary shared LAN · Ethernet Tree Service (E-Tree): hub-and-spoke, sites reach the central site but not each other"
+  },
+  {
+    "t": "MPLS Layer 3 VPN",
+    "e": "A service provider WAN service where CE devices are Layer 3 (not Layer 2) adjacent with their connected PE device, unlike Metro Ethernet",
+    "d": "PE routers insert an MPLS header between a customer packet's Layer 2 and Layer 3 headers, which tells the shared MPLS core how to forward it while keeping different customers' traffic segregated."
+  },
+  {
+    "t": "MPLS routing and QoS",
+    "e": "CE and PE routers are routing neighbours (static routes or a routing protocol); internally the provider uses MP-BGP to redistribute customer routes across the MPLS core",
+    "d": "Since MPLS is a Layer 3 service, it can run over a variety of Layer 2 access link types, unlike MetroE which requires Ethernet access links. MPLS also enables Layer 3 QoS: CE devices can mark packets for the provider to recognise and prioritise."
+  },
+  {
+    "t": "Internet VPNs",
+    "e": "Let offices use cheap Internet access instead of a private WAN, while still needing encryption, authentication, data integrity and anti-replay protection",
+    "d": "Used for site-to-site connections (permanent branch links) as well as remote access (on-demand connections from remote users)."
+  },
+  {
+    "t": "Site-to-site VPN",
+    "e": "VPN tunnel endpoints are typically routers or firewalls; unencrypted internal traffic is encrypted at one endpoint, sent across the Internet, and decrypted at the other",
+    "d": "Commonly built with IPSec (confidentiality and data integrity) with shared-key encryption running over a GRE tunnel (handles the tunnelling itself, including multicast/broadcast)."
+  },
+  {
+    "t": "Remote access VPN",
+    "e": "Client software on a user's device connects to a VPN device such as a router or firewall in the corporate office",
+    "d": "Usually TLS-based; Cisco's client is called AnyConnect, alongside other options like OpenVPN and Wireguard."
+  },
+  {
+    "t": "Bare metal vs virtualised servers",
+    "e": "A bare metal server runs its OS and applications directly on the hardware, commonly used where one application needs all of the hardware's power",
+    "d": "Server virtualisation instead runs multiple VMs, each with its own OS and applications, on one physical host, managed by a hypervisor and each assigned a share of the host's resources."
+  },
+  {
+    "t": "Virtual switching and rack design",
+    "e": "A hypervisor runs a virtual switch to control traffic between VMs and allow different VMs to be in different VLANs; the link to the physical switch is a trunk",
+    "d": "Hosts are typically mounted in racks with two Top-of-Rack (ToR) switches for redundancy, with rows of racks further connected via End-of-Row (EoR) switches."
+  },
+  {
+    "t": "Cloud self-service provisioning",
+    "e": "With public cloud computing, the data centre is managed by the cloud provider, and customers can provision/resize VMs themselves via an API or web GUI, handled automatically",
+    "d": "Traditionally, companies relied on their own data centre staff to manage VMs manually."
+  },
+  {
+    "t": "NIST's 5 essential cloud characteristics",
+    "e": "On-demand self-service · Broad network access (many device/network types) · Resource pooling (shared between customers) · Rapid elasticity (scales to demand) · Measured services (usage monitoring/reporting)"
+  },
+  {
+    "t": "Private vs public cloud",
+    "e": "A private cloud is self-hosted by an organisation for its own internal departments (e.g. self-service VM provisioning without raising an IT ticket)",
+    "d": "A public cloud is a service provided by a third party, such as AWS or Google Cloud."
+  },
+  {
+    "t": "\"As a service\" cloud models",
+    "e": "Software as a Service: a working application, with OS and hardware abstracted away · Platform as a Service: a working OS plus development/testing tools · Infrastructure as a Service: a VM on which the customer installs their own OS and software"
+  },
+  {
+    "t": "Connecting to a public cloud",
+    "e": "Internet: easiest and most flexible, but no security or QoS guarantees · Internet VPN: adds encryption · Private WAN: adds QoS and security but is inflexible to change providers · Intercloud exchange: a private WAN variant connecting to many cloud providers at once, easing provider switching"
+  }
+]

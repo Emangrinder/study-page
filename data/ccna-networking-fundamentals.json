@@ -1,0 +1,102 @@
+[
+  {
+    "t": "CSMA/CD",
+    "e": "Carrier Sense Multiple Access with Collision Detection",
+    "d": "Ethernet media access method — if the sender detects a collision, it sends a jamming signal and all nodes cease transmitting, resuming after a random time."
+  },
+  {
+    "t": "OUI",
+    "e": "Organisationally Unique Identifier",
+    "d": "The first 24 bits of a MAC address, assigned to a particular manufacturer. The manufacturer then manages and assigns the remaining 24-bit vendor portion."
+  },
+  {
+    "t": "RFC 1122 four-layer TCP/IP model",
+    "e": "Application, Transport, Internet, Network Access",
+    "d": "The model used by the CCNA 200-301 exam. The five-layer model splits Network Access into separate Physical and Data-Link layers."
+  },
+  {
+    "t": "PDU names by layer",
+    "e": "Segment (Transport) · Packet (Network) · Frame (Data-link) · Bit/symbol (Physical)",
+    "d": "The Application layer's PDU has no specific name in the TCP/IP model."
+  },
+  {
+    "t": "Collision domain",
+    "e": "The set of devices that could cause a collision if they transmit at the same time",
+    "d": "A hub puts all connected devices in one collision domain; each switch port is its own collision domain."
+  },
+  {
+    "t": "Broadcast domain",
+    "e": "The set of devices that receive each other's broadcast traffic",
+    "d": "Each switch port shares one broadcast domain per VLAN; each router interface is a separate broadcast domain."
+  },
+  {
+    "t": "Ethernet crossover cable wiring",
+    "e": "Pins 1→3, 2→6, 3→1, 6→2",
+    "d": "Used to connect two like devices (e.g. switch-to-switch) directly. Largely obsolete now that Auto-MDIX auto-detects the correct wiring."
+  },
+  {
+    "t": "10BASE-T / 100BASE-T wiring",
+    "e": "Uses pins 1, 2, 3 and 6 only",
+    "d": "1000BASE-T uses all 8 pins (1-8)."
+  },
+  {
+    "t": "Ethernet II frame — Preamble and SFD",
+    "e": "7-byte Preamble for synchronisation, then a 1-byte Start Frame Delimiter (SFD, aka SOF)",
+    "d": "The SFD signals that the next byte begins the destination MAC address field."
+  },
+  {
+    "t": "Ethernet II frame — Type field",
+    "e": "2 bytes; defines the type of packet carried inside the frame",
+    "d": "Can be replaced by a 4-byte 802.1Q header when the frame is tagged for a VLAN."
+  },
+  {
+    "t": "Ethernet II frame — Data field",
+    "e": "46-1500 bytes of actual data",
+    "d": "Padded up to 46 bytes if the real payload is shorter than that."
+  },
+  {
+    "t": "FCS",
+    "e": "Frame Check Sequence",
+    "d": "A 4-byte checksum at the end of an Ethernet frame. The receiver discards the frame if the FCS doesn't check out."
+  },
+  {
+    "t": "Multicast MAC address range",
+    "e": "01:00:5E:00:00:00 – 01:00:5E:7F:FF:FF",
+    "d": "The last 23 bits map to the relevant multicast IP address. Since multicast IPs have 28 variable bits, one multicast MAC maps to 32 possible IPs."
+  },
+  {
+    "t": "HDLC",
+    "e": "High-Level Data Link Control",
+    "d": "A point-to-point Layer 2 protocol. Its Type field is Cisco-proprietary, so HDLC reliably interoperates only between Cisco devices."
+  },
+  {
+    "t": "TCP three-way handshake",
+    "e": "SYN → SYN,ACK → ACK",
+    "d": "Client sends a segment with the SYN flag; server responds with SYN+ACK; client responds with ACK to establish the connection."
+  },
+  {
+    "t": "TCP four-way termination",
+    "e": "ACK,FIN → ACK → ACK,FIN → ACK",
+    "d": "Host A sends ACK+FIN; Host B acknowledges then sends its own ACK+FIN; Host A responds with ACK. The RST flag can also tear down a connection abruptly."
+  },
+  {
+    "t": "TCP vs UDP",
+    "e": "TCP is connection-oriented and reliable (sequence/ack numbers, retransmission); UDP is connectionless, unreliable \"best effort\"",
+    "d": "UDP suits real-time traffic like voice, where a retransmitted segment would arrive too late to be useful anyway."
+  },
+  {
+    "t": "TCP window",
+    "e": "The amount of data a sender will transmit before waiting for an ACK with the expected acknowledgment number",
+    "d": "Set by the receiver. It grows gradually if there are no transmission problems, and shrinks if segments go missing, indicating congestion."
+  },
+  {
+    "t": "TCP acknowledgment number",
+    "e": "Equal to the sequence number of the next segment the receiver expects",
+    "d": "If the receiver replies with an earlier acknowledgment number than expected, a segment was lost and the sender resends from that point."
+  },
+  {
+    "t": "MSS",
+    "e": "Maximum Segment Size",
+    "d": "Set in the SYN segment's options; equal to the outgoing link's MTU minus 20 bytes for the TCP header. MTU can be auto-discovered."
+  }
+]

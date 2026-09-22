@@ -1,0 +1,97 @@
+[
+  {
+    "t": "enable secret vs enable password",
+    "e": "enable secret hashes the privileged-mode password; enable password stores it in cleartext",
+    "d": "If both are configured, enable password is ignored — always use enable secret."
+  },
+  {
+    "t": "Saving and erasing switch configuration",
+    "e": "copy running-config startup-config saves to NVRAM (write is the old-style equivalent)",
+    "d": "write erase or erase startup-config / erase nvram factory-resets the device by clearing NVRAM."
+  },
+  {
+    "t": "line vty 0 15",
+    "e": "The 16 virtual terminal lines used for both Telnet and SSH access to the CLI",
+    "d": "Configuring login/password or login local under this context secures remote CLI access."
+  },
+  {
+    "t": "Enabling SSH on a switch",
+    "e": "Requires hostname + ip domain-name (to form an FQDN), crypto key generate rsa, local usernames, and ip ssh version 2",
+    "d": "transport input ssh under the VTY lines enables SSH and disables Telnet."
+  },
+  {
+    "t": "Switch Virtual Interface (SVI)",
+    "e": "A Layer 2 switch's logical interface, associated with a VLAN, used for administrative access",
+    "d": "A Layer 2 switch can have only one IP address (on one SVI) for management. A Layer 3 switch can have multiple IP addresses across SVIs and routed physical ports."
+  },
+  {
+    "t": "Switch as a DHCP client",
+    "e": "ip address dhcp on an SVI has the switch obtain its management IP automatically",
+    "d": "show dhcp lease shows DHCP leases on all SVIs."
+  },
+  {
+    "t": "CLI history commands",
+    "e": "show history displays exec command history",
+    "d": "terminal history size x sets history size for the current session only; (config)# history size x sets the default."
+  },
+  {
+    "t": "logging synchronous",
+    "e": "Synchronises unsolicited syslog messages with other console output",
+    "d": "Configured under (config-line) for a given line so messages don't interrupt command entry mid-type."
+  },
+  {
+    "t": "exec-timeout",
+    "e": "Logs out a user after a set period of inactivity",
+    "d": "Default is 5 minutes; exec-timeout 0 0 disables the timeout entirely."
+  },
+  {
+    "t": "no ip domain-lookup",
+    "e": "Stops the device from trying to resolve what looks like a domain name in the command line",
+    "d": "Without this, a mistyped command can hang for a DNS lookup timeout before erroring."
+  },
+  {
+    "t": "Auto-negotiation and duplex mismatch",
+    "e": "Auto-negotiation is disabled only if both speed and duplex are set manually on a port",
+    "d": "If the other side has auto-negotiation disabled, IEEE standard requires matching the slowest supported speed and, at 10/100 Mbps, half-duplex. Cisco instead senses speed and uses full duplex at 1000 Mbps+."
+  },
+  {
+    "t": "LAN switch interface status: notconnect",
+    "e": "Line status down, protocol status down",
+    "d": "Shown by \"show interfaces status\" as notconnect — cable not connected or faulty."
+  },
+  {
+    "t": "LAN switch interface status: err-disabled",
+    "e": "Line status down, protocol status \"down (err-disabled)\"",
+    "d": "Caused by port security, DHCP Snooping, Dynamic ARP Inspection, or another security mechanism disabling the interface."
+  },
+  {
+    "t": "LAN switch interface status: disabled",
+    "e": "Line and protocol status both administratively down",
+    "d": "Caused by the shutdown command being applied to the interface."
+  },
+  {
+    "t": "Ethernet input errors — runts and giants",
+    "e": "Runts are frames smaller than 64 bytes, often caused by collisions",
+    "d": "Giants are frames larger than the standard 1518-byte maximum; frames up to 1600 bytes (e.g. from 802.1Q-in-802.1Q or MPLS) are valid \"baby giants\", and deliberately larger frames up to 9000 bytes are \"jumbo frames\"."
+  },
+  {
+    "t": "Ethernet input errors — CRC",
+    "e": "Frames that fail the Frame Check Sequence",
+    "d": "Can be caused by collisions."
+  },
+  {
+    "t": "Ethernet output errors — collisions and late collisions",
+    "e": "Collisions counts all collisions detected while transmitting a frame",
+    "d": "Late collisions — happening after the frame's 64th byte — signal a duplex mismatch, since in half-duplex mode collisions should be detected before the 64th byte."
+  },
+  {
+    "t": "show mac address-table dynamic",
+    "e": "Shows all dynamically learned MAC addresses",
+    "d": "Can be filtered with \"address AAAA.BBBB.CCCC\" (Cisco's 3-quartet MAC format), \"interface Gi0/0\", or \"vlan 1\"."
+  },
+  {
+    "t": "show mac address-table aging-time",
+    "e": "Shows the global (or per-VLAN) MAC address ageing timer setting",
+    "d": "show mac address-table count shows used and available space in the MAC address table."
+  }
+]

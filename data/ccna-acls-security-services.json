@@ -1,0 +1,158 @@
+[
+  {
+    "t": "Standard vs Extended ACLs",
+    "e": "Standard ACLs match on source address only (ranges 1-99, 1300-1999); Extended ACLs match source and destination address, transport protocol and port (ranges 100-199, 2000-2699)"
+  },
+  {
+    "t": "ACL wildcard masks",
+    "e": "The default wildcard mask for a standard ACL is 0.0.0.0, meaning an individual host",
+    "d": "Extended ACLs have no default — you must use the \"host\" keyword or type 0.0.0.0 explicitly for a single host."
+  },
+  {
+    "t": "Named vs numbered ACLs",
+    "e": "Named ACLs begin with \"ip access-list\" instead of \"access-list\", and can also be referenced by name instead of number",
+    "d": "Numbered ACLs now also support injecting new ACEs, a feature that started as named-ACL-only."
+  },
+  {
+    "t": "Applying an ACL to an interface",
+    "e": "ip access-group ID in/out — an ACL has no effect until applied this way",
+    "d": "Only one ACL per interface per direction, but you can have an inbound and outbound ACL on the same interface simultaneously (just not two inbound or two outbound)."
+  },
+  {
+    "t": "ACL processing order",
+    "e": "Read top to bottom; as soon as a rule matches, its permit/deny action is applied and no further rules are checked",
+    "d": "Getting the order of rules right is critical — a more specific deny must come before a broader permit that would otherwise match first."
+  },
+  {
+    "t": "Implicit deny",
+    "e": "Every ACL ends with an implicit \"deny any\" — if an ACL is applied to an interface, any traffic not explicitly permitted is dropped",
+    "d": "If no ACL is applied at all, all traffic is allowed by default."
+  },
+  {
+    "t": "ACE numbering",
+    "e": "Access Control Entries are automatically numbered in increments of 10",
+    "d": "New ACEs can be inserted between existing ones (e.g. ACE 15 between 10 and 20) without rewriting the whole ACL."
+  },
+  {
+    "t": "ACL port operators",
+    "e": "eq (equal to) · ne (not equal to) · lt (less than) · gt (greater than) · range (a range of ports, e.g. range 1024-11100)",
+    "d": "Common port names like \"www\" can be used in place of numbers."
+  },
+  {
+    "t": "Stateful firewall",
+    "e": "Maintains a connection table tracking the two-way state of traffic passing through it",
+    "d": "Return traffic matching an entry in the connection table is permitted by default, even if a rule would otherwise block traffic in that direction."
+  },
+  {
+    "t": "ACL as a packet filter",
+    "e": "Unlike a stateful firewall, a router ACL does not maintain a connection table and only affects traffic in one direction at a time",
+    "d": "If an ACL is applied outbound only, return traffic is allowed since all traffic is allowed by default when no ACL applies to it. If ACLs are applied in both directions, explicit entries are needed to permit both the outbound and the return traffic."
+  },
+  {
+    "t": "Firewall zones and DMZ",
+    "e": "Inside and outside zones classify hosts by interface, with outside-to-inside traffic typically blocked except for return traffic",
+    "d": "A DMZ (demilitarised zone) gives limited, controlled access to servers that need to be reachable from the public Internet."
+  },
+  {
+    "t": "Next-generation firewall (NGFW)",
+    "e": "Performs deep packet inspection up to Layer 7 using Application Visibility and Control, for finer-grained traffic classification than port numbers alone",
+    "d": "Can run several security services together (e.g. Advanced Malware Protection) and filter URLs using a database of domain reputation scores."
+  },
+  {
+    "t": "NGIPS",
+    "e": "Next-Generation Intrusion Prevention System",
+    "d": "Better than a standard IPS at filtering and prioritising events, using awareness of hosts on the network (OS, enabled services, traffic patterns) and reputation-based filtering. Cisco Talos Intelligence Group maintains the reputation databases NGFW and NGIPS rely on."
+  },
+  {
+    "t": "Vulnerability, exploit, threat, attack",
+    "e": "A vulnerability is a weakness (misconfiguration or bug); an exploit is a way to use it; a threat is an exploit in the hands of someone able to use it effectively; an attack is a threat being realised"
+  },
+  {
+    "t": "Common attack types",
+    "e": "Reconnaissance (discovering IPs/services in use) · Spoofing (e.g. IP or MAC spoofing) · Denial-of-service (exhausting resources, e.g. TCP SYN flood) · Reflection/amplification (spoofing source to generate unexpected or amplified traffic) · Man-in-the-middle · Buffer overflow · Privilege escalation · Malware · Social engineering · Password attacks (dictionary, brute-force, reuse)"
+  },
+  {
+    "t": "AAA",
+    "e": "Authentication (verifying identity) · Authorisation (deciding permissions) · Accounting (recording actions)"
+  },
+  {
+    "t": "TACACS+ vs RADIUS",
+    "e": "TACACS+ is Cisco-proprietary, runs on TCP port 49, and is often used for centralised CLI access management with granular permissions",
+    "d": "RADIUS is standards-based, uses UDP ports 1812/1813, traffic is optionally encrypted, and is often used for centralised management of normal user access such as a remote access VPN."
+  },
+  {
+    "t": "service password-encryption",
+    "e": "Encrypts all locally stored user passwords with a single command, shown as type \"7\" in the running config",
+    "d": "Encryption is reversible and weak — hashing (via enable secret) should always be preferred over encryption."
+  },
+  {
+    "t": "enable secret vs enable password (hashing)",
+    "e": "enable secret hashes the password; enable password does not hash it at all",
+    "d": "If both are configured, enable password is ignored."
+  },
+  {
+    "t": "Password hash algorithm types",
+    "e": "0: cleartext · 4: PSIRT hash, easily cracked, disabled · 5: MD5, the default, somewhat vulnerable · 7: Vigenère cipher, easily cracked, disabled · 8: SHA-256/PBKDF2, recommended · 9: Scrypt, recommended",
+    "d": "Set with \"enable algorithm-type sha256 secret password\" (or scrypt in place of sha256), or specify a hash value directly with \"enable n hash\"."
+  },
+  {
+    "t": "access-class",
+    "e": "(config-line)# access-class ID in — uses a numbered access list to restrict which addresses can log in via Telnet/SSH"
+  },
+  {
+    "t": "IOS privilege levels",
+    "e": "IOS supports privilege levels 0-15",
+    "d": "A password for a specific level is set with \"enable secret level n password\"."
+  },
+  {
+    "t": "Port security",
+    "e": "Monitors and restricts Layer 2 traffic on a switch port by maintaining a list of authorised source MAC addresses and limiting how many can use the port",
+    "d": "A violation occurs when an unauthorised source MAC appears, or when the port's maximum allowed addresses is reached."
+  },
+  {
+    "t": "Configuring port security",
+    "e": "switchport mode must be explicitly access or trunk (no DTP) · switchport port-security enables it · switchport port-security maximum n sets the limit (default 1) · switchport port-security mac-address sets a static allowed MAC · switchport port-security mac-address sticky learns addresses dynamically and stores them in the running-config"
+  },
+  {
+    "t": "Port security violation modes",
+    "e": "Shutdown (default): puts the port into err-disabled state · Restrict: drops offending traffic, logs the violation, increments the counter, keeps the port up · Protect: drops offending traffic, but doesn't log or count it, keeps the port up"
+  },
+  {
+    "t": "DHCP message exchange (DORA)",
+    "e": "Discover (client→server, broadcast) · Offer (server→client) · Request (client→server, broadcast) · Acknowledgment (server→client)"
+  },
+  {
+    "t": "DHCP relay",
+    "e": "A router forwards DHCP messages between clients and a centralised DHCP server, since routers don't forward broadcasts by default",
+    "d": "Configured with ip helper-address server-ip on the interface facing the clients; it sets the giaddr field so the DHCP server knows which subnet the request came from."
+  },
+  {
+    "t": "Router as a DHCP client",
+    "e": "(config-if)# ip address dhcp",
+    "d": "When DHCP provides a default gateway, it's inserted into the routing table as a static route with Administrative Distance 254."
+  },
+  {
+    "t": "DHCP server configuration",
+    "e": "ip dhcp pool name enters the pool context · network address mask specifies the subnet to hand out addresses from · ip dhcp excluded-address excludes a specific address or range · default-router and dns-server set the options clients receive"
+  },
+  {
+    "t": "DHCP Snooping",
+    "e": "Classifies switch ports as trusted or untrusted and inspects traffic on untrusted ports to detect DHCP spoofing, keeping a binding table of which MAC was assigned which IP",
+    "d": "On trusted ports, DHCP messages pass unfiltered; on untrusted ports, messages from a DHCP server are always dropped, and client messages are checked against the binding table."
+  },
+  {
+    "t": "DHCP Snooping configuration",
+    "e": "ip dhcp snooping (global) · ip dhcp snooping vlan n · ip dhcp snooping trust (per interface, typically toward the DHCP server or another switch)",
+    "d": "Can be CPU-intensive, so rate limiting incoming DHCP messages per interface is advisable."
+  },
+  {
+    "t": "Dynamic ARP Inspection (DAI)",
+    "e": "Prevents ARP poisoning (a host tricking others into associating its MAC with a victim's IP) by validating ARP messages against the DHCP Snooping binding table",
+    "d": "Static entries must be added, or ports trusted, for hosts with a static (non-DHCP) IP address, since they won't appear in the binding table."
+  },
+  {
+    "t": "DAI configuration",
+    "e": "ip arp inspection vlan n (global) · ip arp inspection trust (per interface) · ip arp inspection validate [dst-mac] [src-mac] [ip] for extra validation steps",
+    "d": "Like DHCP Snooping, can be rate limited to protect switch CPU."
+  }
+]

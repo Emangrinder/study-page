@@ -29,6 +29,84 @@
         "name": "Exam Topics",
         "subtitle": "Objective → domain → what it covers",
         "dataFile": "data/ccna-topics.json"
+      },
+      {
+        "id": "networking-fundamentals",
+        "name": "Networking Fundamentals",
+        "subtitle": "TCP/IP model, Ethernet, WAN, TCP/UDP",
+        "dataFile": "data/ccna-networking-fundamentals.json"
+      },
+      {
+        "id": "switch-cli-interfaces",
+        "name": "Switch CLI & Interfaces",
+        "subtitle": "Switch management, SSH, interfaces, errors",
+        "dataFile": "data/ccna-switch-cli-interfaces.json"
+      },
+      {
+        "id": "vlans-trunking",
+        "name": "VLANs & Trunking",
+        "subtitle": "VLANs, trunking, DTP, voice VLAN, VTP",
+        "dataFile": "data/ccna-vlans-trunking.json"
+      },
+      {
+        "id": "stp-etherchannel",
+        "name": "Spanning Tree & EtherChannel",
+        "subtitle": "STP, RSTP, PVST+/MST, EtherChannel",
+        "dataFile": "data/ccna-stp-etherchannel.json"
+      },
+      {
+        "id": "ipv4-addressing-subnetting",
+        "name": "IPv4 Addressing & Subnetting",
+        "subtitle": "Classful addressing, subnet masks",
+        "dataFile": "data/ccna-ipv4-addressing-subnetting.json"
+      },
+      {
+        "id": "ipv4-routing",
+        "name": "IPv4 Routing",
+        "subtitle": "Static routes, AD, ROAS, L3 switching",
+        "dataFile": "data/ccna-ipv4-routing.json"
+      },
+      {
+        "id": "ospf",
+        "name": "OSPF",
+        "subtitle": "LSAs, DR/BDR, areas, cost, network types",
+        "dataFile": "data/ccna-ospf.json"
+      },
+      {
+        "id": "ipv6",
+        "name": "IPv6",
+        "subtitle": "Addressing, EUI-64, NDP, static routing",
+        "dataFile": "data/ccna-ipv6.json"
+      },
+      {
+        "id": "wireless-lans",
+        "name": "Wireless LANs",
+        "subtitle": "SSID/BSS/ESS, WLC architectures, security",
+        "dataFile": "data/ccna-wireless-lans.json"
+      },
+      {
+        "id": "acls-security-services",
+        "name": "ACLs & Security Services",
+        "subtitle": "ACLs, AAA, firewalls, port security, DHCP snooping/DAI",
+        "dataFile": "data/ccna-acls-security-services.json"
+      },
+      {
+        "id": "ip-services",
+        "name": "IP Services",
+        "subtitle": "Syslog, NTP, CDP/LLDP, NAT, QoS, FHRP, SNMP, FTP",
+        "dataFile": "data/ccna-ip-services.json"
+      },
+      {
+        "id": "network-architectures",
+        "name": "Network Architectures",
+        "subtitle": "LAN/WAN architecture, PoE, cloud",
+        "dataFile": "data/ccna-network-architectures.json"
+      },
+      {
+        "id": "automation-legacy-igps",
+        "name": "Automation & Legacy IGPs",
+        "subtitle": "SDN/SDA, REST/JSON, Ansible/Puppet/Chef, EIGRP, RIP",
+        "dataFile": "data/ccna-automation-legacy-igps.json"
       }
     ]
   },

@@ -1,0 +1,155 @@
+[
+  {
+    "t": "Why Spanning Tree exists",
+    "e": "Switches forward broadcast traffic out every port except the one it arrived on, and there's no TTL at Layer 2",
+    "d": "A physical loop in the campus would let broadcast frames circle endlessly, quickly consuming all switch CPU and bandwidth (a \"broadcast storm\")."
+  },
+  {
+    "t": "BPDU",
+    "e": "Bridge Protocol Data Unit",
+    "d": "Messages switches exchange to detect loops, then block ports to close them — reducing the number of active paths but avoiding broadcast storms."
+  },
+  {
+    "t": "STP port states — permanent",
+    "e": "Forwarding and Blocking (called Discarding in RSTP)",
+    "d": "A blocking port does not send or receive frames, apart from receiving BPDUs."
+  },
+  {
+    "t": "STP port states — transient",
+    "e": "Listening (removes stale MAC entries to prevent loops) and Learning (learns MAC addresses)",
+    "d": "Neither state forwards frames. RSTP does not use the Listening state at all."
+  },
+  {
+    "t": "Bridge ID",
+    "e": "An 8-byte value in every BPDU: a 2-byte configurable Bridge Priority plus a 6-byte System ID based on the switch's MAC address",
+    "d": "Bridge Priority ranges 0-65535, defaulting to 32768."
+  },
+  {
+    "t": "Root Bridge election",
+    "e": "The switch with the lowest Bridge ID becomes Root Bridge; lowest priority wins, with lowest MAC address as the tiebreaker",
+    "d": "Best practice is to manually set a higher-performance, centrally located switch's priority lower, rather than leaving the election to chance."
+  },
+  {
+    "t": "STP default timers",
+    "e": "Hello 2 seconds · MaxAge 20 seconds (10× Hello) · Forwarding delay 15 seconds per transient state",
+    "d": "Timer values are set by the Root Bridge and adopted by all other switches."
+  },
+  {
+    "t": "Root Port",
+    "e": "A switch's own exit interface on its lowest-cost path to the Root Bridge",
+    "d": "If multiple paths tie on cost, the neighbour with the lowest Bridge ID is preferred; STP does not load-balance across equal-cost paths."
+  },
+  {
+    "t": "Designated Port",
+    "e": "The port on the far side of a link, elected as the one that forwards toward the rest of the network away from the Root Bridge",
+    "d": "All ports on the Root Bridge itself are always Designated Ports."
+  },
+  {
+    "t": "Blocking Port",
+    "e": "Any port not selected as a Root Port or Designated Port",
+    "d": "Only one side of a redundant link is blocked; BPDUs still cross it, but other traffic is dropped."
+  },
+  {
+    "t": "Determining STP roles — the recipe",
+    "e": "1) Find the Root Bridge (best Bridge ID) 2) All its ports are Designated 3) Find each other switch's Root Port (lowest cost to Root) 4) The far end of each Root Port's link is Designated 5) On remaining links, the higher-cost/higher-Bridge-ID side is Blocking and the other is Designated"
+  },
+  {
+    "t": "Convergence",
+    "e": "The process by which switches react to a topology change and agree on a new set of forwarding paths",
+    "d": "Triggered when a switch stops receiving Hello BPDUs on its Root Port for the MaxAge period, or when the Root Port's link fails."
+  },
+  {
+    "t": "Port roles vs port states",
+    "e": "Port roles (Root Port, Designated Port) describe how STP views the network's topology; port states (forwarding, blocking, listening, learning) describe whether a port sends/receives frames right now",
+    "d": "When convergence happens, switches first decide new port roles, and those roles then determine port state."
+  },
+  {
+    "t": "RSTP",
+    "e": "Rapid Spanning Tree Protocol, standardised as 802.1w",
+    "d": "Keeps Root Bridge election, Root Port and Designated Port selection, and Forwarding/Blocking (renamed Discarding) states from classic STP, but converges much faster."
+  },
+  {
+    "t": "RSTP alternate port",
+    "e": "A backup for the Root Port — the port with the second-lowest cost to root",
+    "d": "Can replace a failed Root Port almost immediately, without waiting to pass through forwarding states."
+  },
+  {
+    "t": "RSTP backup port",
+    "e": "A backup for a Designated Port on the same switch",
+    "d": "Can quickly replace a failed Designated Port without waiting for forwarding states."
+  },
+  {
+    "t": "RSTP timers and states",
+    "e": "MaxAge shortened to 3× Hello (6 seconds); Blocking and Disabled are lumped into one Discarding state; the Listening state is skipped entirely",
+    "d": "Convergence can also be triggered by explicitly asking a neighbour about a link failure instead of waiting for MaxAge to expire."
+  },
+  {
+    "t": "RSTP link types",
+    "e": "Point-to-point (full duplex between two switches, needs the Learning state to converge) · Point-to-point edge (a switch to a single end device, set via PortFast, skips Learning) · Shared (half-duplex, assumed to be via a hub, converges slowly)"
+  },
+  {
+    "t": "BPDU Guard",
+    "e": "Disables a port the moment it receives a BPDU",
+    "d": "Protects against rogue switches trying to become root, and against non-STP-aware switches being plugged in and causing loops. Should be enabled on all access ports, typically alongside PortFast."
+  },
+  {
+    "t": "PortFast",
+    "e": "Lets a port transition straight from blocking to forwarding, skipping Listening and Learning",
+    "d": "Should only be enabled on ports connected to end devices, since a switch (unlike an end device) could form a loop."
+  },
+  {
+    "t": "RootGuard",
+    "e": "Prevents a device connected to a given port from becoming the Root Bridge",
+    "d": "Used when the Root Bridge has been deliberately placed centrally and new switches shouldn't be able to take over the role."
+  },
+  {
+    "t": "LoopGuard",
+    "e": "Prevents loops caused by connectivity failures, such as a unidirectional link where frames only travel one way",
+    "d": "Incompatible with RootGuard — enabling RootGuard on a port automatically disables LoopGuard there."
+  },
+  {
+    "t": "Per-VLAN spanning tree",
+    "e": "Lets an administrator load-balance by running separate spanning trees with different Root Bridges for different VLANs",
+    "d": "Without it, all VLANs' BPDUs travel in the native VLAN and share one Common Spanning Tree (CST), so every VLAN takes the same path."
+  },
+  {
+    "t": "PVST+ / RPVST+ / MST",
+    "e": "PVST+ (Cisco, classic STP) and RPVST+ (Cisco, RSTP-based, default since IOS 15.2) run one spanning tree per VLAN; MST (802.1s, IEEE standard) groups VLANs into a small number of instances (usually two), cutting CPU overhead",
+    "d": "All three embed the VLAN number into the priority part of the Bridge ID: new priority = floor(old priority / 4096), and the System ID Extension = old priority % 4096."
+  },
+  {
+    "t": "spanning-tree vlan n root primary / secondary",
+    "e": "root primary sets priority to 24576, or 4096 less than the current lowest priority in the network; root secondary sets it to 28672",
+    "d": "A quick way to designate primary and backup Root Bridges for a VLAN without calculating exact priority values."
+  },
+  {
+    "t": "EtherChannel",
+    "e": "Bundles up to 8 physical links into one logical link (from Spanning Tree's point of view) so every bundled link can forward traffic",
+    "d": "Also provides redundancy — if one bundled link fails, the others keep the EtherChannel functioning."
+  },
+  {
+    "t": "EtherChannel negotiation protocols",
+    "e": "PAgP (Port Aggregation Protocol, Cisco-proprietary) and LACP (Link Aggregation Control Protocol, IEEE standard, more common)",
+    "d": "Active/desirable initiate negotiation; passive/auto wait for the other side. Active-active or desirable-desirable will form a channel; passive-passive or auto-auto will not."
+  },
+  {
+    "t": "EtherChannel manual mode",
+    "e": "channel-group n mode on assigns a port to an EtherChannel with no auto-negotiation",
+    "d": "Cannot be mixed with auto-negotiation on the other side of the link — both ends must either be set to \"on\", or both use LACP/PAgP negotiation."
+  },
+  {
+    "t": "EtherChannel compatibility requirements",
+    "e": "All bundled ports must match on: not being shut down, speed, duplex, VLAN mode (all trunk or all access), access VLAN, allowed/native VLANs if trunking, and STP port cost",
+    "d": "A mismatch puts the Port-channel virtual interface into an err-disabled state."
+  },
+  {
+    "t": "EtherChannel load distribution",
+    "e": "Balances traffic across bundled links based on a configurable hashing method",
+    "d": "Options include src-mac (the default on most switches), dst-mac, src-dst-mac, src-ip, dst-ip, src-dst-ip, src-port, dst-port and src-dst-port."
+  },
+  {
+    "t": "Layer 3 EtherChannel",
+    "e": "Bundles point-to-point routed links the same way as Layer 2 EtherChannel",
+    "d": "Configured with channel-group plus no switchport on the physical interfaces and on the resulting Port-channel interface, which then gets an IP address directly."
+  }
+]

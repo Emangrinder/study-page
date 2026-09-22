@@ -1,0 +1,163 @@
+[
+  {
+    "t": "BSS",
+    "e": "Basic Service Set",
+    "d": "The coverage area advertised and managed by a single wireless Access Point, identified by a BSSID based on the AP radio's MAC address."
+  },
+  {
+    "t": "SSID",
+    "e": "Service Set Identifier",
+    "d": "A unique name for a wireless network, such as \"Corporate\". A single AP can support multiple SSIDs (e.g. \"Corporate\" and \"Guest\"), each with its own security settings and VLAN mapping."
+  },
+  {
+    "t": "Distribution System (DS)",
+    "e": "Usually an Ethernet switch, used by a BSS to communicate with the rest of the network",
+    "d": "The AP acts as a Layer 2 bridge, forwarding frames between the wireless network and the wired network in both directions."
+  },
+  {
+    "t": "ESS and roaming",
+    "e": "Extended Service Set — the same SSID supported across multiple APs to give a larger coverage area",
+    "d": "Clients seamlessly roam between different BSSs in the same ESS as they move, associating with one AP after another."
+  },
+  {
+    "t": "Independent Basic Service Set (IBSS)",
+    "e": "An ad-hoc wireless network that operates without a Distribution System"
+  },
+  {
+    "t": "Wireless repeater",
+    "e": "Repeats the signal it receives, preferably on a separate radio and channel, to extend an AP's coverage"
+  },
+  {
+    "t": "Workgroup Bridge (WGB)",
+    "e": "Acts as a wireless client (STA) and bridges the wireless network with a wired network",
+    "d": "Lets devices without a wireless adapter connect to an AP via the workgroup bridge."
+  },
+  {
+    "t": "Outdoor bridge and mesh network",
+    "e": "Outdoor bridge: point-to-point or point-to-multipoint wireless bridge between distant wired networks · Mesh network: multiple APs bridged in a daisy-chain, one radio serving clients and the other connecting to a backhaul network"
+  },
+  {
+    "t": "2.4 GHz vs 5 GHz wireless bands",
+    "e": "2.4 GHz propagates further and penetrates obstacles better, but supports only 3 non-overlapping channels and is more crowded",
+    "d": "5 GHz is less crowded (better speeds, less interference) and supports many more non-overlapping channels, depending on configured channel width."
+  },
+  {
+    "t": "Wireless roaming overlap",
+    "e": "A 10-15% overlap in coverage between neighbouring APs is recommended",
+    "d": "Too little overlap risks losing connection before roaming completes; too much makes interference worse since it's harder to find non-overlapping channels at higher AP density."
+  },
+  {
+    "t": "Wireless half-duplex communication",
+    "e": "Wireless clients can transmit or receive, but not both at once",
+    "d": "Unlike a full-duplex wired switched connection, which can send and receive simultaneously."
+  },
+  {
+    "t": "Wireless frame types",
+    "e": "Data (carries data through the wireless network) · Control (manages medium access: RTS, CTS, ACK, Power Save) · Management (beacons, probe/association/authentication requests and responses, de-authentication, announcements)"
+  },
+  {
+    "t": "Autonomous AP architecture",
+    "e": "Each AP is managed individually",
+    "d": "Doesn't scale well for networks with a lot of APs."
+  },
+  {
+    "t": "Cloud-based AP architecture",
+    "e": "A central management platform (e.g. Cisco Meraki) configures, monitors and controls APs"
+  },
+  {
+    "t": "Split-MAC architecture",
+    "e": "Splits AP functionality between a lightweight AP (LAP), handling only real-time functions (transmission, encryption, beacons/probe responses), and a Wireless Controller (WLC), which handles the rest",
+    "d": "Solves the scaling limitations of autonomous AP architecture."
+  },
+  {
+    "t": "CAPWAP",
+    "e": "Control and Provisioning of Wireless Access Points",
+    "d": "A Layer 3 tunnel — actually two tunnels, control on UDP port 5246 (always encrypted) and data on UDP port 5247 (optionally encrypted) — carrying traffic between a lightweight AP and its WLC. Uses DTLS for encryption and X.509 certificates for AP-WLC authentication."
+  },
+  {
+    "t": "Lightweight AP traffic flow",
+    "e": "Wireless client traffic flows from the AP through a CAPWAP tunnel to the WLC, and only from the WLC does it enter the wired network",
+    "d": "LAPs don't need to be in the same subnet as the WLC — their switch port is an access port in a management VLAN, while the WLC's switch port is a trunk carrying the management VLAN and all client VLANs."
+  },
+  {
+    "t": "WLC centralised functions",
+    "e": "Real-time monitoring of the network and RF spectrum: dynamic channel assignment, transmit power optimisation, self-healing coverage (boosting nearby APs' power to cover a lost AP), faster client roaming, client load balancing, rogue AP detection, and wireless intrusion protection"
+  },
+  {
+    "t": "WLC deployment models",
+    "e": "Unified (central, up to 6000 APs) · Cloud-based/virtual (up to 3000 APs) · Embedded in an access-layer switch stack (up to 200 APs) · Mobility Express, a WLC running on an AP itself (up to 100 APs)"
+  },
+  {
+    "t": "LAP operating modes",
+    "e": "Local (default — serves clients, scans channels in spare time) · Bridge (point-to-point/multipoint bridge) · FlexConnect · Flex+Bridge (FlexConnect plus mesh)",
+    "d": "Special modes: Monitor (sensor only), Sniffer (forwards traffic to an analyser like Wireshark), Rogue detector, SE-Connect (spectrum analysis)."
+  },
+  {
+    "t": "FlexConnect",
+    "e": "Lets a LAP transition between split-MAC (connected) and autonomous (standalone) modes depending on WLC connectivity",
+    "d": "Used for remote-office APs: centralised management via the WLC, but local wireless client traffic stays local instead of tunnelling to the WLC and back."
+  },
+  {
+    "t": "FlexConnect states",
+    "e": "Authentication-Central/Switch-Central: connected mode, traffic switched via CAPWAP to the WLC (fails over to standalone if the tunnel drops) · Authentication-Central/Switch-Local: connected mode, clients still authenticate via WLC but traffic is switched locally · Authentication-Local/Switch-Local: standalone mode, both authentication and switching are local"
+  },
+  {
+    "t": "FlexConnect ACLs",
+    "e": "Manage access control of locally switched data, applied per-AP and per-VLAN",
+    "d": "Like traditional ACLs, they have an implicit deny any at the end."
+  },
+  {
+    "t": "Wireless authentication vs encryption",
+    "e": "A client must be authenticated to associate with an AP; encryption is separate and governs whether it can actually exchange messages afterwards",
+    "d": "WPA1/2/3-Personal uses open authentication (any client can associate) but requires a pre-shared key to negotiate encryption keys before communication works."
+  },
+  {
+    "t": "Message Integrity Check (MIC)",
+    "e": "A checksum carried in wireless frames that lets the receiver detect if a message was corrupted or maliciously altered",
+    "d": "If the MIC computed by sender and receiver don't match, the frame is dropped."
+  },
+  {
+    "t": "WEP and shared key authentication",
+    "e": "WEP (Wired Equivalent Privacy) is deprecated and no longer secure",
+    "d": "Shared key authentication (AP sends a challenge, client responds using a matching pre-shared key) is even less secure than open authentication with WEP, since it generates traffic useful for cryptanalysis."
+  },
+  {
+    "t": "802.1X/EAP authentication",
+    "e": "AP uses open authentication to begin the connection, but the client (called a supplicant) must then authenticate with an Authentication Server before reaching the rest of the network"
+  },
+  {
+    "t": "EAP-based methods — LEAP",
+    "e": "Early Cisco-proprietary method, used with WEP; a dynamic, frequently-changed WEP key attempted to work around WEP's weaknesses",
+    "d": "WEP is fundamentally broken and no amount of alteration fixes it — LEAP is now as deprecated as WEP."
+  },
+  {
+    "t": "EAP-based methods — EAP-FAST",
+    "e": "Cisco-proprietary; the Authentication Server generates a Protected Access Credential (PAC), shared with the supplicant, which they use to authenticate each other and build a TLS tunnel",
+    "d": "The TLS tunnel is then used to authenticate the end user, e.g. via username and password."
+  },
+  {
+    "t": "EAP-based methods — PEAP and EAP-TLS",
+    "e": "PEAP: the AS presents a signed certificate; once verified, a tunnel is built for authentication via MSCHAPv2 or GTC · EAP-TLS: same idea as PEAP, but the client also needs a certificate, usually requiring a full PKI"
+  },
+  {
+    "t": "Wireless encryption standards",
+    "e": "WPA: uses TKIP, a stopgap for WEP-era hardware, now deprecated · WPA2: uses CCMP (AES counter mode + CBC-MAC for MIC), still secure · WPA3: uses GCMP (AES counter mode + Galois MAC), the most secure, relatively new"
+  },
+  {
+    "t": "Wireless Layer 3 security options",
+    "e": "None (disabled) · IPSec (client establishes an IPSec tunnel) · VPN Passthrough (client establishes a VPN tunnel to a defined server) · Web Authentication (login via webpage, common for Guest WLANs) · Web Passthrough (agree to conditions via webpage, common for Guest WLANs)"
+  },
+  {
+    "t": "CCKM",
+    "e": "Cisco-proprietary fast-rekeying method that speeds up roaming between APs",
+    "d": "Used with 802.1X, it avoids the need to re-authenticate with the RADIUS server on every roam."
+  },
+  {
+    "t": "WLC physical ports",
+    "e": "Console (out-of-band, initial boot/recovery) · Service port (Ethernet, out-of-band, initial boot/recovery) · Distribution System Port/DSP (normal CAPWAP traffic, usually a trunk aggregated as a Link Aggregation Group without auto-negotiation) · Redundancy port (to a second WLC for HA/failover)"
+  },
+  {
+    "t": "WLC virtual interfaces",
+    "e": "Management IP: for the web UI, CLI and management traffic like RADIUS/NTP/syslog — LAPs connect here via CAPWAP · AP-manager interface: Layer 3 comms with LAPs · Redundancy management: backup WLC's management IP · Virtual interface: faces wireless clients, e.g. relaying DHCP; kept identical across every WLC in a mobility group · Service Port IP: bound to the service port · Dynamic interface: connects a VLAN to a WLAN"
+  }
+]
