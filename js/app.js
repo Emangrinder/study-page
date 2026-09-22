@@ -282,7 +282,7 @@
     container.appendChild(dotsWrap);
 
     var actions = el("div", { className: "study-actions" });
-    var againBtn = el("button", { className: "again-btn", attrs: { "aria-label": "Again" } });
+    var againBtn = el("button", { className: "again-btn", attrs: { "aria-label": "Flip card" } });
     againBtn.innerHTML = "↻";
     var understoodBtn = el("button", { className: "understood-btn", attrs: { "aria-label": "Understood" } });
     understoodBtn.innerHTML = "✓";
@@ -291,6 +291,8 @@
     container.appendChild(actions);
 
     var cardEl = null;
+    var currentStages = null;
+    var currentStagesWrap = null;
     var busy = false;
 
     function updateProgress() {
@@ -323,10 +325,12 @@
       var initStage = Math.min(1, stages.length - 1);
       flipStage = initStage;
       busy = false;
+      currentStages = stages;
 
       cardEl = el("div", { className: "study-card" });
       cardEl.setAttribute("data-flip-stage", String(initStage));
       var stagesWrap = el("div", { className: "stage-stack" });
+      currentStagesWrap = stagesWrap;
       cardEl.appendChild(stagesWrap);
       renderStageBlocks(stagesWrap, stages, initStage, false);
 
@@ -340,7 +344,7 @@
       renderDots(stages.length, initStage);
       updateProgress();
 
-      attachGestures(cardEl, stages, stagesWrap, againFlag, understoodFlag);
+      attachGestures(cardEl, againFlag, understoodFlag);
     }
 
     function renderStageBlocks(stagesWrap, stages, uptoIdx, animateLast) {
@@ -361,7 +365,7 @@
       }
     }
 
-    function attachGestures(cardEl, stages, stagesWrap, againFlag, understoodFlag) {
+    function attachGestures(cardEl, againFlag, understoodFlag) {
       function onPointerDown(e) {
         if (busy || pointerId !== null) return;
         pointerId = e.pointerId;
@@ -423,7 +427,7 @@
           againFlag.style.opacity = 0;
           understoodFlag.style.opacity = 0;
           if (lockedAxis === null || (Math.abs(dx) < 6 && Math.abs(dy) < 6)) {
-            handleTap(stages, stagesWrap);
+            swipeAway("again"); // tap = advance to next card
           }
         }
         lockedAxis = null;
@@ -435,13 +439,15 @@
       cardEl.addEventListener("pointercancel", onPointerUp);
     }
 
-    function handleTap(stages, stagesWrap) {
+    function flipCard() {
+      if (!currentStages || !currentStagesWrap) return;
+      var stages = currentStages;
       var initStage = Math.min(1, stages.length - 1);
       if (busy || stages.length <= initStage + 1) return;
       busy = true;
       flipStage = flipStage + 1;
       if (flipStage >= stages.length) flipStage = initStage;
-      renderStageBlocks(stagesWrap, stages, flipStage, true);
+      renderStageBlocks(currentStagesWrap, stages, flipStage, true);
       cardEl.setAttribute("data-flip-stage", String(flipStage));
       renderDots(stages.length, flipStage);
       setTimeout(function () { busy = false; }, 180);
@@ -468,7 +474,7 @@
     }
 
     understoodBtn.addEventListener("click", function () { swipeAway("understood"); });
-    againBtn.addEventListener("click", function () { swipeAway("again"); });
+    againBtn.addEventListener("click", flipCard);
 
     function renderComplete() {
       container.innerHTML = "";

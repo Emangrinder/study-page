@@ -23,8 +23,14 @@
     "id": "ccna",
     "name": "CCNA",
     "subtitle": "Cisco Certified Network Associate",
-    "comingSoon": true,
-    "decks": []
+    "decks": [
+      {
+        "id": "topics",
+        "name": "Exam Topics",
+        "subtitle": "Objective → domain → what it covers",
+        "dataFile": "data/ccna-topics.json"
+      }
+    ]
   },
   {
     "id": "aws-saa",
