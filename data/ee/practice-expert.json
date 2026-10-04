@@ -1,0 +1,606 @@
+{
+ "id": "ee-practice-expert",
+ "name": "Practice · Expert",
+ "cards": [
+  {
+   "id": "ee-p-exp-1",
+   "sides": [
+    {
+     "text": "A MOSFET has μCox = 100 µA/V², W/L = 20, and Vov = 0.2 V. What is I_D?",
+     "options": [
+      "4 µA",
+      "40 µA",
+      "400 µA",
+      "80 µA"
+     ]
+    },
+    {
+     "text": "B. 40 µA",
+     "more": {
+      "text": "I_D = ½ × 100 µ × 20 × 0.04 = 40 µA."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-exp-2",
+   "sides": [
+    {
+     "text": "What is the kT/C noise on a 1 pF capacitor at 300 K?",
+     "options": [
+      "About 64 mV",
+      "About 6.4 µV",
+      "About 64 µV",
+      "About 640 µV"
+     ]
+    },
+    {
+     "text": "C. About 64 µV",
+     "more": {
+      "text": "√(kT/C) ≈ 64 µV."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-exp-3",
+   "sides": [
+    {
+     "text": "An ADC has a SINAD of 62 dB. What is its ENOB?",
+     "options": [
+      "About 8 bits",
+      "About 62 bits",
+      "About 12 bits",
+      "About 10 bits"
+     ]
+    },
+    {
+     "text": "D. About 10 bits",
+     "more": {
+      "text": "(62 − 1.76) / 6.02 ≈ 10."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-exp-4",
+   "sides": [
+    {
+     "text": "A 10 MHz input is sampled with 1 ps rms jitter. What SNR does jitter limit it to?",
+     "options": [
+      "About 44 dB",
+      "About 104 dB",
+      "About 84 dB",
+      "About 62 dB"
+     ]
+    },
+    {
+     "text": "C. About 84 dB",
+     "more": {
+      "text": "−20 log₁₀(2π × 10⁷ × 10⁻¹²) ≈ 84 dB."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-exp-5",
+   "sides": [
+    {
+     "text": "An air-filled WR-90 waveguide has a = 2.286 cm. What is the TE₁₀ cutoff?",
+     "options": [
+      "About 3.3 GHz",
+      "About 2.2 GHz",
+      "About 6.56 GHz",
+      "About 13 GHz"
+     ]
+    },
+    {
+     "text": "C. About 6.56 GHz",
+     "more": {
+      "text": "f_c = c / (2a)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-exp-6",
+   "sides": [
+    {
+     "text": "A radar uses 150 MHz of bandwidth. What is its range resolution?",
+     "options": [
+      "About 0.1 m",
+      "About 1 m",
+      "About 100 m",
+      "About 10 m"
+     ]
+    },
+    {
+     "text": "B. About 1 m",
+     "more": {
+      "text": "c / (2B) = 3 × 10⁸ / (3 × 10⁸) = 1 m."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-exp-7",
+   "sides": [
+    {
+     "text": "A Kalman filter has prediction variance 4 and measurement noise 4. What is the gain?",
+     "options": [
+      "1",
+      "0.5",
+      "0.25",
+      "0.8"
+     ]
+    },
+    {
+     "text": "B. 0.5",
+     "more": {
+      "text": "K = P / (P + R) = 4 / 8."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-exp-8",
+   "sides": [
+    {
+     "text": "A code has d_min = 7. How many errors can it correct?",
+     "options": [
+      "7",
+      "2",
+      "6",
+      "3"
+     ]
+    },
+    {
+     "text": "D. 3",
+     "more": {
+      "text": "t = ⌊(d_min − 1)/2⌋ = 3."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-exp-9",
+   "sides": [
+    {
+     "text": "What is the ideal array gain of 16 elements?",
+     "options": [
+      "About 16 dB",
+      "About 4 dB",
+      "About 24 dB",
+      "About 12 dB"
+     ]
+    },
+    {
+     "text": "D. About 12 dB",
+     "more": {
+      "text": "10 log₁₀ 16 ≈ 12 dB."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-exp-10",
+   "sides": [
+    {
+     "text": "A coin lands heads 25% of the time. What is its entropy?",
+     "options": [
+      "About 0.81 bits",
+      "1 bit",
+      "0.5 bits",
+      "0.25 bits"
+     ]
+    },
+    {
+     "text": "A. About 0.81 bits",
+     "more": {
+      "text": "−0.25 log₂ 0.25 − 0.75 log₂ 0.75 ≈ 0.81."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-exp-11",
+   "sides": [
+    {
+     "text": "A 1 pF switched capacitor runs at 1 MHz. What is its equivalent resistance?",
+     "options": [
+      "1 Ω",
+      "1 MΩ",
+      "1 GΩ",
+      "1 kΩ"
+     ]
+    },
+    {
+     "text": "B. 1 MΩ",
+     "more": {
+      "text": "R = 1 / (f C) = 1 / (10⁶ × 10⁻¹²)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-exp-12",
+   "sides": [
+    {
+     "text": "A CMOS block has α = 0.1, C = 1 nF, V = 1 V, and f = 1 GHz. What is its dynamic power?",
+     "options": [
+      "1 W",
+      "0.01 W",
+      "10 mW",
+      "0.1 W"
+     ]
+    },
+    {
+     "text": "D. 0.1 W",
+     "more": {
+      "text": "P = α C V² f = 0.1 × 10⁻⁹ × 1 × 10⁹."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-exp-13",
+   "sides": [
+    {
+     "text": "A power loop has 10 nH of inductance and switches at 1 A/ns. How large is the voltage spike?",
+     "options": [
+      "1 V",
+      "100 V",
+      "10 V",
+      "0.1 V"
+     ]
+    },
+    {
+     "text": "C. 10 V",
+     "more": {
+      "text": "V = L × di/dt = 10 nH × 1 A/ns."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-exp-14",
+   "sides": [
+    {
+     "text": "What is the phase offset between phases in a 4-phase interleaved buck converter?",
+     "options": [
+      "90°",
+      "180°",
+      "120°",
+      "45°"
+     ]
+    },
+    {
+     "text": "A. 90°",
+     "more": {
+      "text": "360° / 4."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-exp-15",
+   "sides": [
+    {
+     "text": "A DDS has a 100 MHz clock and a 32-bit accumulator. What is its frequency resolution?",
+     "options": [
+      "About 0.023 Hz",
+      "About 1 Hz",
+      "About 0.0023 Hz",
+      "About 23 Hz"
+     ]
+    },
+    {
+     "text": "A. About 0.023 Hz",
+     "more": {
+      "text": "f_clk / 2³² ≈ 0.0233 Hz."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-exp-16",
+   "sides": [
+    {
+     "text": "A 1 V rail with ±5% tolerance sees a 5 A load step. What is the target PDN impedance?",
+     "options": [
+      "1 mΩ",
+      "50 mΩ",
+      "10 mΩ",
+      "100 mΩ"
+     ]
+    },
+    {
+     "text": "C. 10 mΩ",
+     "more": {
+      "text": "0.05 V / 5 A."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-exp-17",
+   "sides": [
+    {
+     "text": "What is the maximum Doppler shift at 2 GHz and 30 m/s?",
+     "options": [
+      "600 Hz",
+      "2 kHz",
+      "200 Hz",
+      "20 Hz"
+     ]
+    },
+    {
+     "text": "C. 200 Hz",
+     "more": {
+      "text": "f_D = v f_c / c."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-exp-18",
+   "sides": [
+    {
+     "text": "A channel has a 1 µs delay spread. What is its approximate coherence bandwidth?",
+     "options": [
+      "About 5 MHz",
+      "About 1 MHz",
+      "About 20 kHz",
+      "About 200 kHz"
+     ]
+    },
+    {
+     "text": "D. About 200 kHz",
+     "more": {
+      "text": "B_c ≈ 1 / (5σ)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-exp-19",
+   "sides": [
+    {
+     "text": "An FMCW radar sweeps 4 GHz. What is its range resolution?",
+     "options": [
+      "About 37.5 cm",
+      "About 3.75 m",
+      "About 0.375 cm",
+      "About 3.75 cm"
+     ]
+    },
+    {
+     "text": "D. About 3.75 cm",
+     "more": {
+      "text": "c / (2B) = 3 × 10⁸ / (8 × 10⁹)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-exp-20",
+   "sides": [
+    {
+     "text": "A 5%-droop generator runs at 60 Hz with no load. What is its frequency at full load?",
+     "options": [
+      "55 Hz",
+      "63 Hz",
+      "59.5 Hz",
+      "57 Hz"
+     ]
+    },
+    {
+     "text": "D. 57 Hz",
+     "more": {
+      "text": "60 × 0.95 = 57 Hz."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-exp-21",
+   "sides": [
+    {
+     "text": "A fundamental of 100 V has a 5 V fifth harmonic and a 3 V seventh. What is the THD?",
+     "options": [
+      "About 15%",
+      "About 8%",
+      "About 5.8%",
+      "About 3%"
+     ]
+    },
+    {
+     "text": "C. About 5.8%",
+     "more": {
+      "text": "√(5² + 3²) / 100."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-exp-22",
+   "sides": [
+    {
+     "text": "Which HVDC converter type can black-start a dead grid?",
+     "options": [
+      "Thyristor bridge",
+      "Diode rectifier",
+      "Line-commutated converter (LCC)",
+      "Voltage-source converter (VSC)"
+     ]
+    },
+    {
+     "text": "D. Voltage-source converter (VSC)",
+     "more": {
+      "text": "VSCs don't need a strong AC grid to commutate."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-exp-23",
+   "sides": [
+    {
+     "text": "Which transform gives a rotating frame where AC quantities become DC in field-oriented control?",
+     "options": [
+      "z-transform",
+      "Hilbert",
+      "Park",
+      "Laplace"
+     ]
+    },
+    {
+     "text": "C. Park",
+     "more": {
+      "text": "Clarke gives αβ, and Park rotates into dq."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-exp-24",
+   "sides": [
+    {
+     "text": "Which scheduler can reach 100% utilization on a single core?",
+     "options": [
+      "Rate-monotonic",
+      "Earliest deadline first",
+      "Round-robin",
+      "FIFO"
+     ]
+    },
+    {
+     "text": "B. Earliest deadline first",
+     "more": {
+      "text": "EDF is optimal for preemptive single-processor scheduling."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-exp-25",
+   "sides": [
+    {
+     "text": "Which code does 5G use for control channels?",
+     "options": [
+      "Reed–Solomon codes",
+      "Turbo codes",
+      "LDPC codes",
+      "Polar codes"
+     ]
+    },
+    {
+     "text": "D. Polar codes",
+     "more": {
+      "text": "LDPC is for data and polar for control."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-exp-26",
+   "sides": [
+    {
+     "text": "Which flash type usually requires error-correcting code?",
+     "options": [
+      "Both never",
+      "EEPROM only",
+      "NAND",
+      "NOR"
+     ]
+    },
+    {
+     "text": "C. NAND",
+     "more": {
+      "text": "NAND has bit errors and bad blocks."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-exp-27",
+   "sides": [
+    {
+     "text": "Which MQTT quality of service delivers exactly once?",
+     "options": [
+      "QoS 2",
+      "QoS 3",
+      "QoS 0",
+      "QoS 1"
+     ]
+    },
+    {
+     "text": "A. QoS 2",
+     "more": {
+      "text": "QoS 0 is at most once and QoS 1 is at least once."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-exp-28",
+   "sides": [
+    {
+     "text": "What anchors a secure boot chain of trust?",
+     "options": [
+      "External flash",
+      "A bootloader password",
+      "A firmware version number",
+      "A hardware root of trust"
+     ]
+    },
+    {
+     "text": "D. A hardware root of trust",
+     "more": {
+      "text": "Immutable ROM and keys anchor verification."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-exp-29",
+   "sides": [
+    {
+     "text": "Which MOSFET dimension increases output resistance when it grows?",
+     "options": [
+      "Gate width",
+      "Drain doping",
+      "Channel length",
+      "Oxide thickness"
+     ]
+    },
+    {
+     "text": "C. Channel length",
+     "more": {
+      "text": "Longer channels reduce channel-length modulation."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-exp-30",
+   "sides": [
+    {
+     "text": "In an integer-N PLL, what is the output frequency?",
+     "options": [
+      "N × f_ref",
+      "f_ref / N",
+      "f_ref + N",
+      "N² × f_ref"
+     ]
+    },
+    {
+     "text": "A. N × f_ref",
+     "more": {
+      "text": "The divider forces f_out / N = f_ref."
+     }
+    }
+   ]
+  }
+ ]
+}

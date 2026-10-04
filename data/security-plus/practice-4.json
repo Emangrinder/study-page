@@ -1,0 +1,506 @@
+{
+ "id": "security-plus-practice-4",
+ "name": "Practice · 4 Security Operations",
+ "cards": [
+  {
+   "id": "sec-p4-1",
+   "sides": [
+    {
+     "text": "A company wants to enforce encryption and remote wipe on employee smartphones. Which solution fits?",
+     "options": [
+      "NAC",
+      "DLP",
+      "SIEM",
+      "MDM"
+     ]
+    },
+    {
+     "text": "D. MDM",
+     "more": {
+      "text": "Mobile device management enforces policy and remote wipe on phones."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p4-2",
+   "sides": [
+    {
+     "text": "Employees choose a laptop from an approved list that the company owns. Which model is this?",
+     "options": [
+      "COBO",
+      "BYOD",
+      "COPE",
+      "CYOD"
+     ]
+    },
+    {
+     "text": "D. CYOD",
+     "more": {
+      "text": "CYOD lets employees pick from approved company devices."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p4-3",
+   "sides": [
+    {
+     "text": "Which Wi-Fi standard uses SAE to resist offline password cracking?",
+     "options": [
+      "WPA3",
+      "WEP",
+      "WPS",
+      "WPA2-PSK"
+     ]
+    },
+    {
+     "text": "A. WPA3",
+     "more": {
+      "text": "WPA3 replaces the PSK handshake with SAE."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p4-4",
+   "sides": [
+    {
+     "text": "Which cookie flag stops JavaScript from reading a session cookie?",
+     "options": [
+      "Secure",
+      "Domain",
+      "SameSite",
+      "HttpOnly"
+     ]
+    },
+    {
+     "text": "D. HttpOnly",
+     "more": {
+      "text": "HttpOnly blocks script access. Secure limits it to HTTPS."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p4-5",
+   "sides": [
+    {
+     "text": "A scan logs in to servers to check installed patches. Which type of scan is this?",
+     "options": [
+      "Credentialed scan",
+      "Non-credentialed scan",
+      "Port scan",
+      "Passive scan"
+     ]
+    },
+    {
+     "text": "A. Credentialed scan",
+     "more": {
+      "text": "Credentialed scans see patches and settings accurately."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p4-6",
+   "sides": [
+    {
+     "text": "A vulnerability scanner reports a flaw on a host that is already patched. What is this?",
+     "options": [
+      "False positive",
+      "False negative",
+      "True positive",
+      "True negative"
+     ]
+    },
+    {
+     "text": "A. False positive",
+     "more": {
+      "text": "A false positive reports a problem that doesn't exist."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p4-7",
+   "sides": [
+    {
+     "text": "A flaw has a CVSS score of 9.8. How is it rated?",
+     "options": [
+      "Medium",
+      "Low",
+      "Critical",
+      "Informational"
+     ]
+    },
+    {
+     "text": "C. Critical",
+     "more": {
+      "text": "CVSS 9.0 to 10.0 is Critical."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p4-8",
+   "sides": [
+    {
+     "text": "A vendor can't patch quickly, so a WAF rule blocks exploitation in the meantime. What is this?",
+     "options": [
+      "Compensating control",
+      "Risk avoidance",
+      "Decommissioning",
+      "Risk transfer"
+     ]
+    },
+    {
+     "text": "A. Compensating control",
+     "more": {
+      "text": "A WAF rule stands in for the missing patch."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p4-9",
+   "sides": [
+    {
+     "text": "Which tool aggregates and correlates logs from many sources to alert on attacks?",
+     "options": [
+      "DLP",
+      "NetFlow collector",
+      "SNMP manager",
+      "SIEM"
+     ]
+    },
+    {
+     "text": "D. SIEM",
+     "more": {
+      "text": "A SIEM centralizes and correlates security logs."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p4-10",
+   "sides": [
+    {
+     "text": "A DNS record lists the mail servers allowed to send for a domain. Which email control is this?",
+     "options": [
+      "DMARC",
+      "DKIM",
+      "SPF",
+      "DNSSEC"
+     ]
+    },
+    {
+     "text": "C. SPF",
+     "more": {
+      "text": "SPF lists authorized sending servers."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p4-11",
+   "sides": [
+    {
+     "text": "Which email control tells receivers to reject messages that fail SPF and DKIM alignment?",
+     "options": [
+      "SPF",
+      "DMARC",
+      "S/MIME",
+      "DKIM"
+     ]
+    },
+    {
+     "text": "B. DMARC",
+     "more": {
+      "text": "DMARC sets the policy for authentication failures."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p4-12",
+   "sides": [
+    {
+     "text": "A tool records process behavior on laptops and can isolate an infected one. Which is it?",
+     "options": [
+      "UBA",
+      "EDR",
+      "FIM",
+      "Antivirus signatures"
+     ]
+    },
+    {
+     "text": "B. EDR",
+     "more": {
+      "text": "EDR monitors endpoint behavior and enables response actions."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p4-13",
+   "sides": [
+    {
+     "text": "A user logs in once and opens several applications without re-entering credentials. Which is this?",
+     "options": [
+      "SSO",
+      "Attestation",
+      "MFA",
+      "PAM"
+     ]
+    },
+    {
+     "text": "A. SSO",
+     "more": {
+      "text": "Single sign-on authenticates once for many apps."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p4-14",
+   "sides": [
+    {
+     "text": "Which protocol lets an app access a user's resources through tokens without the password?",
+     "options": [
+      "SAML",
+      "LDAP",
+      "OAuth",
+      "Kerberos"
+     ]
+    },
+    {
+     "text": "C. OAuth",
+     "more": {
+      "text": "OAuth delegates authorization with tokens."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p4-15",
+   "sides": [
+    {
+     "text": "Which access control model decides based on attributes of the user, resource, and environment?",
+     "options": [
+      "MAC",
+      "ABAC",
+      "RBAC",
+      "DAC"
+     ]
+    },
+    {
+     "text": "B. ABAC",
+     "more": {
+      "text": "ABAC evaluates multiple attributes against policy."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p4-16",
+   "sides": [
+    {
+     "text": "Admins receive elevated rights for two hours, after which the rights expire automatically. Which approach is this?",
+     "options": [
+      "Password vaulting",
+      "Attestation",
+      "Role-based access",
+      "Just-in-time permissions"
+     ]
+    },
+    {
+     "text": "D. Just-in-time permissions",
+     "more": {
+      "text": "JIT grants temporary privilege and then revokes it."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p4-17",
+   "sides": [
+    {
+     "text": "Which authentication method is phishing-resistant and uses hardware with public-key cryptography?",
+     "options": [
+      "Email link",
+      "SMS code",
+      "Security question",
+      "FIDO2 security key"
+     ]
+    },
+    {
+     "text": "D. FIDO2 security key",
+     "more": {
+      "text": "FIDO2 keys verify the site, so phishing doesn't work."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p4-18",
+   "sides": [
+    {
+     "text": "Which incident response phase removes malware and closes the entry point?",
+     "options": [
+      "Containment",
+      "Lessons learned",
+      "Eradication",
+      "Recovery"
+     ]
+    },
+    {
+     "text": "C. Eradication",
+     "more": {
+      "text": "Eradication removes the cause. Containment only limits the spread."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p4-19",
+   "sides": [
+    {
+     "text": "Which data should be collected first according to the order of volatility?",
+     "options": [
+      "Backups",
+      "Disk image",
+      "RAM",
+      "Remote logs"
+     ]
+    },
+    {
+     "text": "C. RAM",
+     "more": {
+      "text": "More volatile data is lost first, so RAM comes before disk."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p4-20",
+   "sides": [
+    {
+     "text": "Everyone who handled a hard drive signs a log. What is this called?",
+     "options": [
+      "Legal hold",
+      "Chain of custody",
+      "E-discovery",
+      "Preservation order"
+     ]
+    },
+    {
+     "text": "B. Chain of custody",
+     "more": {
+      "text": "Chain of custody documents who handled evidence and when."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p4-21",
+   "sides": [
+    {
+     "text": "Analysts search logs for signs of an attacker before any alert fires. Which activity is this?",
+     "options": [
+      "Root cause analysis",
+      "Threat hunting",
+      "Penetration testing",
+      "Alert tuning"
+     ]
+    },
+    {
+     "text": "B. Threat hunting",
+     "more": {
+      "text": "Threat hunting proactively looks for hidden compromise."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p4-22",
+   "sides": [
+    {
+     "text": "Which log source shows which device held a given IP address at a certain time?",
+     "options": [
+      "DHCP or network logs",
+      "Application logs",
+      "Vulnerability scans",
+      "Code signing logs"
+     ]
+    },
+    {
+     "text": "A. DHCP or network logs",
+     "more": {
+      "text": "DHCP logs map IP addresses to devices over time."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p4-23",
+   "sides": [
+    {
+     "text": "A SOAR playbook calls a firewall API to block an IP automatically. Which benefit does this show?",
+     "options": [
+      "Faster reaction time",
+      "Higher cost",
+      "Technical debt",
+      "A single point of failure"
+     ]
+    },
+    {
+     "text": "A. Faster reaction time",
+     "more": {
+      "text": "Automation responds in seconds. The other options are considerations, not benefits."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p4-24",
+   "sides": [
+    {
+     "text": "A retired server's drives are cryptographically erased so they can be reused. Which process is this?",
+     "options": [
+      "Data retention",
+      "Enumeration",
+      "Destruction",
+      "Sanitization"
+     ]
+    },
+    {
+     "text": "D. Sanitization",
+     "more": {
+      "text": "Sanitization removes data while allowing media to be reused."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p4-25",
+   "sides": [
+    {
+     "text": "A device without current patches is placed on a restricted VLAN until it's fixed. Which technology is this?",
+     "options": [
+      "HSM",
+      "SCAP",
+      "NAC",
+      "WAF"
+     ]
+    },
+    {
+     "text": "C. NAC",
+     "more": {
+      "text": "NAC checks device posture before granting full access."
+     }
+    }
+   ]
+  }
+ ]
+}

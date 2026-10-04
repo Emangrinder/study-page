@@ -1,0 +1,4437 @@
+{
+ "id": "ee-expert",
+ "name": "4 · Expert",
+ "cards": [
+  {
+   "sides": [
+    {
+     "text": "Maxwell's equations",
+     "sub": "Electromagnetics · Expert"
+    },
+    {
+     "text": "Four laws that unify electricity and magnetism",
+     "more": {
+      "text": "Gauss (electric): ∇·E = ρ/ε₀. Gauss (magnetic): ∇·B = 0. Faraday: ∇×E = −∂B/∂t. Ampère–Maxwell: ∇×B = μ₀J + μ₀ε₀ ∂E/∂t."
+     }
+    },
+    {
+     "text": "Which Maxwell equation says a changing magnetic field creates an electric field?",
+     "more": {
+      "text": "Faraday's law."
+     }
+    }
+   ],
+   "id": "ee-x-1"
+  },
+  {
+   "sides": [
+    {
+     "text": "Speed of light from Maxwell",
+     "sub": "Electromagnetics · Expert"
+    },
+    {
+     "text": "c = 1 / √(μ₀ε₀)",
+     "more": {
+      "text": "Maxwell found that electromagnetic waves travel at a speed set by the permeability and permittivity of free space, matching the measured speed of light."
+     }
+    },
+    {
+     "text": "What two constants set the speed of electromagnetic waves in vacuum?",
+     "more": {
+      "text": "Permeability (μ₀) and permittivity (ε₀) of free space."
+     }
+    }
+   ],
+   "id": "ee-x-2"
+  },
+  {
+   "sides": [
+    {
+     "text": "Wave impedance of free space",
+     "sub": "Electromagnetics · Expert"
+    },
+    {
+     "text": "η₀ = √(μ₀/ε₀) ≈ 377 Ω",
+     "more": {
+      "text": "The ratio of electric to magnetic field in a plane wave in vacuum. It sets reflection at material boundaries."
+     }
+    },
+    {
+     "text": "What is the impedance of free space?",
+     "more": {
+      "text": "About 377 Ω."
+     }
+    }
+   ],
+   "id": "ee-x-3"
+  },
+  {
+   "sides": [
+    {
+     "text": "Poynting vector",
+     "sub": "Electromagnetics · Expert"
+    },
+    {
+     "text": "S = E × H: power flow of a wave",
+     "more": {
+      "text": "Gives the direction and density (W/m²) of electromagnetic power flow. Averaging over time gives the intensity."
+     }
+    },
+    {
+     "text": "What does the Poynting vector represent?",
+     "more": {
+      "text": "Power flow per unit area of an electromagnetic wave."
+     }
+    }
+   ],
+   "id": "ee-x-4"
+  },
+  {
+   "sides": [
+    {
+     "text": "Skin depth",
+     "sub": "Electromagnetics · Expert"
+    },
+    {
+     "text": "δ = √(2 / (ωμσ))",
+     "more": {
+      "text": "How deep current penetrates a conductor. Higher frequency or conductivity gives a smaller depth."
+     }
+    },
+    {
+     "text": "What happens to skin depth as frequency rises?",
+     "more": {
+      "text": "It decreases."
+     }
+    }
+   ],
+   "id": "ee-x-5"
+  },
+  {
+   "sides": [
+    {
+     "text": "Reflection at a boundary",
+     "sub": "Electromagnetics · Expert"
+    },
+    {
+     "text": "Impedance mismatch reflects power",
+     "more": {
+      "text": "For normal incidence, Γ = (η₂ − η₁)/(η₂ + η₁). A wave entering a conductor is mostly reflected."
+     }
+    },
+    {
+     "text": "What causes a wave to reflect at a boundary between two materials?",
+     "more": {
+      "text": "A difference in wave impedance."
+     }
+    }
+   ],
+   "id": "ee-x-6"
+  },
+  {
+   "sides": [
+    {
+     "text": "Rectangular waveguide",
+     "sub": "Electromagnetics · Expert"
+    },
+    {
+     "text": "A hollow metal tube that guides microwaves",
+     "more": {
+      "text": "Below the cutoff frequency waves don't propagate. For the TE₁₀ mode in an air-filled guide, f_c = c / (2a), where a is the wide dimension."
+     }
+    },
+    {
+     "text": "a = 2.286 cm waveguide. What is the TE₁₀ cutoff?",
+     "more": {
+      "text": "About 6.56 GHz (3 × 10⁸ / (2 × 0.02286))."
+     }
+    }
+   ],
+   "id": "ee-x-7"
+  },
+  {
+   "sides": [
+    {
+     "text": "Radiation from antennas",
+     "sub": "Electromagnetics · Expert"
+    },
+    {
+     "text": "Accelerating charges radiate",
+     "more": {
+      "text": "In the far field the fields fall as 1/r and the power density as 1/r². A half-wave dipole has a radiation resistance of about 73 Ω."
+     }
+    },
+    {
+     "text": "What is a half-wave dipole's approximate radiation resistance?",
+     "more": {
+      "text": "About 73 Ω."
+     }
+    }
+   ],
+   "id": "ee-x-8"
+  },
+  {
+   "sides": [
+    {
+     "text": "Effective aperture",
+     "sub": "Electromagnetics · Expert"
+    },
+    {
+     "text": "A_e = λ² G / (4π)",
+     "more": {
+      "text": "The area an antenna effectively captures. Higher gain or longer wavelength means more captured power."
+     }
+    },
+    {
+     "text": "Which antenna parameter relates gain to effective capture area?",
+     "more": {
+      "text": "Effective aperture."
+     }
+    }
+   ],
+   "id": "ee-x-9"
+  },
+  {
+   "sides": [
+    {
+     "text": "Antenna arrays",
+     "sub": "Electromagnetics · Expert"
+    },
+    {
+     "text": "Combine elements to shape and steer a beam",
+     "more": {
+      "text": "The array factor depends on element spacing and phase. Phase shifts steer the beam electronically (phased arrays)."
+     }
+    },
+    {
+     "text": "How does a phased array steer its beam?",
+     "more": {
+      "text": "By adjusting the phase of each element."
+     }
+    }
+   ],
+   "id": "ee-x-10"
+  },
+  {
+   "sides": [
+    {
+     "text": "Radar basics",
+     "sub": "Electromagnetics · Expert"
+    },
+    {
+     "text": "Range from echo delay; speed from Doppler",
+     "more": {
+      "text": "Range resolution is c / (2B), where B is the signal bandwidth. Doppler shift reveals radial velocity."
+     }
+    },
+    {
+     "text": "A radar uses 150 MHz of bandwidth. What is its range resolution?",
+     "more": {
+      "text": "About 1 m."
+     }
+    }
+   ],
+   "id": "ee-x-11"
+  },
+  {
+   "sides": [
+    {
+     "text": "Noise figure cascade",
+     "sub": "RF · Expert"
+    },
+    {
+     "text": "F_total = F₁ + (F₂ − 1)/G₁ + …",
+     "more": {
+      "text": "The first stage dominates, so a low-noise, high-gain amplifier belongs at the receiver front end."
+     }
+    },
+    {
+     "text": "Why does the first stage dominate a receiver's noise figure?",
+     "more": {
+      "text": "Later stages' noise is divided by the gain ahead of them."
+     }
+    }
+   ],
+   "id": "ee-x-12"
+  },
+  {
+   "sides": [
+    {
+     "text": "RF amplifier stability",
+     "sub": "RF · Expert"
+    },
+    {
+     "text": "Avoid oscillation",
+     "more": {
+      "text": "Unconditional stability needs K > 1 and |Δ| < 1 (from S-parameters). Resistive loading or feedback can restore it."
+     }
+    },
+    {
+     "text": "What can an RF amplifier do if it's potentially unstable?",
+     "more": {
+      "text": "Oscillate, unless stabilized with resistive loading or feedback."
+     }
+    }
+   ],
+   "id": "ee-x-13"
+  },
+  {
+   "sides": [
+    {
+     "text": "Phase noise",
+     "sub": "RF · Expert"
+    },
+    {
+     "text": "Jitter in an oscillator's frequency",
+     "more": {
+      "text": "Appears as skirts around the carrier in the spectrum (dBc/Hz). It limits receiver selectivity and modulation quality. Leeson's model relates it to Q and noise."
+     }
+    },
+    {
+     "text": "Where does oscillator phase noise appear in the spectrum?",
+     "more": {
+      "text": "As skirts around the carrier."
+     }
+    }
+   ],
+   "id": "ee-x-14"
+  },
+  {
+   "sides": [
+    {
+     "text": "PLL design",
+     "sub": "RF · Expert"
+    },
+    {
+     "text": "Loop bandwidth sets lock time and noise",
+     "more": {
+      "text": "An integer-N PLL has f_out = N × f_ref. Fractional-N gives finer steps using a sigma-delta divider. A phase margin near 45–60° gives stable lock."
+     }
+    },
+    {
+     "text": "How does an integer-N PLL set its output frequency?",
+     "more": {
+      "text": "f_out = N × f_ref."
+     }
+    }
+   ],
+   "id": "ee-x-15"
+  },
+  {
+   "sides": [
+    {
+     "text": "Mixer specifications",
+     "sub": "RF · Expert"
+    },
+    {
+     "text": "Conversion gain, LO leakage, image rejection",
+     "more": {
+      "text": "Image frequencies fall on the other side of the LO and must be filtered or cancelled (image-reject mixers)."
+     }
+    },
+    {
+     "text": "What is the image frequency problem?",
+     "more": {
+      "text": "A second frequency also mixes to the same IF and must be rejected."
+     }
+    }
+   ],
+   "id": "ee-x-16"
+  },
+  {
+   "sides": [
+    {
+     "text": "Power amplifier efficiency",
+     "sub": "RF · Expert"
+    },
+    {
+     "text": "PAE = (P_out − P_in) / P_DC",
+     "more": {
+      "text": "High-efficiency classes (E, F) switch the device but distort. Digital pre-distortion linearizes amplifiers for complex modulation."
+     }
+    },
+    {
+     "text": "What technique linearizes an RF power amplifier digitally?",
+     "more": {
+      "text": "Digital pre-distortion (DPD)."
+     }
+    }
+   ],
+   "id": "ee-x-17"
+  },
+  {
+   "sides": [
+    {
+     "text": "Error vector magnitude (EVM)",
+     "sub": "RF · Expert"
+    },
+    {
+     "text": "Distance between ideal and received constellation points",
+     "more": {
+      "text": "Summarizes the quality of a modulated signal, combining noise, distortion, and phase noise. Standards set EVM limits."
+     }
+    },
+    {
+     "text": "What does EVM measure?",
+     "more": {
+      "text": "How far received constellation points are from their ideal positions."
+     }
+    }
+   ],
+   "id": "ee-x-18"
+  },
+  {
+   "sides": [
+    {
+     "text": "MOSFET square law",
+     "sub": "Analog IC · Expert"
+    },
+    {
+     "text": "I_D = ½ μCox (W/L)(Vgs − Vth)²",
+     "more": {
+      "text": "Valid in saturation for long-channel devices. Wider or shorter devices carry more current."
+     }
+    },
+    {
+     "text": "μCox = 100 µA/V², W/L = 20, and Vov = 0.2 V. What is I_D?",
+     "more": {
+      "text": "40 µA (½ × 100 µ × 20 × 0.04)."
+     }
+    }
+   ],
+   "id": "ee-x-19"
+  },
+  {
+   "sides": [
+    {
+     "text": "Channel-length modulation",
+     "sub": "Analog IC · Expert"
+    },
+    {
+     "text": "Output resistance r_o = 1 / (λ I_D)",
+     "more": {
+      "text": "Drain current rises slightly with Vds, limiting the intrinsic gain g_m × r_o. Longer channels give higher r_o."
+     }
+    },
+    {
+     "text": "Which transistor dimension increases output resistance when lengthened?",
+     "more": {
+      "text": "Channel length."
+     }
+    }
+   ],
+   "id": "ee-x-20"
+  },
+  {
+   "sides": [
+    {
+     "text": "Intrinsic gain",
+     "sub": "Analog IC · Expert"
+    },
+    {
+     "text": "A₀ = g_m × r_o",
+     "more": {
+      "text": "The maximum gain from a single transistor. Falls in advanced processes, so designers use cascodes and gain boosting."
+     }
+    },
+    {
+     "text": "What limits the gain of a single-transistor stage?",
+     "more": {
+      "text": "The transistor's intrinsic gain g_m × r_o."
+     }
+    }
+   ],
+   "id": "ee-x-21"
+  },
+  {
+   "sides": [
+    {
+     "text": "Folded cascode",
+     "sub": "Analog IC · Expert"
+    },
+    {
+     "text": "High gain with good output swing",
+     "more": {
+      "text": "Folds the cascode current path so the input and output sit at different DC levels, allowing a wide input range at low supply voltage."
+     }
+    },
+    {
+     "text": "What advantage does the folded cascode have over the telescopic cascode?",
+     "more": {
+      "text": "Better input common-mode range and output swing at low supply voltage."
+     }
+    }
+   ],
+   "id": "ee-x-22"
+  },
+  {
+   "sides": [
+    {
+     "text": "Miller compensation",
+     "sub": "Analog IC · Expert"
+    },
+    {
+     "text": "Pole splitting in a two-stage op-amp",
+     "more": {
+      "text": "A capacitor across the second stage moves the dominant pole lower and the second pole higher, for stability. A right-half-plane zero may need a nulling resistor."
+     }
+    },
+    {
+     "text": "What does Miller compensation do to the poles?",
+     "more": {
+      "text": "Splits them apart: dominant pole lower, second pole higher."
+     }
+    }
+   ],
+   "id": "ee-x-23"
+  },
+  {
+   "sides": [
+    {
+     "text": "Bandgap reference",
+     "sub": "Analog IC · Expert"
+    },
+    {
+     "text": "A voltage nearly independent of temperature",
+     "more": {
+      "text": "Adds a PTAT voltage (rises with T) to a CTAT voltage (falls with T). The result is about 1.2 V."
+     }
+    },
+    {
+     "text": "What two temperature behaviors does a bandgap reference combine?",
+     "more": {
+      "text": "PTAT and CTAT."
+     }
+    }
+   ],
+   "id": "ee-x-24"
+  },
+  {
+   "sides": [
+    {
+     "text": "LDO design",
+     "sub": "Analog IC · Expert"
+    },
+    {
+     "text": "Pass transistor in a feedback loop",
+     "more": {
+      "text": "The output capacitor and its ESR affect loop stability. PSRR and dropout are key specs."
+     }
+    },
+    {
+     "text": "What affects an LDO's loop stability besides the amplifier?",
+     "more": {
+      "text": "The output capacitor and its ESR."
+     }
+    }
+   ],
+   "id": "ee-x-25"
+  },
+  {
+   "sides": [
+    {
+     "text": "Switched-capacitor circuits",
+     "sub": "Analog IC · Expert"
+    },
+    {
+     "text": "A switched capacitor acts like a resistor",
+     "more": {
+      "text": "R_eq = 1 / (f_s × C). Precise ratios of capacitors give accurate gain and filters on-chip."
+     }
+    },
+    {
+     "text": "C = 1 pF and f_s = 1 MHz. What is the equivalent resistance?",
+     "more": {
+      "text": "1 MΩ."
+     }
+    }
+   ],
+   "id": "ee-x-26"
+  },
+  {
+   "sides": [
+    {
+     "text": "Delta-sigma noise shaping",
+     "sub": "Analog IC · Expert"
+    },
+    {
+     "text": "More oversampling means more resolution",
+     "more": {
+      "text": "In a first-order modulator, each doubling of the oversampling ratio gains about 9 dB (about 1.5 bits). Second order gains about 15 dB."
+     }
+    },
+    {
+     "text": "About how much SQNR does doubling OSR give a first-order delta-sigma modulator?",
+     "more": {
+      "text": "About 9 dB."
+     }
+    }
+   ],
+   "id": "ee-x-27"
+  },
+  {
+   "sides": [
+    {
+     "text": "Mismatch and layout",
+     "sub": "Analog IC · Expert"
+    },
+    {
+     "text": "Matching improves with area",
+     "more": {
+      "text": "Pelgrom's law: mismatch ∝ 1/√(W·L). Common-centroid layout cancels gradients."
+     }
+    },
+    {
+     "text": "What layout technique cancels linear process gradients?",
+     "more": {
+      "text": "Common-centroid layout."
+     }
+    }
+   ],
+   "id": "ee-x-28"
+  },
+  {
+   "sides": [
+    {
+     "text": "Process, voltage, temperature",
+     "sub": "Analog IC · Expert"
+    },
+    {
+     "text": "Designs must work across corners",
+     "more": {
+      "text": "Verify performance at slow, typical, and fast process corners, across supply and temperature ranges, plus Monte Carlo for mismatch."
+     }
+    },
+    {
+     "text": "What does PVT stand for?",
+     "more": {
+      "text": "Process, voltage, and temperature."
+     }
+    }
+   ],
+   "id": "ee-x-29"
+  },
+  {
+   "sides": [
+    {
+     "text": "Input-referred noise",
+     "sub": "Analog IC · Expert"
+    },
+    {
+     "text": "Refer noise to the input to compare amplifiers",
+     "more": {
+      "text": "Thermal noise voltage of a transistor is about 4kTγ/g_m per hertz. Larger g_m (more current) lowers it."
+     }
+    },
+    {
+     "text": "What reduces a transistor's thermal input noise?",
+     "more": {
+      "text": "Higher transconductance g_m."
+     }
+    }
+   ],
+   "id": "ee-x-30"
+  },
+  {
+   "sides": [
+    {
+     "text": "ADC specifications",
+     "sub": "Analog IC · Expert"
+    },
+    {
+     "text": "ENOB, SFDR, INL, and DNL",
+     "more": {
+      "text": "ENOB = (SINAD − 1.76) / 6.02. DNL measures step-size errors; INL the total deviation from an ideal line."
+     }
+    },
+    {
+     "text": "SINAD = 62 dB. What is the ENOB?",
+     "more": {
+      "text": "About 10 bits."
+     }
+    }
+   ],
+   "id": "ee-x-31"
+  },
+  {
+   "sides": [
+    {
+     "text": "Clock jitter limit",
+     "sub": "Analog IC · Expert"
+    },
+    {
+     "text": "SNR ≤ −20 log₁₀(2π f_in σ_t)",
+     "more": {
+      "text": "Sampling-time jitter limits the SNR for high-frequency inputs."
+     }
+    },
+    {
+     "text": "f_in = 10 MHz and σ_t = 1 ps. What SNR limit does the jitter set?",
+     "more": {
+      "text": "About 84 dB."
+     }
+    }
+   ],
+   "id": "ee-x-32"
+  },
+  {
+   "sides": [
+    {
+     "text": "Band theory",
+     "sub": "Semiconductors · Expert"
+    },
+    {
+     "text": "Valence band, conduction band, and bandgap",
+     "more": {
+      "text": "Silicon's bandgap is 1.12 eV, GaAs 1.42 eV, SiC about 3.3 eV, and GaN about 3.4 eV. A wider gap means higher breakdown voltage and temperature tolerance."
+     }
+    },
+    {
+     "text": "Why do SiC and GaN suit high-voltage, high-temperature devices?",
+     "more": {
+      "text": "Their wide bandgaps give high breakdown fields and low leakage."
+     }
+    }
+   ],
+   "id": "ee-x-33"
+  },
+  {
+   "sides": [
+    {
+     "text": "Mass-action law",
+     "sub": "Semiconductors · Expert"
+    },
+    {
+     "text": "n × p = nᵢ²",
+     "more": {
+      "text": "The product of electron and hole concentrations is constant at a given temperature. Doping one raises its concentration and lowers the other."
+     }
+    },
+    {
+     "text": "What happens to hole concentration when you dope heavily n-type?",
+     "more": {
+      "text": "It falls, since n × p stays at nᵢ²."
+     }
+    }
+   ],
+   "id": "ee-x-34"
+  },
+  {
+   "sides": [
+    {
+     "text": "Built-in potential",
+     "sub": "Semiconductors · Expert"
+    },
+    {
+     "text": "V_bi = (kT/q) ln(N_a N_d / nᵢ²)",
+     "more": {
+      "text": "The potential barrier across a PN junction at equilibrium. About 0.6 to 0.8 V in silicon."
+     }
+    },
+    {
+     "text": "What sets the barrier voltage of a PN junction?",
+     "more": {
+      "text": "The doping levels, through V_bi."
+     }
+    }
+   ],
+   "id": "ee-x-35"
+  },
+  {
+   "sides": [
+    {
+     "text": "Shockley diode equation",
+     "sub": "Semiconductors · Expert"
+    },
+    {
+     "text": "I = I_s (e^(V/nV_T) − 1)",
+     "more": {
+      "text": "Current rises exponentially with forward voltage. I_s depends strongly on temperature, so the forward drop falls about 2 mV/°C."
+     }
+    },
+    {
+     "text": "I_s = 1 pA, V = 0.6 V, n = 1, V_T = 25.85 mV. About what current?",
+     "more": {
+      "text": "About 12 mA."
+     }
+    }
+   ],
+   "id": "ee-x-36"
+  },
+  {
+   "sides": [
+    {
+     "text": "CMOS inverter",
+     "sub": "Semiconductors · Expert"
+    },
+    {
+     "text": "Complementary pair: almost no static power",
+     "more": {
+      "text": "When the input is static one transistor is off. Power is used mainly while switching: P = α C V² f."
+     }
+    },
+    {
+     "text": "α = 0.1, C = 1 nF, V = 1 V, f = 1 GHz. What is the dynamic power?",
+     "more": {
+      "text": "0.1 W."
+     }
+    }
+   ],
+   "id": "ee-x-37"
+  },
+  {
+   "sides": [
+    {
+     "text": "Logical effort and delay",
+     "sub": "Semiconductors · Expert"
+    },
+    {
+     "text": "Delay ≈ RC",
+     "more": {
+      "text": "Gate delay depends on drive strength and the load it sees. Sizing gates for the load (logical effort) minimizes path delay."
+     }
+    },
+    {
+     "text": "What does gate delay mostly depend on?",
+     "more": {
+      "text": "The drive resistance times the load capacitance."
+     }
+    }
+   ],
+   "id": "ee-x-38"
+  },
+  {
+   "sides": [
+    {
+     "text": "Leakage currents",
+     "sub": "Semiconductors · Expert"
+    },
+    {
+     "text": "Power consumed even when idle",
+     "more": {
+      "text": "Subthreshold, gate-oxide tunneling, and junction leakage rise as transistors shrink and thresholds fall. Techniques: power gating and multiple thresholds."
+     }
+    },
+    {
+     "text": "Which technique cuts leakage by disconnecting idle blocks?",
+     "more": {
+      "text": "Power gating."
+     }
+    }
+   ],
+   "id": "ee-x-39"
+  },
+  {
+   "sides": [
+    {
+     "text": "Dennard scaling and Moore's law",
+     "sub": "Semiconductors · Expert"
+    },
+    {
+     "text": "Scaling gave faster, cooler chips, until it didn't",
+     "more": {
+      "text": "Dennard scaling (1974) held power density constant as transistors shrank. It broke down in the mid-2000s from leakage, ending easy clock gains. Moore's law (transistor counts) continued longer."
+     }
+    },
+    {
+     "text": "Why did clock speeds stop rising steadily in the mid-2000s?",
+     "more": {
+      "text": "Dennard scaling broke down as leakage grew."
+     }
+    }
+   ],
+   "id": "ee-x-40"
+  },
+  {
+   "sides": [
+    {
+     "text": "FinFET and gate-all-around",
+     "sub": "Semiconductors · Expert"
+    },
+    {
+     "text": "Better gate control at small sizes",
+     "more": {
+      "text": "A FinFET wraps the gate around a fin on three sides. Gate-all-around (nanosheet) surrounds the channel fully for even better control and less leakage."
+     }
+    },
+    {
+     "text": "Which transistor structure surrounds the channel on all sides?",
+     "more": {
+      "text": "Gate-all-around."
+     }
+    }
+   ],
+   "id": "ee-x-41"
+  },
+  {
+   "sides": [
+    {
+     "text": "Lithography",
+     "sub": "Semiconductors · Expert"
+    },
+    {
+     "text": "Printing patterns with light",
+     "more": {
+      "text": "193 nm immersion DUV is the workhorse for many layers. EUV at 13.5 nm prints the finest features. Multi-patterning extends DUV."
+     }
+    },
+    {
+     "text": "What wavelength does EUV lithography use?",
+     "more": {
+      "text": "13.5 nm."
+     }
+    }
+   ],
+   "id": "ee-x-42"
+  },
+  {
+   "sides": [
+    {
+     "text": "Fabrication steps",
+     "sub": "Semiconductors · Expert"
+    },
+    {
+     "text": "Deposit, pattern, etch, dope, polish, repeat",
+     "more": {
+      "text": "Photolithography defines features. Etching removes material. Deposition adds films. Ion implantation sets doping. CMP flattens surfaces."
+     }
+    },
+    {
+     "text": "Which step planarizes the wafer between layers?",
+     "more": {
+      "text": "Chemical-mechanical polishing (CMP)."
+     }
+    }
+   ],
+   "id": "ee-x-43"
+  },
+  {
+   "sides": [
+    {
+     "text": "Yield",
+     "sub": "Semiconductors · Expert"
+    },
+    {
+     "text": "Y = e^(−A × D₀)",
+     "more": {
+      "text": "The Poisson model: yield falls exponentially with die area and defect density. Smaller dies yield better."
+     }
+    },
+    {
+     "text": "Why do smaller dies have better yield?",
+     "more": {
+      "text": "A smaller area means fewer defects per die."
+     }
+    }
+   ],
+   "id": "ee-x-44"
+  },
+  {
+   "sides": [
+    {
+     "text": "Advanced packaging",
+     "sub": "Semiconductors · Expert"
+    },
+    {
+     "text": "Wire bond, flip-chip, 2.5D, and 3D",
+     "more": {
+      "text": "Chiplets are combined on an interposer or stacked to increase bandwidth and mix process nodes. High-bandwidth memory (HBM) is stacked next to the processor."
+     }
+    },
+    {
+     "text": "What are chiplets?",
+     "more": {
+      "text": "Smaller dies combined in one package to act as a system."
+     }
+    }
+   ],
+   "id": "ee-x-45"
+  },
+  {
+   "sides": [
+    {
+     "text": "Memory cells",
+     "sub": "Semiconductors · Expert"
+    },
+    {
+     "text": "SRAM, DRAM, and NAND",
+     "more": {
+      "text": "SRAM: 6 transistors, fast, no refresh. DRAM: 1 transistor and 1 capacitor, needs refresh. NAND flash: charge trapped on a floating gate or charge-trap layer."
+     }
+    },
+    {
+     "text": "How many transistors does a standard SRAM cell use?",
+     "more": {
+      "text": "Six."
+     }
+    }
+   ],
+   "id": "ee-x-46"
+  },
+  {
+   "sides": [
+    {
+     "text": "Converter control modes",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "Voltage mode vs peak current mode",
+     "more": {
+      "text": "Voltage mode uses one loop. Peak current mode adds a fast inner current loop, simplifying compensation and giving cycle-by-cycle current limiting. Current mode needs slope compensation above 50% duty."
+     }
+    },
+    {
+     "text": "Which control mode gives inherent cycle-by-cycle current limiting?",
+     "more": {
+      "text": "Peak current mode."
+     }
+    }
+   ],
+   "id": "ee-x-47"
+  },
+  {
+   "sides": [
+    {
+     "text": "Right-half-plane zero",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "A boost converter control limitation",
+     "more": {
+      "text": "In CCM boost and buck-boost converters, a right-half-plane zero adds phase lag while raising gain, limiting achievable loop bandwidth to a fraction of the zero frequency."
+     }
+    },
+    {
+     "text": "Which converter topologies have a right-half-plane zero in CCM?",
+     "more": {
+      "text": "Boost and buck-boost (and flyback)."
+     }
+    }
+   ],
+   "id": "ee-x-48"
+  },
+  {
+   "sides": [
+    {
+     "text": "State-space averaging",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "Model a switching converter as a continuous system",
+     "more": {
+      "text": "Average the on and off state equations by duty cycle, then linearize around an operating point to get transfer functions for compensation design."
+     }
+    },
+    {
+     "text": "Why average a converter's switching states?",
+     "more": {
+      "text": "To obtain a continuous small-signal model for loop design."
+     }
+    }
+   ],
+   "id": "ee-x-49"
+  },
+  {
+   "sides": [
+    {
+     "text": "Resonant converters (LLC)",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "Soft switching for high efficiency",
+     "more": {
+      "text": "An LLC converter switches near resonance so transistors turn on at zero voltage (ZVS), cutting switching loss and EMI. Common in power supplies for TVs and servers."
+     }
+    },
+    {
+     "text": "What does ZVS reduce?",
+     "more": {
+      "text": "Switching loss at turn-on."
+     }
+    }
+   ],
+   "id": "ee-x-50"
+  },
+  {
+   "sides": [
+    {
+     "text": "Magnetics design",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "Core loss and saturation limit size",
+     "more": {
+      "text": "Steinmetz's equation estimates core loss. An air gap raises saturation current. Turns follow N = √(L / A_L)."
+     }
+    },
+    {
+     "text": "What is the purpose of an air gap in a power inductor core?",
+     "more": {
+      "text": "To raise the current at which the core saturates."
+     }
+    }
+   ],
+   "id": "ee-x-51"
+  },
+  {
+   "sides": [
+    {
+     "text": "Thermal impedance",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "Z_th(t) models short power pulses",
+     "more": {
+      "text": "Thermal RC networks describe how junction temperature rises over time. Short pulses see lower temperature rise than steady power."
+     }
+    },
+    {
+     "text": "Why can a MOSFET survive a short overload that would destroy it continuously?",
+     "more": {
+      "text": "Thermal capacitance limits the temperature rise in short pulses (low Z_th)."
+     }
+    }
+   ],
+   "id": "ee-x-52"
+  },
+  {
+   "sides": [
+    {
+     "text": "Clarke and Park transforms",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "abc → αβ → dq",
+     "more": {
+      "text": "Transform three-phase quantities into a rotating frame where AC variables become DC, so torque and flux can be controlled with simple PI loops (field-oriented control)."
+     }
+    },
+    {
+     "text": "What does the Park transform give field-oriented control?",
+     "more": {
+      "text": "A rotating frame where AC quantities appear as DC."
+     }
+    }
+   ],
+   "id": "ee-x-53"
+  },
+  {
+   "sides": [
+    {
+     "text": "Space-vector PWM",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "Better DC-bus use for three-phase inverters",
+     "more": {
+      "text": "Treats the three phases as one rotating vector and synthesizes it from adjacent switching states, giving about 15% more output voltage than sinusoidal PWM."
+     }
+    },
+    {
+     "text": "What advantage does SVPWM have over sinusoidal PWM?",
+     "more": {
+      "text": "About 15% higher usable voltage from the same DC bus."
+     }
+    }
+   ],
+   "id": "ee-x-54"
+  },
+  {
+   "sides": [
+    {
+     "text": "Grid-forming vs grid-following inverters",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "Set the voltage vs follow it",
+     "more": {
+      "text": "Grid-following inverters synchronize to an existing grid. Grid-forming inverters create their own voltage and frequency, providing stability in weak or islanded grids."
+     }
+    },
+    {
+     "text": "Which inverter type can start up and hold an islanded microgrid?",
+     "more": {
+      "text": "Grid-forming."
+     }
+    }
+   ],
+   "id": "ee-x-55"
+  },
+  {
+   "sides": [
+    {
+     "text": "Swing equation",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "Rotor dynamics of a generator",
+     "more": {
+      "text": "The rotor accelerates in proportion to the imbalance between mechanical and electrical power. It underlies transient and frequency stability."
+     }
+    },
+    {
+     "text": "What does the swing equation describe?",
+     "more": {
+      "text": "How a generator's rotor angle changes when power is unbalanced."
+     }
+    }
+   ],
+   "id": "ee-x-56"
+  },
+  {
+   "sides": [
+    {
+     "text": "HVDC converters",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "LCC vs VSC",
+     "more": {
+      "text": "Line-commutated (thyristor) converters handle huge power but need a strong grid. Voltage-source (IGBT) converters can black-start and control reactive power independently."
+     }
+    },
+    {
+     "text": "Which HVDC converter type can black-start a grid?",
+     "more": {
+      "text": "Voltage-source converters (VSC)."
+     }
+    }
+   ],
+   "id": "ee-x-57"
+  },
+  {
+   "sides": [
+    {
+     "text": "Battery modeling",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "Equivalent circuit with RC pairs",
+     "more": {
+      "text": "A voltage source (OCV vs SoC), a series resistance, and RC networks capture dynamics. Thermal runaway occurs when heat triggers self-reinforcing reactions."
+     }
+    },
+    {
+     "text": "What event is a self-reinforcing heat rise in a Li-ion cell?",
+     "more": {
+      "text": "Thermal runaway."
+     }
+    }
+   ],
+   "id": "ee-x-58"
+  },
+  {
+   "sides": [
+    {
+     "text": "Fast charging limits",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "Lithium plating and heat",
+     "more": {
+      "text": "Charging at high rates and low temperature can plate lithium on the anode, reducing capacity and creating safety risk. Chargers taper current and manage temperature."
+     }
+    },
+    {
+     "text": "What risk does fast charging at low temperature add?",
+     "more": {
+      "text": "Lithium plating."
+     }
+    }
+   ],
+   "id": "ee-x-59"
+  },
+  {
+   "sides": [
+    {
+     "text": "Battery safety standards",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "UN 38.3, IEC 62619, UL 1973, UL 9540",
+     "more": {
+      "text": "UN 38.3 covers transport testing. IEC 62619 covers industrial lithium cells. UL 1973 covers stationary batteries and UL 9540 covers energy storage systems."
+     }
+    },
+    {
+     "text": "Which test standard covers transporting lithium batteries?",
+     "more": {
+      "text": "UN 38.3."
+     }
+    }
+   ],
+   "id": "ee-x-60"
+  },
+  {
+   "sides": [
+    {
+     "text": "Creepage and clearance",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "Spacing for safe isolation",
+     "more": {
+      "text": "Clearance is the shortest path through air; creepage is along a surface. Both grow with voltage and pollution degree. Reinforced isolation uses larger spacing."
+     }
+    },
+    {
+     "text": "Which distance follows the surface of an insulator?",
+     "more": {
+      "text": "Creepage."
+     }
+    }
+   ],
+   "id": "ee-x-61"
+  },
+  {
+   "sides": [
+    {
+     "text": "MOSFET safe operating area",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "Where a device can safely operate",
+     "more": {
+      "text": "Limits from current, voltage, power, and thermal behavior (including linear-mode second breakdown). Avalanche energy ratings handle brief overvoltage."
+     }
+    },
+    {
+     "text": "What does a SOA curve define?",
+     "more": {
+      "text": "The voltage and current combinations a device can handle safely."
+     }
+    }
+   ],
+   "id": "ee-x-62"
+  },
+  {
+   "sides": [
+    {
+     "text": "SiC MOSFET gate drive",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "Fast edges need care",
+     "more": {
+      "text": "High dV/dt can turn the opposite switch on via the Miller capacitance. Use negative off-state gate voltage and low-inductance layouts."
+     }
+    },
+    {
+     "text": "What can high dV/dt do in a half-bridge?",
+     "more": {
+      "text": "Couple through the Miller capacitance and falsely turn on the other switch."
+     }
+    }
+   ],
+   "id": "ee-x-63"
+  },
+  {
+   "sides": [
+    {
+     "text": "Pipelines and hazards",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": "Overlapping instruction stages",
+     "more": {
+      "text": "Data, control, and structural hazards stall or flush a pipeline. Forwarding and branch prediction mitigate them."
+     }
+    },
+    {
+     "text": "What kind of hazard does a mispredicted branch cause?",
+     "more": {
+      "text": "A control hazard, flushing the pipeline."
+     }
+    }
+   ],
+   "id": "ee-x-64"
+  },
+  {
+   "sides": [
+    {
+     "text": "Cache coherence and DMA",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": "Keep CPU and peripherals' views consistent",
+     "more": {
+      "text": "DMA writes memory behind the CPU's cache, so software must invalidate or clean cache lines or use non-cacheable regions."
+     }
+    },
+    {
+     "text": "Why might the CPU read stale data after a DMA transfer on a cached system?",
+     "more": {
+      "text": "The cache still holds old data. Invalidate it first."
+     }
+    }
+   ],
+   "id": "ee-x-65"
+  },
+  {
+   "sides": [
+    {
+     "text": "Memory barriers",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": "Enforce ordering of memory operations",
+     "more": {
+      "text": "Compilers and CPUs reorder accesses. Barriers (DMB, DSB, ISB on Arm) make sure writes complete before a dependent action."
+     }
+    },
+    {
+     "text": "What do memory barriers guarantee?",
+     "more": {
+      "text": "The order and completion of memory accesses."
+     }
+    }
+   ],
+   "id": "ee-x-66"
+  },
+  {
+   "sides": [
+    {
+     "text": "Lock-free ring buffer",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": "Single-producer single-consumer queue",
+     "more": {
+      "text": "Separate head and tail indexes updated by one side each need no lock, provided accesses are atomic and ordered."
+     }
+    },
+    {
+     "text": "What makes a single-producer single-consumer ring buffer lock-free?",
+     "more": {
+      "text": "Each index is written by only one side."
+     }
+    }
+   ],
+   "id": "ee-x-67"
+  },
+  {
+   "sides": [
+    {
+     "text": "TrustZone-M and hardware root of trust",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": "Isolate secure from non-secure code",
+     "more": {
+      "text": "Hardware splits memory and peripherals into secure and non-secure worlds. A hardware root of trust (immutable ROM and keys) anchors secure boot."
+     }
+    },
+    {
+     "text": "What anchors a secure boot chain?",
+     "more": {
+      "text": "A hardware root of trust."
+     }
+    }
+   ],
+   "id": "ee-x-68"
+  },
+  {
+   "sides": [
+    {
+     "text": "Side-channel attacks",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": "Leaking secrets through power or timing",
+     "more": {
+      "text": "Power analysis and timing differences can reveal cryptographic keys. Countermeasures: constant-time code, masking, and noise."
+     }
+    },
+    {
+     "text": "What do side-channel attacks exploit?",
+     "more": {
+      "text": "Physical leakage like power use or timing."
+     }
+    }
+   ],
+   "id": "ee-x-69"
+  },
+  {
+   "sides": [
+    {
+     "text": "Fault injection",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": "Glitching to bypass security",
+     "more": {
+      "text": "Voltage or clock glitches can skip instructions such as a security check. Mitigations: brown-out detectors, redundancy, and checksums."
+     }
+    },
+    {
+     "text": "What does a voltage glitch attack try to do?",
+     "more": {
+      "text": "Make the chip skip or corrupt an instruction."
+     }
+    }
+   ],
+   "id": "ee-x-70"
+  },
+  {
+   "sides": [
+    {
+     "text": "Earliest deadline first",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": "Run the task with the nearest deadline",
+     "more": {
+      "text": "EDF is optimal for single-processor preemptive scheduling and can reach 100% utilization, but fails less gracefully under overload."
+     }
+    },
+    {
+     "text": "Which scheduler can achieve 100% utilization on one core?",
+     "more": {
+      "text": "Earliest deadline first (EDF)."
+     }
+    }
+   ],
+   "id": "ee-x-71"
+  },
+  {
+   "sides": [
+    {
+     "text": "Response-time analysis",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": "Worst-case task response",
+     "more": {
+      "text": "Computes each task's response time including preemption by higher-priority tasks, to check deadlines."
+     }
+    },
+    {
+     "text": "What does response-time analysis verify?",
+     "more": {
+      "text": "That tasks meet their deadlines in the worst case."
+     }
+    }
+   ],
+   "id": "ee-x-72"
+  },
+  {
+   "sides": [
+    {
+     "text": "Asynchronous FIFO",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": "Cross clock domains with Gray-coded pointers",
+     "more": {
+      "text": "Gray code changes one bit at a time, so synchronizing pointers can't be caught in a wrong intermediate value."
+     }
+    },
+    {
+     "text": "Why use Gray code for FIFO pointers across clock domains?",
+     "more": {
+      "text": "Only one bit changes at a time, avoiding invalid values."
+     }
+    }
+   ],
+   "id": "ee-x-73"
+  },
+  {
+   "sides": [
+    {
+     "text": "IEEE 754 floating point",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": "Sign, exponent, and fraction",
+     "more": {
+      "text": "Float32 uses 1 sign bit, 8 exponent bits, and 23 fraction bits. Double uses 1, 11, and 52."
+     }
+    },
+    {
+     "text": "How many exponent bits does a float32 have?",
+     "more": {
+      "text": "8."
+     }
+    }
+   ],
+   "id": "ee-x-74"
+  },
+  {
+   "sides": [
+    {
+     "text": "Fixed-point Q format",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": "Qm.n integers with an implied binary point",
+     "more": {
+      "text": "Q15 has 1 sign bit and 15 fractional bits, covering −1 to 1 − 2⁻¹⁵. Multiplying needs a shift to rescale."
+     }
+    },
+    {
+     "text": "What range does Q15 represent?",
+     "more": {
+      "text": "−1 to just under +1."
+     }
+    }
+   ],
+   "id": "ee-x-75"
+  },
+  {
+   "sides": [
+    {
+     "text": "TinyML",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": "Machine learning on microcontrollers",
+     "more": {
+      "text": "Models are quantized (often to int8) and run with small runtimes such as TensorFlow Lite Micro. Used for keyword spotting and anomaly detection."
+     }
+    },
+    {
+     "text": "Which numeric format commonly shrinks models for microcontrollers?",
+     "more": {
+      "text": "8-bit integers (int8 quantization)."
+     }
+    }
+   ],
+   "id": "ee-x-76"
+  },
+  {
+   "sides": [
+    {
+     "text": "Functional safety standards",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": "IEC 61508, ISO 26262, DO-178C",
+     "more": {
+      "text": "IEC 61508: general functional safety. ISO 26262: automotive, with ASIL A to D. DO-178C: airborne software. MISRA C: coding rules for safety."
+     }
+    },
+    {
+     "text": "Which standard covers automotive functional safety?",
+     "more": {
+      "text": "ISO 26262."
+     }
+    }
+   ],
+   "id": "ee-x-77"
+  },
+  {
+   "sides": [
+    {
+     "text": "Flash wear and wear leveling",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": "Flash cells wear out",
+     "more": {
+      "text": "Each block survives a limited number of erase cycles. Wear leveling spreads writes across blocks."
+     }
+    },
+    {
+     "text": "What does wear leveling do?",
+     "more": {
+      "text": "Spreads writes to extend flash life."
+     }
+    }
+   ],
+   "id": "ee-x-78"
+  },
+  {
+   "sides": [
+    {
+     "text": "Time synchronization",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": "NTP and PTP",
+     "more": {
+      "text": "NTP gives millisecond accuracy over the internet. IEEE 1588 PTP with hardware timestamps reaches sub-microsecond accuracy."
+     }
+    },
+    {
+     "text": "Which protocol reaches sub-microsecond time synchronization?",
+     "more": {
+      "text": "PTP (IEEE 1588)."
+     }
+    }
+   ],
+   "id": "ee-x-79"
+  },
+  {
+   "sides": [
+    {
+     "text": "Entropy",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "H = −Σ p log₂ p",
+     "more": {
+      "text": "The average information per symbol, in bits. A fair coin has 1 bit. Predictable sources have lower entropy."
+     }
+    },
+    {
+     "text": "What is the entropy of a coin that lands heads 25% of the time?",
+     "more": {
+      "text": "About 0.81 bits."
+     }
+    }
+   ],
+   "id": "ee-x-80"
+  },
+  {
+   "sides": [
+    {
+     "text": "Mutual information and capacity",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "Capacity = max I(X;Y)",
+     "more": {
+      "text": "Channel capacity is the maximum mutual information over input distributions. For the Gaussian channel it's B log₂(1 + SNR)."
+     }
+    },
+    {
+     "text": "What does channel capacity maximize?",
+     "more": {
+      "text": "Mutual information between input and output."
+     }
+    }
+   ],
+   "id": "ee-x-81"
+  },
+  {
+   "sides": [
+    {
+     "text": "Source and channel coding theorems",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "Compress to entropy; send reliably below capacity",
+     "more": {
+      "text": "Source coding: you can't compress below the entropy. Channel coding: reliable communication is possible at any rate below capacity."
+     }
+    },
+    {
+     "text": "Is error-free communication possible above channel capacity?",
+     "more": {
+      "text": "No."
+     }
+    }
+   ],
+   "id": "ee-x-82"
+  },
+  {
+   "sides": [
+    {
+     "text": "Hamming distance and code strength",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "t = ⌊(d_min − 1)/2⌋ errors corrected",
+     "more": {
+      "text": "The minimum distance between codewords sets how many errors can be detected (d_min − 1) and corrected."
+     }
+    },
+    {
+     "text": "A code has d_min = 7. How many errors can it correct?",
+     "more": {
+      "text": "3."
+     }
+    }
+   ],
+   "id": "ee-x-83"
+  },
+  {
+   "sides": [
+    {
+     "text": "Reed–Solomon codes",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "Symbol-based codes for burst errors",
+     "more": {
+      "text": "Work on multi-bit symbols, so they correct bursts. Used in CDs, QR codes, and deep-space links."
+     }
+    },
+    {
+     "text": "Which code family is used in QR codes and CDs?",
+     "more": {
+      "text": "Reed–Solomon."
+     }
+    }
+   ],
+   "id": "ee-x-84"
+  },
+  {
+   "sides": [
+    {
+     "text": "LDPC and turbo codes",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "Approach the Shannon limit",
+     "more": {
+      "text": "Iterative decoding gets within a fraction of a dB of capacity. LDPC is used in Wi-Fi and 5G data channels."
+     }
+    },
+    {
+     "text": "Which code decodes iteratively and nears the Shannon limit?",
+     "more": {
+      "text": "LDPC (and turbo) codes."
+     }
+    }
+   ],
+   "id": "ee-x-85"
+  },
+  {
+   "sides": [
+    {
+     "text": "MIMO capacity",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "C = log₂ det(I + (SNR/N_t) H Hᴴ)",
+     "more": {
+      "text": "Capacity grows with the number of independent spatial paths (rank of the channel matrix H)."
+     }
+    },
+    {
+     "text": "What determines how much MIMO capacity grows?",
+     "more": {
+      "text": "The rank of the channel matrix, set by independent spatial paths."
+     }
+    }
+   ],
+   "id": "ee-x-86"
+  },
+  {
+   "sides": [
+    {
+     "text": "Beamforming gain",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "Array gain = 10 log₁₀ N",
+     "more": {
+      "text": "Combining N elements coherently adds N times the power in the target direction."
+     }
+    },
+    {
+     "text": "Ideal array gain for 16 elements?",
+     "more": {
+      "text": "About 12 dB."
+     }
+    }
+   ],
+   "id": "ee-x-87"
+  },
+  {
+   "sides": [
+    {
+     "text": "OFDM numerology",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "Δf = 1 / T_symbol",
+     "more": {
+      "text": "Subcarrier spacing is the inverse of the useful symbol time. IFFT builds the signal. 5G scales spacing in powers of two from 15 kHz."
+     }
+    },
+    {
+     "text": "What sets OFDM subcarrier spacing?",
+     "more": {
+      "text": "The inverse of the useful symbol duration."
+     }
+    }
+   ],
+   "id": "ee-x-88"
+  },
+  {
+   "sides": [
+    {
+     "text": "Channel estimation",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "Pilots reveal the channel",
+     "more": {
+      "text": "Known pilot symbols let the receiver estimate fading and equalize data subcarriers."
+     }
+    },
+    {
+     "text": "What do pilot symbols allow a receiver to do?",
+     "more": {
+      "text": "Estimate the channel so it can equalize the data."
+     }
+    }
+   ],
+   "id": "ee-x-89"
+  },
+  {
+   "sides": [
+    {
+     "text": "Carrier and timing recovery",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "Costas loop and Gardner detector",
+     "more": {
+      "text": "The Costas loop recovers carrier phase for PSK. The Gardner detector recovers symbol timing without knowing the data."
+     }
+    },
+    {
+     "text": "Which loop recovers carrier phase for BPSK without a pilot?",
+     "more": {
+      "text": "The Costas loop."
+     }
+    }
+   ],
+   "id": "ee-x-90"
+  },
+  {
+   "sides": [
+    {
+     "text": "Wiener filter",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "The linear MMSE estimator",
+     "more": {
+      "text": "Minimizes mean squared error between the desired signal and the filter output, using signal and noise statistics."
+     }
+    },
+    {
+     "text": "What does a Wiener filter minimize?",
+     "more": {
+      "text": "The mean squared error."
+     }
+    }
+   ],
+   "id": "ee-x-91"
+  },
+  {
+   "sides": [
+    {
+     "text": "Kalman filter",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "Predict, then update with the measurement",
+     "more": {
+      "text": "For a scalar case, K = P / (P + R). The gain weighs prediction uncertainty against measurement noise. Optimal for linear systems with Gaussian noise."
+     }
+    },
+    {
+     "text": "Predicted variance P = 4 and measurement noise R = 4. What is the Kalman gain?",
+     "more": {
+      "text": "0.5."
+     }
+    }
+   ],
+   "id": "ee-x-92"
+  },
+  {
+   "sides": [
+    {
+     "text": "RLS vs LMS",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "Faster convergence vs lower complexity",
+     "more": {
+      "text": "Recursive least squares converges faster than LMS but costs more computation per sample."
+     }
+    },
+    {
+     "text": "Which adaptive filter converges faster but costs more?",
+     "more": {
+      "text": "RLS."
+     }
+    }
+   ],
+   "id": "ee-x-93"
+  },
+  {
+   "sides": [
+    {
+     "text": "Spectral estimation",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "Periodogram and Welch",
+     "more": {
+      "text": "The periodogram has high variance. Welch's method averages windowed segments to cut variance at some cost in resolution."
+     }
+    },
+    {
+     "text": "Which method averages segments to reduce periodogram variance?",
+     "more": {
+      "text": "Welch's method."
+     }
+    }
+   ],
+   "id": "ee-x-94"
+  },
+  {
+   "sides": [
+    {
+     "text": "GPS positioning",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "Trilateration with a clock unknown",
+     "more": {
+      "text": "The receiver measures pseudoranges to at least four satellites to solve for 3D position and its own clock error."
+     }
+    },
+    {
+     "text": "Why does GPS need four satellites?",
+     "more": {
+      "text": "Three coordinates plus the receiver clock bias."
+     }
+    }
+   ],
+   "id": "ee-x-95"
+  },
+  {
+   "sides": [
+    {
+     "text": "Satellite links",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "Long delays and large path loss",
+     "more": {
+      "text": "A GEO satellite is about 36,000 km up. The ground–satellite–ground path adds about 240 ms one way. LEO constellations cut latency."
+     }
+    },
+    {
+     "text": "About how much one-way delay does a GEO link add?",
+     "more": {
+      "text": "About 240 ms."
+     }
+    }
+   ],
+   "id": "ee-x-96"
+  },
+  {
+   "sides": [
+    {
+     "text": "Coherent optical communications",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "Phase and polarization carry data",
+     "more": {
+      "text": "Coherent receivers recover amplitude and phase on two polarizations with DSP, using formats like DP-QPSK and DP-16QAM at hundreds of Gbit/s per wavelength."
+     }
+    },
+    {
+     "text": "What do coherent optical receivers recover?",
+     "more": {
+      "text": "Amplitude and phase on both polarizations."
+     }
+    }
+   ],
+   "id": "ee-x-97"
+  },
+  {
+   "sides": [
+    {
+     "text": "LQR",
+     "sub": "Control · Expert"
+    },
+    {
+     "text": "Optimal state feedback",
+     "more": {
+      "text": "Minimizes a quadratic cost on state and control effort by solving a Riccati equation. Gives gain K for u = −Kx."
+     }
+    },
+    {
+     "text": "What does LQR minimize?",
+     "more": {
+      "text": "A quadratic cost of state error and control effort."
+     }
+    }
+   ],
+   "id": "ee-x-98"
+  },
+  {
+   "sides": [
+    {
+     "text": "State observers",
+     "sub": "Control · Expert"
+    },
+    {
+     "text": "Estimate states you can't measure",
+     "more": {
+      "text": "A Luenberger observer corrects a model's state estimate using the measurement error. The Kalman filter is the optimal stochastic version."
+     }
+    },
+    {
+     "text": "What does an observer estimate?",
+     "more": {
+      "text": "The system's unmeasured states."
+     }
+    }
+   ],
+   "id": "ee-x-99"
+  },
+  {
+   "sides": [
+    {
+     "text": "Model predictive control",
+     "sub": "Control · Expert"
+    },
+    {
+     "text": "Optimize over a future horizon",
+     "more": {
+      "text": "Solves a constrained optimization at each step and applies the first move. Used for converters, motors, and process control."
+     }
+    },
+    {
+     "text": "What distinguishes MPC from fixed-gain controllers?",
+     "more": {
+      "text": "It re-optimizes over a future horizon with constraints each step."
+     }
+    }
+   ],
+   "id": "ee-x-100"
+  },
+  {
+   "sides": [
+    {
+     "text": "Bode gain–phase relation",
+     "sub": "Control · Expert"
+    },
+    {
+     "text": "Gain slope hints at phase",
+     "more": {
+      "text": "For minimum-phase systems, a −20 dB/decade slope near crossover corresponds to about −90° phase, giving good margin. A steeper slope risks instability."
+     }
+    },
+    {
+     "text": "What slope should the loop gain have near crossover for good phase margin?",
+     "more": {
+      "text": "About −20 dB/decade."
+     }
+    }
+   ],
+   "id": "ee-x-101"
+  },
+  {
+   "sides": [
+    {
+     "text": "Discretization (Tustin)",
+     "sub": "Control · Expert"
+    },
+    {
+     "text": "Convert a continuous controller to digital",
+     "more": {
+      "text": "The bilinear (Tustin) transform maps s to z while preserving stability and warping frequency. Sample fast compared with the bandwidth."
+     }
+    },
+    {
+     "text": "Which transform keeps a stable analog design stable in the z-domain?",
+     "more": {
+      "text": "The bilinear (Tustin) transform."
+     }
+    }
+   ],
+   "id": "ee-x-102"
+  },
+  {
+   "sides": [
+    {
+     "text": "Limit cycles and anti-windup",
+     "sub": "Control · Expert"
+    },
+    {
+     "text": "Nonlinear behavior in feedback loops",
+     "more": {
+      "text": "Saturation and backlash can cause sustained oscillation (limit cycles). Anti-windup freezes or back-calculates the integrator when the actuator saturates."
+     }
+    },
+    {
+     "text": "What does anti-windup prevent?",
+     "more": {
+      "text": "The integrator growing while the actuator is saturated."
+     }
+    }
+   ],
+   "id": "ee-x-103"
+  },
+  {
+   "sides": [
+    {
+     "text": "Isolated converter topologies",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "Flyback, forward, push-pull, half-bridge, full-bridge",
+     "more": {
+      "text": "Flyback suits low power, forward and push-pull mid power, and full-bridge the highest. Half-bridge halves the voltage across the transformer. Push-pull needs care to avoid flux imbalance."
+     }
+    },
+    {
+     "text": "Which isolated topology is typical for kilowatt-class supplies?",
+     "more": {
+      "text": "The full-bridge."
+     }
+    }
+   ],
+   "id": "ee-x-104"
+  },
+  {
+   "sides": [
+    {
+     "text": "Phase-shifted full bridge",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "Zero-voltage switching by shifting the legs",
+     "more": {
+      "text": "Uses transformer leakage inductance and switch capacitances so each switch turns on at zero voltage. Common in server and telecom power."
+     }
+    },
+    {
+     "text": "What does the phase shift control in a phase-shifted full bridge?",
+     "more": {
+      "text": "The power transferred, while enabling soft switching."
+     }
+    }
+   ],
+   "id": "ee-x-105"
+  },
+  {
+   "sides": [
+    {
+     "text": "Dual active bridge",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "Bidirectional isolated power flow",
+     "more": {
+      "text": "Two H-bridges linked by a transformer and inductor. The phase shift between them sets the direction and amount of power. Used in battery storage and EV chargers."
+     }
+    },
+    {
+     "text": "Which topology gives bidirectional isolated power flow set by phase shift?",
+     "more": {
+      "text": "The dual active bridge."
+     }
+    }
+   ],
+   "id": "ee-x-106"
+  },
+  {
+   "sides": [
+    {
+     "text": "Interleaved converters",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "Parallel phases offset in time",
+     "more": {
+      "text": "N phases offset by 360°/N cancel ripple, and spread the heat. Input and output filters shrink."
+     }
+    },
+    {
+     "text": "A 4-phase interleaved buck converter. What is the phase offset?",
+     "more": {
+      "text": "90°."
+     }
+    }
+   ],
+   "id": "ee-x-107"
+  },
+  {
+   "sides": [
+    {
+     "text": "Multilevel inverters",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "More voltage levels, smaller filters",
+     "more": {
+      "text": "NPC, flying capacitor, and cascaded H-bridge inverters produce stepped waveforms with lower dv/dt and distortion, useful at medium and high voltage."
+     }
+    },
+    {
+     "text": "What advantage do multilevel inverters give at high voltage?",
+     "more": {
+      "text": "Lower harmonic distortion and dv/dt with smaller filters."
+     }
+    }
+   ],
+   "id": "ee-x-108"
+  },
+  {
+   "sides": [
+    {
+     "text": "Modular multilevel converter",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "Stacked submodules for HVDC",
+     "more": {
+      "text": "Many identical submodules, each a bridge with a capacitor, build a nearly sinusoidal voltage. Dominant in modern voltage-source HVDC."
+     }
+    },
+    {
+     "text": "Which converter type dominates modern VSC-HVDC?",
+     "more": {
+      "text": "The modular multilevel converter (MMC)."
+     }
+    }
+   ],
+   "id": "ee-x-109"
+  },
+  {
+   "sides": [
+    {
+     "text": "Harmonics and THD",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "THD = √(ΣVₙ²) / V₁",
+     "more": {
+      "text": "Rectifiers and other nonlinear loads draw harmonic currents. IEEE 519 sets limits at the point of common coupling."
+     }
+    },
+    {
+     "text": "V₁ = 100 V with a 5 V fifth harmonic and 3 V seventh. What is the THD?",
+     "more": {
+      "text": "About 5.8%."
+     }
+    }
+   ],
+   "id": "ee-x-110"
+  },
+  {
+   "sides": [
+    {
+     "text": "Symmetrical components",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "Unbalanced faults as three balanced sets",
+     "more": {
+      "text": "Fortescue's method splits an unbalanced system into positive, negative, and zero sequence components. Fault types connect the sequence networks differently."
+     }
+    },
+    {
+     "text": "Into which three sequences are unbalanced systems decomposed?",
+     "more": {
+      "text": "Positive, negative, and zero sequence."
+     }
+    }
+   ],
+   "id": "ee-x-111"
+  },
+  {
+   "sides": [
+    {
+     "text": "Power flow analysis",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "Solve bus voltages and angles",
+     "more": {
+      "text": "Given P and Q at load buses and P and |V| at generator buses, Newton–Raphson iterates for the voltages and angles."
+     }
+    },
+    {
+     "text": "Which method is standard for power flow studies?",
+     "more": {
+      "text": "Newton–Raphson."
+     }
+    }
+   ],
+   "id": "ee-x-112"
+  },
+  {
+   "sides": [
+    {
+     "text": "Distance protection",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "A relay measures impedance to a fault",
+     "more": {
+      "text": "Zone 1 usually covers about 80 to 85% of a line instantly. Later zones add time-delayed backup."
+     }
+    },
+    {
+     "text": "What does a distance relay measure?",
+     "more": {
+      "text": "The impedance between the relay and the fault."
+     }
+    }
+   ],
+   "id": "ee-x-113"
+  },
+  {
+   "sides": [
+    {
+     "text": "Transformer differential protection",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "Compare current in and out",
+     "more": {
+      "text": "Inrush looks like an internal fault, so relays use second-harmonic restraint to avoid false trips."
+     }
+    },
+    {
+     "text": "Why do transformer relays use second-harmonic restraint?",
+     "more": {
+      "text": "To distinguish magnetizing inrush from a real internal fault."
+     }
+    }
+   ],
+   "id": "ee-x-114"
+  },
+  {
+   "sides": [
+    {
+     "text": "Excitation and AVR",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "Generators regulate voltage with field current",
+     "more": {
+      "text": "An automatic voltage regulator adjusts field current. Power system stabilizers add damping to oscillations."
+     }
+    },
+    {
+     "text": "What does an AVR adjust?",
+     "more": {
+      "text": "The generator's field (excitation) current."
+     }
+    }
+   ],
+   "id": "ee-x-115"
+  },
+  {
+   "sides": [
+    {
+     "text": "Droop control",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "Sources share load without communication",
+     "more": {
+      "text": "P–f and Q–V droop let generators and inverters in parallel split load. A 5% droop machine falls 5% in frequency from no load to full load."
+     }
+    },
+    {
+     "text": "A 5% droop generator at 60 Hz no load. What is its frequency at full load?",
+     "more": {
+      "text": "57 Hz."
+     }
+    }
+   ],
+   "id": "ee-x-116"
+  },
+  {
+   "sides": [
+    {
+     "text": "Inertia and RoCoF",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "Rotating mass slows frequency changes",
+     "more": {
+      "text": "Grids with many inverter-based sources have less inertia, so frequency changes faster after a disturbance (higher rate of change of frequency)."
+     }
+    },
+    {
+     "text": "What happens to RoCoF when grid inertia falls?",
+     "more": {
+      "text": "It rises."
+     }
+    }
+   ],
+   "id": "ee-x-117"
+  },
+  {
+   "sides": [
+    {
+     "text": "Microgrids",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "Local grids that can island",
+     "more": {
+      "text": "Combine generation, storage, and loads. They operate connected or islanded and need grid-forming control to hold voltage and frequency."
+     }
+    },
+    {
+     "text": "What must a microgrid have to operate islanded?",
+     "more": {
+      "text": "Grid-forming control."
+     }
+    }
+   ],
+   "id": "ee-x-118"
+  },
+  {
+   "sides": [
+    {
+     "text": "Battery state estimation",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "EKF and coulomb counting",
+     "more": {
+      "text": "An extended Kalman filter fuses a cell model with voltage and current measurements to estimate state of charge and health."
+     }
+    },
+    {
+     "text": "Which estimator is commonly used for battery SoC?",
+     "more": {
+      "text": "An extended Kalman filter."
+     }
+    }
+   ],
+   "id": "ee-x-119"
+  },
+  {
+   "sides": [
+    {
+     "text": "Passive vs active cell balancing",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "Burn excess charge or move it",
+     "more": {
+      "text": "Passive balancing bleeds high cells through resistors. Active balancing transfers charge with converters, saving energy."
+     }
+    },
+    {
+     "text": "Which balancing method wastes energy as heat?",
+     "more": {
+      "text": "Passive balancing."
+     }
+    }
+   ],
+   "id": "ee-x-120"
+  },
+  {
+   "sides": [
+    {
+     "text": "Resonant wireless power",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "Coupling coefficient and Q set efficiency",
+     "more": {
+      "text": "Resonant compensation networks tune the coils. Qi runs at roughly 100 to 205 kHz. Efficiency falls quickly as coupling k drops."
+     }
+    },
+    {
+     "text": "What two parameters mainly set wireless power efficiency?",
+     "more": {
+      "text": "Coupling coefficient and quality factor."
+     }
+    }
+   ],
+   "id": "ee-x-121"
+  },
+  {
+   "sides": [
+    {
+     "text": "Sensorless PMSM control",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "Estimate rotor position without a sensor",
+     "more": {
+      "text": "Back-EMF observers work above a minimum speed. At low speed, signal injection is used."
+     }
+    },
+    {
+     "text": "Why can't back-EMF methods work at standstill?",
+     "more": {
+      "text": "Back-EMF is proportional to speed and is zero at standstill."
+     }
+    }
+   ],
+   "id": "ee-x-122"
+  },
+  {
+   "sides": [
+    {
+     "text": "Motor efficiency classes",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "IE3 and IE4",
+     "more": {
+      "text": "IEC 60034-30 defines classes. IE3 is premium efficiency and IE4 is super-premium."
+     }
+    },
+    {
+     "text": "Which efficiency class is higher, IE3 or IE4?",
+     "more": {
+      "text": "IE4."
+     }
+    }
+   ],
+   "id": "ee-x-123"
+  },
+  {
+   "sides": [
+    {
+     "text": "Drive EMC and bearing currents",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "Fast dv/dt drives common-mode current",
+     "more": {
+      "text": "Stray capacitances conduct high-frequency current through motor bearings and cables. Output filters, shielded cables, and grounding rings reduce it."
+     }
+    },
+    {
+     "text": "What causes bearing damage in inverter-fed motors?",
+     "more": {
+      "text": "High-frequency common-mode currents through the bearings."
+     }
+    }
+   ],
+   "id": "ee-x-124"
+  },
+  {
+   "sides": [
+    {
+     "text": "Power-loop parasitic inductance",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "V = L × di/dt",
+     "more": {
+      "text": "Fast switching with stray inductance causes voltage spikes. Keep the loop area small."
+     }
+    },
+    {
+     "text": "A 10 nH loop switches at 1 A/ns. How large is the spike?",
+     "more": {
+      "text": "10 V."
+     }
+    }
+   ],
+   "id": "ee-x-125"
+  },
+  {
+   "sides": [
+    {
+     "text": "Litz wire and proximity effect",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "Reduce AC resistance in high-frequency windings",
+     "more": {
+      "text": "Litz wire uses many insulated strands. Proximity effect from neighboring layers raises loss even when skin depth is large."
+     }
+    },
+    {
+     "text": "What does Litz wire reduce?",
+     "more": {
+      "text": "AC resistance from skin and proximity effects."
+     }
+    }
+   ],
+   "id": "ee-x-126"
+  },
+  {
+   "sides": [
+    {
+     "text": "DC-link capacitors",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "Film vs electrolytic",
+     "more": {
+      "text": "Film capacitors have low ESR and long life. Electrolytics are dense but wear out and heat under ripple."
+     }
+    },
+    {
+     "text": "Which DC-link capacitor type lasts longer under ripple current?",
+     "more": {
+      "text": "Film."
+     }
+    }
+   ],
+   "id": "ee-x-127"
+  },
+  {
+   "sides": [
+    {
+     "text": "Reliability and temperature",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "Roughly halve life per 10 °C rise",
+     "more": {
+      "text": "The Arrhenius rule of thumb for electrolytic capacitors. The bathtub curve shows early, random, and wear-out failures."
+     }
+    },
+    {
+     "text": "By how much does a 10 °C rise typically shorten electrolytic capacitor life?",
+     "more": {
+      "text": "About by half."
+     }
+    }
+   ],
+   "id": "ee-x-128"
+  },
+  {
+   "sides": [
+    {
+     "text": "Soft switching",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "ZVS and ZCS",
+     "more": {
+      "text": "Turning on at zero voltage or off at zero current removes switching loss and EMI, at the cost of circulating current and complexity."
+     }
+    },
+    {
+     "text": "What does ZVS eliminate?",
+     "more": {
+      "text": "Turn-on switching loss."
+     }
+    }
+   ],
+   "id": "ee-x-129"
+  },
+  {
+   "sides": [
+    {
+     "text": "Gate driver isolation",
+     "sub": "Power · Expert"
+    },
+    {
+     "text": "Level shifters, bootstrap, and isolated drivers",
+     "more": {
+      "text": "High-side switches need a floating gate drive. Isolated drivers handle high voltages and noise immunity."
+     }
+    },
+    {
+     "text": "What does a bootstrap circuit do for a high-side gate driver?",
+     "more": {
+      "text": "Provides a floating supply for the high-side gate."
+     }
+    }
+   ],
+   "id": "ee-x-130"
+  },
+  {
+   "sides": [
+    {
+     "text": "Op-amp noise model",
+     "sub": "Electronics · Expert"
+    },
+    {
+     "text": "Voltage noise, current noise, and 1/f corner",
+     "more": {
+      "text": "Total input noise combines the op-amp's voltage noise, its current noise times the source resistance, and resistor thermal noise. Choose a device matched to the source impedance."
+     }
+    },
+    {
+     "text": "What dominates a low-impedance source's noise: voltage or current noise of the op-amp?",
+     "more": {
+      "text": "The op-amp's voltage noise."
+     }
+    }
+   ],
+   "id": "ee-x-131"
+  },
+  {
+   "sides": [
+    {
+     "text": "Chopper and auto-zero amplifiers",
+     "sub": "Electronics · Expert"
+    },
+    {
+     "text": "Cancel offset and drift",
+     "more": {
+      "text": "They modulate the signal above the 1/f region, amplify, then demodulate, giving offsets of microvolts or less."
+     }
+    },
+    {
+     "text": "What error do chopper amplifiers minimize?",
+     "more": {
+      "text": "Input offset and its drift."
+     }
+    }
+   ],
+   "id": "ee-x-132"
+  },
+  {
+   "sides": [
+    {
+     "text": "Precision resistors and drift",
+     "sub": "Electronics · Expert"
+    },
+    {
+     "text": "ppm/°C matters for accurate gain",
+     "more": {
+      "text": "A matched thin-film network tracks within a few ppm/°C, keeping ratios stable even when absolute values drift."
+     }
+    },
+    {
+     "text": "Why use matched resistor networks in precision amplifiers?",
+     "more": {
+      "text": "Their ratio stays accurate over temperature."
+     }
+    }
+   ],
+   "id": "ee-x-133"
+  },
+  {
+   "sides": [
+    {
+     "text": "Transimpedance amplifier",
+     "sub": "Electronics · Expert"
+    },
+    {
+     "text": "Photodiode current to voltage",
+     "more": {
+      "text": "The feedback resistor sets gain. A small feedback capacitor stabilizes it against the photodiode's capacitance."
+     }
+    },
+    {
+     "text": "What stabilizes a TIA against input capacitance?",
+     "more": {
+      "text": "A small capacitor across the feedback resistor."
+     }
+    }
+   ],
+   "id": "ee-x-134"
+  },
+  {
+   "sides": [
+    {
+     "text": "kT/C noise",
+     "sub": "Electronics · Expert"
+    },
+    {
+     "text": "v_n = √(kT / C)",
+     "more": {
+      "text": "Sampling a capacitor leaves thermal noise that depends only on C and temperature. Larger capacitors give less noise."
+     }
+    },
+    {
+     "text": "C = 1 pF at 300 K. What is the rms noise?",
+     "more": {
+      "text": "About 64 µV."
+     }
+    }
+   ],
+   "id": "ee-x-135"
+  },
+  {
+   "sides": [
+    {
+     "text": "Sample-and-hold",
+     "sub": "Electronics · Expert"
+    },
+    {
+     "text": "Freezes the input during conversion",
+     "more": {
+      "text": "Droop, charge injection, and aperture jitter limit accuracy. A larger hold capacitor reduces droop but slows tracking."
+     }
+    },
+    {
+     "text": "What does aperture jitter affect in a sample-and-hold?",
+     "more": {
+      "text": "The timing accuracy of the sample."
+     }
+    }
+   ],
+   "id": "ee-x-136"
+  },
+  {
+   "sides": [
+    {
+     "text": "Logarithmic amplifier",
+     "sub": "Electronics · Expert"
+    },
+    {
+     "text": "Output proportional to the log of the input",
+     "more": {
+      "text": "Uses a diode or BJT in the feedback path. Compresses a wide dynamic range, such as in RF power detectors."
+     }
+    },
+    {
+     "text": "What advantage does a log amplifier offer?",
+     "more": {
+      "text": "It compresses a very wide input range into a small output range."
+     }
+    }
+   ],
+   "id": "ee-x-137"
+  },
+  {
+   "sides": [
+    {
+     "text": "Precision rectifier",
+     "sub": "Electronics · Expert"
+    },
+    {
+     "text": "An op-amp cancels the diode drop",
+     "more": {
+      "text": "Lets circuits rectify signals smaller than 0.7 V. Used in AC measurement."
+     }
+    },
+    {
+     "text": "Why use an active (precision) rectifier?",
+     "more": {
+      "text": "To rectify small signals without the diode's forward drop."
+     }
+    }
+   ],
+   "id": "ee-x-138"
+  },
+  {
+   "sides": [
+    {
+     "text": "Operational transconductance amplifier",
+     "sub": "Electronics · Expert"
+    },
+    {
+     "text": "Output current set by input voltage",
+     "more": {
+      "text": "gm is tunable by a bias current, so OTAs build tunable filters and oscillators (gm-C designs)."
+     }
+    },
+    {
+     "text": "What does an OTA's output current depend on?",
+     "more": {
+      "text": "The input voltage times its transconductance."
+     }
+    }
+   ],
+   "id": "ee-x-139"
+  },
+  {
+   "sides": [
+    {
+     "text": "Crystal equivalent circuit",
+     "sub": "Electronics · Expert"
+    },
+    {
+     "text": "Motional RLC with a shunt capacitance",
+     "more": {
+      "text": "Has series and parallel resonance. The load capacitance specified by the manufacturer pulls the oscillation frequency."
+     }
+    },
+    {
+     "text": "What sets a crystal's exact oscillation frequency in a circuit?",
+     "more": {
+      "text": "The load capacitance it sees (together with its cut)."
+     }
+    }
+   ],
+   "id": "ee-x-140"
+  },
+  {
+   "sides": [
+    {
+     "text": "Voltage-controlled oscillators",
+     "sub": "Electronics · Expert"
+    },
+    {
+     "text": "Frequency set by a control voltage",
+     "more": {
+      "text": "Varactor-tuned LC VCOs have low phase noise. Ring VCOs are compact but noisier."
+     }
+    },
+    {
+     "text": "Which VCO type usually has lower phase noise: LC or ring?",
+     "more": {
+      "text": "LC."
+     }
+    }
+   ],
+   "id": "ee-x-141"
+  },
+  {
+   "sides": [
+    {
+     "text": "Direct digital synthesis",
+     "sub": "Electronics · Expert"
+    },
+    {
+     "text": "Phase accumulator, lookup table, DAC",
+     "more": {
+      "text": "Frequency resolution is f_clk / 2ᴺ for an N-bit accumulator. Fast switching and fine steps, with spurs."
+     }
+    },
+    {
+     "text": "A 100 MHz clock and a 32-bit accumulator. What is the frequency resolution?",
+     "more": {
+      "text": "About 0.023 Hz."
+     }
+    }
+   ],
+   "id": "ee-x-142"
+  },
+  {
+   "sides": [
+    {
+     "text": "Kelvin sensing",
+     "sub": "Electronics · Expert"
+    },
+    {
+     "text": "Four-wire resistance measurement",
+     "more": {
+      "text": "Separate force and sense leads remove lead and contact resistance, essential for milliohm measurements."
+     }
+    },
+    {
+     "text": "Why use four-wire sensing for a milliohm resistor?",
+     "more": {
+      "text": "It removes the error from lead and contact resistance."
+     }
+    }
+   ],
+   "id": "ee-x-143"
+  },
+  {
+   "sides": [
+    {
+     "text": "Guarding and leakage",
+     "sub": "Electronics · Expert"
+    },
+    {
+     "text": "Surface leakage corrupts pA measurements",
+     "more": {
+      "text": "Guard rings at the same potential intercept leakage. Clean boards and low-leakage materials help."
+     }
+    },
+    {
+     "text": "What does a guard ring do around a high-impedance node?",
+     "more": {
+      "text": "Intercepts leakage by sitting at the same potential."
+     }
+    }
+   ],
+   "id": "ee-x-144"
+  },
+  {
+   "sides": [
+    {
+     "text": "Power integrity",
+     "sub": "Electronics · Expert"
+    },
+    {
+     "text": "Z_target = ΔV / ΔI",
+     "more": {
+      "text": "The power distribution network must stay below the target impedance across frequency, using bulk, ceramic, and on-die capacitance."
+     }
+    },
+    {
+     "text": "A 1 V rail with ±5% tolerance and a 5 A step. What is the target impedance?",
+     "more": {
+      "text": "10 mΩ."
+     }
+    }
+   ],
+   "id": "ee-x-145"
+  },
+  {
+   "sides": [
+    {
+     "text": "Termination",
+     "sub": "Electronics · Expert"
+    },
+    {
+     "text": "Series, parallel, and Thévenin",
+     "more": {
+      "text": "Termination absorbs reflections on fast lines. Series termination is simple. Parallel gives clean edges but burns power."
+     }
+    },
+    {
+     "text": "Which termination wastes DC power?",
+     "more": {
+      "text": "Parallel termination."
+     }
+    }
+   ],
+   "id": "ee-x-146"
+  },
+  {
+   "sides": [
+    {
+     "text": "Differential pair routing",
+     "sub": "Electronics · Expert"
+    },
+    {
+     "text": "Control differential impedance",
+     "more": {
+      "text": "Keep pairs tightly coupled, equal length, and over a continuous reference plane."
+     }
+    },
+    {
+     "text": "What must a differential pair keep equal for good signal integrity?",
+     "more": {
+      "text": "Length (and spacing)."
+     }
+    }
+   ],
+   "id": "ee-x-147"
+  },
+  {
+   "sides": [
+    {
+     "text": "Eye diagram",
+     "sub": "Electronics · Expert"
+    },
+    {
+     "text": "Overlay of many bit periods",
+     "more": {
+      "text": "Eye height and width reveal noise and jitter margins. A closed eye means errors."
+     }
+    },
+    {
+     "text": "What does a wide, tall eye indicate?",
+     "more": {
+      "text": "Good signal quality with margin."
+     }
+    }
+   ],
+   "id": "ee-x-148"
+  },
+  {
+   "sides": [
+    {
+     "text": "SerDes",
+     "sub": "Electronics · Expert"
+    },
+    {
+     "text": "Serialize and deserialize with an embedded clock",
+     "more": {
+      "text": "Line codes like 8b/10b or 64b/66b ensure transitions so a clock-recovery circuit can lock."
+     }
+    },
+    {
+     "text": "Why does SerDes use line coding?",
+     "more": {
+      "text": "To guarantee transitions for clock recovery."
+     }
+    }
+   ],
+   "id": "ee-x-149"
+  },
+  {
+   "sides": [
+    {
+     "text": "ESD models",
+     "sub": "Electronics · Expert"
+    },
+    {
+     "text": "HBM, CDM, and IEC 61000-4-2",
+     "more": {
+      "text": "Human-body and charged-device models cover chip handling. IEC 61000-4-2 covers system-level discharges at connectors."
+     }
+    },
+    {
+     "text": "Which model describes a charged chip discharging to ground?",
+     "more": {
+      "text": "The charged-device model (CDM)."
+     }
+    }
+   ],
+   "id": "ee-x-150"
+  },
+  {
+   "sides": [
+    {
+     "text": "CMOS latch-up",
+     "sub": "Electronics · Expert"
+    },
+    {
+     "text": "A parasitic thyristor shorts the supply",
+     "more": {
+      "text": "Triggered by current injected into a pin or substrate. Guard rings and layout rules prevent it."
+     }
+    },
+    {
+     "text": "What structure causes CMOS latch-up?",
+     "more": {
+      "text": "A parasitic thyristor (PNPN) in the chip."
+     }
+    }
+   ],
+   "id": "ee-x-151"
+  },
+  {
+   "sides": [
+    {
+     "text": "Design for test",
+     "sub": "Electronics · Expert"
+    },
+    {
+     "text": "Scan chains and BIST",
+     "more": {
+      "text": "Scan chains let testers shift in and read out states. Built-in self-test checks memories and logic on chip."
+     }
+    },
+    {
+     "text": "What lets testers control and observe internal flip-flops?",
+     "more": {
+      "text": "Scan chains."
+     }
+    }
+   ],
+   "id": "ee-x-152"
+  },
+  {
+   "sides": [
+    {
+     "text": "Static timing analysis",
+     "sub": "Electronics · Expert"
+    },
+    {
+     "text": "Check every path without simulation",
+     "more": {
+      "text": "Computes delays across all paths and checks setup and hold at each flip-flop across corners."
+     }
+    },
+    {
+     "text": "What does static timing analysis check?",
+     "more": {
+      "text": "Setup and hold timing on all paths."
+     }
+    }
+   ],
+   "id": "ee-x-153"
+  },
+  {
+   "sides": [
+    {
+     "text": "Dynamic voltage and frequency scaling",
+     "sub": "Electronics · Expert"
+    },
+    {
+     "text": "Lower voltage and clock together",
+     "more": {
+      "text": "Dynamic power ∝ C V² f, so reducing V and f together saves far more than reducing f alone."
+     }
+    },
+    {
+     "text": "Why does DVFS save more than lowering frequency alone?",
+     "more": {
+      "text": "Power falls with the square of voltage."
+     }
+    }
+   ],
+   "id": "ee-x-154"
+  },
+  {
+   "sides": [
+    {
+     "text": "Mixed-signal layout",
+     "sub": "Electronics · Expert"
+    },
+    {
+     "text": "Keep return currents out of sensitive circuits",
+     "more": {
+      "text": "Place analog and digital sections apart, and use one solid ground plane with controlled return paths rather than split planes."
+     }
+    },
+    {
+     "text": "What matters most when partitioning mixed-signal layouts?",
+     "more": {
+      "text": "Controlling where return currents flow."
+     }
+    }
+   ],
+   "id": "ee-x-155"
+  },
+  {
+   "sides": [
+    {
+     "text": "Digital isolators",
+     "sub": "Electronics · Expert"
+    },
+    {
+     "text": "Isolated data across a barrier",
+     "more": {
+      "text": "Capacitive or magnetic coupling gives 2.5 to 5 kV isolation, faster and longer-lived than optocouplers."
+     }
+    },
+    {
+     "text": "Which isolation technology is faster than an optocoupler?",
+     "more": {
+      "text": "Capacitive or magnetic digital isolators."
+     }
+    }
+   ],
+   "id": "ee-x-156"
+  },
+  {
+   "sides": [
+    {
+     "text": "Worst-case execution time",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": "The longest a task can take",
+     "more": {
+      "text": "Needed to prove deadlines. Caches, branch prediction, and interrupts make it hard to bound, so safety systems use simpler cores."
+     }
+    },
+    {
+     "text": "Why do safety-critical systems often avoid caches?",
+     "more": {
+      "text": "They make worst-case timing hard to bound."
+     }
+    }
+   ],
+   "id": "ee-x-157"
+  },
+  {
+   "sides": [
+    {
+     "text": "Priority ceiling protocol",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": "Prevents priority inversion and deadlock",
+     "more": {
+      "text": "Each resource has a ceiling equal to its highest-priority user. A task locking it runs at that ceiling."
+     }
+    },
+    {
+     "text": "What does the priority ceiling protocol prevent?",
+     "more": {
+      "text": "Priority inversion and deadlock."
+     }
+    }
+   ],
+   "id": "ee-x-158"
+  },
+  {
+   "sides": [
+    {
+     "text": "Secure element and TRNG",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": "Hardware key storage and true randomness",
+     "more": {
+      "text": "A secure element stores keys and runs crypto in tamper-resistant hardware. A true random number generator uses physical noise."
+     }
+    },
+    {
+     "text": "What does a TRNG use to create randomness?",
+     "more": {
+      "text": "A physical noise source."
+     }
+    }
+   ],
+   "id": "ee-x-159"
+  },
+  {
+   "sides": [
+    {
+     "text": "Crypto accelerators",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": "Hardware AES, SHA, and public-key engines",
+     "more": {
+      "text": "Offload encryption from the CPU, saving time and energy and reducing side-channel exposure."
+     }
+    },
+    {
+     "text": "Why use a hardware AES engine?",
+     "more": {
+      "text": "It's faster and uses less energy than software."
+     }
+    }
+   ],
+   "id": "ee-x-160"
+  },
+  {
+   "sides": [
+    {
+     "text": "Flash ECC and bad blocks",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": "NAND needs error correction",
+     "more": {
+      "text": "NAND flash has bit errors and bad blocks, so controllers use ECC and bad-block management. NOR is more reliable per bit."
+     }
+    },
+    {
+     "text": "Which flash type usually requires ECC, NAND or NOR?",
+     "more": {
+      "text": "NAND."
+     }
+    }
+   ],
+   "id": "ee-x-161"
+  },
+  {
+   "sides": [
+    {
+     "text": "Embedded filesystems",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": "littlefs and FAT",
+     "more": {
+      "text": "littlefs provides wear leveling and power-loss safety on small flash. FAT is simple but can corrupt on power loss."
+     }
+    },
+    {
+     "text": "Which filesystem is designed for power-loss safety on small flash?",
+     "more": {
+      "text": "littlefs."
+     }
+    }
+   ],
+   "id": "ee-x-162"
+  },
+  {
+   "sides": [
+    {
+     "text": "Power-fail-safe storage",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": "Never leave data half-written",
+     "more": {
+      "text": "Use write-ahead logs, atomic renames, or double-buffered records with checksums so a power cut leaves a valid copy."
+     }
+    },
+    {
+     "text": "How can a device keep config valid across a power cut?",
+     "more": {
+      "text": "Write a new copy with a checksum, then switch atomically."
+     }
+    }
+   ],
+   "id": "ee-x-163"
+  },
+  {
+   "sides": [
+    {
+     "text": "Layered firmware architecture",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": "HAL, drivers, middleware, application",
+     "more": {
+      "text": "Separating hardware access from logic lets you test the application on a PC and port to new chips."
+     }
+    },
+    {
+     "text": "Why separate hardware access into a HAL?",
+     "more": {
+      "text": "So application code is portable and testable."
+     }
+    }
+   ],
+   "id": "ee-x-164"
+  },
+  {
+   "sides": [
+    {
+     "text": "Hardware-in-the-loop testing",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": "Real controller, simulated plant",
+     "more": {
+      "text": "The firmware runs on target hardware connected to a simulator that mimics sensors and actuators, enabling safe repeatable tests."
+     }
+    },
+    {
+     "text": "What does HIL testing connect?",
+     "more": {
+      "text": "Real controller hardware with a simulated plant."
+     }
+    }
+   ],
+   "id": "ee-x-165"
+  },
+  {
+   "sides": [
+    {
+     "text": "Unit tests and CI for firmware",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": "Test logic on a host and build automatically",
+     "more": {
+      "text": "Mock hardware, run tests on every commit, and cross-compile for the target in CI."
+     }
+    },
+    {
+     "text": "Why run firmware logic tests on a PC?",
+     "more": {
+      "text": "They're faster and run on every change."
+     }
+    }
+   ],
+   "id": "ee-x-166"
+  },
+  {
+   "sides": [
+    {
+     "text": "Static analysis and MISRA C",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": "Find defects and enforce safe C",
+     "more": {
+      "text": "Tools check rules such as no recursion and no dynamic allocation in safety code."
+     }
+    },
+    {
+     "text": "What does MISRA C provide?",
+     "more": {
+      "text": "Rules for safe, portable C code in embedded systems."
+     }
+    }
+   ],
+   "id": "ee-x-167"
+  },
+  {
+   "sides": [
+    {
+     "text": "Linker scripts and memory map",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": ".text, .data, .bss, and the vector table",
+     "more": {
+      "text": "Code lives in flash, initialized variables are copied to RAM at startup, and the vector table sits at a known address."
+     }
+    },
+    {
+     "text": "Which section holds initialized global variables?",
+     "more": {
+      "text": "The .data section."
+     }
+    }
+   ],
+   "id": "ee-x-168"
+  },
+  {
+   "sides": [
+    {
+     "text": "Startup code",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": "What runs before main()",
+     "more": {
+      "text": "The reset handler sets the stack pointer, copies .data to RAM, zeroes .bss, configures clocks, and then calls main()."
+     }
+    },
+    {
+     "text": "What does startup code do with .bss?",
+     "more": {
+      "text": "Zeroes it."
+     }
+    }
+   ],
+   "id": "ee-x-169"
+  },
+  {
+   "sides": [
+    {
+     "text": "Vector table relocation",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": "Move interrupts to the application",
+     "more": {
+      "text": "A bootloader sets the vector table offset register to the application's vectors before jumping."
+     }
+    },
+    {
+     "text": "What register sets Cortex-M's vector table location?",
+     "more": {
+      "text": "VTOR."
+     }
+    }
+   ],
+   "id": "ee-x-170"
+  },
+  {
+   "sides": [
+    {
+     "text": "Code size optimization",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": "-Os, LTO, and trimming libraries",
+     "more": {
+      "text": "Avoid printf with floats, use link-time optimization, and strip unused code to fit small flash."
+     }
+    },
+    {
+     "text": "Which compiler option favors small code?",
+     "more": {
+      "text": "-Os."
+     }
+    }
+   ],
+   "id": "ee-x-171"
+  },
+  {
+   "sides": [
+    {
+     "text": "Energy harvesting",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": "Solar, RF, thermal, and vibration",
+     "more": {
+      "text": "Power levels are microwatts to milliwatts, so devices store energy in capacitors and wake rarely. Needs ultra-low-power design."
+     }
+    },
+    {
+     "text": "Where does an energy-harvesting node often store energy?",
+     "more": {
+      "text": "In a capacitor or supercapacitor."
+     }
+    }
+   ],
+   "id": "ee-x-172"
+  },
+  {
+   "sides": [
+    {
+     "text": "BLE power trade-offs",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": "Intervals set energy and latency",
+     "more": {
+      "text": "Longer advertising and connection intervals save energy but slow discovery and response."
+     }
+    },
+    {
+     "text": "What trade-off does a longer BLE connection interval bring?",
+     "more": {
+      "text": "Lower energy use but higher latency."
+     }
+    }
+   ],
+   "id": "ee-x-173"
+  },
+  {
+   "sides": [
+    {
+     "text": "MQTT quality of service",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": "QoS 0, 1, and 2",
+     "more": {
+      "text": "0: at most once. 1: at least once (duplicates possible). 2: exactly once (more overhead)."
+     }
+    },
+    {
+     "text": "Which MQTT QoS delivers exactly once?",
+     "more": {
+      "text": "QoS 2."
+     }
+    }
+   ],
+   "id": "ee-x-174"
+  },
+  {
+   "sides": [
+    {
+     "text": "CoAP and LwM2M",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": "REST for constrained devices",
+     "more": {
+      "text": "CoAP uses UDP with small headers. LwM2M builds device management on it."
+     }
+    },
+    {
+     "text": "Which transport does CoAP use?",
+     "more": {
+      "text": "UDP."
+     }
+    }
+   ],
+   "id": "ee-x-175"
+  },
+  {
+   "sides": [
+    {
+     "text": "Matter and Thread",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": "Smart home interoperability",
+     "more": {
+      "text": "Matter defines device behavior over Wi-Fi, Ethernet, and Thread. Thread is a low-power IPv6 mesh."
+     }
+    },
+    {
+     "text": "What is Thread?",
+     "more": {
+      "text": "A low-power IPv6 mesh network."
+     }
+    }
+   ],
+   "id": "ee-x-176"
+  },
+  {
+   "sides": [
+    {
+     "text": "Device identity and provisioning",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": "Unique keys per device",
+     "more": {
+      "text": "Each device gets its own certificate or key at manufacture, enabling mutual TLS and revocation."
+     }
+    },
+    {
+     "text": "Why give each device a unique credential?",
+     "more": {
+      "text": "So one compromised device can be revoked without affecting the rest."
+     }
+    }
+   ],
+   "id": "ee-x-177"
+  },
+  {
+   "sides": [
+    {
+     "text": "CAN FD",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": "Larger payloads and faster data",
+     "more": {
+      "text": "Allows up to 64 data bytes and a faster data phase than classic CAN's 8 bytes."
+     }
+    },
+    {
+     "text": "How many data bytes can a CAN FD frame carry?",
+     "more": {
+      "text": "Up to 64."
+     }
+    }
+   ],
+   "id": "ee-x-178"
+  },
+  {
+   "sides": [
+    {
+     "text": "AUTOSAR and automotive Ethernet",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": "Standard software architecture and faster buses",
+     "more": {
+      "text": "AUTOSAR standardizes layers of automotive software. Automotive Ethernet gives 100 Mbit/s to multi-gigabit links over a single pair."
+     }
+    },
+    {
+     "text": "Which standard defines a layered automotive software architecture?",
+     "more": {
+      "text": "AUTOSAR."
+     }
+    }
+   ],
+   "id": "ee-x-179"
+  },
+  {
+   "sides": [
+    {
+     "text": "FMEA and ASIL decomposition",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": "Analyze failures and split safety goals",
+     "more": {
+      "text": "FMEA lists failure modes, effects, and detection. ASIL decomposition splits a high-level requirement across independent elements."
+     }
+    },
+    {
+     "text": "What does FMEA analyze?",
+     "more": {
+      "text": "How components can fail and the effects."
+     }
+    }
+   ],
+   "id": "ee-x-180"
+  },
+  {
+   "sides": [
+    {
+     "text": "Lockstep cores and ECC",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": "Detect faults in safety microcontrollers",
+     "more": {
+      "text": "Two cores run the same code and a comparator flags differences. ECC memory corrects single-bit errors."
+     }
+    },
+    {
+     "text": "What does lockstep detect?",
+     "more": {
+      "text": "Faults, by comparing two cores' outputs."
+     }
+    }
+   ],
+   "id": "ee-x-181"
+  },
+  {
+   "sides": [
+    {
+     "text": "Windowed watchdog",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": "Refresh too early or too late resets",
+     "more": {
+      "text": "The refresh must come within a time window, catching runaway code that refreshes constantly."
+     }
+    },
+    {
+     "text": "Why use a windowed watchdog?",
+     "more": {
+      "text": "To catch code that refreshes the watchdog too early."
+     }
+    }
+   ],
+   "id": "ee-x-182"
+  },
+  {
+   "sides": [
+    {
+     "text": "Tickless RTOS idle",
+     "sub": "Embedded · Expert"
+    },
+    {
+     "text": "Skip periodic ticks to save power",
+     "more": {
+      "text": "The RTOS stops the periodic timer interrupt when idle and wakes for the next scheduled event."
+     }
+    },
+    {
+     "text": "What does tickless idle save?",
+     "more": {
+      "text": "Wake-ups, and therefore power."
+     }
+    }
+   ],
+   "id": "ee-x-183"
+  },
+  {
+   "sides": [
+    {
+     "text": "Doppler spread and coherence time",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "f_D = v × f_c / c",
+     "more": {
+      "text": "Motion changes the channel over time. Coherence time is roughly 0.423 / f_D."
+     }
+    },
+    {
+     "text": "2 GHz carrier and 30 m/s. What is the maximum Doppler shift?",
+     "more": {
+      "text": "200 Hz."
+     }
+    }
+   ],
+   "id": "ee-x-184"
+  },
+  {
+   "sides": [
+    {
+     "text": "Delay spread and coherence bandwidth",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "B_c ≈ 1 / (5σ_τ)",
+     "more": {
+      "text": "Multipath delay spread makes the channel frequency-selective once the signal bandwidth exceeds the coherence bandwidth."
+     }
+    },
+    {
+     "text": "σ = 1 µs. What is the coherence bandwidth?",
+     "more": {
+      "text": "About 200 kHz."
+     }
+    }
+   ],
+   "id": "ee-x-185"
+  },
+  {
+   "sides": [
+    {
+     "text": "Cyclic prefix design",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "Longer than the delay spread",
+     "more": {
+      "text": "The prefix must exceed the maximum channel delay to avoid intersymbol interference, but it costs overhead."
+     }
+    },
+    {
+     "text": "What must the cyclic prefix exceed?",
+     "more": {
+      "text": "The channel's maximum delay spread."
+     }
+    }
+   ],
+   "id": "ee-x-186"
+  },
+  {
+   "sides": [
+    {
+     "text": "PAPR reduction and SC-FDMA",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "Tame OFDM peaks",
+     "more": {
+      "text": "OFDM has high peaks that stress amplifiers. Clipping and tone reservation reduce them. LTE's uplink uses SC-FDMA, which has lower PAPR."
+     }
+    },
+    {
+     "text": "Why does LTE use SC-FDMA in the uplink?",
+     "more": {
+      "text": "Lower PAPR, which suits battery-powered phones."
+     }
+    }
+   ],
+   "id": "ee-x-187"
+  },
+  {
+   "sides": [
+    {
+     "text": "Adaptive modulation and coding",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "Match the rate to the channel",
+     "more": {
+      "text": "Better channels use higher-order modulation and less coding. Poor channels fall back to robust settings."
+     }
+    },
+    {
+     "text": "What does AMC change as SNR rises?",
+     "more": {
+      "text": "Uses higher-order modulation and higher code rates."
+     }
+    }
+   ],
+   "id": "ee-x-188"
+  },
+  {
+   "sides": [
+    {
+     "text": "HARQ",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "Combine retransmissions",
+     "more": {
+      "text": "Hybrid ARQ stores failed packets and combines them with retransmissions, improving the chance of decoding."
+     }
+    },
+    {
+     "text": "What does HARQ do with failed packets?",
+     "more": {
+      "text": "Combines them with retransmissions."
+     }
+    }
+   ],
+   "id": "ee-x-189"
+  },
+  {
+   "sides": [
+    {
+     "text": "Proportional-fair scheduling",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "Balance throughput and fairness",
+     "more": {
+      "text": "Prioritizes users whose current rate is high relative to their average, serving good channels without starving others."
+     }
+    },
+    {
+     "text": "What does proportional-fair scheduling balance?",
+     "more": {
+      "text": "Total throughput and fairness among users."
+     }
+    }
+   ],
+   "id": "ee-x-190"
+  },
+  {
+   "sides": [
+    {
+     "text": "Network slicing",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "Virtual networks on shared infrastructure",
+     "more": {
+      "text": "5G allows separate logical networks with different guarantees, such as low latency or high bandwidth."
+     }
+    },
+    {
+     "text": "What does a 5G network slice provide?",
+     "more": {
+      "text": "A virtual network with tailored performance guarantees."
+     }
+    }
+   ],
+   "id": "ee-x-191"
+  },
+  {
+   "sides": [
+    {
+     "text": "mmWave propagation",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "Large path loss and blockage",
+     "more": {
+      "text": "Millimeter waves lose more over distance and are blocked by bodies and walls. Oxygen absorption peaks near 60 GHz."
+     }
+    },
+    {
+     "text": "Which obstacle strongly affects mmWave links?",
+     "more": {
+      "text": "Blockage by walls and bodies."
+     }
+    }
+   ],
+   "id": "ee-x-192"
+  },
+  {
+   "sides": [
+    {
+     "text": "5G beam management",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "Track narrow beams",
+     "more": {
+      "text": "The base station sweeps synchronization signal blocks, and the device reports the best beam for tracking."
+     }
+    },
+    {
+     "text": "What does beam management maintain?",
+     "more": {
+      "text": "Alignment between narrow beams and the device."
+     }
+    }
+   ],
+   "id": "ee-x-193"
+  },
+  {
+   "sides": [
+    {
+     "text": "Massive MIMO pilot contamination",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "Reused pilots confuse channel estimates",
+     "more": {
+      "text": "Neighboring cells that reuse the same pilot sequences interfere in channel estimation, limiting gains."
+     }
+    },
+    {
+     "text": "What causes pilot contamination?",
+     "more": {
+      "text": "Reuse of the same pilots across cells."
+     }
+    }
+   ],
+   "id": "ee-x-194"
+  },
+  {
+   "sides": [
+    {
+     "text": "I/Q imbalance and DC offset",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "Direct-conversion impairments",
+     "more": {
+      "text": "Gain and phase mismatch between I and Q create image components. DC offset appears at the carrier. Digital compensation corrects them."
+     }
+    },
+    {
+     "text": "Which receiver type commonly suffers I/Q imbalance?",
+     "more": {
+      "text": "Direct-conversion (zero-IF)."
+     }
+    }
+   ],
+   "id": "ee-x-195"
+  },
+  {
+   "sides": [
+    {
+     "text": "Carrier frequency offset",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "OFDM is sensitive to it",
+     "more": {
+      "text": "Offsets cause loss of subcarrier orthogonality. Receivers estimate it from preambles and correct it."
+     }
+    },
+    {
+     "text": "What does CFO destroy in OFDM?",
+     "more": {
+      "text": "Subcarrier orthogonality."
+     }
+    }
+   ],
+   "id": "ee-x-196"
+  },
+  {
+   "sides": [
+    {
+     "text": "Digital down-conversion",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "Mix, filter, and decimate",
+     "more": {
+      "text": "A numerically controlled oscillator mixes the band to baseband, then CIC and FIR filters decimate the sample rate."
+     }
+    },
+    {
+     "text": "Which filters commonly decimate cheaply in a DDC?",
+     "more": {
+      "text": "CIC filters."
+     }
+    }
+   ],
+   "id": "ee-x-197"
+  },
+  {
+   "sides": [
+    {
+     "text": "Software-defined radio",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "Radio defined in software",
+     "more": {
+      "text": "An RF front end, ADC, and FPGA or CPU implement modulation and filtering in software. RTL-SDR and USRP are examples."
+     }
+    },
+    {
+     "text": "What makes a radio software-defined?",
+     "more": {
+      "text": "Most signal processing is done in software or programmable logic."
+     }
+    }
+   ],
+   "id": "ee-x-198"
+  },
+  {
+   "sides": [
+    {
+     "text": "Polyphase filter banks",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "Efficient channelization",
+     "more": {
+      "text": "Split a wideband signal into many channels with one prototype filter and an FFT."
+     }
+    },
+    {
+     "text": "What do polyphase filter banks do?",
+     "more": {
+      "text": "Split a wide band into many channels efficiently."
+     }
+    }
+   ],
+   "id": "ee-x-199"
+  },
+  {
+   "sides": [
+    {
+     "text": "FMCW radar",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "Chirps turn range into a beat frequency",
+     "more": {
+      "text": "The beat between transmitted and received chirps is proportional to range. Resolution = c / (2B)."
+     }
+    },
+    {
+     "text": "B = 4 GHz. What is the range resolution?",
+     "more": {
+      "text": "About 3.75 cm."
+     }
+    }
+   ],
+   "id": "ee-x-200"
+  },
+  {
+   "sides": [
+    {
+     "text": "Range–Doppler processing",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "A 2D FFT over fast and slow time",
+     "more": {
+      "text": "FFT across samples gives range. FFT across chirps gives Doppler (speed)."
+     }
+    },
+    {
+     "text": "Which two quantities does range–Doppler processing give?",
+     "more": {
+      "text": "Range and radial velocity."
+     }
+    }
+   ],
+   "id": "ee-x-201"
+  },
+  {
+   "sides": [
+    {
+     "text": "Angle of arrival",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "Phase differences across antennas",
+     "more": {
+      "text": "sin θ = λΔφ / (2π d) for two antennas spaced d apart."
+     }
+    },
+    {
+     "text": "What measurement gives a signal's arrival angle with two antennas?",
+     "more": {
+      "text": "The phase difference between them."
+     }
+    }
+   ],
+   "id": "ee-x-202"
+  },
+  {
+   "sides": [
+    {
+     "text": "UWB ranging",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "Nanosecond pulses for centimeter accuracy",
+     "more": {
+      "text": "Time-of-flight on very wide bandwidth resolves position to centimeters. Used in digital car keys and tracking tags."
+     }
+    },
+    {
+     "text": "Why can UWB measure distance so precisely?",
+     "more": {
+      "text": "Its very wide bandwidth gives fine timing resolution."
+     }
+    }
+   ],
+   "id": "ee-x-203"
+  },
+  {
+   "sides": [
+    {
+     "text": "Polar codes",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "Channel polarization",
+     "more": {
+      "text": "Successive-cancellation decoding approaches capacity. 5G uses them for control channels."
+     }
+    },
+    {
+     "text": "Where does 5G use polar codes?",
+     "more": {
+      "text": "Control channels."
+     }
+    }
+   ],
+   "id": "ee-x-204"
+  },
+  {
+   "sides": [
+    {
+     "text": "Rate matching and interleaving",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "Fit the code to the channel",
+     "more": {
+      "text": "Rate matching adjusts bits to the allocated resources. Interleaving spreads burst errors so decoders can fix them."
+     }
+    },
+    {
+     "text": "What does interleaving combat?",
+     "more": {
+      "text": "Burst errors."
+     }
+    }
+   ],
+   "id": "ee-x-205"
+  },
+  {
+   "sides": [
+    {
+     "text": "Detection theory",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "Likelihood ratio and Neyman–Pearson",
+     "more": {
+      "text": "Compare the likelihood of the data under each hypothesis. Neyman–Pearson maximizes detection for a fixed false-alarm rate."
+     }
+    },
+    {
+     "text": "What does Neyman–Pearson fix while maximizing detection?",
+     "more": {
+      "text": "The false-alarm probability."
+     }
+    }
+   ],
+   "id": "ee-x-206"
+  },
+  {
+   "sides": [
+    {
+     "text": "Cramér–Rao bound",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "Lowest possible estimator variance",
+     "more": {
+      "text": "No unbiased estimator can have lower variance than the bound, setting limits on accuracy, such as in timing or frequency estimation."
+     }
+    },
+    {
+     "text": "What does the Cramér–Rao bound limit?",
+     "more": {
+      "text": "The variance of unbiased estimators."
+     }
+    }
+   ],
+   "id": "ee-x-207"
+  },
+  {
+   "sides": [
+    {
+     "text": "Spectrum sensing",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "Detect if a band is in use",
+     "more": {
+      "text": "Energy detection is simple but weak at low SNR. Cognitive radios use sensing to reuse idle spectrum."
+     }
+    },
+    {
+     "text": "Which technique detects a band's use by measuring power?",
+     "more": {
+      "text": "Energy detection."
+     }
+    }
+   ],
+   "id": "ee-x-208"
+  },
+  {
+   "sides": [
+    {
+     "text": "Time-sensitive networking",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "Deterministic Ethernet",
+     "more": {
+      "text": "IEEE 802.1 TSN adds time synchronization, scheduling, and reservation for bounded latency in industry and vehicles."
+     }
+    },
+    {
+     "text": "What does TSN guarantee on Ethernet?",
+     "more": {
+      "text": "Bounded, predictable latency."
+     }
+    }
+   ],
+   "id": "ee-x-209"
+  },
+  {
+   "sides": [
+    {
+     "text": "URLLC",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "Ultra-reliable low-latency communication",
+     "more": {
+      "text": "A 5G service class aiming for about 1 ms latency and very high reliability, for industrial and safety uses."
+     }
+    },
+    {
+     "text": "What latency does 5G URLLC target?",
+     "more": {
+      "text": "About 1 ms."
+     }
+    }
+   ],
+   "id": "ee-x-210"
+  },
+  {
+   "sides": [
+    {
+     "text": "Non-terrestrial networks",
+     "sub": "Communications · Expert"
+    },
+    {
+     "text": "Satellites in 5G",
+     "more": {
+      "text": "3GPP adds satellite and high-altitude platforms to extend coverage. Long delays and Doppler need adaptations."
+     }
+    },
+    {
+     "text": "What do non-terrestrial networks extend?",
+     "more": {
+      "text": "Coverage via satellites and high-altitude platforms."
+     }
+    }
+   ],
+   "id": "ee-x-211"
+  }
+ ]
+}

@@ -1,0 +1,120 @@
+{
+ "id": "korean-starter",
+ "name": "Starter words",
+ "cards": [
+  {
+   "id": "ko-starter-1",
+   "sides": [
+    {
+     "text": "사과",
+     "sub": "sa-gwa",
+     "more": {
+      "text": "사과를 먹어요.",
+      "sub": "sa-gwa-reul meo-geo-yo."
+     }
+    },
+    {
+     "text": "apple",
+     "more": {
+      "text": "I eat an apple."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-2",
+   "sides": [
+    {
+     "text": "물",
+     "sub": "mul",
+     "more": {
+      "text": "물을 마셔요.",
+      "sub": "mul-eul ma-syeo-yo."
+     }
+    },
+    {
+     "text": "water",
+     "more": {
+      "text": "I drink water."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-3",
+   "sides": [
+    {
+     "text": "책",
+     "sub": "chaek",
+     "more": {
+      "text": "책을 읽어요.",
+      "sub": "chaek-eul il-geo-yo."
+     }
+    },
+    {
+     "text": "book",
+     "more": {
+      "text": "I read a book."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-4",
+   "sides": [
+    {
+     "text": "친구",
+     "sub": "chin-gu",
+     "more": {
+      "text": "친구를 만나요.",
+      "sub": "chin-gu-reul man-na-yo."
+     }
+    },
+    {
+     "text": "friend",
+     "more": {
+      "text": "I meet a friend."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-5",
+   "sides": [
+    {
+     "text": "학교",
+     "sub": "hak-gyo",
+     "more": {
+      "text": "학교에 가요.",
+      "sub": "hak-gyo-e ga-yo."
+     }
+    },
+    {
+     "text": "school",
+     "more": {
+      "text": "I go to school."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-6",
+   "sides": [
+    {
+     "text": "감사합니다",
+     "sub": "gam-sa-ham-ni-da",
+     "more": {
+      "text": "도와주셔서 감사합니다.",
+      "sub": "do-wa-ju-syeo-seo gam-sa-ham-ni-da."
+     }
+    },
+    {
+     "text": "thank you",
+     "more": {
+      "text": "Thank you for helping me."
+     }
+    }
+   ]
+  }
+ ]
+}

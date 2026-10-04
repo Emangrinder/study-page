@@ -1,0 +1,506 @@
+{
+ "id": "security-plus-practice-1",
+ "name": "Practice · 1 General Security Concepts",
+ "cards": [
+  {
+   "id": "sec-p1-1",
+   "sides": [
+    {
+     "text": "A bank posts signs warning that all branches are monitored by cameras. Which control type does this mainly represent?",
+     "options": [
+      "Preventive",
+      "Compensating",
+      "Corrective",
+      "Deterrent"
+     ]
+    },
+    {
+     "text": "D. Deterrent",
+     "more": {
+      "text": "Signs discourage by perception. They don't physically stop anyone (preventive) or repair damage (corrective)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p1-2",
+   "sides": [
+    {
+     "text": "After a ransomware attack, an organization restores its files from clean backups. Which control type is this?",
+     "options": [
+      "Deterrent",
+      "Corrective",
+      "Detective",
+      "Directive"
+     ]
+    },
+    {
+     "text": "B. Corrective",
+     "more": {
+      "text": "Restoring repairs the damage after the event, which makes it corrective."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p1-3",
+   "sides": [
+    {
+     "text": "A legacy server can't be patched, so the team isolates it on a segmented VLAN with strict firewall rules. Which control type is this?",
+     "options": [
+      "Compensating",
+      "Directive",
+      "Detective",
+      "Deterrent"
+     ]
+    },
+    {
+     "text": "A. Compensating",
+     "more": {
+      "text": "Isolation stands in for the patch that couldn't be applied, so it's a compensating control."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p1-4",
+   "sides": [
+    {
+     "text": "Which control category includes risk assessments and security policies written by senior leaders?",
+     "options": [
+      "Physical",
+      "Technical",
+      "Operational",
+      "Managerial"
+     ]
+    },
+    {
+     "text": "D. Managerial",
+     "more": {
+      "text": "Managerial controls govern and oversee risk. Technical controls are enforced by systems; operational ones are carried out by people."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p1-5",
+   "sides": [
+    {
+     "text": "An employee denies sending a contract that carries their digital signature. Which concept prevents this denial?",
+     "options": [
+      "Availability",
+      "Confidentiality",
+      "Non-repudiation",
+      "Authorization"
+     ]
+    },
+    {
+     "text": "C. Non-repudiation",
+     "more": {
+      "text": "The signature, made with the signer's private key, proves they sent it. That is non-repudiation."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p1-6",
+   "sides": [
+    {
+     "text": "A user logs in with a password and then confirms a code from a hardware token. Which factors are used?",
+     "options": [
+      "Something you have and somewhere you are",
+      "Something you know and something you have",
+      "Something you know and something you are",
+      "Two knowledge factors"
+     ]
+    },
+    {
+     "text": "B. Something you know and something you have",
+     "more": {
+      "text": "A password is knowledge and a token is possession. Two different categories makes it MFA."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p1-7",
+   "sides": [
+    {
+     "text": "A log shows which administrator changed a firewall rule and when. Which part of AAA provides this?",
+     "options": [
+      "Availability",
+      "Authorization",
+      "Authentication",
+      "Accounting"
+     ]
+    },
+    {
+     "text": "D. Accounting",
+     "more": {
+      "text": "Accounting records what users do. Authentication proves identity and authorization grants permissions."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p1-8",
+   "sides": [
+    {
+     "text": "In a zero trust architecture, which component evaluates policy and context and decides whether to grant access?",
+     "options": [
+      "Policy engine",
+      "Subject",
+      "Implicit trust zone",
+      "Policy enforcement point"
+     ]
+    },
+    {
+     "text": "A. Policy engine",
+     "more": {
+      "text": "The policy engine decides. The policy enforcement point carries out that decision on the data plane."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p1-9",
+   "sides": [
+    {
+     "text": "Which zero trust plane contains the policy enforcement point?",
+     "options": [
+      "Management plane",
+      "Control plane",
+      "Data plane",
+      "Access plane"
+     ]
+    },
+    {
+     "text": "C. Data plane",
+     "more": {
+      "text": "The data plane enforces decisions. The control plane holds the policy engine and policy administrator."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p1-10",
+   "sides": [
+    {
+     "text": "A data center entrance has two interlocking doors that admit one verified person at a time. Which control is this?",
+     "options": [
+      "Lighting",
+      "Bollards",
+      "Access control vestibule",
+      "Fencing"
+     ]
+    },
+    {
+     "text": "C. Access control vestibule",
+     "more": {
+      "text": "An access control vestibule (a mantrap) stops tailgating by admitting one person at a time."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p1-11",
+   "sides": [
+    {
+     "text": "A team places a bait file named Executive_Salaries.xlsx on a server that alerts when opened. Which technology is this?",
+     "options": [
+      "Honeyfile",
+      "Honeynet",
+      "Honeypot",
+      "Honeytoken"
+     ]
+    },
+    {
+     "text": "A. Honeyfile",
+     "more": {
+      "text": "A bait file is a honeyfile. A honeytoken is fake data or credentials, and a honeypot is a decoy system."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p1-12",
+   "sides": [
+    {
+     "text": "A change to a production database is approved, but there is no plan to undo it if it fails. Which element is missing?",
+     "options": [
+      "Maintenance window",
+      "Stakeholder list",
+      "Backout plan",
+      "Impact analysis"
+     ]
+    },
+    {
+     "text": "C. Backout plan",
+     "more": {
+      "text": "A backout plan defines how to restore the previous state if the change fails."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p1-13",
+   "sides": [
+    {
+     "text": "A firm schedules network changes for Sunday at 2 a.m. to reduce business impact. What is this called?",
+     "options": [
+      "Standard operating procedure",
+      "Approval process",
+      "Backout plan",
+      "Maintenance window"
+     ]
+    },
+    {
+     "text": "D. Maintenance window",
+     "more": {
+      "text": "A maintenance window is an agreed time for changes with minimal business impact."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p1-14",
+   "sides": [
+    {
+     "text": "Which statement best describes a cryptographic hash?",
+     "options": [
+      "A way to hide data inside images",
+      "A method of exchanging keys",
+      "A reversible function that encrypts data with a key",
+      "A one-way function that produces a fixed-length digest"
+     ]
+    },
+    {
+     "text": "D. A one-way function that produces a fixed-length digest",
+     "more": {
+      "text": "Hashes can't be reversed and output a fixed length. They check integrity; they aren't encryption."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p1-15",
+   "sides": [
+    {
+     "text": "Why is salting used when storing password hashes?",
+     "options": [
+      "It makes the hashes reversible",
+      "It makes identical passwords produce different hashes and defeats rainbow tables",
+      "It encrypts the password database",
+      "It speeds up password verification"
+     ]
+    },
+    {
+     "text": "B. It makes identical passwords produce different hashes and defeats rainbow tables",
+     "more": {
+      "text": "A unique salt per password means precomputed tables are useless and duplicate passwords don't match."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p1-16",
+   "sides": [
+    {
+     "text": "Which tamper-resistant device is used to generate and store keys for servers and certificate authorities?",
+     "options": [
+      "TPM",
+      "Password vault",
+      "Secure enclave",
+      "HSM"
+     ]
+    },
+    {
+     "text": "D. HSM",
+     "more": {
+      "text": "An HSM is dedicated hardware for key protection. A TPM is a chip on a single device's motherboard."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p1-17",
+   "sides": [
+    {
+     "text": "A certificate has been revoked and clients should check one certificate's status in real time. Which protocol is used?",
+     "options": [
+      "CSR",
+      "OCSP",
+      "CRL",
+      "SAML"
+     ]
+    },
+    {
+     "text": "B. OCSP",
+     "more": {
+      "text": "OCSP queries a responder for one certificate's status. A CRL is a downloaded list."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p1-18",
+   "sides": [
+    {
+     "text": "A web admin needs one certificate to cover mail.example.com and shop.example.com. Which type fits best?",
+     "options": [
+      "Root",
+      "Wildcard",
+      "Code-signing",
+      "Self-signed"
+     ]
+    },
+    {
+     "text": "B. Wildcard",
+     "more": {
+      "text": "A wildcard certificate (*.example.com) covers all subdomains of a domain."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p1-19",
+   "sides": [
+    {
+     "text": "A payment processor replaces stored card numbers with random values and keeps the originals in a vault. Which technique is this?",
+     "options": [
+      "Hashing",
+      "Masking",
+      "Steganography",
+      "Tokenization"
+     ]
+    },
+    {
+     "text": "D. Tokenization",
+     "more": {
+      "text": "Tokenization swaps data for tokens with the real value held in a vault. Masking only hides part of a displayed value."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p1-20",
+   "sides": [
+    {
+     "text": "Which provides integrity, authentication, and non-repudiation but not confidentiality?",
+     "options": [
+      "Symmetric encryption",
+      "Salting",
+      "Key stretching",
+      "Digital signature"
+     ]
+    },
+    {
+     "text": "D. Digital signature",
+     "more": {
+      "text": "A signature proves origin and unaltered content. It doesn't hide the message."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p1-21",
+   "sides": [
+    {
+     "text": "Two parties who have never met must agree on a shared key over an untrusted network. Which approach is used?",
+     "options": [
+      "Hashing",
+      "Salting",
+      "Key exchange such as Diffie-Hellman",
+      "Steganography"
+     ]
+    },
+    {
+     "text": "C. Key exchange such as Diffie-Hellman",
+     "more": {
+      "text": "Key exchange derives a shared secret without sending it. Hashing and salting don't establish keys."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p1-22",
+   "sides": [
+    {
+     "text": "A laptop is stolen. Which control best keeps the data on its drive unreadable?",
+     "options": [
+      "Key stretching",
+      "Data masking",
+      "File integrity monitoring",
+      "Full-disk encryption"
+     ]
+    },
+    {
+     "text": "D. Full-disk encryption",
+     "more": {
+      "text": "Full-disk encryption protects data at rest on a lost device."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p1-23",
+   "sides": [
+    {
+     "text": "A gap analysis shows a company meets 70% of a framework's controls. What does this help with?",
+     "options": [
+      "Recovering lost data",
+      "Detecting live attacks",
+      "Prioritizing improvements toward the target standard",
+      "Issuing certificates"
+     ]
+    },
+    {
+     "text": "C. Prioritizing improvements toward the target standard",
+     "more": {
+      "text": "Gap analysis compares the current state with a target and shows what must change."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p1-24",
+   "sides": [
+    {
+     "text": "A software update requires restarting a critical service. What should the change process include?",
+     "options": [
+      "Scheduling the restart in a maintenance window with stakeholder notice",
+      "Avoiding documentation",
+      "Skipping approval for speed",
+      "Deploying at peak hours"
+     ]
+    },
+    {
+     "text": "A. Scheduling the restart in a maintenance window with stakeholder notice",
+     "more": {
+      "text": "Planning restarts and downtime is a technical implication of change management."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p1-25",
+   "sides": [
+    {
+     "text": "Which statement best describes least privilege?",
+     "options": [
+      "Using one shared account",
+      "Granting administrators full access",
+      "Granting only the access needed to do a job",
+      "Allowing access by default"
+     ]
+    },
+    {
+     "text": "C. Granting only the access needed to do a job",
+     "more": {
+      "text": "Least privilege limits the damage from mistakes and compromise."
+     }
+    }
+   ]
+  }
+ ]
+}

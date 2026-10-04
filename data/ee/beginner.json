@@ -1,0 +1,2341 @@
+{
+ "id": "ee-beginner",
+ "name": "1 · Beginner",
+ "cards": [
+  {
+   "sides": [
+    {
+     "text": "Metric prefixes",
+     "sub": "Math · Beginner"
+    },
+    {
+     "text": "k = 1,000 · m = 0.001 · µ = 0.000001",
+     "more": {
+      "text": "Kilo (k) 10³, mega (M) 10⁶, giga (G) 10⁹. Milli (m) 10⁻³, micro (µ) 10⁻⁶, nano (n) 10⁻⁹, pico (p) 10⁻¹². Electronics values are almost always written with prefixes."
+     }
+    },
+    {
+     "text": "Convert 4.7 kΩ to ohms.",
+     "more": {
+      "text": "4,700 Ω."
+     }
+    }
+   ],
+   "id": "ee-b-1"
+  },
+  {
+   "sides": [
+    {
+     "text": "Scientific notation",
+     "sub": "Math · Beginner"
+    },
+    {
+     "text": "Writing numbers as a × 10ⁿ",
+     "more": {
+      "text": "Large and small values are easier to handle: 4,700 = 4.7 × 10³ and 0.00033 = 3.3 × 10⁻⁴. To multiply, add the exponents."
+     }
+    },
+    {
+     "text": "Write 0.0025 in scientific notation.",
+     "more": {
+      "text": "2.5 × 10⁻³."
+     }
+    }
+   ],
+   "id": "ee-b-2"
+  },
+  {
+   "sides": [
+    {
+     "text": "Units and symbols",
+     "sub": "Math · Beginner"
+    },
+    {
+     "text": "V, A, Ω, W, Hz, F, H",
+     "more": {
+      "text": "Volt (V) voltage, ampere (A) current, ohm (Ω) resistance, watt (W) power, hertz (Hz) frequency, farad (F) capacitance, henry (H) inductance, coulomb (C) charge, joule (J) energy."
+     }
+    },
+    {
+     "text": "Which unit measures capacitance?",
+     "more": {
+      "text": "The farad (F)."
+     }
+    }
+   ],
+   "id": "ee-b-3"
+  },
+  {
+   "sides": [
+    {
+     "text": "Electric charge",
+     "sub": "Circuit analysis · Beginner"
+    },
+    {
+     "text": "What electric force acts on; measured in coulombs",
+     "more": {
+      "text": "Electrons carry negative charge and protons positive. One coulomb is about 6.24 × 10¹⁸ electrons. Like charges repel and opposite charges attract."
+     }
+    },
+    {
+     "text": "Do two electrons attract or repel each other?",
+     "more": {
+      "text": "They repel, because like charges repel."
+     }
+    }
+   ],
+   "id": "ee-b-4"
+  },
+  {
+   "sides": [
+    {
+     "text": "Current",
+     "sub": "Circuit analysis · Beginner"
+    },
+    {
+     "text": "Flow of charge, in amperes (A)",
+     "more": {
+      "text": "1 A is 1 coulomb per second, so Q = I × t. Conventional current is drawn flowing from + to −, even though electrons actually move the other way."
+     }
+    },
+    {
+     "text": "A circuit carries 3 A for 10 s. How much charge flows?",
+     "more": {
+      "text": "30 C (Q = I × t = 3 × 10)."
+     }
+    }
+   ],
+   "id": "ee-b-5"
+  },
+  {
+   "sides": [
+    {
+     "text": "Voltage",
+     "sub": "Circuit analysis · Beginner"
+    },
+    {
+     "text": "The electrical push between two points, in volts (V)",
+     "more": {
+      "text": "Energy per unit charge: 1 V is 1 joule per coulomb. It's always measured between two points. A good picture is water pressure difference in a pipe."
+     }
+    },
+    {
+     "text": "A 9 V battery: what does the 9 V mean?",
+     "more": {
+      "text": "Each coulomb of charge gains 9 joules of energy as it passes through the battery."
+     }
+    }
+   ],
+   "id": "ee-b-6"
+  },
+  {
+   "sides": [
+    {
+     "text": "Ground",
+     "sub": "Circuit analysis · Beginner"
+    },
+    {
+     "text": "The 0 V reference point",
+     "more": {
+      "text": "Voltages are measured relative to ground. In a battery circuit it's usually the negative terminal. Earth ground is a physical connection to the earth for safety."
+     }
+    },
+    {
+     "text": "Every voltage in a circuit is measured relative to what?",
+     "more": {
+      "text": "A reference point called ground (0 V)."
+     }
+    }
+   ],
+   "id": "ee-b-7"
+  },
+  {
+   "sides": [
+    {
+     "text": "Name this symbol",
+     "sub": "Components · Beginner",
+     "svg": "<svg viewBox=\"0 0 120 70\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" font-family=\"system-ui,sans-serif\" font-size=\"13\"><g transform=\"translate(36 34) rotate(0)\"><path d=\"M0 0H6C6 -12 18 -12 18 0C18 -12 30 -12 30 0C30 -12 42 -12 42 0H48\"/></g></svg>"
+    },
+    {
+     "text": "Inductor",
+     "more": {
+      "text": "A coil that stores energy in a magnetic field. Measured in henries (H)."
+     }
+    }
+   ],
+   "id": "ee-b-8"
+  },
+  {
+   "sides": [
+    {
+     "text": "Name this symbol",
+     "sub": "Components · Beginner",
+     "svg": "<svg viewBox=\"0 0 120 70\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" font-family=\"system-ui,sans-serif\" font-size=\"13\"><g transform=\"translate(40 34) rotate(0)\"><path d=\"M0 0H12M12 -10V10L28 0ZM28 -10V10M28 0H40M18 -14L26 -22M25 -12L33 -20\"/></g></svg>"
+    },
+    {
+     "text": "LED",
+     "more": {
+      "text": "A diode that emits light. The arrows mean light out."
+     }
+    }
+   ],
+   "id": "ee-b-9"
+  },
+  {
+   "sides": [
+    {
+     "text": "Name this symbol",
+     "sub": "Components · Beginner",
+     "svg": "<svg viewBox=\"0 0 120 70\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" font-family=\"system-ui,sans-serif\" font-size=\"13\"><g transform=\"translate(38 34) rotate(0)\"><path d=\"M0 0H10M10 0L34 -13M34 0H44\"/></g></svg>"
+    },
+    {
+     "text": "Switch",
+     "more": {
+      "text": "Opens or closes the circuit path."
+     }
+    }
+   ],
+   "id": "ee-b-10"
+  },
+  {
+   "sides": [
+    {
+     "text": "Name this symbol",
+     "sub": "Components · Beginner",
+     "svg": "<svg viewBox=\"0 0 120 70\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" font-family=\"system-ui,sans-serif\" font-size=\"13\"><g transform=\"translate(38 34) rotate(0)\"><path d=\"M0 0H8M8 0a14 14 0 1 0 28 0a14 14 0 1 0 -28 0M36 0H44M14 0q4 -8 8 0t8 0\"/></g></svg>"
+    },
+    {
+     "text": "AC source",
+     "more": {
+      "text": "A circle with a sine wave. Provides alternating voltage."
+     }
+    }
+   ],
+   "id": "ee-b-11"
+  },
+  {
+   "sides": [
+    {
+     "text": "Resistance",
+     "sub": "Circuit analysis · Beginner"
+    },
+    {
+     "text": "How strongly something opposes current, in ohms (Ω)",
+     "more": {
+      "text": "Depends on material, length, and thickness: longer or thinner wire resists more. Resistors are parts built to have a chosen resistance."
+     }
+    },
+    {
+     "text": "A thin wire and a thick wire of the same length and material: which has more resistance?",
+     "more": {
+      "text": "The thin one."
+     }
+    }
+   ],
+   "id": "ee-b-12"
+  },
+  {
+   "sides": [
+    {
+     "text": "Ohm's law",
+     "sub": "Circuit analysis · Beginner"
+    },
+    {
+     "text": "V = I × R",
+     "more": {
+      "text": "Voltage equals current times resistance. Rearranged: I = V/R and R = V/I. The voltage across a resistor is proportional to the current through it."
+     },
+     "svg": "<svg viewBox=\"0 0 260 160\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" font-family=\"system-ui,sans-serif\" font-size=\"13\"><path d=\"M50 25L50 58.0\"/><g transform=\"translate(50 58.0) rotate(90)\"><path d=\"M0 0H18M18 -14V14M26 -7V7M26 0H44\"/></g><path d=\"M50 102.0L50 135\"/><text x=\"32\" y=\"74.0\" text-anchor=\"end\" fill=\"currentColor\" stroke=\"none\" class=\"acc\">+</text><text x=\"32\" y=\"100.0\" text-anchor=\"end\" fill=\"currentColor\" stroke=\"none\">−</text><text x=\"70\" y=\"86.0\" text-anchor=\"start\" fill=\"currentColor\" stroke=\"none\">12 V</text><path d=\"M50 25L106.0 25\"/><g transform=\"translate(106.0 25) rotate(0)\"><path d=\"M0 0H8L12 -9L20 9L28 -9L36 9L40 0H48\"/></g><path d=\"M154.0 25L210 25\"/><path d=\"M210 25L210 135\"/><path d=\"M50 135L210 135\"/><text x=\"130.0\" y=\"12\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">R</text><text x=\"90\" y=\"16\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\" class=\"acc\">I →</text></svg>"
+    },
+    {
+     "text": "A 12 V battery drives current through a 240 Ω resistor. What current flows?",
+     "more": {
+      "text": "50 mA (I = V/R = 12 / 240 = 0.05 A)."
+     }
+    }
+   ],
+   "id": "ee-b-13"
+  },
+  {
+   "sides": [
+    {
+     "text": "Open and short circuits",
+     "sub": "Circuit analysis · Beginner"
+    },
+    {
+     "text": "Open: no path, no current. Short: near-zero resistance, huge current",
+     "more": {
+      "text": "An open circuit breaks the loop so no current flows. A short circuit bypasses the load, so current is limited only by the source and wire, which can overheat or damage things. Fuses protect against shorts."
+     }
+    },
+    {
+     "text": "A wire is accidentally connected across a battery's terminals. What happens?",
+     "more": {
+      "text": "A short circuit: very high current, heating, and possibly damage."
+     }
+    }
+   ],
+   "id": "ee-b-14"
+  },
+  {
+   "sides": [
+    {
+     "text": "Power",
+     "sub": "Power · Beginner"
+    },
+    {
+     "text": "P = V × I, in watts (W)",
+     "more": {
+      "text": "Also P = I²R and P = V²/R. One watt is one joule per second. A resistor turns the power it takes into heat."
+     }
+    },
+    {
+     "text": "A 10 Ω resistor carries 2 A. How much power does it dissipate?",
+     "more": {
+      "text": "40 W (P = I²R = 2² × 10)."
+     }
+    }
+   ],
+   "id": "ee-b-15"
+  },
+  {
+   "sides": [
+    {
+     "text": "Energy and kWh",
+     "sub": "Power · Beginner"
+    },
+    {
+     "text": "Power over time; electricity bills use kilowatt-hours",
+     "more": {
+      "text": "Energy = power × time. A 1 kW heater running for 2 hours uses 2 kWh. The joule is the SI unit; 1 kWh is 3.6 million joules."
+     }
+    },
+    {
+     "text": "A 60 W bulb runs for 5 hours. How much energy does it use?",
+     "more": {
+      "text": "0.3 kWh (60 W × 5 h = 300 Wh)."
+     }
+    }
+   ],
+   "id": "ee-b-16"
+  },
+  {
+   "sides": [
+    {
+     "text": "Conductors and insulators",
+     "sub": "Components · Beginner"
+    },
+    {
+     "text": "Conductors pass current easily; insulators block it",
+     "more": {
+      "text": "Metals such as copper and aluminum conduct. Rubber, glass, and plastic insulate. Semiconductors like silicon sit in between and are the basis of modern electronics."
+     }
+    },
+    {
+     "text": "Which material suits a wire's core, copper or rubber? Which suits its coating?",
+     "more": {
+      "text": "Copper for the core (conducts); rubber or plastic for the coating (insulates)."
+     }
+    }
+   ],
+   "id": "ee-b-17"
+  },
+  {
+   "sides": [
+    {
+     "text": "DC and AC",
+     "sub": "Power · Beginner"
+    },
+    {
+     "text": "DC flows one way; AC reverses direction",
+     "more": {
+      "text": "Batteries give DC. Wall outlets give AC, at 60 Hz in the US and 50 Hz in much of the world. AC makes it easy to change voltage with transformers."
+     }
+    },
+    {
+     "text": "Is a USB charger's output AC or DC? What about a wall outlet?",
+     "more": {
+      "text": "The USB output is DC; the wall outlet is AC."
+     }
+    }
+   ],
+   "id": "ee-b-18"
+  },
+  {
+   "sides": [
+    {
+     "text": "Mains voltage",
+     "sub": "Power · Beginner"
+    },
+    {
+     "text": "120 V in the US, 230 V in much of the world",
+     "more": {
+      "text": "The nominal RMS voltage at outlets. Regions use different standards and plugs, so equipment must match."
+     }
+    },
+    {
+     "text": "A 120 V appliance is plugged into 230 V mains. What's likely?",
+     "more": {
+      "text": "It can be damaged or destroyed."
+     }
+    }
+   ],
+   "id": "ee-b-19"
+  },
+  {
+   "sides": [
+    {
+     "text": "RMS voltage",
+     "sub": "Power · Beginner"
+    },
+    {
+     "text": "The DC-equivalent value of an AC voltage",
+     "more": {
+      "text": "For a sine wave, V_rms = V_peak / √2 ≈ 0.707 × V_peak. 120 V mains has a peak of about 170 V."
+     },
+     "svg": "<svg viewBox=\"0 0 260 158\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" font-family=\"system-ui,sans-serif\" font-size=\"13\"><path d=\"M34 12V126H250\" stroke-width=\"1.5\"/><path d=\"M34 69.0H250\" stroke-width=\"1\" stroke-dasharray=\"3 4\" opacity=\".5\"/><path d=\"M34.0 69.0L35.4 67.4L36.7 65.8L38.0 64.2L39.4 62.6L40.8 61.1L42.1 59.5L43.5 57.9L44.8 56.4L46.1 54.9L47.5 53.4L48.8 52.0L50.2 50.5L51.5 49.1L52.9 47.7L54.2 46.4L55.6 45.1L57.0 43.8L58.3 42.6L59.6 41.4L61.0 40.2L62.4 39.1L63.7 38.0L65.0 37.0L66.4 36.1L67.8 35.1L69.1 34.3L70.5 33.5L71.8 32.7L73.2 32.0L74.5 31.4L75.8 30.8L77.2 30.3L78.5 29.8L79.9 29.4L81.2 29.1L82.6 28.8L84.0 28.6L85.3 28.4L86.7 28.3L88.0 28.3L89.3 28.3L90.7 28.4L92.0 28.6L93.4 28.8L94.8 29.1L96.1 29.4L97.5 29.8L98.8 30.3L100.1 30.8L101.5 31.4L102.8 32.0L104.2 32.7L105.6 33.5L106.9 34.3L108.3 35.1L109.6 36.1L110.9 37.0L112.3 38.0L113.6 39.1L115.0 40.2L116.4 41.4L117.7 42.6L119.1 43.8L120.4 45.1L121.7 46.4L123.1 47.7L124.4 49.1L125.8 50.5L127.2 52.0L128.5 53.4L129.9 54.9L131.2 56.4L132.6 57.9L133.9 59.5L135.2 61.1L136.6 62.6L137.9 64.2L139.3 65.8L140.7 67.4L142.0 69.0L143.3 70.6L144.7 72.2L146.1 73.8L147.4 75.4L148.8 76.9L150.1 78.5L151.4 80.1L152.8 81.6L154.2 83.1L155.5 84.6L156.8 86.0L158.2 87.5L159.5 88.9L160.9 90.3L162.2 91.6L163.6 92.9L164.9 94.2L166.3 95.4L167.7 96.6L169.0 97.8L170.4 98.9L171.7 100.0L173.0 101.0L174.4 101.9L175.8 102.9L177.1 103.7L178.4 104.5L179.8 105.3L181.1 106.0L182.5 106.6L183.8 107.2L185.2 107.7L186.6 108.2L187.9 108.6L189.3 108.9L190.6 109.2L192.0 109.4L193.3 109.6L194.6 109.7L196.0 109.7L197.4 109.7L198.7 109.6L200.0 109.4L201.4 109.2L202.7 108.9L204.1 108.6L205.4 108.2L206.8 107.7L208.2 107.2L209.5 106.6L210.9 106.0L212.2 105.3L213.6 104.5L214.9 103.7L216.2 102.9L217.6 101.9L219.0 101.0L220.3 100.0L221.6 98.9L223.0 97.8L224.3 96.6L225.7 95.4L227.0 94.2L228.4 92.9L229.8 91.6L231.1 90.3L232.5 88.9L233.8 87.5L235.2 86.0L236.5 84.6L237.8 83.1L239.2 81.6L240.6 80.1L241.9 78.5L243.2 76.9L244.6 75.4L245.9 73.8L247.3 72.2L248.6 70.6L250.0 69.0\" class=\"\" stroke-width=\"2.2\"/><path d=\"M34 28.3H250\" stroke-width=\"1\" stroke-dasharray=\"4 4\" opacity=\".55\"/><text x=\"30\" y=\"32.28571428571428\" text-anchor=\"end\" fill=\"currentColor\" stroke=\"none\">Vp</text><path d=\"M34 109.7H250\" stroke-width=\"1\" stroke-dasharray=\"4 4\" opacity=\".55\"/><text x=\"30\" y=\"113.71428571428572\" text-anchor=\"end\" fill=\"currentColor\" stroke=\"none\">−Vp</text><path d=\"M250.0 12V126\" stroke-width=\"1\" stroke-dasharray=\"4 4\" opacity=\".55\"/><text x=\"250.0\" y=\"140\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">T</text><text x=\"142.0\" y=\"155\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">time</text></svg>"
+    },
+    {
+     "text": "A sine wave has a 10 V peak. What's its RMS?",
+     "more": {
+      "text": "About 7.07 V."
+     }
+    }
+   ],
+   "id": "ee-b-20"
+  },
+  {
+   "sides": [
+    {
+     "text": "Series circuit",
+     "sub": "Circuit analysis · Beginner"
+    },
+    {
+     "text": "One path: the same current flows through every part",
+     "more": {
+      "text": "Resistances add: R_total = R₁ + R₂ + … The voltage drops across the parts add up to the source voltage."
+     },
+     "svg": "<svg viewBox=\"0 0 260 160\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" font-family=\"system-ui,sans-serif\" font-size=\"13\"><path d=\"M40 25L40 58.0\"/><g transform=\"translate(40 58.0) rotate(90)\"><path d=\"M0 0H18M18 -14V14M26 -7V7M26 0H44\"/></g><path d=\"M40 102.0L40 135\"/><text x=\"22\" y=\"74.0\" text-anchor=\"end\" fill=\"currentColor\" stroke=\"none\" class=\"acc\">+</text><text x=\"22\" y=\"100.0\" text-anchor=\"end\" fill=\"currentColor\" stroke=\"none\">−</text><text x=\"60\" y=\"86.0\" text-anchor=\"start\" fill=\"currentColor\" stroke=\"none\">V</text><path d=\"M40 25L71.33333333333333 25\"/><g transform=\"translate(71.33333333333333 25) rotate(0)\"><path d=\"M0 0H8L12 -9L20 9L28 -9L36 9L40 0H48\"/></g><path d=\"M119.33333333333333 25L150.66666666666666 25\"/><g transform=\"translate(150.66666666666666 25) rotate(0)\"><path d=\"M0 0H8L12 -9L20 9L28 -9L36 9L40 0H48\"/></g><path d=\"M198.66666666666666 25L230 25\"/><path d=\"M230 25L230 135\"/><path d=\"M40 135L230 135\"/><text x=\"95.33333333333333\" y=\"12\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">R₁</text><text x=\"174.66666666666666\" y=\"12\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">R₂</text></svg>"
+    },
+    {
+     "text": "100 Ω, 220 Ω, and 330 Ω in series. What is the total?",
+     "more": {
+      "text": "650 Ω."
+     }
+    }
+   ],
+   "id": "ee-b-21"
+  },
+  {
+   "sides": [
+    {
+     "text": "Parallel circuit",
+     "sub": "Circuit analysis · Beginner"
+    },
+    {
+     "text": "Branches: the same voltage across each",
+     "more": {
+      "text": "1/R_total = 1/R₁ + 1/R₂ + … The total is always less than the smallest branch. Branch currents add up to the total current."
+     },
+     "svg": "<svg viewBox=\"0 0 260 160\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" font-family=\"system-ui,sans-serif\" font-size=\"13\"><path d=\"M40 25L40 58.0\"/><g transform=\"translate(40 58.0) rotate(90)\"><path d=\"M0 0H18M18 -14V14M26 -7V7M26 0H44\"/></g><path d=\"M40 102.0L40 135\"/><text x=\"22\" y=\"74.0\" text-anchor=\"end\" fill=\"currentColor\" stroke=\"none\" class=\"acc\">+</text><text x=\"22\" y=\"100.0\" text-anchor=\"end\" fill=\"currentColor\" stroke=\"none\">−</text><text x=\"60\" y=\"86.0\" text-anchor=\"start\" fill=\"currentColor\" stroke=\"none\">V</text><path d=\"M40 25L210 25\"/><path d=\"M40 135L210 135\"/><path d=\"M130 25L130 56.0\"/><g transform=\"translate(130 56.0) rotate(90)\"><path d=\"M0 0H8L12 -9L20 9L28 -9L36 9L40 0H48\"/></g><path d=\"M130 104.0L130 135\"/><path d=\"M210 25L210 56.0\"/><g transform=\"translate(210 56.0) rotate(90)\"><path d=\"M0 0H8L12 -9L20 9L28 -9L36 9L40 0H48\"/></g><path d=\"M210 104.0L210 135\"/><circle cx=\"130\" cy=\"25\" r=\"3.5\" fill=\"currentColor\" stroke=\"none\"/><circle cx=\"130\" cy=\"135\" r=\"3.5\" fill=\"currentColor\" stroke=\"none\"/><text x=\"146\" y=\"84.0\" text-anchor=\"start\" fill=\"currentColor\" stroke=\"none\">R₁</text><text x=\"226\" y=\"84.0\" text-anchor=\"start\" fill=\"currentColor\" stroke=\"none\">R₂</text></svg>"
+    },
+    {
+     "text": "Two 100 Ω resistors in parallel. What is the total?",
+     "more": {
+      "text": "50 Ω (two equal resistors in parallel give half the value)."
+     }
+    }
+   ],
+   "id": "ee-b-22"
+  },
+  {
+   "sides": [
+    {
+     "text": "Current divider",
+     "sub": "Circuit analysis · Beginner"
+    },
+    {
+     "text": "Parallel branches split the current",
+     "more": {
+      "text": "The lower resistance takes more current. For two branches, I₁ = I × R₂ / (R₁ + R₂). Equal resistors share equally."
+     }
+    },
+    {
+     "text": "6 A flows into two equal parallel resistors. How much goes through each?",
+     "more": {
+      "text": "3 A each."
+     }
+    }
+   ],
+   "id": "ee-b-23"
+  },
+  {
+   "sides": [
+    {
+     "text": "Combining series and parallel",
+     "sub": "Circuit analysis · Beginner"
+    },
+    {
+     "text": "Reduce step by step",
+     "more": {
+      "text": "Combine each parallel group into one resistance, then add the series parts. Work from the innermost group outward."
+     }
+    },
+    {
+     "text": "(100 Ω ∥ 100 Ω) in series with 50 Ω. What is the total?",
+     "more": {
+      "text": "100 Ω (50 + 50)."
+     }
+    }
+   ],
+   "id": "ee-b-24"
+  },
+  {
+   "sides": [
+    {
+     "text": "Voltage divider",
+     "sub": "Circuit analysis · Beginner"
+    },
+    {
+     "text": "Two resistors split a voltage",
+     "more": {
+      "text": "Vout = Vin × R₂ / (R₁ + R₂). Used to scale a voltage down. A load connected to Vout changes the result, so it works best with light loads."
+     },
+     "svg": "<svg viewBox=\"0 0 260 160\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" font-family=\"system-ui,sans-serif\" font-size=\"13\"><path d=\"M40 20L40 58.0\"/><g transform=\"translate(40 58.0) rotate(90)\"><path d=\"M0 0H18M18 -14V14M26 -7V7M26 0H44\"/></g><path d=\"M40 102.0L40 140\"/><text x=\"22\" y=\"74.0\" text-anchor=\"end\" fill=\"currentColor\" stroke=\"none\" class=\"acc\">+</text><text x=\"22\" y=\"100.0\" text-anchor=\"end\" fill=\"currentColor\" stroke=\"none\">−</text><text x=\"60\" y=\"86.0\" text-anchor=\"start\" fill=\"currentColor\" stroke=\"none\">Vin</text><path d=\"M40 20L120 20\"/><path d=\"M40 140L120 140\"/><path d=\"M120 20L120 26.0\"/><g transform=\"translate(120 26.0) rotate(90)\"><path d=\"M0 0H8L12 -9L20 9L28 -9L36 9L40 0H48\"/></g><path d=\"M120 74.0L120 80\"/><path d=\"M120 80L120 86.0\"/><g transform=\"translate(120 86.0) rotate(90)\"><path d=\"M0 0H8L12 -9L20 9L28 -9L36 9L40 0H48\"/></g><path d=\"M120 134.0L120 140\"/><circle cx=\"120\" cy=\"80\" r=\"3.5\" fill=\"currentColor\" stroke=\"none\"/><path d=\"M120 80L190 80\"/><circle cx=\"194\" cy=\"80\" r=\"4\"/><text x=\"206\" y=\"85\" text-anchor=\"start\" fill=\"currentColor\" stroke=\"none\" class=\"acc\">Vout</text><text x=\"136\" y=\"54.0\" text-anchor=\"start\" fill=\"currentColor\" stroke=\"none\">R₁</text><text x=\"136\" y=\"114.0\" text-anchor=\"start\" fill=\"currentColor\" stroke=\"none\">R₂</text></svg>"
+    },
+    {
+     "text": "Vin is 9 V, R₁ is 6 kΩ, and R₂ is 3 kΩ. What is Vout?",
+     "more": {
+      "text": "3 V (9 × 3k / 9k)."
+     }
+    }
+   ],
+   "id": "ee-b-25"
+  },
+  {
+   "sides": [
+    {
+     "text": "Kirchhoff's voltage law",
+     "sub": "Circuit analysis · Beginner"
+    },
+    {
+     "text": "Voltages around a loop add up to zero",
+     "more": {
+      "text": "In any closed loop the voltage rises equal the voltage drops. The source voltage equals the sum of drops across series parts."
+     }
+    },
+    {
+     "text": "A 12 V source feeds two series resistors; one drops 5 V. What does the other drop?",
+     "more": {
+      "text": "7 V (12 − 5)."
+     }
+    }
+   ],
+   "id": "ee-b-26"
+  },
+  {
+   "sides": [
+    {
+     "text": "Kirchhoff's current law",
+     "sub": "Circuit analysis · Beginner"
+    },
+    {
+     "text": "Current in equals current out at a junction",
+     "more": {
+      "text": "Charge doesn't pile up at a node. The currents entering a junction equal the currents leaving it."
+     }
+    },
+    {
+     "text": "3 A enters a junction and one branch carries 1 A. How much flows in the other branch?",
+     "more": {
+      "text": "2 A (3 − 1)."
+     }
+    }
+   ],
+   "id": "ee-b-27"
+  },
+  {
+   "sides": [
+    {
+     "text": "Name this symbol",
+     "sub": "Components · Beginner",
+     "svg": "<svg viewBox=\"0 0 120 70\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" font-family=\"system-ui,sans-serif\" font-size=\"13\"><g transform=\"translate(36.0 34) rotate(0)\"><path d=\"M0 0H8L12 -9L20 9L28 -9L36 9L40 0H48\"/></g></svg>"
+    },
+    {
+     "text": "Resistor",
+     "more": {
+      "text": "Limits current. Its value is in ohms (Ω)."
+     }
+    }
+   ],
+   "id": "ee-b-28"
+  },
+  {
+   "sides": [
+    {
+     "text": "Name this symbol",
+     "sub": "Components · Beginner",
+     "svg": "<svg viewBox=\"0 0 120 70\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" font-family=\"system-ui,sans-serif\" font-size=\"13\"><g transform=\"translate(38.0 34) rotate(0)\"><path d=\"M0 0H18M18 -14V14M26 -7V7M26 0H44\"/></g><text x=\"48.0\" y=\"16\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\" class=\"acc\">+</text></svg>"
+    },
+    {
+     "text": "Battery (DC source)",
+     "more": {
+      "text": "The long plate is positive (+). Provides a steady DC voltage."
+     }
+    }
+   ],
+   "id": "ee-b-29"
+  },
+  {
+   "sides": [
+    {
+     "text": "Name this symbol",
+     "sub": "Components · Beginner",
+     "svg": "<svg viewBox=\"0 0 120 70\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" font-family=\"system-ui,sans-serif\" font-size=\"13\"><g transform=\"translate(38.0 34) rotate(0)\"><path d=\"M0 0H19M19 -13V13M25 -13V13M25 0H44\"/></g></svg>"
+    },
+    {
+     "text": "Capacitor",
+     "more": {
+      "text": "Stores energy in an electric field. Measured in farads (F)."
+     }
+    }
+   ],
+   "id": "ee-b-30"
+  },
+  {
+   "sides": [
+    {
+     "text": "Name this symbol",
+     "sub": "Components · Beginner",
+     "svg": "<svg viewBox=\"0 0 120 70\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" font-family=\"system-ui,sans-serif\" font-size=\"13\"><g transform=\"translate(40.0 34) rotate(0)\"><path d=\"M0 0H12M12 -10V10L28 0ZM28 -10V10M28 0H40\"/></g></svg>"
+    },
+    {
+     "text": "Diode",
+     "more": {
+      "text": "Passes current in one direction only, from anode (triangle side) to cathode (bar)."
+     }
+    }
+   ],
+   "id": "ee-b-31"
+  },
+  {
+   "sides": [
+    {
+     "text": "Name this symbol",
+     "sub": "Components · Beginner",
+     "svg": "<svg viewBox=\"0 0 120 60\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" font-family=\"system-ui,sans-serif\" font-size=\"13\"><path d=\"M60 10V24M44 24H76M50 31H70M56 38H64\"/><text x=\"60\" y=\"70\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\"></text></svg>"
+    },
+    {
+     "text": "Ground",
+     "more": {
+      "text": "The common reference point, defined as 0 V."
+     }
+    }
+   ],
+   "id": "ee-b-32"
+  },
+  {
+   "sides": [
+    {
+     "text": "Resistor",
+     "sub": "Components · Beginner"
+    },
+    {
+     "text": "Limits current; value in ohms",
+     "more": {
+      "text": "Color bands or printed digits show the value. Its power rating matters: a resistor dissipating too much power overheats."
+     }
+    },
+    {
+     "text": "A resistor is rated 0.25 W. Can it safely dissipate 0.5 W?",
+     "more": {
+      "text": "No. It would overheat."
+     }
+    }
+   ],
+   "id": "ee-b-33"
+  },
+  {
+   "sides": [
+    {
+     "text": "Resistor color code",
+     "sub": "Components · Beginner"
+    },
+    {
+     "text": "Bands encode the value",
+     "more": {
+      "text": "The first two bands are digits, the third is the multiplier, and the fourth is the tolerance. Black 0, brown 1, red 2, orange 3, yellow 4, green 5, blue 6, violet 7, gray 8, white 9. Gold tolerance is ±5%."
+     }
+    },
+    {
+     "text": "Brown, black, red, gold. What value?",
+     "more": {
+      "text": "1 kΩ ±5% (10 × 10²)."
+     }
+    }
+   ],
+   "id": "ee-b-34"
+  },
+  {
+   "sides": [
+    {
+     "text": "Resistor tolerance",
+     "sub": "Components · Beginner"
+    },
+    {
+     "text": "How far the real value may stray",
+     "more": {
+      "text": "A 1 kΩ resistor with 5% tolerance can be anywhere from 950 Ω to 1,050 Ω. 1% resistors cost little more and are common."
+     }
+    },
+    {
+     "text": "A 2 kΩ resistor is ±10%. What's the range?",
+     "more": {
+      "text": "1,800 Ω to 2,200 Ω."
+     }
+    }
+   ],
+   "id": "ee-b-35"
+  },
+  {
+   "sides": [
+    {
+     "text": "Potentiometer",
+     "sub": "Components · Beginner"
+    },
+    {
+     "text": "A resistor you adjust with a knob",
+     "more": {
+      "text": "Three terminals: the ends are the full resistance and the wiper picks off a fraction, acting as an adjustable voltage divider. Used for volume knobs and analog input."
+     }
+    },
+    {
+     "text": "The wiper of a 10 kΩ pot across 5 V sits at the midpoint. What's the wiper voltage?",
+     "more": {
+      "text": "2.5 V."
+     }
+    }
+   ],
+   "id": "ee-b-36"
+  },
+  {
+   "sides": [
+    {
+     "text": "Thermistor and photoresistor",
+     "sub": "Components · Beginner"
+    },
+    {
+     "text": "Resistance changes with temperature or light",
+     "more": {
+      "text": "A thermistor's resistance changes with temperature; a photoresistor (LDR) drops in resistance as light increases. Often read with a voltage divider into an ADC."
+     }
+    },
+    {
+     "text": "Which sensor's resistance falls as light gets brighter?",
+     "more": {
+      "text": "A photoresistor (LDR)."
+     }
+    }
+   ],
+   "id": "ee-b-37"
+  },
+  {
+   "sides": [
+    {
+     "text": "Capacitor",
+     "sub": "Components · Beginner"
+    },
+    {
+     "text": "Stores energy in an electric field; measured in farads",
+     "more": {
+      "text": "Two plates separated by an insulator. Once charged it blocks DC, but passes changing signals. Q = C × V. Typical values are µF, nF, and pF."
+     }
+    },
+    {
+     "text": "A 100 µF capacitor is charged to 5 V. How much charge does it hold?",
+     "more": {
+      "text": "500 µC (Q = C × V = 100 µF × 5 V)."
+     }
+    }
+   ],
+   "id": "ee-b-38"
+  },
+  {
+   "sides": [
+    {
+     "text": "Capacitor types",
+     "sub": "Components · Beginner"
+    },
+    {
+     "text": "Ceramic, electrolytic, and more",
+     "more": {
+      "text": "Ceramic: small, no polarity, good at high frequency. Electrolytic: large values, polarized, so observe + and −. Reversing an electrolytic can make it fail."
+     }
+    },
+    {
+     "text": "Which capacitor type has a polarity you must respect?",
+     "more": {
+      "text": "Electrolytic."
+     }
+    }
+   ],
+   "id": "ee-b-39"
+  },
+  {
+   "sides": [
+    {
+     "text": "Inductor",
+     "sub": "Components · Beginner"
+    },
+    {
+     "text": "Stores energy in a magnetic field; measured in henries",
+     "more": {
+      "text": "A coil of wire. It opposes changes in current. Used in filters, power supplies, and radio circuits."
+     }
+    },
+    {
+     "text": "Which part opposes changes in current, a capacitor or an inductor?",
+     "more": {
+      "text": "The inductor. A capacitor opposes changes in voltage."
+     }
+    }
+   ],
+   "id": "ee-b-40"
+  },
+  {
+   "sides": [
+    {
+     "text": "Diode",
+     "sub": "Components · Beginner"
+    },
+    {
+     "text": "Passes current in one direction only",
+     "more": {
+      "text": "A silicon diode drops about 0.7 V when conducting forward. Used to rectify AC to DC and to protect circuits."
+     }
+    },
+    {
+     "text": "A diode is wired backward in a battery circuit. Does current flow?",
+     "more": {
+      "text": "No. Reverse biased, it blocks current."
+     }
+    }
+   ],
+   "id": "ee-b-41"
+  },
+  {
+   "sides": [
+    {
+     "text": "Switch",
+     "sub": "Components · Beginner"
+    },
+    {
+     "text": "Opens or closes a path",
+     "more": {
+      "text": "Common types: toggle, pushbutton (momentary), slide, rocker. Normally open means open until pressed."
+     },
+     "svg": "<svg viewBox=\"0 0 260 160\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" font-family=\"system-ui,sans-serif\" font-size=\"13\"><path d=\"M40 25L40 58.0\"/><g transform=\"translate(40 58.0) rotate(90)\"><path d=\"M0 0H18M18 -14V14M26 -7V7M26 0H44\"/></g><path d=\"M40 102.0L40 135\"/><text x=\"22\" y=\"74.0\" text-anchor=\"end\" fill=\"currentColor\" stroke=\"none\" class=\"acc\">+</text><text x=\"22\" y=\"100.0\" text-anchor=\"end\" fill=\"currentColor\" stroke=\"none\">−</text><text x=\"60\" y=\"86.0\" text-anchor=\"start\" fill=\"currentColor\" stroke=\"none\">9 V</text><path d=\"M40 25L72.0 25\"/><g transform=\"translate(72.0 25) rotate(0)\"><path d=\"M0 0H10M10 0L34 -13M34 0H44\"/></g><path d=\"M116.0 25L148.0 25\"/><g transform=\"translate(148.0 25) rotate(0)\"><path d=\"M0 0H8M28 0H40M8 0a10 10 0 1 0 20 0a10 10 0 1 0 -20 0M11 -7L25 7M25 -7L11 7\"/></g><path d=\"M188.0 25L220 25\"/><path d=\"M220 25L220 135\"/><path d=\"M40 135L220 135\"/><text x=\"94.0\" y=\"12\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">Switch</text><text x=\"168.0\" y=\"12\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">Lamp</text></svg>"
+    },
+    {
+     "text": "A pushbutton is normally open. What happens when it's pressed?",
+     "more": {
+      "text": "It closes the circuit while held."
+     }
+    }
+   ],
+   "id": "ee-b-42"
+  },
+  {
+   "sides": [
+    {
+     "text": "LED",
+     "sub": "Components · Beginner"
+    },
+    {
+     "text": "A diode that gives off light",
+     "more": {
+      "text": "Needs a series resistor to limit current. R = (Vs − Vf) / I, where Vf is the LED's forward voltage (about 2 V for red)."
+     },
+     "svg": "<svg viewBox=\"0 0 260 160\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" font-family=\"system-ui,sans-serif\" font-size=\"13\"><path d=\"M40 25L40 58.0\"/><g transform=\"translate(40 58.0) rotate(90)\"><path d=\"M0 0H18M18 -14V14M26 -7V7M26 0H44\"/></g><path d=\"M40 102.0L40 135\"/><text x=\"22\" y=\"74.0\" text-anchor=\"end\" fill=\"currentColor\" stroke=\"none\" class=\"acc\">+</text><text x=\"22\" y=\"100.0\" text-anchor=\"end\" fill=\"currentColor\" stroke=\"none\">−</text><text x=\"60\" y=\"86.0\" text-anchor=\"start\" fill=\"currentColor\" stroke=\"none\">5 V</text><path d=\"M40 25L74.0 25\"/><g transform=\"translate(74.0 25) rotate(0)\"><path d=\"M0 0H8L12 -9L20 9L28 -9L36 9L40 0H48\"/></g><path d=\"M122.0 25L156.0 25\"/><g transform=\"translate(156.0 25) rotate(0)\"><path d=\"M0 0H12M12 -10V10L28 0ZM28 -10V10M28 0H40M18 -14L26 -22M25 -12L33 -20\"/></g><path d=\"M196.0 25L230 25\"/><path d=\"M230 25L230 135\"/><path d=\"M40 135L230 135\"/><text x=\"98.0\" y=\"12\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">R</text><text x=\"176.0\" y=\"52\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\" class=\"acc\">LED</text></svg>"
+    },
+    {
+     "text": "5 V supply, a red LED (Vf = 2 V), and 20 mA wanted. What resistor?",
+     "more": {
+      "text": "150 Ω (R = (5 − 2) / 0.02)."
+     }
+    }
+   ],
+   "id": "ee-b-43"
+  },
+  {
+   "sides": [
+    {
+     "text": "Transistor as a switch",
+     "sub": "Components · Beginner"
+    },
+    {
+     "text": "A tiny switch controlled by a small signal",
+     "more": {
+      "text": "A small current or voltage at one pin controls a larger current between the other two. It's the foundation of amplifiers and every digital chip."
+     }
+    },
+    {
+     "text": "What lets a microcontroller's tiny output pin turn on a motor?",
+     "more": {
+      "text": "A transistor used as a switch."
+     }
+    }
+   ],
+   "id": "ee-b-44"
+  },
+  {
+   "sides": [
+    {
+     "text": "Relay",
+     "sub": "Components · Beginner"
+    },
+    {
+     "text": "An electrically controlled switch",
+     "more": {
+      "text": "A coil's magnetic field moves a switch. It isolates a small control circuit from a large load, such as mains. Add a flyback diode across the coil to absorb voltage spikes."
+     }
+    },
+    {
+     "text": "Why keep a relay's control side separate from the load side?",
+     "more": {
+      "text": "Electrical isolation: a small, safe circuit controls a large one."
+     }
+    }
+   ],
+   "id": "ee-b-45"
+  },
+  {
+   "sides": [
+    {
+     "text": "Fuse and circuit breaker",
+     "sub": "Components · Beginner"
+    },
+    {
+     "text": "Safety parts that open the circuit on too much current",
+     "more": {
+      "text": "A fuse melts once and must be replaced. A breaker trips and can be reset. Choose a rating just above normal current."
+     }
+    },
+    {
+     "text": "Which can be reset after tripping, a fuse or a circuit breaker?",
+     "more": {
+      "text": "A circuit breaker."
+     }
+    }
+   ],
+   "id": "ee-b-46"
+  },
+  {
+   "sides": [
+    {
+     "text": "Motor",
+     "sub": "Components · Beginner"
+    },
+    {
+     "text": "Turns electrical power into motion",
+     "more": {
+      "text": "A DC motor spins when current flows through its coil in a magnetic field. Speed rises with voltage and direction reverses with polarity. Motors draw more current than a microcontroller pin supplies, so they need a driver."
+     }
+    },
+    {
+     "text": "Why can't a microcontroller pin drive a motor directly?",
+     "more": {
+      "text": "The motor needs more current than the pin can supply. Use a transistor or driver."
+     }
+    }
+   ],
+   "id": "ee-b-47"
+  },
+  {
+   "sides": [
+    {
+     "text": "Sensors",
+     "sub": "Components · Beginner"
+    },
+    {
+     "text": "Turn the world into voltages",
+     "more": {
+      "text": "Temperature, light, motion (PIR), distance (ultrasonic), pressure, and more. The output may be analog (read with an ADC) or digital (I2C, SPI)."
+     }
+    },
+    {
+     "text": "A PIR sensor detects what?",
+     "more": {
+      "text": "Motion (infrared from moving bodies)."
+     }
+    }
+   ],
+   "id": "ee-b-48"
+  },
+  {
+   "sides": [
+    {
+     "text": "Transformer",
+     "sub": "Power · Beginner"
+    },
+    {
+     "text": "Changes AC voltage up or down",
+     "more": {
+      "text": "Two coils share a core. The voltage ratio equals the turns ratio. It works only with AC, since it relies on a changing magnetic field."
+     }
+    },
+    {
+     "text": "A 10:1 step-down transformer has 120 V in. What is the output?",
+     "more": {
+      "text": "12 V."
+     }
+    }
+   ],
+   "id": "ee-b-49"
+  },
+  {
+   "sides": [
+    {
+     "text": "Frequency",
+     "sub": "Power · Beginner"
+    },
+    {
+     "text": "Cycles per second, in hertz (Hz)",
+     "more": {
+      "text": "Mains power is 60 Hz in the US and 50 Hz in much of the world. Period is T = 1/f."
+     }
+    },
+    {
+     "text": "A 50 Hz signal: how long is one cycle?",
+     "more": {
+      "text": "20 ms (T = 1/50)."
+     }
+    }
+   ],
+   "id": "ee-b-50"
+  },
+  {
+   "sides": [
+    {
+     "text": "Power supply chain",
+     "sub": "Power · Beginner"
+    },
+    {
+     "text": "AC to DC: transformer, rectifier, filter, regulator",
+     "more": {
+      "text": "A transformer steps the voltage down, diodes rectify it into pulsing DC, a capacitor smooths it, and a regulator holds the output steady."
+     }
+    },
+    {
+     "text": "Which stage converts AC into pulsing DC?",
+     "more": {
+      "text": "The rectifier (diodes)."
+     }
+    }
+   ],
+   "id": "ee-b-51"
+  },
+  {
+   "sides": [
+    {
+     "text": "Battery capacity",
+     "sub": "Power · Beginner"
+    },
+    {
+     "text": "Measured in amp-hours or milliamp-hours",
+     "more": {
+      "text": "A 2,000 mAh battery can deliver 2,000 mA for about one hour, or 200 mA for about ten hours (ideally). Real capacity drops with heavy loads and age."
+     }
+    },
+    {
+     "text": "A 2,000 mAh battery powers a 100 mA device. About how long does it last?",
+     "more": {
+      "text": "About 20 hours."
+     }
+    }
+   ],
+   "id": "ee-b-52"
+  },
+  {
+   "sides": [
+    {
+     "text": "Battery types",
+     "sub": "Power · Beginner"
+    },
+    {
+     "text": "Alkaline, lithium-ion, NiMH, lead-acid",
+     "more": {
+      "text": "Alkaline: disposable AA and AAA. Lithium-ion: rechargeable with high energy density, in phones and EVs. NiMH: rechargeable AAs. Lead-acid: cars and backup power."
+     }
+    },
+    {
+     "text": "Which type powers most phones and electric cars?",
+     "more": {
+      "text": "Lithium-ion."
+     }
+    }
+   ],
+   "id": "ee-b-53"
+  },
+  {
+   "sides": [
+    {
+     "text": "Batteries in series and parallel",
+     "sub": "Power · Beginner"
+    },
+    {
+     "text": "Series adds voltage; parallel adds capacity",
+     "more": {
+      "text": "Two 1.5 V cells in series give 3 V. Two in parallel give 1.5 V but twice the capacity."
+     }
+    },
+    {
+     "text": "Four 1.5 V AA cells in series. What's the voltage?",
+     "more": {
+      "text": "6 V."
+     }
+    }
+   ],
+   "id": "ee-b-54"
+  },
+  {
+   "sides": [
+    {
+     "text": "Efficiency",
+     "sub": "Power · Beginner"
+    },
+    {
+     "text": "Useful output divided by input power",
+     "more": {
+      "text": "Efficiency = P_out / P_in. The rest becomes heat. A charger delivering 9 W from 10 W is 90% efficient."
+     }
+    },
+    {
+     "text": "A supply draws 20 W and delivers 16 W. What is its efficiency?",
+     "more": {
+      "text": "80%."
+     }
+    }
+   ],
+   "id": "ee-b-55"
+  },
+  {
+   "sides": [
+    {
+     "text": "Heat and dissipation",
+     "sub": "Power · Beginner"
+    },
+    {
+     "text": "Power that isn't useful becomes heat",
+     "more": {
+      "text": "Every part that dissipates power warms up. Check power ratings and allow airflow or heat sinks."
+     }
+    },
+    {
+     "text": "A resistor drops 5 V at 100 mA. How much power does it dissipate as heat?",
+     "more": {
+      "text": "0.5 W (P = V × I)."
+     }
+    }
+   ],
+   "id": "ee-b-56"
+  },
+  {
+   "sides": [
+    {
+     "text": "USB power",
+     "sub": "Power · Beginner"
+    },
+    {
+     "text": "5 V, with current limits",
+     "more": {
+      "text": "USB-A ports typically supply 5 V at 0.5 to 3 A depending on the standard and charger. USB-C Power Delivery can negotiate higher voltages."
+     }
+    },
+    {
+     "text": "What voltage do basic USB ports supply?",
+     "more": {
+      "text": "5 V."
+     }
+    }
+   ],
+   "id": "ee-b-57"
+  },
+  {
+   "sides": [
+    {
+     "text": "High-voltage transmission",
+     "sub": "Power · Beginner"
+    },
+    {
+     "text": "Higher voltage means lower current and lower loss",
+     "more": {
+      "text": "Line loss is I²R. For the same power, doubling the voltage halves the current and cuts the loss to a quarter."
+     }
+    },
+    {
+     "text": "Why do power lines use very high voltage?",
+     "more": {
+      "text": "To reduce current, and therefore I²R loss."
+     }
+    }
+   ],
+   "id": "ee-b-58"
+  },
+  {
+   "sides": [
+    {
+     "text": "Solar panel",
+     "sub": "Power · Beginner"
+    },
+    {
+     "text": "Turns light into DC electricity",
+     "more": {
+      "text": "Output depends on light and panel size. Current follows light, while voltage varies less. Needs a charge controller for batteries."
+     }
+    },
+    {
+     "text": "Does a solar panel produce AC or DC?",
+     "more": {
+      "text": "DC."
+     }
+    }
+   ],
+   "id": "ee-b-59"
+  },
+  {
+   "sides": [
+    {
+     "text": "Electromagnets and induction",
+     "sub": "Power · Beginner"
+    },
+    {
+     "text": "Current makes a magnetic field; changing fields make voltage",
+     "more": {
+      "text": "A coil carrying current acts as a magnet. Faraday's law: a changing magnetic field through a coil induces a voltage. It's the basis of transformers, generators, and motors."
+     }
+    },
+    {
+     "text": "Moving a magnet through a coil does what?",
+     "more": {
+      "text": "It induces a voltage in the coil."
+     }
+    }
+   ],
+   "id": "ee-b-60"
+  },
+  {
+   "sides": [
+    {
+     "text": "Generator and motor",
+     "sub": "Power · Beginner"
+    },
+    {
+     "text": "Same machine, opposite directions",
+     "more": {
+      "text": "A motor turns electrical energy into motion; a generator turns motion into electrical energy by electromagnetic induction."
+     }
+    },
+    {
+     "text": "What principle lets a generator make electricity?",
+     "more": {
+      "text": "Electromagnetic induction."
+     }
+    }
+   ],
+   "id": "ee-b-61"
+  },
+  {
+   "sides": [
+    {
+     "text": "Electrical safety",
+     "sub": "Power · Beginner"
+    },
+    {
+     "text": "Current, not just voltage, is what hurts",
+     "more": {
+      "text": "Mains can be deadly. Never work on live mains circuits, use insulated tools, and make sure circuits are off and discharged. Low-voltage DC projects are far safer."
+     }
+    },
+    {
+     "text": "Which is safer for a beginner to experiment with: a 5 V USB circuit or wall mains?",
+     "more": {
+      "text": "5 V USB."
+     }
+    }
+   ],
+   "id": "ee-b-62"
+  },
+  {
+   "sides": [
+    {
+     "text": "Grounding and GFCI",
+     "sub": "Power · Beginner"
+    },
+    {
+     "text": "Safety paths that prevent shocks",
+     "more": {
+      "text": "Equipment grounding gives fault current a safe path. A GFCI outlet detects current leaking to ground and trips quickly. Required near water."
+     }
+    },
+    {
+     "text": "Why do bathrooms use GFCI outlets?",
+     "more": {
+      "text": "To cut power quickly if current leaks, reducing shock risk near water."
+     }
+    }
+   ],
+   "id": "ee-b-63"
+  },
+  {
+   "sides": [
+    {
+     "text": "Static electricity (ESD)",
+     "sub": "Power · Beginner"
+    },
+    {
+     "text": "Sudden discharge that can destroy chips",
+     "more": {
+      "text": "Touch a grounded surface before handling sensitive parts, or use a wrist strap. Store chips in antistatic bags."
+     }
+    },
+    {
+     "text": "Why use an antistatic wrist strap?",
+     "more": {
+      "text": "To prevent static discharge from damaging components."
+     }
+    }
+   ],
+   "id": "ee-b-64"
+  },
+  {
+   "sides": [
+    {
+     "text": "Microcontroller",
+     "sub": "Embedded · Beginner"
+    },
+    {
+     "text": "A tiny computer on a single chip",
+     "more": {
+      "text": "Contains a processor, memory, and input/output pins. Runs one program for a dedicated job. Examples: the ATmega on an Arduino Uno, the ESP32, and STM32 chips."
+     }
+    },
+    {
+     "text": "A washing machine's cycle timing is run by what kind of chip?",
+     "more": {
+      "text": "A microcontroller."
+     }
+    }
+   ],
+   "id": "ee-b-65"
+  },
+  {
+   "sides": [
+    {
+     "text": "Flash, RAM, and EEPROM",
+     "sub": "Embedded · Beginner"
+    },
+    {
+     "text": "Program storage, working memory, small saved data",
+     "more": {
+      "text": "Flash stores the program and keeps it without power. RAM holds variables and is lost at power-off. EEPROM stores small settings that persist."
+     }
+    },
+    {
+     "text": "Where does a microcontroller keep its program when unpowered?",
+     "more": {
+      "text": "In flash memory."
+     }
+    }
+   ],
+   "id": "ee-b-66"
+  },
+  {
+   "sides": [
+    {
+     "text": "Clock speed",
+     "sub": "Embedded · Beginner"
+    },
+    {
+     "text": "How fast the processor ticks",
+     "more": {
+      "text": "Measured in MHz or GHz. An Arduino Uno runs at 16 MHz; a Raspberry Pi 4 at about 1.5 GHz. Faster clocks do more per second but draw more power."
+     }
+    },
+    {
+     "text": "Which runs faster, an Arduino Uno or a Raspberry Pi 4?",
+     "more": {
+      "text": "The Raspberry Pi 4 (about 1.5 GHz vs 16 MHz)."
+     }
+    }
+   ],
+   "id": "ee-b-67"
+  },
+  {
+   "sides": [
+    {
+     "text": "Embedded systems",
+     "sub": "Embedded · Beginner"
+    },
+    {
+     "text": "Computers inside other products",
+     "more": {
+      "text": "Cars, appliances, medical devices, and toys. Dedicated to a task, with limited resources, and often real-time."
+     }
+    },
+    {
+     "text": "Is a thermostat's controller embedded or general purpose?",
+     "more": {
+      "text": "Embedded."
+     }
+    }
+   ],
+   "id": "ee-b-68"
+  },
+  {
+   "sides": [
+    {
+     "text": "Firmware",
+     "sub": "Embedded · Beginner"
+    },
+    {
+     "text": "Software that runs a device",
+     "more": {
+      "text": "Code stored in a device's flash that controls its hardware. Updating firmware changes the device's behavior."
+     }
+    },
+    {
+     "text": "What is software stored in a device to run its hardware called?",
+     "more": {
+      "text": "Firmware."
+     }
+    }
+   ],
+   "id": "ee-b-69"
+  },
+  {
+   "sides": [
+    {
+     "text": "Decoupling capacitor",
+     "sub": "Components · Beginner"
+    },
+    {
+     "text": "A small capacitor next to a chip's power pin",
+     "more": {
+      "text": "Supplies quick bursts of current and filters noise. Typically 0.1 µF ceramic placed close to each IC."
+     }
+    },
+    {
+     "text": "Why put a 0.1 µF capacitor next to a microcontroller's power pin?",
+     "more": {
+      "text": "To supply quick bursts of current and filter supply noise."
+     }
+    }
+   ],
+   "id": "ee-b-70"
+  },
+  {
+   "sides": [
+    {
+     "text": "GPIO pin",
+     "sub": "Embedded · Beginner"
+    },
+    {
+     "text": "A general-purpose pin you set as input or output",
+     "more": {
+      "text": "As an output it drives high or low (for example 3.3 V or 0 V). As an input it reads high or low."
+     }
+    },
+    {
+     "text": "A pin set as an output goes high, wired through a resistor to an LED to ground. What happens?",
+     "more": {
+      "text": "The LED lights."
+     }
+    }
+   ],
+   "id": "ee-b-71"
+  },
+  {
+   "sides": [
+    {
+     "text": "Setup and loop",
+     "sub": "Embedded · Beginner"
+    },
+    {
+     "text": "Setup runs once; loop runs forever",
+     "more": {
+      "text": "In Arduino sketches, setup() configures pins and loop() repeats. A typical loop reads inputs, decides, and writes outputs."
+     }
+    },
+    {
+     "text": "Where do you set a pin as an output in an Arduino sketch?",
+     "more": {
+      "text": "In setup()."
+     }
+    }
+   ],
+   "id": "ee-b-72"
+  },
+  {
+   "sides": [
+    {
+     "text": "Pull-up and pull-down resistors",
+     "sub": "Embedded · Beginner"
+    },
+    {
+     "text": "Keep an input at a known level",
+     "more": {
+      "text": "A floating input reads randomly. A pull-up ties it to high and a pull-down to low, until a button or signal overrides it."
+     }
+    },
+    {
+     "text": "A button input reads random values when not pressed. What's the fix?",
+     "more": {
+      "text": "Add a pull-up or pull-down resistor."
+     }
+    }
+   ],
+   "id": "ee-b-73"
+  },
+  {
+   "sides": [
+    {
+     "text": "Debouncing",
+     "sub": "Embedded · Beginner"
+    },
+    {
+     "text": "Ignore the bounce when a button changes",
+     "more": {
+      "text": "Mechanical contacts bounce for a few milliseconds, causing many false edges. Fix with a small delay, software filtering, or an RC filter."
+     }
+    },
+    {
+     "text": "One button press counts as ten. Why?",
+     "more": {
+      "text": "Contact bounce. Add debouncing."
+     }
+    }
+   ],
+   "id": "ee-b-74"
+  },
+  {
+   "sides": [
+    {
+     "text": "Interrupt",
+     "sub": "Embedded · Beginner"
+    },
+    {
+     "text": "A signal that pauses the main program",
+     "more": {
+      "text": "A pin change or timer triggers a short handler. Good for reacting quickly without constantly checking."
+     }
+    },
+    {
+     "text": "Reacting instantly to a button without polling uses what feature?",
+     "more": {
+      "text": "An interrupt."
+     }
+    }
+   ],
+   "id": "ee-b-75"
+  },
+  {
+   "sides": [
+    {
+     "text": "Timers",
+     "sub": "Embedded · Beginner"
+    },
+    {
+     "text": "Hardware counters that measure time",
+     "more": {
+      "text": "They count clock ticks to create delays, PWM, and periodic events without stalling the CPU."
+     }
+    },
+    {
+     "text": "Blinking an LED every second without blocking other code uses what?",
+     "more": {
+      "text": "A hardware timer."
+     }
+    }
+   ],
+   "id": "ee-b-76"
+  },
+  {
+   "sides": [
+    {
+     "text": "Digital vs analog",
+     "sub": "Embedded · Beginner"
+    },
+    {
+     "text": "Digital: two levels. Analog: smoothly varying",
+     "more": {
+      "text": "Digital signals are 0 or 1 (low or high). Analog signals vary continuously, like sound or temperature. An ADC turns an analog voltage into numbers."
+     }
+    },
+    {
+     "text": "What turns a temperature sensor's voltage into numbers a microcontroller can use?",
+     "more": {
+      "text": "An ADC (analog-to-digital converter)."
+     }
+    }
+   ],
+   "id": "ee-b-77"
+  },
+  {
+   "sides": [
+    {
+     "text": "ADC resolution",
+     "sub": "Embedded · Beginner"
+    },
+    {
+     "text": "A 10-bit ADC gives 0 to 1023",
+     "more": {
+      "text": "An Arduino Uno's 10-bit ADC splits 0 to 5 V into 1,024 steps of about 4.9 mV."
+     }
+    },
+    {
+     "text": "A 10-bit ADC with a 5 V reference reads 512. About what voltage is that?",
+     "more": {
+      "text": "About 2.5 V."
+     }
+    }
+   ],
+   "id": "ee-b-78"
+  },
+  {
+   "sides": [
+    {
+     "text": "Binary numbers",
+     "sub": "Digital · Beginner"
+    },
+    {
+     "text": "Counting with only 0 and 1",
+     "more": {
+      "text": "Each place is a power of 2: 1, 2, 4, 8, and so on. 1011₂ = 8 + 2 + 1 = 11."
+     }
+    },
+    {
+     "text": "Convert 1101₂ to decimal.",
+     "more": {
+      "text": "13 (8 + 4 + 0 + 1)."
+     }
+    }
+   ],
+   "id": "ee-b-79"
+  },
+  {
+   "sides": [
+    {
+     "text": "Logic gates",
+     "sub": "Digital · Beginner"
+    },
+    {
+     "text": "AND, OR, and NOT: the basic building blocks",
+     "more": {
+      "text": "AND: high only if both inputs are high. OR: high if either is high. NOT: inverts its input. Combined, they build any digital circuit."
+     }
+    },
+    {
+     "text": "An AND gate's inputs are 1 and 0. What is the output?",
+     "more": {
+      "text": "0."
+     }
+    }
+   ],
+   "id": "ee-b-80"
+  },
+  {
+   "sides": [
+    {
+     "text": "NAND, NOR, and XOR",
+     "sub": "Digital · Beginner"
+    },
+    {
+     "text": "Inverted AND, inverted OR, and exclusive OR",
+     "more": {
+      "text": "NAND is NOT AND, NOR is NOT OR, and XOR is high when the inputs differ. NAND alone can build any gate."
+     }
+    },
+    {
+     "text": "XOR inputs are 1 and 1. What is the output?",
+     "more": {
+      "text": "0."
+     }
+    }
+   ],
+   "id": "ee-b-81"
+  },
+  {
+   "sides": [
+    {
+     "text": "Truth table",
+     "sub": "Digital · Beginner"
+    },
+    {
+     "text": "Lists the output for every input combination",
+     "more": {
+      "text": "With n inputs there are 2ⁿ rows."
+     }
+    },
+    {
+     "text": "How many rows does a 3-input truth table have?",
+     "more": {
+      "text": "8."
+     }
+    }
+   ],
+   "id": "ee-b-82"
+  },
+  {
+   "sides": [
+    {
+     "text": "Hexadecimal",
+     "sub": "Digital · Beginner"
+    },
+    {
+     "text": "Base 16, shorthand for binary",
+     "more": {
+      "text": "Digits 0 to 9 and A to F. One hex digit is 4 bits. 0xFF = 255."
+     }
+    },
+    {
+     "text": "Convert 0x1A to decimal.",
+     "more": {
+      "text": "26 (16 + 10)."
+     }
+    }
+   ],
+   "id": "ee-b-83"
+  },
+  {
+   "sides": [
+    {
+     "text": "Logic levels",
+     "sub": "Embedded · Beginner"
+    },
+    {
+     "text": "3.3 V and 5 V are the common 'high' levels",
+     "more": {
+      "text": "Mixing them can damage chips: a 5 V signal on a 3.3 V pin may break it. Use a level shifter or a voltage divider."
+     }
+    },
+    {
+     "text": "A 5 V sensor output drives a 3.3 V microcontroller pin. What's the risk?",
+     "more": {
+      "text": "Damage to the input. Use a level shifter or divider."
+     }
+    }
+   ],
+   "id": "ee-b-84"
+  },
+  {
+   "sides": [
+    {
+     "text": "PWM",
+     "sub": "Embedded · Beginner"
+    },
+    {
+     "text": "Switching on and off quickly to control average power",
+     "more": {
+      "text": "Duty cycle is the fraction of time the signal is high. A 25% duty at 5 V averages about 1.25 V. Used to dim LEDs and control motor speed."
+     }
+    },
+    {
+     "text": "A 5 V PWM signal has a 40% duty cycle. What is its average voltage?",
+     "more": {
+      "text": "2 V."
+     }
+    }
+   ],
+   "id": "ee-b-85"
+  },
+  {
+   "sides": [
+    {
+     "text": "PWM and motors",
+     "sub": "Embedded · Beginner"
+    },
+    {
+     "text": "PWM sets motor speed or LED brightness",
+     "more": {
+      "text": "Rapid on-off switching changes the average power. Higher duty cycle means faster motor or brighter LED."
+     }
+    },
+    {
+     "text": "A PWM duty cycle rises from 20% to 80% on a motor. What happens?",
+     "more": {
+      "text": "The motor speeds up."
+     }
+    }
+   ],
+   "id": "ee-b-86"
+  },
+  {
+   "sides": [
+    {
+     "text": "Motor driver and H-bridge",
+     "sub": "Embedded · Beginner"
+    },
+    {
+     "text": "Lets a small signal control a motor's speed and direction",
+     "more": {
+      "text": "An H-bridge uses four switches to reverse current through a motor. Combined with PWM for speed, and with flyback diodes."
+     }
+    },
+    {
+     "text": "Which circuit reverses a DC motor's direction?",
+     "more": {
+      "text": "An H-bridge."
+     }
+    }
+   ],
+   "id": "ee-b-87"
+  },
+  {
+   "sides": [
+    {
+     "text": "Servo motor",
+     "sub": "Embedded · Beginner"
+    },
+    {
+     "text": "Moves to a commanded angle",
+     "more": {
+      "text": "A servo has a motor, gearbox, and feedback. Hobby servos are commanded by a PWM pulse width, often 1 to 2 ms every 20 ms."
+     }
+    },
+    {
+     "text": "What signal tells a hobby servo its angle?",
+     "more": {
+      "text": "A PWM pulse width (about 1 to 2 ms)."
+     }
+    }
+   ],
+   "id": "ee-b-88"
+  },
+  {
+   "sides": [
+    {
+     "text": "I2C bus",
+     "sub": "Embedded · Beginner"
+    },
+    {
+     "text": "Two wires shared by many devices",
+     "more": {
+      "text": "I2C uses SDA (data) and SCL (clock) with pull-up resistors, and each device has an address."
+     }
+    },
+    {
+     "text": "How many signal wires does an I2C bus use?",
+     "more": {
+      "text": "Two: SDA and SCL."
+     }
+    }
+   ],
+   "id": "ee-b-89"
+  },
+  {
+   "sides": [
+    {
+     "text": "Arduino vs Raspberry Pi",
+     "sub": "Embedded · Beginner"
+    },
+    {
+     "text": "Microcontroller board vs small computer",
+     "more": {
+      "text": "Arduino: a microcontroller that runs one program immediately, with low power use. Raspberry Pi: a full computer running Linux, with much more power and memory."
+     }
+    },
+    {
+     "text": "Which suits reading a sensor and blinking an LED with minimal power, an Arduino or a Raspberry Pi?",
+     "more": {
+      "text": "An Arduino. A microcontroller is simpler and uses less power."
+     }
+    }
+   ],
+   "id": "ee-b-90"
+  },
+  {
+   "sides": [
+    {
+     "text": "Raspberry Pi GPIO",
+     "sub": "Embedded · Beginner"
+    },
+    {
+     "text": "Pins on the Pi's header",
+     "more": {
+      "text": "The Pi's 40-pin header uses 3.3 V logic and is not 5 V tolerant. It's controlled from Linux with Python libraries."
+     }
+    },
+    {
+     "text": "What logic level do Raspberry Pi GPIO pins use?",
+     "more": {
+      "text": "3.3 V."
+     }
+    }
+   ],
+   "id": "ee-b-91"
+  },
+  {
+   "sides": [
+    {
+     "text": "Wavelength and frequency",
+     "sub": "Communications · Beginner"
+    },
+    {
+     "text": "Frequency × wavelength = speed of light",
+     "more": {
+      "text": "c = f × λ, with c ≈ 3 × 10⁸ m/s for radio waves in air. Higher frequency means shorter wavelength."
+     }
+    },
+    {
+     "text": "A 100 MHz radio signal has what wavelength?",
+     "more": {
+      "text": "3 m (3 × 10⁸ / 10⁸)."
+     }
+    }
+   ],
+   "id": "ee-b-92"
+  },
+  {
+   "sides": [
+    {
+     "text": "Bits and bytes",
+     "sub": "Communications · Beginner"
+    },
+    {
+     "text": "A bit is 0 or 1; a byte is 8 bits",
+     "more": {
+      "text": "Data rates are in bits per second (Mbit/s), while file sizes are in bytes (MB). 8 bits make 1 byte."
+     }
+    },
+    {
+     "text": "A 100 Mbit/s link moves about how many megabytes per second?",
+     "more": {
+      "text": "12.5 MB/s."
+     }
+    }
+   ],
+   "id": "ee-b-93"
+  },
+  {
+   "sides": [
+    {
+     "text": "Digital audio",
+     "sub": "Communications · Beginner"
+    },
+    {
+     "text": "Sampled sound: samples per second × bits",
+     "more": {
+      "text": "CD audio samples at 44.1 kHz with 16 bits per sample. More samples and bits mean better fidelity and larger files."
+     }
+    },
+    {
+     "text": "CD audio, one channel: how many bits per second?",
+     "more": {
+      "text": "705.6 kbit/s (44,100 × 16)."
+     }
+    }
+   ],
+   "id": "ee-b-94"
+  },
+  {
+   "sides": [
+    {
+     "text": "Noise",
+     "sub": "Communications · Beginner"
+    },
+    {
+     "text": "Unwanted random signal",
+     "more": {
+      "text": "Noise limits how small a signal can be detected. Sources: thermal motion of electrons, interference from other circuits, and radio."
+     }
+    },
+    {
+     "text": "Hiss in an audio signal is an example of what?",
+     "more": {
+      "text": "Noise."
+     }
+    }
+   ],
+   "id": "ee-b-95"
+  },
+  {
+   "sides": [
+    {
+     "text": "Protocol",
+     "sub": "Communications · Beginner"
+    },
+    {
+     "text": "Agreed rules for communication",
+     "more": {
+      "text": "Defines format, timing, and error handling. Examples: UART, I2C, SPI, Ethernet, Wi-Fi, Bluetooth."
+     }
+    },
+    {
+     "text": "What is the set of rules two devices follow to talk called?",
+     "more": {
+      "text": "A protocol."
+     }
+    }
+   ],
+   "id": "ee-b-96"
+  },
+  {
+   "sides": [
+    {
+     "text": "Parity bit",
+     "sub": "Communications · Beginner"
+    },
+    {
+     "text": "A simple error check",
+     "more": {
+      "text": "Adds one bit so the number of 1s is even (or odd). Detects any single-bit error but can't fix it."
+     }
+    },
+    {
+     "text": "Data 1011 with even parity. What's the parity bit?",
+     "more": {
+      "text": "1 (three 1s, so one more makes four)."
+     }
+    }
+   ],
+   "id": "ee-b-97"
+  },
+  {
+   "sides": [
+    {
+     "text": "Bandwidth",
+     "sub": "Communications · Beginner"
+    },
+    {
+     "text": "The range of frequencies a channel uses",
+     "more": {
+      "text": "In signals, bandwidth is the frequency span. Wider bandwidth allows faster data. In everyday use the word also means data rate."
+     }
+    },
+    {
+     "text": "Which allows faster data, an 80 MHz or a 20 MHz Wi-Fi channel?",
+     "more": {
+      "text": "80 MHz."
+     }
+    }
+   ],
+   "id": "ee-b-98"
+  },
+  {
+   "sides": [
+    {
+     "text": "Radio and modulation",
+     "sub": "Communications · Beginner"
+    },
+    {
+     "text": "Radio carries information by varying a high-frequency wave",
+     "more": {
+      "text": "AM varies the wave's amplitude and FM varies its frequency. Digital schemes vary phase or amplitude in steps. Wi-Fi and Bluetooth use 2.4 GHz among other bands."
+     }
+    },
+    {
+     "text": "Which radio method varies the wave's frequency to carry the signal, AM or FM?",
+     "more": {
+      "text": "FM."
+     }
+    }
+   ],
+   "id": "ee-b-99"
+  },
+  {
+   "sides": [
+    {
+     "text": "Antenna",
+     "sub": "Communications · Beginner"
+    },
+    {
+     "text": "Converts between electrical signals and radio waves",
+     "more": {
+      "text": "Size relates to wavelength: a quarter-wave antenna is λ/4 long. Different shapes direct the signal differently."
+     }
+    },
+    {
+     "text": "A quarter-wave antenna for 300 MHz. How long is it?",
+     "more": {
+      "text": "25 cm (λ = 1 m, so λ/4 = 0.25 m)."
+     }
+    }
+   ],
+   "id": "ee-b-100"
+  },
+  {
+   "sides": [
+    {
+     "text": "Wi-Fi and Bluetooth",
+     "sub": "Communications · Beginner"
+    },
+    {
+     "text": "Short-range wireless around 2.4 GHz and 5 GHz",
+     "more": {
+      "text": "Wi-Fi moves lots of data over tens of meters. Bluetooth connects nearby devices with lower power (BLE uses very little)."
+     }
+    },
+    {
+     "text": "Which suits a wireless mouse, Wi-Fi or Bluetooth?",
+     "more": {
+      "text": "Bluetooth, for low power and short range."
+     }
+    }
+   ],
+   "id": "ee-b-101"
+  },
+  {
+   "sides": [
+    {
+     "text": "Ethernet",
+     "sub": "Communications · Beginner"
+    },
+    {
+     "text": "Wired networking standard",
+     "more": {
+      "text": "Cat5e and Cat6 cables carry up to 1 Gbit/s (Cat6 can go further over short runs). More reliable than Wi-Fi."
+     }
+    },
+    {
+     "text": "Which is more reliable for a fixed device, Ethernet or Wi-Fi?",
+     "more": {
+      "text": "Ethernet."
+     }
+    }
+   ],
+   "id": "ee-b-102"
+  },
+  {
+   "sides": [
+    {
+     "text": "Cellular generations",
+     "sub": "Communications · Beginner"
+    },
+    {
+     "text": "3G, 4G LTE, 5G",
+     "more": {
+      "text": "Each generation raised speed and cut latency. 5G adds higher-frequency bands and lower delay."
+     }
+    },
+    {
+     "text": "Which is newer, 4G LTE or 5G?",
+     "more": {
+      "text": "5G."
+     }
+    }
+   ],
+   "id": "ee-b-103"
+  },
+  {
+   "sides": [
+    {
+     "text": "Serial communication (UART)",
+     "sub": "Communications · Beginner"
+    },
+    {
+     "text": "Sending bits one after another over a wire",
+     "more": {
+      "text": "UART uses TX and RX lines, an agreed speed (the baud rate), and start and stop bits. Common for debugging microcontrollers."
+     }
+    },
+    {
+     "text": "Two UART devices use different baud rates. What happens?",
+     "more": {
+      "text": "They see garbled data."
+     }
+    }
+   ],
+   "id": "ee-b-104"
+  },
+  {
+   "sides": [
+    {
+     "text": "Multimeter",
+     "sub": "Tools · Beginner"
+    },
+    {
+     "text": "Measures voltage, current, and resistance",
+     "more": {
+      "text": "Measure voltage in parallel and current in series. Never measure resistance on a powered circuit."
+     }
+    },
+    {
+     "text": "To measure current, do you connect the meter in series or in parallel?",
+     "more": {
+      "text": "In series, so the current flows through the meter."
+     }
+    }
+   ],
+   "id": "ee-b-105"
+  },
+  {
+   "sides": [
+    {
+     "text": "Breadboard",
+     "sub": "Tools · Beginner"
+    },
+    {
+     "text": "Solderless board for prototyping",
+     "more": {
+      "text": "Rows of holes are connected internally and power rails run along the sides. You can build and change circuits without soldering."
+     }
+    },
+    {
+     "text": "Why use a breadboard for a first prototype instead of soldering?",
+     "more": {
+      "text": "It's easy to change and reuse."
+     }
+    }
+   ],
+   "id": "ee-b-106"
+  },
+  {
+   "sides": [
+    {
+     "text": "Soldering",
+     "sub": "Tools · Beginner"
+    },
+    {
+     "text": "Joining parts with molten metal",
+     "more": {
+      "text": "Heat the joint, apply solder to the joint (not the iron), and let it flow. A good joint is shiny and shaped like a small cone. Work in a ventilated area."
+     }
+    },
+    {
+     "text": "What does a good solder joint look like?",
+     "more": {
+      "text": "Shiny and smooth, shaped like a small cone."
+     }
+    }
+   ],
+   "id": "ee-b-107"
+  },
+  {
+   "sides": [
+    {
+     "text": "Datasheet",
+     "sub": "Tools · Beginner"
+    },
+    {
+     "text": "A part's official specifications",
+     "more": {
+      "text": "Gives the pinout, maximum ratings, typical values, and example circuits. Check absolute maximum ratings before using a part."
+     }
+    },
+    {
+     "text": "Where do you find a chip's pinout and voltage limits?",
+     "more": {
+      "text": "In its datasheet."
+     }
+    }
+   ],
+   "id": "ee-b-108"
+  },
+  {
+   "sides": [
+    {
+     "text": "Oscilloscope",
+     "sub": "Tools · Beginner"
+    },
+    {
+     "text": "Shows voltage over time",
+     "more": {
+      "text": "Displays waveforms so you can see frequency, amplitude, and noise. A multimeter gives one number; a scope shows the shape."
+     }
+    },
+    {
+     "text": "Which tool shows a signal's shape over time?",
+     "more": {
+      "text": "An oscilloscope."
+     }
+    }
+   ],
+   "id": "ee-b-109"
+  },
+  {
+   "sides": [
+    {
+     "text": "Bench power supply",
+     "sub": "Tools · Beginner"
+    },
+    {
+     "text": "Adjustable voltage with a current limit",
+     "more": {
+      "text": "Set the voltage and a current limit to protect circuits. Start with a low current limit."
+     }
+    },
+    {
+     "text": "Why set a current limit on a bench supply?",
+     "more": {
+      "text": "To protect the circuit from excess current."
+     }
+    }
+   ],
+   "id": "ee-b-110"
+  },
+  {
+   "sides": [
+    {
+     "text": "Function generator",
+     "sub": "Tools · Beginner"
+    },
+    {
+     "text": "Produces test signals",
+     "more": {
+      "text": "Outputs sine, square, and triangle waves at a set frequency and amplitude, used to test circuits."
+     }
+    },
+    {
+     "text": "Which instrument creates test waveforms?",
+     "more": {
+      "text": "A function generator."
+     }
+    }
+   ],
+   "id": "ee-b-111"
+  },
+  {
+   "sides": [
+    {
+     "text": "Logic analyzer",
+     "sub": "Tools · Beginner"
+    },
+    {
+     "text": "Captures many digital signals at once",
+     "more": {
+      "text": "Records several digital lines to debug protocols such as I2C and SPI."
+     }
+    },
+    {
+     "text": "Which tool decodes I2C traffic across several lines?",
+     "more": {
+      "text": "A logic analyzer."
+     }
+    }
+   ],
+   "id": "ee-b-112"
+  },
+  {
+   "sides": [
+    {
+     "text": "SPICE simulation",
+     "sub": "Tools · Beginner"
+    },
+    {
+     "text": "Simulating circuits on a computer",
+     "more": {
+      "text": "SPICE solves circuit equations numerically. Try a design before building it. LTspice is a free option."
+     }
+    },
+    {
+     "text": "What is SPICE used for?",
+     "more": {
+      "text": "Simulating circuits before building them."
+     }
+    }
+   ],
+   "id": "ee-b-113"
+  }
+ ]
+}

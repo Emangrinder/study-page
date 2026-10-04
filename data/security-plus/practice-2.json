@@ -1,0 +1,506 @@
+{
+ "id": "security-plus-practice-2",
+ "name": "Practice · 2 Threats, Vulnerabilities, Mitigations",
+ "cards": [
+  {
+   "id": "sec-p2-1",
+   "sides": [
+    {
+     "text": "A well-funded group maintains stealthy access to a defense contractor for two years to steal designs. Which actor is most likely?",
+     "options": [
+      "Unskilled attacker",
+      "Nation-state",
+      "Shadow IT",
+      "Hacktivist"
+     ]
+    },
+    {
+     "text": "B. Nation-state",
+     "more": {
+      "text": "Long-term, well-resourced espionage is typical of a nation-state actor."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p2-2",
+   "sides": [
+    {
+     "text": "An employee signs up for an unapproved cloud storage service and stores customer files there. What is this?",
+     "options": [
+      "Brand impersonation",
+      "Hacktivism",
+      "Supply chain attack",
+      "Shadow IT"
+     ]
+    },
+    {
+     "text": "D. Shadow IT",
+     "more": {
+      "text": "Shadow IT is technology used without IT's approval, creating blind spots."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p2-3",
+   "sides": [
+    {
+     "text": "A user receives a text claiming a package is held and clicks the link. Which attack is this?",
+     "options": [
+      "Vishing",
+      "Pretexting",
+      "Smishing",
+      "Whaling"
+     ]
+    },
+    {
+     "text": "C. Smishing",
+     "more": {
+      "text": "Smishing is phishing by SMS."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p2-4",
+   "sides": [
+    {
+     "text": "An attacker compromises a website that a target company's engineers frequently visit in order to infect them. Which attack is this?",
+     "options": [
+      "Phishing",
+      "Brand impersonation",
+      "Watering hole",
+      "Typosquatting"
+     ]
+    },
+    {
+     "text": "C. Watering hole",
+     "more": {
+      "text": "A watering hole compromises a site the targets trust and visit."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p2-5",
+   "sides": [
+    {
+     "text": "Users who mistype a company's domain land on a fake login page. Which attack is this?",
+     "options": [
+      "DNS poisoning",
+      "Vishing",
+      "Watering hole",
+      "Typosquatting"
+     ]
+    },
+    {
+     "text": "D. Typosquatting",
+     "more": {
+      "text": "Typosquatting registers lookalike misspelled domains. DNS poisoning would redirect even correct entries."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p2-6",
+   "sides": [
+    {
+     "text": "An email that appears to come from the CEO urgently asks finance to wire money to a new account. Which attack is this?",
+     "options": [
+      "Business email compromise",
+      "Smishing",
+      "Watering hole",
+      "Typosquatting"
+     ]
+    },
+    {
+     "text": "A. Business email compromise",
+     "more": {
+      "text": "BEC uses spoofed or hijacked executive email to trigger fraudulent payments."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p2-7",
+   "sides": [
+    {
+     "text": "An overlong input crashes a program and lets the attacker run code. Which vulnerability is this?",
+     "options": [
+      "Buffer overflow",
+      "Race condition",
+      "SQL injection",
+      "Directory traversal"
+     ]
+    },
+    {
+     "text": "A. Buffer overflow",
+     "more": {
+      "text": "Input larger than the buffer overwrites adjacent memory, which can allow code execution."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p2-8",
+   "sides": [
+    {
+     "text": "A file's permissions are checked, then the file is swapped before it is opened. Which vulnerability is this?",
+     "options": [
+      "Race condition (TOCTOU)",
+      "Side loading",
+      "Memory injection",
+      "Zero-day"
+     ]
+    },
+    {
+     "text": "A. Race condition (TOCTOU)",
+     "more": {
+      "text": "The state changed between the time of check and the time of use."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p2-9",
+   "sides": [
+    {
+     "text": "A user enters ' OR 1=1 -- into a login field and gains access. Which control best prevents this?",
+     "options": [
+      "Full-disk encryption",
+      "Longer passwords",
+      "Parameterized queries",
+      "Account lockout"
+     ]
+    },
+    {
+     "text": "C. Parameterized queries",
+     "more": {
+      "text": "Parameterized queries keep input from being interpreted as SQL."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p2-10",
+   "sides": [
+    {
+     "text": "A forum comment contains a script that steals other users' session cookies. Which attack is this?",
+     "options": [
+      "Stored cross-site scripting",
+      "SQL injection",
+      "Directory traversal",
+      "Cross-site request forgery"
+     ]
+    },
+    {
+     "text": "A. Stored cross-site scripting",
+     "more": {
+      "text": "Script saved on the server and run in other users' browsers is stored XSS."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p2-11",
+   "sides": [
+    {
+     "text": "A phone's OS restrictions have been removed so unsigned apps can be installed. What is this called?",
+     "options": [
+      "Bluesnarfing",
+      "VM escape",
+      "Jailbreaking",
+      "Side loading"
+     ]
+    },
+    {
+     "text": "C. Jailbreaking",
+     "more": {
+      "text": "Jailbreaking removes the OS's built-in restrictions. Side loading installs apps from outside the store."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p2-12",
+   "sides": [
+    {
+     "text": "Attackers exploit a flaw the vendor doesn't yet know about. Which term applies?",
+     "options": [
+      "Legacy system",
+      "Misconfiguration",
+      "End-of-life",
+      "Zero-day"
+     ]
+    },
+    {
+     "text": "D. Zero-day",
+     "more": {
+      "text": "A zero-day is a flaw with no available patch, often unknown to the vendor."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p2-13",
+   "sides": [
+    {
+     "text": "Malware spreads across the network on its own with no user action. Which type is it?",
+     "options": [
+      "Trojan",
+      "Worm",
+      "Logic bomb",
+      "Virus"
+     ]
+    },
+    {
+     "text": "B. Worm",
+     "more": {
+      "text": "Worms self-replicate across networks. Viruses need a host file and user action."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p2-14",
+   "sides": [
+    {
+     "text": "Files are renamed and a note demands cryptocurrency for a decryption key. Which malware is this?",
+     "options": [
+      "Ransomware",
+      "Spyware",
+      "Rootkit",
+      "Keylogger"
+     ]
+    },
+    {
+     "text": "A. Ransomware",
+     "more": {
+      "text": "Ransomware encrypts data and demands payment."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p2-15",
+   "sides": [
+    {
+     "text": "Malicious code activates only after a specific employee's account is disabled. Which type is it?",
+     "options": [
+      "Logic bomb",
+      "Bloatware",
+      "Worm",
+      "Trojan"
+     ]
+    },
+    {
+     "text": "A. Logic bomb",
+     "more": {
+      "text": "A logic bomb stays dormant until a condition is met."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p2-16",
+   "sides": [
+    {
+     "text": "A tiny spoofed DNS query produces a very large response aimed at a victim. Which technique is this?",
+     "options": [
+      "Downgrade attack",
+      "Amplified DDoS",
+      "On-path attack",
+      "Credential replay"
+     ]
+    },
+    {
+     "text": "B. Amplified DDoS",
+     "more": {
+      "text": "Amplification abuses a service so small requests generate large responses."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p2-17",
+   "sides": [
+    {
+     "text": "An attacker tries one or two common passwords against thousands of accounts to avoid lockouts. Which attack is this?",
+     "options": [
+      "Rainbow table",
+      "Brute force",
+      "Replay",
+      "Password spraying"
+     ]
+    },
+    {
+     "text": "D. Password spraying",
+     "more": {
+      "text": "Spraying spreads a few guesses across many accounts to avoid lockout thresholds."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p2-18",
+   "sides": [
+    {
+     "text": "A user signs in from New York and then from Singapore ten minutes later. Which indicator is this?",
+     "options": [
+      "Resource consumption",
+      "Out-of-cycle logging",
+      "Account lockout",
+      "Impossible travel"
+     ]
+    },
+    {
+     "text": "D. Impossible travel",
+     "more": {
+      "text": "Logins too far apart in too little time suggest stolen credentials."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p2-19",
+   "sides": [
+    {
+     "text": "An attacker forces a connection to fall back to an older, weaker TLS version. Which attack is this?",
+     "options": [
+      "Birthday attack",
+      "Replay attack",
+      "Collision attack",
+      "Downgrade attack"
+     ]
+    },
+    {
+     "text": "D. Downgrade attack",
+     "more": {
+      "text": "A downgrade attack pushes systems to a weaker protocol."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p2-20",
+   "sides": [
+    {
+     "text": "An attacker copies a badge's data with a hidden reader and later enters with a duplicate. Which attack is this?",
+     "options": [
+      "Environmental attack",
+      "Tailgating",
+      "RFID cloning",
+      "Brute force"
+     ]
+    },
+    {
+     "text": "C. RFID cloning",
+     "more": {
+      "text": "RFID cloning duplicates a badge's credential."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p2-21",
+   "sides": [
+    {
+     "text": "Which mitigation best limits lateral movement after one workstation is compromised?",
+     "options": [
+      "Longer passwords",
+      "Log archiving",
+      "Network segmentation",
+      "Login banners"
+     ]
+    },
+    {
+     "text": "C. Network segmentation",
+     "more": {
+      "text": "Segmentation contains a breach to one zone."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p2-22",
+   "sides": [
+    {
+     "text": "A server runs unused services and still has default admin credentials. Which action addresses both problems?",
+     "options": [
+      "Segmentation",
+      "Quarantine",
+      "Hardening",
+      "Decommissioning"
+     ]
+    },
+    {
+     "text": "C. Hardening",
+     "more": {
+      "text": "Hardening disables unneeded services and changes default credentials."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p2-23",
+   "sides": [
+    {
+     "text": "Only approved executables may run on public kiosks. Which mitigation is in use?",
+     "options": [
+      "Application allow list",
+      "Application deny list",
+      "Isolation",
+      "Patching"
+     ]
+    },
+    {
+     "text": "A. Application allow list",
+     "more": {
+      "text": "An allow list blocks everything not explicitly approved."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p2-24",
+   "sides": [
+    {
+     "text": "An unsupported operating system can't be updated and must stay online. What is the best compensating approach?",
+     "options": [
+      "Share its admin password",
+      "Isolate it on a restricted network segment",
+      "Leave it on the main network",
+      "Disable logging"
+     ]
+    },
+    {
+     "text": "B. Isolate it on a restricted network segment",
+     "more": {
+      "text": "Isolation limits the exposure of a system that can't be patched."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p2-25",
+   "sides": [
+    {
+     "text": "Which indicator most likely points to cryptomining malware on a server?",
+     "options": [
+      "Sustained 100% CPU from an unknown process",
+      "A scheduled backup",
+      "A new employee account",
+      "A single failed login"
+     ]
+    },
+    {
+     "text": "A. Sustained 100% CPU from an unknown process",
+     "more": {
+      "text": "Unexplained high resource use is a classic cryptomining sign."
+     }
+    }
+   ]
+  }
+ ]
+}

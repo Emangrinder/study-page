@@ -1,0 +1,743 @@
+{
+ "id": "korean-alphabet",
+ "name": "Alphabet",
+ "cards": [
+  {
+   "id": "ko-alpha-1",
+   "sides": [
+    {
+     "text": "ㄱ",
+     "sub": "g / k",
+     "more": {
+      "text": "giyeok"
+     },
+     "low": true
+    },
+    {
+     "text": "가방",
+     "sub": "ga-bang",
+     "more": {
+      "text": "bag"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-alpha-2",
+   "sides": [
+    {
+     "text": "ㄴ",
+     "sub": "n",
+     "more": {
+      "text": "nieun"
+     },
+     "low": true
+    },
+    {
+     "text": "나무",
+     "sub": "na-mu",
+     "more": {
+      "text": "tree"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-alpha-3",
+   "sides": [
+    {
+     "text": "ㄷ",
+     "sub": "d / t",
+     "more": {
+      "text": "digeut"
+     },
+     "low": true
+    },
+    {
+     "text": "다리",
+     "sub": "da-ri",
+     "more": {
+      "text": "leg, bridge"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-alpha-4",
+   "sides": [
+    {
+     "text": "ㄹ",
+     "sub": "r / l",
+     "more": {
+      "text": "rieul"
+     },
+     "low": true
+    },
+    {
+     "text": "라면",
+     "sub": "ra-myeon",
+     "more": {
+      "text": "ramen"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-alpha-5",
+   "sides": [
+    {
+     "text": "ㅁ",
+     "sub": "m",
+     "more": {
+      "text": "mieum"
+     },
+     "low": true
+    },
+    {
+     "text": "마음",
+     "sub": "ma-eum",
+     "more": {
+      "text": "heart, mind"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-alpha-6",
+   "sides": [
+    {
+     "text": "ㅂ",
+     "sub": "b / p",
+     "more": {
+      "text": "bieup"
+     },
+     "low": true
+    },
+    {
+     "text": "바다",
+     "sub": "ba-da",
+     "more": {
+      "text": "sea"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-alpha-7",
+   "sides": [
+    {
+     "text": "ㅅ",
+     "sub": "s",
+     "more": {
+      "text": "siot"
+     },
+     "low": true
+    },
+    {
+     "text": "사과",
+     "sub": "sa-gwa",
+     "more": {
+      "text": "apple"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-alpha-8",
+   "sides": [
+    {
+     "text": "ㅇ",
+     "sub": "silent / ng",
+     "more": {
+      "text": "ieung"
+     },
+     "low": true
+    },
+    {
+     "text": "아이",
+     "sub": "a-i",
+     "more": {
+      "text": "child"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-alpha-9",
+   "sides": [
+    {
+     "text": "ㅈ",
+     "sub": "j",
+     "more": {
+      "text": "jieut"
+     },
+     "low": true
+    },
+    {
+     "text": "자동차",
+     "sub": "ja-dong-cha",
+     "more": {
+      "text": "car"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-alpha-10",
+   "sides": [
+    {
+     "text": "ㅊ",
+     "sub": "ch",
+     "more": {
+      "text": "chieut"
+     },
+     "low": true
+    },
+    {
+     "text": "차",
+     "sub": "cha",
+     "more": {
+      "text": "tea"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-alpha-11",
+   "sides": [
+    {
+     "text": "ㅋ",
+     "sub": "k",
+     "more": {
+      "text": "kieuk"
+     },
+     "low": true
+    },
+    {
+     "text": "코",
+     "sub": "ko",
+     "more": {
+      "text": "nose"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-alpha-12",
+   "sides": [
+    {
+     "text": "ㅌ",
+     "sub": "t",
+     "more": {
+      "text": "tieut"
+     },
+     "low": true
+    },
+    {
+     "text": "토끼",
+     "sub": "to-kki",
+     "more": {
+      "text": "rabbit"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-alpha-13",
+   "sides": [
+    {
+     "text": "ㅍ",
+     "sub": "p",
+     "more": {
+      "text": "pieup"
+     },
+     "low": true
+    },
+    {
+     "text": "포도",
+     "sub": "po-do",
+     "more": {
+      "text": "grape"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-alpha-14",
+   "sides": [
+    {
+     "text": "ㅎ",
+     "sub": "h",
+     "more": {
+      "text": "hieut"
+     },
+     "low": true
+    },
+    {
+     "text": "하늘",
+     "sub": "ha-neul",
+     "more": {
+      "text": "sky"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-alpha-15",
+   "sides": [
+    {
+     "text": "ㅏ",
+     "sub": "ah",
+     "low": true
+    },
+    {
+     "text": "아기",
+     "sub": "a-gi",
+     "more": {
+      "text": "baby"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-alpha-16",
+   "sides": [
+    {
+     "text": "ㅑ",
+     "sub": "yah",
+     "low": true
+    },
+    {
+     "text": "야구",
+     "sub": "ya-gu",
+     "more": {
+      "text": "baseball"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-alpha-17",
+   "sides": [
+    {
+     "text": "ㅓ",
+     "sub": "uh",
+     "low": true
+    },
+    {
+     "text": "어머니",
+     "sub": "eo-meo-ni",
+     "more": {
+      "text": "mother"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-alpha-18",
+   "sides": [
+    {
+     "text": "ㅕ",
+     "sub": "yuh",
+     "low": true
+    },
+    {
+     "text": "여자",
+     "sub": "yeo-ja",
+     "more": {
+      "text": "woman"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-alpha-19",
+   "sides": [
+    {
+     "text": "ㅗ",
+     "sub": "oh",
+     "low": true
+    },
+    {
+     "text": "오리",
+     "sub": "o-ri",
+     "more": {
+      "text": "duck"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-alpha-20",
+   "sides": [
+    {
+     "text": "ㅛ",
+     "sub": "yoh",
+     "low": true
+    },
+    {
+     "text": "요리",
+     "sub": "yo-ri",
+     "more": {
+      "text": "cooking"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-alpha-21",
+   "sides": [
+    {
+     "text": "ㅜ",
+     "sub": "oo",
+     "low": true
+    },
+    {
+     "text": "우유",
+     "sub": "u-yu",
+     "more": {
+      "text": "milk"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-alpha-22",
+   "sides": [
+    {
+     "text": "ㅠ",
+     "sub": "yoo",
+     "low": true
+    },
+    {
+     "text": "유리",
+     "sub": "yu-ri",
+     "more": {
+      "text": "glass"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-alpha-23",
+   "sides": [
+    {
+     "text": "ㅡ",
+     "sub": "eu (lips spread)",
+     "low": true
+    },
+    {
+     "text": "그림",
+     "sub": "geu-rim",
+     "more": {
+      "text": "picture"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-alpha-24",
+   "sides": [
+    {
+     "text": "ㅣ",
+     "sub": "ee",
+     "low": true
+    },
+    {
+     "text": "이름",
+     "sub": "i-reum",
+     "more": {
+      "text": "name"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-alpha-25",
+   "sides": [
+    {
+     "text": "ㄲ",
+     "sub": "kk",
+     "more": {
+      "text": "ssang-giyeok"
+     },
+     "low": true
+    },
+    {
+     "text": "꿈",
+     "sub": "kkum",
+     "more": {
+      "text": "dream"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-alpha-26",
+   "sides": [
+    {
+     "text": "ㄸ",
+     "sub": "tt",
+     "more": {
+      "text": "ssang-digeut"
+     },
+     "low": true
+    },
+    {
+     "text": "딸",
+     "sub": "ttal",
+     "more": {
+      "text": "daughter"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-alpha-27",
+   "sides": [
+    {
+     "text": "ㅃ",
+     "sub": "pp",
+     "more": {
+      "text": "ssang-bieup"
+     },
+     "low": true
+    },
+    {
+     "text": "빵",
+     "sub": "ppang",
+     "more": {
+      "text": "bread"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-alpha-28",
+   "sides": [
+    {
+     "text": "ㅆ",
+     "sub": "ss",
+     "more": {
+      "text": "ssang-siot"
+     },
+     "low": true
+    },
+    {
+     "text": "쓰다",
+     "sub": "sseu-da",
+     "more": {
+      "text": "to write"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-alpha-29",
+   "sides": [
+    {
+     "text": "ㅉ",
+     "sub": "jj",
+     "more": {
+      "text": "ssang-jieut"
+     },
+     "low": true
+    },
+    {
+     "text": "찌개",
+     "sub": "jji-gae",
+     "more": {
+      "text": "stew"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-alpha-30",
+   "sides": [
+    {
+     "text": "ㅐ",
+     "sub": "ae",
+     "low": true
+    },
+    {
+     "text": "개",
+     "sub": "gae",
+     "more": {
+      "text": "dog"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-alpha-31",
+   "sides": [
+    {
+     "text": "ㅔ",
+     "sub": "e",
+     "low": true
+    },
+    {
+     "text": "네",
+     "sub": "ne",
+     "more": {
+      "text": "yes"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-alpha-32",
+   "sides": [
+    {
+     "text": "ㅒ",
+     "sub": "yae",
+     "low": true
+    },
+    {
+     "text": "얘기",
+     "sub": "yae-gi",
+     "more": {
+      "text": "talk"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-alpha-33",
+   "sides": [
+    {
+     "text": "ㅖ",
+     "sub": "ye",
+     "low": true
+    },
+    {
+     "text": "예",
+     "sub": "ye",
+     "more": {
+      "text": "yes (formal)"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-alpha-34",
+   "sides": [
+    {
+     "text": "ㅘ",
+     "sub": "wa",
+     "low": true
+    },
+    {
+     "text": "과일",
+     "sub": "gwa-il",
+     "more": {
+      "text": "fruit"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-alpha-35",
+   "sides": [
+    {
+     "text": "ㅙ",
+     "sub": "wae",
+     "low": true
+    },
+    {
+     "text": "왜",
+     "sub": "wae",
+     "more": {
+      "text": "why"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-alpha-36",
+   "sides": [
+    {
+     "text": "ㅚ",
+     "sub": "oe",
+     "low": true
+    },
+    {
+     "text": "외국",
+     "sub": "oe-guk",
+     "more": {
+      "text": "foreign country"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-alpha-37",
+   "sides": [
+    {
+     "text": "ㅝ",
+     "sub": "wo",
+     "low": true
+    },
+    {
+     "text": "원",
+     "sub": "won",
+     "more": {
+      "text": "won (currency)"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-alpha-38",
+   "sides": [
+    {
+     "text": "ㅞ",
+     "sub": "we",
+     "low": true
+    },
+    {
+     "text": "웨딩",
+     "sub": "we-ding",
+     "more": {
+      "text": "wedding"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-alpha-39",
+   "sides": [
+    {
+     "text": "ㅟ",
+     "sub": "wi",
+     "low": true
+    },
+    {
+     "text": "귀",
+     "sub": "gwi",
+     "more": {
+      "text": "ear"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-alpha-40",
+   "sides": [
+    {
+     "text": "ㅢ",
+     "sub": "ui",
+     "low": true
+    },
+    {
+     "text": "의사",
+     "sub": "ui-sa",
+     "more": {
+      "text": "doctor"
+     }
+    }
+   ]
+  }
+ ]
+}

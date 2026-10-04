@@ -1,0 +1,506 @@
+{
+ "id": "security-plus-practice-5",
+ "name": "Practice · 5 Program Management and Oversight",
+ "cards": [
+  {
+   "id": "sec-p5-1",
+   "sides": [
+    {
+     "text": "Which document gives optional recommended practices?",
+     "options": [
+      "Standard",
+      "Policy",
+      "Guideline",
+      "Procedure"
+     ]
+    },
+    {
+     "text": "C. Guideline",
+     "more": {
+      "text": "Guidelines advise without requiring. Policies and standards are mandatory."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p5-2",
+   "sides": [
+    {
+     "text": "A document lists the exact steps to configure a firewall. Which type is it?",
+     "options": [
+      "Procedure",
+      "Policy",
+      "Standard",
+      "Guideline"
+     ]
+    },
+    {
+     "text": "A. Procedure",
+     "more": {
+      "text": "A procedure gives step-by-step instructions."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p5-3",
+   "sides": [
+    {
+     "text": "Under GDPR, which role decides why personal data is collected?",
+     "options": [
+      "Data subject",
+      "Custodian",
+      "Controller",
+      "Processor"
+     ]
+    },
+    {
+     "text": "C. Controller",
+     "more": {
+      "text": "The controller determines the purposes and means of processing."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p5-4",
+   "sides": [
+    {
+     "text": "A vendor processes payroll data only under a company's instructions. What is the vendor's role?",
+     "options": [
+      "Owner",
+      "Controller",
+      "Processor",
+      "Steward"
+     ]
+    },
+    {
+     "text": "C. Processor",
+     "more": {
+      "text": "A processor acts on the controller's behalf."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p5-5",
+   "sides": [
+    {
+     "text": "An asset worth $200,000 has an exposure factor of 25% and an ARO of 0.5. What is the ALE?",
+     "options": [
+      "$12,500",
+      "$25,000",
+      "$100,000",
+      "$50,000"
+     ]
+    },
+    {
+     "text": "B. $25,000",
+     "more": {
+      "text": "SLE = 200,000 × 0.25 = $50,000. ALE = SLE × ARO = $25,000."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p5-6",
+   "sides": [
+    {
+     "text": "Management decides that fixing a low risk costs more than the possible loss and signs off. Which strategy is this?",
+     "options": [
+      "Transfer",
+      "Avoid",
+      "Mitigate",
+      "Accept"
+     ]
+    },
+    {
+     "text": "D. Accept",
+     "more": {
+      "text": "Knowingly tolerating a risk is acceptance."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p5-7",
+   "sides": [
+    {
+     "text": "A company buys cyber insurance. Which risk strategy is this?",
+     "options": [
+      "Transfer",
+      "Avoid",
+      "Mitigate",
+      "Accept"
+     ]
+    },
+    {
+     "text": "A. Transfer",
+     "more": {
+      "text": "Insurance moves the financial impact to a third party."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p5-8",
+   "sides": [
+    {
+     "text": "A startup deliberately takes on high risk to grow quickly. Which risk appetite is this?",
+     "options": [
+      "Averse",
+      "Expansionary",
+      "Conservative",
+      "Neutral"
+     ]
+    },
+    {
+     "text": "B. Expansionary",
+     "more": {
+      "text": "Expansionary appetite accepts more risk for growth."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p5-9",
+   "sides": [
+    {
+     "text": "A metric that warns risk is rising, such as the backlog of unpatched systems, is called a?",
+     "options": [
+      "ALE",
+      "RTO",
+      "SLA",
+      "Key risk indicator"
+     ]
+    },
+    {
+     "text": "D. Key risk indicator",
+     "more": {
+      "text": "KRIs are measurable signals of increasing exposure."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p5-10",
+   "sides": [
+    {
+     "text": "Which term describes the risk that remains after controls are applied?",
+     "options": [
+      "Risk appetite",
+      "Residual risk",
+      "Risk threshold",
+      "Inherent risk"
+     ]
+    },
+    {
+     "text": "B. Residual risk",
+     "more": {
+      "text": "Inherent risk is before controls; residual is after."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p5-11",
+   "sides": [
+    {
+     "text": "Which BIA output states the maximum acceptable data loss, measured in time?",
+     "options": [
+      "MTBF",
+      "RPO",
+      "MTTR",
+      "RTO"
+     ]
+    },
+    {
+     "text": "B. RPO",
+     "more": {
+      "text": "RPO limits data loss. RTO limits downtime."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p5-12",
+   "sides": [
+    {
+     "text": "A contract allows the customer to inspect a vendor's security controls. Which clause is this?",
+     "options": [
+      "Right-to-audit",
+      "SOW",
+      "SLA",
+      "NDA"
+     ]
+    },
+    {
+     "text": "A. Right-to-audit",
+     "more": {
+      "text": "A right-to-audit clause permits inspection of the vendor."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p5-13",
+   "sides": [
+    {
+     "text": "Which agreement sets standing terms for all future work orders?",
+     "options": [
+      "NDA",
+      "BPA",
+      "MOU",
+      "MSA"
+     ]
+    },
+    {
+     "text": "D. MSA",
+     "more": {
+      "text": "An MSA covers general terms; each project then gets a SOW."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p5-14",
+   "sides": [
+    {
+     "text": "Which document specifies uptime guarantees with remedies if they're missed?",
+     "options": [
+      "SLA",
+      "BPA",
+      "SOW",
+      "MOA"
+     ]
+    },
+    {
+     "text": "A. SLA",
+     "more": {
+      "text": "An SLA defines service levels and consequences."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p5-15",
+   "sides": [
+    {
+     "text": "A company reviews a vendor's SOC 2 report prepared by an outside firm. What kind of evidence is this?",
+     "options": [
+      "Questionnaire",
+      "Self-assessment",
+      "Internal audit",
+      "Independent assessment"
+     ]
+    },
+    {
+     "text": "D. Independent assessment",
+     "more": {
+      "text": "An outside auditor's report is independent assurance."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p5-16",
+   "sides": [
+    {
+     "text": "Which GDPR right lets individuals request deletion of their personal data?",
+     "options": [
+      "Data portability",
+      "Right of access",
+      "Data inventory",
+      "Right to be forgotten"
+     ]
+    },
+    {
+     "text": "D. Right to be forgotten",
+     "more": {
+      "text": "The right to erasure is commonly called the right to be forgotten."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p5-17",
+   "sides": [
+    {
+     "text": "Which standard protects cardholder data and is enforced through card brands rather than law?",
+     "options": [
+      "HIPAA",
+      "PCI DSS",
+      "GDPR",
+      "SOX"
+     ]
+    },
+    {
+     "text": "B. PCI DSS",
+     "more": {
+      "text": "PCI DSS is an industry standard for payment card security."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p5-18",
+   "sides": [
+    {
+     "text": "A US hospital must protect patient health records. Which law applies?",
+     "options": [
+      "HIPAA",
+      "SOX",
+      "PCI DSS",
+      "GLBA"
+     ]
+    },
+    {
+     "text": "A. HIPAA",
+     "more": {
+      "text": "HIPAA protects protected health information."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p5-19",
+   "sides": [
+    {
+     "text": "A penetration tester is given network diagrams and source code. Which type of test is this?",
+     "options": [
+      "Partially known environment",
+      "Known environment",
+      "Unknown environment",
+      "Passive reconnaissance"
+     ]
+    },
+    {
+     "text": "B. Known environment",
+     "more": {
+      "text": "Full information makes it a known environment (white box) test."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p5-20",
+   "sides": [
+    {
+     "text": "Collecting information from public records without touching the target is called?",
+     "options": [
+      "Active reconnaissance",
+      "Port scanning",
+      "Passive reconnaissance",
+      "Exploitation"
+     ]
+    },
+    {
+     "text": "C. Passive reconnaissance",
+     "more": {
+      "text": "Passive reconnaissance leaves no trace on the target."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p5-21",
+   "sides": [
+    {
+     "text": "Attackers and defenders work together and share findings in real time. Which approach is this?",
+     "options": [
+      "Blue team",
+      "Red team",
+      "White team",
+      "Integrated (purple team)"
+     ]
+    },
+    {
+     "text": "D. Integrated (purple team)",
+     "more": {
+      "text": "Integrated testing combines offensive and defensive efforts."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p5-22",
+   "sides": [
+    {
+     "text": "Which activity sends simulated phishing emails to measure and improve awareness?",
+     "options": [
+      "Penetration test",
+      "Phishing campaign",
+      "Vulnerability scan",
+      "Tabletop exercise"
+     ]
+    },
+    {
+     "text": "B. Phishing campaign",
+     "more": {
+      "text": "Simulated phishing campaigns train and measure users."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p5-23",
+   "sides": [
+    {
+     "text": "An employee finds an unknown USB drive in the parking lot. What should they do?",
+     "options": [
+      "Plug it into a test PC",
+      "Use it at home",
+      "Not plug it in and report it",
+      "Format it and reuse it"
+     ]
+    },
+    {
+     "text": "C. Not plug it in and report it",
+     "more": {
+      "text": "Unknown media can carry malware, so report it."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p5-24",
+   "sides": [
+    {
+     "text": "A company's employees post photos of badges and workstations online. Which awareness topic is relevant?",
+     "options": [
+      "Operational security",
+      "Removable media",
+      "Insider threat",
+      "Password management"
+     ]
+    },
+    {
+     "text": "A. Operational security",
+     "more": {
+      "text": "OPSEC means not revealing details that help attackers."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p5-25",
+   "sides": [
+    {
+     "text": "A spreadsheet tracks identified risks with owners and treatments. What is it called?",
+     "options": [
+      "Playbook",
+      "BIA",
+      "Risk register",
+      "SLA"
+     ]
+    },
+    {
+     "text": "C. Risk register",
+     "more": {
+      "text": "A risk register lists risks, owners, ratings, and treatments."
+     }
+    }
+   ]
+  }
+ ]
+}

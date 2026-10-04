@@ -1,0 +1,3345 @@
+{
+ "id": "ee-commercial",
+ "name": "5 · Commercial",
+ "cards": [
+  {
+   "sides": [
+    {
+     "text": "Fabless, foundry, and IDM",
+     "sub": "Chip manufacturing · Commercial"
+    },
+    {
+     "text": "Design only, make for others, or do both",
+     "more": {
+      "text": "Fabless firms (Qualcomm, NVIDIA, AMD, Apple) design chips and outsource manufacturing. Foundries (TSMC, GlobalFoundries) fabricate for others. Integrated device manufacturers (Intel, Samsung, Texas Instruments, Micron) design and make their own."
+     }
+    },
+    {
+     "text": "Which business model does NVIDIA follow?",
+     "more": {
+      "text": "Fabless."
+     }
+    }
+   ],
+   "id": "ee-c-1"
+  },
+  {
+   "sides": [
+    {
+     "text": "TSMC",
+     "sub": "Chip manufacturing · Commercial"
+    },
+    {
+     "text": "The largest contract chip foundry",
+     "more": {
+      "text": "Founded in 1987 by Morris Chang in Taiwan. Manufactures leading-edge chips for companies such as Apple, NVIDIA, AMD, and Qualcomm."
+     }
+    },
+    {
+     "text": "Which company pioneered the pure-play foundry model in 1987?",
+     "more": {
+      "text": "TSMC, founded by Morris Chang."
+     }
+    }
+   ],
+   "id": "ee-c-2"
+  },
+  {
+   "sides": [
+    {
+     "text": "Samsung Electronics",
+     "sub": "Chip manufacturing · Commercial"
+    },
+    {
+     "text": "Memory leader and a major foundry",
+     "more": {
+      "text": "A leading maker of DRAM and NAND flash, plus Samsung Foundry. Also makes phones, TVs, and displays."
+     }
+    },
+    {
+     "text": "Which company is both a top memory maker and a foundry?",
+     "more": {
+      "text": "Samsung Electronics."
+     }
+    }
+   ],
+   "id": "ee-c-3"
+  },
+  {
+   "sides": [
+    {
+     "text": "Intel",
+     "sub": "Chip manufacturing · Commercial"
+    },
+    {
+     "text": "x86 processors and Intel Foundry",
+     "more": {
+      "text": "Founded in 1968 by Robert Noyce and Gordon Moore. Designs and manufactures x86 CPUs and has expanded into manufacturing chips for other companies."
+     }
+    },
+    {
+     "text": "Who co-founded Intel in 1968?",
+     "more": {
+      "text": "Robert Noyce and Gordon Moore."
+     }
+    }
+   ],
+   "id": "ee-c-4"
+  },
+  {
+   "sides": [
+    {
+     "text": "GlobalFoundries",
+     "sub": "Chip manufacturing · Commercial"
+    },
+    {
+     "text": "A foundry spun out of AMD in 2009",
+     "more": {
+      "text": "Focuses on mature and specialty nodes for automotive, IoT, and RF rather than the leading edge."
+     }
+    },
+    {
+     "text": "Which foundry was spun out of AMD?",
+     "more": {
+      "text": "GlobalFoundries."
+     }
+    }
+   ],
+   "id": "ee-c-5"
+  },
+  {
+   "sides": [
+    {
+     "text": "SMIC",
+     "sub": "Chip manufacturing · Commercial"
+    },
+    {
+     "text": "China's largest chip foundry",
+     "more": {
+      "text": "Semiconductor Manufacturing International Corporation, mainly making mature and mid-range process nodes."
+     }
+    },
+    {
+     "text": "Which Chinese company is the country's largest foundry?",
+     "more": {
+      "text": "SMIC."
+     }
+    }
+   ],
+   "id": "ee-c-6"
+  },
+  {
+   "sides": [
+    {
+     "text": "ASML",
+     "sub": "Chip manufacturing · Commercial"
+    },
+    {
+     "text": "Maker of EUV lithography machines",
+     "more": {
+      "text": "A Dutch company based in Veldhoven. It's the sole supplier of EUV scanners, which are essential for the most advanced chips."
+     }
+    },
+    {
+     "text": "Which company is the only supplier of EUV lithography machines?",
+     "more": {
+      "text": "ASML."
+     }
+    }
+   ],
+   "id": "ee-c-7"
+  },
+  {
+   "sides": [
+    {
+     "text": "Applied Materials",
+     "sub": "Chip manufacturing · Commercial"
+    },
+    {
+     "text": "Chip equipment: deposition, etch, and more",
+     "more": {
+      "text": "A US company that supplies equipment for depositing films, etching, ion implantation, and inspection."
+     }
+    },
+    {
+     "text": "Which US company is the largest supplier of chip-making equipment overall?",
+     "more": {
+      "text": "Applied Materials."
+     }
+    }
+   ],
+   "id": "ee-c-8"
+  },
+  {
+   "sides": [
+    {
+     "text": "Lam Research",
+     "sub": "Chip manufacturing · Commercial"
+    },
+    {
+     "text": "Etch and deposition equipment",
+     "more": {
+      "text": "Its tools etch and deposit the thin films that form transistor structures."
+     }
+    },
+    {
+     "text": "Which company is best known for etch equipment, Lam Research or ASML?",
+     "more": {
+      "text": "Lam Research (ASML is known for lithography)."
+     }
+    }
+   ],
+   "id": "ee-c-9"
+  },
+  {
+   "sides": [
+    {
+     "text": "KLA",
+     "sub": "Chip manufacturing · Commercial"
+    },
+    {
+     "text": "Inspection and metrology",
+     "more": {
+      "text": "Finds defects and measures features on wafers and masks, which is crucial for yield."
+     }
+    },
+    {
+     "text": "Which company focuses on wafer inspection and metrology?",
+     "more": {
+      "text": "KLA."
+     }
+    }
+   ],
+   "id": "ee-c-10"
+  },
+  {
+   "sides": [
+    {
+     "text": "Tokyo Electron",
+     "sub": "Chip manufacturing · Commercial"
+    },
+    {
+     "text": "Japanese equipment maker",
+     "more": {
+      "text": "Makes coater/developers, etchers, and other fab equipment."
+     }
+    },
+    {
+     "text": "Which Japanese company is a major supplier of fab equipment?",
+     "more": {
+      "text": "Tokyo Electron."
+     }
+    }
+   ],
+   "id": "ee-c-11"
+  },
+  {
+   "sides": [
+    {
+     "text": "Arm",
+     "sub": "Chip manufacturing · Commercial"
+    },
+    {
+     "text": "Designs and licenses CPU architectures",
+     "more": {
+      "text": "A UK-based company whose low-power cores power most smartphones, Apple's M-series, and many microcontrollers (Cortex-M). It licenses designs rather than selling chips."
+     }
+    },
+    {
+     "text": "Which company licenses the CPU architecture used in most smartphones?",
+     "more": {
+      "text": "Arm."
+     }
+    }
+   ],
+   "id": "ee-c-12"
+  },
+  {
+   "sides": [
+    {
+     "text": "EDA vendors",
+     "sub": "Chip manufacturing · Commercial"
+    },
+    {
+     "text": "Synopsys, Cadence, and Siemens EDA",
+     "more": {
+      "text": "Electronic design automation software is used to design, simulate, and verify chips and boards. These three dominate the market."
+     }
+    },
+    {
+     "text": "Which type of software do Synopsys and Cadence sell?",
+     "more": {
+      "text": "Electronic design automation (EDA)."
+     }
+    }
+   ],
+   "id": "ee-c-13"
+  },
+  {
+   "sides": [
+    {
+     "text": "Micron",
+     "sub": "Chip manufacturing · Commercial"
+    },
+    {
+     "text": "US memory maker",
+     "more": {
+      "text": "Makes DRAM and NAND flash. With Samsung and SK hynix it supplies most of the world's DRAM."
+     }
+    },
+    {
+     "text": "Which US company is a major DRAM and NAND maker?",
+     "more": {
+      "text": "Micron."
+     }
+    }
+   ],
+   "id": "ee-c-14"
+  },
+  {
+   "sides": [
+    {
+     "text": "SK hynix",
+     "sub": "Chip manufacturing · Commercial"
+    },
+    {
+     "text": "Korean memory maker",
+     "more": {
+      "text": "A major DRAM and NAND supplier and a leading supplier of high-bandwidth memory (HBM) used with AI accelerators."
+     }
+    },
+    {
+     "text": "Which type of memory is stacked beside AI accelerators?",
+     "more": {
+      "text": "HBM (high-bandwidth memory)."
+     }
+    }
+   ],
+   "id": "ee-c-15"
+  },
+  {
+   "sides": [
+    {
+     "text": "Wafer sizes",
+     "sub": "Chip manufacturing · Commercial"
+    },
+    {
+     "text": "300 mm for leading edge, 200 mm for analog and power",
+     "more": {
+      "text": "Larger wafers cut cost per die. Many analog, power, and sensor chips still use 200 mm fabs."
+     }
+    },
+    {
+     "text": "Which wafer size is standard for leading-edge fabs?",
+     "more": {
+      "text": "300 mm."
+     }
+    }
+   ],
+   "id": "ee-c-16"
+  },
+  {
+   "sides": [
+    {
+     "text": "Process node names",
+     "sub": "Chip manufacturing · Commercial"
+    },
+    {
+     "text": "Nanometer labels are marketing now",
+     "more": {
+      "text": "Names like 5 nm or 3 nm no longer match a physical dimension. Compare density and performance instead."
+     }
+    },
+    {
+     "text": "Does a 3 nm node have a 3 nm transistor feature?",
+     "more": {
+      "text": "No. The node name is a marketing label."
+     }
+    }
+   ],
+   "id": "ee-c-17"
+  },
+  {
+   "sides": [
+    {
+     "text": "OSAT",
+     "sub": "Chip manufacturing · Commercial"
+    },
+    {
+     "text": "Outsourced assembly and test",
+     "more": {
+      "text": "Companies such as ASE and Amkor package and test chips after the fab. Advanced packaging is a growing part of the business."
+     }
+    },
+    {
+     "text": "What does OSAT stand for?",
+     "more": {
+      "text": "Outsourced semiconductor assembly and test."
+     }
+    }
+   ],
+   "id": "ee-c-18"
+  },
+  {
+   "sides": [
+    {
+     "text": "CHIPS and Science Act",
+     "sub": "Chip manufacturing · Commercial"
+    },
+    {
+     "text": "US funding for domestic chip manufacturing",
+     "more": {
+      "text": "Signed in August 2022, it provides about $52 billion in incentives for semiconductor manufacturing and research."
+     }
+    },
+    {
+     "text": "Which 2022 US law funds domestic chip manufacturing?",
+     "more": {
+      "text": "The CHIPS and Science Act."
+     }
+    }
+   ],
+   "id": "ee-c-19"
+  },
+  {
+   "sides": [
+    {
+     "text": "Apple silicon",
+     "sub": "Chip manufacturing · Commercial"
+    },
+    {
+     "text": "Apple designs its own chips",
+     "more": {
+      "text": "The M1 (2020) moved Macs from Intel to Apple-designed Arm chips, manufactured by TSMC. Apple is fabless."
+     }
+    },
+    {
+     "text": "Who manufactures Apple's M-series chips?",
+     "more": {
+      "text": "TSMC."
+     }
+    }
+   ],
+   "id": "ee-c-20"
+  },
+  {
+   "sides": [
+    {
+     "text": "Texas Instruments",
+     "sub": "Embedded systems · Commercial"
+    },
+    {
+     "text": "Analog and embedded processing",
+     "more": {
+      "text": "Based in Dallas. Large analog portfolio and microcontrollers. Jack Kilby built the first integrated circuit there in 1958. Acquired National Semiconductor in 2011."
+     }
+    },
+    {
+     "text": "Where did Jack Kilby build the first integrated circuit?",
+     "more": {
+      "text": "Texas Instruments."
+     }
+    }
+   ],
+   "id": "ee-c-21"
+  },
+  {
+   "sides": [
+    {
+     "text": "Analog Devices",
+     "sub": "Embedded systems · Commercial"
+    },
+    {
+     "text": "High-performance analog, converters, and RF",
+     "more": {
+      "text": "Known for data converters and signal-chain chips. Acquired Linear Technology in 2017 and Maxim Integrated in 2021."
+     }
+    },
+    {
+     "text": "Which company acquired Linear Technology in 2017?",
+     "more": {
+      "text": "Analog Devices."
+     }
+    }
+   ],
+   "id": "ee-c-22"
+  },
+  {
+   "sides": [
+    {
+     "text": "NXP",
+     "sub": "Embedded systems · Commercial"
+    },
+    {
+     "text": "Automotive and secure microcontrollers",
+     "more": {
+      "text": "A Dutch company spun out of Philips Semiconductors in 2006. Merged with Freescale in 2015. Strong in automotive and NFC."
+     }
+    },
+    {
+     "text": "Which company was spun out of Philips Semiconductors?",
+     "more": {
+      "text": "NXP."
+     }
+    }
+   ],
+   "id": "ee-c-23"
+  },
+  {
+   "sides": [
+    {
+     "text": "STMicroelectronics",
+     "sub": "Embedded systems · Commercial"
+    },
+    {
+     "text": "STM32 microcontrollers, power, and sensors",
+     "more": {
+      "text": "A Franco-Italian company. STM32 is one of the most widely used Arm Cortex-M microcontroller families."
+     }
+    },
+    {
+     "text": "Which company makes the STM32 family?",
+     "more": {
+      "text": "STMicroelectronics."
+     }
+    }
+   ],
+   "id": "ee-c-24"
+  },
+  {
+   "sides": [
+    {
+     "text": "Microchip Technology",
+     "sub": "Embedded systems · Commercial"
+    },
+    {
+     "text": "PIC and AVR microcontrollers",
+     "more": {
+      "text": "Acquired Atmel in 2016, bringing the AVR chips used on classic Arduino boards."
+     }
+    },
+    {
+     "text": "Which company owns the AVR line used in the Arduino Uno?",
+     "more": {
+      "text": "Microchip Technology (via Atmel)."
+     }
+    }
+   ],
+   "id": "ee-c-25"
+  },
+  {
+   "sides": [
+    {
+     "text": "Renesas",
+     "sub": "Embedded systems · Commercial"
+    },
+    {
+     "text": "Japanese microcontrollers, strong in automotive",
+     "more": {
+      "text": "Formed from Hitachi, Mitsubishi, and NEC chip businesses. A leading automotive microcontroller supplier."
+     }
+    },
+    {
+     "text": "Which Japanese company is a major automotive microcontroller maker?",
+     "more": {
+      "text": "Renesas."
+     }
+    }
+   ],
+   "id": "ee-c-26"
+  },
+  {
+   "sides": [
+    {
+     "text": "Infineon",
+     "sub": "Embedded systems · Commercial"
+    },
+    {
+     "text": "Power semiconductors and automotive",
+     "more": {
+      "text": "A German company that leads in power MOSFETs, IGBTs, and silicon carbide. Also makes the AURIX automotive microcontrollers."
+     }
+    },
+    {
+     "text": "Which German company is a leader in power semiconductors?",
+     "more": {
+      "text": "Infineon."
+     }
+    }
+   ],
+   "id": "ee-c-27"
+  },
+  {
+   "sides": [
+    {
+     "text": "Nordic Semiconductor",
+     "sub": "Embedded systems · Commercial"
+    },
+    {
+     "text": "Bluetooth Low Energy chips",
+     "more": {
+      "text": "A Norwegian company whose nRF52 series appears in many BLE products."
+     }
+    },
+    {
+     "text": "Which company's nRF52 chips are common in BLE devices?",
+     "more": {
+      "text": "Nordic Semiconductor."
+     }
+    }
+   ],
+   "id": "ee-c-28"
+  },
+  {
+   "sides": [
+    {
+     "text": "Espressif",
+     "sub": "Embedded systems · Commercial"
+    },
+    {
+     "text": "ESP8266 and ESP32 Wi-Fi/Bluetooth chips",
+     "more": {
+      "text": "A Chinese company whose low-cost chips drove the growth of DIY and commercial IoT."
+     }
+    },
+    {
+     "text": "Which company makes the ESP32?",
+     "more": {
+      "text": "Espressif."
+     }
+    }
+   ],
+   "id": "ee-c-29"
+  },
+  {
+   "sides": [
+    {
+     "text": "Qualcomm",
+     "sub": "Embedded systems · Commercial"
+    },
+    {
+     "text": "Mobile SoCs and modems",
+     "more": {
+      "text": "A fabless company known for Snapdragon processors, 5G modems, and a large wireless patent portfolio. Co-founded in 1985 by Irwin Jacobs, Andrew Viterbi, and others."
+     }
+    },
+    {
+     "text": "Which company's Snapdragon chips power many Android phones?",
+     "more": {
+      "text": "Qualcomm."
+     }
+    }
+   ],
+   "id": "ee-c-30"
+  },
+  {
+   "sides": [
+    {
+     "text": "Broadcom",
+     "sub": "Embedded systems · Commercial"
+    },
+    {
+     "text": "Wi-Fi, Bluetooth, networking, and broadband chips",
+     "more": {
+      "text": "Also supplied the SoCs in Raspberry Pi boards."
+     }
+    },
+    {
+     "text": "Which company made the main chips in early Raspberry Pi boards?",
+     "more": {
+      "text": "Broadcom."
+     }
+    }
+   ],
+   "id": "ee-c-31"
+  },
+  {
+   "sides": [
+    {
+     "text": "onsemi",
+     "sub": "Embedded systems · Commercial"
+    },
+    {
+     "text": "Power, analog, and image sensors",
+     "more": {
+      "text": "Strong in automotive power chips and image sensors, including silicon carbide products."
+     }
+    },
+    {
+     "text": "Which type of sensor chip is onsemi well known for?",
+     "more": {
+      "text": "Image sensors (and power chips)."
+     }
+    }
+   ],
+   "id": "ee-c-32"
+  },
+  {
+   "sides": [
+    {
+     "text": "RTOS and embedded software",
+     "sub": "Embedded systems · Commercial"
+    },
+    {
+     "text": "FreeRTOS, Zephyr, and embedded Linux",
+     "more": {
+      "text": "FreeRTOS is widely used and maintained by AWS. Zephyr is an open-source RTOS under the Linux Foundation. Yocto and Buildroot build embedded Linux images."
+     }
+    },
+    {
+     "text": "Which open-source RTOS is hosted by the Linux Foundation?",
+     "more": {
+      "text": "Zephyr."
+     }
+    }
+   ],
+   "id": "ee-c-33"
+  },
+  {
+   "sides": [
+    {
+     "text": "Automotive electronics suppliers",
+     "sub": "Embedded systems · Commercial"
+    },
+    {
+     "text": "Bosch, Continental, and Denso",
+     "more": {
+      "text": "Tier-1 suppliers build ECUs, sensors, and modules for carmakers. Vehicles contain many dozens of ECUs on CAN and automotive Ethernet."
+     }
+    },
+    {
+     "text": "What is a company that supplies modules directly to carmakers called?",
+     "more": {
+      "text": "A Tier-1 supplier."
+     }
+    }
+   ],
+   "id": "ee-c-34"
+  },
+  {
+   "sides": [
+    {
+     "text": "RISC-V International",
+     "sub": "Embedded systems · Commercial"
+    },
+    {
+     "text": "Stewards of the open ISA",
+     "more": {
+      "text": "A non-profit that governs the RISC-V instruction set. SiFive and others sell RISC-V cores."
+     }
+    },
+    {
+     "text": "What is RISC-V International's role?",
+     "more": {
+      "text": "Governing the open RISC-V instruction set."
+     }
+    }
+   ],
+   "id": "ee-c-35"
+  },
+  {
+   "sides": [
+    {
+     "text": "NVIDIA",
+     "sub": "Gaming hardware · Commercial"
+    },
+    {
+     "text": "GPU leader, founded in 1993",
+     "more": {
+      "text": "Founded by Jensen Huang, Chris Malachowsky, and Curtis Priem. GeForce GPUs for gaming, and CUDA for general-purpose computing that later made it central to AI."
+     }
+    },
+    {
+     "text": "Which company created the CUDA programming platform?",
+     "more": {
+      "text": "NVIDIA."
+     }
+    }
+   ],
+   "id": "ee-c-36"
+  },
+  {
+   "sides": [
+    {
+     "text": "AMD",
+     "sub": "Gaming hardware · Commercial"
+    },
+    {
+     "text": "CPUs, GPUs, and console chips",
+     "more": {
+      "text": "Ryzen CPUs and Radeon GPUs. Designs semi-custom chips for PlayStation and Xbox consoles."
+     }
+    },
+    {
+     "text": "Which company designs the chips in both PlayStation 5 and Xbox Series X?",
+     "more": {
+      "text": "AMD."
+     }
+    }
+   ],
+   "id": "ee-c-37"
+  },
+  {
+   "sides": [
+    {
+     "text": "PlayStation hardware",
+     "sub": "Gaming hardware · Commercial"
+    },
+    {
+     "text": "PS5 uses a custom AMD chip",
+     "more": {
+      "text": "PlayStation 5 (2020) uses a custom AMD Zen 2 CPU and RDNA 2 GPU, with a very fast SSD."
+     }
+    },
+    {
+     "text": "Which company makes the PS5's processor?",
+     "more": {
+      "text": "AMD (custom design)."
+     }
+    }
+   ],
+   "id": "ee-c-38"
+  },
+  {
+   "sides": [
+    {
+     "text": "Xbox hardware",
+     "sub": "Gaming hardware · Commercial"
+    },
+    {
+     "text": "Xbox Series X and S use custom AMD chips",
+     "more": {
+      "text": "Microsoft's consoles share an AMD Zen 2 and RDNA 2 architecture with the PS5, with different configurations."
+     }
+    },
+    {
+     "text": "Which architecture do both the Xbox Series X and PS5 CPUs use?",
+     "more": {
+      "text": "AMD Zen 2."
+     }
+    }
+   ],
+   "id": "ee-c-39"
+  },
+  {
+   "sides": [
+    {
+     "text": "Nintendo Switch",
+     "sub": "Gaming hardware · Commercial"
+    },
+    {
+     "text": "A hybrid handheld powered by NVIDIA",
+     "more": {
+      "text": "The original Switch (2017) used a custom NVIDIA Tegra chip. Nintendo favors efficient hardware over raw power."
+     }
+    },
+    {
+     "text": "Which company supplied the original Nintendo Switch's processor?",
+     "more": {
+      "text": "NVIDIA."
+     }
+    }
+   ],
+   "id": "ee-c-40"
+  },
+  {
+   "sides": [
+    {
+     "text": "Steam Deck",
+     "sub": "Gaming hardware · Commercial"
+    },
+    {
+     "text": "Valve's handheld PC",
+     "more": {
+      "text": "Launched in 2022 with a custom AMD processor, running a Linux-based SteamOS."
+     }
+    },
+    {
+     "text": "Which operating system does the Steam Deck use?",
+     "more": {
+      "text": "A Linux-based SteamOS."
+     }
+    }
+   ],
+   "id": "ee-c-41"
+  },
+  {
+   "sides": [
+    {
+     "text": "GPU vs CPU",
+     "sub": "Gaming hardware · Commercial"
+    },
+    {
+     "text": "Many simple cores vs a few complex ones",
+     "more": {
+      "text": "GPUs run thousands of threads in parallel, ideal for graphics and matrix math. CPUs excel at serial, branching work."
+     }
+    },
+    {
+     "text": "Why are GPUs good at graphics and AI?",
+     "more": {
+      "text": "They run many threads in parallel."
+     }
+    }
+   ],
+   "id": "ee-c-42"
+  },
+  {
+   "sides": [
+    {
+     "text": "Why gaming drove chip design",
+     "sub": "Gaming hardware · Commercial"
+    },
+    {
+     "text": "Graphics demand built parallel processors",
+     "more": {
+      "text": "Gaming volume funded GPU research. The same parallel architecture later accelerated scientific computing and AI."
+     }
+    },
+    {
+     "text": "What technology originally built for games now powers AI training?",
+     "more": {
+      "text": "The GPU."
+     }
+    }
+   ],
+   "id": "ee-c-43"
+  },
+  {
+   "sides": [
+    {
+     "text": "Ray tracing hardware",
+     "sub": "Gaming hardware · Commercial"
+    },
+    {
+     "text": "Dedicated cores for light simulation",
+     "more": {
+      "text": "NVIDIA introduced consumer ray tracing cores in its RTX GPUs in 2018. AMD and Intel added similar hardware."
+     }
+    },
+    {
+     "text": "Which year did NVIDIA's RTX GPUs bring ray tracing to consumers?",
+     "more": {
+      "text": "2018."
+     }
+    }
+   ],
+   "id": "ee-c-44"
+  },
+  {
+   "sides": [
+    {
+     "text": "GDDR and HBM",
+     "sub": "Gaming hardware · Commercial"
+    },
+    {
+     "text": "Memory types for GPUs",
+     "more": {
+      "text": "GDDR is cost-effective and high bandwidth for gaming cards. HBM is stacked for far higher bandwidth, used in data center accelerators."
+     }
+    },
+    {
+     "text": "Which memory is stacked beside AI accelerators?",
+     "more": {
+      "text": "HBM."
+     }
+    }
+   ],
+   "id": "ee-c-45"
+  },
+  {
+   "sides": [
+    {
+     "text": "Intel Arc",
+     "sub": "Gaming hardware · Commercial"
+    },
+    {
+     "text": "Intel's discrete GPUs",
+     "more": {
+      "text": "Entered the gaming GPU market in 2022 with the Arc series."
+     }
+    },
+    {
+     "text": "Which company launched the Arc series of gaming GPUs?",
+     "more": {
+      "text": "Intel."
+     }
+    }
+   ],
+   "id": "ee-c-46"
+  },
+  {
+   "sides": [
+    {
+     "text": "VR and mobile gaming chips",
+     "sub": "Gaming hardware · Commercial"
+    },
+    {
+     "text": "Snapdragon and Apple silicon",
+     "more": {
+      "text": "Meta's Quest headsets use Qualcomm Snapdragon XR chips. Phones game on Snapdragon and Apple A-series chips."
+     }
+    },
+    {
+     "text": "Which chip family powers Meta Quest headsets?",
+     "more": {
+      "text": "Qualcomm Snapdragon XR."
+     }
+    }
+   ],
+   "id": "ee-c-47"
+  },
+  {
+   "sides": [
+    {
+     "text": "Raspberry Pi",
+     "sub": "DIY and maker · Commercial"
+    },
+    {
+     "text": "A low-cost single-board computer",
+     "more": {
+      "text": "First launched in 2012 by the Raspberry Pi Foundation in the UK to teach computing. Runs Linux. Pi 4 arrived in 2019 and Pi 5 in 2023. Its RP2040 chip (2021) powers the Pico."
+     }
+    },
+    {
+     "text": "Which chip powers the Raspberry Pi Pico?",
+     "more": {
+      "text": "The RP2040."
+     }
+    }
+   ],
+   "id": "ee-c-48"
+  },
+  {
+   "sides": [
+    {
+     "text": "Arduino",
+     "sub": "DIY and maker · Commercial"
+    },
+    {
+     "text": "Open-source microcontroller boards from Italy",
+     "more": {
+      "text": "Began in 2005 in Ivrea, Italy, for design students. The Uno uses an ATmega328P. Huge library and shield ecosystem."
+     }
+    },
+    {
+     "text": "In which country did Arduino begin?",
+     "more": {
+      "text": "Italy."
+     }
+    }
+   ],
+   "id": "ee-c-49"
+  },
+  {
+   "sides": [
+    {
+     "text": "Adafruit",
+     "sub": "DIY and maker · Commercial"
+    },
+    {
+     "text": "Maker electronics designer and retailer",
+     "more": {
+      "text": "Founded in 2005 by Limor Fried. Known for tutorials, CircuitPython, and breakout boards."
+     }
+    },
+    {
+     "text": "Who founded Adafruit?",
+     "more": {
+      "text": "Limor Fried."
+     }
+    }
+   ],
+   "id": "ee-c-50"
+  },
+  {
+   "sides": [
+    {
+     "text": "SparkFun",
+     "sub": "DIY and maker · Commercial"
+    },
+    {
+     "text": "Maker electronics in Boulder, Colorado",
+     "more": {
+      "text": "Founded in 2003 by Nathan Seidle. Sells breakout boards and kits and publishes open hardware."
+     }
+    },
+    {
+     "text": "Where is SparkFun based?",
+     "more": {
+      "text": "Boulder, Colorado."
+     }
+    }
+   ],
+   "id": "ee-c-51"
+  },
+  {
+   "sides": [
+    {
+     "text": "Seeed Studio",
+     "sub": "DIY and maker · Commercial"
+    },
+    {
+     "text": "Open-hardware maker in Shenzhen",
+     "more": {
+      "text": "Designs and manufactures development boards and offers fabrication services."
+     }
+    },
+    {
+     "text": "In which Chinese city is Seeed Studio based?",
+     "more": {
+      "text": "Shenzhen."
+     }
+    }
+   ],
+   "id": "ee-c-52"
+  },
+  {
+   "sides": [
+    {
+     "text": "BeagleBone",
+     "sub": "DIY and maker · Commercial"
+    },
+    {
+     "text": "Open-source Linux boards with real-time units",
+     "more": {
+      "text": "BeagleBoard.org's boards include programmable real-time units (PRUs) for tight timing alongside Linux."
+     }
+    },
+    {
+     "text": "What do BeagleBone's PRUs provide?",
+     "more": {
+      "text": "Real-time I/O alongside Linux."
+     }
+    }
+   ],
+   "id": "ee-c-53"
+  },
+  {
+   "sides": [
+    {
+     "text": "MicroPython and CircuitPython",
+     "sub": "DIY and maker · Commercial"
+    },
+    {
+     "text": "Python on microcontrollers",
+     "more": {
+      "text": "MicroPython runs Python on small chips. CircuitPython is Adafruit's beginner-friendly fork."
+     }
+    },
+    {
+     "text": "Which language do MicroPython and CircuitPython use?",
+     "more": {
+      "text": "Python."
+     }
+    }
+   ],
+   "id": "ee-c-54"
+  },
+  {
+   "sides": [
+    {
+     "text": "KiCad",
+     "sub": "DIY and maker · Commercial"
+    },
+    {
+     "text": "Free open-source PCB design software",
+     "more": {
+      "text": "Started by Jean-Pierre Charras and now supported by a community and CERN. Used by hobbyists and professionals."
+     }
+    },
+    {
+     "text": "What is a free open-source tool for designing PCBs?",
+     "more": {
+      "text": "KiCad."
+     }
+    }
+   ],
+   "id": "ee-c-55"
+  },
+  {
+   "sides": [
+    {
+     "text": "Low-cost PCB fabrication",
+     "sub": "DIY and maker · Commercial"
+    },
+    {
+     "text": "JLCPCB and PCBWay",
+     "more": {
+      "text": "Online fabs make small PCB runs cheaply, often with assembly. Upload Gerber files and receive boards in days."
+     }
+    },
+    {
+     "text": "What file format do PCB fabs usually need?",
+     "more": {
+      "text": "Gerber files."
+     }
+    }
+   ],
+   "id": "ee-c-56"
+  },
+  {
+   "sides": [
+    {
+     "text": "Parts distributors",
+     "sub": "DIY and maker · Commercial"
+    },
+    {
+     "text": "Digi-Key, Mouser, and LCSC",
+     "more": {
+      "text": "Distributors stock thousands of parts with datasheets and parametric search. LCSC pairs with JLCPCB assembly."
+     }
+    },
+    {
+     "text": "Where do hobbyists commonly buy electronic parts?",
+     "more": {
+      "text": "Distributors such as Digi-Key and Mouser."
+     }
+    }
+   ],
+   "id": "ee-c-57"
+  },
+  {
+   "sides": [
+    {
+     "text": "Open-source hardware",
+     "sub": "DIY and maker · Commercial"
+    },
+    {
+     "text": "Designs published for anyone to build",
+     "more": {
+      "text": "The OSHWA certification marks projects that publish design files under open licenses."
+     }
+    },
+    {
+     "text": "What does open-source hardware publish?",
+     "more": {
+      "text": "Design files so anyone can build or modify it."
+     }
+    }
+   ],
+   "id": "ee-c-58"
+  },
+  {
+   "sides": [
+    {
+     "text": "Maker spaces and prototyping",
+     "sub": "DIY and maker · Commercial"
+    },
+    {
+     "text": "3D printers, laser cutters, and shared tools",
+     "more": {
+      "text": "Fast iteration with printed enclosures and breadboards before a custom PCB."
+     }
+    },
+    {
+     "text": "Why use a 3D-printed enclosure when prototyping?",
+     "more": {
+      "text": "To iterate on the physical design quickly and cheaply."
+     }
+    }
+   ],
+   "id": "ee-c-59"
+  },
+  {
+   "sides": [
+    {
+     "text": "Tesla Energy",
+     "sub": "Power storage and energy · Commercial"
+    },
+    {
+     "text": "Powerwall and Megapack",
+     "more": {
+      "text": "Home batteries (Powerwall) and utility-scale batteries (Megapack), plus solar products."
+     }
+    },
+    {
+     "text": "Which Tesla product is a utility-scale battery?",
+     "more": {
+      "text": "The Megapack."
+     }
+    }
+   ],
+   "id": "ee-c-60"
+  },
+  {
+   "sides": [
+    {
+     "text": "CATL",
+     "sub": "Power storage and energy · Commercial"
+    },
+    {
+     "text": "The world's largest EV battery maker",
+     "more": {
+      "text": "A Chinese company that makes LFP and NMC cells for many automakers."
+     }
+    },
+    {
+     "text": "Which Chinese company is the world's largest EV battery maker?",
+     "more": {
+      "text": "CATL."
+     }
+    }
+   ],
+   "id": "ee-c-61"
+  },
+  {
+   "sides": [
+    {
+     "text": "LG Energy Solution",
+     "sub": "Power storage and energy · Commercial"
+    },
+    {
+     "text": "Korean battery cell maker",
+     "more": {
+      "text": "A major maker of pouch and cylindrical cells for EVs and energy storage."
+     }
+    },
+    {
+     "text": "Which Korean company is a leading EV cell maker alongside Samsung SDI?",
+     "more": {
+      "text": "LG Energy Solution."
+     }
+    }
+   ],
+   "id": "ee-c-62"
+  },
+  {
+   "sides": [
+    {
+     "text": "Panasonic Energy",
+     "sub": "Power storage and energy · Commercial"
+    },
+    {
+     "text": "Cells for Tesla and consumer batteries",
+     "more": {
+      "text": "A long-time Tesla partner, with cylindrical cells made at Tesla's Nevada Gigafactory."
+     }
+    },
+    {
+     "text": "Which company partners with Tesla on cylindrical cells in Nevada?",
+     "more": {
+      "text": "Panasonic."
+     }
+    }
+   ],
+   "id": "ee-c-63"
+  },
+  {
+   "sides": [
+    {
+     "text": "BYD",
+     "sub": "Power storage and energy · Commercial"
+    },
+    {
+     "text": "EV and battery maker",
+     "more": {
+      "text": "Makes both vehicles and batteries, including the Blade LFP battery."
+     }
+    },
+    {
+     "text": "Which carmaker also makes the Blade LFP battery?",
+     "more": {
+      "text": "BYD."
+     }
+    }
+   ],
+   "id": "ee-c-64"
+  },
+  {
+   "sides": [
+    {
+     "text": "Samsung SDI",
+     "sub": "Power storage and energy · Commercial"
+    },
+    {
+     "text": "Korean battery maker",
+     "more": {
+      "text": "Makes EV and energy storage cells, with prismatic and cylindrical formats."
+     }
+    },
+    {
+     "text": "Which Samsung business unit makes lithium-ion cells?",
+     "more": {
+      "text": "Samsung SDI."
+     }
+    }
+   ],
+   "id": "ee-c-65"
+  },
+  {
+   "sides": [
+    {
+     "text": "Fluence",
+     "sub": "Power storage and energy · Commercial"
+    },
+    {
+     "text": "Grid-scale battery integrator",
+     "more": {
+      "text": "Founded in 2018 as a joint venture of Siemens and AES. Supplies utility-scale storage systems."
+     }
+    },
+    {
+     "text": "Which two companies formed Fluence?",
+     "more": {
+      "text": "Siemens and AES."
+     }
+    }
+   ],
+   "id": "ee-c-66"
+  },
+  {
+   "sides": [
+    {
+     "text": "Enphase",
+     "sub": "Power storage and energy · Commercial"
+    },
+    {
+     "text": "Microinverters for solar",
+     "more": {
+      "text": "Each panel gets its own small inverter, improving shade tolerance and monitoring."
+     }
+    },
+    {
+     "text": "What does Enphase make for solar panels?",
+     "more": {
+      "text": "Microinverters."
+     }
+    }
+   ],
+   "id": "ee-c-67"
+  },
+  {
+   "sides": [
+    {
+     "text": "SolarEdge",
+     "sub": "Power storage and energy · Commercial"
+    },
+    {
+     "text": "Power optimizers and inverters",
+     "more": {
+      "text": "Panel-level power optimizers feed a central inverter."
+     }
+    },
+    {
+     "text": "Which solar company is known for power optimizers?",
+     "more": {
+      "text": "SolarEdge."
+     }
+    }
+   ],
+   "id": "ee-c-68"
+  },
+  {
+   "sides": [
+    {
+     "text": "Siemens and Siemens Energy",
+     "sub": "Power storage and energy · Commercial"
+    },
+    {
+     "text": "Industrial automation vs grid and power",
+     "more": {
+      "text": "Siemens AG covers industrial automation and infrastructure. Siemens Energy, spun off in 2020, makes turbines and grid equipment."
+     }
+    },
+    {
+     "text": "Which company was spun off from Siemens in 2020 for energy equipment?",
+     "more": {
+      "text": "Siemens Energy."
+     }
+    }
+   ],
+   "id": "ee-c-69"
+  },
+  {
+   "sides": [
+    {
+     "text": "ABB",
+     "sub": "Power storage and energy · Commercial"
+    },
+    {
+     "text": "Robotics, drives, and grid technology",
+     "more": {
+      "text": "A Swedish-Swiss company that makes motors, drives, robots, and electrification products."
+     }
+    },
+    {
+     "text": "Which company combines robotics, drives, and grid equipment?",
+     "more": {
+      "text": "ABB."
+     }
+    }
+   ],
+   "id": "ee-c-70"
+  },
+  {
+   "sides": [
+    {
+     "text": "Schneider Electric",
+     "sub": "Power storage and energy · Commercial"
+    },
+    {
+     "text": "Energy management and automation",
+     "more": {
+      "text": "A French company supplying low-voltage distribution, building automation, and data center power."
+     }
+    },
+    {
+     "text": "Which French company is a leader in energy management?",
+     "more": {
+      "text": "Schneider Electric."
+     }
+    }
+   ],
+   "id": "ee-c-71"
+  },
+  {
+   "sides": [
+    {
+     "text": "GE Vernova",
+     "sub": "Power storage and energy · Commercial"
+    },
+    {
+     "text": "Energy business spun from GE in 2024",
+     "more": {
+      "text": "Makes gas and wind turbines and grid equipment."
+     }
+    },
+    {
+     "text": "Which company did GE spin off in April 2024 for energy products?",
+     "more": {
+      "text": "GE Vernova."
+     }
+    }
+   ],
+   "id": "ee-c-72"
+  },
+  {
+   "sides": [
+    {
+     "text": "Eaton and Vertiv",
+     "sub": "Power storage and energy · Commercial"
+    },
+    {
+     "text": "Power and cooling for data centers",
+     "more": {
+      "text": "Supply power distribution, UPS, and thermal systems for facilities."
+     }
+    },
+    {
+     "text": "Which type of facility depends heavily on UPS and cooling from Vertiv?",
+     "more": {
+      "text": "Data centers."
+     }
+    }
+   ],
+   "id": "ee-c-73"
+  },
+  {
+   "sides": [
+    {
+     "text": "Battery supply chain",
+     "sub": "Power storage and energy · Commercial"
+    },
+    {
+     "text": "Lithium, nickel, cobalt, and graphite",
+     "more": {
+      "text": "Materials are concentrated in a few regions, so supply risk and price swings affect cell cost. LFP avoids nickel and cobalt."
+     }
+    },
+    {
+     "text": "Which lithium-ion chemistry avoids nickel and cobalt?",
+     "more": {
+      "text": "LFP."
+     }
+    }
+   ],
+   "id": "ee-c-74"
+  },
+  {
+   "sides": [
+    {
+     "text": "Sodium-ion batteries",
+     "sub": "Power storage and energy · Commercial"
+    },
+    {
+     "text": "Emerging, using abundant sodium",
+     "more": {
+      "text": "Lower cost and good cold performance, but lower energy density than lithium-ion."
+     }
+    },
+    {
+     "text": "What element replaces lithium in sodium-ion cells?",
+     "more": {
+      "text": "Sodium."
+     }
+    }
+   ],
+   "id": "ee-c-75"
+  },
+  {
+   "sides": [
+    {
+     "text": "Solid-state batteries",
+     "sub": "Power storage and energy · Commercial"
+    },
+    {
+     "text": "Solid electrolyte, still in development",
+     "more": {
+      "text": "Aim for higher energy density and safety. Manufacturing and durability challenges remain."
+     }
+    },
+    {
+     "text": "What replaces the liquid electrolyte in a solid-state battery?",
+     "more": {
+      "text": "A solid electrolyte."
+     }
+    }
+   ],
+   "id": "ee-c-76"
+  },
+  {
+   "sides": [
+    {
+     "text": "Flow batteries and pumped hydro",
+     "sub": "Power storage and energy · Commercial"
+    },
+    {
+     "text": "Long-duration storage",
+     "more": {
+      "text": "Flow batteries (vanadium) store energy in tanks of liquid electrolyte. Pumped hydro stores water uphill and holds most of the world's grid storage capacity."
+     }
+    },
+    {
+     "text": "Which storage technology holds most grid storage capacity today?",
+     "more": {
+      "text": "Pumped hydro."
+     }
+    }
+   ],
+   "id": "ee-c-77"
+  },
+  {
+   "sides": [
+    {
+     "text": "EV charging standards",
+     "sub": "Power storage and energy · Commercial"
+    },
+    {
+     "text": "CCS, NACS, and CHAdeMO",
+     "more": {
+      "text": "Charging connector standards differ by region. NACS, from Tesla, was adopted by many carmakers in North America."
+     }
+    },
+    {
+     "text": "Which connector standard did Tesla originate?",
+     "more": {
+      "text": "NACS."
+     }
+    }
+   ],
+   "id": "ee-c-78"
+  },
+  {
+   "sides": [
+    {
+     "text": "Grid operators",
+     "sub": "Power storage and energy · Commercial"
+    },
+    {
+     "text": "ERCOT, CAISO, and PJM",
+     "more": {
+      "text": "Independent operators balance supply and demand in their regions and run electricity markets."
+     }
+    },
+    {
+     "text": "Which operator manages most of the Texas grid?",
+     "more": {
+      "text": "ERCOT."
+     }
+    }
+   ],
+   "id": "ee-c-79"
+  },
+  {
+   "sides": [
+    {
+     "text": "Ericsson",
+     "sub": "Communications companies · Commercial"
+    },
+    {
+     "text": "Swedish telecom equipment maker",
+     "more": {
+      "text": "Supplies base stations and core networks to mobile operators worldwide."
+     }
+    },
+    {
+     "text": "Which Swedish company is a major supplier of mobile network equipment?",
+     "more": {
+      "text": "Ericsson."
+     }
+    }
+   ],
+   "id": "ee-c-80"
+  },
+  {
+   "sides": [
+    {
+     "text": "Nokia",
+     "sub": "Communications companies · Commercial"
+    },
+    {
+     "text": "Finnish network equipment maker",
+     "more": {
+      "text": "Bought Alcatel-Lucent in 2016. Supplies radio access, fixed networks, and optical gear."
+     }
+    },
+    {
+     "text": "Which company acquired Alcatel-Lucent in 2016?",
+     "more": {
+      "text": "Nokia."
+     }
+    }
+   ],
+   "id": "ee-c-81"
+  },
+  {
+   "sides": [
+    {
+     "text": "Huawei",
+     "sub": "Communications companies · Commercial"
+    },
+    {
+     "text": "Chinese telecom and device maker",
+     "more": {
+      "text": "One of the largest telecom equipment makers, with its own chip design arm, HiSilicon."
+     }
+    },
+    {
+     "text": "Which company owns the chip design unit HiSilicon?",
+     "more": {
+      "text": "Huawei."
+     }
+    }
+   ],
+   "id": "ee-c-82"
+  },
+  {
+   "sides": [
+    {
+     "text": "Cisco",
+     "sub": "Communications companies · Commercial"
+    },
+    {
+     "text": "Routers, switches, and networking",
+     "more": {
+      "text": "A leading supplier of enterprise and carrier networking equipment."
+     }
+    },
+    {
+     "text": "Which company is best known for routers and switches?",
+     "more": {
+      "text": "Cisco."
+     }
+    }
+   ],
+   "id": "ee-c-83"
+  },
+  {
+   "sides": [
+    {
+     "text": "Starlink",
+     "sub": "Communications companies · Commercial"
+    },
+    {
+     "text": "A low-Earth-orbit satellite constellation",
+     "more": {
+      "text": "Operated by SpaceX. Thousands of satellites at low altitude give lower latency than geostationary links."
+     }
+    },
+    {
+     "text": "Which orbit does Starlink use?",
+     "more": {
+      "text": "Low Earth orbit."
+     }
+    }
+   ],
+   "id": "ee-c-84"
+  },
+  {
+   "sides": [
+    {
+     "text": "Wireless standards bodies",
+     "sub": "Communications companies · Commercial"
+    },
+    {
+     "text": "3GPP, IEEE 802, Wi-Fi Alliance, Bluetooth SIG",
+     "more": {
+      "text": "3GPP defines LTE and 5G. IEEE 802.11 defines Wi-Fi, and the Wi-Fi Alliance certifies interoperability. The Bluetooth SIG governs Bluetooth."
+     }
+    },
+    {
+     "text": "Which group standardizes LTE and 5G?",
+     "more": {
+      "text": "3GPP."
+     }
+    }
+   ],
+   "id": "ee-c-85"
+  },
+  {
+   "sides": [
+    {
+     "text": "Keysight",
+     "sub": "Test and tools · Commercial"
+    },
+    {
+     "text": "Test and measurement leader",
+     "more": {
+      "text": "Spun off from Agilent in 2014. Agilent had itself been spun off from Hewlett-Packard in 1999."
+     }
+    },
+    {
+     "text": "From which company was Keysight spun off?",
+     "more": {
+      "text": "Agilent (which came from HP)."
+     }
+    }
+   ],
+   "id": "ee-c-86"
+  },
+  {
+   "sides": [
+    {
+     "text": "Tektronix",
+     "sub": "Test and tools · Commercial"
+    },
+    {
+     "text": "Oscilloscopes and instruments",
+     "more": {
+      "text": "A long-established oscilloscope maker, now part of Fortive."
+     }
+    },
+    {
+     "text": "Which company is famous for oscilloscopes and belongs to Fortive?",
+     "more": {
+      "text": "Tektronix."
+     }
+    }
+   ],
+   "id": "ee-c-87"
+  },
+  {
+   "sides": [
+    {
+     "text": "Rohde & Schwarz",
+     "sub": "Test and tools · Commercial"
+    },
+    {
+     "text": "German test and measurement",
+     "more": {
+      "text": "Known for spectrum analyzers, signal generators, and wireless test equipment."
+     }
+    },
+    {
+     "text": "Which German company makes RF test equipment such as spectrum analyzers?",
+     "more": {
+      "text": "Rohde & Schwarz."
+     }
+    }
+   ],
+   "id": "ee-c-88"
+  },
+  {
+   "sides": [
+    {
+     "text": "Fluke",
+     "sub": "Test and tools · Commercial"
+    },
+    {
+     "text": "Handheld meters and electrical testers",
+     "more": {
+      "text": "Trusted for multimeters and industrial test tools. Part of Fortive."
+     }
+    },
+    {
+     "text": "Which brand is famous for rugged multimeters?",
+     "more": {
+      "text": "Fluke."
+     }
+    }
+   ],
+   "id": "ee-c-89"
+  },
+  {
+   "sides": [
+    {
+     "text": "Rigol and Siglent",
+     "sub": "Test and tools · Commercial"
+    },
+    {
+     "text": "Low-cost instruments",
+     "more": {
+      "text": "Offer affordable oscilloscopes, generators, and power supplies popular with hobbyists and small labs."
+     }
+    },
+    {
+     "text": "Which kind of user favors Rigol and Siglent?",
+     "more": {
+      "text": "Hobbyists and cost-conscious labs."
+     }
+    }
+   ],
+   "id": "ee-c-90"
+  },
+  {
+   "sides": [
+    {
+     "text": "National Instruments",
+     "sub": "Test and tools · Commercial"
+    },
+    {
+     "text": "LabVIEW and modular instruments",
+     "more": {
+      "text": "Acquired by Emerson in 2023. Known for data acquisition and graphical programming."
+     }
+    },
+    {
+     "text": "Which software is National Instruments known for?",
+     "more": {
+      "text": "LabVIEW."
+     }
+    }
+   ],
+   "id": "ee-c-91"
+  },
+  {
+   "sides": [
+    {
+     "text": "MathWorks",
+     "sub": "Test and tools · Commercial"
+    },
+    {
+     "text": "MATLAB and Simulink",
+     "more": {
+      "text": "Widely used for signal processing, control design, and model-based development."
+     }
+    },
+    {
+     "text": "Which company makes MATLAB?",
+     "more": {
+      "text": "MathWorks."
+     }
+    }
+   ],
+   "id": "ee-c-92"
+  },
+  {
+   "sides": [
+    {
+     "text": "IEEE",
+     "sub": "Standards and regulation · Commercial"
+    },
+    {
+     "text": "The largest technical professional association",
+     "more": {
+      "text": "Publishes journals and standards, including 802.3 (Ethernet), 802.11 (Wi-Fi), and 754 (floating point)."
+     }
+    },
+    {
+     "text": "Which organization maintains the Ethernet and Wi-Fi standards?",
+     "more": {
+      "text": "IEEE."
+     }
+    }
+   ],
+   "id": "ee-c-93"
+  },
+  {
+   "sides": [
+    {
+     "text": "IEC",
+     "sub": "Standards and regulation · Commercial"
+    },
+    {
+     "text": "International Electrotechnical Commission",
+     "more": {
+      "text": "Sets international standards for electrical, electronic, and related technologies, including safety and EMC."
+     }
+    },
+    {
+     "text": "Which organization sets international electrotechnical standards?",
+     "more": {
+      "text": "The IEC."
+     }
+    }
+   ],
+   "id": "ee-c-94"
+  },
+  {
+   "sides": [
+    {
+     "text": "JEDEC",
+     "sub": "Standards and regulation · Commercial"
+    },
+    {
+     "text": "Memory and semiconductor standards",
+     "more": {
+      "text": "Publishes the DDR, LPDDR, and many other chip standards."
+     }
+    },
+    {
+     "text": "Which body publishes the DDR memory standards?",
+     "more": {
+      "text": "JEDEC."
+     }
+    }
+   ],
+   "id": "ee-c-95"
+  },
+  {
+   "sides": [
+    {
+     "text": "FCC",
+     "sub": "Standards and regulation · Commercial"
+    },
+    {
+     "text": "US radio spectrum and emissions regulator",
+     "more": {
+      "text": "Part 15 limits unintentional radiators like electronic devices. Devices usually need FCC authorization before sale."
+     }
+    },
+    {
+     "text": "Which agency regulates electromagnetic emissions of devices in the US?",
+     "more": {
+      "text": "The FCC."
+     }
+    }
+   ],
+   "id": "ee-c-96"
+  },
+  {
+   "sides": [
+    {
+     "text": "UL",
+     "sub": "Standards and regulation · Commercial"
+    },
+    {
+     "text": "Safety certification",
+     "more": {
+      "text": "Underwriters Laboratories tests products for safety. A UL mark is often required by retailers and codes."
+     }
+    },
+    {
+     "text": "Which organization is known for safety certification marks in the US?",
+     "more": {
+      "text": "UL."
+     }
+    }
+   ],
+   "id": "ee-c-97"
+  },
+  {
+   "sides": [
+    {
+     "text": "National Electrical Code",
+     "sub": "Standards and regulation · Commercial"
+    },
+    {
+     "text": "NFPA 70: US wiring and installation rules",
+     "more": {
+      "text": "Updated every three years. Local jurisdictions adopt and amend it."
+     }
+    },
+    {
+     "text": "Which code governs electrical installation in the US?",
+     "more": {
+      "text": "The National Electrical Code (NEC, NFPA 70)."
+     }
+    }
+   ],
+   "id": "ee-c-98"
+  },
+  {
+   "sides": [
+    {
+     "text": "ITU",
+     "sub": "Standards and regulation · Commercial"
+    },
+    {
+     "text": "Global coordination of radio spectrum",
+     "more": {
+      "text": "The International Telecommunication Union allocates spectrum and sets telecom standards."
+     }
+    },
+    {
+     "text": "Which UN agency coordinates global radio spectrum?",
+     "more": {
+      "text": "The ITU."
+     }
+    }
+   ],
+   "id": "ee-c-99"
+  },
+  {
+   "sides": [
+    {
+     "text": "USB-IF",
+     "sub": "Standards and regulation · Commercial"
+    },
+    {
+     "text": "Governs USB standards",
+     "more": {
+      "text": "The USB Implementers Forum publishes specifications, including USB-C and Power Delivery, and certifies devices."
+     }
+    },
+    {
+     "text": "Which organization governs the USB standard?",
+     "more": {
+      "text": "USB-IF."
+     }
+    }
+   ],
+   "id": "ee-c-100"
+  },
+  {
+   "sides": [
+    {
+     "text": "RoHS and CE marking",
+     "sub": "Standards and regulation · Commercial"
+    },
+    {
+     "text": "EU product rules",
+     "more": {
+      "text": "RoHS restricts hazardous substances such as lead. CE marking declares conformity with EU safety, health, and environmental requirements."
+     }
+    },
+    {
+     "text": "What does RoHS restrict?",
+     "more": {
+      "text": "Hazardous substances such as lead in electronics."
+     }
+    }
+   ],
+   "id": "ee-c-101"
+  },
+  {
+   "sides": [
+    {
+     "text": "IPC standards",
+     "sub": "Standards and regulation · Commercial"
+    },
+    {
+     "text": "PCB design and assembly",
+     "more": {
+      "text": "IPC publishes standards such as IPC-A-610 for assembly acceptability and IPC-2221 for PCB design."
+     }
+    },
+    {
+     "text": "Which body publishes PCB assembly acceptability standards?",
+     "more": {
+      "text": "IPC."
+     }
+    }
+   ],
+   "id": "ee-c-102"
+  },
+  {
+   "sides": [
+    {
+     "text": "IEC 62368-1",
+     "sub": "Standards and regulation · Commercial"
+    },
+    {
+     "text": "Safety standard for audio, video, and ICT equipment",
+     "more": {
+      "text": "Hazard-based safety standard that replaced IEC 60950-1 and IEC 60065 for many products."
+     }
+    },
+    {
+     "text": "Which standard replaced IEC 60950-1 for IT equipment safety?",
+     "more": {
+      "text": "IEC 62368-1."
+     }
+    }
+   ],
+   "id": "ee-c-103"
+  },
+  {
+   "sides": [
+    {
+     "text": "Electronics manufacturing services",
+     "sub": "Industry and careers · Commercial"
+    },
+    {
+     "text": "Foxconn, Flex, and Jabil",
+     "more": {
+      "text": "EMS companies assemble products for brands. Many handle design, sourcing, and logistics as well."
+     }
+    },
+    {
+     "text": "What do EMS companies do?",
+     "more": {
+      "text": "Manufacture and assemble electronics for other brands."
+     }
+    }
+   ],
+   "id": "ee-c-104"
+  },
+  {
+   "sides": [
+    {
+     "text": "Product development stages",
+     "sub": "Industry and careers · Commercial"
+    },
+    {
+     "text": "EVT, DVT, and PVT",
+     "more": {
+      "text": "Engineering validation proves the design works, design validation proves it meets specs and standards, and production validation proves the line can build it reliably."
+     }
+    },
+    {
+     "text": "Which stage proves the manufacturing line can build the product reliably?",
+     "more": {
+      "text": "PVT (production validation test)."
+     }
+    }
+   ],
+   "id": "ee-c-105"
+  },
+  {
+   "sides": [
+    {
+     "text": "Compliance before sale",
+     "sub": "Industry and careers · Commercial"
+    },
+    {
+     "text": "Test, certify, then ship",
+     "more": {
+      "text": "Products usually need EMC, safety, and radio approvals (FCC, CE, UL) before they can be sold."
+     }
+    },
+    {
+     "text": "What must most electronics pass before being sold?",
+     "more": {
+      "text": "Regulatory compliance testing and certification."
+     }
+    }
+   ],
+   "id": "ee-c-106"
+  },
+  {
+   "sides": [
+    {
+     "text": "Supply chain risk",
+     "sub": "Industry and careers · Commercial"
+    },
+    {
+     "text": "Lead times, counterfeits, and single sources",
+     "more": {
+      "text": "Second-source parts, trusted distributors, and design flexibility reduce risk. The 2020–2022 shortage hit automotive production hard."
+     }
+    },
+    {
+     "text": "What reduces risk from a single-source component?",
+     "more": {
+      "text": "Qualifying a second source."
+     }
+    }
+   ],
+   "id": "ee-c-107"
+  },
+  {
+   "sides": [
+    {
+     "text": "EE career paths",
+     "sub": "Industry and careers · Commercial"
+    },
+    {
+     "text": "Analog, digital, RF, power, embedded, and test",
+     "more": {
+      "text": "Roles include analog and mixed-signal design, FPGA and ASIC design, RF engineering, power electronics, embedded firmware, test, and field applications."
+     }
+    },
+    {
+     "text": "Which role writes the firmware that runs on a device?",
+     "more": {
+      "text": "An embedded firmware engineer."
+     }
+    }
+   ],
+   "id": "ee-c-108"
+  },
+  {
+   "sides": [
+    {
+     "text": "FE and PE licensing",
+     "sub": "Industry and careers · Commercial"
+    },
+    {
+     "text": "Path to a professional engineer license (US)",
+     "more": {
+      "text": "Pass the Fundamentals of Engineering (FE) exam, gain experience, then pass the Professional Engineer (PE) exam. Power is a common PE discipline."
+     }
+    },
+    {
+     "text": "What exam comes before the PE exam in the US?",
+     "more": {
+      "text": "The FE (Fundamentals of Engineering) exam."
+     }
+    }
+   ],
+   "id": "ee-c-109"
+  },
+  {
+   "sides": [
+    {
+     "text": "Alessandro Volta",
+     "sub": "People · Commercial"
+    },
+    {
+     "text": "Built the first battery (1800)",
+     "more": {
+      "text": "The voltaic pile stacked zinc and copper discs with brine-soaked cloth. The unit volt is named for him."
+     }
+    },
+    {
+     "text": "Who invented the first chemical battery?",
+     "more": {
+      "text": "Alessandro Volta."
+     }
+    }
+   ],
+   "id": "ee-c-110"
+  },
+  {
+   "sides": [
+    {
+     "text": "Georg Ohm",
+     "sub": "People · Commercial"
+    },
+    {
+     "text": "Discovered Ohm's law (1827)",
+     "more": {
+      "text": "Showed current is proportional to voltage for a conductor. The ohm is named for him."
+     }
+    },
+    {
+     "text": "Who discovered the relationship between voltage, current, and resistance?",
+     "more": {
+      "text": "Georg Ohm."
+     }
+    }
+   ],
+   "id": "ee-c-111"
+  },
+  {
+   "sides": [
+    {
+     "text": "Michael Faraday",
+     "sub": "People · Commercial"
+    },
+    {
+     "text": "Electromagnetic induction (1831)",
+     "more": {
+      "text": "Showed that a changing magnetic field induces a voltage, the basis of generators and transformers. The farad is named for him."
+     }
+    },
+    {
+     "text": "Who discovered electromagnetic induction?",
+     "more": {
+      "text": "Michael Faraday."
+     }
+    }
+   ],
+   "id": "ee-c-112"
+  },
+  {
+   "sides": [
+    {
+     "text": "Gustav Kirchhoff",
+     "sub": "People · Commercial"
+    },
+    {
+     "text": "Kirchhoff's circuit laws (1845)",
+     "more": {
+      "text": "Formulated the current and voltage laws used in every circuit analysis."
+     }
+    },
+    {
+     "text": "Who formulated the current and voltage laws for circuits?",
+     "more": {
+      "text": "Gustav Kirchhoff."
+     }
+    }
+   ],
+   "id": "ee-c-113"
+  },
+  {
+   "sides": [
+    {
+     "text": "James Clerk Maxwell",
+     "sub": "People · Commercial"
+    },
+    {
+     "text": "Unified electricity and magnetism",
+     "more": {
+      "text": "His 1865 paper \"A Dynamical Theory of the Electromagnetic Field\" gave the equations that predict electromagnetic waves."
+     }
+    },
+    {
+     "text": "Who predicted electromagnetic waves mathematically?",
+     "more": {
+      "text": "James Clerk Maxwell."
+     }
+    }
+   ],
+   "id": "ee-c-114"
+  },
+  {
+   "sides": [
+    {
+     "text": "Heinrich Hertz",
+     "sub": "People · Commercial"
+    },
+    {
+     "text": "Proved electromagnetic waves exist (1887)",
+     "more": {
+      "text": "Generated and detected radio waves in the lab. The hertz is named for him."
+     }
+    },
+    {
+     "text": "Who first demonstrated radio waves experimentally?",
+     "more": {
+      "text": "Heinrich Hertz."
+     }
+    }
+   ],
+   "id": "ee-c-115"
+  },
+  {
+   "sides": [
+    {
+     "text": "Nikola Tesla",
+     "sub": "People · Commercial"
+    },
+    {
+     "text": "AC induction motor and polyphase systems",
+     "more": {
+      "text": "His work made practical alternating-current motors and power distribution possible. The unit of magnetic flux density is named for him."
+     }
+    },
+    {
+     "text": "Who is associated with the AC induction motor?",
+     "more": {
+      "text": "Nikola Tesla."
+     }
+    }
+   ],
+   "id": "ee-c-116"
+  },
+  {
+   "sides": [
+    {
+     "text": "Edison and Westinghouse",
+     "sub": "People · Commercial"
+    },
+    {
+     "text": "The \"war of the currents\"",
+     "more": {
+      "text": "Edison's early power systems (Pearl Street Station, 1882) used DC. Westinghouse promoted AC, which transformers made efficient over long distances. AC won."
+     }
+    },
+    {
+     "text": "Which current type won for long-distance power distribution?",
+     "more": {
+      "text": "AC."
+     }
+    }
+   ],
+   "id": "ee-c-117"
+  },
+  {
+   "sides": [
+    {
+     "text": "Guglielmo Marconi",
+     "sub": "People · Commercial"
+    },
+    {
+     "text": "Wireless telegraphy",
+     "more": {
+      "text": "Developed practical radio communication and sent a transatlantic radio signal in 1901."
+     }
+    },
+    {
+     "text": "Who is credited with the first transatlantic radio transmission?",
+     "more": {
+      "text": "Guglielmo Marconi."
+     }
+    }
+   ],
+   "id": "ee-c-118"
+  },
+  {
+   "sides": [
+    {
+     "text": "Edwin Armstrong",
+     "sub": "People · Commercial"
+    },
+    {
+     "text": "Superheterodyne receiver and FM",
+     "more": {
+      "text": "Invented the superheterodyne receiver and wideband FM radio."
+     }
+    },
+    {
+     "text": "Who invented wideband FM radio?",
+     "more": {
+      "text": "Edwin Armstrong."
+     }
+    }
+   ],
+   "id": "ee-c-119"
+  },
+  {
+   "sides": [
+    {
+     "text": "Claude Shannon",
+     "sub": "People · Commercial"
+    },
+    {
+     "text": "Father of information theory",
+     "more": {
+      "text": "His 1948 paper defined entropy and channel capacity, setting the limits of communication."
+     }
+    },
+    {
+     "text": "Who founded information theory?",
+     "more": {
+      "text": "Claude Shannon."
+     }
+    }
+   ],
+   "id": "ee-c-120"
+  },
+  {
+   "sides": [
+    {
+     "text": "Harry Nyquist",
+     "sub": "People · Commercial"
+    },
+    {
+     "text": "Sampling and signaling theory",
+     "more": {
+      "text": "His 1928 work on telegraph transmission underpins the sampling theorem and the Nyquist criterion."
+     }
+    },
+    {
+     "text": "Who is the Nyquist sampling criterion named after?",
+     "more": {
+      "text": "Harry Nyquist."
+     }
+    }
+   ],
+   "id": "ee-c-121"
+  },
+  {
+   "sides": [
+    {
+     "text": "Hendrik Bode",
+     "sub": "People · Commercial"
+    },
+    {
+     "text": "Feedback and frequency response",
+     "more": {
+      "text": "Worked at Bell Labs on feedback amplifiers. Bode plots are named for him."
+     }
+    },
+    {
+     "text": "Who developed the plots used to show frequency response?",
+     "more": {
+      "text": "Hendrik Bode."
+     }
+    }
+   ],
+   "id": "ee-c-122"
+  },
+  {
+   "sides": [
+    {
+     "text": "Harold Black",
+     "sub": "People · Commercial"
+    },
+    {
+     "text": "Negative feedback amplifier",
+     "more": {
+      "text": "Conceived negative feedback in 1927 at Bell Labs, enabling stable, low-distortion amplifiers."
+     }
+    },
+    {
+     "text": "Who invented the negative feedback amplifier?",
+     "more": {
+      "text": "Harold Black."
+     }
+    }
+   ],
+   "id": "ee-c-123"
+  },
+  {
+   "sides": [
+    {
+     "text": "Bardeen, Brattain, and Shockley",
+     "sub": "People · Commercial"
+    },
+    {
+     "text": "Invented the transistor (1947)",
+     "more": {
+      "text": "Created the first transistor at Bell Labs in December 1947 and shared the 1956 Nobel Prize in Physics."
+     }
+    },
+    {
+     "text": "Where was the transistor invented?",
+     "more": {
+      "text": "Bell Labs."
+     }
+    }
+   ],
+   "id": "ee-c-124"
+  },
+  {
+   "sides": [
+    {
+     "text": "Jack Kilby and Robert Noyce",
+     "sub": "People · Commercial"
+    },
+    {
+     "text": "Co-inventors of the integrated circuit",
+     "more": {
+      "text": "Kilby built the first IC at Texas Instruments in 1958. Noyce developed a silicon planar IC at Fairchild in 1959. Kilby won the 2000 Nobel Prize in Physics."
+     }
+    },
+    {
+     "text": "Who built the first integrated circuit in 1958?",
+     "more": {
+      "text": "Jack Kilby."
+     }
+    }
+   ],
+   "id": "ee-c-125"
+  },
+  {
+   "sides": [
+    {
+     "text": "Gordon Moore",
+     "sub": "People · Commercial"
+    },
+    {
+     "text": "Moore's law and Intel",
+     "more": {
+      "text": "Observed in 1965 that the number of components per chip was doubling regularly. Co-founded Intel with Robert Noyce."
+     }
+    },
+    {
+     "text": "Who made the observation known as Moore's law?",
+     "more": {
+      "text": "Gordon Moore."
+     }
+    }
+   ],
+   "id": "ee-c-126"
+  },
+  {
+   "sides": [
+    {
+     "text": "Robert Dennard",
+     "sub": "People · Commercial"
+    },
+    {
+     "text": "DRAM and Dennard scaling",
+     "more": {
+      "text": "Invented the one-transistor DRAM cell at IBM and described Dennard scaling in 1974."
+     }
+    },
+    {
+     "text": "Who invented the one-transistor DRAM cell?",
+     "more": {
+      "text": "Robert Dennard."
+     }
+    }
+   ],
+   "id": "ee-c-127"
+  },
+  {
+   "sides": [
+    {
+     "text": "Federico Faggin and Ted Hoff",
+     "sub": "People · Commercial"
+    },
+    {
+     "text": "The first microprocessor, Intel 4004 (1971)",
+     "more": {
+      "text": "Hoff proposed the architecture and Faggin led the chip design."
+     }
+    },
+    {
+     "text": "Which Intel chip from 1971 was the first commercial microprocessor?",
+     "more": {
+      "text": "The Intel 4004."
+     }
+    }
+   ],
+   "id": "ee-c-128"
+  },
+  {
+   "sides": [
+    {
+     "text": "Carver Mead and Lynn Conway",
+     "sub": "People · Commercial"
+    },
+    {
+     "text": "Popularized VLSI design",
+     "more": {
+      "text": "Their 1980 textbook Introduction to VLSI Systems made chip design accessible beyond a few companies."
+     }
+    },
+    {
+     "text": "Which textbook popularized VLSI design methodology?",
+     "more": {
+      "text": "Mead and Conway's Introduction to VLSI Systems."
+     }
+    }
+   ],
+   "id": "ee-c-129"
+  },
+  {
+   "sides": [
+    {
+     "text": "Hennessy and Patterson",
+     "sub": "People · Commercial"
+    },
+    {
+     "text": "RISC and computer architecture",
+     "more": {
+      "text": "Their RISC work and textbook shaped modern processors. They received the 2017 Turing Award."
+     }
+    },
+    {
+     "text": "Who wrote the standard computer architecture textbook and shared the 2017 Turing Award?",
+     "more": {
+      "text": "John Hennessy and David Patterson."
+     }
+    }
+   ],
+   "id": "ee-c-130"
+  },
+  {
+   "sides": [
+    {
+     "text": "Rudolf Kálmán",
+     "sub": "People · Commercial"
+    },
+    {
+     "text": "Kalman filter (1960)",
+     "more": {
+      "text": "Developed recursive state estimation used in navigation, control, and tracking, including the Apollo program."
+     }
+    },
+    {
+     "text": "Who developed the Kalman filter?",
+     "more": {
+      "text": "Rudolf Kálmán."
+     }
+    }
+   ],
+   "id": "ee-c-131"
+  },
+  {
+   "sides": [
+    {
+     "text": "Cooley and Tukey",
+     "sub": "People · Commercial"
+    },
+    {
+     "text": "The FFT algorithm (1965)",
+     "more": {
+      "text": "Published an efficient algorithm for the discrete Fourier transform that made digital signal processing practical."
+     }
+    },
+    {
+     "text": "Who published the FFT algorithm in 1965?",
+     "more": {
+      "text": "James Cooley and John Tukey."
+     }
+    }
+   ],
+   "id": "ee-c-132"
+  },
+  {
+   "sides": [
+    {
+     "text": "Richard Hamming",
+     "sub": "People · Commercial"
+    },
+    {
+     "text": "Error-correcting codes (1950)",
+     "more": {
+      "text": "Developed Hamming codes at Bell Labs, which can correct single-bit errors."
+     }
+    },
+    {
+     "text": "Who developed the Hamming code?",
+     "more": {
+      "text": "Richard Hamming."
+     }
+    }
+   ],
+   "id": "ee-c-133"
+  },
+  {
+   "sides": [
+    {
+     "text": "Andrew Viterbi and Irwin Jacobs",
+     "sub": "People · Commercial"
+    },
+    {
+     "text": "Viterbi algorithm and Qualcomm",
+     "more": {
+      "text": "Viterbi introduced his decoding algorithm in 1967. He and Jacobs co-founded Qualcomm, which commercialized CDMA."
+     }
+    },
+    {
+     "text": "Which two people co-founded Qualcomm and pioneered CDMA?",
+     "more": {
+      "text": "Irwin Jacobs and Andrew Viterbi."
+     }
+    }
+   ],
+   "id": "ee-c-134"
+  },
+  {
+   "sides": [
+    {
+     "text": "Goodenough, Whittingham, and Yoshino",
+     "sub": "People · Commercial"
+    },
+    {
+     "text": "Lithium-ion battery pioneers",
+     "more": {
+      "text": "Shared the 2019 Nobel Prize in Chemistry for developing lithium-ion batteries. Yoshino built the first commercially viable cell."
+     }
+    },
+    {
+     "text": "Which technology won the 2019 Nobel Prize in Chemistry?",
+     "more": {
+      "text": "Lithium-ion batteries."
+     }
+    }
+   ],
+   "id": "ee-c-135"
+  },
+  {
+   "sides": [
+    {
+     "text": "Morris Chang",
+     "sub": "People · Commercial"
+    },
+    {
+     "text": "Founder of TSMC",
+     "more": {
+      "text": "Created the pure-play foundry model in 1987."
+     }
+    },
+    {
+     "text": "Who founded TSMC?",
+     "more": {
+      "text": "Morris Chang."
+     }
+    }
+   ],
+   "id": "ee-c-136"
+  },
+  {
+   "sides": [
+    {
+     "text": "Jensen Huang",
+     "sub": "People · Commercial"
+    },
+    {
+     "text": "Co-founder and CEO of NVIDIA",
+     "more": {
+      "text": "Led NVIDIA from gaming graphics to AI computing."
+     }
+    },
+    {
+     "text": "Who is NVIDIA's co-founder and CEO?",
+     "more": {
+      "text": "Jensen Huang."
+     }
+    }
+   ],
+   "id": "ee-c-137"
+  },
+  {
+   "sides": [
+    {
+     "text": "Eben Upton",
+     "sub": "People · Commercial"
+    },
+    {
+     "text": "Co-creator of the Raspberry Pi",
+     "more": {
+      "text": "Led the effort to build an affordable computer for teaching programming."
+     }
+    },
+    {
+     "text": "Who is the co-creator of the Raspberry Pi?",
+     "more": {
+      "text": "Eben Upton."
+     }
+    }
+   ],
+   "id": "ee-c-138"
+  },
+  {
+   "sides": [
+    {
+     "text": "Massimo Banzi",
+     "sub": "People · Commercial"
+    },
+    {
+     "text": "Co-founder of Arduino",
+     "more": {
+      "text": "Helped create the open-source Arduino platform in Italy."
+     }
+    },
+    {
+     "text": "Who co-founded Arduino?",
+     "more": {
+      "text": "Massimo Banzi."
+     }
+    }
+   ],
+   "id": "ee-c-139"
+  },
+  {
+   "sides": [
+    {
+     "text": "Maxwell, 1865",
+     "sub": "Landmark papers · Commercial"
+    },
+    {
+     "text": "A Dynamical Theory of the Electromagnetic Field",
+     "more": {
+      "text": "Presented the equations of electromagnetism and showed that light is an electromagnetic wave."
+     }
+    },
+    {
+     "text": "Which 1865 paper showed light is an electromagnetic wave?",
+     "more": {
+      "text": "Maxwell's A Dynamical Theory of the Electromagnetic Field."
+     }
+    }
+   ],
+   "id": "ee-c-140"
+  },
+  {
+   "sides": [
+    {
+     "text": "Nyquist, 1928",
+     "sub": "Landmark papers · Commercial"
+    },
+    {
+     "text": "Certain Topics in Telegraph Transmission Theory",
+     "more": {
+      "text": "Established the relationship between bandwidth and signaling rate that underlies the sampling theorem."
+     }
+    },
+    {
+     "text": "Which 1928 paper set the bandwidth versus signaling-rate relationship?",
+     "more": {
+      "text": "Nyquist's Certain Topics in Telegraph Transmission Theory."
+     }
+    }
+   ],
+   "id": "ee-c-141"
+  },
+  {
+   "sides": [
+    {
+     "text": "Hartley, 1928",
+     "sub": "Landmark papers · Commercial"
+    },
+    {
+     "text": "Transmission of Information",
+     "more": {
+      "text": "Proposed that the amount of information relates to bandwidth and time, a precursor to Shannon's capacity."
+     }
+    },
+    {
+     "text": "Whose 1928 paper preceded Shannon's capacity idea?",
+     "more": {
+      "text": "Hartley's Transmission of Information."
+     }
+    }
+   ],
+   "id": "ee-c-142"
+  },
+  {
+   "sides": [
+    {
+     "text": "Black, 1934",
+     "sub": "Landmark papers · Commercial"
+    },
+    {
+     "text": "Stabilized Feedback Amplifiers",
+     "more": {
+      "text": "Described negative feedback to reduce distortion and stabilize gain."
+     }
+    },
+    {
+     "text": "Which 1934 paper described stabilized feedback amplifiers?",
+     "more": {
+      "text": "Harold Black's paper."
+     }
+    }
+   ],
+   "id": "ee-c-143"
+  },
+  {
+   "sides": [
+    {
+     "text": "Friis, 1944 and 1946",
+     "sub": "Landmark papers · Commercial"
+    },
+    {
+     "text": "Noise figures and the transmission formula",
+     "more": {
+      "text": "His 1944 paper defined noise figure for receivers. His 1946 note gave the free-space transmission formula."
+     }
+    },
+    {
+     "text": "Who defined noise figure for radio receivers?",
+     "more": {
+      "text": "Harald Friis."
+     }
+    }
+   ],
+   "id": "ee-c-144"
+  },
+  {
+   "sides": [
+    {
+     "text": "Shannon, 1948",
+     "sub": "Landmark papers · Commercial"
+    },
+    {
+     "text": "A Mathematical Theory of Communication",
+     "more": {
+      "text": "Founded information theory and defined entropy and channel capacity."
+     }
+    },
+    {
+     "text": "Which 1948 paper founded information theory?",
+     "more": {
+      "text": "Shannon's A Mathematical Theory of Communication."
+     }
+    }
+   ],
+   "id": "ee-c-145"
+  },
+  {
+   "sides": [
+    {
+     "text": "Bardeen and Brattain, 1948",
+     "sub": "Landmark papers · Commercial"
+    },
+    {
+     "text": "The Transistor, A Semi-Conductor Triode",
+     "more": {
+      "text": "Announced the point-contact transistor."
+     }
+    },
+    {
+     "text": "Which 1948 paper announced the transistor?",
+     "more": {
+      "text": "Bardeen and Brattain's paper."
+     }
+    }
+   ],
+   "id": "ee-c-146"
+  },
+  {
+   "sides": [
+    {
+     "text": "Shockley, 1949",
+     "sub": "Landmark papers · Commercial"
+    },
+    {
+     "text": "The Theory of p-n Junctions and p-n Junction Transistors",
+     "more": {
+      "text": "Described junction transistor theory, paving the way for practical devices."
+     }
+    },
+    {
+     "text": "Who wrote the 1949 theory of PN junctions and junction transistors?",
+     "more": {
+      "text": "William Shockley."
+     }
+    }
+   ],
+   "id": "ee-c-147"
+  },
+  {
+   "sides": [
+    {
+     "text": "Hamming, 1950",
+     "sub": "Landmark papers · Commercial"
+    },
+    {
+     "text": "Error Detecting and Error Correcting Codes",
+     "more": {
+      "text": "Introduced Hamming codes and the idea of distance between codewords."
+     }
+    },
+    {
+     "text": "Which 1950 paper introduced Hamming codes?",
+     "more": {
+      "text": "Hamming's Error Detecting and Error Correcting Codes."
+     }
+    }
+   ],
+   "id": "ee-c-148"
+  },
+  {
+   "sides": [
+    {
+     "text": "Huffman, 1952",
+     "sub": "Landmark papers · Commercial"
+    },
+    {
+     "text": "A Method for the Construction of Minimum-Redundancy Codes",
+     "more": {
+      "text": "Introduced Huffman coding, an optimal prefix code for lossless compression."
+     }
+    },
+    {
+     "text": "Which 1952 paper introduced an optimal prefix code?",
+     "more": {
+      "text": "Huffman's paper."
+     }
+    }
+   ],
+   "id": "ee-c-149"
+  },
+  {
+   "sides": [
+    {
+     "text": "Kalman, 1960",
+     "sub": "Landmark papers · Commercial"
+    },
+    {
+     "text": "A New Approach to Linear Filtering and Prediction Problems",
+     "more": {
+      "text": "Introduced the Kalman filter."
+     }
+    },
+    {
+     "text": "Which 1960 paper introduced the Kalman filter?",
+     "more": {
+      "text": "Kalman's A New Approach to Linear Filtering and Prediction Problems."
+     }
+    }
+   ],
+   "id": "ee-c-150"
+  },
+  {
+   "sides": [
+    {
+     "text": "Reed and Solomon, 1960",
+     "sub": "Landmark papers · Commercial"
+    },
+    {
+     "text": "Polynomial Codes over Certain Finite Fields",
+     "more": {
+      "text": "Introduced Reed–Solomon codes."
+     }
+    },
+    {
+     "text": "Which 1960 paper introduced Reed–Solomon codes?",
+     "more": {
+      "text": "Reed and Solomon's paper."
+     }
+    }
+   ],
+   "id": "ee-c-151"
+  },
+  {
+   "sides": [
+    {
+     "text": "Widrow and Hoff, 1960",
+     "sub": "Landmark papers · Commercial"
+    },
+    {
+     "text": "Adaptive Switching Circuits",
+     "more": {
+      "text": "Introduced the LMS algorithm for adaptive filtering."
+     }
+    },
+    {
+     "text": "Which 1960 paper introduced the LMS algorithm?",
+     "more": {
+      "text": "Widrow and Hoff's Adaptive Switching Circuits."
+     }
+    }
+   ],
+   "id": "ee-c-152"
+  },
+  {
+   "sides": [
+    {
+     "text": "Gallager, 1962",
+     "sub": "Landmark papers · Commercial"
+    },
+    {
+     "text": "Low-Density Parity-Check Codes",
+     "more": {
+      "text": "Introduced LDPC codes, later rediscovered when computing could decode them."
+     }
+    },
+    {
+     "text": "Who introduced LDPC codes?",
+     "more": {
+      "text": "Robert Gallager."
+     }
+    }
+   ],
+   "id": "ee-c-153"
+  },
+  {
+   "sides": [
+    {
+     "text": "Moore, 1965",
+     "sub": "Landmark papers · Commercial"
+    },
+    {
+     "text": "Cramming More Components onto Integrated Circuits",
+     "more": {
+      "text": "Observed rapid growth in components per chip, which became known as Moore's law."
+     }
+    },
+    {
+     "text": "Which 1965 article became known as Moore's law?",
+     "more": {
+      "text": "Moore's Cramming More Components onto Integrated Circuits."
+     }
+    }
+   ],
+   "id": "ee-c-154"
+  },
+  {
+   "sides": [
+    {
+     "text": "Cooley and Tukey, 1965",
+     "sub": "Landmark papers · Commercial"
+    },
+    {
+     "text": "An Algorithm for the Machine Calculation of Complex Fourier Series",
+     "more": {
+      "text": "Published the FFT."
+     }
+    },
+    {
+     "text": "Which 1965 paper published the FFT?",
+     "more": {
+      "text": "Cooley and Tukey's paper."
+     }
+    }
+   ],
+   "id": "ee-c-155"
+  },
+  {
+   "sides": [
+    {
+     "text": "Viterbi, 1967",
+     "sub": "Landmark papers · Commercial"
+    },
+    {
+     "text": "Error Bounds for Convolutional Codes and an Asymptotically Optimum Decoding Algorithm",
+     "more": {
+      "text": "Introduced the Viterbi decoding algorithm."
+     }
+    },
+    {
+     "text": "Which 1967 paper introduced the Viterbi algorithm?",
+     "more": {
+      "text": "Viterbi's Error Bounds for Convolutional Codes paper."
+     }
+    }
+   ],
+   "id": "ee-c-156"
+  },
+  {
+   "sides": [
+    {
+     "text": "Dennard et al., 1974",
+     "sub": "Landmark papers · Commercial"
+    },
+    {
+     "text": "Design of Ion-Implanted MOSFETs with Very Small Physical Dimensions",
+     "more": {
+      "text": "Described how shrinking MOSFETs scaled voltage, power, and speed, known as Dennard scaling."
+     }
+    },
+    {
+     "text": "Which 1974 paper described MOSFET scaling rules?",
+     "more": {
+      "text": "Dennard et al.'s ion-implanted MOSFET paper."
+     }
+    }
+   ],
+   "id": "ee-c-157"
+  },
+  {
+   "sides": [
+    {
+     "text": "Diffie and Hellman, 1976",
+     "sub": "Landmark papers · Commercial"
+    },
+    {
+     "text": "New Directions in Cryptography",
+     "more": {
+      "text": "Introduced public-key key exchange, which secures modern communications."
+     }
+    },
+    {
+     "text": "Which 1976 paper introduced public-key key exchange?",
+     "more": {
+      "text": "Diffie and Hellman's New Directions in Cryptography."
+     }
+    }
+   ],
+   "id": "ee-c-158"
+  },
+  {
+   "sides": [
+    {
+     "text": "Berrou et al., 1993",
+     "sub": "Landmark papers · Commercial"
+    },
+    {
+     "text": "Near Shannon Limit Error-Correcting Coding and Decoding: Turbo-Codes",
+     "more": {
+      "text": "Introduced turbo codes, which approach the Shannon limit."
+     }
+    },
+    {
+     "text": "Which 1993 paper introduced turbo codes?",
+     "more": {
+      "text": "Berrou, Glavieux, and Thitimajshima's paper."
+     }
+    }
+   ],
+   "id": "ee-c-159"
+  }
+ ]
+}

@@ -1,0 +1,1806 @@
+{
+ "id": "security-plus-practice-mixed",
+ "name": "Practice · Mixed 90",
+ "cards": [
+  {
+   "id": "sec-pm-1",
+   "sides": [
+    {
+     "text": "A contract allows the customer to inspect a vendor's security controls. Which clause is this?",
+     "options": [
+      "Right-to-audit",
+      "SOW",
+      "SLA",
+      "NDA"
+     ]
+    },
+    {
+     "text": "A. Right-to-audit",
+     "more": {
+      "text": "A right-to-audit clause permits inspection of the vendor."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-2",
+   "sides": [
+    {
+     "text": "A team talks through a ransomware scenario in a meeting without touching any systems. Which test is this?",
+     "options": [
+      "Parallel processing",
+      "Tabletop exercise",
+      "Failover test",
+      "Simulation"
+     ]
+    },
+    {
+     "text": "B. Tabletop exercise",
+     "more": {
+      "text": "A tabletop is a discussion-based walkthrough."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-3",
+   "sides": [
+    {
+     "text": "A tool records process behavior on laptops and can isolate an infected one. Which is it?",
+     "options": [
+      "UBA",
+      "EDR",
+      "FIM",
+      "Antivirus signatures"
+     ]
+    },
+    {
+     "text": "B. EDR",
+     "more": {
+      "text": "EDR monitors endpoint behavior and enables response actions."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-4",
+   "sides": [
+    {
+     "text": "A forum comment contains a script that steals other users' session cookies. Which attack is this?",
+     "options": [
+      "Stored cross-site scripting",
+      "SQL injection",
+      "Directory traversal",
+      "Cross-site request forgery"
+     ]
+    },
+    {
+     "text": "A. Stored cross-site scripting",
+     "more": {
+      "text": "Script saved on the server and run in other users' browsers is stored XSS."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-5",
+   "sides": [
+    {
+     "text": "Which appliance sits in front of internal servers, hiding them and distributing requests?",
+     "options": [
+      "Honeypot",
+      "Reverse proxy",
+      "Forward proxy",
+      "Jump server"
+     ]
+    },
+    {
+     "text": "B. Reverse proxy",
+     "more": {
+      "text": "A reverse proxy fronts servers. A forward proxy fronts users."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-6",
+   "sides": [
+    {
+     "text": "A retired server's drives are cryptographically erased so they can be reused. Which process is this?",
+     "options": [
+      "Data retention",
+      "Enumeration",
+      "Destruction",
+      "Sanitization"
+     ]
+    },
+    {
+     "text": "D. Sanitization",
+     "more": {
+      "text": "Sanitization removes data while allowing media to be reused."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-7",
+   "sides": [
+    {
+     "text": "Which term describes the risk that remains after controls are applied?",
+     "options": [
+      "Risk appetite",
+      "Residual risk",
+      "Risk threshold",
+      "Inherent risk"
+     ]
+    },
+    {
+     "text": "B. Residual risk",
+     "more": {
+      "text": "Inherent risk is before controls; residual is after."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-8",
+   "sides": [
+    {
+     "text": "An employee signs up for an unapproved cloud storage service and stores customer files there. What is this?",
+     "options": [
+      "Brand impersonation",
+      "Hacktivism",
+      "Supply chain attack",
+      "Shadow IT"
+     ]
+    },
+    {
+     "text": "D. Shadow IT",
+     "more": {
+      "text": "Shadow IT is technology used without IT's approval, creating blind spots."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-9",
+   "sides": [
+    {
+     "text": "A company wants to enforce encryption and remote wipe on employee smartphones. Which solution fits?",
+     "options": [
+      "NAC",
+      "DLP",
+      "SIEM",
+      "MDM"
+     ]
+    },
+    {
+     "text": "D. MDM",
+     "more": {
+      "text": "Mobile device management enforces policy and remote wipe on phones."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-10",
+   "sides": [
+    {
+     "text": "Which log source shows which device held a given IP address at a certain time?",
+     "options": [
+      "DHCP or network logs",
+      "Application logs",
+      "Vulnerability scans",
+      "Code signing logs"
+     ]
+    },
+    {
+     "text": "A. DHCP or network logs",
+     "more": {
+      "text": "DHCP logs map IP addresses to devices over time."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-11",
+   "sides": [
+    {
+     "text": "Data being processed in memory is in which state?",
+     "options": [
+      "Archived data",
+      "Data in use",
+      "Data at rest",
+      "Data in transit"
+     ]
+    },
+    {
+     "text": "B. Data in use",
+     "more": {
+      "text": "In use means actively processed, such as in RAM."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-12",
+   "sides": [
+    {
+     "text": "A company wants to avoid buying servers and pay only for what it uses. Which model fits?",
+     "options": [
+      "Physical isolation",
+      "Cloud computing",
+      "Air-gapped",
+      "On-premises"
+     ]
+    },
+    {
+     "text": "B. Cloud computing",
+     "more": {
+      "text": "Cloud computing is on-demand and billed by usage."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-13",
+   "sides": [
+    {
+     "text": "An attacker tries one or two common passwords against thousands of accounts to avoid lockouts. Which attack is this?",
+     "options": [
+      "Rainbow table",
+      "Brute force",
+      "Replay",
+      "Password spraying"
+     ]
+    },
+    {
+     "text": "D. Password spraying",
+     "more": {
+      "text": "Spraying spreads a few guesses across many accounts to avoid lockout thresholds."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-14",
+   "sides": [
+    {
+     "text": "A vendor processes payroll data only under a company's instructions. What is the vendor's role?",
+     "options": [
+      "Owner",
+      "Controller",
+      "Processor",
+      "Steward"
+     ]
+    },
+    {
+     "text": "C. Processor",
+     "more": {
+      "text": "A processor acts on the controller's behalf."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-15",
+   "sides": [
+    {
+     "text": "Which zero trust plane contains the policy enforcement point?",
+     "options": [
+      "Management plane",
+      "Control plane",
+      "Data plane",
+      "Access plane"
+     ]
+    },
+    {
+     "text": "C. Data plane",
+     "more": {
+      "text": "The data plane enforces decisions. The control plane holds the policy engine and policy administrator."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-16",
+   "sides": [
+    {
+     "text": "A user logs in once and opens several applications without re-entering credentials. Which is this?",
+     "options": [
+      "SSO",
+      "Attestation",
+      "MFA",
+      "PAM"
+     ]
+    },
+    {
+     "text": "A. SSO",
+     "more": {
+      "text": "Single sign-on authenticates once for many apps."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-17",
+   "sides": [
+    {
+     "text": "A startup deliberately takes on high risk to grow quickly. Which risk appetite is this?",
+     "options": [
+      "Averse",
+      "Expansionary",
+      "Conservative",
+      "Neutral"
+     ]
+    },
+    {
+     "text": "B. Expansionary",
+     "more": {
+      "text": "Expansionary appetite accepts more risk for growth."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-18",
+   "sides": [
+    {
+     "text": "Which agreement sets standing terms for all future work orders?",
+     "options": [
+      "NDA",
+      "BPA",
+      "MOU",
+      "MSA"
+     ]
+    },
+    {
+     "text": "D. MSA",
+     "more": {
+      "text": "An MSA covers general terms; each project then gets a SOW."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-19",
+   "sides": [
+    {
+     "text": "An attacker copies a badge's data with a hidden reader and later enters with a duplicate. Which attack is this?",
+     "options": [
+      "Environmental attack",
+      "Tailgating",
+      "RFID cloning",
+      "Brute force"
+     ]
+    },
+    {
+     "text": "C. RFID cloning",
+     "more": {
+      "text": "RFID cloning duplicates a badge's credential."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-20",
+   "sides": [
+    {
+     "text": "An asset worth $200,000 has an exposure factor of 25% and an ARO of 0.5. What is the ALE?",
+     "options": [
+      "$12,500",
+      "$25,000",
+      "$100,000",
+      "$50,000"
+     ]
+    },
+    {
+     "text": "B. $25,000",
+     "more": {
+      "text": "SLE = 200,000 × 0.25 = $50,000. ALE = SLE × ARO = $25,000."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-21",
+   "sides": [
+    {
+     "text": "A user signs in from New York and then from Singapore ten minutes later. Which indicator is this?",
+     "options": [
+      "Resource consumption",
+      "Out-of-cycle logging",
+      "Account lockout",
+      "Impossible travel"
+     ]
+    },
+    {
+     "text": "D. Impossible travel",
+     "more": {
+      "text": "Logins too far apart in too little time suggest stolen credentials."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-22",
+   "sides": [
+    {
+     "text": "Under GDPR, which role decides why personal data is collected?",
+     "options": [
+      "Data subject",
+      "Custodian",
+      "Controller",
+      "Processor"
+     ]
+    },
+    {
+     "text": "C. Controller",
+     "more": {
+      "text": "The controller determines the purposes and means of processing."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-23",
+   "sides": [
+    {
+     "text": "A company reviews a vendor's SOC 2 report prepared by an outside firm. What kind of evidence is this?",
+     "options": [
+      "Questionnaire",
+      "Self-assessment",
+      "Internal audit",
+      "Independent assessment"
+     ]
+    },
+    {
+     "text": "D. Independent assessment",
+     "more": {
+      "text": "An outside auditor's report is independent assurance."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-24",
+   "sides": [
+    {
+     "text": "Which data should be collected first according to the order of volatility?",
+     "options": [
+      "Backups",
+      "Disk image",
+      "RAM",
+      "Remote logs"
+     ]
+    },
+    {
+     "text": "C. RAM",
+     "more": {
+      "text": "More volatile data is lost first, so RAM comes before disk."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-25",
+   "sides": [
+    {
+     "text": "In a zero trust architecture, which component evaluates policy and context and decides whether to grant access?",
+     "options": [
+      "Policy engine",
+      "Subject",
+      "Implicit trust zone",
+      "Policy enforcement point"
+     ]
+    },
+    {
+     "text": "A. Policy engine",
+     "more": {
+      "text": "The policy engine decides. The policy enforcement point carries out that decision on the data plane."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-26",
+   "sides": [
+    {
+     "text": "Branch offices use low-cost internet links managed centrally by policy. Which technology is this?",
+     "options": [
+      "MPLS",
+      "HSM",
+      "SCADA",
+      "SD-WAN"
+     ]
+    },
+    {
+     "text": "D. SD-WAN",
+     "more": {
+      "text": "SD-WAN routes traffic over multiple links by policy with central management."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-27",
+   "sides": [
+    {
+     "text": "A scan logs in to servers to check installed patches. Which type of scan is this?",
+     "options": [
+      "Credentialed scan",
+      "Non-credentialed scan",
+      "Port scan",
+      "Passive scan"
+     ]
+    },
+    {
+     "text": "A. Credentialed scan",
+     "more": {
+      "text": "Credentialed scans see patches and settings accurately."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-28",
+   "sides": [
+    {
+     "text": "A gap analysis shows a company meets 70% of a framework's controls. What does this help with?",
+     "options": [
+      "Recovering lost data",
+      "Detecting live attacks",
+      "Prioritizing improvements toward the target standard",
+      "Issuing certificates"
+     ]
+    },
+    {
+     "text": "C. Prioritizing improvements toward the target standard",
+     "more": {
+      "text": "Gap analysis compares the current state with a target and shows what must change."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-29",
+   "sides": [
+    {
+     "text": "Which access control model decides based on attributes of the user, resource, and environment?",
+     "options": [
+      "MAC",
+      "ABAC",
+      "RBAC",
+      "DAC"
+     ]
+    },
+    {
+     "text": "B. ABAC",
+     "more": {
+      "text": "ABAC evaluates multiple attributes against policy."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-30",
+   "sides": [
+    {
+     "text": "Which incident response phase removes malware and closes the entry point?",
+     "options": [
+      "Containment",
+      "Lessons learned",
+      "Eradication",
+      "Recovery"
+     ]
+    },
+    {
+     "text": "C. Eradication",
+     "more": {
+      "text": "Eradication removes the cause. Containment only limits the spread."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-31",
+   "sides": [
+    {
+     "text": "Which standard protects cardholder data and is enforced through card brands rather than law?",
+     "options": [
+      "HIPAA",
+      "PCI DSS",
+      "GDPR",
+      "SOX"
+     ]
+    },
+    {
+     "text": "B. PCI DSS",
+     "more": {
+      "text": "PCI DSS is an industry standard for payment card security."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-32",
+   "sides": [
+    {
+     "text": "A metric that warns risk is rising, such as the backlog of unpatched systems, is called a?",
+     "options": [
+      "ALE",
+      "RTO",
+      "SLA",
+      "Key risk indicator"
+     ]
+    },
+    {
+     "text": "D. Key risk indicator",
+     "more": {
+      "text": "KRIs are measurable signals of increasing exposure."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-33",
+   "sides": [
+    {
+     "text": "An unsupported operating system can't be updated and must stay online. What is the best compensating approach?",
+     "options": [
+      "Share its admin password",
+      "Isolate it on a restricted network segment",
+      "Leave it on the main network",
+      "Disable logging"
+     ]
+    },
+    {
+     "text": "B. Isolate it on a restricted network segment",
+     "more": {
+      "text": "Isolation limits the exposure of a system that can't be patched."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-34",
+   "sides": [
+    {
+     "text": "A SOAR playbook calls a firewall API to block an IP automatically. Which benefit does this show?",
+     "options": [
+      "Faster reaction time",
+      "Higher cost",
+      "Technical debt",
+      "A single point of failure"
+     ]
+    },
+    {
+     "text": "A. Faster reaction time",
+     "more": {
+      "text": "Automation responds in seconds. The other options are considerations, not benefits."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-35",
+   "sides": [
+    {
+     "text": "Analysts search logs for signs of an attacker before any alert fires. Which activity is this?",
+     "options": [
+      "Root cause analysis",
+      "Threat hunting",
+      "Penetration testing",
+      "Alert tuning"
+     ]
+    },
+    {
+     "text": "B. Threat hunting",
+     "more": {
+      "text": "Threat hunting proactively looks for hidden compromise."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-36",
+   "sides": [
+    {
+     "text": "Which document gives optional recommended practices?",
+     "options": [
+      "Standard",
+      "Policy",
+      "Guideline",
+      "Procedure"
+     ]
+    },
+    {
+     "text": "C. Guideline",
+     "more": {
+      "text": "Guidelines advise without requiring. Policies and standards are mandatory."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-37",
+   "sides": [
+    {
+     "text": "Which cookie flag stops JavaScript from reading a session cookie?",
+     "options": [
+      "Secure",
+      "Domain",
+      "SameSite",
+      "HttpOnly"
+     ]
+    },
+    {
+     "text": "D. HttpOnly",
+     "more": {
+      "text": "HttpOnly blocks script access. Secure limits it to HTTPS."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-38",
+   "sides": [
+    {
+     "text": "Which GDPR right lets individuals request deletion of their personal data?",
+     "options": [
+      "Data portability",
+      "Right of access",
+      "Data inventory",
+      "Right to be forgotten"
+     ]
+    },
+    {
+     "text": "D. Right to be forgotten",
+     "more": {
+      "text": "The right to erasure is commonly called the right to be forgotten."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-39",
+   "sides": [
+    {
+     "text": "Malware spreads across the network on its own with no user action. Which type is it?",
+     "options": [
+      "Trojan",
+      "Worm",
+      "Logic bomb",
+      "Virus"
+     ]
+    },
+    {
+     "text": "B. Worm",
+     "more": {
+      "text": "Worms self-replicate across networks. Viruses need a host file and user action."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-40",
+   "sides": [
+    {
+     "text": "Which recovery site offers the fastest failover but costs the most?",
+     "options": [
+      "Hot site",
+      "Mobile site",
+      "Cold site",
+      "Warm site"
+     ]
+    },
+    {
+     "text": "A. Hot site",
+     "more": {
+      "text": "A hot site is fully equipped with current data."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-41",
+   "sides": [
+    {
+     "text": "A critical system has no connection to any other network, including the internet. What is this called?",
+     "options": [
+      "Hybrid",
+      "Software-defined",
+      "Air-gapped",
+      "Logically segmented"
+     ]
+    },
+    {
+     "text": "C. Air-gapped",
+     "more": {
+      "text": "An air gap is complete physical disconnection."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-42",
+   "sides": [
+    {
+     "text": "Malicious code activates only after a specific employee's account is disabled. Which type is it?",
+     "options": [
+      "Logic bomb",
+      "Bloatware",
+      "Worm",
+      "Trojan"
+     ]
+    },
+    {
+     "text": "A. Logic bomb",
+     "more": {
+      "text": "A logic bomb stays dormant until a condition is met."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-43",
+   "sides": [
+    {
+     "text": "An attacker forces a connection to fall back to an older, weaker TLS version. Which attack is this?",
+     "options": [
+      "Birthday attack",
+      "Replay attack",
+      "Collision attack",
+      "Downgrade attack"
+     ]
+    },
+    {
+     "text": "D. Downgrade attack",
+     "more": {
+      "text": "A downgrade attack pushes systems to a weaker protocol."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-44",
+   "sides": [
+    {
+     "text": "Users who mistype a company's domain land on a fake login page. Which attack is this?",
+     "options": [
+      "DNS poisoning",
+      "Vishing",
+      "Watering hole",
+      "Typosquatting"
+     ]
+    },
+    {
+     "text": "D. Typosquatting",
+     "more": {
+      "text": "Typosquatting registers lookalike misspelled domains. DNS poisoning would redirect even correct entries."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-45",
+   "sides": [
+    {
+     "text": "A call center agent sees only the last four digits of a card number. Which technique is this?",
+     "options": [
+      "Hashing",
+      "Salting",
+      "Masking",
+      "Tokenization"
+     ]
+    },
+    {
+     "text": "C. Masking",
+     "more": {
+      "text": "Masking hides parts of a value in display."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-46",
+   "sides": [
+    {
+     "text": "A DNS record lists the mail servers allowed to send for a domain. Which email control is this?",
+     "options": [
+      "DMARC",
+      "DKIM",
+      "SPF",
+      "DNSSEC"
+     ]
+    },
+    {
+     "text": "C. SPF",
+     "more": {
+      "text": "SPF lists authorized sending servers."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-47",
+   "sides": [
+    {
+     "text": "A user enters ' OR 1=1 -- into a login field and gains access. Which control best prevents this?",
+     "options": [
+      "Full-disk encryption",
+      "Longer passwords",
+      "Parameterized queries",
+      "Account lockout"
+     ]
+    },
+    {
+     "text": "C. Parameterized queries",
+     "more": {
+      "text": "Parameterized queries keep input from being interpreted as SQL."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-48",
+   "sides": [
+    {
+     "text": "A spreadsheet tracks identified risks with owners and treatments. What is it called?",
+     "options": [
+      "Playbook",
+      "BIA",
+      "Risk register",
+      "SLA"
+     ]
+    },
+    {
+     "text": "C. Risk register",
+     "more": {
+      "text": "A risk register lists risks, owners, ratings, and treatments."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-49",
+   "sides": [
+    {
+     "text": "Which BIA output states the maximum acceptable data loss, measured in time?",
+     "options": [
+      "MTBF",
+      "RPO",
+      "MTTR",
+      "RTO"
+     ]
+    },
+    {
+     "text": "B. RPO",
+     "more": {
+      "text": "RPO limits data loss. RTO limits downtime."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-50",
+   "sides": [
+    {
+     "text": "An attacker compromises a website that a target company's engineers frequently visit in order to infect them. Which attack is this?",
+     "options": [
+      "Phishing",
+      "Brand impersonation",
+      "Watering hole",
+      "Typosquatting"
+     ]
+    },
+    {
+     "text": "C. Watering hole",
+     "more": {
+      "text": "A watering hole compromises a site the targets trust and visit."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-51",
+   "sides": [
+    {
+     "text": "Which protocol lets an app access a user's resources through tokens without the password?",
+     "options": [
+      "SAML",
+      "LDAP",
+      "OAuth",
+      "Kerberos"
+     ]
+    },
+    {
+     "text": "C. OAuth",
+     "more": {
+      "text": "OAuth delegates authorization with tokens."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-52",
+   "sides": [
+    {
+     "text": "Employees choose a laptop from an approved list that the company owns. Which model is this?",
+     "options": [
+      "COBO",
+      "BYOD",
+      "COPE",
+      "CYOD"
+     ]
+    },
+    {
+     "text": "D. CYOD",
+     "more": {
+      "text": "CYOD lets employees pick from approved company devices."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-53",
+   "sides": [
+    {
+     "text": "A tiny spoofed DNS query produces a very large response aimed at a victim. Which technique is this?",
+     "options": [
+      "Downgrade attack",
+      "Amplified DDoS",
+      "On-path attack",
+      "Credential replay"
+     ]
+    },
+    {
+     "text": "B. Amplified DDoS",
+     "more": {
+      "text": "Amplification abuses a service so small requests generate large responses."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-54",
+   "sides": [
+    {
+     "text": "Which provides integrity, authentication, and non-repudiation but not confidentiality?",
+     "options": [
+      "Symmetric encryption",
+      "Salting",
+      "Key stretching",
+      "Digital signature"
+     ]
+    },
+    {
+     "text": "D. Digital signature",
+     "more": {
+      "text": "A signature proves origin and unaltered content. It doesn't hide the message."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-55",
+   "sides": [
+    {
+     "text": "Which authentication method is phishing-resistant and uses hardware with public-key cryptography?",
+     "options": [
+      "Email link",
+      "SMS code",
+      "Security question",
+      "FIDO2 security key"
+     ]
+    },
+    {
+     "text": "D. FIDO2 security key",
+     "more": {
+      "text": "FIDO2 keys verify the site, so phishing doesn't work."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-56",
+   "sides": [
+    {
+     "text": "A US firm must keep EU customer data inside the EU. Which concept applies?",
+     "options": [
+      "Data masking",
+      "Key escrow",
+      "Tokenization",
+      "Data sovereignty"
+     ]
+    },
+    {
+     "text": "D. Data sovereignty",
+     "more": {
+      "text": "Data is subject to the laws of where it's stored or processed."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-57",
+   "sides": [
+    {
+     "text": "A device must authenticate through a RADIUS server before a switch port forwards traffic. Which standard is this?",
+     "options": [
+      "STP",
+      "802.1X",
+      "WPS",
+      "Port mirroring"
+     ]
+    },
+    {
+     "text": "B. 802.1X",
+     "more": {
+      "text": "802.1X provides port-based network access control."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-58",
+   "sides": [
+    {
+     "text": "A document lists the exact steps to configure a firewall. Which type is it?",
+     "options": [
+      "Procedure",
+      "Policy",
+      "Standard",
+      "Guideline"
+     ]
+    },
+    {
+     "text": "A. Procedure",
+     "more": {
+      "text": "A procedure gives step-by-step instructions."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-59",
+   "sides": [
+    {
+     "text": "Only approved executables may run on public kiosks. Which mitigation is in use?",
+     "options": [
+      "Application allow list",
+      "Application deny list",
+      "Isolation",
+      "Patching"
+     ]
+    },
+    {
+     "text": "A. Application allow list",
+     "more": {
+      "text": "An allow list blocks everything not explicitly approved."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-60",
+   "sides": [
+    {
+     "text": "Admins receive elevated rights for two hours, after which the rights expire automatically. Which approach is this?",
+     "options": [
+      "Password vaulting",
+      "Attestation",
+      "Role-based access",
+      "Just-in-time permissions"
+     ]
+    },
+    {
+     "text": "D. Just-in-time permissions",
+     "more": {
+      "text": "JIT grants temporary privilege and then revokes it."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-61",
+   "sides": [
+    {
+     "text": "Which secure protocol and port replace Telnet?",
+     "options": [
+      "SSH on port 22",
+      "FTP on port 21",
+      "SNMP on port 161",
+      "HTTPS on port 443"
+     ]
+    },
+    {
+     "text": "A. SSH on port 22",
+     "more": {
+      "text": "SSH encrypts remote administration and uses port 22."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-62",
+   "sides": [
+    {
+     "text": "A server runs unused services and still has default admin credentials. Which action addresses both problems?",
+     "options": [
+      "Segmentation",
+      "Quarantine",
+      "Hardening",
+      "Decommissioning"
+     ]
+    },
+    {
+     "text": "C. Hardening",
+     "more": {
+      "text": "Hardening disables unneeded services and changes default credentials."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-63",
+   "sides": [
+    {
+     "text": "A vendor can't patch quickly, so a WAF rule blocks exploitation in the meantime. What is this?",
+     "options": [
+      "Compensating control",
+      "Risk avoidance",
+      "Decommissioning",
+      "Risk transfer"
+     ]
+    },
+    {
+     "text": "A. Compensating control",
+     "more": {
+      "text": "A WAF rule stands in for the missing patch."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-64",
+   "sides": [
+    {
+     "text": "A web admin needs one certificate to cover mail.example.com and shop.example.com. Which type fits best?",
+     "options": [
+      "Root",
+      "Wildcard",
+      "Code-signing",
+      "Self-signed"
+     ]
+    },
+    {
+     "text": "B. Wildcard",
+     "more": {
+      "text": "A wildcard certificate (*.example.com) covers all subdomains of a domain."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-65",
+   "sides": [
+    {
+     "text": "An email that appears to come from the CEO urgently asks finance to wire money to a new account. Which attack is this?",
+     "options": [
+      "Business email compromise",
+      "Smishing",
+      "Watering hole",
+      "Typosquatting"
+     ]
+    },
+    {
+     "text": "A. Business email compromise",
+     "more": {
+      "text": "BEC uses spoofed or hijacked executive email to trigger fraudulent payments."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-66",
+   "sides": [
+    {
+     "text": "Management decides that fixing a low risk costs more than the possible loss and signs off. Which strategy is this?",
+     "options": [
+      "Transfer",
+      "Avoid",
+      "Mitigate",
+      "Accept"
+     ]
+    },
+    {
+     "text": "D. Accept",
+     "more": {
+      "text": "Knowingly tolerating a risk is acceptance."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-67",
+   "sides": [
+    {
+     "text": "A company buys cyber insurance. Which risk strategy is this?",
+     "options": [
+      "Transfer",
+      "Avoid",
+      "Mitigate",
+      "Accept"
+     ]
+    },
+    {
+     "text": "A. Transfer",
+     "more": {
+      "text": "Insurance moves the financial impact to a third party."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-68",
+   "sides": [
+    {
+     "text": "Which control category includes risk assessments and security policies written by senior leaders?",
+     "options": [
+      "Physical",
+      "Technical",
+      "Operational",
+      "Managerial"
+     ]
+    },
+    {
+     "text": "D. Managerial",
+     "more": {
+      "text": "Managerial controls govern and oversee risk. Technical controls are enforced by systems; operational ones are carried out by people."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-69",
+   "sides": [
+    {
+     "text": "A phone's OS restrictions have been removed so unsigned apps can be installed. What is this called?",
+     "options": [
+      "Bluesnarfing",
+      "VM escape",
+      "Jailbreaking",
+      "Side loading"
+     ]
+    },
+    {
+     "text": "C. Jailbreaking",
+     "more": {
+      "text": "Jailbreaking removes the OS's built-in restrictions. Side loading installs apps from outside the store."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-70",
+   "sides": [
+    {
+     "text": "A flaw has a CVSS score of 9.8. How is it rated?",
+     "options": [
+      "Medium",
+      "Low",
+      "Critical",
+      "Informational"
+     ]
+    },
+    {
+     "text": "C. Critical",
+     "more": {
+      "text": "CVSS 9.0 to 10.0 is Critical."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-71",
+   "sides": [
+    {
+     "text": "An overlong input crashes a program and lets the attacker run code. Which vulnerability is this?",
+     "options": [
+      "Buffer overflow",
+      "Race condition",
+      "SQL injection",
+      "Directory traversal"
+     ]
+    },
+    {
+     "text": "A. Buffer overflow",
+     "more": {
+      "text": "Input larger than the buffer overwrites adjacent memory, which can allow code execution."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-72",
+   "sides": [
+    {
+     "text": "A payment processor replaces stored card numbers with random values and keeps the originals in a vault. Which technique is this?",
+     "options": [
+      "Hashing",
+      "Masking",
+      "Steganography",
+      "Tokenization"
+     ]
+    },
+    {
+     "text": "D. Tokenization",
+     "more": {
+      "text": "Tokenization swaps data for tokens with the real value held in a vault. Masking only hides part of a displayed value."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-73",
+   "sides": [
+    {
+     "text": "A penetration tester is given network diagrams and source code. Which type of test is this?",
+     "options": [
+      "Partially known environment",
+      "Known environment",
+      "Unknown environment",
+      "Passive reconnaissance"
+     ]
+    },
+    {
+     "text": "B. Known environment",
+     "more": {
+      "text": "Full information makes it a known environment (white box) test."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-74",
+   "sides": [
+    {
+     "text": "Which firewall failure mode prioritizes security over availability?",
+     "options": [
+      "Inline mode",
+      "Fail-open",
+      "Passive mode",
+      "Fail-closed"
+     ]
+    },
+    {
+     "text": "D. Fail-closed",
+     "more": {
+      "text": "Fail-closed blocks traffic when the device fails."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-75",
+   "sides": [
+    {
+     "text": "Which indicator most likely points to cryptomining malware on a server?",
+     "options": [
+      "Sustained 100% CPU from an unknown process",
+      "A scheduled backup",
+      "A new employee account",
+      "A single failed login"
+     ]
+    },
+    {
+     "text": "A. Sustained 100% CPU from an unknown process",
+     "more": {
+      "text": "Unexplained high resource use is a classic cryptomining sign."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-76",
+   "sides": [
+    {
+     "text": "A device without current patches is placed on a restricted VLAN until it's fixed. Which technology is this?",
+     "options": [
+      "HSM",
+      "SCAP",
+      "NAC",
+      "WAF"
+     ]
+    },
+    {
+     "text": "C. NAC",
+     "more": {
+      "text": "NAC checks device posture before granting full access."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-77",
+   "sides": [
+    {
+     "text": "Which statement best describes least privilege?",
+     "options": [
+      "Using one shared account",
+      "Granting administrators full access",
+      "Granting only the access needed to do a job",
+      "Allowing access by default"
+     ]
+    },
+    {
+     "text": "C. Granting only the access needed to do a job",
+     "more": {
+      "text": "Least privilege limits the damage from mistakes and compromise."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-78",
+   "sides": [
+    {
+     "text": "A company labels data whose loss would halt operations. Which classification fits?",
+     "options": [
+      "Public",
+      "Private",
+      "Restricted",
+      "Critical"
+     ]
+    },
+    {
+     "text": "D. Critical",
+     "more": {
+      "text": "Critical data is essential to operations."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-79",
+   "sides": [
+    {
+     "text": "Everyone who handled a hard drive signs a log. What is this called?",
+     "options": [
+      "Legal hold",
+      "Chain of custody",
+      "E-discovery",
+      "Preservation order"
+     ]
+    },
+    {
+     "text": "B. Chain of custody",
+     "more": {
+      "text": "Chain of custody documents who handled evidence and when."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-80",
+   "sides": [
+    {
+     "text": "Which email control tells receivers to reject messages that fail SPF and DKIM alignment?",
+     "options": [
+      "SPF",
+      "DMARC",
+      "S/MIME",
+      "DKIM"
+     ]
+    },
+    {
+     "text": "B. DMARC",
+     "more": {
+      "text": "DMARC sets the policy for authentication failures."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-81",
+   "sides": [
+    {
+     "text": "Which tamper-resistant device is used to generate and store keys for servers and certificate authorities?",
+     "options": [
+      "TPM",
+      "Password vault",
+      "Secure enclave",
+      "HSM"
+     ]
+    },
+    {
+     "text": "D. HSM",
+     "more": {
+      "text": "An HSM is dedicated hardware for key protection. A TPM is a chip on a single device's motherboard."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-82",
+   "sides": [
+    {
+     "text": "A sensor receives a copy of traffic from a switch and can alert but not block. Which deployment is this?",
+     "options": [
+      "Passive tap or monitor",
+      "Jump server",
+      "Reverse proxy",
+      "Inline IPS"
+     ]
+    },
+    {
+     "text": "A. Passive tap or monitor",
+     "more": {
+      "text": "A tap or monitor sees a copy of traffic and can't block it."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-83",
+   "sides": [
+    {
+     "text": "Which Wi-Fi standard uses SAE to resist offline password cracking?",
+     "options": [
+      "WPA3",
+      "WEP",
+      "WPS",
+      "WPA2-PSK"
+     ]
+    },
+    {
+     "text": "A. WPA3",
+     "more": {
+      "text": "WPA3 replaces the PSK handshake with SAE."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-84",
+   "sides": [
+    {
+     "text": "Servers and networks are deployed from version-controlled templates. What is this called?",
+     "options": [
+      "Serverless",
+      "Infrastructure as code",
+      "Containerization",
+      "Air-gapping"
+     ]
+    },
+    {
+     "text": "B. Infrastructure as code",
+     "more": {
+      "text": "IaC provisions infrastructure from machine-readable files."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-85",
+   "sides": [
+    {
+     "text": "Which VPN setup sends only corporate-bound traffic through the tunnel?",
+     "options": [
+      "Full tunnel",
+      "Reverse proxy",
+      "Split tunnel",
+      "Air gap"
+     ]
+    },
+    {
+     "text": "C. Split tunnel",
+     "more": {
+      "text": "A split tunnel sends only designated traffic through the VPN."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-86",
+   "sides": [
+    {
+     "text": "Which tool aggregates and correlates logs from many sources to alert on attacks?",
+     "options": [
+      "DLP",
+      "NetFlow collector",
+      "SNMP manager",
+      "SIEM"
+     ]
+    },
+    {
+     "text": "D. SIEM",
+     "more": {
+      "text": "A SIEM centralizes and correlates security logs."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-87",
+   "sides": [
+    {
+     "text": "A file's permissions are checked, then the file is swapped before it is opened. Which vulnerability is this?",
+     "options": [
+      "Race condition (TOCTOU)",
+      "Side loading",
+      "Memory injection",
+      "Zero-day"
+     ]
+    },
+    {
+     "text": "A. Race condition (TOCTOU)",
+     "more": {
+      "text": "The state changed between the time of check and the time of use."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-88",
+   "sides": [
+    {
+     "text": "A software update requires restarting a critical service. What should the change process include?",
+     "options": [
+      "Scheduling the restart in a maintenance window with stakeholder notice",
+      "Avoiding documentation",
+      "Skipping approval for speed",
+      "Deploying at peak hours"
+     ]
+    },
+    {
+     "text": "A. Scheduling the restart in a maintenance window with stakeholder notice",
+     "more": {
+      "text": "Planning restarts and downtime is a technical implication of change management."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-89",
+   "sides": [
+    {
+     "text": "A vulnerability scanner reports a flaw on a host that is already patched. What is this?",
+     "options": [
+      "False positive",
+      "False negative",
+      "True positive",
+      "True negative"
+     ]
+    },
+    {
+     "text": "A. False positive",
+     "more": {
+      "text": "A false positive reports a problem that doesn't exist."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-pm-90",
+   "sides": [
+    {
+     "text": "A laptop is stolen. Which control best keeps the data on its drive unreadable?",
+     "options": [
+      "Key stretching",
+      "Data masking",
+      "File integrity monitoring",
+      "Full-disk encryption"
+     ]
+    },
+    {
+     "text": "D. Full-disk encryption",
+     "more": {
+      "text": "Full-disk encryption protects data at rest on a lost device."
+     }
+    }
+   ]
+  }
+ ]
+}

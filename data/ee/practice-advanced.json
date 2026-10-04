@@ -1,0 +1,606 @@
+{
+ "id": "ee-practice-advanced",
+ "name": "Practice · Advanced",
+ "cards": [
+  {
+   "id": "ee-p-adv-1",
+   "sides": [
+    {
+     "text": "A 7 kHz tone is sampled at 10 kHz. At what frequency does it appear?",
+     "options": [
+      "3 kHz",
+      "5 kHz",
+      "17 kHz",
+      "7 kHz"
+     ]
+    },
+    {
+     "text": "A. 3 kHz",
+     "more": {
+      "text": "It aliases to |7 − 10| = 3 kHz."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-adv-2",
+   "sides": [
+    {
+     "text": "A 1,024-point FFT uses fs = 48 kHz. What is the bin spacing?",
+     "options": [
+      "About 46.9 Hz",
+      "About 23.4 Hz",
+      "About 48 Hz",
+      "About 1 kHz"
+     ]
+    },
+    {
+     "text": "A. About 46.9 Hz",
+     "more": {
+      "text": "fs / N = 48,000 / 1,024."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-adv-3",
+   "sides": [
+    {
+     "text": "An op-amp has a 1 MHz gain-bandwidth product. What is the closed-loop bandwidth at a gain of 20?",
+     "options": [
+      "About 20 MHz",
+      "About 50 kHz",
+      "About 500 kHz",
+      "About 1 MHz"
+     ]
+    },
+    {
+     "text": "B. About 50 kHz",
+     "more": {
+      "text": "Bandwidth ≈ GBW / gain."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-adv-4",
+   "sides": [
+    {
+     "text": "What minimum slew rate passes a 10 V peak, 100 kHz sine undistorted?",
+     "options": [
+      "About 0.63 V/µs",
+      "About 1 V/µs",
+      "About 6.3 V/µs",
+      "About 63 V/µs"
+     ]
+    },
+    {
+     "text": "C. About 6.3 V/µs",
+     "more": {
+      "text": "SR ≥ 2π f Vp = 2π × 10⁵ × 10."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-adv-5",
+   "sides": [
+    {
+     "text": "An amplifier has gain −50 and C_gd = 2 pF. What is the Miller input capacitance contribution?",
+     "options": [
+      "About 102 pF",
+      "About 52 pF",
+      "About 2 pF",
+      "About 100 pF"
+     ]
+    },
+    {
+     "text": "A. About 102 pF",
+     "more": {
+      "text": "C_gd × (1 + 50) = 102 pF."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-adv-6",
+   "sides": [
+    {
+     "text": "A second-order system has ζ = 0.5. What is the approximate step overshoot?",
+     "options": [
+      "About 0%",
+      "About 5%",
+      "About 16%",
+      "About 50%"
+     ]
+    },
+    {
+     "text": "C. About 16%",
+     "more": {
+      "text": "Overshoot ≈ e^(−πζ/√(1−ζ²)) ≈ 16%."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-adv-7",
+   "sides": [
+    {
+     "text": "A three-phase load draws 10 A at 400 V line voltage with pf 0.9. What is the real power?",
+     "options": [
+      "About 10.8 kW",
+      "About 3.6 kW",
+      "About 6.2 kW",
+      "About 4 kW"
+     ]
+    },
+    {
+     "text": "C. About 6.2 kW",
+     "more": {
+      "text": "P = √3 × 400 × 10 × 0.9."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-adv-8",
+   "sides": [
+    {
+     "text": "An induction motor has a synchronous speed of 1,800 rpm and runs at 1,750 rpm. What is the slip?",
+     "options": [
+      "About 0.28%",
+      "About 28%",
+      "About 2.8%",
+      "About 5%"
+     ]
+    },
+    {
+     "text": "C. About 2.8%",
+     "more": {
+      "text": "(1,800 − 1,750) / 1,800."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-adv-9",
+   "sides": [
+    {
+     "text": "A buck converter (12 V to 5 V, D = 0.417) runs at 100 kHz with a 47 µH inductor. What is the ripple current?",
+     "options": [
+      "About 0.062 A",
+      "About 0.62 A",
+      "About 6.2 A",
+      "About 1.2 A"
+     ]
+    },
+    {
+     "text": "B. About 0.62 A",
+     "more": {
+      "text": "ΔI = (Vin − Vout) × D × T / L."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-adv-10",
+   "sides": [
+    {
+     "text": "What is the rate-monotonic utilization bound for three tasks?",
+     "options": [
+      "About 100%",
+      "About 78%",
+      "About 69%",
+      "About 50%"
+     ]
+    },
+    {
+     "text": "B. About 78%",
+     "more": {
+      "text": "3 × (2^(1/3) − 1) ≈ 0.78."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-adv-11",
+   "sides": [
+    {
+     "text": "A 50 Ω line drives a 100 Ω load. What is the reflection coefficient?",
+     "options": [
+      "2/3",
+      "1/3",
+      "0",
+      "1/2"
+     ]
+    },
+    {
+     "text": "B. 1/3",
+     "more": {
+      "text": "(100 − 50) / (100 + 50) = 1/3."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-adv-12",
+   "sides": [
+    {
+     "text": "A reflection coefficient has magnitude 1/3. What is the VSWR?",
+     "options": [
+      "1",
+      "1.5",
+      "3",
+      "2"
+     ]
+    },
+    {
+     "text": "D. 2",
+     "more": {
+      "text": "(1 + 1/3) / (1 − 1/3) = 2."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-adv-13",
+   "sides": [
+    {
+     "text": "A channel has B = 1 MHz and a linear SNR of 31. What is the Shannon capacity?",
+     "options": [
+      "1 Mbit/s",
+      "5 Mbit/s",
+      "31 Mbit/s",
+      "10 Mbit/s"
+     ]
+    },
+    {
+     "text": "B. 5 Mbit/s",
+     "more": {
+      "text": "B × log₂(32) = 5 Mbit/s."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-adv-14",
+   "sides": [
+    {
+     "text": "A receiver has B = 1 MHz, NF = 5 dB, and needs 10 dB SNR. What is its sensitivity?",
+     "options": [
+      "−99 dBm",
+      "−104 dBm",
+      "−114 dBm",
+      "−89 dBm"
+     ]
+    },
+    {
+     "text": "A. −99 dBm",
+     "more": {
+      "text": "−174 + 60 + 5 + 10 = −99 dBm."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-adv-15",
+   "sides": [
+    {
+     "text": "A quarter-wave line matches 50 Ω to 200 Ω. What impedance must the line have?",
+     "options": [
+      "75 Ω",
+      "125 Ω",
+      "100 Ω",
+      "150 Ω"
+     ]
+    },
+    {
+     "text": "C. 100 Ω",
+     "more": {
+      "text": "Z = √(50 × 200) = 100 Ω."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-adv-16",
+   "sides": [
+    {
+     "text": "What is the maximum theoretical efficiency of a class B amplifier?",
+     "options": [
+      "About 78.5%",
+      "About 25%",
+      "About 100%",
+      "About 50%"
+     ]
+    },
+    {
+     "text": "A. About 78.5%",
+     "more": {
+      "text": "π/4 ≈ 78.5%."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-adv-17",
+   "sides": [
+    {
+     "text": "Which system is stable: a pole at s = −3 or a pole at s = +2?",
+     "options": [
+      "Neither",
+      "Both",
+      "The pole at +2",
+      "The pole at −3"
+     ]
+    },
+    {
+     "text": "D. The pole at −3",
+     "more": {
+      "text": "Stable poles lie in the left half-plane."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-adv-18",
+   "sides": [
+    {
+     "text": "Which filter response is maximally flat in the passband?",
+     "options": [
+      "Butterworth",
+      "Chebyshev",
+      "Elliptic",
+      "Bessel"
+     ]
+    },
+    {
+     "text": "A. Butterworth",
+     "more": {
+      "text": "Butterworth is maximally flat."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-adv-19",
+   "sides": [
+    {
+     "text": "What is the roll-off of a 4th-order Butterworth filter?",
+     "options": [
+      "−40 dB/decade",
+      "−80 dB/decade",
+      "−160 dB/decade",
+      "−20 dB/decade"
+     ]
+    },
+    {
+     "text": "B. −80 dB/decade",
+     "more": {
+      "text": "Each order adds −20 dB/decade."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-adv-20",
+   "sides": [
+    {
+     "text": "Which ADC architecture gives the highest resolution at lower speeds?",
+     "options": [
+      "Flash",
+      "SAR",
+      "Pipeline",
+      "Delta-sigma"
+     ]
+    },
+    {
+     "text": "D. Delta-sigma",
+     "more": {
+      "text": "Oversampling and noise shaping trade speed for resolution."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-adv-21",
+   "sides": [
+    {
+     "text": "How many comparison cycles does a 12-bit SAR ADC need per conversion?",
+     "options": [
+      "2",
+      "24",
+      "4,096",
+      "12"
+     ]
+    },
+    {
+     "text": "D. 12",
+     "more": {
+      "text": "One per bit."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-adv-22",
+   "sides": [
+    {
+     "text": "What prevents both switches of a half-bridge conducting at once?",
+     "options": [
+      "Snubber",
+      "Dead time",
+      "Bootstrap",
+      "Soft start"
+     ]
+    },
+    {
+     "text": "B. Dead time",
+     "more": {
+      "text": "Dead time delays turn-on after turn-off."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-adv-23",
+   "sides": [
+    {
+     "text": "What fixes priority inversion in an RTOS?",
+     "options": [
+      "A faster clock",
+      "Priority inheritance",
+      "A larger stack",
+      "More tasks"
+     ]
+    },
+    {
+     "text": "B. Priority inheritance",
+     "more": {
+      "text": "The lock holder temporarily inherits the higher priority."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-adv-24",
+   "sides": [
+    {
+     "text": "Which bus decides priority by message ID, with the lowest ID winning?",
+     "options": [
+      "CAN",
+      "I2C",
+      "SPI",
+      "UART"
+     ]
+    },
+    {
+     "text": "A. CAN",
+     "more": {
+      "text": "CAN uses bitwise arbitration on the ID."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-adv-25",
+   "sides": [
+    {
+     "text": "Which modulation carries 6 bits per symbol?",
+     "options": [
+      "QPSK",
+      "BPSK",
+      "16-QAM",
+      "64-QAM"
+     ]
+    },
+    {
+     "text": "D. 64-QAM",
+     "more": {
+      "text": "2⁶ = 64 constellation points."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-adv-26",
+   "sides": [
+    {
+     "text": "What does an OFDM cyclic prefix handle?",
+     "options": [
+      "Thermal noise",
+      "Quantization noise",
+      "Phase noise",
+      "Multipath delay spread"
+     ]
+    },
+    {
+     "text": "D. Multipath delay spread",
+     "more": {
+      "text": "It absorbs delay spread to avoid intersymbol interference."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-adv-27",
+   "sides": [
+    {
+     "text": "Which receiver architecture mixes the signal straight to baseband?",
+     "options": [
+      "Crystal set",
+      "Superheterodyne",
+      "Regenerative",
+      "Direct conversion"
+     ]
+    },
+    {
+     "text": "D. Direct conversion",
+     "more": {
+      "text": "Zero-IF receivers have no intermediate frequency."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-adv-28",
+   "sides": [
+    {
+     "text": "What does a differential pair reject?",
+     "options": [
+      "DC supply only",
+      "All noise",
+      "Common-mode signals",
+      "Differential signals"
+     ]
+    },
+    {
+     "text": "C. Common-mode signals",
+     "more": {
+      "text": "It amplifies the difference between inputs."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-adv-29",
+   "sides": [
+    {
+     "text": "Which Wi-Fi generation introduced OFDMA?",
+     "options": [
+      "Wi-Fi 5",
+      "Wi-Fi 4",
+      "Wi-Fi 6",
+      "Wi-Fi 7"
+     ]
+    },
+    {
+     "text": "C. Wi-Fi 6",
+     "more": {
+      "text": "Wi-Fi 6 (802.11ax)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-adv-30",
+   "sides": [
+    {
+     "text": "Which PID term removes steady-state error?",
+     "options": [
+      "A lower sampling rate",
+      "Proportional alone",
+      "Integral",
+      "Derivative"
+     ]
+    },
+    {
+     "text": "C. Integral",
+     "more": {
+      "text": "Integral action accumulates the error until it's zero."
+     }
+    }
+   ]
+  }
+ ]
+}

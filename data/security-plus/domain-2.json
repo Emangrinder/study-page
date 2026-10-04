@@ -1,0 +1,2568 @@
+{
+ "id": "security-plus-domain-2",
+ "name": "2 · Threats, Vulnerabilities, Mitigations",
+ "cards": [
+  {
+   "id": "sec-d2-1",
+   "sides": [
+    {
+     "text": "Nation-state",
+     "sub": "2.1 · Threat actors"
+    },
+    {
+     "text": "Government-backed attackers",
+     "more": {
+      "text": "Highly resourced and sophisticated, often running long-term campaigns (APTs) for espionage, disruption, or warfare. Typically external, with strong funding and custom tools."
+     }
+    },
+    {
+     "text": "A well-funded group keeps stealthy access to a defense contractor's network for two years to steal designs.",
+     "more": {
+      "text": "A nation-state actor (APT). The funding, patience, and espionage goal fit."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-2",
+   "sides": [
+    {
+     "text": "Unskilled attacker",
+     "sub": "2.1 · Threat actors"
+    },
+    {
+     "text": "Uses ready-made tools without deep skill",
+     "more": {
+      "text": "Often called a script kiddie. Runs downloaded tools or scripts with little understanding. Low sophistication and funding, motivated by curiosity, notoriety, or disruption."
+     }
+    },
+    {
+     "text": "A teenager launches a downloaded DoS tool against a school website.",
+     "more": {
+      "text": "An unskilled attacker (script kiddie)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-3",
+   "sides": [
+    {
+     "text": "Hacktivist",
+     "sub": "2.1 · Threat actors"
+    },
+    {
+     "text": "Attacks to promote a cause",
+     "more": {
+      "text": "Driven by political, social, or ideological beliefs. Typical actions: website defacement, DDoS, and data leaks. Skill and funding vary."
+     }
+    },
+    {
+     "text": "A group defaces a company's website after a controversial announcement and posts a political message.",
+     "more": {
+      "text": "Hacktivists, motivated by philosophical or political beliefs."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-4",
+   "sides": [
+    {
+     "text": "Insider threat",
+     "sub": "2.1 · Threat actors"
+    },
+    {
+     "text": "Someone inside misusing their access",
+     "more": {
+      "text": "An employee, contractor, or partner who misuses legitimate access, deliberately or accidentally. Already inside the perimeter and familiar with the systems, so it's hard to detect. Mitigate with least privilege, monitoring, and separation of duties."
+     }
+    },
+    {
+     "text": "A departing engineer copies the customer database to a personal drive.",
+     "more": {
+      "text": "An insider threat: internal, with legitimate access. The motive is data exfiltration."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-5",
+   "sides": [
+    {
+     "text": "Organized crime",
+     "sub": "2.1 · Threat actors"
+    },
+    {
+     "text": "Profit-driven criminal groups",
+     "more": {
+      "text": "Structured, well-funded groups running ransomware, fraud, and data theft as a business. Usually external, motivated by financial gain."
+     }
+    },
+    {
+     "text": "A group runs a ransomware-as-a-service operation and demands cryptocurrency.",
+     "more": {
+      "text": "Organized crime, motivated by financial gain."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-6",
+   "sides": [
+    {
+     "text": "Shadow IT",
+     "sub": "2.1 · Threat actors"
+    },
+    {
+     "text": "Unapproved systems and services used by staff",
+     "more": {
+      "text": "Hardware, software, or cloud services used without IT's knowledge or approval. Rarely malicious in intent, but it creates blind spots: unpatched, unmonitored, and outside policy."
+     }
+    },
+    {
+     "text": "A team signs up for a file-sharing service on its own to move faster and stores customer data there.",
+     "more": {
+      "text": "Shadow IT. IT has no visibility or control over it, so it's a risk."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-7",
+   "sides": [
+    {
+     "text": "Internal vs external",
+     "sub": "2.1 · Actor attributes"
+    },
+    {
+     "text": "Where the attacker sits relative to the organization",
+     "more": {
+      "text": "Internal actors (insiders) already have access and knowledge. External actors must breach the perimeter first. Different defenses apply: insiders call for monitoring and least privilege."
+     }
+    },
+    {
+     "text": "A threat comes from an employee's legitimate account. Internal or external?",
+     "more": {
+      "text": "Internal. It bypasses perimeter defenses by design."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-8",
+   "sides": [
+    {
+     "text": "Resources and funding",
+     "sub": "2.1 · Actor attributes"
+    },
+    {
+     "text": "How much money and tooling the actor has",
+     "more": {
+      "text": "More resources buys custom malware, zero-days, and long campaigns. Nation-states and organized crime have the most; unskilled attackers have the least."
+     }
+    },
+    {
+     "text": "Which actor type typically has the largest budget and custom tooling?",
+     "more": {
+      "text": "A nation-state."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-9",
+   "sides": [
+    {
+     "text": "Sophistication and capability",
+     "sub": "2.1 · Actor attributes"
+    },
+    {
+     "text": "How skilled the actor is",
+     "more": {
+      "text": "Ranges from copying tools (unskilled) to developing zero-day exploits (nation-state). Higher capability means more evasive, tailored attacks."
+     }
+    },
+    {
+     "text": "An attacker develops a previously unknown exploit for a target's software. What level of sophistication is that?",
+     "more": {
+      "text": "High. Finding or buying zero-days takes significant skill and resources."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-10",
+   "sides": [
+    {
+     "text": "Data exfiltration",
+     "sub": "2.1 · Motivations"
+    },
+    {
+     "text": "Stealing data",
+     "more": {
+      "text": "Copying data out of the organization for sale, extortion, or advantage. Often shows up as unusual large outbound transfers."
+     }
+    },
+    {
+     "text": "Analysts see a large encrypted upload to an unknown external host overnight.",
+     "more": {
+      "text": "Likely data exfiltration."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-11",
+   "sides": [
+    {
+     "text": "Espionage",
+     "sub": "2.1 · Motivations"
+    },
+    {
+     "text": "Gathering secrets for advantage",
+     "more": {
+      "text": "Stealing confidential government or corporate information over time. Typical of nation-states and competitors."
+     }
+    },
+    {
+     "text": "Attackers quietly harvest a rival's product designs for months.",
+     "more": {
+      "text": "Espionage."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-12",
+   "sides": [
+    {
+     "text": "Service disruption",
+     "sub": "2.1 · Motivations"
+    },
+    {
+     "text": "Making systems unavailable",
+     "more": {
+      "text": "Attacks that take services down: DDoS, ransomware, destructive malware. They target availability."
+     }
+    },
+    {
+     "text": "A flood of traffic takes a retailer offline during a sale.",
+     "more": {
+      "text": "Service disruption, an attack on availability."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-13",
+   "sides": [
+    {
+     "text": "Blackmail",
+     "sub": "2.1 · Motivations"
+    },
+    {
+     "text": "Coercing with threats of exposure",
+     "more": {
+      "text": "Threatening to leak or expose embarrassing or sensitive information unless the victim pays or complies."
+     }
+    },
+    {
+     "text": "An attacker threatens to publish stolen executive emails unless paid.",
+     "more": {
+      "text": "Blackmail."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-14",
+   "sides": [
+    {
+     "text": "Financial gain",
+     "sub": "2.1 · Motivations"
+    },
+    {
+     "text": "Profit",
+     "more": {
+      "text": "The most common motive: ransomware, fraud, theft, selling data. Typical of organized crime."
+     }
+    },
+    {
+     "text": "Attackers encrypt hospital files and demand payment in cryptocurrency.",
+     "more": {
+      "text": "Financial gain."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-15",
+   "sides": [
+    {
+     "text": "Philosophical or political beliefs",
+     "sub": "2.1 · Motivations"
+    },
+    {
+     "text": "Acting for an ideology",
+     "more": {
+      "text": "Attacks aimed at promoting a cause or opposing a target. Typical of hacktivists."
+     }
+    },
+    {
+     "text": "A government site is defaced to protest a new law.",
+     "more": {
+      "text": "Philosophical or political beliefs (hacktivism)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-16",
+   "sides": [
+    {
+     "text": "Ethical",
+     "sub": "2.1 · Motivations"
+    },
+    {
+     "text": "Authorized testing to improve security",
+     "more": {
+      "text": "Hackers who find and report flaws with permission (white hat), such as penetration testers and bug bounty researchers."
+     }
+    },
+    {
+     "text": "A researcher privately reports a vulnerability through a bug bounty program.",
+     "more": {
+      "text": "Ethical motivation: a white-hat hacker."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-17",
+   "sides": [
+    {
+     "text": "Revenge",
+     "sub": "2.1 · Motivations"
+    },
+    {
+     "text": "Getting back at an organization",
+     "more": {
+      "text": "Personal grievance, often from disgruntled insiders or former employees, leading to sabotage or leaks."
+     }
+    },
+    {
+     "text": "A fired administrator deletes backups on the way out.",
+     "more": {
+      "text": "Revenge, typically an insider threat."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-18",
+   "sides": [
+    {
+     "text": "Disruption and chaos",
+     "sub": "2.1 · Motivations"
+    },
+    {
+     "text": "Causing havoc for its own sake",
+     "more": {
+      "text": "Attacking to create disorder or gain fame without profit. Often unskilled attackers or vandals."
+     }
+    },
+    {
+     "text": "An attacker defaces random sites just to be noticed.",
+     "more": {
+      "text": "Disruption and chaos."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-19",
+   "sides": [
+    {
+     "text": "War",
+     "sub": "2.1 · Motivations"
+    },
+    {
+     "text": "Cyber operations as part of conflict",
+     "more": {
+      "text": "State-sponsored attacks on infrastructure, government, or military as part of or alongside armed conflict."
+     }
+    },
+    {
+     "text": "Power-grid systems are attacked during a military conflict.",
+     "more": {
+      "text": "War, typically a nation-state actor."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-20",
+   "sides": [
+    {
+     "text": "Threat vector vs attack surface",
+     "sub": "2.2 · Threat vectors"
+    },
+    {
+     "text": "Vector: the path in. Surface: all the exposure",
+     "more": {
+      "text": "A threat vector is a path an attacker uses (email, USB, an open port). The attack surface is the sum of all points where an attacker could try to get in. Reducing the surface reduces exposure."
+     }
+    },
+    {
+     "text": "Closing unused ports and removing unneeded services does what to the attack surface?",
+     "more": {
+      "text": "It shrinks it, which reduces the available threat vectors."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-21",
+   "sides": [
+    {
+     "text": "Message-based",
+     "sub": "2.2 · Threat vectors"
+    },
+    {
+     "text": "Email, SMS, and instant messaging",
+     "more": {
+      "text": "Attackers deliver phishing links, malicious attachments, or scams through messaging channels. Email is the most common vector."
+     }
+    },
+    {
+     "text": "Employees receive texts with a link claiming a delivery problem. Which vector?",
+     "more": {
+      "text": "Message-based (SMS)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-22",
+   "sides": [
+    {
+     "text": "Image-based",
+     "sub": "2.2 · Threat vectors"
+    },
+    {
+     "text": "Malicious content hidden in images",
+     "more": {
+      "text": "Images can carry malware, exploit image-parsing flaws, hide data (steganography), or include tracking pixels."
+     }
+    },
+    {
+     "text": "Malicious code embedded in an image file exploits a viewer's bug.",
+     "more": {
+      "text": "An image-based vector."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-23",
+   "sides": [
+    {
+     "text": "File-based",
+     "sub": "2.2 · Threat vectors"
+    },
+    {
+     "text": "Malicious files and attachments",
+     "more": {
+      "text": "Documents, PDFs, archives, and executables carrying malware or exploits, delivered through email, downloads, or shared drives. Macros are a classic example."
+     }
+    },
+    {
+     "text": "An accountant opens a spreadsheet whose macro installs malware.",
+     "more": {
+      "text": "A file-based vector."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-24",
+   "sides": [
+    {
+     "text": "Voice call",
+     "sub": "2.2 · Threat vectors"
+    },
+    {
+     "text": "Phone-based attacks",
+     "more": {
+      "text": "Voice calls used for vishing and fraud, sometimes with caller ID spoofing or cloned voices, to trick people into revealing information or taking action."
+     }
+    },
+    {
+     "text": "A caller claiming to be IT support asks for your MFA code.",
+     "more": {
+      "text": "A voice call vector (vishing)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-25",
+   "sides": [
+    {
+     "text": "Removable device",
+     "sub": "2.2 · Threat vectors"
+    },
+    {
+     "text": "USB drives and similar media",
+     "more": {
+      "text": "Infected USB sticks, drives, and cables can spread malware or exfiltrate data. Attackers drop devices where staff will find them. Mitigate with port control and scanning."
+     }
+    },
+    {
+     "text": "USB drives are left in a parking lot and an employee plugs one in.",
+     "more": {
+      "text": "A removable device vector."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-26",
+   "sides": [
+    {
+     "text": "Vulnerable software",
+     "sub": "2.2 · Threat vectors"
+    },
+    {
+     "text": "Flaws in installed software",
+     "more": {
+      "text": "Unpatched or buggy software can be exploited. Client-based tools run an agent on the host; agentless methods scan or manage remotely."
+     }
+    },
+    {
+     "text": "Attackers exploit a known, unpatched flaw in a web server.",
+     "more": {
+      "text": "A vulnerable software vector. Patching removes it."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-27",
+   "sides": [
+    {
+     "text": "Client-based vs agentless",
+     "sub": "2.2 · Threat vectors"
+    },
+    {
+     "text": "Agent on the host vs remote scanning",
+     "more": {
+      "text": "Client-based: software installed on each device gives deep visibility but needs deployment and upkeep. Agentless: scans or manages remotely with no install; easier to roll out but shallower."
+     }
+    },
+    {
+     "text": "A scanner assesses servers without installing anything on them. Which approach?",
+     "more": {
+      "text": "Agentless."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-28",
+   "sides": [
+    {
+     "text": "Unsupported systems and applications",
+     "sub": "2.2 · Threat vectors"
+    },
+    {
+     "text": "No more vendor patches",
+     "more": {
+      "text": "End-of-life software no longer gets security fixes, so known flaws stay open. Replace, isolate, or add compensating controls."
+     }
+    },
+    {
+     "text": "A server still runs an operating system the vendor stopped supporting years ago.",
+     "more": {
+      "text": "That's a risk because there are no patches. Replace it or isolate it as a compensating control."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-29",
+   "sides": [
+    {
+     "text": "Unsecure networks",
+     "sub": "2.2 · Threat vectors"
+    },
+    {
+     "text": "Wireless, wired, and Bluetooth exposure",
+     "more": {
+      "text": "Wireless: open or weakly secured Wi-Fi, rogue APs. Wired: unauthorized plug-ins to open jacks. Bluetooth: bluejacking and bluesnarfing. Secure with encryption, NAC, and port security."
+     }
+    },
+    {
+     "text": "A visitor plugs a laptop into an unused wall jack in a meeting room. Which vector?",
+     "more": {
+      "text": "An unsecure network (wired). Port security or NAC helps."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-30",
+   "sides": [
+    {
+     "text": "Open service ports",
+     "sub": "2.2 · Threat vectors"
+    },
+    {
+     "text": "Unneeded listening services",
+     "more": {
+      "text": "Each open port exposes a service that may be vulnerable. Close unused ports and restrict the rest with firewalls."
+     }
+    },
+    {
+     "text": "A scan finds Telnet open on a server nobody uses it on.",
+     "more": {
+      "text": "An open service port. Disable it."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-31",
+   "sides": [
+    {
+     "text": "Default credentials",
+     "sub": "2.2 · Threat vectors"
+    },
+    {
+     "text": "Factory-set usernames and passwords",
+     "more": {
+      "text": "Devices and apps ship with logins like admin/admin. Attackers try them first. Change them during setup."
+     }
+    },
+    {
+     "text": "A router is compromised using its factory username and password.",
+     "more": {
+      "text": "Default credentials. Change them at deployment."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-32",
+   "sides": [
+    {
+     "text": "Supply chain vector",
+     "sub": "2.2 · Supply chain"
+    },
+    {
+     "text": "Compromise through a vendor, supplier, or MSP",
+     "more": {
+      "text": "Attackers target third parties that have access to the victim: managed service providers (MSPs), vendors, and suppliers. A compromise upstream spreads downstream."
+     }
+    },
+    {
+     "text": "Attackers breach an IT provider and use its remote tools to reach its customers.",
+     "more": {
+      "text": "A supply chain attack through a managed service provider (MSP)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-33",
+   "sides": [
+    {
+     "text": "Managed service providers (MSPs)",
+     "sub": "2.2 · Supply chain"
+    },
+    {
+     "text": "Outsourced IT with privileged access",
+     "more": {
+      "text": "MSPs manage customers' systems and often hold broad remote access, so compromising one can expose many customers at once."
+     }
+    },
+    {
+     "text": "An attacker uses a provider's remote management tool to push malware to all its clients.",
+     "more": {
+      "text": "An MSP compromise, a supply chain attack."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-34",
+   "sides": [
+    {
+     "text": "Vendors",
+     "sub": "2.2 · Supply chain"
+    },
+    {
+     "text": "Third parties whose products or services you use",
+     "more": {
+      "text": "Their flaws or breaches become yours. Assess vendor security, limit their access, and review contracts."
+     }
+    },
+    {
+     "text": "Your payroll vendor is breached and your employees' data is exposed.",
+     "more": {
+      "text": "A vendor-based supply chain risk."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-35",
+   "sides": [
+    {
+     "text": "Suppliers",
+     "sub": "2.2 · Supply chain"
+    },
+    {
+     "text": "Providers of hardware and components",
+     "more": {
+      "text": "Tampered, counterfeit, or backdoored hardware can introduce hidden risk before it reaches you. Buy from trusted sources and verify."
+     }
+    },
+    {
+     "text": "A batch of network gear arrives with modified firmware.",
+     "more": {
+      "text": "A supplier-based supply chain attack."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-36",
+   "sides": [
+    {
+     "text": "Phishing",
+     "sub": "2.2 · Social engineering"
+    },
+    {
+     "text": "Fraudulent messages that steal information",
+     "more": {
+      "text": "Deceptive emails or messages that lure victims into clicking links, opening attachments, or giving credentials. Spear phishing targets specific people; whaling targets executives."
+     }
+    },
+    {
+     "text": "An email that appears to be from IT asks you to verify your password at a link.",
+     "more": {
+      "text": "Phishing."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-37",
+   "sides": [
+    {
+     "text": "Vishing",
+     "sub": "2.2 · Social engineering"
+    },
+    {
+     "text": "Phishing by voice call",
+     "more": {
+      "text": "Voice phishing: callers pose as banks, support, or officials to extract information or prompt action."
+     }
+    },
+    {
+     "text": "A caller claiming to be your bank asks for your PIN.",
+     "more": {
+      "text": "Vishing."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-38",
+   "sides": [
+    {
+     "text": "Smishing",
+     "sub": "2.2 · Social engineering"
+    },
+    {
+     "text": "Phishing by SMS",
+     "more": {
+      "text": "Text messages with malicious links or requests, often posing as delivery, bank, or toll alerts."
+     }
+    },
+    {
+     "text": "A text says your package is held and links to a fake site.",
+     "more": {
+      "text": "Smishing."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-39",
+   "sides": [
+    {
+     "text": "Misinformation and disinformation",
+     "sub": "2.2 · Social engineering"
+    },
+    {
+     "text": "False information: accidental vs deliberate",
+     "more": {
+      "text": "Misinformation is false information shared without intent to deceive. Disinformation is deliberately false, spread to manipulate. Both can influence people and damage reputation."
+     }
+    },
+    {
+     "text": "A campaign deliberately spreads fake news about a company to hurt its stock.",
+     "more": {
+      "text": "Disinformation: it's intentionally false."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-40",
+   "sides": [
+    {
+     "text": "Impersonation",
+     "sub": "2.2 · Social engineering"
+    },
+    {
+     "text": "Pretending to be someone trusted",
+     "more": {
+      "text": "Posing as an authority, coworker, or vendor to gain trust and access."
+     }
+    },
+    {
+     "text": "A man in a uniform claims to be from the phone company and asks to be let into the server room.",
+     "more": {
+      "text": "Impersonation."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-41",
+   "sides": [
+    {
+     "text": "Business email compromise",
+     "sub": "2.2 · Social engineering"
+    },
+    {
+     "text": "Fake or hijacked executive email to move money",
+     "more": {
+      "text": "Attackers spoof or take over a business email account, often an executive's, to trick staff into paying fraudulent invoices or sending sensitive data."
+     }
+    },
+    {
+     "text": "An email from the CEO urgently asks finance to wire funds to a new account.",
+     "more": {
+      "text": "Business email compromise (BEC). Verify through another channel."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-42",
+   "sides": [
+    {
+     "text": "Pretexting",
+     "sub": "2.2 · Social engineering"
+    },
+    {
+     "text": "A made-up scenario to extract information",
+     "more": {
+      "text": "The attacker builds a believable story, such as a survey or a coworker's urgent request, to get information or access. It relies on invented context."
+     }
+    },
+    {
+     "text": "A caller says they're from HR running an audit and needs your employee ID and SSN.",
+     "more": {
+      "text": "Pretexting."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-43",
+   "sides": [
+    {
+     "text": "Watering hole",
+     "sub": "2.2 · Social engineering"
+    },
+    {
+     "text": "Compromise a site the targets visit",
+     "more": {
+      "text": "Attackers infect a website their target group frequently uses, then wait. Targets get infected by visiting a trusted site."
+     }
+    },
+    {
+     "text": "A site popular with a company's engineers is infected and delivers malware to them.",
+     "more": {
+      "text": "A watering hole attack."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-44",
+   "sides": [
+    {
+     "text": "Brand impersonation",
+     "sub": "2.2 · Social engineering"
+    },
+    {
+     "text": "Fakes posing as a trusted brand",
+     "more": {
+      "text": "Using a company's name, logo, and look to trick people, in phishing emails, fake sites, or social media."
+     }
+    },
+    {
+     "text": "A convincing email with a bank's logo directs users to a fake login page.",
+     "more": {
+      "text": "Brand impersonation (phishing)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-45",
+   "sides": [
+    {
+     "text": "Typosquatting",
+     "sub": "2.2 · Social engineering"
+    },
+    {
+     "text": "Lookalike domains with typos",
+     "more": {
+      "text": "Registering misspelled domains (like examp1e.com) to catch mistyped URLs or fool readers. Used for phishing and malware."
+     }
+    },
+    {
+     "text": "Users who mistype a company's domain land on a fake login page.",
+     "more": {
+      "text": "Typosquatting."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-46",
+   "sides": [
+    {
+     "text": "Memory injection",
+     "sub": "2.3 · Vulnerabilities"
+    },
+    {
+     "text": "Inserting code into a process's memory",
+     "more": {
+      "text": "Attackers inject malicious code into the memory of a running process so it executes under that process's identity, often evading file-based detection."
+     }
+    },
+    {
+     "text": "Malware runs inside a legitimate process's memory and no file appears on disk.",
+     "more": {
+      "text": "Memory injection."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-47",
+   "sides": [
+    {
+     "text": "Buffer overflow",
+     "sub": "2.3 · Vulnerabilities"
+    },
+    {
+     "text": "Writing past a buffer's limit",
+     "more": {
+      "text": "Input larger than the buffer overwrites adjacent memory, potentially letting the attacker run code. Prevented by input validation, bounds checking, ASLR, and DEP."
+     }
+    },
+    {
+     "text": "Sending an overlong string crashes a program and lets the attacker run code. What flaw is this?",
+     "more": {
+      "text": "A buffer overflow."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-48",
+   "sides": [
+    {
+     "text": "Race conditions",
+     "sub": "2.3 · Vulnerabilities"
+    },
+    {
+     "text": "Outcome depends on timing",
+     "more": {
+      "text": "When the timing between operations can be exploited. TOC/TOU: a condition checked at one moment (time of check) changes before it's used (time of use)."
+     }
+    },
+    {
+     "text": "A file's permissions are checked, then the file is swapped for a different one before it's opened.",
+     "more": {
+      "text": "A race condition (TOCTOU)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-49",
+   "sides": [
+    {
+     "text": "Malicious update",
+     "sub": "2.3 · Vulnerabilities"
+    },
+    {
+     "text": "Trojanized software update",
+     "more": {
+      "text": "Attackers compromise an update mechanism or vendor build so users install malware as a legitimate update. Verify signatures and hashes."
+     }
+    },
+    {
+     "text": "A trusted vendor's update server is compromised and customers install a backdoored update.",
+     "more": {
+      "text": "A malicious update, a supply chain attack."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-50",
+   "sides": [
+    {
+     "text": "OS-based vulnerabilities",
+     "sub": "2.3 · Vulnerabilities"
+    },
+    {
+     "text": "Flaws in the operating system",
+     "more": {
+      "text": "Unpatched kernel or service flaws, default settings, and weak local security. Mitigate with patching, hardening, and least privilege."
+     }
+    },
+    {
+     "text": "A server is breached through a flaw the vendor patched months ago.",
+     "more": {
+      "text": "An OS-based vulnerability. Patch management would have prevented it."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-51",
+   "sides": [
+    {
+     "text": "SQL injection",
+     "sub": "2.3 · Vulnerabilities"
+    },
+    {
+     "text": "Malicious SQL in input",
+     "more": {
+      "text": "Unvalidated input is interpreted as SQL, letting attackers read or change database content. Prevent with parameterized queries and input validation."
+     }
+    },
+    {
+     "text": "Entering ' OR 1=1 -- into a login box logs the attacker in.",
+     "more": {
+      "text": "SQL injection. Use parameterized queries."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-52",
+   "sides": [
+    {
+     "text": "Cross-site scripting",
+     "sub": "2.3 · Vulnerabilities"
+    },
+    {
+     "text": "Malicious script runs in the victim's browser",
+     "more": {
+      "text": "XSS injects scripts into pages other users view. Types: stored (saved on the server), reflected (in a link), and DOM-based. Prevent with output encoding and input validation."
+     }
+    },
+    {
+     "text": "A forum comment contains a script that steals other users' session cookies.",
+     "more": {
+      "text": "Stored cross-site scripting (XSS)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-53",
+   "sides": [
+    {
+     "text": "Firmware vulnerabilities",
+     "sub": "2.3 · Vulnerabilities"
+    },
+    {
+     "text": "Flaws in low-level device software",
+     "more": {
+      "text": "Firmware runs below the OS and is patched rarely, so flaws persist. Compromised firmware can be hard to detect and may survive reinstalls."
+     }
+    },
+    {
+     "text": "Malware persists after the OS is reinstalled.",
+     "more": {
+      "text": "Possibly a firmware-level compromise."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-54",
+   "sides": [
+    {
+     "text": "End-of-life",
+     "sub": "2.3 · Vulnerabilities"
+    },
+    {
+     "text": "Vendor no longer supports it",
+     "more": {
+      "text": "Hardware or software past its support date gets no security patches. Plan replacement or isolate it."
+     }
+    },
+    {
+     "text": "A switch has reached end of life and vendor patches have stopped.",
+     "more": {
+      "text": "An end-of-life risk: unpatched vulnerabilities will accumulate."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-55",
+   "sides": [
+    {
+     "text": "Legacy systems",
+     "sub": "2.3 · Vulnerabilities"
+    },
+    {
+     "text": "Old systems still in use",
+     "more": {
+      "text": "Outdated hardware or software, often critical and hard to replace, using insecure protocols. Usually protected with compensating controls."
+     }
+    },
+    {
+     "text": "A 20-year-old control system can't be updated. What's the typical protection?",
+     "more": {
+      "text": "Compensating controls such as isolation."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-56",
+   "sides": [
+    {
+     "text": "VM escape",
+     "sub": "2.3 · Vulnerabilities"
+    },
+    {
+     "text": "Breaking out of a VM into the host",
+     "more": {
+      "text": "An attacker in a guest VM exploits a hypervisor flaw to reach the host or other VMs, breaking isolation."
+     }
+    },
+    {
+     "text": "Code in one virtual machine gains access to the hypervisor and other VMs.",
+     "more": {
+      "text": "VM escape."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-57",
+   "sides": [
+    {
+     "text": "Resource reuse",
+     "sub": "2.3 · Vulnerabilities"
+    },
+    {
+     "text": "Leftover data in reassigned resources",
+     "more": {
+      "text": "In virtualized or cloud environments, memory or storage reallocated to another tenant may expose a previous tenant's data if it isn't cleared."
+     }
+    },
+    {
+     "text": "A new VM instance can read fragments of a previous customer's data.",
+     "more": {
+      "text": "A resource reuse vulnerability."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-58",
+   "sides": [
+    {
+     "text": "Cloud-specific vulnerabilities",
+     "sub": "2.3 · Vulnerabilities"
+    },
+    {
+     "text": "Cloud-related weaknesses",
+     "more": {
+      "text": "Misconfigured storage buckets, weak IAM, exposed APIs, and unclear shared-responsibility boundaries. Often caused by misconfiguration rather than provider flaws."
+     }
+    },
+    {
+     "text": "Customer data is exposed because a storage bucket was set to public.",
+     "more": {
+      "text": "A cloud-specific vulnerability, caused by misconfiguration."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-59",
+   "sides": [
+    {
+     "text": "Supply chain vulnerabilities",
+     "sub": "2.3 · Vulnerabilities"
+    },
+    {
+     "text": "Weaknesses via service, hardware, or software providers",
+     "more": {
+      "text": "Flaws in, or compromise of, a service provider, hardware provider, or software provider flow into the customer. Examples: tampered hardware, backdoored libraries."
+     }
+    },
+    {
+     "text": "A compromised third-party library is included in your product.",
+     "more": {
+      "text": "A supply chain (software provider) vulnerability."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-60",
+   "sides": [
+    {
+     "text": "Cryptographic vulnerabilities",
+     "sub": "2.3 · Vulnerabilities"
+    },
+    {
+     "text": "Weak algorithms or poor implementation",
+     "more": {
+      "text": "Outdated algorithms (DES, MD5, SHA-1), short keys, poor key management, or bad implementation. Fix with strong, current algorithms and sound key handling."
+     }
+    },
+    {
+     "text": "A system still uses MD5 to hash passwords.",
+     "more": {
+      "text": "A cryptographic vulnerability: MD5 is weak."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-61",
+   "sides": [
+    {
+     "text": "Misconfiguration",
+     "sub": "2.3 · Vulnerabilities"
+    },
+    {
+     "text": "Insecure settings",
+     "more": {
+      "text": "Default settings, open permissions, unnecessary services, or disabled security features. One of the most common causes of breaches. Fix with baselines and configuration enforcement."
+     }
+    },
+    {
+     "text": "An admin leaves a database open to the internet with no password.",
+     "more": {
+      "text": "Misconfiguration."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-62",
+   "sides": [
+    {
+     "text": "Side loading",
+     "sub": "2.3 · Vulnerabilities"
+    },
+    {
+     "text": "Installing apps from outside the official store",
+     "more": {
+      "text": "Mobile apps installed from unofficial sources bypass store vetting, raising malware risk. Control with MDM and policy."
+     }
+    },
+    {
+     "text": "A user installs an app from a website instead of the official store.",
+     "more": {
+      "text": "Side loading."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-63",
+   "sides": [
+    {
+     "text": "Jailbreaking",
+     "sub": "2.3 · Vulnerabilities"
+    },
+    {
+     "text": "Removing OS restrictions on a phone",
+     "more": {
+      "text": "Bypasses built-in security controls on iOS (rooting is the Android equivalent), allowing unsigned apps and weakening protections."
+     }
+    },
+    {
+     "text": "A phone's OS restrictions were removed to install unapproved apps.",
+     "more": {
+      "text": "Jailbreaking (rooting on Android)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-64",
+   "sides": [
+    {
+     "text": "Zero-day",
+     "sub": "2.3 · Vulnerabilities"
+    },
+    {
+     "text": "Flaw with no patch yet",
+     "more": {
+      "text": "A vulnerability unknown to the vendor, or without a fix, which attackers may already exploit. Mitigate with layered defenses, segmentation, and monitoring."
+     }
+    },
+    {
+     "text": "Attackers exploit a flaw the vendor hasn't heard of yet.",
+     "more": {
+      "text": "A zero-day."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-65",
+   "sides": [
+    {
+     "text": "Ransomware",
+     "sub": "2.4 · Malware"
+    },
+    {
+     "text": "Encrypts files for payment",
+     "more": {
+      "text": "Encrypts data or locks systems and demands payment for the key, often threatening to leak data too. Defend with backups, patching, and segmentation."
+     }
+    },
+    {
+     "text": "Users find files renamed and a note demanding cryptocurrency.",
+     "more": {
+      "text": "Ransomware."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-66",
+   "sides": [
+    {
+     "text": "Trojan",
+     "sub": "2.4 · Malware"
+    },
+    {
+     "text": "Malware disguised as legitimate software",
+     "more": {
+      "text": "Appears useful but carries a malicious payload (a backdoor, spyware). It doesn't self-replicate and relies on the user running it."
+     }
+    },
+    {
+     "text": "A free PDF converter secretly installs a remote-access backdoor.",
+     "more": {
+      "text": "A Trojan."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-67",
+   "sides": [
+    {
+     "text": "Worm",
+     "sub": "2.4 · Malware"
+    },
+    {
+     "text": "Self-spreading malware",
+     "more": {
+      "text": "Replicates across networks on its own, exploiting vulnerabilities, with no user action. Can consume bandwidth and spread rapidly."
+     }
+    },
+    {
+     "text": "Malware spreads from host to host across the network with no user interaction.",
+     "more": {
+      "text": "A worm."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-68",
+   "sides": [
+    {
+     "text": "Spyware",
+     "sub": "2.4 · Malware"
+    },
+    {
+     "text": "Secretly monitors user activity",
+     "more": {
+      "text": "Collects information such as browsing, credentials, and screen content, and sends it to the attacker."
+     }
+    },
+    {
+     "text": "Software quietly records browsing and sends it to a remote server.",
+     "more": {
+      "text": "Spyware."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-69",
+   "sides": [
+    {
+     "text": "Bloatware",
+     "sub": "2.4 · Malware"
+    },
+    {
+     "text": "Unwanted preinstalled software",
+     "more": {
+      "text": "Extra software shipped with a device that wastes resources and enlarges the attack surface, and may include insecure apps. Remove it as part of hardening."
+     }
+    },
+    {
+     "text": "A new laptop ships with several unneeded trial apps that slow it down.",
+     "more": {
+      "text": "Bloatware. Remove it."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-70",
+   "sides": [
+    {
+     "text": "Virus",
+     "sub": "2.4 · Malware"
+    },
+    {
+     "text": "Attaches to files and spreads when run",
+     "more": {
+      "text": "Malicious code that attaches to a host file or program and spreads when that host is executed or shared. Needs user action to spread."
+     }
+    },
+    {
+     "text": "A malicious macro in a document infects other documents when opened.",
+     "more": {
+      "text": "A virus."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-71",
+   "sides": [
+    {
+     "text": "Keylogger",
+     "sub": "2.4 · Malware"
+    },
+    {
+     "text": "Records keystrokes",
+     "more": {
+      "text": "Captures typed input (passwords, messages) by software or hardware. Hardware keyloggers sit between the keyboard and computer."
+     }
+    },
+    {
+     "text": "A tiny device is found between a keyboard and the USB port.",
+     "more": {
+      "text": "A hardware keylogger."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-72",
+   "sides": [
+    {
+     "text": "Logic bomb",
+     "sub": "2.4 · Malware"
+    },
+    {
+     "text": "Triggers on a condition",
+     "more": {
+      "text": "Malicious code that lies dormant until a condition is met, such as a date or an account being deleted. Often planted by insiders."
+     }
+    },
+    {
+     "text": "Files are wiped the day after a particular employee's account is disabled.",
+     "more": {
+      "text": "A logic bomb."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-73",
+   "sides": [
+    {
+     "text": "Rootkit",
+     "sub": "2.4 · Malware"
+    },
+    {
+     "text": "Hides itself deep in the system",
+     "more": {
+      "text": "Provides privileged access while hiding its presence, often by modifying the kernel or boot process. Hard to detect and remove; may require reinstalling the OS."
+     }
+    },
+    {
+     "text": "A system shows no suspicious process, yet traffic keeps going to a suspicious host.",
+     "more": {
+      "text": "Possibly a rootkit."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-74",
+   "sides": [
+    {
+     "text": "Physical brute force",
+     "sub": "2.4 · Physical attacks"
+    },
+    {
+     "text": "Forcing entry or breaking barriers",
+     "more": {
+      "text": "Attacking doors, locks, or devices directly with force. Mitigate with stronger barriers, alarms, and guards."
+     }
+    },
+    {
+     "text": "Someone breaks a door to reach a server cabinet.",
+     "more": {
+      "text": "A physical brute-force attack."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-75",
+   "sides": [
+    {
+     "text": "RFID cloning",
+     "sub": "2.4 · Physical attacks"
+    },
+    {
+     "text": "Copying an access badge",
+     "more": {
+      "text": "Capturing and copying an RFID card's data to make a duplicate that opens the same doors. Mitigate with encrypted credentials, shielding, and MFA."
+     }
+    },
+    {
+     "text": "A person with a hidden reader brushes past an employee and later enters with a duplicate badge.",
+     "more": {
+      "text": "RFID cloning."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-76",
+   "sides": [
+    {
+     "text": "Environmental attacks",
+     "sub": "2.4 · Physical attacks"
+    },
+    {
+     "text": "Attacks through power, heat, or water",
+     "more": {
+      "text": "Interfering with environmental systems like power, HVAC, or fire suppression to cause outages. Mitigate with UPS, generators, and monitoring."
+     }
+    },
+    {
+     "text": "An attacker disables cooling in a server room, causing shutdowns.",
+     "more": {
+      "text": "An environmental attack."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-77",
+   "sides": [
+    {
+     "text": "DDoS",
+     "sub": "2.4 · Network attacks"
+    },
+    {
+     "text": "Flood from many sources to overwhelm a target",
+     "more": {
+      "text": "Distributed Denial of Service: traffic from many compromised hosts (a botnet) exhausts bandwidth or resources. Mitigate with scrubbing, CDNs, and rate limiting."
+     }
+    },
+    {
+     "text": "Thousands of hosts flood a website at once.",
+     "more": {
+      "text": "A DDoS attack."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-78",
+   "sides": [
+    {
+     "text": "Amplified DDoS",
+     "sub": "2.4 · Network attacks"
+    },
+    {
+     "text": "Small requests trigger huge replies",
+     "more": {
+      "text": "The attacker abuses a service such as DNS or NTP so a small query returns a much larger response, multiplying the traffic aimed at the victim."
+     }
+    },
+    {
+     "text": "A tiny spoofed DNS query generates a large response sent to the victim.",
+     "more": {
+      "text": "An amplified attack."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-79",
+   "sides": [
+    {
+     "text": "Reflected DDoS",
+     "sub": "2.4 · Network attacks"
+    },
+    {
+     "text": "Spoofed requests bounce off third parties",
+     "more": {
+      "text": "The attacker spoofs the victim's IP in requests to third-party servers, which send their responses to the victim. It hides the attacker and uses others' bandwidth."
+     }
+    },
+    {
+     "text": "Servers across the internet send unsolicited replies to a victim after spoofed requests.",
+     "more": {
+      "text": "A reflected attack."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-80",
+   "sides": [
+    {
+     "text": "DNS attacks",
+     "sub": "2.4 · Network attacks"
+    },
+    {
+     "text": "Abusing or poisoning DNS",
+     "more": {
+      "text": "Poisoning or spoofing DNS to redirect users to malicious sites, hijacking domains, or tunneling data. Mitigate with DNSSEC and filtering."
+     }
+    },
+    {
+     "text": "Users typing a bank's address are sent to a fake site because of tampered DNS records.",
+     "more": {
+      "text": "A DNS attack (poisoning)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-81",
+   "sides": [
+    {
+     "text": "Wireless attacks",
+     "sub": "2.4 · Network attacks"
+    },
+    {
+     "text": "Attacks on Wi-Fi",
+     "more": {
+      "text": "Evil twin (fake AP), rogue AP, deauthentication, and cracking weak keys. Mitigate with WPA3, 802.1X, and wireless intrusion detection."
+     }
+    },
+    {
+     "text": "A fake AP with the same name as the company Wi-Fi captures employees' logins.",
+     "more": {
+      "text": "A wireless attack (an evil twin)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-82",
+   "sides": [
+    {
+     "text": "On-path attack",
+     "sub": "2.4 · Network attacks"
+    },
+    {
+     "text": "Intercepting traffic between two parties",
+     "more": {
+      "text": "Formerly called man-in-the-middle. The attacker sits between sender and receiver, reading or altering traffic. Mitigate with TLS, certificates, and secure Wi-Fi."
+     }
+    },
+    {
+     "text": "An attacker secretly relays and reads traffic between a user and a bank.",
+     "more": {
+      "text": "An on-path attack."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-83",
+   "sides": [
+    {
+     "text": "Credential replay",
+     "sub": "2.4 · Network attacks"
+    },
+    {
+     "text": "Reusing captured credentials or tokens",
+     "more": {
+      "text": "Attackers capture authentication data (hashes, tokens, cookies) and reuse it to log in without knowing the password. Mitigate with MFA, short-lived tokens, and TLS."
+     }
+    },
+    {
+     "text": "A stolen session token is used to access an account.",
+     "more": {
+      "text": "Credential replay."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-84",
+   "sides": [
+    {
+     "text": "Malicious code",
+     "sub": "2.4 · Network attacks"
+    },
+    {
+     "text": "Code intended to cause harm",
+     "more": {
+      "text": "The umbrella term for malware and scripts: viruses, worms, Trojans, ransomware, and malicious scripts."
+     }
+    },
+    {
+     "text": "Which term covers any software built to harm a system?",
+     "more": {
+      "text": "Malicious code."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-85",
+   "sides": [
+    {
+     "text": "Injection",
+     "sub": "2.4 · Application attacks"
+    },
+    {
+     "text": "Malicious input run as commands",
+     "more": {
+      "text": "Untrusted input is executed as code or queries: SQL, command, LDAP, and others. Prevent with input validation and parameterized queries."
+     }
+    },
+    {
+     "text": "A form field lets an attacker run operating system commands.",
+     "more": {
+      "text": "Command injection."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-86",
+   "sides": [
+    {
+     "text": "Replay",
+     "sub": "2.4 · Application attacks"
+    },
+    {
+     "text": "Resending captured valid data",
+     "more": {
+      "text": "Capturing a legitimate transmission and replaying it later to repeat the action. Mitigate with timestamps, nonces, and session tokens."
+     }
+    },
+    {
+     "text": "An attacker retransmits a captured login message to gain access.",
+     "more": {
+      "text": "A replay attack."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-87",
+   "sides": [
+    {
+     "text": "Privilege escalation",
+     "sub": "2.4 · Application attacks"
+    },
+    {
+     "text": "Gaining more access than granted",
+     "more": {
+      "text": "Vertical: gain admin rights. Horizontal: access another user's resources at the same level. Mitigate with patching and least privilege."
+     }
+    },
+    {
+     "text": "A standard user exploits a flaw to become an administrator.",
+     "more": {
+      "text": "Privilege escalation (vertical)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-88",
+   "sides": [
+    {
+     "text": "Forgery",
+     "sub": "2.4 · Application attacks"
+    },
+    {
+     "text": "Faking requests or identity",
+     "more": {
+      "text": "Cross-site request forgery (CSRF) tricks a logged-in user's browser into sending unwanted requests. Server-side request forgery (SSRF) makes a server send requests for the attacker. Prevent with anti-CSRF tokens."
+     }
+    },
+    {
+     "text": "A malicious page makes a logged-in user's browser submit a hidden transfer request.",
+     "more": {
+      "text": "Cross-site request forgery (CSRF)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-89",
+   "sides": [
+    {
+     "text": "Directory traversal",
+     "sub": "2.4 · Application attacks"
+    },
+    {
+     "text": "Using ../ to reach files outside the web root",
+     "more": {
+      "text": "Manipulating file paths (like ../../etc/passwd) to access files outside the intended directory. Prevent with input validation and least-privilege file access."
+     }
+    },
+    {
+     "text": "A URL parameter contains ../../etc/passwd and returns the file.",
+     "more": {
+      "text": "Directory traversal."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-90",
+   "sides": [
+    {
+     "text": "Downgrade attack",
+     "sub": "2.4 · Cryptographic attacks"
+    },
+    {
+     "text": "Forcing weaker encryption",
+     "more": {
+      "text": "Tricking systems into using an older, weaker protocol or cipher, such as forcing TLS to an old version, that's easier to break. Disable legacy protocols."
+     }
+    },
+    {
+     "text": "An attacker forces a connection to fall back to an obsolete protocol version.",
+     "more": {
+      "text": "A downgrade attack."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-91",
+   "sides": [
+    {
+     "text": "Collision attack",
+     "sub": "2.4 · Cryptographic attacks"
+    },
+    {
+     "text": "Two inputs, same hash",
+     "more": {
+      "text": "Finding two different inputs that produce the same hash, undermining integrity and signatures. MD5 and SHA-1 are vulnerable."
+     }
+    },
+    {
+     "text": "Two different files are crafted to have identical MD5 hashes.",
+     "more": {
+      "text": "A collision attack."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-92",
+   "sides": [
+    {
+     "text": "Birthday attack",
+     "sub": "2.4 · Cryptographic attacks"
+    },
+    {
+     "text": "Exploits the probability of hash collisions",
+     "more": {
+      "text": "Uses the birthday paradox: collisions are found far faster than brute force because matching any pair is easier than matching a specific hash. Longer hashes defend against it."
+     }
+    },
+    {
+     "text": "Which attack finds hash collisions faster by exploiting probability?",
+     "more": {
+      "text": "A birthday attack."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-93",
+   "sides": [
+    {
+     "text": "Password spraying",
+     "sub": "2.4 · Password attacks"
+    },
+    {
+     "text": "A few common passwords across many accounts",
+     "more": {
+      "text": "Tries one or a few common passwords against many accounts to avoid lockouts. Detect by watching failed logins across accounts; mitigate with MFA."
+     }
+    },
+    {
+     "text": "Many accounts each show one failed login from one IP, using the same common password.",
+     "more": {
+      "text": "Password spraying."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-94",
+   "sides": [
+    {
+     "text": "Password brute force",
+     "sub": "2.4 · Password attacks"
+    },
+    {
+     "text": "Trying every combination",
+     "more": {
+      "text": "Systematically tries many passwords against one account until success. Mitigate with account lockout, rate limiting, long passwords, and MFA."
+     }
+    },
+    {
+     "text": "Thousands of rapid login attempts hit one account.",
+     "more": {
+      "text": "A brute-force attack."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-95",
+   "sides": [
+    {
+     "text": "Account lockout",
+     "sub": "2.4 · Indicators"
+    },
+    {
+     "text": "Many failed logins lock the account",
+     "more": {
+      "text": "A spike in lockouts can indicate brute force or password spraying. Investigate the source and targets."
+     }
+    },
+    {
+     "text": "Dozens of accounts lock out within minutes.",
+     "more": {
+      "text": "Likely password spraying or brute force."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-96",
+   "sides": [
+    {
+     "text": "Concurrent session usage",
+     "sub": "2.4 · Indicators"
+    },
+    {
+     "text": "Same account active in several places at once",
+     "more": {
+      "text": "One account active from different locations or devices at the same time may mean credential theft."
+     }
+    },
+    {
+     "text": "A user is logged in from two countries at once.",
+     "more": {
+      "text": "A compromise indicator: concurrent sessions."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-97",
+   "sides": [
+    {
+     "text": "Blocked content",
+     "sub": "2.4 · Indicators"
+    },
+    {
+     "text": "Security tools block malicious access",
+     "more": {
+      "text": "Proxy, firewall, or DLP blocks of malicious sites or content can show an attempted compromise or exfiltration."
+     }
+    },
+    {
+     "text": "Web filters report repeated blocks from a workstation to known malware domains.",
+     "more": {
+      "text": "Blocked content, suggesting that host may be infected."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-98",
+   "sides": [
+    {
+     "text": "Impossible travel",
+     "sub": "2.4 · Indicators"
+    },
+    {
+     "text": "Logins too far apart in too little time",
+     "more": {
+      "text": "Sign-ins from locations that can't be reached in the elapsed time suggest stolen credentials."
+     }
+    },
+    {
+     "text": "A user logs in from New York, then from Singapore ten minutes later.",
+     "more": {
+      "text": "Impossible travel: likely a compromised account."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-99",
+   "sides": [
+    {
+     "text": "Resource consumption",
+     "sub": "2.4 · Indicators"
+    },
+    {
+     "text": "Unusual CPU, memory, or bandwidth use",
+     "more": {
+      "text": "Sustained high usage can indicate malware such as cryptominers, botnet traffic, or exfiltration."
+     }
+    },
+    {
+     "text": "A server's CPU stays pinned at 100% by an unknown process.",
+     "more": {
+      "text": "A resource consumption indicator, possibly cryptomining."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-100",
+   "sides": [
+    {
+     "text": "Resource inaccessibility",
+     "sub": "2.4 · Indicators"
+    },
+    {
+     "text": "Services unreachable",
+     "more": {
+      "text": "Systems or data that become unavailable can mean DoS, ransomware, or sabotage."
+     }
+    },
+    {
+     "text": "Files can't be opened and the server stops responding.",
+     "more": {
+      "text": "Resource inaccessibility, possibly ransomware or DoS."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-101",
+   "sides": [
+    {
+     "text": "Out-of-cycle logging",
+     "sub": "2.4 · Indicators"
+    },
+    {
+     "text": "Logs at unexpected times",
+     "more": {
+      "text": "Activity recorded at odd hours or outside normal patterns may indicate unauthorized use."
+     }
+    },
+    {
+     "text": "An admin account runs commands at 3 a.m. on a holiday.",
+     "more": {
+      "text": "Out-of-cycle logging, which warrants investigation."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-102",
+   "sides": [
+    {
+     "text": "Published or documented",
+     "sub": "2.4 · Indicators"
+    },
+    {
+     "text": "The attack is already publicly known",
+     "more": {
+      "text": "Indicators from published reports, advisories, and threat intelligence (IoCs) help detect known attacks."
+     }
+    },
+    {
+     "text": "Your SIEM matches a file hash listed in a published threat report.",
+     "more": {
+      "text": "A published/documented indicator."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-103",
+   "sides": [
+    {
+     "text": "Missing logs",
+     "sub": "2.4 · Indicators"
+    },
+    {
+     "text": "Gaps or deleted logs",
+     "more": {
+      "text": "Cleared or missing logs often mean an attacker covered their tracks. Protect logs with central logging and integrity controls."
+     }
+    },
+    {
+     "text": "Logs from a server for a six-hour window have vanished.",
+     "more": {
+      "text": "Missing logs, a sign of possible tampering."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-104",
+   "sides": [
+    {
+     "text": "Segmentation",
+     "sub": "2.5 · Mitigation techniques"
+    },
+    {
+     "text": "Splitting the network into zones",
+     "more": {
+      "text": "Dividing networks into segments (VLANs, subnets, firewalls) limits lateral movement and contains breaches."
+     }
+    },
+    {
+     "text": "A breach in the guest network can't reach the finance servers. Why?",
+     "more": {
+      "text": "Segmentation."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-105",
+   "sides": [
+    {
+     "text": "Access control",
+     "sub": "2.5 · Mitigation techniques"
+    },
+    {
+     "text": "Restricting who can use what",
+     "more": {
+      "text": "Controls that grant or deny access to resources through ACLs, permissions, and authentication."
+     }
+    },
+    {
+     "text": "Only members of HR can open the personnel folder.",
+     "more": {
+      "text": "Access control."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-106",
+   "sides": [
+    {
+     "text": "ACL",
+     "sub": "2.5 · Mitigation techniques"
+    },
+    {
+     "text": "Rules that allow or deny access",
+     "more": {
+      "text": "Access control list: ordered rules on routers, firewalls, or resources specifying who or what is allowed. Typically ends in an implicit deny."
+     }
+    },
+    {
+     "text": "A router rule permits only web traffic to a server. Which control is this?",
+     "more": {
+      "text": "An access control list."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-107",
+   "sides": [
+    {
+     "text": "Permissions",
+     "sub": "2.5 · Mitigation techniques"
+    },
+    {
+     "text": "Rights on files and resources",
+     "more": {
+      "text": "Settings that define what a user or group can do: read, write, execute. Apply the principle of least privilege."
+     }
+    },
+    {
+     "text": "An intern can read a file but can't edit it.",
+     "more": {
+      "text": "Permissions."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-108",
+   "sides": [
+    {
+     "text": "Application allow list",
+     "sub": "2.5 · Mitigation techniques"
+    },
+    {
+     "text": "Only approved software may run",
+     "more": {
+      "text": "Everything not explicitly allowed is blocked, which stops unknown and malicious programs. Also called whitelisting."
+     }
+    },
+    {
+     "text": "Only approved executables may run on public kiosks.",
+     "more": {
+      "text": "An application allow list."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-109",
+   "sides": [
+    {
+     "text": "Isolation",
+     "sub": "2.5 · Mitigation techniques"
+    },
+    {
+     "text": "Separating a system from others",
+     "more": {
+      "text": "Placing compromised or risky systems in quarantine or on separate networks to stop spread, such as disconnecting an infected host."
+     }
+    },
+    {
+     "text": "An infected workstation is disconnected from the network. Which mitigation?",
+     "more": {
+      "text": "Isolation."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-110",
+   "sides": [
+    {
+     "text": "Patching",
+     "sub": "2.5 · Mitigation techniques"
+    },
+    {
+     "text": "Fixing known vulnerabilities",
+     "more": {
+      "text": "Applying vendor updates to remove flaws. Test first, deploy on a schedule, and prioritize critical fixes."
+     }
+    },
+    {
+     "text": "A vendor releases a fix for an actively exploited flaw. What should you do?",
+     "more": {
+      "text": "Patch promptly, after testing."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-111",
+   "sides": [
+    {
+     "text": "Encryption",
+     "sub": "2.5 · Mitigation techniques"
+    },
+    {
+     "text": "Protecting data from being read",
+     "more": {
+      "text": "Makes data unreadable without a key, at rest and in transit. Reduces damage if data is stolen."
+     }
+    },
+    {
+     "text": "A laptop is lost but its data stays unreadable. Which control?",
+     "more": {
+      "text": "Full-disk encryption."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-112",
+   "sides": [
+    {
+     "text": "Monitoring",
+     "sub": "2.5 · Mitigation techniques"
+    },
+    {
+     "text": "Watching systems for suspicious activity",
+     "more": {
+      "text": "Collecting and analyzing logs and events (SIEM, IDS) to detect threats early and support response."
+     }
+    },
+    {
+     "text": "Alerts flag unusual outbound traffic. Which mitigation is at work?",
+     "more": {
+      "text": "Monitoring, a detective control."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-113",
+   "sides": [
+    {
+     "text": "Least privilege",
+     "sub": "2.5 · Mitigation techniques"
+    },
+    {
+     "text": "Only the access needed",
+     "more": {
+      "text": "Users, systems, and apps get the minimum permissions needed for their tasks, limiting damage from compromise or mistakes."
+     }
+    },
+    {
+     "text": "An accountant's account has admin rights it doesn't need. Which principle is violated?",
+     "more": {
+      "text": "Least privilege."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-114",
+   "sides": [
+    {
+     "text": "Configuration enforcement",
+     "sub": "2.5 · Mitigation techniques"
+    },
+    {
+     "text": "Keeping systems in a secure state",
+     "more": {
+      "text": "Ensuring systems match approved baselines using tools such as group policy or configuration management, and correcting drift automatically."
+     }
+    },
+    {
+     "text": "A tool automatically reverts a changed security setting.",
+     "more": {
+      "text": "Configuration enforcement."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-115",
+   "sides": [
+    {
+     "text": "Decommissioning",
+     "sub": "2.5 · Mitigation techniques"
+    },
+    {
+     "text": "Safely retiring systems and data",
+     "more": {
+      "text": "Removing devices and data securely at end of life: sanitize or destroy media, revoke access and credentials, and update the inventory."
+     }
+    },
+    {
+     "text": "Old servers are being retired. What prevents data exposure?",
+     "more": {
+      "text": "Decommissioning, including secure data sanitization."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-116",
+   "sides": [
+    {
+     "text": "Hardening techniques",
+     "sub": "2.5 · Mitigation techniques"
+    },
+    {
+     "text": "Reducing a system's attack surface",
+     "more": {
+      "text": "Encryption, endpoint protection, host-based firewall, HIPS, disabling unneeded ports and protocols, changing default passwords, and removing unnecessary software."
+     }
+    },
+    {
+     "text": "Closing unused ports and removing unneeded apps is part of what?",
+     "more": {
+      "text": "Hardening."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-117",
+   "sides": [
+    {
+     "text": "Endpoint protection",
+     "sub": "2.5 · Mitigation techniques"
+    },
+    {
+     "text": "Security software on devices",
+     "more": {
+      "text": "Antivirus and anti-malware, EDR, and similar tools that detect and block threats on endpoints."
+     }
+    },
+    {
+     "text": "An agent on each laptop detects and quarantines malware. Which control?",
+     "more": {
+      "text": "Endpoint protection."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-118",
+   "sides": [
+    {
+     "text": "Host-based firewall",
+     "sub": "2.5 · Mitigation techniques"
+    },
+    {
+     "text": "Firewall on the device itself",
+     "more": {
+      "text": "Filters traffic to and from a single host, adding protection even if the network firewall is bypassed."
+     }
+    },
+    {
+     "text": "A laptop blocks inbound connections even on a hostile Wi-Fi network.",
+     "more": {
+      "text": "A host-based firewall."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-119",
+   "sides": [
+    {
+     "text": "HIPS",
+     "sub": "2.5 · Mitigation techniques"
+    },
+    {
+     "text": "Host-based intrusion prevention",
+     "more": {
+      "text": "Software on a host that detects and blocks suspicious behavior, such as exploits and unauthorized changes, on that system."
+     }
+    },
+    {
+     "text": "Software on a server blocks a process attempting a known exploit.",
+     "more": {
+      "text": "A HIPS."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-120",
+   "sides": [
+    {
+     "text": "Disabling ports and protocols",
+     "sub": "2.5 · Mitigation techniques"
+    },
+    {
+     "text": "Turn off what isn't needed",
+     "more": {
+      "text": "Disable unused services and insecure protocols (Telnet, SMBv1) to shrink the attack surface."
+     }
+    },
+    {
+     "text": "Telnet is replaced with SSH and the Telnet service is disabled.",
+     "more": {
+      "text": "Disabling ports and protocols."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-121",
+   "sides": [
+    {
+     "text": "Default password changes",
+     "sub": "2.5 · Mitigation techniques"
+    },
+    {
+     "text": "Replace factory credentials",
+     "more": {
+      "text": "Change default accounts and passwords on devices and applications immediately at deployment."
+     }
+    },
+    {
+     "text": "New cameras ship with admin/admin. What must be done?",
+     "more": {
+      "text": "Change the default password."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d2-122",
+   "sides": [
+    {
+     "text": "Removal of unnecessary software",
+     "sub": "2.5 · Mitigation techniques"
+    },
+    {
+     "text": "Uninstall what isn't needed",
+     "more": {
+      "text": "Each program adds vulnerabilities and attack surface. Remove unused apps and services, including bloatware."
+     }
+    },
+    {
+     "text": "Old software that no one uses is still installed on a server.",
+     "more": {
+      "text": "Remove it."
+     }
+    }
+   ]
+  }
+ ]
+}

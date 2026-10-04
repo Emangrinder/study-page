@@ -1,0 +1,4500 @@
+{
+ "id": "security-plus-domain-4",
+ "name": "4 · Security Operations",
+ "cards": [
+  {
+   "id": "sec-d4-1",
+   "sides": [
+    {
+     "text": "Secure baseline",
+     "sub": "4.1 · Secure baselines"
+    },
+    {
+     "text": "Approved secure configuration for a system type",
+     "more": {
+      "text": "A documented set of security settings every system of that type must meet (CIS Benchmarks, vendor guides). Process: establish, deploy, maintain."
+     }
+    },
+    {
+     "text": "A company defines the standard settings every new server must have. What is it?",
+     "more": {
+      "text": "A secure baseline."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-2",
+   "sides": [
+    {
+     "text": "Baseline: establish",
+     "sub": "4.1 · Secure baselines"
+    },
+    {
+     "text": "Define the secure configuration",
+     "more": {
+      "text": "Create the baseline from standards and benchmarks (like CIS) and organizational policy, tailored to the system's role."
+     }
+    },
+    {
+     "text": "Which step defines approved settings using CIS benchmarks?",
+     "more": {
+      "text": "Establish."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-3",
+   "sides": [
+    {
+     "text": "Baseline: deploy",
+     "sub": "4.1 · Secure baselines"
+    },
+    {
+     "text": "Apply it to systems",
+     "more": {
+      "text": "Roll the baseline out consistently with images, group policy, or configuration management tools."
+     }
+    },
+    {
+     "text": "Gold images are used to build all new workstations. Which step?",
+     "more": {
+      "text": "Deploy."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-4",
+   "sides": [
+    {
+     "text": "Baseline: maintain",
+     "sub": "4.1 · Secure baselines"
+    },
+    {
+     "text": "Keep it current and enforced",
+     "more": {
+      "text": "Update the baseline for new threats and software, and monitor systems for drift from it."
+     }
+    },
+    {
+     "text": "A scan finds servers that no longer match the approved settings. Which step addresses this?",
+     "more": {
+      "text": "Maintain: detect the drift and reapply the baseline."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-5",
+   "sides": [
+    {
+     "text": "Hardening mobile devices",
+     "sub": "4.1 · Hardening targets"
+    },
+    {
+     "text": "Phones and tablets",
+     "more": {
+      "text": "Enforce screen lock, encryption, MDM enrollment, OS updates, app control, and remote wipe. Disable unneeded connectivity."
+     }
+    },
+    {
+     "text": "Which tool enforces encryption and remote wipe on company phones?",
+     "more": {
+      "text": "MDM."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-6",
+   "sides": [
+    {
+     "text": "Hardening workstations",
+     "sub": "4.1 · Hardening targets"
+    },
+    {
+     "text": "Desktops and laptops",
+     "more": {
+      "text": "Patch, remove bloatware, enable the host firewall and endpoint protection, encrypt disks, use least privilege, and disable unneeded services."
+     }
+    },
+    {
+     "text": "Which step reduces a workstation's attack surface by removing unneeded software?",
+     "more": {
+      "text": "Hardening: removing unnecessary software."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-7",
+   "sides": [
+    {
+     "text": "Hardening switches",
+     "sub": "4.1 · Hardening targets"
+    },
+    {
+     "text": "Network switches",
+     "more": {
+      "text": "Disable unused ports, enable port security, change defaults, secure management (SSH, not Telnet), keep VLANs tidy, and use BPDU guard."
+     }
+    },
+    {
+     "text": "Unused switch ports are shut down and placed in an unused VLAN. Why?",
+     "more": {
+      "text": "Hardening: it prevents unauthorized connections."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-8",
+   "sides": [
+    {
+     "text": "Hardening routers",
+     "sub": "4.1 · Hardening targets"
+    },
+    {
+     "text": "Routers",
+     "more": {
+      "text": "Change defaults, secure management access, disable unused services, apply ACLs, keep firmware current, and enable logging."
+     }
+    },
+    {
+     "text": "A router's management interface is restricted to SSH from a management network.",
+     "more": {
+      "text": "Router hardening."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-9",
+   "sides": [
+    {
+     "text": "Hardening cloud infrastructure",
+     "sub": "4.1 · Hardening targets"
+    },
+    {
+     "text": "Cloud resources",
+     "more": {
+      "text": "Least-privilege IAM, MFA, private storage by default, encryption, security groups, logging, and configuration monitoring."
+     }
+    },
+    {
+     "text": "A cloud storage bucket must not be publicly readable. Which hardening step?",
+     "more": {
+      "text": "Restrict access and make it private."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-10",
+   "sides": [
+    {
+     "text": "Hardening servers",
+     "sub": "4.1 · Hardening targets"
+    },
+    {
+     "text": "Servers",
+     "more": {
+      "text": "Minimal installation, patching, disabling unneeded services and ports, secure remote access, logging, and baseline compliance."
+     }
+    },
+    {
+     "text": "A server runs only the services its role needs. What is this?",
+     "more": {
+      "text": "Server hardening (minimal services)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-11",
+   "sides": [
+    {
+     "text": "Hardening ICS/SCADA",
+     "sub": "4.1 · Hardening targets"
+    },
+    {
+     "text": "Industrial systems",
+     "more": {
+      "text": "Segment from IT networks, restrict remote access, monitor passively, patch cautiously, and control physical access."
+     }
+    },
+    {
+     "text": "A plant's control network is separated from the corporate network. Why?",
+     "more": {
+      "text": "Hardening ICS/SCADA through isolation."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-12",
+   "sides": [
+    {
+     "text": "Hardening embedded systems",
+     "sub": "4.1 · Hardening targets"
+    },
+    {
+     "text": "Devices with built-in computers",
+     "more": {
+      "text": "Change defaults, update firmware, disable unused interfaces, and segment from critical networks."
+     }
+    },
+    {
+     "text": "A printer's default admin password is changed and its network access restricted.",
+     "more": {
+      "text": "Embedded system hardening."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-13",
+   "sides": [
+    {
+     "text": "Hardening RTOS",
+     "sub": "4.1 · Hardening targets"
+    },
+    {
+     "text": "Real-time systems",
+     "more": {
+      "text": "Limit exposed services, restrict access, use secure boot where possible, and isolate. Patching may be constrained by timing and safety."
+     }
+    },
+    {
+     "text": "A real-time controller can't be rebooted for patches. What's a hardening approach?",
+     "more": {
+      "text": "Isolate it and restrict access."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-14",
+   "sides": [
+    {
+     "text": "Hardening IoT devices",
+     "sub": "4.1 · Hardening targets"
+    },
+    {
+     "text": "Connected devices",
+     "more": {
+      "text": "Change default credentials, update firmware, disable unneeded features, and place them on a separate VLAN."
+     }
+    },
+    {
+     "text": "Smart sensors go on an isolated VLAN and their default passwords are changed.",
+     "more": {
+      "text": "IoT hardening."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-15",
+   "sides": [
+    {
+     "text": "Site surveys",
+     "sub": "4.1 · Wireless"
+    },
+    {
+     "text": "Planning wireless coverage",
+     "more": {
+      "text": "A survey measures signal strength, interference, and coverage to place access points properly, avoiding dead zones and weak signal."
+     }
+    },
+    {
+     "text": "Before deploying Wi-Fi, a team measures signal and interference throughout the building.",
+     "more": {
+      "text": "A site survey."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-16",
+   "sides": [
+    {
+     "text": "Heat maps",
+     "sub": "4.1 · Wireless"
+    },
+    {
+     "text": "Visual map of signal strength",
+     "more": {
+      "text": "A floor plan colored by signal strength shows coverage gaps and overlap. Produced from a site survey."
+     }
+    },
+    {
+     "text": "A colored floor plan shows weak Wi-Fi in the north wing. What is it?",
+     "more": {
+      "text": "A heat map."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-17",
+   "sides": [
+    {
+     "text": "Mobile device management",
+     "sub": "4.1 · Mobile solutions"
+    },
+    {
+     "text": "Central control of mobile devices",
+     "more": {
+      "text": "Enforces policies on phones and tablets: encryption, passcodes, app controls, remote lock and wipe, and compliance checking."
+     }
+    },
+    {
+     "text": "IT remotely wipes a lost company phone. Which tool?",
+     "more": {
+      "text": "MDM."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-18",
+   "sides": [
+    {
+     "text": "BYOD",
+     "sub": "4.1 · Mobile solutions"
+    },
+    {
+     "text": "Bring your own device",
+     "more": {
+      "text": "Employees use personal devices for work. Cheap, but harder to control and it mixes personal and corporate data. Use MDM and containerization."
+     }
+    },
+    {
+     "text": "Staff use their own phones to read company email. Which model?",
+     "more": {
+      "text": "BYOD."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-19",
+   "sides": [
+    {
+     "text": "COPE",
+     "sub": "4.1 · Mobile solutions"
+    },
+    {
+     "text": "Corporate-owned, personally enabled",
+     "more": {
+      "text": "The company buys the device and allows personal use. Stronger control than BYOD, with a more employee-friendly experience."
+     }
+    },
+    {
+     "text": "The company provides phones but lets staff use them personally. Which model?",
+     "more": {
+      "text": "COPE."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-20",
+   "sides": [
+    {
+     "text": "CYOD",
+     "sub": "4.1 · Mobile solutions"
+    },
+    {
+     "text": "Choose your own device",
+     "more": {
+      "text": "Employees choose from a company-approved list of devices that the company owns or manages. Balances choice and control."
+     }
+    },
+    {
+     "text": "Employees pick from three approved laptops. Which model?",
+     "more": {
+      "text": "CYOD."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-21",
+   "sides": [
+    {
+     "text": "Mobile connection methods",
+     "sub": "4.1 · Mobile solutions"
+    },
+    {
+     "text": "Cellular, Wi-Fi, and Bluetooth",
+     "more": {
+      "text": "Cellular: carrier network, relatively secure. Wi-Fi: risky on public networks, so use a VPN. Bluetooth: pairing attacks like bluejacking and bluesnarfing, so disable it when unused."
+     }
+    },
+    {
+     "text": "Which mobile connection is exposed to bluesnarfing?",
+     "more": {
+      "text": "Bluetooth."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-22",
+   "sides": [
+    {
+     "text": "WPA3",
+     "sub": "4.1 · Wireless security"
+    },
+    {
+     "text": "Current Wi-Fi security standard",
+     "more": {
+      "text": "Uses SAE for password-based authentication, replacing WPA2's PSK handshake. It resists offline dictionary attacks and provides forward secrecy. WPA3-Enterprise adds stronger encryption (GCMP-256)."
+     }
+    },
+    {
+     "text": "Which Wi-Fi standard resists offline password cracking using SAE?",
+     "more": {
+      "text": "WPA3."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-23",
+   "sides": [
+    {
+     "text": "RADIUS",
+     "sub": "4.1 · Wireless security"
+    },
+    {
+     "text": "Central AAA for network access",
+     "more": {
+      "text": "Remote Authentication Dial-In User Service: centralized authentication, authorization, and accounting for network access, used with 802.1X for enterprise Wi-Fi and VPN."
+     }
+    },
+    {
+     "text": "Enterprise Wi-Fi authenticates users against a central server. Which protocol?",
+     "more": {
+      "text": "RADIUS (with 802.1X)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-24",
+   "sides": [
+    {
+     "text": "Wireless cryptographic protocols",
+     "sub": "4.1 · Wireless security"
+    },
+    {
+     "text": "WPA2 and WPA3 encryption",
+     "more": {
+      "text": "WEP and TKIP are broken or deprecated. WPA2 uses AES-CCMP. WPA3 uses GCMP and SAE. Use WPA3, or WPA2-Enterprise."
+     }
+    },
+    {
+     "text": "Which Wi-Fi encryption protocol is considered broken: WEP, AES-CCMP, or GCMP?",
+     "more": {
+      "text": "WEP."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-25",
+   "sides": [
+    {
+     "text": "Authentication protocols",
+     "sub": "4.1 · Wireless security"
+    },
+    {
+     "text": "How identities are verified",
+     "more": {
+      "text": "EAP types (EAP-TLS, PEAP), PAP (cleartext, weak), CHAP and MS-CHAP (challenge-response), and Kerberos (ticket-based). Prefer certificate-based methods like EAP-TLS."
+     }
+    },
+    {
+     "text": "Which protocol sends credentials in cleartext: PAP, CHAP, or Kerberos?",
+     "more": {
+      "text": "PAP."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-26",
+   "sides": [
+    {
+     "text": "Input validation",
+     "sub": "4.1 · Application security"
+    },
+    {
+     "text": "Check input before using it",
+     "more": {
+      "text": "Verify that input matches the expected type, length, and format. Prevents injection, XSS, and overflows. Validate on the server, not only the client."
+     }
+    },
+    {
+     "text": "A form accepts only digits in a phone number field and rejects the rest on the server.",
+     "more": {
+      "text": "Input validation."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-27",
+   "sides": [
+    {
+     "text": "Secure cookies",
+     "sub": "4.1 · Application security"
+    },
+    {
+     "text": "Protect session cookies",
+     "more": {
+      "text": "Set Secure (HTTPS only), HttpOnly (not readable by scripts), and SameSite attributes to reduce theft and CSRF."
+     }
+    },
+    {
+     "text": "Which cookie flag stops JavaScript from reading a session cookie?",
+     "more": {
+      "text": "HttpOnly."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-28",
+   "sides": [
+    {
+     "text": "Static code analysis",
+     "sub": "4.1 · Application security"
+    },
+    {
+     "text": "Scan source code without running it",
+     "more": {
+      "text": "SAST finds flaws in source or binaries early in development, including injection patterns and hard-coded secrets. Can miss runtime issues."
+     }
+    },
+    {
+     "text": "Developers scan source code for vulnerabilities before running it. Which technique?",
+     "more": {
+      "text": "Static code analysis (SAST)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-29",
+   "sides": [
+    {
+     "text": "Code signing",
+     "sub": "4.1 · Application security"
+    },
+    {
+     "text": "Prove software's origin and integrity",
+     "more": {
+      "text": "Developers sign code with a private key so users can verify who published it and that it hasn't been altered."
+     }
+    },
+    {
+     "text": "An installer shows a verified publisher and fails if tampered with. Which control?",
+     "more": {
+      "text": "Code signing."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-30",
+   "sides": [
+    {
+     "text": "Sandboxing",
+     "sub": "4.1 · Application security"
+    },
+    {
+     "text": "Run code in an isolated environment",
+     "more": {
+      "text": "Isolates untrusted programs so they can't affect the host. Used for testing malware, browsers, and mobile apps."
+     }
+    },
+    {
+     "text": "A suspicious attachment is opened in an isolated environment to observe it.",
+     "more": {
+      "text": "Sandboxing."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-31",
+   "sides": [
+    {
+     "text": "Monitoring (security techniques)",
+     "sub": "4.1 · Application security"
+    },
+    {
+     "text": "Observe systems and apps for security events",
+     "more": {
+      "text": "Continuous watching of logs, performance, and behavior to detect problems and verify controls."
+     }
+    },
+    {
+     "text": "Which ongoing activity detects anomalies in application behavior?",
+     "more": {
+      "text": "Monitoring."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-32",
+   "sides": [
+    {
+     "text": "Asset management",
+     "sub": "4.2 · Asset management"
+    },
+    {
+     "text": "Knowing and controlling what you own",
+     "more": {
+      "text": "Tracking hardware, software, and data across their lifecycle: acquisition, assignment, tracking, and disposal. You can't secure what you don't know exists."
+     }
+    },
+    {
+     "text": "A team discovers servers nobody knew existed. Which practice was missing?",
+     "more": {
+      "text": "Asset management (an inventory)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-33",
+   "sides": [
+    {
+     "text": "Acquisition and procurement",
+     "sub": "4.2 · Asset management"
+    },
+    {
+     "text": "Buying securely",
+     "more": {
+      "text": "Vet suppliers, define security requirements, verify authenticity, and approve purchases centrally to avoid shadow IT and counterfeit hardware."
+     }
+    },
+    {
+     "text": "Purchases go through an approval process that checks vendor security. Which process?",
+     "more": {
+      "text": "Acquisition/procurement."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-34",
+   "sides": [
+    {
+     "text": "Ownership",
+     "sub": "4.2 · Asset management"
+    },
+    {
+     "text": "Who is accountable for an asset",
+     "more": {
+      "text": "Each asset has an assigned owner responsible for it and its security."
+     }
+    },
+    {
+     "text": "Every server has a named responsible person. Which concept?",
+     "more": {
+      "text": "Ownership."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-35",
+   "sides": [
+    {
+     "text": "Asset classification",
+     "sub": "4.2 · Asset management"
+    },
+    {
+     "text": "Labeling assets by sensitivity",
+     "more": {
+      "text": "Assets are classified (public, confidential, and so on) to decide protection and handling."
+     }
+    },
+    {
+     "text": "A database is labeled confidential, so controls are chosen accordingly.",
+     "more": {
+      "text": "Classification."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-36",
+   "sides": [
+    {
+     "text": "Inventory",
+     "sub": "4.2 · Asset management"
+    },
+    {
+     "text": "List of all assets",
+     "more": {
+      "text": "An up-to-date record of hardware, software, and data, with owner and location. The foundation for patching and risk work."
+     }
+    },
+    {
+     "text": "Which record lists every device and its owner?",
+     "more": {
+      "text": "An inventory."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-37",
+   "sides": [
+    {
+     "text": "Enumeration",
+     "sub": "4.2 · Asset management"
+    },
+    {
+     "text": "Discovering what's on the network",
+     "more": {
+      "text": "Actively or passively identifying devices, services, and software, often through scans, to find unknown assets."
+     }
+    },
+    {
+     "text": "A scan reveals unknown devices on the network. Which activity?",
+     "more": {
+      "text": "Enumeration."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-38",
+   "sides": [
+    {
+     "text": "Sanitization",
+     "sub": "4.2 · Asset management"
+    },
+    {
+     "text": "Removing data so it can't be recovered",
+     "more": {
+      "text": "Wiping, overwriting, degaussing, or cryptographic erase (destroying the encryption key) so data can't be recovered while the media may be reused."
+     }
+    },
+    {
+     "text": "A drive is cryptographically erased and reused. Which process?",
+     "more": {
+      "text": "Sanitization."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-39",
+   "sides": [
+    {
+     "text": "Destruction",
+     "sub": "4.2 · Asset management"
+    },
+    {
+     "text": "Physically destroying media",
+     "more": {
+      "text": "Shredding, pulverizing, incinerating, or degaussing media so it can't be used. Used when sanitization isn't enough or media is retired."
+     }
+    },
+    {
+     "text": "Hard drives from a retired server are shredded. Which method?",
+     "more": {
+      "text": "Destruction."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-40",
+   "sides": [
+    {
+     "text": "Certification of disposal",
+     "sub": "4.2 · Asset management"
+    },
+    {
+     "text": "Proof that disposal was done",
+     "more": {
+      "text": "A certificate of destruction or sanitization documents that media was properly handled, supporting compliance and audits."
+     }
+    },
+    {
+     "text": "A vendor provides paperwork proving drives were destroyed. What is it?",
+     "more": {
+      "text": "A certificate of destruction or sanitization."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-41",
+   "sides": [
+    {
+     "text": "Data retention",
+     "sub": "4.2 · Asset management"
+    },
+    {
+     "text": "How long to keep data",
+     "more": {
+      "text": "Policies set how long data is kept to meet legal and business needs, then it's securely disposed of. Keeping data too long raises risk and cost."
+     }
+    },
+    {
+     "text": "Which policy defines how long records must be kept before disposal?",
+     "more": {
+      "text": "The data retention policy."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-42",
+   "sides": [
+    {
+     "text": "Vulnerability scan",
+     "sub": "4.3 · Identification methods"
+    },
+    {
+     "text": "Automated search for known weaknesses",
+     "more": {
+      "text": "Tools scan systems for missing patches, misconfigurations, and known vulnerabilities. Results need validation."
+     }
+    },
+    {
+     "text": "A tool checks servers for missing patches and misconfigurations. Which activity?",
+     "more": {
+      "text": "A vulnerability scan."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-43",
+   "sides": [
+    {
+     "text": "Credentialed vs non-credentialed scans",
+     "sub": "4.3 · Identification methods"
+    },
+    {
+     "text": "Logged-in vs outside view",
+     "more": {
+      "text": "Credentialed scans log in to hosts and see patches and settings accurately, with fewer false positives. Non-credentialed scans see what an outside attacker sees."
+     }
+    },
+    {
+     "text": "A scan logs in to servers to check installed patches. Which type?",
+     "more": {
+      "text": "A credentialed scan."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-44",
+   "sides": [
+    {
+     "text": "Static analysis",
+     "sub": "4.3 · Identification methods"
+    },
+    {
+     "text": "Scan code without running it",
+     "more": {
+      "text": "Reviews source or compiled code for flaws before it runs (SAST). Finds issues early; may produce false positives."
+     }
+    },
+    {
+     "text": "Which method finds flaws in code without executing it?",
+     "more": {
+      "text": "Static analysis."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-45",
+   "sides": [
+    {
+     "text": "Dynamic analysis",
+     "sub": "4.3 · Identification methods"
+    },
+    {
+     "text": "Test the running application",
+     "more": {
+      "text": "Tests an application while it runs (DAST, fuzzing) to find runtime flaws such as injection and misconfiguration."
+     }
+    },
+    {
+     "text": "A tester sends malformed input to a running app to find crashes. Which method?",
+     "more": {
+      "text": "Dynamic analysis (fuzzing)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-46",
+   "sides": [
+    {
+     "text": "Package monitoring",
+     "sub": "4.3 · Identification methods"
+    },
+    {
+     "text": "Track vulnerable libraries and dependencies",
+     "more": {
+      "text": "Monitors third-party packages and dependencies for known vulnerabilities and malicious versions. Relevant to supply chain risk."
+     }
+    },
+    {
+     "text": "A tool alerts that a library used in your app has a known flaw. Which activity?",
+     "more": {
+      "text": "Package monitoring."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-47",
+   "sides": [
+    {
+     "text": "Threat feed: OSINT",
+     "sub": "4.3 · Identification methods"
+    },
+    {
+     "text": "Intelligence from public sources",
+     "more": {
+      "text": "Information from public sources: news, social media, vulnerability databases, and forums. Free and broad but needs validation."
+     }
+    },
+    {
+     "text": "Analysts use public advisories and security blogs to learn of new threats. Which source?",
+     "more": {
+      "text": "OSINT."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-48",
+   "sides": [
+    {
+     "text": "Threat feed: proprietary and third-party",
+     "sub": "4.3 · Identification methods"
+    },
+    {
+     "text": "Paid or vendor threat intelligence",
+     "more": {
+      "text": "Commercial feeds with curated, often more timely and actionable threat data. Costly but vetted."
+     }
+    },
+    {
+     "text": "A company subscribes to a vendor's curated threat intelligence. Which source?",
+     "more": {
+      "text": "A proprietary/third-party feed."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-49",
+   "sides": [
+    {
+     "text": "Information-sharing organization",
+     "sub": "4.3 · Identification methods"
+    },
+    {
+     "text": "Industry groups that share threats",
+     "more": {
+      "text": "ISACs and similar groups share threat intelligence among members in a sector, such as finance or healthcare."
+     }
+    },
+    {
+     "text": "Banks share attack indicators through an industry group. What is it?",
+     "more": {
+      "text": "An information-sharing organization (ISAC)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-50",
+   "sides": [
+    {
+     "text": "Dark web",
+     "sub": "4.3 · Identification methods"
+    },
+    {
+     "text": "Underground source of threat intelligence",
+     "more": {
+      "text": "Monitoring dark web forums and markets reveals stolen credentials, planned attacks, and data for sale."
+     }
+    },
+    {
+     "text": "Monitoring finds company credentials for sale on underground forums.",
+     "more": {
+      "text": "Dark web intelligence."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-51",
+   "sides": [
+    {
+     "text": "Penetration testing",
+     "sub": "4.3 · Identification methods"
+    },
+    {
+     "text": "Authorized simulated attack",
+     "more": {
+      "text": "A controlled attempt to exploit weaknesses to prove real risk. By knowledge level: known (white box), partially known (gray box), unknown (black box) environment. Requires written authorization and scope."
+     }
+    },
+    {
+     "text": "A firm is hired to attack the network with permission and report findings. Which activity?",
+     "more": {
+      "text": "Penetration testing."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-52",
+   "sides": [
+    {
+     "text": "Responsible disclosure program",
+     "sub": "4.3 · Identification methods"
+    },
+    {
+     "text": "Process for reporting flaws safely",
+     "more": {
+      "text": "A policy that lets researchers report vulnerabilities privately, giving the vendor time to fix before public disclosure."
+     }
+    },
+    {
+     "text": "A researcher privately reports a flaw and waits for the fix before publishing.",
+     "more": {
+      "text": "Responsible disclosure."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-53",
+   "sides": [
+    {
+     "text": "Bug bounty program",
+     "sub": "4.3 · Identification methods"
+    },
+    {
+     "text": "Rewards for found vulnerabilities",
+     "more": {
+      "text": "Pays researchers for valid vulnerabilities found within scope. Extends testing to many skilled people."
+     }
+    },
+    {
+     "text": "A company pays outside researchers for the flaws they find. Which program?",
+     "more": {
+      "text": "A bug bounty."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-54",
+   "sides": [
+    {
+     "text": "System and process audit",
+     "sub": "4.3 · Identification methods"
+    },
+    {
+     "text": "Review of systems and procedures",
+     "more": {
+      "text": "A formal examination of systems, configurations, and processes against policy or standards to find gaps."
+     }
+    },
+    {
+     "text": "An auditor checks whether systems follow documented procedures. Which activity?",
+     "more": {
+      "text": "A system/process audit."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-55",
+   "sides": [
+    {
+     "text": "Confirmation",
+     "sub": "4.3 · Analysis"
+    },
+    {
+     "text": "Verify a finding is real",
+     "more": {
+      "text": "Validate scan results before acting, to separate real vulnerabilities from false positives."
+     }
+    },
+    {
+     "text": "An analyst manually checks whether a reported flaw actually exists. Which step?",
+     "more": {
+      "text": "Confirmation."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-56",
+   "sides": [
+    {
+     "text": "False positive",
+     "sub": "4.3 · Analysis"
+    },
+    {
+     "text": "Alert with no real problem",
+     "more": {
+      "text": "A scan or alert reports a vulnerability or attack that isn't real. Wastes time and causes alert fatigue."
+     }
+    },
+    {
+     "text": "A scanner reports a flaw on a system that has already been patched. What is it?",
+     "more": {
+      "text": "A false positive."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-57",
+   "sides": [
+    {
+     "text": "False negative",
+     "sub": "4.3 · Analysis"
+    },
+    {
+     "text": "Real problem not detected",
+     "more": {
+      "text": "A real vulnerability or attack is missed. More dangerous than a false positive because it creates false confidence."
+     }
+    },
+    {
+     "text": "A scan misses an unpatched flaw that attackers later exploit. What is this?",
+     "more": {
+      "text": "A false negative."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-58",
+   "sides": [
+    {
+     "text": "Prioritize",
+     "sub": "4.3 · Analysis"
+    },
+    {
+     "text": "Fix the most important first",
+     "more": {
+      "text": "Rank vulnerabilities by severity, exploitability, asset value, and exposure, rather than fixing everything at once."
+     }
+    },
+    {
+     "text": "A team has 500 findings and limited time. What should it do first?",
+     "more": {
+      "text": "Prioritize by risk."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-59",
+   "sides": [
+    {
+     "text": "CVSS",
+     "sub": "4.3 · Analysis"
+    },
+    {
+     "text": "Scores vulnerability severity",
+     "more": {
+      "text": "Common Vulnerability Scoring System: a 0 to 10 base score (Low, Medium, High, Critical) from exploitability and impact, adjusted by temporal and environmental factors."
+     }
+    },
+    {
+     "text": "A flaw has a CVSS score of 9.8. How is it classed?",
+     "more": {
+      "text": "Critical severity."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-60",
+   "sides": [
+    {
+     "text": "CVE",
+     "sub": "4.3 · Analysis"
+    },
+    {
+     "text": "Catalog of known vulnerabilities",
+     "more": {
+      "text": "Common Vulnerabilities and Exposures: unique IDs (like CVE-2021-44228) for publicly known vulnerabilities, so everyone refers to the same flaw."
+     }
+    },
+    {
+     "text": "What identifier names a specific publicly known vulnerability?",
+     "more": {
+      "text": "A CVE ID."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-61",
+   "sides": [
+    {
+     "text": "Vulnerability classification",
+     "sub": "4.3 · Analysis"
+    },
+    {
+     "text": "Categorizing the type of flaw",
+     "more": {
+      "text": "Grouping by type (injection, misconfiguration, outdated software) helps analysis, reporting, and trend spotting."
+     }
+    },
+    {
+     "text": "Findings are grouped by flaw type for reporting. Which activity?",
+     "more": {
+      "text": "Vulnerability classification."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-62",
+   "sides": [
+    {
+     "text": "Exposure factor",
+     "sub": "4.3 · Analysis"
+    },
+    {
+     "text": "Share of an asset's value lost",
+     "more": {
+      "text": "The percentage of an asset's value lost if a threat occurs. Used to compute single loss expectancy: SLE = asset value × exposure factor."
+     }
+    },
+    {
+     "text": "An asset worth $100,000 would lose 40% in an incident. What's the exposure factor, and the SLE?",
+     "more": {
+      "text": "40%, so the SLE is $40,000."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-63",
+   "sides": [
+    {
+     "text": "Environmental variables",
+     "sub": "4.3 · Analysis"
+    },
+    {
+     "text": "Context that changes the risk",
+     "more": {
+      "text": "Factors specific to your environment, such as network exposure, compensating controls, and system criticality, that raise or lower a finding's real risk."
+     }
+    },
+    {
+     "text": "A critical flaw is on an isolated internal server. How does that affect priority?",
+     "more": {
+      "text": "Environmental variables can lower its priority."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-64",
+   "sides": [
+    {
+     "text": "Industry and organizational impact",
+     "sub": "4.3 · Analysis"
+    },
+    {
+     "text": "Business and sector consequences",
+     "more": {
+      "text": "How a vulnerability affects the specific business or industry: regulation, reputation, safety, and revenue."
+     }
+    },
+    {
+     "text": "A flaw affects regulated patient data. Which analysis factor raises priority?",
+     "more": {
+      "text": "Industry/organizational impact."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-65",
+   "sides": [
+    {
+     "text": "Risk tolerance",
+     "sub": "4.3 · Analysis"
+    },
+    {
+     "text": "How much risk the organization accepts",
+     "more": {
+      "text": "The level of risk leadership is willing to live with. Drives which findings get fixed and which are accepted."
+     }
+    },
+    {
+     "text": "Management decides it will accept a low-severity finding. Which concept?",
+     "more": {
+      "text": "Risk tolerance."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-66",
+   "sides": [
+    {
+     "text": "Remediation: patching",
+     "sub": "4.3 · Response and remediation"
+    },
+    {
+     "text": "Fix the flaw",
+     "more": {
+      "text": "Apply the vendor fix after testing. The primary remediation when a patch exists."
+     }
+    },
+    {
+     "text": "A fix is available for a critical vulnerability. What's the best remediation?",
+     "more": {
+      "text": "Patching."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-67",
+   "sides": [
+    {
+     "text": "Remediation: insurance",
+     "sub": "4.3 · Response and remediation"
+    },
+    {
+     "text": "Transfer the financial risk",
+     "more": {
+      "text": "Cyber insurance transfers some financial loss from incidents. It doesn't fix the vulnerability."
+     }
+    },
+    {
+     "text": "A company can't fix a flaw immediately and buys coverage for related losses. Which response?",
+     "more": {
+      "text": "Insurance (risk transference)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-68",
+   "sides": [
+    {
+     "text": "Remediation: segmentation",
+     "sub": "4.3 · Response and remediation"
+    },
+    {
+     "text": "Contain the exposure",
+     "more": {
+      "text": "Isolate vulnerable systems to limit reach when patching isn't possible."
+     }
+    },
+    {
+     "text": "A vulnerable system that can't be patched is isolated on its own VLAN.",
+     "more": {
+      "text": "Segmentation."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-69",
+   "sides": [
+    {
+     "text": "Remediation: compensating controls",
+     "sub": "4.3 · Response and remediation"
+    },
+    {
+     "text": "Alternative protection",
+     "more": {
+      "text": "Other controls reduce risk when the primary fix isn't possible: isolation, extra monitoring, WAF rules."
+     }
+    },
+    {
+     "text": "A WAF rule blocks exploitation of an unpatched web app. Which remediation?",
+     "more": {
+      "text": "A compensating control."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-70",
+   "sides": [
+    {
+     "text": "Exceptions and exemptions",
+     "sub": "4.3 · Response and remediation"
+    },
+    {
+     "text": "Approved deviations from policy",
+     "more": {
+      "text": "Documented, time-limited, risk-accepted approval to not fix or follow a requirement, with compensating controls and review."
+     }
+    },
+    {
+     "text": "Management signs off on leaving a legacy system unpatched with extra monitoring.",
+     "more": {
+      "text": "An exception/exemption."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-71",
+   "sides": [
+    {
+     "text": "Rescanning",
+     "sub": "4.3 · Validation and reporting"
+    },
+    {
+     "text": "Scan again after fixing",
+     "more": {
+      "text": "Re-run the scan to confirm the vulnerability is gone."
+     }
+    },
+    {
+     "text": "After patching, a team scans again. Which step?",
+     "more": {
+      "text": "Rescanning."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-72",
+   "sides": [
+    {
+     "text": "Audit of remediation",
+     "sub": "4.3 · Validation and reporting"
+    },
+    {
+     "text": "Independent check of fixes",
+     "more": {
+      "text": "A review that confirms fixes were applied and processes followed."
+     }
+    },
+    {
+     "text": "An auditor checks records to confirm patches were applied.",
+     "more": {
+      "text": "Audit."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-73",
+   "sides": [
+    {
+     "text": "Verification",
+     "sub": "4.3 · Validation and reporting"
+    },
+    {
+     "text": "Confirm the fix works as intended",
+     "more": {
+      "text": "Testing that the remediation works and didn't break anything."
+     }
+    },
+    {
+     "text": "Testers confirm a patched application still works and is no longer exploitable.",
+     "more": {
+      "text": "Verification."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-74",
+   "sides": [
+    {
+     "text": "Vulnerability reporting",
+     "sub": "4.3 · Validation and reporting"
+    },
+    {
+     "text": "Communicate findings and status",
+     "more": {
+      "text": "Summarize vulnerabilities, risk, remediation status, and trends for technical and management audiences."
+     }
+    },
+    {
+     "text": "A monthly report summarizes open vulnerabilities for leadership.",
+     "more": {
+      "text": "Reporting."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-75",
+   "sides": [
+    {
+     "text": "Monitoring computing resources",
+     "sub": "4.4 · Monitoring activities"
+    },
+    {
+     "text": "Watch systems, applications, and infrastructure",
+     "more": {
+      "text": "Collect and analyze data from systems, applications, and infrastructure to detect problems and attacks early."
+     }
+    },
+    {
+     "text": "Which activity gathers data from servers, apps, and network devices for security visibility?",
+     "more": {
+      "text": "Monitoring computing resources."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-76",
+   "sides": [
+    {
+     "text": "Log aggregation",
+     "sub": "4.4 · Monitoring activities"
+    },
+    {
+     "text": "Collect logs in one place",
+     "more": {
+      "text": "Centralizing logs from many sources so they can be searched and correlated, and protected from tampering."
+     }
+    },
+    {
+     "text": "Logs from all servers are sent to one central platform. What is this?",
+     "more": {
+      "text": "Log aggregation."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-77",
+   "sides": [
+    {
+     "text": "Alerting",
+     "sub": "4.4 · Monitoring activities"
+    },
+    {
+     "text": "Notify when something needs attention",
+     "more": {
+      "text": "Rules or analytics generate alerts for suspicious events so responders can act."
+     }
+    },
+    {
+     "text": "A SIEM sends a notification after 20 failed logins. Which activity?",
+     "more": {
+      "text": "Alerting."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-78",
+   "sides": [
+    {
+     "text": "Scanning",
+     "sub": "4.4 · Monitoring activities"
+    },
+    {
+     "text": "Regularly probe for issues",
+     "more": {
+      "text": "Routine vulnerability and compliance scans to find weaknesses and drift."
+     }
+    },
+    {
+     "text": "Weekly scans identify new vulnerabilities. Which activity?",
+     "more": {
+      "text": "Scanning."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-79",
+   "sides": [
+    {
+     "text": "Monitoring reports",
+     "sub": "4.4 · Monitoring activities"
+    },
+    {
+     "text": "Summarize security data",
+     "more": {
+      "text": "Dashboards and reports show trends, incidents, and compliance to teams and management."
+     }
+    },
+    {
+     "text": "A report shows alert trends over a quarter.",
+     "more": {
+      "text": "Reporting."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-80",
+   "sides": [
+    {
+     "text": "Archiving",
+     "sub": "4.4 · Monitoring activities"
+    },
+    {
+     "text": "Long-term log storage",
+     "more": {
+      "text": "Retaining logs for compliance and investigations after active use, protected for integrity."
+     }
+    },
+    {
+     "text": "Logs must be kept for a year for audits. Which activity?",
+     "more": {
+      "text": "Archiving."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-81",
+   "sides": [
+    {
+     "text": "Alert response and validation",
+     "sub": "4.4 · Monitoring activities"
+    },
+    {
+     "text": "Triage and confirm alerts",
+     "more": {
+      "text": "Analysts investigate an alert, determine if it's real, and respond or close it. Includes quarantine and tuning."
+     }
+    },
+    {
+     "text": "An analyst checks whether an alert is a true positive. Which step?",
+     "more": {
+      "text": "Alert validation."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-82",
+   "sides": [
+    {
+     "text": "Quarantine",
+     "sub": "4.4 · Monitoring activities"
+    },
+    {
+     "text": "Isolate a suspect item",
+     "more": {
+      "text": "Move suspicious files or devices into isolation so they can't cause harm while they're investigated."
+     }
+    },
+    {
+     "text": "Antivirus moves a suspicious file into a safe location. Which action?",
+     "more": {
+      "text": "Quarantine."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-83",
+   "sides": [
+    {
+     "text": "Alert tuning",
+     "sub": "4.4 · Monitoring activities"
+    },
+    {
+     "text": "Reduce noise and false positives",
+     "more": {
+      "text": "Adjust thresholds and rules so alerts are accurate and manageable, without hiding real threats."
+     }
+    },
+    {
+     "text": "Too many false alarms are overwhelming analysts. What should be done?",
+     "more": {
+      "text": "Alert tuning."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-84",
+   "sides": [
+    {
+     "text": "SCAP",
+     "sub": "4.4 · Monitoring tools"
+    },
+    {
+     "text": "Standards for automated security checks",
+     "more": {
+      "text": "Security Content Automation Protocol: standard formats for checking configuration and vulnerabilities and measuring compliance automatically."
+     }
+    },
+    {
+     "text": "Which standard automates compliance and vulnerability checks?",
+     "more": {
+      "text": "SCAP."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-85",
+   "sides": [
+    {
+     "text": "Benchmarks",
+     "sub": "4.4 · Monitoring tools"
+    },
+    {
+     "text": "Recommended secure settings",
+     "more": {
+      "text": "Consensus configuration guides such as CIS Benchmarks and DISA STIGs, used to build baselines and measure compliance."
+     }
+    },
+    {
+     "text": "Which resource provides recommended hardening settings for an OS?",
+     "more": {
+      "text": "A benchmark, such as CIS."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-86",
+   "sides": [
+    {
+     "text": "Agents vs agentless monitoring",
+     "sub": "4.4 · Monitoring tools"
+    },
+    {
+     "text": "Installed software vs remote collection",
+     "more": {
+      "text": "Agents give deep, continuous visibility on hosts but need deployment. Agentless collects remotely with less overhead but less depth."
+     }
+    },
+    {
+     "text": "Software on each server reports logs continuously. Which approach?",
+     "more": {
+      "text": "Agent-based."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-87",
+   "sides": [
+    {
+     "text": "SIEM",
+     "sub": "4.4 · Monitoring tools"
+    },
+    {
+     "text": "Central log collection and correlation",
+     "more": {
+      "text": "Security information and event management: aggregates logs, correlates events, alerts, and supports investigations and compliance."
+     }
+    },
+    {
+     "text": "A platform correlates logs from firewalls, servers, and apps to spot attacks. Which tool?",
+     "more": {
+      "text": "A SIEM."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-88",
+   "sides": [
+    {
+     "text": "Antivirus",
+     "sub": "4.4 · Monitoring tools"
+    },
+    {
+     "text": "Detects and removes malware",
+     "more": {
+      "text": "Scans files and behavior against signatures and heuristics to block and remove malware. Modern endpoint tools add behavior analysis."
+     }
+    },
+    {
+     "text": "Software scans files for known malware signatures. Which tool?",
+     "more": {
+      "text": "Antivirus."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-89",
+   "sides": [
+    {
+     "text": "DLP",
+     "sub": "4.4 · Monitoring tools"
+    },
+    {
+     "text": "Prevent sensitive data leaving",
+     "more": {
+      "text": "Data loss prevention inspects and blocks sensitive data in email, web traffic, endpoints, and cloud services."
+     }
+    },
+    {
+     "text": "A tool blocks an email containing credit card numbers. Which tool?",
+     "more": {
+      "text": "DLP."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-90",
+   "sides": [
+    {
+     "text": "SNMP traps",
+     "sub": "4.4 · Monitoring tools"
+    },
+    {
+     "text": "Devices send alerts to a manager",
+     "more": {
+      "text": "SNMP agents on devices send unsolicited trap messages to a management station when events occur. Use SNMPv3 for security."
+     }
+    },
+    {
+     "text": "A switch alerts the monitoring server when a port fails. Which mechanism?",
+     "more": {
+      "text": "An SNMP trap."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-91",
+   "sides": [
+    {
+     "text": "NetFlow",
+     "sub": "4.4 · Monitoring tools"
+    },
+    {
+     "text": "Traffic flow metadata",
+     "more": {
+      "text": "Summarizes network conversations (source, destination, ports, volume) for traffic analysis and anomaly detection, without full packet content."
+     }
+    },
+    {
+     "text": "Analysts review who talked to whom and how much data moved. Which data source?",
+     "more": {
+      "text": "NetFlow."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-92",
+   "sides": [
+    {
+     "text": "Vulnerability scanners",
+     "sub": "4.4 · Monitoring tools"
+    },
+    {
+     "text": "Automated vulnerability detection",
+     "more": {
+      "text": "Tools like Nessus and OpenVAS scan for known weaknesses and report findings."
+     }
+    },
+    {
+     "text": "Which tool automatically checks hosts for known vulnerabilities?",
+     "more": {
+      "text": "A vulnerability scanner."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-93",
+   "sides": [
+    {
+     "text": "Firewall rules",
+     "sub": "4.5 · Firewalls"
+    },
+    {
+     "text": "Allow or deny traffic by criteria",
+     "more": {
+      "text": "Rules match source, destination, port, and protocol, then permit or deny. Processed top-down with the first match winning, ending in an implicit deny. Keep rules specific and reviewed."
+     }
+    },
+    {
+     "text": "Which firewall behavior denies anything not explicitly permitted?",
+     "more": {
+      "text": "The implicit deny."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-94",
+   "sides": [
+    {
+     "text": "Access lists",
+     "sub": "4.5 · Firewalls"
+    },
+    {
+     "text": "Ordered permit and deny entries",
+     "more": {
+      "text": "Lists of permit and deny entries on routers and firewalls, applied to interfaces. Order matters: specific rules before general ones. They end with an implicit deny."
+     }
+    },
+    {
+     "text": "A router ACL permits web traffic and drops everything else. What ends the list?",
+     "more": {
+      "text": "An implicit deny."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-95",
+   "sides": [
+    {
+     "text": "Ports and protocols (firewall)",
+     "sub": "4.5 · Firewalls"
+    },
+    {
+     "text": "Control services by port and protocol",
+     "more": {
+      "text": "Allow only needed ports and protocols (443, 22) and block risky ones (23, 21, and 445 from the internet). This is least functionality."
+     }
+    },
+    {
+     "text": "A firewall allows only TCP 443 to the web server. Which principle?",
+     "more": {
+      "text": "Allowing only required ports and protocols."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-96",
+   "sides": [
+    {
+     "text": "Screened subnets (firewall)",
+     "sub": "4.5 · Firewalls"
+    },
+    {
+     "text": "DMZ rules for public servers",
+     "more": {
+      "text": "Firewall rules let the internet reach public servers in the subnet and strictly limit what those servers can reach inside."
+     }
+    },
+    {
+     "text": "A public web server should reach the internal database on one port only. Where is it placed, and how is it limited?",
+     "more": {
+      "text": "In a screened subnet, with firewall rules allowing only that port."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-97",
+   "sides": [
+    {
+     "text": "IDS/IPS trends",
+     "sub": "4.5 · IDS and IPS"
+    },
+    {
+     "text": "Spotting patterns over time",
+     "more": {
+      "text": "Analysis of alert trends (spikes, repeated sources) helps tune detection, find stealthy campaigns, and spot false positives."
+     }
+    },
+    {
+     "text": "Analysts see repeated alerts from the same subnet every night. What does this reveal?",
+     "more": {
+      "text": "A trend that may indicate persistent activity, or a rule needing tuning."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-98",
+   "sides": [
+    {
+     "text": "IDS/IPS signatures",
+     "sub": "4.5 · IDS and IPS"
+    },
+    {
+     "text": "Known patterns of attacks",
+     "more": {
+      "text": "Signature-based detection matches traffic to known attack patterns: accurate for known threats, blind to new ones. Anomaly-based detection finds deviations from normal but produces more false positives."
+     }
+    },
+    {
+     "text": "A system detects only attacks it has patterns for. Which detection method?",
+     "more": {
+      "text": "Signature-based."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-99",
+   "sides": [
+    {
+     "text": "Agent-based web filter",
+     "sub": "4.5 · Web filter"
+    },
+    {
+     "text": "Software on the device enforces filtering",
+     "more": {
+      "text": "An agent on the endpoint enforces web policy anywhere, including off the corporate network. Needs deployment and updates."
+     }
+    },
+    {
+     "text": "Laptops are filtered even at home because software is installed on them. Which type?",
+     "more": {
+      "text": "An agent-based web filter."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-100",
+   "sides": [
+    {
+     "text": "Centralized proxy",
+     "sub": "4.5 · Web filter"
+    },
+    {
+     "text": "Gateway filters traffic for all users",
+     "more": {
+      "text": "All web traffic passes through a central proxy that applies policy, logs, and can inspect TLS. Off-network users must route through it."
+     }
+    },
+    {
+     "text": "All office web traffic passes through one gateway that applies policies. Which type?",
+     "more": {
+      "text": "A centralized proxy."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-101",
+   "sides": [
+    {
+     "text": "URL scanning",
+     "sub": "4.5 · Web filter"
+    },
+    {
+     "text": "Check links for malicious sites",
+     "more": {
+      "text": "Evaluates URLs against lists and live analysis to block malicious destinations."
+     }
+    },
+    {
+     "text": "A link in an email is checked against a database of malicious sites before it opens.",
+     "more": {
+      "text": "URL scanning."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-102",
+   "sides": [
+    {
+     "text": "Content categorization",
+     "sub": "4.5 · Web filter"
+    },
+    {
+     "text": "Group sites by type",
+     "more": {
+      "text": "Sites are classified (gambling, social media, malware) so policy can allow or block whole categories."
+     }
+    },
+    {
+     "text": "Policy blocks the gambling category. Which filter feature?",
+     "more": {
+      "text": "Content categorization."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-103",
+   "sides": [
+    {
+     "text": "Block rules",
+     "sub": "4.5 · Web filter"
+    },
+    {
+     "text": "Explicit deny entries",
+     "more": {
+      "text": "Specific rules that block named sites, categories, or file types. They complement allow lists."
+     }
+    },
+    {
+     "text": "A rule blocks a known malicious domain. What is it?",
+     "more": {
+      "text": "A block rule."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-104",
+   "sides": [
+    {
+     "text": "Reputation",
+     "sub": "4.5 · Web filter"
+    },
+    {
+     "text": "Trust score for sites and senders",
+     "more": {
+      "text": "Sites, IPs, and domains are scored by history; low-reputation destinations are blocked or flagged."
+     }
+    },
+    {
+     "text": "A newly registered domain with a poor history is blocked. Which feature?",
+     "more": {
+      "text": "Reputation-based filtering."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-105",
+   "sides": [
+    {
+     "text": "Group Policy",
+     "sub": "4.5 · OS security and secure protocols"
+    },
+    {
+     "text": "Central Windows configuration",
+     "more": {
+      "text": "A Windows Active Directory feature that pushes security settings (password rules, firewall, restrictions) to computers and users centrally."
+     }
+    },
+    {
+     "text": "An admin enforces password rules on all domain computers from one place. Which tool?",
+     "more": {
+      "text": "Group Policy."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-106",
+   "sides": [
+    {
+     "text": "SELinux",
+     "sub": "4.5 · OS security and secure protocols"
+    },
+    {
+     "text": "Mandatory access control for Linux",
+     "more": {
+      "text": "Security-Enhanced Linux enforces mandatory access control policies on processes and files, limiting damage from compromised services. Modes: enforcing, permissive, disabled."
+     }
+    },
+    {
+     "text": "A Linux system confines processes with mandatory access policies. Which feature?",
+     "more": {
+      "text": "SELinux."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-107",
+   "sides": [
+    {
+     "text": "Protocol selection",
+     "sub": "4.5 · OS security and secure protocols"
+    },
+    {
+     "text": "Choose a secure protocol",
+     "more": {
+      "text": "Pick protocols that provide encryption and authentication: SSH over Telnet, HTTPS over HTTP, SFTP over FTP."
+     }
+    },
+    {
+     "text": "Which protocol should replace FTP for secure file transfer?",
+     "more": {
+      "text": "SFTP (or FTPS)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-108",
+   "sides": [
+    {
+     "text": "Port selection",
+     "sub": "4.5 · OS security and secure protocols"
+    },
+    {
+     "text": "Use the right port",
+     "more": {
+      "text": "Use standard secure ports (443, 22, 636) and close insecure ones. Changing ports adds little security by itself."
+     }
+    },
+    {
+     "text": "Which port does HTTPS use?",
+     "more": {
+      "text": "443."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-109",
+   "sides": [
+    {
+     "text": "Transport method",
+     "sub": "4.5 · OS security and secure protocols"
+    },
+    {
+     "text": "How the protocol is secured in transit",
+     "more": {
+      "text": "Secure via TLS wrapping, a STARTTLS upgrade, or VPN/IPsec tunnels. Choose the method that fits the application."
+     }
+    },
+    {
+     "text": "An email session starts in plaintext and upgrades to encrypted. Which method?",
+     "more": {
+      "text": "STARTTLS."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-110",
+   "sides": [
+    {
+     "text": "DNS filtering",
+     "sub": "4.5 · DNS and email security"
+    },
+    {
+     "text": "Block bad domains at DNS",
+     "more": {
+      "text": "DNS resolvers refuse or redirect lookups for malicious or unwanted domains, stopping phishing, malware, and command-and-control early."
+     }
+    },
+    {
+     "text": "Lookups for known malware domains return no answer. Which control?",
+     "more": {
+      "text": "DNS filtering."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-111",
+   "sides": [
+    {
+     "text": "DMARC",
+     "sub": "4.5 · DNS and email security"
+    },
+    {
+     "text": "Policy for failed email authentication",
+     "more": {
+      "text": "Domain-based Message Authentication, Reporting and Conformance: builds on SPF and DKIM, tells receivers what to do with failures (none, quarantine, reject), and sends reports."
+     }
+    },
+    {
+     "text": "A domain owner tells receivers to reject mail that fails SPF and DKIM alignment. Which control?",
+     "more": {
+      "text": "DMARC."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-112",
+   "sides": [
+    {
+     "text": "DKIM",
+     "sub": "4.5 · DNS and email security"
+    },
+    {
+     "text": "Digital signature on email",
+     "more": {
+      "text": "DomainKeys Identified Mail: the sending server signs messages, and receivers verify with a public key in DNS to confirm the domain and that the content wasn't altered."
+     }
+    },
+    {
+     "text": "Receivers verify an email's signature using a public key in DNS. Which control?",
+     "more": {
+      "text": "DKIM."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-113",
+   "sides": [
+    {
+     "text": "SPF",
+     "sub": "4.5 · DNS and email security"
+    },
+    {
+     "text": "Lists servers allowed to send for a domain",
+     "more": {
+      "text": "Sender Policy Framework: a DNS record listing authorized sending servers. Receivers check the sending IP against it to detect spoofing."
+     }
+    },
+    {
+     "text": "A DNS record lists which mail servers may send for a domain. Which control?",
+     "more": {
+      "text": "SPF."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-114",
+   "sides": [
+    {
+     "text": "Email gateway",
+     "sub": "4.5 · DNS and email security"
+    },
+    {
+     "text": "Filters mail before delivery",
+     "more": {
+      "text": "Scans email for spam, phishing, malware, and sensitive data, and enforces policy before mail reaches users."
+     }
+    },
+    {
+     "text": "Inbound mail is scanned for malware and phishing before delivery. Which control?",
+     "more": {
+      "text": "An email gateway."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-115",
+   "sides": [
+    {
+     "text": "File integrity monitoring",
+     "sub": "4.5 · Enterprise tools"
+    },
+    {
+     "text": "Detect unauthorized file changes",
+     "more": {
+      "text": "FIM compares files to known-good hashes and alerts on changes to critical system and config files. Helps detect tampering and meet compliance."
+     }
+    },
+    {
+     "text": "An alert fires when a system file's hash changes unexpectedly. Which tool?",
+     "more": {
+      "text": "File integrity monitoring."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-116",
+   "sides": [
+    {
+     "text": "DLP (enterprise)",
+     "sub": "4.5 · Enterprise tools"
+    },
+    {
+     "text": "Stop sensitive data leaving",
+     "more": {
+      "text": "Inspects data in motion, at rest, and in use against policy, and blocks, encrypts, or alerts on leaks across email, endpoints, and cloud."
+     }
+    },
+    {
+     "text": "A policy blocks uploading files with Social Security numbers to personal cloud storage.",
+     "more": {
+      "text": "DLP."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-117",
+   "sides": [
+    {
+     "text": "NAC (enterprise)",
+     "sub": "4.5 · Enterprise tools"
+    },
+    {
+     "text": "Admit devices only if compliant",
+     "more": {
+      "text": "Network access control authenticates devices and checks posture before granting access, quarantining non-compliant ones."
+     }
+    },
+    {
+     "text": "A device lacking antivirus is placed in a remediation VLAN. Which technology?",
+     "more": {
+      "text": "NAC."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-118",
+   "sides": [
+    {
+     "text": "EDR",
+     "sub": "4.5 · Enterprise tools"
+    },
+    {
+     "text": "Endpoint detection and response",
+     "more": {
+      "text": "Continuously monitors endpoint behavior, records activity, detects threats, and enables investigation and response such as isolation and remediation."
+     }
+    },
+    {
+     "text": "A tool records process behavior on laptops and can isolate an infected one. Which tool?",
+     "more": {
+      "text": "EDR."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-119",
+   "sides": [
+    {
+     "text": "XDR",
+     "sub": "4.5 · Enterprise tools"
+    },
+    {
+     "text": "Extended detection and response",
+     "more": {
+      "text": "Extends EDR by correlating data across endpoints, network, email, and cloud for broader detection and response."
+     }
+    },
+    {
+     "text": "A platform correlates telemetry from endpoints, email, and network to detect attacks. Which tool?",
+     "more": {
+      "text": "XDR."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-120",
+   "sides": [
+    {
+     "text": "User behavior analytics",
+     "sub": "4.5 · Enterprise tools"
+    },
+    {
+     "text": "Spot unusual user activity",
+     "more": {
+      "text": "UBA baselines normal user and entity behavior and flags anomalies, such as odd login times or mass downloads, to detect insider threats and stolen credentials."
+     }
+    },
+    {
+     "text": "A tool flags an employee downloading far more files than usual. Which technology?",
+     "more": {
+      "text": "User behavior analytics."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-121",
+   "sides": [
+    {
+     "text": "Provisioning and de-provisioning",
+     "sub": "4.6 · Identity lifecycle and federation"
+    },
+    {
+     "text": "Create and remove accounts",
+     "more": {
+      "text": "Provisioning: creating accounts and assigning access when someone joins or changes role. De-provisioning: removing access promptly when they leave. Delays leave orphaned accounts."
+     }
+    },
+    {
+     "text": "A departed employee's account is still active a month later. What failed?",
+     "more": {
+      "text": "De-provisioning."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-122",
+   "sides": [
+    {
+     "text": "Permission assignments and implications",
+     "sub": "4.6 · Identity lifecycle and federation"
+    },
+    {
+     "text": "Granting access has consequences",
+     "more": {
+      "text": "Excess permissions cause privilege creep, so grant least privilege and review regularly. Roles and groups simplify assignment."
+     }
+    },
+    {
+     "text": "A long-time employee has accumulated access from several past roles. What is this?",
+     "more": {
+      "text": "Privilege creep."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-123",
+   "sides": [
+    {
+     "text": "Identity proofing",
+     "sub": "4.6 · Identity lifecycle and federation"
+    },
+    {
+     "text": "Verify a person is who they claim",
+     "more": {
+      "text": "Confirming real-world identity before creating an account or credential: documents, knowledge checks, in-person verification."
+     }
+    },
+    {
+     "text": "A new user must show government ID to get an account. Which process?",
+     "more": {
+      "text": "Identity proofing."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-124",
+   "sides": [
+    {
+     "text": "Federation",
+     "sub": "4.6 · Identity lifecycle and federation"
+    },
+    {
+     "text": "Trust between organizations' identities",
+     "more": {
+      "text": "Lets users from one organization authenticate to another's services with their home credentials, via standards like SAML and OpenID Connect."
+     }
+    },
+    {
+     "text": "Employees log in to a partner's portal with their own company credentials. Which concept?",
+     "more": {
+      "text": "Federation."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-125",
+   "sides": [
+    {
+     "text": "Single sign-on",
+     "sub": "4.6 · Identity lifecycle and federation"
+    },
+    {
+     "text": "One login, many applications",
+     "more": {
+      "text": "Authenticate once and access multiple apps. Reduces password fatigue, but it's a high-value target, so protect it with MFA."
+     }
+    },
+    {
+     "text": "A user logs in once and opens several apps without logging in again.",
+     "more": {
+      "text": "Single sign-on (SSO)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-126",
+   "sides": [
+    {
+     "text": "LDAP",
+     "sub": "4.6 · Identity lifecycle and federation"
+    },
+    {
+     "text": "Directory access protocol",
+     "more": {
+      "text": "Lightweight Directory Access Protocol: queries and updates directory services like Active Directory. LDAPS secures it with TLS (port 636)."
+     }
+    },
+    {
+     "text": "Applications look up users in a central directory. Which protocol?",
+     "more": {
+      "text": "LDAP (LDAPS when secured)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-127",
+   "sides": [
+    {
+     "text": "OAuth",
+     "sub": "4.6 · Identity lifecycle and federation"
+    },
+    {
+     "text": "Delegated authorization",
+     "more": {
+      "text": "Open authorization: lets an app access resources on a user's behalf using tokens, without sharing the password. It's authorization, not authentication."
+     }
+    },
+    {
+     "text": "A photo app is allowed to read your cloud files without your password. Which protocol?",
+     "more": {
+      "text": "OAuth."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-128",
+   "sides": [
+    {
+     "text": "SAML",
+     "sub": "4.6 · Identity lifecycle and federation"
+    },
+    {
+     "text": "XML-based federated login",
+     "more": {
+      "text": "Security Assertions Markup Language: an identity provider sends signed XML assertions to a service provider for SSO. Common for enterprise web apps."
+     }
+    },
+    {
+     "text": "An identity provider sends a signed assertion to a cloud app to log you in. Which standard?",
+     "more": {
+      "text": "SAML."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-129",
+   "sides": [
+    {
+     "text": "Interoperability",
+     "sub": "4.6 · Identity lifecycle and federation"
+    },
+    {
+     "text": "Systems working together",
+     "more": {
+      "text": "Identity systems and standards need to work across platforms; lack of it causes gaps and workarounds."
+     }
+    },
+    {
+     "text": "Two identity systems can't exchange authentication data. What's lacking?",
+     "more": {
+      "text": "Interoperability."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-130",
+   "sides": [
+    {
+     "text": "Attestation",
+     "sub": "4.6 · Identity lifecycle and federation"
+    },
+    {
+     "text": "Proof of a trusted state",
+     "more": {
+      "text": "Verification that a device or software is in a trusted state (such as secure boot attestation), or confirmation by managers that users' access is still appropriate (access recertification)."
+     }
+    },
+    {
+     "text": "A manager periodically confirms that team members still need their access. Which activity?",
+     "more": {
+      "text": "Attestation (an access review)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-131",
+   "sides": [
+    {
+     "text": "Kerberos",
+     "sub": "4.6 · Identity lifecycle and federation"
+    },
+    {
+     "text": "Ticket-based authentication",
+     "more": {
+      "text": "A KDC issues tickets (a TGT, then service tickets), so passwords aren't sent over the network. Requires synchronized time. Used in Active Directory."
+     }
+    },
+    {
+     "text": "A ticket granting ticket is issued after login. Which protocol?",
+     "more": {
+      "text": "Kerberos."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-132",
+   "sides": [
+    {
+     "text": "OpenID Connect",
+     "sub": "4.6 · Identity lifecycle and federation"
+    },
+    {
+     "text": "Authentication layer on OAuth",
+     "more": {
+      "text": "OIDC adds identity (authentication) to OAuth's authorization using ID tokens. Used for sign in with another provider."
+     }
+    },
+    {
+     "text": "A site lets you log in using your account from another provider, via ID tokens.",
+     "more": {
+      "text": "OpenID Connect."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-133",
+   "sides": [
+    {
+     "text": "Mandatory access control (IAM)",
+     "sub": "4.6 · Access control models"
+    },
+    {
+     "text": "Labels and clearances set by the system",
+     "more": {
+      "text": "Access follows sensitivity labels and user clearances enforced by the system; users can't override. Used in high-security environments."
+     }
+    },
+    {
+     "text": "Files are labeled Secret and only users cleared for Secret can read them. Which model?",
+     "more": {
+      "text": "MAC."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-134",
+   "sides": [
+    {
+     "text": "Discretionary access control (IAM)",
+     "sub": "4.6 · Access control models"
+    },
+    {
+     "text": "Owner sets permissions",
+     "more": {
+      "text": "The resource owner decides who gets access, usually through ACLs. Flexible but weaker control."
+     }
+    },
+    {
+     "text": "A file's creator grants a coworker read access. Which model?",
+     "more": {
+      "text": "DAC."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-135",
+   "sides": [
+    {
+     "text": "Role-based access control (IAM)",
+     "sub": "4.6 · Access control models"
+    },
+    {
+     "text": "Permissions by role",
+     "more": {
+      "text": "Permissions are tied to job roles; users get access through role membership. Simplifies administration and supports least privilege."
+     }
+    },
+    {
+     "text": "All nurses get the same record permissions through a Nurse role. Which model?",
+     "more": {
+      "text": "RBAC."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-136",
+   "sides": [
+    {
+     "text": "Rule-based access control",
+     "sub": "4.6 · Access control models"
+    },
+    {
+     "text": "Admin-set rules decide",
+     "more": {
+      "text": "Access decisions follow fixed rules set by an administrator, such as allow/deny conditions or time-of-day limits, rather than the user's role."
+     }
+    },
+    {
+     "text": "Access is allowed only from corporate IP ranges, enforced by system rules. Which model?",
+     "more": {
+      "text": "Rule-based access control."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-137",
+   "sides": [
+    {
+     "text": "Attribute-based access control (IAM)",
+     "sub": "4.6 · Access control models"
+    },
+    {
+     "text": "Policy over attributes",
+     "more": {
+      "text": "Decisions evaluate attributes of the user, resource, and context (department, device, location, time) against policy. Highly granular."
+     }
+    },
+    {
+     "text": "Access depends on the user's department, the data's sensitivity, and the device. Which model?",
+     "more": {
+      "text": "ABAC."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-138",
+   "sides": [
+    {
+     "text": "Time-of-day restrictions",
+     "sub": "4.6 · Access control models"
+    },
+    {
+     "text": "Limit when access is allowed",
+     "more": {
+      "text": "Accounts can log in only during permitted hours, reducing the risk of misuse after hours."
+     }
+    },
+    {
+     "text": "Contractors can log in only between 8 a.m. and 6 p.m. Which control?",
+     "more": {
+      "text": "Time-of-day restrictions."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-139",
+   "sides": [
+    {
+     "text": "Least privilege (IAM)",
+     "sub": "4.6 · Access control models"
+    },
+    {
+     "text": "Only the access needed",
+     "more": {
+      "text": "Give accounts the minimum permissions to do the job, and review regularly. Limits damage from compromise."
+     }
+    },
+    {
+     "text": "A help desk technician needs to reset passwords but not change firewall rules. Which principle?",
+     "more": {
+      "text": "Least privilege."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-140",
+   "sides": [
+    {
+     "text": "Multifactor authentication",
+     "sub": "4.6 · Multifactor authentication"
+    },
+    {
+     "text": "Two or more factor categories",
+     "more": {
+      "text": "Combines different factor types (know, have, are, somewhere you are). Two of the same type isn't MFA. Stops most credential-theft attacks."
+     }
+    },
+    {
+     "text": "A password plus a fingerprint scan. Is this MFA?",
+     "more": {
+      "text": "Yes: knowledge plus inherence."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-141",
+   "sides": [
+    {
+     "text": "Biometrics",
+     "sub": "4.6 · Multifactor authentication"
+    },
+    {
+     "text": "Something you are",
+     "more": {
+      "text": "Fingerprint, face, iris, voice. Convenient but can't be changed if compromised. Measured by FAR, FRR, and the crossover error rate (CER)."
+     }
+    },
+    {
+     "text": "Which biometric measure is the point where the false accept and false reject rates are equal?",
+     "more": {
+      "text": "The crossover error rate (CER)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-142",
+   "sides": [
+    {
+     "text": "FAR and FRR",
+     "sub": "4.6 · Multifactor authentication"
+    },
+    {
+     "text": "Biometric error rates",
+     "more": {
+      "text": "False acceptance rate: unauthorized users let in (a security risk). False rejection rate: authorized users blocked (a usability cost). Lower crossover error is better."
+     }
+    },
+    {
+     "text": "A biometric lets an unauthorized person in. Which error?",
+     "more": {
+      "text": "A false acceptance."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-143",
+   "sides": [
+    {
+     "text": "Hard and soft tokens",
+     "sub": "4.6 · Multifactor authentication"
+    },
+    {
+     "text": "Hardware or app one-time codes",
+     "more": {
+      "text": "Hard tokens: physical devices generating codes. Soft tokens: authenticator apps. TOTP codes change every 30 seconds; HOTP codes are counter-based."
+     }
+    },
+    {
+     "text": "An app shows a code that changes every 30 seconds. Which type?",
+     "more": {
+      "text": "A soft token (TOTP)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-144",
+   "sides": [
+    {
+     "text": "Security keys",
+     "sub": "4.6 · Multifactor authentication"
+    },
+    {
+     "text": "Physical keys for phishing-resistant login",
+     "more": {
+      "text": "Hardware devices using FIDO2/WebAuthn public-key cryptography. Resistant to phishing since they verify the site."
+     }
+    },
+    {
+     "text": "A USB key is tapped to approve a login and can't be phished. What is it?",
+     "more": {
+      "text": "A security key (FIDO2)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-145",
+   "sides": [
+    {
+     "text": "Something you know",
+     "sub": "4.6 · Multifactor authentication"
+    },
+    {
+     "text": "Knowledge factor",
+     "more": {
+      "text": "Password, PIN, or answer. Can be guessed, stolen, or phished."
+     }
+    },
+    {
+     "text": "A PIN is which factor?",
+     "more": {
+      "text": "Something you know."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-146",
+   "sides": [
+    {
+     "text": "Something you have",
+     "sub": "4.6 · Multifactor authentication"
+    },
+    {
+     "text": "Possession factor",
+     "more": {
+      "text": "Phone, smart card, token, or key. Can be lost or stolen."
+     }
+    },
+    {
+     "text": "A smart card is which factor?",
+     "more": {
+      "text": "Something you have."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-147",
+   "sides": [
+    {
+     "text": "Something you are",
+     "sub": "4.6 · Multifactor authentication"
+    },
+    {
+     "text": "Inherence factor",
+     "more": {
+      "text": "Biometric traits: fingerprint, face, iris."
+     }
+    },
+    {
+     "text": "A face scan is which factor?",
+     "more": {
+      "text": "Something you are."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-148",
+   "sides": [
+    {
+     "text": "Somewhere you are",
+     "sub": "4.6 · Multifactor authentication"
+    },
+    {
+     "text": "Location factor",
+     "more": {
+      "text": "Location context such as GPS, IP geolocation, or network location, used as an additional signal."
+     }
+    },
+    {
+     "text": "Access is allowed only from the office network. Which factor?",
+     "more": {
+      "text": "Somewhere you are."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-149",
+   "sides": [
+    {
+     "text": "Password best practices",
+     "sub": "4.6 · Passwords"
+    },
+    {
+     "text": "Make passwords strong and managed",
+     "more": {
+      "text": "Favor length over complexity, avoid reuse, use a password manager, add MFA, and check against breached lists. Current guidance discourages frequent forced rotation without cause."
+     }
+    },
+    {
+     "text": "Which matters most for password strength: length or frequent rotation?",
+     "more": {
+      "text": "Length."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-150",
+   "sides": [
+    {
+     "text": "Password length",
+     "sub": "4.6 · Passwords"
+    },
+    {
+     "text": "Longer passwords resist guessing",
+     "more": {
+      "text": "Each added character multiplies the guesses needed. Passphrases of 14 or more characters are strong and memorable."
+     }
+    },
+    {
+     "text": "Which change most increases brute-force resistance?",
+     "more": {
+      "text": "Increasing length."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-151",
+   "sides": [
+    {
+     "text": "Password complexity",
+     "sub": "4.6 · Passwords"
+    },
+    {
+     "text": "Mix of character types",
+     "more": {
+      "text": "Requiring upper case, lower case, digits, and symbols raises entropy but leads to predictable patterns. Length matters more."
+     }
+    },
+    {
+     "text": "A rule requires mixed character types. Which concept?",
+     "more": {
+      "text": "Complexity."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-152",
+   "sides": [
+    {
+     "text": "Password reuse",
+     "sub": "4.6 · Passwords"
+    },
+    {
+     "text": "Same password in many places",
+     "more": {
+      "text": "Reusing passwords lets one breach compromise many accounts (credential stuffing). Password history policies prevent reusing old ones."
+     }
+    },
+    {
+     "text": "Attackers log in to many sites with passwords leaked from one site. What is this?",
+     "more": {
+      "text": "Credential stuffing, enabled by reuse."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-153",
+   "sides": [
+    {
+     "text": "Password expiration",
+     "sub": "4.6 · Passwords"
+    },
+    {
+     "text": "Passwords must change after a time",
+     "more": {
+      "text": "Forces periodic change. Modern guidance (NIST) favors changing only on compromise, since forced rotation produces weaker passwords."
+     }
+    },
+    {
+     "text": "A policy forces changes every 90 days. Which concept?",
+     "more": {
+      "text": "Password expiration."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-154",
+   "sides": [
+    {
+     "text": "Password age",
+     "sub": "4.6 · Passwords"
+    },
+    {
+     "text": "Minimum and maximum password age",
+     "more": {
+      "text": "Minimum age stops users cycling through changes to reuse an old password immediately; maximum age forces eventual change."
+     }
+    },
+    {
+     "text": "Users can't change a password again for a day. Which setting?",
+     "more": {
+      "text": "Minimum password age."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-155",
+   "sides": [
+    {
+     "text": "Password managers",
+     "sub": "4.6 · Passwords"
+    },
+    {
+     "text": "Store and generate strong passwords",
+     "more": {
+      "text": "Encrypted vaults generate and store unique passwords and autofill only on correct sites, reducing reuse and phishing."
+     }
+    },
+    {
+     "text": "A tool creates and stores a unique password per site. What is it?",
+     "more": {
+      "text": "A password manager."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-156",
+   "sides": [
+    {
+     "text": "Passwordless",
+     "sub": "4.6 · Passwords"
+    },
+    {
+     "text": "Authenticate without passwords",
+     "more": {
+      "text": "Uses passkeys, biometrics, security keys, or magic links with public-key cryptography. Removes password theft and phishing."
+     }
+    },
+    {
+     "text": "Users sign in with a device-bound passkey and a fingerprint. Which approach?",
+     "more": {
+      "text": "Passwordless authentication."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-157",
+   "sides": [
+    {
+     "text": "Privileged access management",
+     "sub": "4.6 · Privileged access management"
+    },
+    {
+     "text": "Control and monitor admin access",
+     "more": {
+      "text": "Tools that secure privileged accounts: vaulting credentials, granting time-limited access, recording sessions, and enforcing least privilege."
+     }
+    },
+    {
+     "text": "Admins check out credentials from a vault and sessions are recorded. Which solution?",
+     "more": {
+      "text": "PAM."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-158",
+   "sides": [
+    {
+     "text": "Just-in-time permissions",
+     "sub": "4.6 · Privileged access management"
+    },
+    {
+     "text": "Access only when needed, then removed",
+     "more": {
+      "text": "Elevated rights are granted temporarily for a task and revoked automatically, shrinking standing privileges."
+     }
+    },
+    {
+     "text": "An admin gets elevated rights for two hours, then they expire. Which approach?",
+     "more": {
+      "text": "Just-in-time permissions."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-159",
+   "sides": [
+    {
+     "text": "Password vaulting",
+     "sub": "4.6 · Privileged access management"
+    },
+    {
+     "text": "Store privileged credentials centrally",
+     "more": {
+      "text": "Credentials are stored encrypted, checked out under policy, logged, and rotated automatically."
+     }
+    },
+    {
+     "text": "Privileged passwords are stored in a secure vault and rotated after use.",
+     "more": {
+      "text": "Password vaulting."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-160",
+   "sides": [
+    {
+     "text": "Ephemeral credentials",
+     "sub": "4.6 · Privileged access management"
+    },
+    {
+     "text": "Short-lived credentials",
+     "more": {
+      "text": "Credentials that exist briefly and expire automatically, so stolen ones quickly become useless."
+     }
+    },
+    {
+     "text": "A credential is generated for one session and expires after use. Which type?",
+     "more": {
+      "text": "An ephemeral credential."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-161",
+   "sides": [
+    {
+     "text": "User provisioning (automation)",
+     "sub": "4.7 · Automation use cases"
+    },
+    {
+     "text": "Auto-create and remove accounts",
+     "more": {
+      "text": "Scripts or workflows create, change, and disable accounts when HR events occur, ensuring speed and consistency."
+     }
+    },
+    {
+     "text": "A new hire's accounts are created automatically from the HR system. Which use case?",
+     "more": {
+      "text": "User provisioning."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-162",
+   "sides": [
+    {
+     "text": "Resource provisioning",
+     "sub": "4.7 · Automation use cases"
+    },
+    {
+     "text": "Auto-deploy infrastructure",
+     "more": {
+      "text": "Automatically build servers, networks, and cloud resources from templates (IaC) with consistent security settings."
+     }
+    },
+    {
+     "text": "A script builds a hardened server from a template. Which use case?",
+     "more": {
+      "text": "Resource provisioning."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-163",
+   "sides": [
+    {
+     "text": "Guard rails",
+     "sub": "4.7 · Automation use cases"
+    },
+    {
+     "text": "Automated limits that prevent unsafe actions",
+     "more": {
+      "text": "Policies that block or flag risky actions automatically, such as preventing public storage buckets or disallowed regions."
+     }
+    },
+    {
+     "text": "A cloud policy automatically blocks creating public storage. Which concept?",
+     "more": {
+      "text": "Guard rails."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-164",
+   "sides": [
+    {
+     "text": "Security groups (automation)",
+     "sub": "4.7 · Automation use cases"
+    },
+    {
+     "text": "Automated network access rules",
+     "more": {
+      "text": "Automating the creation and updating of security group rules keeps access consistent and least-privilege."
+     }
+    },
+    {
+     "text": "Rules are updated automatically when a new server is added. Which use case?",
+     "more": {
+      "text": "Automating security groups."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-165",
+   "sides": [
+    {
+     "text": "Ticket creation",
+     "sub": "4.7 · Automation use cases"
+    },
+    {
+     "text": "Auto-open tickets for issues",
+     "more": {
+      "text": "Alerts automatically create tickets with context so issues are tracked and assigned."
+     }
+    },
+    {
+     "text": "A SIEM alert opens a ticket with details automatically.",
+     "more": {
+      "text": "Ticket creation automation."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-166",
+   "sides": [
+    {
+     "text": "Escalation",
+     "sub": "4.7 · Automation use cases"
+    },
+    {
+     "text": "Automatic routing to higher tiers",
+     "more": {
+      "text": "Unresolved or severe alerts are automatically escalated to senior staff within set time limits."
+     }
+    },
+    {
+     "text": "A critical alert that isn't acknowledged in 15 minutes pages the on-call manager.",
+     "more": {
+      "text": "Escalation."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-167",
+   "sides": [
+    {
+     "text": "Enabling and disabling services and access",
+     "sub": "4.7 · Automation use cases"
+    },
+    {
+     "text": "Auto-adjust access",
+     "more": {
+      "text": "Automatically turn services or accounts on or off in response to events, such as disabling a compromised account."
+     }
+    },
+    {
+     "text": "A compromised account is automatically disabled after a risk alert.",
+     "more": {
+      "text": "Automated disabling of access."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-168",
+   "sides": [
+    {
+     "text": "Continuous integration and testing",
+     "sub": "4.7 · Automation use cases"
+    },
+    {
+     "text": "Automated build and test pipelines",
+     "more": {
+      "text": "CI/CD pipelines build code and run automated security tests (SAST, dependency scans) on every change, catching flaws early."
+     }
+    },
+    {
+     "text": "Every code commit triggers automated security scans. Which practice?",
+     "more": {
+      "text": "Continuous integration and testing."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-169",
+   "sides": [
+    {
+     "text": "Integrations and APIs",
+     "sub": "4.7 · Automation use cases"
+    },
+    {
+     "text": "Connect tools together",
+     "more": {
+      "text": "APIs let security tools share data and trigger actions, enabling orchestration across systems. APIs themselves must be secured."
+     }
+    },
+    {
+     "text": "A SOAR tool calls a firewall API to block an IP automatically. Which capability?",
+     "more": {
+      "text": "Integration through APIs."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-170",
+   "sides": [
+    {
+     "text": "Efficiency and time saving",
+     "sub": "4.7 · Automation benefits"
+    },
+    {
+     "text": "Do repetitive work automatically",
+     "more": {
+      "text": "Automation frees staff from routine tasks, reducing delays and errors."
+     }
+    },
+    {
+     "text": "Automating account creation saves hours each week. Which benefit?",
+     "more": {
+      "text": "Efficiency/time saving."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-171",
+   "sides": [
+    {
+     "text": "Enforcing baselines (automation)",
+     "sub": "4.7 · Automation benefits"
+    },
+    {
+     "text": "Keep systems consistent",
+     "more": {
+      "text": "Automation applies and reapplies secure configurations, correcting drift."
+     }
+    },
+    {
+     "text": "A tool restores required settings whenever they change. Which benefit?",
+     "more": {
+      "text": "Enforcing baselines."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-172",
+   "sides": [
+    {
+     "text": "Standard infrastructure configurations",
+     "sub": "4.7 · Automation benefits"
+    },
+    {
+     "text": "Identical, repeatable builds",
+     "more": {
+      "text": "Templates and scripts build systems the same way every time, reducing misconfiguration."
+     }
+    },
+    {
+     "text": "All servers are built from one template. Which benefit?",
+     "more": {
+      "text": "Standard infrastructure configurations."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-173",
+   "sides": [
+    {
+     "text": "Scaling in a secure manner",
+     "sub": "4.7 · Automation benefits"
+    },
+    {
+     "text": "Grow without losing control",
+     "more": {
+      "text": "Automation applies security controls as systems scale, instead of requiring manual work for each new system."
+     }
+    },
+    {
+     "text": "New cloud instances get security settings automatically as they scale.",
+     "more": {
+      "text": "Scaling in a secure manner."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-174",
+   "sides": [
+    {
+     "text": "Employee retention",
+     "sub": "4.7 · Automation benefits"
+    },
+    {
+     "text": "Less tedious work, happier staff",
+     "more": {
+      "text": "Removing repetitive tasks lets staff do more meaningful work, which can improve morale and retention."
+     }
+    },
+    {
+     "text": "Which benefit comes from freeing analysts from repetitive tasks?",
+     "more": {
+      "text": "Employee retention."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-175",
+   "sides": [
+    {
+     "text": "Reaction time",
+     "sub": "4.7 · Automation benefits"
+    },
+    {
+     "text": "Respond faster",
+     "more": {
+      "text": "Automated response acts in seconds, limiting damage from attacks."
+     }
+    },
+    {
+     "text": "A system blocks a malicious IP in seconds without human action. Which benefit?",
+     "more": {
+      "text": "Faster reaction time."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-176",
+   "sides": [
+    {
+     "text": "Workforce multiplier",
+     "sub": "4.7 · Automation benefits"
+    },
+    {
+     "text": "Do more with the same team",
+     "more": {
+      "text": "Automation lets a small team handle more systems and alerts, effectively multiplying capacity."
+     }
+    },
+    {
+     "text": "One analyst handles alerts that once needed several people. Which benefit?",
+     "more": {
+      "text": "Workforce multiplier."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-177",
+   "sides": [
+    {
+     "text": "Complexity",
+     "sub": "4.7 · Automation considerations"
+    },
+    {
+     "text": "More moving parts",
+     "more": {
+      "text": "Automation adds scripts, integrations, and dependencies that can be hard to understand and troubleshoot."
+     }
+    },
+    {
+     "text": "A chain of scripts is hard to understand. Which concern?",
+     "more": {
+      "text": "Complexity."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-178",
+   "sides": [
+    {
+     "text": "Cost (automation)",
+     "sub": "4.7 · Automation considerations"
+    },
+    {
+     "text": "Tools and effort",
+     "more": {
+      "text": "Licenses, development time, and maintenance cost money; make sure the return justifies it."
+     }
+    },
+    {
+     "text": "Which consideration weighs tool licensing and engineering time?",
+     "more": {
+      "text": "Cost."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-179",
+   "sides": [
+    {
+     "text": "Single point of failure",
+     "sub": "4.7 · Automation considerations"
+    },
+    {
+     "text": "Everything depends on one system",
+     "more": {
+      "text": "If the automation platform fails or is wrong, many processes fail. Build in redundancy and fallback."
+     }
+    },
+    {
+     "text": "A failed orchestration server stops all incident response. Which risk?",
+     "more": {
+      "text": "A single point of failure."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-180",
+   "sides": [
+    {
+     "text": "Technical debt",
+     "sub": "4.7 · Automation considerations"
+    },
+    {
+     "text": "Shortcuts that cost later",
+     "more": {
+      "text": "Quick fixes and undocumented scripts accumulate and make future changes harder and riskier."
+     }
+    },
+    {
+     "text": "Old undocumented scripts nobody dares change. Which concept?",
+     "more": {
+      "text": "Technical debt."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-181",
+   "sides": [
+    {
+     "text": "Ongoing supportability",
+     "sub": "4.7 · Automation considerations"
+    },
+    {
+     "text": "Someone must maintain it",
+     "more": {
+      "text": "Automation needs updates, monitoring, documentation, and skilled owners over time."
+     }
+    },
+    {
+     "text": "Which consideration covers who will maintain scripts in future years?",
+     "more": {
+      "text": "Ongoing supportability."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-182",
+   "sides": [
+    {
+     "text": "Orchestration vs automation",
+     "sub": "4.7 · Automation considerations"
+    },
+    {
+     "text": "Coordinating many automated tasks",
+     "more": {
+      "text": "Automation performs a task. Orchestration coordinates multiple automated tasks and systems into a workflow. SOAR platforms orchestrate security response."
+     }
+    },
+    {
+     "text": "A platform ties alerts, enrichment, and blocking into one workflow. Which concept?",
+     "more": {
+      "text": "Orchestration (SOAR)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-183",
+   "sides": [
+    {
+     "text": "Incident response process",
+     "sub": "4.8 · Incident response process"
+    },
+    {
+     "text": "Phases of handling an incident",
+     "more": {
+      "text": "Preparation, detection, analysis, containment, eradication, recovery, lessons learned. Follow the plan in order."
+     }
+    },
+    {
+     "text": "Which phase comes right after detection?",
+     "more": {
+      "text": "Analysis."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-184",
+   "sides": [
+    {
+     "text": "Preparation",
+     "sub": "4.8 · Incident response process"
+    },
+    {
+     "text": "Get ready before incidents happen",
+     "more": {
+      "text": "Develop the IR plan, assemble a team, train, and set up tools and communication channels."
+     }
+    },
+    {
+     "text": "A team writes a plan and sets up tools before any incident. Which phase?",
+     "more": {
+      "text": "Preparation."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-185",
+   "sides": [
+    {
+     "text": "Detection",
+     "sub": "4.8 · Incident response process"
+    },
+    {
+     "text": "Notice an incident",
+     "more": {
+      "text": "Identify events through monitoring, alerts, and reports to recognize that an incident may be occurring."
+     }
+    },
+    {
+     "text": "A SIEM alert reveals unusual outbound traffic. Which phase?",
+     "more": {
+      "text": "Detection."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-186",
+   "sides": [
+    {
+     "text": "Analysis",
+     "sub": "4.8 · Incident response process"
+    },
+    {
+     "text": "Understand what happened",
+     "more": {
+      "text": "Determine scope, severity, and impact: what's affected, how it entered, what the attacker did."
+     }
+    },
+    {
+     "text": "An analyst determines which systems are affected and how the attacker got in. Which phase?",
+     "more": {
+      "text": "Analysis."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-187",
+   "sides": [
+    {
+     "text": "Containment",
+     "sub": "4.8 · Incident response process"
+    },
+    {
+     "text": "Stop the spread",
+     "more": {
+      "text": "Limit damage by isolating affected systems or accounts, short term and long term, while preserving evidence."
+     }
+    },
+    {
+     "text": "Infected hosts are disconnected from the network. Which phase?",
+     "more": {
+      "text": "Containment."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-188",
+   "sides": [
+    {
+     "text": "Eradication",
+     "sub": "4.8 · Incident response process"
+    },
+    {
+     "text": "Remove the cause",
+     "more": {
+      "text": "Eliminate the threat: remove malware, close the entry point, reset credentials, and patch vulnerabilities."
+     }
+    },
+    {
+     "text": "The malware is removed and the exploited flaw is patched. Which phase?",
+     "more": {
+      "text": "Eradication."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-189",
+   "sides": [
+    {
+     "text": "Recovery",
+     "sub": "4.8 · Incident response process"
+    },
+    {
+     "text": "Restore normal operations",
+     "more": {
+      "text": "Bring systems back safely from clean backups and monitor for reinfection."
+     }
+    },
+    {
+     "text": "Systems are rebuilt from clean backups and returned to service. Which phase?",
+     "more": {
+      "text": "Recovery."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-190",
+   "sides": [
+    {
+     "text": "Lessons learned",
+     "sub": "4.8 · Incident response process"
+    },
+    {
+     "text": "Review and improve",
+     "more": {
+      "text": "After the incident, review what happened, what worked, and what to change; update plans and controls."
+     }
+    },
+    {
+     "text": "A post-incident meeting identifies improvements. Which phase?",
+     "more": {
+      "text": "Lessons learned."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-191",
+   "sides": [
+    {
+     "text": "Incident response training",
+     "sub": "4.8 · Training, testing, and analysis"
+    },
+    {
+     "text": "Practice roles and procedures",
+     "more": {
+      "text": "Regular training ensures staff know their roles and the plan, including exercises and awareness of reporting procedures."
+     }
+    },
+    {
+     "text": "Staff practice their incident roles each quarter. Which activity?",
+     "more": {
+      "text": "Training."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-192",
+   "sides": [
+    {
+     "text": "Tabletop exercise (IR)",
+     "sub": "4.8 · Training, testing, and analysis"
+    },
+    {
+     "text": "Walk through a scenario in discussion",
+     "more": {
+      "text": "A discussion-based test of the IR plan with no systems touched. Reveals gaps cheaply."
+     }
+    },
+    {
+     "text": "Leaders discuss how they'd respond to a breach scenario in a meeting.",
+     "more": {
+      "text": "A tabletop exercise."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-193",
+   "sides": [
+    {
+     "text": "Simulation (IR)",
+     "sub": "4.8 · Training, testing, and analysis"
+    },
+    {
+     "text": "Hands-on practice with simulated attacks",
+     "more": {
+      "text": "A realistic simulated incident (red and blue team, live drills) tests people, processes, and tools."
+     }
+    },
+    {
+     "text": "A simulated attack tests detection and response by the SOC.",
+     "more": {
+      "text": "A simulation."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-194",
+   "sides": [
+    {
+     "text": "Root cause analysis",
+     "sub": "4.8 · Training, testing, and analysis"
+    },
+    {
+     "text": "Find why it happened",
+     "more": {
+      "text": "Determine the underlying cause, not just the symptoms, so it can be fixed and not recur."
+     }
+    },
+    {
+     "text": "After an outage, a team traces it to a missed patch process. Which activity?",
+     "more": {
+      "text": "Root cause analysis."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-195",
+   "sides": [
+    {
+     "text": "Threat hunting",
+     "sub": "4.8 · Training, testing, and analysis"
+    },
+    {
+     "text": "Proactively search for hidden threats",
+     "more": {
+      "text": "Analysts actively look for signs of compromise that alerts missed, using hypotheses and threat intelligence."
+     }
+    },
+    {
+     "text": "Analysts search logs for signs of an attacker before any alert fires. Which activity?",
+     "more": {
+      "text": "Threat hunting."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-196",
+   "sides": [
+    {
+     "text": "Legal hold",
+     "sub": "4.8 · Digital forensics"
+    },
+    {
+     "text": "Preserve data for litigation",
+     "more": {
+      "text": "A directive to retain relevant data and suspend normal deletion when litigation or an investigation is expected."
+     }
+    },
+    {
+     "text": "Legal tells IT to stop deleting emails related to a lawsuit. What is this?",
+     "more": {
+      "text": "A legal hold."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-197",
+   "sides": [
+    {
+     "text": "Chain of custody",
+     "sub": "4.8 · Digital forensics"
+    },
+    {
+     "text": "Documented evidence handling",
+     "more": {
+      "text": "A record of who collected, handled, and stored evidence and when, proving it wasn't altered. Required for it to be admissible."
+     }
+    },
+    {
+     "text": "Every person who handled a drive signs a log. What is it?",
+     "more": {
+      "text": "Chain of custody."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-198",
+   "sides": [
+    {
+     "text": "Acquisition",
+     "sub": "4.8 · Digital forensics"
+    },
+    {
+     "text": "Collecting evidence",
+     "more": {
+      "text": "Collect data (disk images, memory, logs) using forensically sound methods such as write blockers and hashing to preserve integrity."
+     }
+    },
+    {
+     "text": "An investigator images a drive using a write blocker and hashes it. Which step?",
+     "more": {
+      "text": "Acquisition."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-199",
+   "sides": [
+    {
+     "text": "Forensic reporting",
+     "sub": "4.8 · Digital forensics"
+    },
+    {
+     "text": "Document findings",
+     "more": {
+      "text": "A clear, accurate report of what was collected, how, and what was found, suitable for management or legal use."
+     }
+    },
+    {
+     "text": "An investigator documents methods and conclusions for the legal team. Which step?",
+     "more": {
+      "text": "Reporting."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-200",
+   "sides": [
+    {
+     "text": "Preservation",
+     "sub": "4.8 · Digital forensics"
+    },
+    {
+     "text": "Keep evidence intact",
+     "more": {
+      "text": "Protect evidence from change or loss through hashing, secure storage, and limited access."
+     }
+    },
+    {
+     "text": "Evidence is hashed and locked in a secure room. Which step?",
+     "more": {
+      "text": "Preservation."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-201",
+   "sides": [
+    {
+     "text": "E-discovery",
+     "sub": "4.8 · Digital forensics"
+    },
+    {
+     "text": "Finding electronic evidence for legal cases",
+     "more": {
+      "text": "Identifying, collecting, and producing electronic information for legal proceedings, under legal hold."
+     }
+    },
+    {
+     "text": "Lawyers request relevant emails and documents for a case. Which process?",
+     "more": {
+      "text": "E-discovery."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-202",
+   "sides": [
+    {
+     "text": "Order of volatility",
+     "sub": "4.8 · Digital forensics"
+    },
+    {
+     "text": "Collect the most fleeting data first",
+     "more": {
+      "text": "Capture from most to least volatile: CPU registers and cache, RAM, network state and processes, then disk, then logs and backups."
+     }
+    },
+    {
+     "text": "Which should be collected first: a disk image or RAM?",
+     "more": {
+      "text": "RAM, because it's more volatile."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-203",
+   "sides": [
+    {
+     "text": "Firewall logs",
+     "sub": "4.9 · Log data"
+    },
+    {
+     "text": "Allowed and blocked connections",
+     "more": {
+      "text": "Show source, destination, port, protocol, and action. Useful for spotting scans, blocked attacks, and unusual outbound traffic."
+     }
+    },
+    {
+     "text": "Which logs show a blocked connection attempt from an external IP?",
+     "more": {
+      "text": "Firewall logs."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-204",
+   "sides": [
+    {
+     "text": "Application logs",
+     "sub": "4.9 · Log data"
+    },
+    {
+     "text": "Events from software",
+     "more": {
+      "text": "Record application events, errors, and user actions, such as failed logins or SQL errors, to help investigate attacks on apps."
+     }
+    },
+    {
+     "text": "Which logs show repeated SQL errors from a web app?",
+     "more": {
+      "text": "Application logs."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-205",
+   "sides": [
+    {
+     "text": "Endpoint logs",
+     "sub": "4.9 · Log data"
+    },
+    {
+     "text": "Activity on devices",
+     "more": {
+      "text": "Record process starts, file changes, and USB use on endpoints. Key for tracing malware."
+     }
+    },
+    {
+     "text": "Which logs show a process starting on a workstation?",
+     "more": {
+      "text": "Endpoint logs."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-206",
+   "sides": [
+    {
+     "text": "OS-specific security logs",
+     "sub": "4.9 · Log data"
+    },
+    {
+     "text": "Operating system security events",
+     "more": {
+      "text": "The Windows Security log (logons, privilege use) and Linux auth logs show authentication and access events."
+     }
+    },
+    {
+     "text": "Which logs show failed administrator logons on a Windows server?",
+     "more": {
+      "text": "OS-specific security logs."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-207",
+   "sides": [
+    {
+     "text": "IDS/IPS logs",
+     "sub": "4.9 · Log data"
+    },
+    {
+     "text": "Detected intrusions",
+     "more": {
+      "text": "Alerts on signatures matched and traffic blocked or flagged, with details of the source and rule."
+     }
+    },
+    {
+     "text": "Which logs show a detected exploit attempt and the matching signature?",
+     "more": {
+      "text": "IDS/IPS logs."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-208",
+   "sides": [
+    {
+     "text": "Network logs",
+     "sub": "4.9 · Log data"
+    },
+    {
+     "text": "Traffic and device events",
+     "more": {
+      "text": "From routers, switches, DNS, DHCP, and proxies. Show who connected to what and when."
+     }
+    },
+    {
+     "text": "Which logs show which device had a given IP at a given time?",
+     "more": {
+      "text": "Network logs (DHCP)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-209",
+   "sides": [
+    {
+     "text": "Metadata",
+     "sub": "4.9 · Log data"
+    },
+    {
+     "text": "Data about data",
+     "more": {
+      "text": "Information about files, emails, and traffic (author, timestamps, headers, geolocation) that helps establish when and who, without needing content."
+     }
+    },
+    {
+     "text": "Email headers reveal the originating server. What is that information?",
+     "more": {
+      "text": "Metadata."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-210",
+   "sides": [
+    {
+     "text": "Vulnerability scans (data source)",
+     "sub": "4.9 · Other data sources"
+    },
+    {
+     "text": "Known weaknesses on systems",
+     "more": {
+      "text": "Scan results show unpatched or exposed systems and help determine how an attacker got in."
+     }
+    },
+    {
+     "text": "Which source shows that a compromised server had a known unpatched flaw?",
+     "more": {
+      "text": "Vulnerability scan results."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-211",
+   "sides": [
+    {
+     "text": "Automated reports",
+     "sub": "4.9 · Other data sources"
+    },
+    {
+     "text": "Scheduled summaries",
+     "more": {
+      "text": "Regular reports from tools summarize security events and trends to support investigation and oversight."
+     }
+    },
+    {
+     "text": "A weekly summary shows spikes in failed logins. Which source?",
+     "more": {
+      "text": "Automated reports."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-212",
+   "sides": [
+    {
+     "text": "Dashboards",
+     "sub": "4.9 · Other data sources"
+    },
+    {
+     "text": "Real-time visual overview",
+     "more": {
+      "text": "Visual displays of key metrics and alerts (SIEM dashboards) for quick monitoring and trend spotting."
+     }
+    },
+    {
+     "text": "A wall display shows live security alerts and trends. What is it?",
+     "more": {
+      "text": "A dashboard."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-213",
+   "sides": [
+    {
+     "text": "Packet captures",
+     "sub": "4.9 · Other data sources"
+    },
+    {
+     "text": "Raw network traffic",
+     "more": {
+      "text": "Full packet data (pcap, Wireshark) allows deep analysis of what actually crossed the network, including payloads. Large and sensitive."
+     }
+    },
+    {
+     "text": "Which source reveals the actual contents of network communications?",
+     "more": {
+      "text": "Packet captures."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d4-214",
+   "sides": [
+    {
+     "text": "Log correlation",
+     "sub": "4.9 · Other data sources"
+    },
+    {
+     "text": "Linking events across sources",
+     "more": {
+      "text": "Correlation links events from multiple logs to reveal an attack sequence that no single log shows. Needs synchronized time (NTP)."
+     }
+    },
+    {
+     "text": "A login failure on a server, a firewall block, and a data transfer are linked as one attack. What is this?",
+     "more": {
+      "text": "Event correlation in the SIEM."
+     }
+    }
+   ]
+  }
+ ]
+}

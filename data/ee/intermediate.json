@@ -1,0 +1,5381 @@
+{
+ "id": "ee-intermediate",
+ "name": "2 · Intermediate",
+ "cards": [
+  {
+   "sides": [
+    {
+     "text": "Decibels",
+     "sub": "Math · Intermediate"
+    },
+    {
+     "text": "dB = 10 log₁₀(P₂/P₁), or 20 log₁₀(V₂/V₁)",
+     "more": {
+      "text": "Doubling power is +3 dB, doubling voltage is +6 dB, and ×10 power is +10 dB. Negative dB means attenuation. Decibels turn multiplication into addition."
+     }
+    },
+    {
+     "text": "A voltage gain of 100 is how many dB?",
+     "more": {
+      "text": "40 dB (20 × log₁₀ 100)."
+     }
+    }
+   ],
+   "id": "ee-i-1"
+  },
+  {
+   "sides": [
+    {
+     "text": "Sinusoids",
+     "sub": "Circuit analysis · Intermediate"
+    },
+    {
+     "text": "v(t) = Vp sin(2πft + φ)",
+     "more": {
+      "text": "Amplitude Vp, frequency f, and phase φ describe a sine wave. The period is T = 1/f. Almost all AC signals can be built from sinusoids."
+     },
+     "svg": "<svg viewBox=\"0 0 260 158\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" font-family=\"system-ui,sans-serif\" font-size=\"13\"><path d=\"M34 12V126H250\" stroke-width=\"1.5\"/><path d=\"M34 69.0H250\" stroke-width=\"1\" stroke-dasharray=\"3 4\" opacity=\".5\"/><path d=\"M34.0 69.0L35.4 67.4L36.7 65.8L38.0 64.2L39.4 62.6L40.8 61.1L42.1 59.5L43.5 57.9L44.8 56.4L46.1 54.9L47.5 53.4L48.8 52.0L50.2 50.5L51.5 49.1L52.9 47.7L54.2 46.4L55.6 45.1L57.0 43.8L58.3 42.6L59.6 41.4L61.0 40.2L62.4 39.1L63.7 38.0L65.0 37.0L66.4 36.1L67.8 35.1L69.1 34.3L70.5 33.5L71.8 32.7L73.2 32.0L74.5 31.4L75.8 30.8L77.2 30.3L78.5 29.8L79.9 29.4L81.2 29.1L82.6 28.8L84.0 28.6L85.3 28.4L86.7 28.3L88.0 28.3L89.3 28.3L90.7 28.4L92.0 28.6L93.4 28.8L94.8 29.1L96.1 29.4L97.5 29.8L98.8 30.3L100.1 30.8L101.5 31.4L102.8 32.0L104.2 32.7L105.6 33.5L106.9 34.3L108.3 35.1L109.6 36.1L110.9 37.0L112.3 38.0L113.6 39.1L115.0 40.2L116.4 41.4L117.7 42.6L119.1 43.8L120.4 45.1L121.7 46.4L123.1 47.7L124.4 49.1L125.8 50.5L127.2 52.0L128.5 53.4L129.9 54.9L131.2 56.4L132.6 57.9L133.9 59.5L135.2 61.1L136.6 62.6L137.9 64.2L139.3 65.8L140.7 67.4L142.0 69.0L143.3 70.6L144.7 72.2L146.1 73.8L147.4 75.4L148.8 76.9L150.1 78.5L151.4 80.1L152.8 81.6L154.2 83.1L155.5 84.6L156.8 86.0L158.2 87.5L159.5 88.9L160.9 90.3L162.2 91.6L163.6 92.9L164.9 94.2L166.3 95.4L167.7 96.6L169.0 97.8L170.4 98.9L171.7 100.0L173.0 101.0L174.4 101.9L175.8 102.9L177.1 103.7L178.4 104.5L179.8 105.3L181.1 106.0L182.5 106.6L183.8 107.2L185.2 107.7L186.6 108.2L187.9 108.6L189.3 108.9L190.6 109.2L192.0 109.4L193.3 109.6L194.6 109.7L196.0 109.7L197.4 109.7L198.7 109.6L200.0 109.4L201.4 109.2L202.7 108.9L204.1 108.6L205.4 108.2L206.8 107.7L208.2 107.2L209.5 106.6L210.9 106.0L212.2 105.3L213.6 104.5L214.9 103.7L216.2 102.9L217.6 101.9L219.0 101.0L220.3 100.0L221.6 98.9L223.0 97.8L224.3 96.6L225.7 95.4L227.0 94.2L228.4 92.9L229.8 91.6L231.1 90.3L232.5 88.9L233.8 87.5L235.2 86.0L236.5 84.6L237.8 83.1L239.2 81.6L240.6 80.1L241.9 78.5L243.2 76.9L244.6 75.4L245.9 73.8L247.3 72.2L248.6 70.6L250.0 69.0\" class=\"\" stroke-width=\"2.2\"/><path d=\"M34 28.3H250\" stroke-width=\"1\" stroke-dasharray=\"4 4\" opacity=\".55\"/><text x=\"30\" y=\"32.28571428571428\" text-anchor=\"end\" fill=\"currentColor\" stroke=\"none\">Vp</text><path d=\"M34 109.7H250\" stroke-width=\"1\" stroke-dasharray=\"4 4\" opacity=\".55\"/><text x=\"30\" y=\"113.71428571428572\" text-anchor=\"end\" fill=\"currentColor\" stroke=\"none\">−Vp</text><path d=\"M250.0 12V126\" stroke-width=\"1\" stroke-dasharray=\"4 4\" opacity=\".55\"/><text x=\"250.0\" y=\"140\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">T</text><text x=\"142.0\" y=\"155\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">time</text></svg>"
+    },
+    {
+     "text": "A 5 V peak, 1 kHz sine wave. What is its period?",
+     "more": {
+      "text": "1 ms (T = 1/f)."
+     }
+    }
+   ],
+   "id": "ee-i-2"
+  },
+  {
+   "sides": [
+    {
+     "text": "Peak, peak-to-peak, and RMS",
+     "sub": "Circuit analysis · Intermediate"
+    },
+    {
+     "text": "Vpp = 2 Vp, and Vrms = Vp / √2",
+     "more": {
+      "text": "RMS is the value that delivers the same heating as DC. A multimeter on AC usually reads RMS (true-RMS meters stay accurate for non-sine waves)."
+     }
+    },
+    {
+     "text": "A sine wave is 3.3 V peak-to-peak. What is its RMS value?",
+     "more": {
+      "text": "About 1.17 V (Vp = 1.65 V, so 1.65 / √2)."
+     }
+    }
+   ],
+   "id": "ee-i-3"
+  },
+  {
+   "sides": [
+    {
+     "text": "Phase",
+     "sub": "Circuit analysis · Intermediate"
+    },
+    {
+     "text": "Time shift between waves, in degrees",
+     "more": {
+      "text": "One full period is 360°. The wave that reaches its peak first leads; the other lags."
+     }
+    },
+    {
+     "text": "A 1 kHz wave is delayed by 0.25 ms. What is its phase lag?",
+     "more": {
+      "text": "90° (0.25 ms of a 1 ms period)."
+     }
+    }
+   ],
+   "id": "ee-i-4"
+  },
+  {
+   "sides": [
+    {
+     "text": "Phasors",
+     "sub": "Circuit analysis · Intermediate"
+    },
+    {
+     "text": "Sinusoids as rotating vectors",
+     "more": {
+      "text": "A phasor has magnitude and phase (V = Vp∠φ). Using complex numbers turns calculus on sinusoids into algebra. Impedance is Z = R + jX."
+     }
+    },
+    {
+     "text": "Convert 3 + j4 to polar form.",
+     "more": {
+      "text": "5∠53.1° (magnitude √(9 + 16), angle arctan(4/3))."
+     }
+    }
+   ],
+   "id": "ee-i-5"
+  },
+  {
+   "sides": [
+    {
+     "text": "Inductive reactance",
+     "sub": "Circuit analysis · Intermediate"
+    },
+    {
+     "text": "X_L = 2πfL",
+     "more": {
+      "text": "An inductor's opposition grows with frequency, so inductors pass low frequencies and block high ones."
+     }
+    },
+    {
+     "text": "A 10 mH inductor at 1 kHz. What is its reactance?",
+     "more": {
+      "text": "About 62.8 Ω (2π × 1000 × 0.01)."
+     }
+    }
+   ],
+   "id": "ee-i-6"
+  },
+  {
+   "sides": [
+    {
+     "text": "Capacitive reactance",
+     "sub": "Circuit analysis · Intermediate"
+    },
+    {
+     "text": "X_C = 1 / (2πfC)",
+     "more": {
+      "text": "A capacitor's opposition falls as frequency rises, so capacitors pass high frequencies and block DC."
+     }
+    },
+    {
+     "text": "A 1 µF capacitor at 1 kHz. What is its reactance?",
+     "more": {
+      "text": "About 159 Ω."
+     }
+    }
+   ],
+   "id": "ee-i-7"
+  },
+  {
+   "sides": [
+    {
+     "text": "Impedance",
+     "sub": "Circuit analysis · Intermediate"
+    },
+    {
+     "text": "Z = R + jX, the opposition to AC",
+     "more": {
+      "text": "Magnitude |Z| = √(R² + X²) and phase = arctan(X/R). Inductors add +jX_L and capacitors add −jX_C. Ohm's law holds for phasors: V = I × Z."
+     }
+    },
+    {
+     "text": "R = 30 Ω in series with X_L = 40 Ω. What is |Z|?",
+     "more": {
+      "text": "50 Ω (√(30² + 40²))."
+     }
+    }
+   ],
+   "id": "ee-i-8"
+  },
+  {
+   "sides": [
+    {
+     "text": "Series RLC resonance",
+     "sub": "Circuit analysis · Intermediate"
+    },
+    {
+     "text": "f₀ = 1 / (2π√(LC))",
+     "more": {
+      "text": "At resonance X_L = X_C, so they cancel and the impedance is just R. Current peaks at f₀."
+     },
+     "svg": "<svg viewBox=\"0 0 260 160\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" font-family=\"system-ui,sans-serif\" font-size=\"13\"><path d=\"M40 25L40 58.0\"/><g transform=\"translate(40 58.0) rotate(90)\"><path d=\"M0 0H8M8 0a14 14 0 1 0 28 0a14 14 0 1 0 -28 0M36 0H44M14 0q4 -8 8 0t8 0\"/></g><path d=\"M40 102.0L40 135\"/><path d=\"M40 25L52.5 25\"/><g transform=\"translate(52.5 25) rotate(0)\"><path d=\"M0 0H8L12 -9L20 9L28 -9L36 9L40 0H48\"/></g><path d=\"M100.5 25L113.0 25\"/><g transform=\"translate(113.0 25) rotate(0)\"><path d=\"M0 0H6C6 -12 18 -12 18 0C18 -12 30 -12 30 0C30 -12 42 -12 42 0H48\"/></g><path d=\"M161.0 25L173.5 25\"/><g transform=\"translate(173.5 25) rotate(0)\"><path d=\"M0 0H19M19 -13V13M25 -13V13M25 0H44\"/></g><path d=\"M217.5 25L230 25\"/><path d=\"M230 25L230 135\"/><path d=\"M40 135L230 135\"/><text x=\"76.5\" y=\"12\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">R</text><text x=\"137.0\" y=\"12\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">L</text><text x=\"195.5\" y=\"12\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">C</text><text x=\"58\" y=\"84\" text-anchor=\"start\" fill=\"currentColor\" stroke=\"none\">Vac</text></svg>"
+    },
+    {
+     "text": "L = 10 mH and C = 100 nF. What is f₀?",
+     "more": {
+      "text": "About 5.03 kHz."
+     }
+    }
+   ],
+   "id": "ee-i-9"
+  },
+  {
+   "sides": [
+    {
+     "text": "Quality factor (Q)",
+     "sub": "Circuit analysis · Intermediate"
+    },
+    {
+     "text": "How sharp a resonance is",
+     "more": {
+      "text": "Q = f₀ / bandwidth. Higher Q means a narrower, taller peak. For a series RLC, Q = X_L / R at resonance."
+     },
+     "svg": "<svg viewBox=\"0 0 260 158\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" font-family=\"system-ui,sans-serif\" font-size=\"13\"><path d=\"M30 12V126H250\" stroke-width=\"1.5\"/><path d=\"M30.0 116.6L30.7 116.5L31.5 116.3L32.2 116.1L32.9 116.0L33.7 115.8L34.4 115.7L35.1 115.5L35.9 115.3L36.6 115.2L37.3 115.0L38.1 114.8L38.8 114.7L39.5 114.5L40.3 114.3L41.0 114.1L41.7 113.9L42.5 113.8L43.2 113.6L43.9 113.4L44.7 113.2L45.4 113.0L46.1 112.8L46.9 112.6L47.6 112.4L48.3 112.2L49.1 111.9L49.8 111.7L50.5 111.5L51.3 111.3L52.0 111.1L52.7 110.8L53.5 110.6L54.2 110.4L54.9 110.1L55.7 109.9L56.4 109.6L57.1 109.3L57.9 109.1L58.6 108.8L59.3 108.5L60.1 108.3L60.8 108.0L61.5 107.7L62.3 107.4L63.0 107.1L63.7 106.8L64.5 106.5L65.2 106.1L65.9 105.8L66.7 105.5L67.4 105.1L68.1 104.8L68.9 104.4L69.6 104.1L70.3 103.7L71.1 103.3L71.8 102.9L72.5 102.5L73.3 102.1L74.0 101.7L74.7 101.3L75.5 100.8L76.2 100.4L76.9 99.9L77.7 99.4L78.4 98.9L79.1 98.4L79.9 97.9L80.6 97.4L81.3 96.8L82.1 96.3L82.8 95.7L83.5 95.1L84.3 94.5L85.0 93.8L85.7 93.2L86.5 92.5L87.2 91.8L87.9 91.1L88.7 90.4L89.4 89.6L90.1 88.9L90.9 88.1L91.6 87.2L92.3 86.4L93.1 85.5L93.8 84.6L94.5 83.6L95.3 82.6L96.0 81.6L96.7 80.6L97.5 79.5L98.2 78.4L98.9 77.2L99.7 76.0L100.4 74.8L101.1 73.5L101.9 72.1L102.6 70.8L103.3 69.3L104.1 67.9L104.8 66.4L105.5 64.8L106.3 63.2L107.0 61.5L107.7 59.8L108.5 58.1L109.2 56.3L109.9 54.5L110.7 52.6L111.4 50.7L112.1 48.8L112.9 46.9L113.6 45.0L114.3 43.1L115.1 41.2L115.8 39.3L116.5 37.6L117.3 35.8L118.0 34.2L118.7 32.7L119.5 31.4L120.2 30.1L120.9 29.1L121.7 28.2L122.4 27.6L123.1 27.1L123.9 26.9L124.6 26.9L125.3 27.1L126.1 27.5L126.8 28.1L127.5 28.9L128.3 29.8L129.0 30.9L129.7 32.2L130.5 33.5L131.2 35.0L131.9 36.5L132.7 38.0L133.4 39.7L134.1 41.3L134.9 43.0L135.6 44.6L136.3 46.3L137.1 47.9L137.8 49.6L138.5 51.2L139.3 52.7L140.0 54.3L140.7 55.8L141.5 57.3L142.2 58.7L142.9 60.1L143.7 61.5L144.4 62.8L145.1 64.0L145.9 65.3L146.6 66.5L147.3 67.6L148.1 68.8L148.8 69.8L149.5 70.9L150.3 71.9L151.0 72.9L151.7 73.9L152.5 74.8L153.2 75.7L153.9 76.5L154.7 77.4L155.4 78.2L156.1 79.0L156.9 79.7L157.6 80.5L158.3 81.2L159.1 81.9L159.8 82.6L160.5 83.2L161.3 83.9L162.0 84.5L162.7 85.1L163.5 85.7L164.2 86.2L164.9 86.8L165.7 87.3L166.4 87.8L167.1 88.3L167.9 88.8L168.6 89.3L169.3 89.8L170.1 90.2L170.8 90.7L171.5 91.1L172.3 91.5L173.0 91.9L173.7 92.3L174.5 92.7L175.2 93.1L175.9 93.5L176.7 93.8L177.4 94.2L178.1 94.6L178.9 94.9L179.6 95.2L180.3 95.5L181.1 95.9L181.8 96.2L182.5 96.5L183.3 96.8L184.0 97.1L184.7 97.3L185.5 97.6L186.2 97.9L186.9 98.2L187.7 98.4L188.4 98.7L189.1 98.9L189.9 99.2L190.6 99.4L191.3 99.7L192.1 99.9L192.8 100.1L193.5 100.3L194.3 100.6L195.0 100.8L195.7 101.0L196.5 101.2L197.2 101.4L197.9 101.6L198.7 101.8L199.4 102.0L200.1 102.2L200.9 102.4L201.6 102.6L202.3 102.7L203.1 102.9L203.8 103.1L204.5 103.3L205.3 103.4L206.0 103.6L206.7 103.8L207.5 103.9L208.2 104.1L208.9 104.2L209.7 104.4L210.4 104.5L211.1 104.7L211.9 104.8L212.6 105.0L213.3 105.1L214.1 105.3L214.8 105.4L215.5 105.5L216.3 105.7L217.0 105.8L217.7 105.9L218.5 106.1L219.2 106.2L219.9 106.3L220.7 106.4L221.4 106.6L222.1 106.7L222.9 106.8L223.6 106.9L224.3 107.0L225.1 107.1L225.8 107.3L226.5 107.4L227.3 107.5L228.0 107.6L228.7 107.7L229.5 107.8L230.2 107.9L230.9 108.0L231.7 108.1L232.4 108.2L233.1 108.3L233.9 108.4L234.6 108.5L235.3 108.6L236.1 108.7L236.8 108.8L237.5 108.9L238.3 109.0L239.0 109.0L239.7 109.1L240.5 109.2L241.2 109.3L241.9 109.4L242.7 109.5L243.4 109.6L244.1 109.6L244.9 109.7L245.6 109.8L246.3 109.9L247.1 110.0L247.8 110.0L248.5 110.1L249.3 110.2L250.0 110.3\" class=\"\" stroke-width=\"2.2\"/><path d=\"M124.3 12V126\" stroke-width=\"1\" stroke-dasharray=\"4 4\" opacity=\".55\"/><text x=\"124.28571428571429\" y=\"140\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">f₀</text><path d=\"M30 55.9H250\" stroke-width=\"1\" stroke-dasharray=\"4 4\" opacity=\".55\"/><text x=\"26\" y=\"59.91478260869566\" text-anchor=\"end\" fill=\"currentColor\" stroke=\"none\">0.707</text><text x=\"140.0\" y=\"155\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">frequency</text></svg>"
+    },
+    {
+     "text": "A resonance at 10 kHz has Q = 20. What is its bandwidth?",
+     "more": {
+      "text": "500 Hz (10 kHz / 20)."
+     }
+    }
+   ],
+   "id": "ee-i-10"
+  },
+  {
+   "sides": [
+    {
+     "text": "RC time constant",
+     "sub": "Circuit analysis · Intermediate"
+    },
+    {
+     "text": "τ = R × C",
+     "more": {
+      "text": "After one τ a charging capacitor reaches 63.2% of its final voltage. After about 5τ it's effectively done."
+     },
+     "svg": "<svg viewBox=\"0 0 260 158\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" font-family=\"system-ui,sans-serif\" font-size=\"13\"><path d=\"M34 12V126H250\" stroke-width=\"1.5\"/><path d=\"M34.0 116.9L35.4 114.1L36.7 111.4L38.0 108.7L39.4 106.2L40.8 103.7L42.1 101.3L43.5 99.0L44.8 96.7L46.1 94.5L47.5 92.4L48.9 90.4L50.2 88.4L51.5 86.4L52.9 84.6L54.2 82.8L55.6 81.0L57.0 79.3L58.3 77.6L59.6 76.0L61.0 74.5L62.4 73.0L63.7 71.5L65.0 70.1L66.4 68.8L67.8 67.4L69.1 66.1L70.5 64.9L71.8 63.7L73.2 62.5L74.5 61.4L75.8 60.3L77.2 59.2L78.5 58.2L79.9 57.2L81.2 56.2L82.6 55.3L84.0 54.4L85.3 53.5L86.7 52.6L88.0 51.8L89.3 51.0L90.7 50.2L92.0 49.5L93.4 48.7L94.8 48.0L96.1 47.3L97.5 46.7L98.8 46.0L100.2 45.4L101.5 44.8L102.8 44.2L104.2 43.6L105.5 43.1L106.9 42.6L108.2 42.0L109.6 41.5L111.0 41.0L112.3 40.6L113.7 40.1L115.0 39.7L116.3 39.2L117.7 38.8L119.0 38.4L120.4 38.0L121.8 37.6L123.1 37.3L124.5 36.9L125.8 36.6L127.2 36.2L128.5 35.9L129.8 35.6L131.2 35.3L132.6 35.0L133.9 34.7L135.2 34.4L136.6 34.2L137.9 33.9L139.3 33.6L140.7 33.4L142.0 33.2L143.3 32.9L144.7 32.7L146.1 32.5L147.4 32.3L148.8 32.1L150.1 31.9L151.4 31.7L152.8 31.5L154.2 31.3L155.5 31.2L156.8 31.0L158.2 30.8L159.6 30.7L160.9 30.5L162.2 30.4L163.6 30.2L164.9 30.1L166.3 29.9L167.7 29.8L169.0 29.7L170.3 29.6L171.7 29.4L173.1 29.3L174.4 29.2L175.8 29.1L177.1 29.0L178.4 28.9L179.8 28.8L181.2 28.7L182.5 28.6L183.8 28.5L185.2 28.4L186.6 28.3L187.9 28.3L189.2 28.2L190.6 28.1L191.9 28.0L193.3 28.0L194.7 27.9L196.0 27.8L197.3 27.8L198.7 27.7L200.1 27.6L201.4 27.6L202.8 27.5L204.1 27.5L205.4 27.4L206.8 27.4L208.2 27.3L209.5 27.2L210.8 27.2L212.2 27.2L213.6 27.1L214.9 27.1L216.2 27.0L217.6 27.0L218.9 26.9L220.3 26.9L221.7 26.9L223.0 26.8L224.3 26.8L225.7 26.8L227.1 26.7L228.4 26.7L229.8 26.7L231.1 26.6L232.4 26.6L233.8 26.6L235.2 26.5L236.5 26.5L237.8 26.5L239.2 26.5L240.6 26.4L241.9 26.4L243.2 26.4L244.6 26.4L245.9 26.4L247.3 26.3L248.7 26.3L250.0 26.3\" class=\"\" stroke-width=\"2.2\"/><path d=\"M34 25.7H250\" stroke-width=\"1\" stroke-dasharray=\"4 4\" opacity=\".55\"/><text x=\"30\" y=\"29.679999999999993\" text-anchor=\"end\" fill=\"currentColor\" stroke=\"none\">Vs</text><path d=\"M34 59.2H250\" stroke-width=\"1\" stroke-dasharray=\"4 4\" opacity=\".55\"/><text x=\"30\" y=\"63.241600000000005\" text-anchor=\"end\" fill=\"currentColor\" stroke=\"none\">63%</text><path d=\"M77.2 12V126\" stroke-width=\"1\" stroke-dasharray=\"4 4\" opacity=\".55\"/><text x=\"77.2\" y=\"140\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">τ</text><circle cx=\"77.2\" cy=\"59.2\" r=\"3.5\" class=\"acc\"/><text x=\"142.0\" y=\"155\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">time (in τ)</text></svg>"
+    },
+    {
+     "text": "R = 10 kΩ and C = 100 µF. What is τ?",
+     "more": {
+      "text": "1 s."
+     }
+    }
+   ],
+   "id": "ee-i-11"
+  },
+  {
+   "sides": [
+    {
+     "text": "Capacitor charging",
+     "sub": "Circuit analysis · Intermediate"
+    },
+    {
+     "text": "v(t) = Vs (1 − e^(−t/τ))",
+     "more": {
+      "text": "The voltage rises quickly at first, then slows. The current falls exponentially as the capacitor fills."
+     }
+    },
+    {
+     "text": "After 2τ, what fraction of the final voltage has the capacitor reached?",
+     "more": {
+      "text": "About 86.5% (1 − e⁻²)."
+     }
+    }
+   ],
+   "id": "ee-i-12"
+  },
+  {
+   "sides": [
+    {
+     "text": "Capacitor discharging",
+     "sub": "Circuit analysis · Intermediate"
+    },
+    {
+     "text": "v(t) = V₀ e^(−t/τ)",
+     "more": {
+      "text": "The voltage decays exponentially with the same time constant."
+     }
+    },
+    {
+     "text": "What fraction of the initial voltage remains after 3τ?",
+     "more": {
+      "text": "About 5% (e⁻³)."
+     }
+    }
+   ],
+   "id": "ee-i-13"
+  },
+  {
+   "sides": [
+    {
+     "text": "RL time constant",
+     "sub": "Circuit analysis · Intermediate"
+    },
+    {
+     "text": "τ = L / R",
+     "more": {
+      "text": "The current in an inductor rises exponentially; after one τ it reaches 63.2% of its final value."
+     }
+    },
+    {
+     "text": "L = 10 mH and R = 100 Ω. What is τ?",
+     "more": {
+      "text": "100 µs."
+     }
+    }
+   ],
+   "id": "ee-i-14"
+  },
+  {
+   "sides": [
+    {
+     "text": "Energy in C and L",
+     "sub": "Circuit analysis · Intermediate"
+    },
+    {
+     "text": "E = ½CV² and E = ½LI²",
+     "more": {
+      "text": "Capacitors store energy in the electric field and inductors in the magnetic field."
+     }
+    },
+    {
+     "text": "A 100 µF capacitor is charged to 12 V. How much energy is stored?",
+     "more": {
+      "text": "7.2 mJ (½ × 100 µF × 144)."
+     }
+    }
+   ],
+   "id": "ee-i-15"
+  },
+  {
+   "sides": [
+    {
+     "text": "Thévenin equivalent",
+     "sub": "Circuit analysis · Intermediate"
+    },
+    {
+     "text": "Any linear two-terminal network is one source and one resistor",
+     "more": {
+      "text": "Vth is the open-circuit voltage and Rth is the resistance seen with sources turned off (voltage sources shorted, current sources opened)."
+     },
+     "svg": "<svg viewBox=\"0 0 260 160\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" font-family=\"system-ui,sans-serif\" font-size=\"13\"><path d=\"M40 25L40 58.0\"/><g transform=\"translate(40 58.0) rotate(90)\"><path d=\"M0 0H18M18 -14V14M26 -7V7M26 0H44\"/></g><path d=\"M40 102.0L40 135\"/><text x=\"22\" y=\"74.0\" text-anchor=\"end\" fill=\"currentColor\" stroke=\"none\" class=\"acc\">+</text><text x=\"22\" y=\"100.0\" text-anchor=\"end\" fill=\"currentColor\" stroke=\"none\">−</text><text x=\"60\" y=\"86.0\" text-anchor=\"start\" fill=\"currentColor\" stroke=\"none\">Vth</text><path d=\"M40 25L96.0 25\"/><g transform=\"translate(96.0 25) rotate(0)\"><path d=\"M0 0H8L12 -9L20 9L28 -9L36 9L40 0H48\"/></g><path d=\"M144.0 25L200 25\"/><path d=\"M40 135L200 135\"/><circle cx=\"204\" cy=\"25\" r=\"4\"/><circle cx=\"204\" cy=\"135\" r=\"4\"/><text x=\"222\" y=\"29\" text-anchor=\"start\" fill=\"currentColor\" stroke=\"none\">a</text><text x=\"222\" y=\"139\" text-anchor=\"start\" fill=\"currentColor\" stroke=\"none\">b</text><text x=\"120.0\" y=\"12\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">Rth</text></svg>"
+    },
+    {
+     "text": "12 V through 6 kΩ, with 3 kΩ to ground at the output node. Find Vth and Rth.",
+     "more": {
+      "text": "Vth = 4 V and Rth = 2 kΩ (12 × 3/9, and 6 kΩ ∥ 3 kΩ)."
+     }
+    }
+   ],
+   "id": "ee-i-16"
+  },
+  {
+   "sides": [
+    {
+     "text": "Norton equivalent",
+     "sub": "Circuit analysis · Intermediate"
+    },
+    {
+     "text": "A current source in parallel with a resistor",
+     "more": {
+      "text": "I_N = Vth / Rth, with the same Rth in parallel. Thévenin and Norton are interchangeable."
+     }
+    },
+    {
+     "text": "Vth = 10 V and Rth = 5 Ω. What is the Norton current?",
+     "more": {
+      "text": "2 A."
+     }
+    }
+   ],
+   "id": "ee-i-17"
+  },
+  {
+   "sides": [
+    {
+     "text": "Superposition",
+     "sub": "Circuit analysis · Intermediate"
+    },
+    {
+     "text": "Treat each source alone, then add the results",
+     "more": {
+      "text": "Works only for linear circuits. Turn off the other sources: replace voltage sources with shorts and current sources with opens."
+     }
+    },
+    {
+     "text": "Why can't superposition be used to add up power?",
+     "more": {
+      "text": "Power is not linear. It depends on the square of voltage or current."
+     }
+    }
+   ],
+   "id": "ee-i-18"
+  },
+  {
+   "sides": [
+    {
+     "text": "Maximum power transfer",
+     "sub": "Circuit analysis · Intermediate"
+    },
+    {
+     "text": "Load power peaks when R_load = R_source",
+     "more": {
+      "text": "P_max = Vth² / (4 Rth). At the match, efficiency is only 50%, so power systems don't aim for it."
+     }
+    },
+    {
+     "text": "Vth = 10 V and Rth = 5 Ω. What is the maximum load power?",
+     "more": {
+      "text": "5 W (100 / 20)."
+     }
+    }
+   ],
+   "id": "ee-i-19"
+  },
+  {
+   "sides": [
+    {
+     "text": "Node analysis",
+     "sub": "Circuit analysis · Intermediate"
+    },
+    {
+     "text": "Write KCL at each node",
+     "more": {
+      "text": "Choose a ground, label node voltages, and solve the resulting equations. Good for circuits with many parallel branches."
+     }
+    },
+    {
+     "text": "Which law does node analysis apply at each node?",
+     "more": {
+      "text": "Kirchhoff's current law."
+     }
+    }
+   ],
+   "id": "ee-i-20"
+  },
+  {
+   "sides": [
+    {
+     "text": "Mesh analysis",
+     "sub": "Circuit analysis · Intermediate"
+    },
+    {
+     "text": "Write KVL around each loop",
+     "more": {
+      "text": "Assign a loop current to each mesh and solve. Good for circuits with many series elements."
+     }
+    },
+    {
+     "text": "Which law does mesh analysis apply around each loop?",
+     "more": {
+      "text": "Kirchhoff's voltage law."
+     }
+    }
+   ],
+   "id": "ee-i-21"
+  },
+  {
+   "sides": [
+    {
+     "text": "RC low-pass filter",
+     "sub": "Circuit analysis · Intermediate"
+    },
+    {
+     "text": "f_c = 1 / (2πRC)",
+     "more": {
+      "text": "Passes low frequencies and attenuates high ones. At f_c the output is 3 dB down (about 70.7%)."
+     },
+     "svg": "<svg viewBox=\"0 0 260 160\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" font-family=\"system-ui,sans-serif\" font-size=\"13\"><circle cx=\"20\" cy=\"50\" r=\"4\"/><text x=\"20\" y=\"40\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">Vin</text><path d=\"M24 50L63.0 50\"/><g transform=\"translate(63.0 50) rotate(0)\"><path d=\"M0 0H8L12 -9L20 9L28 -9L36 9L40 0H48\"/></g><path d=\"M111.0 50L150 50\"/><path d=\"M150 50L150 60.5\"/><g transform=\"translate(150 60.5) rotate(90)\"><path d=\"M0 0H19M19 -13V13M25 -13V13M25 0H44\"/></g><path d=\"M150 104.5L150 115\"/><circle cx=\"150\" cy=\"50\" r=\"3.5\" fill=\"currentColor\" stroke=\"none\"/><path d=\"M150 50L205 50\"/><circle cx=\"209\" cy=\"50\" r=\"4\"/><text x=\"209\" y=\"40\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">Vout</text><path d=\"M150 115V129M134 129H166M140 136H160M146 143H154\"/><text x=\"87.0\" y=\"34\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">R</text><text x=\"166\" y=\"86.5\" text-anchor=\"start\" fill=\"currentColor\" stroke=\"none\">C</text></svg>"
+    },
+    {
+     "text": "R = 1.6 kΩ and C = 100 nF. What is the cutoff?",
+     "more": {
+      "text": "About 995 Hz."
+     }
+    }
+   ],
+   "id": "ee-i-22"
+  },
+  {
+   "sides": [
+    {
+     "text": "RC high-pass filter",
+     "sub": "Circuit analysis · Intermediate"
+    },
+    {
+     "text": "Passes high frequencies, blocks DC",
+     "more": {
+      "text": "Same cutoff formula, f_c = 1 / (2πRC). Used for AC coupling."
+     },
+     "svg": "<svg viewBox=\"0 0 260 160\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" font-family=\"system-ui,sans-serif\" font-size=\"13\"><circle cx=\"20\" cy=\"50\" r=\"4\"/><text x=\"20\" y=\"40\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">Vin</text><path d=\"M24 50L65.0 50\"/><g transform=\"translate(65.0 50) rotate(0)\"><path d=\"M0 0H19M19 -13V13M25 -13V13M25 0H44\"/></g><path d=\"M109.0 50L150 50\"/><path d=\"M150 50L150 58.5\"/><g transform=\"translate(150 58.5) rotate(90)\"><path d=\"M0 0H8L12 -9L20 9L28 -9L36 9L40 0H48\"/></g><path d=\"M150 106.5L150 115\"/><circle cx=\"150\" cy=\"50\" r=\"3.5\" fill=\"currentColor\" stroke=\"none\"/><path d=\"M150 50L205 50\"/><circle cx=\"209\" cy=\"50\" r=\"4\"/><text x=\"209\" y=\"40\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">Vout</text><path d=\"M150 115V129M134 129H166M140 136H160M146 143H154\"/><text x=\"87.0\" y=\"34\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">C</text><text x=\"166\" y=\"86.5\" text-anchor=\"start\" fill=\"currentColor\" stroke=\"none\">R</text></svg>"
+    },
+    {
+     "text": "R = 10 kΩ and C = 1 µF. What is the cutoff?",
+     "more": {
+      "text": "About 15.9 Hz."
+     }
+    }
+   ],
+   "id": "ee-i-23"
+  },
+  {
+   "sides": [
+    {
+     "text": "Band-pass and notch filters",
+     "sub": "Circuit analysis · Intermediate"
+    },
+    {
+     "text": "Pass one band, or reject one band",
+     "more": {
+      "text": "Band-pass passes a range of frequencies (tuning a radio). A notch removes a narrow band, such as 50 or 60 Hz hum."
+     }
+    },
+    {
+     "text": "Which filter removes 60 Hz mains hum?",
+     "more": {
+      "text": "A notch filter."
+     }
+    }
+   ],
+   "id": "ee-i-24"
+  },
+  {
+   "sides": [
+    {
+     "text": "Bode plots",
+     "sub": "Circuit analysis · Intermediate"
+    },
+    {
+     "text": "Gain in dB against frequency on a log axis",
+     "more": {
+      "text": "A first-order filter falls at −20 dB per decade beyond its cutoff, and it's −3 dB at the cutoff."
+     },
+     "svg": "<svg viewBox=\"0 0 260 158\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" font-family=\"system-ui,sans-serif\" font-size=\"13\"><path d=\"M40 12V126H250\" stroke-width=\"1.5\"/><path d=\"M40.0 25.4L41.3 25.4L42.6 25.4L43.9 25.4L45.3 25.4L46.6 25.4L47.9 25.4L49.2 25.4L50.5 25.4L51.8 25.4L53.1 25.4L54.4 25.4L55.8 25.4L57.1 25.4L58.4 25.4L59.7 25.4L61.0 25.4L62.3 25.4L63.6 25.4L64.9 25.4L66.2 25.4L67.6 25.4L68.9 25.4L70.2 25.4L71.5 25.4L72.8 25.4L74.1 25.4L75.4 25.4L76.8 25.4L78.1 25.4L79.4 25.4L80.7 25.4L82.0 25.5L83.3 25.5L84.6 25.5L85.9 25.5L87.2 25.5L88.6 25.5L89.9 25.5L91.2 25.5L92.5 25.5L93.8 25.5L95.1 25.5L96.4 25.5L97.8 25.6L99.1 25.6L100.4 25.6L101.7 25.6L103.0 25.7L104.3 25.7L105.6 25.7L106.9 25.8L108.2 25.8L109.6 25.8L110.9 25.9L112.2 25.9L113.5 26.0L114.8 26.1L116.1 26.2L117.4 26.2L118.8 26.3L120.1 26.4L121.4 26.6L122.7 26.7L124.0 26.8L125.3 27.0L126.6 27.2L127.9 27.4L129.2 27.6L130.6 27.8L131.9 28.1L133.2 28.4L134.5 28.7L135.8 29.0L137.1 29.4L138.4 29.7L139.8 30.2L141.1 30.6L142.4 31.1L143.7 31.6L145.0 32.1L146.3 32.7L147.6 33.3L148.9 34.0L150.2 34.6L151.6 35.3L152.9 36.1L154.2 36.8L155.5 37.6L156.8 38.4L158.1 39.3L159.4 40.1L160.8 41.0L162.1 41.9L163.4 42.8L164.7 43.8L166.0 44.7L167.3 45.7L168.6 46.7L169.9 47.7L171.2 48.7L172.6 49.7L173.9 50.7L175.2 51.8L176.5 52.8L177.8 53.9L179.1 54.9L180.4 56.0L181.8 57.1L183.1 58.2L184.4 59.2L185.7 60.3L187.0 61.4L188.3 62.5L189.6 63.6L190.9 64.7L192.2 65.8L193.6 66.9L194.9 68.0L196.2 69.1L197.5 70.2L198.8 71.3L200.1 72.4L201.4 73.5L202.8 74.6L204.1 75.8L205.4 76.9L206.7 78.0L208.0 79.1L209.3 80.2L210.6 81.3L211.9 82.4L213.2 83.6L214.6 84.7L215.9 85.8L217.2 86.9L218.5 88.0L219.8 89.1L221.1 90.2L222.4 91.4L223.8 92.5L225.1 93.6L226.4 94.7L227.7 95.8L229.0 96.9L230.3 98.1L231.6 99.2L232.9 100.3L234.2 101.4L235.6 102.5L236.9 103.7L238.2 104.8L239.5 105.9L240.8 107.0L242.1 108.1L243.4 109.2L244.8 110.4L246.1 111.5L247.4 112.6L248.7 113.7L250.0 114.8\" class=\"\" stroke-width=\"2.2\"/><path d=\"M40.0 25.4L145.0 25.4L250.0 114.8\" class=\"\" stroke-width=\"2.2\"/><path d=\"M40 25.4H250\" stroke-width=\"1\" stroke-dasharray=\"4 4\" opacity=\".55\"/><path d=\"M40 32.1H250\" stroke-width=\"1\" stroke-dasharray=\"4 4\" opacity=\".55\"/><text x=\"36\" y=\"36.117647058823536\" text-anchor=\"end\" fill=\"currentColor\" stroke=\"none\">−3 dB</text><path d=\"M145.0 12V126\" stroke-width=\"1\" stroke-dasharray=\"4 4\" opacity=\".55\"/><text x=\"145.0\" y=\"140\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">f_c</text><text x=\"145.0\" y=\"155\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">frequency (decades from f_c)</text></svg>"
+    },
+    {
+     "text": "A first-order low-pass has f_c = 1 kHz. What is the gain at 10 kHz?",
+     "more": {
+      "text": "About −20 dB."
+     }
+    }
+   ],
+   "id": "ee-i-25"
+  },
+  {
+   "sides": [
+    {
+     "text": "AC power",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "Real power P = Vrms × Irms × cos φ",
+     "more": {
+      "text": "Real power does work and is measured in watts. Apparent power S = Vrms × Irms is in volt-amps. cos φ is the power factor."
+     }
+    },
+    {
+     "text": "120 V, 5 A, and a power factor of 0.8. What is the real power?",
+     "more": {
+      "text": "480 W."
+     }
+    }
+   ],
+   "id": "ee-i-26"
+  },
+  {
+   "sides": [
+    {
+     "text": "Power factor",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "cos φ: how much current does real work",
+     "more": {
+      "text": "A low power factor means extra current for the same real power, which wastes capacity. Motors lower it; capacitors can correct it."
+     }
+    },
+    {
+     "text": "Why do utilities dislike a low power factor?",
+     "more": {
+      "text": "It means more current for the same real power, increasing losses and equipment size."
+     }
+    }
+   ],
+   "id": "ee-i-27"
+  },
+  {
+   "sides": [
+    {
+     "text": "Power triangle",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "S² = P² + Q²",
+     "more": {
+      "text": "P is real power (W), Q is reactive power (VAR), and S is apparent power (VA)."
+     }
+    },
+    {
+     "text": "P = 3 kW and Q = 4 kVAR. What is S?",
+     "more": {
+      "text": "5 kVA."
+     }
+    }
+   ],
+   "id": "ee-i-28"
+  },
+  {
+   "sides": [
+    {
+     "text": "Semiconductors",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "Silicon: not quite a conductor, not quite an insulator",
+     "more": {
+      "text": "Doping adds impurities to control conduction. They conduct less than metals, but a small voltage or doping change controls current, which is the basis of transistors."
+     }
+    },
+    {
+     "text": "Why is silicon useful for electronics?",
+     "more": {
+      "text": "Its conductivity can be controlled by doping and by applied voltage."
+     }
+    }
+   ],
+   "id": "ee-i-29"
+  },
+  {
+   "sides": [
+    {
+     "text": "Doping: N-type and P-type",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "Adding atoms to give extra electrons or holes",
+     "more": {
+      "text": "N-type has extra electrons (from phosphorus). P-type has missing electrons, called holes (from boron). Joining them forms a PN junction."
+     }
+    },
+    {
+     "text": "Which type of doping creates holes?",
+     "more": {
+      "text": "P-type."
+     }
+    }
+   ],
+   "id": "ee-i-30"
+  },
+  {
+   "sides": [
+    {
+     "text": "PN junction",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "Where P and N meet; the heart of a diode",
+     "more": {
+      "text": "A depletion region forms with a built-in barrier (about 0.7 V in silicon). Forward bias shrinks it and current flows; reverse bias widens it and blocks current."
+     }
+    },
+    {
+     "text": "What happens to the depletion region under forward bias?",
+     "more": {
+      "text": "It shrinks, so current can flow."
+     }
+    }
+   ],
+   "id": "ee-i-31"
+  },
+  {
+   "sides": [
+    {
+     "text": "Diode I–V curve",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "Almost no current until about 0.7 V, then a steep rise",
+     "more": {
+      "text": "Silicon starts conducting near 0.6 to 0.7 V. In reverse it blocks, until breakdown at a high voltage."
+     },
+     "svg": "<svg viewBox=\"0 0 260 158\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" font-family=\"system-ui,sans-serif\" font-size=\"13\"><path d=\"M34 12V126H250\" stroke-width=\"1.5\"/><path d=\"M132.1818181818182 12V126\" stroke-width=\"1.5\"/><path d=\"M34 116.22857142857143H250\" stroke-width=\"1.5\"/><path d=\"M34.0 117.9L132.2 116.2L186.2 115.6L196.0 108.1L202.9 86.9L208.8 15.3\" class=\"\" stroke-width=\"2.2\"/><path d=\"M200.9 12V126\" stroke-width=\"1\" stroke-dasharray=\"4 4\" opacity=\".55\"/><text x=\"200.90909090909088\" y=\"140\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">0.7 V</text><text x=\"142.0\" y=\"155\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">voltage</text></svg>"
+    },
+    {
+     "text": "Roughly what forward voltage does a silicon diode drop when conducting?",
+     "more": {
+      "text": "About 0.7 V."
+     }
+    }
+   ],
+   "id": "ee-i-32"
+  },
+  {
+   "sides": [
+    {
+     "text": "Half-wave rectifier",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "One diode passes only half of each cycle",
+     "more": {
+      "text": "Average output (ideal) is Vp / π. It wastes half the input waveform."
+     },
+     "svg": "<svg viewBox=\"0 0 260 160\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" font-family=\"system-ui,sans-serif\" font-size=\"13\"><path d=\"M40 25L40 58.0\"/><g transform=\"translate(40 58.0) rotate(90)\"><path d=\"M0 0H8M8 0a14 14 0 1 0 28 0a14 14 0 1 0 -28 0M36 0H44M14 0q4 -8 8 0t8 0\"/></g><path d=\"M40 102.0L40 135\"/><path d=\"M40 25L105.0 25\"/><g transform=\"translate(105.0 25) rotate(0)\"><path d=\"M0 0H12M12 -10V10L28 0ZM28 -10V10M28 0H40\"/></g><path d=\"M145.0 25L210 25\"/><path d=\"M210 25L210 56.0\"/><g transform=\"translate(210 56.0) rotate(90)\"><path d=\"M0 0H8L12 -9L20 9L28 -9L36 9L40 0H48\"/></g><path d=\"M210 104.0L210 135\"/><path d=\"M40 135L210 135\"/><text x=\"58\" y=\"84\" text-anchor=\"start\" fill=\"currentColor\" stroke=\"none\">Vac</text><text x=\"125.0\" y=\"12\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">D</text><text x=\"226\" y=\"84.0\" text-anchor=\"start\" fill=\"currentColor\" stroke=\"none\">R</text></svg>"
+    },
+    {
+     "text": "A 10 V peak sine goes through an ideal half-wave rectifier. What is the average output?",
+     "more": {
+      "text": "About 3.18 V (10 / π)."
+     }
+    }
+   ],
+   "id": "ee-i-33"
+  },
+  {
+   "sides": [
+    {
+     "text": "Full-wave rectifier",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "Uses both halves of the cycle",
+     "more": {
+      "text": "A bridge of four diodes gives an average of 2Vp / π (ideal) and drops two diode voltages. The ripple frequency is twice the line frequency."
+     }
+    },
+    {
+     "text": "A 10 V peak sine goes through an ideal full-wave rectifier. What is the average output?",
+     "more": {
+      "text": "About 6.37 V (2 × 10 / π)."
+     }
+    }
+   ],
+   "id": "ee-i-34"
+  },
+  {
+   "sides": [
+    {
+     "text": "Smoothing capacitor",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "Fills the gaps between rectified peaks",
+     "more": {
+      "text": "Ripple ≈ I / (f × C), with f the ripple frequency. A larger C or a smaller load current means less ripple."
+     }
+    },
+    {
+     "text": "A 100 mA load, 120 Hz ripple, and a 1,000 µF capacitor. What is the ripple?",
+     "more": {
+      "text": "About 0.83 V (0.1 / (120 × 0.001))."
+     }
+    }
+   ],
+   "id": "ee-i-35"
+  },
+  {
+   "sides": [
+    {
+     "text": "Zener diode",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "Holds a steady voltage in reverse breakdown",
+     "more": {
+      "text": "Used as a simple voltage reference or regulator with a series resistor. The resistor sets the Zener current."
+     },
+     "svg": "<svg viewBox=\"0 0 260 160\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" font-family=\"system-ui,sans-serif\" font-size=\"13\"><path d=\"M40 25L40 58.0\"/><g transform=\"translate(40 58.0) rotate(90)\"><path d=\"M0 0H18M18 -14V14M26 -7V7M26 0H44\"/></g><path d=\"M40 102.0L40 135\"/><text x=\"22\" y=\"74.0\" text-anchor=\"end\" fill=\"currentColor\" stroke=\"none\" class=\"acc\">+</text><text x=\"22\" y=\"100.0\" text-anchor=\"end\" fill=\"currentColor\" stroke=\"none\">−</text><text x=\"60\" y=\"86.0\" text-anchor=\"start\" fill=\"currentColor\" stroke=\"none\">Vin</text><path d=\"M40 25L71.0 25\"/><g transform=\"translate(71.0 25) rotate(0)\"><path d=\"M0 0H8L12 -9L20 9L28 -9L36 9L40 0H48\"/></g><path d=\"M119.0 25L150 25\"/><path d=\"M150 135L150 100.0\"/><g transform=\"translate(150 100.0) rotate(-90)\"><path d=\"M0 0H12M12 -10V10L28 0ZM28 -10V10M28 0H40M24 -13L28 -10M28 10L32 13\"/></g><path d=\"M150 60.0L150 25\"/><circle cx=\"150\" cy=\"25\" r=\"3.5\" fill=\"currentColor\" stroke=\"none\"/><path d=\"M150 25L205 25\"/><circle cx=\"209\" cy=\"25\" r=\"4\"/><text x=\"209\" y=\"15\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">Vout</text><path d=\"M40 135L150 135\"/><text x=\"95.0\" y=\"12\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">R</text><text x=\"166\" y=\"84.0\" text-anchor=\"start\" fill=\"currentColor\" stroke=\"none\">Z</text></svg>"
+    },
+    {
+     "text": "12 V supply, a 5.1 V Zener, and a 220 Ω series resistor with no load. What is the Zener current?",
+     "more": {
+      "text": "About 31 mA ((12 − 5.1) / 220)."
+     }
+    }
+   ],
+   "id": "ee-i-36"
+  },
+  {
+   "sides": [
+    {
+     "text": "Clippers and clamps",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "Diodes that limit or shift a waveform",
+     "more": {
+      "text": "A clipper cuts off peaks above or below a level. A clamp (DC restorer) shifts the whole waveform up or down."
+     }
+    },
+    {
+     "text": "Which circuit shifts a waveform's DC level without changing its shape?",
+     "more": {
+      "text": "A clamp (DC restorer)."
+     }
+    }
+   ],
+   "id": "ee-i-37"
+  },
+  {
+   "sides": [
+    {
+     "text": "Bipolar junction transistor (BJT)",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "A current-controlled transistor: NPN or PNP",
+     "more": {
+      "text": "Three terminals: base, collector, emitter. A small base current controls a larger collector current: Ic = β × Ib."
+     }
+    },
+    {
+     "text": "β = 100 and Ib = 50 µA. What is Ic?",
+     "more": {
+      "text": "5 mA."
+     }
+    }
+   ],
+   "id": "ee-i-38"
+  },
+  {
+   "sides": [
+    {
+     "text": "BJT regions",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "Cutoff, active, and saturation",
+     "more": {
+      "text": "Cutoff: off. Active: amplifier (Ic = βIb). Saturation: fully on, like a closed switch, with Vce about 0.2 V."
+     }
+    },
+    {
+     "text": "Which region does a BJT use as a fully-on switch?",
+     "more": {
+      "text": "Saturation."
+     }
+    }
+   ],
+   "id": "ee-i-39"
+  },
+  {
+   "sides": [
+    {
+     "text": "BJT as a switch",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "A small base current switches a large load",
+     "more": {
+      "text": "Choose RB so the base current is enough to saturate the load. Add margin: use less than the calculated RB."
+     },
+     "svg": "<svg viewBox=\"0 0 260 190\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" font-family=\"system-ui,sans-serif\" font-size=\"13\"><circle cx=\"20\" cy=\"95\" r=\"4\"/><text x=\"20\" y=\"82\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">Vin</text><path d=\"M24 95L51.0 95\"/><g transform=\"translate(51.0 95) rotate(0)\"><path d=\"M0 0H8L12 -9L20 9L28 -9L36 9L40 0H48\"/></g><path d=\"M99.0 95L126 95\"/><path d=\"M126 95H150M150 81V109M150 88L166 77V61M150 102L166 113V129\"/><path d=\"M158 109L166 113L160 104\" /><path d=\"M166 8L166 12.5\"/><g transform=\"translate(166 12.5) rotate(90)\"><path d=\"M0 0H8L12 -9L20 9L28 -9L36 9L40 0H48\"/></g><path d=\"M166 60.5L166 65\"/><circle cx=\"166\" cy=\"6\" r=\"4\"/><text x=\"182\" y=\"10\" text-anchor=\"start\" fill=\"currentColor\" stroke=\"none\">Vcc</text><path d=\"M166 125L166 140\"/><path d=\"M166 140V154M150 154H182M156 161H176M162 168H170\"/><text x=\"75.0\" y=\"82\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">RB</text><text x=\"182\" y=\"40.5\" text-anchor=\"start\" fill=\"currentColor\" stroke=\"none\">Load</text></svg>"
+    },
+    {
+     "text": "Switching a 100 mA load with β ≥ 50 needs Ib = 2 mA. With a 5 V drive and Vbe = 0.7 V, what RB?",
+     "more": {
+      "text": "About 2.15 kΩ, so use about 2.2 kΩ or lower."
+     }
+    }
+   ],
+   "id": "ee-i-40"
+  },
+  {
+   "sides": [
+    {
+     "text": "Common-emitter amplifier",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "The basic BJT voltage amplifier",
+     "more": {
+      "text": "The input drives the base and the output is taken at the collector. It inverts the signal and gives voltage gain roughly −Rc / re."
+     }
+    },
+    {
+     "text": "Does a common-emitter amplifier invert the signal?",
+     "more": {
+      "text": "Yes, it inverts it."
+     }
+    }
+   ],
+   "id": "ee-i-41"
+  },
+  {
+   "sides": [
+    {
+     "text": "MOSFET",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "A voltage-controlled transistor",
+     "more": {
+      "text": "Terminals: gate, drain, source. The gate voltage above a threshold (Vth) forms a channel. The gate draws almost no steady current."
+     }
+    },
+    {
+     "text": "Does a MOSFET gate draw steady current?",
+     "more": {
+      "text": "Almost none. It's controlled by voltage."
+     }
+    }
+   ],
+   "id": "ee-i-42"
+  },
+  {
+   "sides": [
+    {
+     "text": "MOSFET as a switch",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "Gate high turns an N-channel MOSFET on",
+     "more": {
+      "text": "Pick a logic-level MOSFET if a microcontroller drives it directly. The on-resistance Rds(on) sets the loss: P = I² × Rds(on)."
+     },
+     "svg": "<svg viewBox=\"0 0 260 190\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" font-family=\"system-ui,sans-serif\" font-size=\"13\"><circle cx=\"20\" cy=\"95\" r=\"4\"/><text x=\"20\" y=\"85\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">Vin</text><path d=\"M24 95L126 95\"/><path d=\"M126 95H144M144 81V109M150 81V89M150 92V98M150 101V109M150 85H166V61M150 105H166V129M150 95H166\"/><path d=\"M154 92L160 95L154 98\"/><path d=\"M166 8L166 12.5\"/><g transform=\"translate(166 12.5) rotate(90)\"><path d=\"M0 0H8L12 -9L20 9L28 -9L36 9L40 0H48\"/></g><path d=\"M166 60.5L166 65\"/><circle cx=\"166\" cy=\"6\" r=\"4\"/><text x=\"182\" y=\"10\" text-anchor=\"start\" fill=\"currentColor\" stroke=\"none\">Vdd</text><path d=\"M166 125L166 140\"/><path d=\"M166 140V154M150 154H182M156 161H176M162 168H170\"/><text x=\"182\" y=\"40.5\" text-anchor=\"start\" fill=\"currentColor\" stroke=\"none\">Load</text></svg>"
+    },
+    {
+     "text": "A MOSFET with Rds(on) = 50 mΩ carries 4 A. How much power does it dissipate?",
+     "more": {
+      "text": "0.8 W (4² × 0.05)."
+     }
+    }
+   ],
+   "id": "ee-i-43"
+  },
+  {
+   "sides": [
+    {
+     "text": "N-channel vs P-channel",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "N-channel on low side, P-channel on high side",
+     "more": {
+      "text": "N-channel MOSFETs switch the ground side and need the gate above the source. P-channel types switch the supply side with the gate pulled below the source."
+     }
+    },
+    {
+     "text": "Which MOSFET type is the usual choice for switching a load to ground?",
+     "more": {
+      "text": "N-channel."
+     }
+    }
+   ],
+   "id": "ee-i-44"
+  },
+  {
+   "sides": [
+    {
+     "text": "BJT vs MOSFET",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "Current-controlled vs voltage-controlled",
+     "more": {
+      "text": "BJTs are good for small analog amplifiers and simple switches. MOSFETs dominate digital chips and power switching because they draw no gate current and have low on-resistance."
+     }
+    },
+    {
+     "text": "Which draws steady control current, a BJT's base or a MOSFET's gate?",
+     "more": {
+      "text": "The BJT's base."
+     }
+    }
+   ],
+   "id": "ee-i-45"
+  },
+  {
+   "sides": [
+    {
+     "text": "Flyback diode",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "Protects against inductive voltage spikes",
+     "more": {
+      "text": "When current in a coil (relay, motor) is cut off, the coil produces a large reverse voltage. A diode across the coil gives that current a safe path."
+     }
+    },
+    {
+     "text": "A relay coil is switched off by a transistor, which then fails. What protection was missing?",
+     "more": {
+      "text": "A flyback diode across the coil."
+     }
+    }
+   ],
+   "id": "ee-i-46"
+  },
+  {
+   "sides": [
+    {
+     "text": "Ideal op-amp",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "Huge gain, infinite input resistance, zero output resistance",
+     "more": {
+      "text": "With negative feedback, the op-amp adjusts its output until V+ = V−. No current flows into the inputs."
+     }
+    },
+    {
+     "text": "In an ideal op-amp with negative feedback, what is the voltage difference between the inputs?",
+     "more": {
+      "text": "Zero (V+ = V−)."
+     }
+    }
+   ],
+   "id": "ee-i-47"
+  },
+  {
+   "sides": [
+    {
+     "text": "Inverting amplifier",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "Gain = −Rf / Rin",
+     "more": {
+      "text": "The inverting input is a virtual ground. The output is inverted."
+     },
+     "svg": "<svg viewBox=\"0 0 270 160\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" font-family=\"system-ui,sans-serif\" font-size=\"13\"><circle cx=\"20\" cy=\"66\" r=\"4\"/><text x=\"20\" y=\"56\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">Vin</text><path d=\"M24 66L36.0 66\"/><g transform=\"translate(36.0 66) rotate(0)\"><path d=\"M0 0H8L12 -9L20 9L28 -9L36 9L40 0H48\"/></g><path d=\"M84.0 66L96 66\"/><path d=\"M120 50L120 110L176 80Z\"/><path d=\"M96 66H120M96 94H120M176 80H196\"/><text x=\"126\" y=\"70\" fill=\"currentColor\" stroke=\"none\">−</text><text x=\"126\" y=\"99\" fill=\"currentColor\" stroke=\"none\">+</text><path d=\"M96 28L122.0 28\"/><g transform=\"translate(122.0 28) rotate(0)\"><path d=\"M0 0H8L12 -9L20 9L28 -9L36 9L40 0H48\"/></g><path d=\"M170.0 28L196 28\"/><path d=\"M96 28L96 66\"/><circle cx=\"96\" cy=\"66\" r=\"3.5\" fill=\"currentColor\" stroke=\"none\"/><path d=\"M196 28L196 80\"/><circle cx=\"196\" cy=\"80\" r=\"3.5\" fill=\"currentColor\" stroke=\"none\"/><path d=\"M196 80L236 80\"/><circle cx=\"240\" cy=\"80\" r=\"4\"/><text x=\"240\" y=\"68\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">Vout</text><path d=\"M96 94L96 112\"/><path d=\"M96 112V126M80 126H112M86 133H106M92 140H100\"/><text x=\"60.0\" y=\"52\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">Rin</text><text x=\"146.0\" y=\"15\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">Rf</text></svg>"
+    },
+    {
+     "text": "Rf = 100 kΩ and Rin = 10 kΩ. What is the gain?",
+     "more": {
+      "text": "−10."
+     }
+    }
+   ],
+   "id": "ee-i-48"
+  },
+  {
+   "sides": [
+    {
+     "text": "Non-inverting amplifier",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "Gain = 1 + Rf / Rg",
+     "more": {
+      "text": "The gain is never below 1. The input impedance is very high."
+     }
+    },
+    {
+     "text": "Rf = 90 kΩ and Rg = 10 kΩ. What is the gain?",
+     "more": {
+      "text": "10."
+     }
+    }
+   ],
+   "id": "ee-i-49"
+  },
+  {
+   "sides": [
+    {
+     "text": "Voltage follower",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "A buffer with a gain of 1",
+     "more": {
+      "text": "Output equals input, with very high input impedance and low output impedance. It isolates a weak source from a load."
+     },
+     "svg": "<svg viewBox=\"0 0 270 130\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" font-family=\"system-ui,sans-serif\" font-size=\"13\"><circle cx=\"20\" cy=\"94\" r=\"4\"/><text x=\"20\" y=\"84\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">Vin</text><path d=\"M24 94L96 94\"/><path d=\"M120 50L120 110L176 80Z\"/><path d=\"M96 66H120M96 94H120M176 80H196\"/><text x=\"126\" y=\"70\" fill=\"currentColor\" stroke=\"none\">−</text><text x=\"126\" y=\"99\" fill=\"currentColor\" stroke=\"none\">+</text><path d=\"M196 80L236 80\"/><circle cx=\"240\" cy=\"80\" r=\"4\"/><text x=\"240\" y=\"68\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">Vout</text><path d=\"M196 80L196 36\"/><path d=\"M196 36L60 36\"/><path d=\"M60 36L60 66\"/><path d=\"M60 66L96 66\"/><circle cx=\"196\" cy=\"80\" r=\"3.5\" fill=\"currentColor\" stroke=\"none\"/></svg>"
+    },
+    {
+     "text": "Why use a voltage follower?",
+     "more": {
+      "text": "To drive a load from a weak source without loading it."
+     }
+    }
+   ],
+   "id": "ee-i-50"
+  },
+  {
+   "sides": [
+    {
+     "text": "Summing amplifier",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "Adds several inputs",
+     "more": {
+      "text": "Vout = −Rf × (V1/R1 + V2/R2 + …). Used in audio mixers and DACs."
+     }
+    },
+    {
+     "text": "Rf = R1 = R2 = 10 kΩ, V1 = 1 V, and V2 = 2 V. What is Vout?",
+     "more": {
+      "text": "−3 V."
+     }
+    }
+   ],
+   "id": "ee-i-51"
+  },
+  {
+   "sides": [
+    {
+     "text": "Integrator",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "Output is the integral of the input",
+     "more": {
+      "text": "Vout = −(1/RC) ∫ Vin dt. A step input produces a ramp."
+     },
+     "svg": "<svg viewBox=\"0 0 270 160\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" font-family=\"system-ui,sans-serif\" font-size=\"13\"><circle cx=\"20\" cy=\"66\" r=\"4\"/><text x=\"20\" y=\"56\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">Vin</text><path d=\"M24 66L36.0 66\"/><g transform=\"translate(36.0 66) rotate(0)\"><path d=\"M0 0H8L12 -9L20 9L28 -9L36 9L40 0H48\"/></g><path d=\"M84.0 66L96 66\"/><path d=\"M120 50L120 110L176 80Z\"/><path d=\"M96 66H120M96 94H120M176 80H196\"/><text x=\"126\" y=\"70\" fill=\"currentColor\" stroke=\"none\">−</text><text x=\"126\" y=\"99\" fill=\"currentColor\" stroke=\"none\">+</text><path d=\"M96 28L124.0 28\"/><g transform=\"translate(124.0 28) rotate(0)\"><path d=\"M0 0H19M19 -13V13M25 -13V13M25 0H44\"/></g><path d=\"M168.0 28L196 28\"/><path d=\"M96 28L96 66\"/><circle cx=\"96\" cy=\"66\" r=\"3.5\" fill=\"currentColor\" stroke=\"none\"/><path d=\"M196 28L196 80\"/><circle cx=\"196\" cy=\"80\" r=\"3.5\" fill=\"currentColor\" stroke=\"none\"/><path d=\"M196 80L236 80\"/><circle cx=\"240\" cy=\"80\" r=\"4\"/><text x=\"240\" y=\"68\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">Vout</text><path d=\"M96 94L96 112\"/><path d=\"M96 112V126M80 126H112M86 133H106M92 140H100\"/><text x=\"60.0\" y=\"52\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">Rin</text><text x=\"146.0\" y=\"15\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">C</text></svg>"
+    },
+    {
+     "text": "R = 10 kΩ, C = 1 µF, and Vin is a 1 V step. How fast does Vout change?",
+     "more": {
+      "text": "−100 V/s (a ramp)."
+     }
+    }
+   ],
+   "id": "ee-i-52"
+  },
+  {
+   "sides": [
+    {
+     "text": "Differentiator",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "Output follows the rate of change of the input",
+     "more": {
+      "text": "Vout = −RC × dVin/dt. It amplifies high-frequency noise, so a series resistor is added in practice."
+     }
+    },
+    {
+     "text": "What does a differentiator emphasize in a noisy signal?",
+     "more": {
+      "text": "High-frequency noise."
+     }
+    }
+   ],
+   "id": "ee-i-53"
+  },
+  {
+   "sides": [
+    {
+     "text": "Comparator",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "Compares two voltages; output swings high or low",
+     "more": {
+      "text": "An op-amp without feedback saturates to one rail or the other. Dedicated comparator ICs are faster."
+     }
+    },
+    {
+     "text": "What does a comparator output when V+ is above V−?",
+     "more": {
+      "text": "The high supply rail."
+     }
+    }
+   ],
+   "id": "ee-i-54"
+  },
+  {
+   "sides": [
+    {
+     "text": "Schmitt trigger",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "A comparator with hysteresis",
+     "more": {
+      "text": "Two thresholds (upper and lower) stop the output from chattering on a noisy or slow input. Used to clean up slowly changing signals."
+     }
+    },
+    {
+     "text": "Why use hysteresis on a comparator?",
+     "more": {
+      "text": "To prevent output chatter from noise near the threshold."
+     }
+    }
+   ],
+   "id": "ee-i-55"
+  },
+  {
+   "sides": [
+    {
+     "text": "555 timer: astable",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "A free-running oscillator",
+     "more": {
+      "text": "f ≈ 1.44 / ((R1 + 2R2) C). The duty cycle is above 50% with the basic circuit."
+     }
+    },
+    {
+     "text": "R1 = 1 kΩ, R2 = 10 kΩ, and C = 10 µF. What is the frequency?",
+     "more": {
+      "text": "About 6.9 Hz."
+     }
+    }
+   ],
+   "id": "ee-i-56"
+  },
+  {
+   "sides": [
+    {
+     "text": "555 timer: monostable",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "A one-shot timer",
+     "more": {
+      "text": "One trigger gives one output pulse of length t = 1.1 × R × C."
+     }
+    },
+    {
+     "text": "R = 100 kΩ and C = 10 µF. What is the pulse length?",
+     "more": {
+      "text": "1.1 s."
+     }
+    }
+   ],
+   "id": "ee-i-57"
+  },
+  {
+   "sides": [
+    {
+     "text": "Linear regulator",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "Holds a steady output voltage, wasting the difference as heat",
+     "more": {
+      "text": "Power dissipated is (Vin − Vout) × I. Simple and quiet, but inefficient at large differences."
+     }
+    },
+    {
+     "text": "A 7805 takes 12 V in and delivers 5 V at 0.5 A. How much power does it dissipate?",
+     "more": {
+      "text": "3.5 W."
+     }
+    }
+   ],
+   "id": "ee-i-58"
+  },
+  {
+   "sides": [
+    {
+     "text": "LDO regulator",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "A linear regulator that works with small headroom",
+     "more": {
+      "text": "Low-dropout types need only a few hundred millivolts between input and output, so they suit battery supplies."
+     }
+    },
+    {
+     "text": "What does low dropout mean?",
+     "more": {
+      "text": "The regulator can work with a small difference between input and output."
+     }
+    }
+   ],
+   "id": "ee-i-59"
+  },
+  {
+   "sides": [
+    {
+     "text": "Switching regulator",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "Chops the input quickly to convert efficiently",
+     "more": {
+      "text": "Typical efficiency is 85–95%, while linear regulators waste the voltage difference. Needs an inductor and produces switching noise."
+     }
+    },
+    {
+     "text": "Why are switching regulators more efficient than linear ones?",
+     "more": {
+      "text": "They switch rather than dissipate the excess voltage as heat."
+     }
+    }
+   ],
+   "id": "ee-i-60"
+  },
+  {
+   "sides": [
+    {
+     "text": "Thermal resistance",
+     "sub": "Practical · Intermediate"
+    },
+    {
+     "text": "Tj = Ta + P × θJA",
+     "more": {
+      "text": "Junction temperature rises with power dissipated. Keep it below the part's maximum, adding a heat sink or copper area if needed."
+     }
+    },
+    {
+     "text": "Ta = 25 °C, P = 2 W, and θJA = 40 °C/W. What is Tj?",
+     "more": {
+      "text": "105 °C."
+     }
+    }
+   ],
+   "id": "ee-i-61"
+  },
+  {
+   "sides": [
+    {
+     "text": "Voltage reference",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "A stable known voltage",
+     "more": {
+      "text": "Bandgap and precision references stay nearly constant with temperature and supply. ADCs and DACs depend on them."
+     }
+    },
+    {
+     "text": "Why does an ADC need a stable reference?",
+     "more": {
+      "text": "Its readings are scaled against that reference."
+     }
+    }
+   ],
+   "id": "ee-i-62"
+  },
+  {
+   "sides": [
+    {
+     "text": "ADC resolution (LSB)",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "LSB = Vref / 2ⁿ",
+     "more": {
+      "text": "One least-significant bit is the smallest voltage step the ADC can distinguish."
+     }
+    },
+    {
+     "text": "A 12-bit ADC with a 3.3 V reference. What is one LSB?",
+     "more": {
+      "text": "About 0.806 mV."
+     }
+    }
+   ],
+   "id": "ee-i-63"
+  },
+  {
+   "sides": [
+    {
+     "text": "DAC",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "Turns a number into a voltage",
+     "more": {
+      "text": "Resolution and reference set the step size. R-2R ladders are a common structure. PWM plus a low-pass filter is a cheap DAC."
+     }
+    },
+    {
+     "text": "How can PWM and an RC filter act as a DAC?",
+     "more": {
+      "text": "The filter averages the pulses into a DC voltage set by the duty cycle."
+     }
+    }
+   ],
+   "id": "ee-i-64"
+  },
+  {
+   "sides": [
+    {
+     "text": "Crystal oscillator",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "A quartz crystal sets a precise frequency",
+     "more": {
+      "text": "Accuracy is tens of parts per million, far better than an RC oscillator. Used for microcontroller clocks and real-time clocks."
+     }
+    },
+    {
+     "text": "Which is more accurate for a clock, a crystal or an RC oscillator?",
+     "more": {
+      "text": "A crystal."
+     }
+    }
+   ],
+   "id": "ee-i-65"
+  },
+  {
+   "sides": [
+    {
+     "text": "Optocoupler",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "Passes a signal with light for isolation",
+     "more": {
+      "text": "An LED and a phototransistor in one package isolate two circuits electrically. Used where grounds differ or high voltage is involved."
+     }
+    },
+    {
+     "text": "What does an optocoupler provide between two circuits?",
+     "more": {
+      "text": "Electrical isolation."
+     }
+    }
+   ],
+   "id": "ee-i-66"
+  },
+  {
+   "sides": [
+    {
+     "text": "Ideal transformer",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "Vp / Vs = Np / Ns",
+     "more": {
+      "text": "Power in equals power out, so current scales inversely: Ip × Np = Is × Ns."
+     }
+    },
+    {
+     "text": "A 120 V to 12 V transformer delivers 2 A. What is the primary current (ideal)?",
+     "more": {
+      "text": "0.2 A."
+     }
+    }
+   ],
+   "id": "ee-i-67"
+  },
+  {
+   "sides": [
+    {
+     "text": "Power supply design",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "Transformer, rectifier, smoothing, regulator",
+     "more": {
+      "text": "The peak after rectifying is √2 × Vrms minus diode drops. The regulator needs enough input headroom above its output."
+     }
+    },
+    {
+     "text": "A 12 V RMS secondary through a bridge rectifier. About what DC peak (with two 0.7 V drops)?",
+     "more": {
+      "text": "About 15.6 V (12 × 1.414 − 1.4)."
+     }
+    }
+   ],
+   "id": "ee-i-68"
+  },
+  {
+   "sides": [
+    {
+     "text": "Buck converter",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "Steps DC voltage down efficiently",
+     "more": {
+      "text": "A switch chops the input, and an inductor and capacitor smooth it. Ideal Vout = D × Vin, where D is the duty cycle."
+     },
+     "svg": "<svg viewBox=\"0 0 275 160\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" font-family=\"system-ui,sans-serif\" font-size=\"13\"><path d=\"M40 25L40 58.0\"/><g transform=\"translate(40 58.0) rotate(90)\"><path d=\"M0 0H18M18 -14V14M26 -7V7M26 0H44\"/></g><path d=\"M40 102.0L40 135\"/><text x=\"22\" y=\"74.0\" text-anchor=\"end\" fill=\"currentColor\" stroke=\"none\" class=\"acc\">+</text><text x=\"22\" y=\"100.0\" text-anchor=\"end\" fill=\"currentColor\" stroke=\"none\">−</text><text x=\"60\" y=\"86.0\" text-anchor=\"start\" fill=\"currentColor\" stroke=\"none\">Vin</text><path d=\"M40 25L58.0 25\"/><g transform=\"translate(58.0 25) rotate(0)\"><path d=\"M0 0H10M10 0L34 -13M34 0H44\"/></g><path d=\"M102.0 25L120 25\"/><path d=\"M120 135L120 100.0\"/><g transform=\"translate(120 100.0) rotate(-90)\"><path d=\"M0 0H12M12 -10V10L28 0ZM28 -10V10M28 0H40\"/></g><path d=\"M120 60.0L120 25\"/><path d=\"M120 25L131.0 25\"/><g transform=\"translate(131.0 25) rotate(0)\"><path d=\"M0 0H6C6 -12 18 -12 18 0C18 -12 30 -12 30 0C30 -12 42 -12 42 0H48\"/></g><path d=\"M179.0 25L190 25\"/><path d=\"M190 25L190 58.0\"/><g transform=\"translate(190 58.0) rotate(90)\"><path d=\"M0 0H19M19 -13V13M25 -13V13M25 0H44\"/></g><path d=\"M190 102.0L190 135\"/><path d=\"M190 25L240 25\"/><path d=\"M240 25L240 56.0\"/><g transform=\"translate(240 56.0) rotate(90)\"><path d=\"M0 0H8L12 -9L20 9L28 -9L36 9L40 0H48\"/></g><path d=\"M240 104.0L240 135\"/><path d=\"M40 135L240 135\"/><circle cx=\"120\" cy=\"25\" r=\"3.5\" fill=\"currentColor\" stroke=\"none\"/><circle cx=\"190\" cy=\"25\" r=\"3.5\" fill=\"currentColor\" stroke=\"none\"/><circle cx=\"120\" cy=\"135\" r=\"3.5\" fill=\"currentColor\" stroke=\"none\"/><circle cx=\"190\" cy=\"135\" r=\"3.5\" fill=\"currentColor\" stroke=\"none\"/><text x=\"80.0\" y=\"12\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">S</text><text x=\"134\" y=\"84.0\" text-anchor=\"start\" fill=\"currentColor\" stroke=\"none\">D</text><text x=\"155.0\" y=\"12\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">L</text><text x=\"204\" y=\"84.0\" text-anchor=\"start\" fill=\"currentColor\" stroke=\"none\">C</text><text x=\"254\" y=\"84.0\" text-anchor=\"start\" fill=\"currentColor\" stroke=\"none\">R</text></svg>"
+    },
+    {
+     "text": "Vin = 12 V and Vout = 5 V. What is the ideal duty cycle?",
+     "more": {
+      "text": "About 41.7% (5 / 12)."
+     }
+    }
+   ],
+   "id": "ee-i-69"
+  },
+  {
+   "sides": [
+    {
+     "text": "Boost converter",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "Steps DC voltage up",
+     "more": {
+      "text": "The inductor stores energy while the switch is on and releases it on top of the input. Ideal Vout = Vin / (1 − D)."
+     }
+    },
+    {
+     "text": "Vin = 5 V and D = 0.5. What is Vout?",
+     "more": {
+      "text": "10 V."
+     }
+    }
+   ],
+   "id": "ee-i-70"
+  },
+  {
+   "sides": [
+    {
+     "text": "Battery energy",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "Energy (Wh) = voltage × amp-hours",
+     "more": {
+      "text": "Wh lets you compare cells of different voltages and work out runtime for a given power draw."
+     }
+    },
+    {
+     "text": "A 3.7 V, 2 Ah cell. How much energy does it hold?",
+     "more": {
+      "text": "7.4 Wh."
+     }
+    }
+   ],
+   "id": "ee-i-71"
+  },
+  {
+   "sides": [
+    {
+     "text": "C-rate",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "1C discharges a battery in one hour",
+     "more": {
+      "text": "A 2 Ah cell at 1C delivers 2 A, at 0.5C delivers 1 A, and at 2C delivers 4 A. High C-rates heat cells and shorten life."
+     }
+    },
+    {
+     "text": "A 2 Ah cell is discharged at 0.5C. What current is that?",
+     "more": {
+      "text": "1 A."
+     }
+    }
+   ],
+   "id": "ee-i-72"
+  },
+  {
+   "sides": [
+    {
+     "text": "Li-ion cell voltage",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "3.7 V nominal, 4.2 V full, about 3.0 V empty",
+     "more": {
+      "text": "Never overcharge or deeply discharge a lithium-ion cell. A protection circuit or BMS enforces the limits."
+     }
+    },
+    {
+     "text": "What is a lithium-ion cell's fully charged voltage?",
+     "more": {
+      "text": "4.2 V."
+     }
+    }
+   ],
+   "id": "ee-i-73"
+  },
+  {
+   "sides": [
+    {
+     "text": "Li-ion charging (CC/CV)",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "Constant current, then constant voltage",
+     "more": {
+      "text": "The charger holds a set current until the cell reaches 4.2 V, then holds 4.2 V while the current tapers to a small value."
+     }
+    },
+    {
+     "text": "What does a Li-ion charger do once the cell reaches 4.2 V?",
+     "more": {
+      "text": "It holds the voltage and lets the current taper."
+     }
+    }
+   ],
+   "id": "ee-i-74"
+  },
+  {
+   "sides": [
+    {
+     "text": "Battery internal resistance",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "Why voltage sags under load",
+     "more": {
+      "text": "The cell behaves like an ideal source in series with a small resistance. Heavy loads or cold temperatures make the voltage drop."
+     }
+    },
+    {
+     "text": "A battery's voltage drops from 3.7 V to 3.5 V when a load turns on. What's the likely cause?",
+     "more": {
+      "text": "Voltage drop across the cell's internal resistance."
+     }
+    }
+   ],
+   "id": "ee-i-75"
+  },
+  {
+   "sides": [
+    {
+     "text": "Wire gauge and voltage drop",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "Thinner wire (higher AWG) resists more",
+     "more": {
+      "text": "Wire resistance causes loss and voltage drop: V = I × R. Use thicker wire for high current or long runs."
+     }
+    },
+    {
+     "text": "A wire run has 0.1 Ω total and carries 5 A. What is the voltage drop?",
+     "more": {
+      "text": "0.5 V."
+     }
+    }
+   ],
+   "id": "ee-i-76"
+  },
+  {
+   "sides": [
+    {
+     "text": "Reverse polarity protection",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "Stop a wrong-way battery from destroying a circuit",
+     "more": {
+      "text": "A series diode blocks reversed supplies, with a 0.7 V loss. A P-channel MOSFET does the same with far less loss."
+     }
+    },
+    {
+     "text": "Which gives less voltage drop, a series diode or a P-channel MOSFET?",
+     "more": {
+      "text": "The P-channel MOSFET."
+     }
+    }
+   ],
+   "id": "ee-i-77"
+  },
+  {
+   "sides": [
+    {
+     "text": "TVS and MOV",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "Parts that absorb voltage spikes",
+     "more": {
+      "text": "A TVS diode clamps fast transients on data and supply lines. A metal-oxide varistor (MOV) absorbs larger surges on mains inputs."
+     }
+    },
+    {
+     "text": "Which part is common on mains inputs to absorb surges?",
+     "more": {
+      "text": "A metal-oxide varistor (MOV)."
+     }
+    }
+   ],
+   "id": "ee-i-78"
+  },
+  {
+   "sides": [
+    {
+     "text": "DC motor",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "Speed follows voltage; torque follows current",
+     "more": {
+      "text": "As a motor spins it generates back EMF opposing the supply. At stall there is no back EMF, so current peaks. Stall current can destroy drivers."
+     }
+    },
+    {
+     "text": "When does a DC motor draw its highest current?",
+     "more": {
+      "text": "At stall, when back EMF is zero."
+     }
+    }
+   ],
+   "id": "ee-i-79"
+  },
+  {
+   "sides": [
+    {
+     "text": "Stepper motor",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "Moves in fixed steps",
+     "more": {
+      "text": "A 1.8° stepper takes 200 steps per revolution. A driver energizes the coils in sequence. Good for position control without feedback."
+     }
+    },
+    {
+     "text": "How many steps per revolution does a 1.8° stepper have?",
+     "more": {
+      "text": "200."
+     }
+    }
+   ],
+   "id": "ee-i-80"
+  },
+  {
+   "sides": [
+    {
+     "text": "Brushless DC motor (BLDC)",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "Electronically commutated motor",
+     "more": {
+      "text": "Uses permanent magnets and three coils switched by a controller, with no brushes to wear. Efficient and common in drones and fans."
+     }
+    },
+    {
+     "text": "What wears out in a brushed motor that a brushless one avoids?",
+     "more": {
+      "text": "The brushes."
+     }
+    }
+   ],
+   "id": "ee-i-81"
+  },
+  {
+   "sides": [
+    {
+     "text": "AC induction motor",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "Rotating magnetic field drives the rotor",
+     "more": {
+      "text": "The synchronous speed is N = 120 × f / P (P is poles). The rotor turns slightly slower (slip)."
+     }
+    },
+    {
+     "text": "60 Hz and 4 poles. What is the synchronous speed?",
+     "more": {
+      "text": "1,800 rpm."
+     }
+    }
+   ],
+   "id": "ee-i-82"
+  },
+  {
+   "sides": [
+    {
+     "text": "Three-phase power",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "Three sinusoids 120° apart",
+     "more": {
+      "text": "Delivers constant total power and is efficient for motors and transmission. Line voltage = √3 × phase voltage in a wye connection."
+     }
+    },
+    {
+     "text": "How far apart are the three phases?",
+     "more": {
+      "text": "120°."
+     }
+    }
+   ],
+   "id": "ee-i-83"
+  },
+  {
+   "sides": [
+    {
+     "text": "Solar cell I–V curve",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "Open-circuit voltage and short-circuit current",
+     "more": {
+      "text": "Power is highest at the knee of the curve. A maximum power point tracker (MPPT) adjusts the load to stay there."
+     }
+    },
+    {
+     "text": "What does an MPPT do?",
+     "more": {
+      "text": "Keeps a solar panel operating at its maximum power point."
+     }
+    }
+   ],
+   "id": "ee-i-84"
+  },
+  {
+   "sides": [
+    {
+     "text": "Inverter",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "Turns DC into AC",
+     "more": {
+      "text": "Switches (an H-bridge) create an AC waveform from DC, then filter it. Used with solar panels and batteries to power AC loads."
+     }
+    },
+    {
+     "text": "What does an inverter convert?",
+     "more": {
+      "text": "DC to AC."
+     }
+    }
+   ],
+   "id": "ee-i-85"
+  },
+  {
+   "sides": [
+    {
+     "text": "UPS",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "Battery backup that keeps equipment on during an outage",
+     "more": {
+      "text": "An uninterruptible power supply switches to its battery in milliseconds and gives time for a clean shutdown or a generator to start."
+     }
+    },
+    {
+     "text": "What is a UPS used for?",
+     "more": {
+      "text": "Keeping equipment running briefly when mains power fails."
+     }
+    }
+   ],
+   "id": "ee-i-86"
+  },
+  {
+   "sides": [
+    {
+     "text": "Supercapacitor",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "Huge capacitance for fast energy bursts",
+     "more": {
+      "text": "Charges and discharges quickly and survives many cycles, but stores far less energy than a battery of the same size."
+     }
+    },
+    {
+     "text": "Which stores more energy per volume, a supercapacitor or a Li-ion cell?",
+     "more": {
+      "text": "The Li-ion cell."
+     }
+    }
+   ],
+   "id": "ee-i-87"
+  },
+  {
+   "sides": [
+    {
+     "text": "Electrical grid",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "Generation, transmission, distribution",
+     "more": {
+      "text": "Power plants generate, high-voltage lines transmit, substations step the voltage down, and distribution lines reach homes. Supply and demand must balance continuously."
+     }
+    },
+    {
+     "text": "Why must a grid balance supply and demand continuously?",
+     "more": {
+      "text": "Because it has little storage; imbalance changes the frequency."
+     }
+    }
+   ],
+   "id": "ee-i-88"
+  },
+  {
+   "sides": [
+    {
+     "text": "Embedded power budget",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "Battery life = capacity / average current",
+     "more": {
+      "text": "Add up active, idle, and sleep currents weighted by how long each lasts."
+     }
+    },
+    {
+     "text": "A device averages 5 mA from a 2,000 mAh battery. How long does it last?",
+     "more": {
+      "text": "About 400 hours."
+     }
+    }
+   ],
+   "id": "ee-i-89"
+  },
+  {
+   "sides": [
+    {
+     "text": "Duty-cycled power",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "Sleep most of the time to save energy",
+     "more": {
+      "text": "Waking briefly to measure and transmit gives a tiny average current."
+     }
+    },
+    {
+     "text": "20 mA for 1% of the time and 10 µA the rest. What's the average current?",
+     "more": {
+      "text": "About 0.21 mA."
+     }
+    }
+   ],
+   "id": "ee-i-90"
+  },
+  {
+   "sides": [
+    {
+     "text": "Microcontroller architecture",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "CPU, memory, peripherals, and buses on one chip",
+     "more": {
+      "text": "The CPU runs instructions from flash, uses RAM for data, and talks to peripherals (GPIO, timers, ADC, UART, SPI, I2C) through registers."
+     }
+    },
+    {
+     "text": "Where does a microcontroller's CPU find its program?",
+     "more": {
+      "text": "In on-chip flash memory."
+     }
+    }
+   ],
+   "id": "ee-i-91"
+  },
+  {
+   "sides": [
+    {
+     "text": "Harvard vs von Neumann",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "Separate vs shared program and data memory",
+     "more": {
+      "text": "Harvard has separate buses for instructions and data, which allows simultaneous access. Von Neumann uses one shared memory."
+     }
+    },
+    {
+     "text": "Which design fetches an instruction and data at the same time?",
+     "more": {
+      "text": "Harvard architecture."
+     }
+    }
+   ],
+   "id": "ee-i-92"
+  },
+  {
+   "sides": [
+    {
+     "text": "Memory-mapped I/O",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "Peripherals appear as memory addresses",
+     "more": {
+      "text": "Writing a value to a peripheral's register address configures it. Firmware reads and writes registers to control hardware."
+     }
+    },
+    {
+     "text": "How does firmware control a timer peripheral?",
+     "more": {
+      "text": "By reading and writing its registers at specific memory addresses."
+     }
+    }
+   ],
+   "id": "ee-i-93"
+  },
+  {
+   "sides": [
+    {
+     "text": "Push-pull vs open-drain",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "Two ways a GPIO can drive an output",
+     "more": {
+      "text": "Push-pull actively drives both high and low. Open-drain only pulls low and needs an external pull-up, so several devices can share a line (as in I2C)."
+     }
+    },
+    {
+     "text": "Which output type lets multiple devices share one line safely?",
+     "more": {
+      "text": "Open-drain."
+     }
+    }
+   ],
+   "id": "ee-i-94"
+  },
+  {
+   "sides": [
+    {
+     "text": "Pin current limits",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "A GPIO pin can only source or sink a small current",
+     "more": {
+      "text": "Many pins handle about 20 mA, and the whole chip has a total limit. Exceeding it damages the chip."
+     }
+    },
+    {
+     "text": "A GPIO pin directly drives a 100 mA load. What's the problem?",
+     "more": {
+      "text": "It exceeds the pin's limit. Use a transistor driver."
+     }
+    }
+   ],
+   "id": "ee-i-95"
+  },
+  {
+   "sides": [
+    {
+     "text": "Sourcing and sinking",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "Current out of a pin vs into a pin",
+     "more": {
+      "text": "A pin that supplies current to a load sources it; a pin that pulls current in sinks it. Many chips sink more than they source."
+     }
+    },
+    {
+     "text": "What is it called when a pin pulls current into itself?",
+     "more": {
+      "text": "Sinking."
+     }
+    }
+   ],
+   "id": "ee-i-96"
+  },
+  {
+   "sides": [
+    {
+     "text": "ADC reference and sampling",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "The reference sets the full-scale voltage",
+     "more": {
+      "text": "Reading = Vin / Vref × (2ⁿ − 1). A noisy reference or source impedance that is too high gives errors. Averaging reduces noise."
+     }
+    },
+    {
+     "text": "A 10-bit ADC with Vref = 3.3 V reads 620. About what voltage?",
+     "more": {
+      "text": "About 2.0 V (620 / 1023 × 3.3)."
+     }
+    }
+   ],
+   "id": "ee-i-97"
+  },
+  {
+   "sides": [
+    {
+     "text": "Timer prescaler",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "Divides the clock to count slower",
+     "more": {
+      "text": "Output frequency = f_clk / (prescaler × (top + 1))."
+     }
+    },
+    {
+     "text": "16 MHz clock, prescaler 64, and a count of 250. What frequency results?",
+     "more": {
+      "text": "1,000 Hz."
+     }
+    }
+   ],
+   "id": "ee-i-98"
+  },
+  {
+   "sides": [
+    {
+     "text": "PWM frequency and resolution",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "Higher resolution means a lower PWM frequency for a given clock",
+     "more": {
+      "text": "Faster PWM is easier to filter and quiet for motors, but each duty step is coarser. Pick the frequency for the load."
+     }
+    },
+    {
+     "text": "Why do hobbyists use higher PWM frequencies for motors?",
+     "more": {
+      "text": "To move the switching tone above hearing and smooth the current."
+     }
+    }
+   ],
+   "id": "ee-i-99"
+  },
+  {
+   "sides": [
+    {
+     "text": "Interrupt service routine",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "Keep it short",
+     "more": {
+      "text": "An ISR should do the minimum (set a flag, read a value) and return. Variables shared with the main code should be declared volatile."
+     }
+    },
+    {
+     "text": "Why keep an ISR short?",
+     "more": {
+      "text": "Long ISRs delay other interrupts and the main program."
+     }
+    }
+   ],
+   "id": "ee-i-100"
+  },
+  {
+   "sides": [
+    {
+     "text": "Polling vs interrupts",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "Check repeatedly vs be notified",
+     "more": {
+      "text": "Polling is simple but wastes time and can miss fast events. Interrupts react immediately but add complexity and timing issues."
+     }
+    },
+    {
+     "text": "Which approach reacts fastest to a rare event?",
+     "more": {
+      "text": "An interrupt."
+     }
+    }
+   ],
+   "id": "ee-i-101"
+  },
+  {
+   "sides": [
+    {
+     "text": "Watchdog timer",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "Resets the chip if the program hangs",
+     "more": {
+      "text": "Firmware must clear the timer regularly. If it stops (a crash or loop), the timer expires and resets the chip."
+     }
+    },
+    {
+     "text": "What does a watchdog do when the program stops responding?",
+     "more": {
+      "text": "Resets the microcontroller."
+     }
+    }
+   ],
+   "id": "ee-i-102"
+  },
+  {
+   "sides": [
+    {
+     "text": "Sleep modes",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "Trade features for low power",
+     "more": {
+      "text": "Deeper sleep turns off more of the chip and wakes more slowly. Interrupts or timers wake it."
+     }
+    },
+    {
+     "text": "Why do battery-powered devices sleep as much as possible?",
+     "more": {
+      "text": "To cut average current and extend battery life."
+     }
+    }
+   ],
+   "id": "ee-i-103"
+  },
+  {
+   "sides": [
+    {
+     "text": "Brown-out detection",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "Resets if the supply droops too low",
+     "more": {
+      "text": "Prevents unpredictable behavior when voltage falls below the chip's safe range."
+     }
+    },
+    {
+     "text": "What does brown-out detection protect against?",
+     "more": {
+      "text": "Erratic operation when the supply voltage is too low."
+     }
+    }
+   ],
+   "id": "ee-i-104"
+  },
+  {
+   "sides": [
+    {
+     "text": "Clock sources",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "Internal RC vs crystal",
+     "more": {
+      "text": "An internal RC oscillator is convenient but less accurate (a few percent). A crystal gives parts-per-million accuracy for timing, UART, and USB."
+     }
+    },
+    {
+     "text": "Which clock source suits accurate UART timing?",
+     "more": {
+      "text": "A crystal."
+     }
+    }
+   ],
+   "id": "ee-i-105"
+  },
+  {
+   "sides": [
+    {
+     "text": "UART frame (8N1)",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "Start bit, 8 data bits, no parity, 1 stop bit",
+     "more": {
+      "text": "Each byte takes 10 bit times on the wire, so throughput is baud / 10 bytes per second."
+     }
+    },
+    {
+     "text": "115,200 baud with 8N1. About how many bytes per second?",
+     "more": {
+      "text": "11,520 bytes/s."
+     }
+    }
+   ],
+   "id": "ee-i-106"
+  },
+  {
+   "sides": [
+    {
+     "text": "SPI bus",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "Fast four-wire synchronous bus",
+     "more": {
+      "text": "SCK, MOSI, MISO, and a chip select per device. Master-driven, no addresses, and speeds of many MHz. Modes (CPOL and CPHA) must match."
+     }
+    },
+    {
+     "text": "What does SPI use to pick which device to talk to?",
+     "more": {
+      "text": "A separate chip select line for each device."
+     }
+    }
+   ],
+   "id": "ee-i-107"
+  },
+  {
+   "sides": [
+    {
+     "text": "I2C details",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "Addressed two-wire bus with pull-ups",
+     "more": {
+      "text": "7-bit device addresses, an ACK after each byte, and standard speeds of 100 kHz and 400 kHz. Pull-up values depend on bus capacitance and speed."
+     }
+    },
+    {
+     "text": "What happens if an I2C bus has no pull-up resistors?",
+     "more": {
+      "text": "The lines can't go high, so communication fails."
+     }
+    }
+   ],
+   "id": "ee-i-108"
+  },
+  {
+   "sides": [
+    {
+     "text": "USB basics",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "One standard for data and power",
+     "more": {
+      "text": "Host and device roles, enumeration, and classes (HID, CDC, mass storage). Many microcontrollers have USB device support."
+     }
+    },
+    {
+     "text": "What identifies a USB device type to the host?",
+     "more": {
+      "text": "Its device class, reported during enumeration."
+     }
+    }
+   ],
+   "id": "ee-i-109"
+  },
+  {
+   "sides": [
+    {
+     "text": "Level shifting",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "Connect 3.3 V and 5 V parts safely",
+     "more": {
+      "text": "Use a resistor divider (one direction) or a dedicated level shifter (both directions, such as for I2C)."
+     }
+    },
+    {
+     "text": "Which is needed for a bidirectional I2C link between 3.3 V and 5 V devices?",
+     "more": {
+      "text": "A bidirectional level shifter."
+     }
+    }
+   ],
+   "id": "ee-i-110"
+  },
+  {
+   "sides": [
+    {
+     "text": "Firmware state machine",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "Organize behavior into states and transitions",
+     "more": {
+      "text": "Each state defines outputs and the conditions to move to another state. Makes code predictable and easy to debug."
+     }
+    },
+    {
+     "text": "Why use a state machine for a button-and-LED controller?",
+     "more": {
+      "text": "It keeps behavior organized and predictable."
+     }
+    }
+   ],
+   "id": "ee-i-111"
+  },
+  {
+   "sides": [
+    {
+     "text": "Bootloader and programming",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "How code gets into the chip",
+     "more": {
+      "text": "A bootloader accepts new firmware over USB or serial. ISP/SWD/JTAG programmers write flash directly and also allow debugging."
+     }
+    },
+    {
+     "text": "Which interface lets you set breakpoints on a Cortex-M chip?",
+     "more": {
+      "text": "SWD (or JTAG) with a debug probe."
+     }
+    }
+   ],
+   "id": "ee-i-112"
+  },
+  {
+   "sides": [
+    {
+     "text": "Arduino, STM32, ESP32, and RP2040",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "Popular microcontroller families",
+     "more": {
+      "text": "Arduino Uno: simple 8-bit AVR. STM32: ARM Cortex-M, wide range. ESP32: Wi-Fi and Bluetooth built in. RP2040: Raspberry Pi's dual-core Cortex-M0+ chip with programmable I/O."
+     }
+    },
+    {
+     "text": "Which popular chip family has Wi-Fi and Bluetooth built in?",
+     "more": {
+      "text": "The ESP32."
+     }
+    }
+   ],
+   "id": "ee-i-113"
+  },
+  {
+   "sides": [
+    {
+     "text": "Microcontroller vs Linux board",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "Predictable timing vs a full operating system",
+     "more": {
+      "text": "A microcontroller runs code directly with tight, predictable timing. A Linux board such as a Raspberry Pi runs many processes and has unpredictable timing for hard real-time tasks."
+     }
+    },
+    {
+     "text": "Why isn't a Raspberry Pi ideal for tight real-time motor control?",
+     "more": {
+      "text": "Linux isn't deterministic, so timing can jitter."
+     }
+    }
+   ],
+   "id": "ee-i-114"
+  },
+  {
+   "sides": [
+    {
+     "text": "Fixed-point vs floating-point",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "Integers scaled by a fixed factor vs hardware floats",
+     "more": {
+      "text": "Small chips without a floating-point unit are slow at floats, so fixed-point integers are common."
+     }
+    },
+    {
+     "text": "Why use fixed-point math on a small MCU?",
+     "more": {
+      "text": "It's much faster without a floating-point unit."
+     }
+    }
+   ],
+   "id": "ee-i-115"
+  },
+  {
+   "sides": [
+    {
+     "text": "RTC and timestamps",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "Keeping time across power loss",
+     "more": {
+      "text": "A real-time clock chip with a small backup battery or supercapacitor counts time while the main power is off."
+     }
+    },
+    {
+     "text": "How does a data logger keep time when unpowered?",
+     "more": {
+      "text": "A real-time clock with backup power."
+     }
+    }
+   ],
+   "id": "ee-i-116"
+  },
+  {
+   "sides": [
+    {
+     "text": "Displays",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "Character LCD, OLED, and e-paper",
+     "more": {
+      "text": "Character LCDs are simple. OLEDs are bright and self-lit. E-paper holds an image without power. Common interfaces: I2C and SPI."
+     }
+    },
+    {
+     "text": "Which display holds an image without power?",
+     "more": {
+      "text": "E-paper."
+     }
+    }
+   ],
+   "id": "ee-i-117"
+  },
+  {
+   "sides": [
+    {
+     "text": "Sensor data conditioning",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "Scale, filter, and calibrate raw readings",
+     "more": {
+      "text": "Raw ADC counts become real units with offset and gain, and noise is reduced by averaging or filtering."
+     }
+    },
+    {
+     "text": "Why average several ADC readings?",
+     "more": {
+      "text": "To reduce random noise."
+     }
+    }
+   ],
+   "id": "ee-i-118"
+  },
+  {
+   "sides": [
+    {
+     "text": "Time and frequency domains",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "The same signal seen two ways",
+     "more": {
+      "text": "Any signal can be built from sinusoids. A time plot shows amplitude over time; a spectrum shows how much energy sits at each frequency."
+     }
+    },
+    {
+     "text": "Which view shows which frequencies a signal contains?",
+     "more": {
+      "text": "The frequency domain (the spectrum)."
+     }
+    }
+   ],
+   "id": "ee-i-119"
+  },
+  {
+   "sides": [
+    {
+     "text": "Harmonics",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "Multiples of a fundamental frequency",
+     "more": {
+      "text": "A square wave contains the fundamental and odd harmonics (3rd, 5th, 7th…). Sharp edges mean wide bandwidth."
+     }
+    },
+    {
+     "text": "Which harmonics does an ideal square wave contain?",
+     "more": {
+      "text": "The odd ones (1st, 3rd, 5th…)."
+     }
+    }
+   ],
+   "id": "ee-i-120"
+  },
+  {
+   "sides": [
+    {
+     "text": "Amplitude modulation (AM)",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "The message varies the carrier's amplitude",
+     "more": {
+      "text": "Bandwidth = 2 × the highest message frequency. Simple, but sensitive to noise."
+     },
+     "svg": "<svg viewBox=\"0 0 270 158\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" font-family=\"system-ui,sans-serif\" font-size=\"13\"><path d=\"M34 12V126H260\" stroke-width=\"1.5\"/><path d=\"M34 69.0H260\" stroke-width=\"1\" stroke-dasharray=\"3 4\" opacity=\".5\"/><path d=\"M34.0 69.0L34.5 57.8L34.9 48.1L35.4 41.2L35.8 38.1L36.3 39.4L36.7 45.0L37.2 54.0L37.6 65.3L38.1 77.2L38.5 88.2L39.0 96.6L39.4 101.2L39.9 101.3L40.3 96.7L40.8 88.2L41.2 76.8L41.7 64.2L42.1 52.1L42.6 42.2L43.0 36.0L43.5 34.4L43.9 37.7L44.4 45.5L44.8 56.8L45.3 69.9L45.8 83.0L46.2 94.4L46.7 102.2L47.1 105.4L47.6 103.5L48.0 96.6L48.5 85.8L48.9 72.4L49.4 58.4L49.8 45.8L50.3 36.3L50.7 31.3L51.2 31.7L51.6 37.3L52.1 47.5L52.5 60.9L53.0 75.5L53.4 89.4L53.9 100.5L54.3 107.2L54.8 108.6L55.2 104.4L55.7 95.1L56.1 82.0L56.6 67.0L57.1 52.1L57.5 39.4L58.0 30.9L58.4 27.7L58.9 30.3L59.3 38.4L59.8 51.0L60.2 66.2L60.7 81.9L61.1 95.9L61.6 106.2L62.0 111.3L62.5 110.5L62.9 103.7L63.4 92.0L63.8 77.0L64.3 60.7L64.7 45.4L65.2 33.4L65.6 26.4L66.1 25.4L66.5 30.5L67.0 41.1L67.4 55.8L67.9 72.4L68.4 88.6L68.8 102.1L69.3 111.1L69.7 114.1L70.2 110.7L70.6 101.5L71.1 87.5L71.5 70.9L72.0 53.9L72.4 39.0L72.9 28.3L73.3 23.2L73.8 24.6L74.2 32.4L74.7 45.3L75.1 61.6L75.6 79.1L76.0 95.2L76.5 107.6L76.9 114.6L77.4 115.2L77.8 109.3L78.3 97.6L78.7 81.9L79.2 64.3L79.7 47.2L80.1 33.3L80.6 24.3L81.0 21.6L81.5 25.7L81.9 35.8L82.4 50.7L82.8 68.2L83.3 85.8L83.7 101.1L84.2 111.9L84.6 116.6L85.1 114.6L85.5 106.2L86.0 92.5L86.4 75.4L86.9 57.4L87.3 41.1L87.8 28.7L88.2 21.9L88.7 21.8L89.1 28.4L89.6 40.7L90.0 57.0L90.5 75.0L91.0 92.2L91.4 106.1L91.9 114.7L92.3 116.9L92.8 112.3L93.2 101.6L93.7 86.3L94.1 68.6L94.6 51.0L95.0 35.9L95.5 25.5L95.9 21.3L96.4 23.8L96.8 32.7L97.3 46.7L97.7 63.8L98.2 81.6L98.6 97.6L99.1 109.6L99.5 115.7L100.0 115.3L100.4 108.3L100.9 95.8L101.3 79.6L101.8 61.9L102.3 45.3L102.7 32.0L103.2 24.0L103.6 22.4L104.1 27.4L104.5 38.2L105.0 53.3L105.4 70.6L105.9 87.5L106.3 101.8L106.8 111.4L107.2 115.0L107.7 112.1L108.1 103.1L108.6 89.4L109.0 72.8L109.5 55.8L109.9 40.7L110.4 29.7L110.8 24.3L111.3 25.2L111.7 32.3L112.2 44.5L112.6 60.1L113.1 76.8L113.6 92.4L114.0 104.5L114.5 111.6L114.9 112.6L115.4 107.5L115.8 97.0L116.3 82.6L116.7 66.4L117.2 50.7L117.6 37.7L118.1 29.1L118.5 26.3L119.0 29.4L119.4 38.2L119.9 51.1L120.3 66.5L120.8 82.2L121.2 95.8L121.7 105.6L122.1 110.1L122.6 108.8L123.0 101.9L123.5 90.5L123.9 76.1L124.4 60.9L124.9 46.9L125.3 36.2L125.8 30.2L126.2 29.7L126.7 34.7L127.1 44.5L127.6 57.7L128.0 72.3L128.5 86.3L128.9 97.7L129.4 105.0L129.8 107.1L130.3 103.9L130.7 95.8L131.2 84.0L131.6 70.2L132.1 56.5L132.5 44.6L133.0 36.3L133.4 32.7L133.9 34.2L134.3 40.6L134.8 50.9L135.2 63.6L135.7 77.0L136.2 89.0L136.6 98.1L137.1 103.0L137.5 103.1L138.0 98.3L138.4 89.6L138.9 78.0L139.3 65.3L139.8 53.3L140.2 43.7L140.7 37.7L141.1 36.3L141.6 39.4L142.0 46.6L142.5 56.9L142.9 68.7L143.4 80.4L143.8 90.4L144.3 97.2L144.7 99.9L145.2 98.3L145.6 92.6L146.1 83.6L146.5 72.8L147.0 61.6L147.5 51.5L147.9 44.1L148.4 40.3L148.8 40.6L149.3 44.8L149.7 52.4L150.2 62.2L150.6 72.8L151.1 82.6L151.5 90.4L152.0 95.1L152.4 96.1L152.9 93.2L153.3 87.0L153.8 78.3L154.2 68.6L154.7 59.0L155.1 51.0L155.6 45.6L156.0 43.7L156.5 45.3L156.9 50.2L157.4 57.6L157.8 66.5L158.3 75.7L158.8 83.7L159.2 89.5L159.7 92.3L160.1 91.9L160.6 88.2L161.0 81.9L161.5 73.9L161.9 65.4L162.4 57.5L162.8 51.4L163.3 47.9L163.7 47.3L164.2 49.9L164.6 55.0L165.1 62.0L165.5 69.9L166.0 77.5L166.4 83.7L166.9 87.8L167.3 89.2L167.8 87.7L168.2 83.6L168.7 77.6L169.1 70.5L169.6 63.3L170.1 57.0L170.5 52.5L171.0 50.4L171.4 51.0L171.9 54.1L172.3 59.2L172.8 65.5L173.2 72.3L173.7 78.5L174.1 83.2L174.6 85.8L175.0 86.1L175.5 83.9L175.9 79.7L176.4 74.1L176.8 67.9L177.3 61.9L177.7 57.0L178.2 53.9L178.6 53.0L179.1 54.3L179.5 57.7L180.0 62.5L180.4 68.2L180.9 73.9L181.4 78.9L181.8 82.3L182.3 83.9L182.7 83.3L183.2 80.7L183.6 76.6L184.1 71.4L184.5 66.0L185.0 61.1L185.4 57.4L185.9 55.3L186.3 55.2L186.8 57.1L187.2 60.6L187.7 65.2L188.1 70.3L188.6 75.1L189.0 79.0L189.5 81.5L189.9 82.2L190.4 81.0L190.8 78.2L191.3 74.1L191.7 69.3L192.2 64.6L192.7 60.5L193.1 57.6L193.6 56.4L194.0 57.0L194.5 59.2L194.9 62.8L195.4 67.2L195.8 71.9L196.3 76.1L196.7 79.3L197.2 81.0L197.6 81.0L198.1 79.3L198.5 76.2L199.0 72.1L199.4 67.6L199.9 63.3L200.3 59.8L200.8 57.6L201.2 57.0L201.7 58.1L202.1 60.8L202.6 64.6L203.0 69.0L203.5 73.4L204.0 77.2L204.4 79.9L204.9 81.0L205.3 80.4L205.8 78.2L206.2 74.7L206.7 70.4L207.1 65.9L207.6 61.8L208.0 58.6L208.5 57.0L208.9 57.0L209.4 58.7L209.8 61.9L210.3 66.1L210.7 70.8L211.2 75.2L211.6 78.8L212.1 81.0L212.5 81.6L213.0 80.4L213.4 77.5L213.9 73.4L214.3 68.7L214.8 63.9L215.3 59.8L215.7 57.0L216.2 55.8L216.6 56.5L217.1 59.0L217.5 62.9L218.0 67.8L218.4 72.8L218.9 77.5L219.3 80.9L219.8 82.8L220.2 82.7L220.7 80.6L221.1 76.9L221.6 72.0L222.0 66.6L222.5 61.4L222.9 57.3L223.4 54.7L223.8 54.1L224.3 55.7L224.7 59.2L225.2 64.1L225.6 69.8L226.1 75.5L226.6 80.4L227.0 83.7L227.5 85.0L227.9 84.1L228.4 80.9L228.8 76.1L229.3 70.1L229.7 63.9L230.2 58.3L230.6 54.1L231.1 51.9L231.5 52.2L232.0 54.8L232.4 59.6L232.9 65.7L233.3 72.5L233.8 78.9L234.2 84.0L234.7 87.0L235.1 87.6L235.6 85.5L236.0 81.0L236.5 74.7L236.9 67.5L237.4 60.4L237.9 54.3L238.3 50.3L238.8 48.8L239.2 50.2L239.7 54.3L240.1 60.5L240.6 68.1L241.0 76.0L241.5 83.0L241.9 88.2L242.4 90.7L242.8 90.1L243.3 86.6L243.7 80.5L244.2 72.6L244.6 64.1L245.1 56.1L245.5 49.8L246.0 46.1L246.4 45.7L246.9 48.5L247.3 54.3L247.8 62.4L248.2 71.5L248.7 80.4L249.2 87.8L249.6 92.7L250.1 94.3L250.5 92.4L251.0 87.0L251.4 79.0L251.9 69.4L252.3 59.6L252.8 51.0L253.2 44.8L253.7 41.9L254.1 42.9L254.6 47.6L255.0 55.4L255.5 65.3L255.9 75.8L256.4 85.6L256.8 93.2L257.3 97.4L257.7 97.7L258.2 93.9L258.6 86.4L259.1 76.4L259.5 65.2L260.0 54.4\" class=\"\" stroke-width=\"2.2\"/><path d=\"M34.0 39.0L35.4 38.3L36.8 37.6L38.2 36.9L39.6 36.2L41.1 35.5L42.5 34.8L43.9 34.1L45.3 33.4L46.7 32.8L48.1 32.1L49.5 31.4L51.0 30.8L52.4 30.2L53.8 29.6L55.2 29.0L56.6 28.4L58.0 27.8L59.4 27.3L60.8 26.8L62.2 26.2L63.7 25.8L65.1 25.3L66.5 24.8L67.9 24.4L69.3 24.0L70.7 23.6L72.1 23.3L73.6 22.9L75.0 22.6L76.4 22.3L77.8 22.1L79.2 21.9L80.6 21.7L82.0 21.5L83.4 21.3L84.8 21.2L86.3 21.1L87.7 21.0L89.1 21.0L90.5 21.0L91.9 21.0L93.3 21.1L94.7 21.1L96.2 21.2L97.6 21.4L99.0 21.5L100.4 21.7L101.8 21.9L103.2 22.1L104.6 22.4L106.0 22.7L107.5 23.0L108.9 23.3L110.3 23.7L111.7 24.1L113.1 24.5L114.5 24.9L115.9 25.4L117.3 25.9L118.8 26.4L120.2 26.9L121.6 27.4L123.0 28.0L124.4 28.5L125.8 29.1L127.2 29.7L128.6 30.3L130.1 30.9L131.5 31.6L132.9 32.2L134.3 32.9L135.7 33.6L137.1 34.2L138.5 34.9L139.9 35.6L141.4 36.3L142.8 37.0L144.2 37.7L145.6 38.4L147.0 39.2L148.4 39.9L149.8 40.6L151.2 41.3L152.6 42.0L154.1 42.7L155.5 43.4L156.9 44.0L158.3 44.7L159.7 45.4L161.1 46.0L162.5 46.7L164.0 47.3L165.4 47.9L166.8 48.6L168.2 49.1L169.6 49.7L171.0 50.3L172.4 50.8L173.8 51.4L175.2 51.9L176.7 52.3L178.1 52.8L179.5 53.3L180.9 53.7L182.3 54.1L183.7 54.5L185.1 54.8L186.5 55.1L188.0 55.4L189.4 55.7L190.8 56.0L192.2 56.2L193.6 56.4L195.0 56.6L196.4 56.7L197.8 56.8L199.3 56.9L200.7 57.0L202.1 57.0L203.5 57.0L204.9 57.0L206.3 56.9L207.7 56.8L209.1 56.7L210.6 56.6L212.0 56.4L213.4 56.3L214.8 56.0L216.2 55.8L217.6 55.5L219.0 55.2L220.4 54.9L221.9 54.6L223.3 54.2L224.7 53.8L226.1 53.4L227.5 53.0L228.9 52.5L230.3 52.0L231.8 51.5L233.2 51.0L234.6 50.5L236.0 49.9L237.4 49.4L238.8 48.8L240.2 48.2L241.6 47.6L243.0 46.9L244.5 46.3L245.9 45.6L247.3 45.0L248.7 44.3L250.1 43.6L251.5 42.9L252.9 42.2L254.4 41.5L255.8 40.8L257.2 40.1L258.6 39.4L260.0 38.7\" class=\"acc\" stroke-width=\"2.2\"/><path d=\"M34.0 99.0L35.4 99.7L36.8 100.4L38.2 101.1L39.6 101.8L41.1 102.5L42.5 103.2L43.9 103.9L45.3 104.6L46.7 105.2L48.1 105.9L49.5 106.6L51.0 107.2L52.4 107.8L53.8 108.4L55.2 109.0L56.6 109.6L58.0 110.2L59.4 110.7L60.8 111.2L62.2 111.8L63.7 112.2L65.1 112.7L66.5 113.2L67.9 113.6L69.3 114.0L70.7 114.4L72.1 114.7L73.6 115.1L75.0 115.4L76.4 115.7L77.8 115.9L79.2 116.1L80.6 116.3L82.0 116.5L83.4 116.7L84.8 116.8L86.3 116.9L87.7 117.0L89.1 117.0L90.5 117.0L91.9 117.0L93.3 116.9L94.7 116.9L96.2 116.8L97.6 116.6L99.0 116.5L100.4 116.3L101.8 116.1L103.2 115.9L104.6 115.6L106.0 115.3L107.5 115.0L108.9 114.7L110.3 114.3L111.7 113.9L113.1 113.5L114.5 113.1L115.9 112.6L117.3 112.1L118.8 111.6L120.2 111.1L121.6 110.6L123.0 110.0L124.4 109.5L125.8 108.9L127.2 108.3L128.6 107.7L130.1 107.1L131.5 106.4L132.9 105.8L134.3 105.1L135.7 104.4L137.1 103.8L138.5 103.1L139.9 102.4L141.4 101.7L142.8 101.0L144.2 100.3L145.6 99.6L147.0 98.8L148.4 98.1L149.8 97.4L151.2 96.7L152.6 96.0L154.1 95.3L155.5 94.6L156.9 94.0L158.3 93.3L159.7 92.6L161.1 92.0L162.5 91.3L164.0 90.7L165.4 90.1L166.8 89.4L168.2 88.9L169.6 88.3L171.0 87.7L172.4 87.2L173.8 86.6L175.2 86.1L176.7 85.7L178.1 85.2L179.5 84.7L180.9 84.3L182.3 83.9L183.7 83.5L185.1 83.2L186.5 82.9L188.0 82.6L189.4 82.3L190.8 82.0L192.2 81.8L193.6 81.6L195.0 81.4L196.4 81.3L197.8 81.2L199.3 81.1L200.7 81.0L202.1 81.0L203.5 81.0L204.9 81.0L206.3 81.1L207.7 81.2L209.1 81.3L210.6 81.4L212.0 81.6L213.4 81.7L214.8 82.0L216.2 82.2L217.6 82.5L219.0 82.8L220.4 83.1L221.9 83.4L223.3 83.8L224.7 84.2L226.1 84.6L227.5 85.0L228.9 85.5L230.3 86.0L231.8 86.5L233.2 87.0L234.6 87.5L236.0 88.1L237.4 88.6L238.8 89.2L240.2 89.8L241.6 90.4L243.0 91.1L244.5 91.7L245.9 92.4L247.3 93.0L248.7 93.7L250.1 94.4L251.5 95.1L252.9 95.8L254.4 96.5L255.8 97.2L257.2 97.9L258.6 98.6L260.0 99.3\" class=\"acc\" stroke-width=\"2.2\"/><text x=\"147.0\" y=\"155\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">time</text></svg>"
+    },
+    {
+     "text": "Audio up to 5 kHz is sent by AM. What bandwidth is needed?",
+     "more": {
+      "text": "10 kHz."
+     }
+    }
+   ],
+   "id": "ee-i-121"
+  },
+  {
+   "sides": [
+    {
+     "text": "Frequency modulation (FM)",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "The message varies the carrier's frequency",
+     "more": {
+      "text": "More noise-resistant than AM. Carson's rule: BW ≈ 2 × (Δf + f_m)."
+     },
+     "svg": "<svg viewBox=\"0 0 270 158\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" font-family=\"system-ui,sans-serif\" font-size=\"13\"><path d=\"M34 12V126H260\" stroke-width=\"1.5\"/><path d=\"M34 69.0H260\" stroke-width=\"1\" stroke-dasharray=\"3 4\" opacity=\".5\"/><path d=\"M34.0 69.0L34.4 59.7L34.8 50.9L35.1 43.0L35.5 36.5L35.9 31.8L36.3 29.0L36.6 28.3L37.0 29.8L37.4 33.4L37.8 38.9L38.1 45.9L38.5 54.2L38.9 63.2L39.3 72.6L39.6 81.7L40.0 90.2L40.4 97.6L40.8 103.4L41.2 107.5L41.5 109.5L41.9 109.4L42.3 107.2L42.7 103.0L43.0 97.1L43.4 89.7L43.8 81.2L44.2 72.1L44.5 62.9L44.9 54.0L45.3 45.8L45.7 38.9L46.1 33.5L46.4 29.9L46.8 28.4L47.2 28.8L47.6 31.4L47.9 35.8L48.3 41.8L48.7 49.2L49.1 57.6L49.4 66.6L49.8 75.6L50.2 84.4L50.6 92.3L51.0 99.1L51.3 104.4L51.7 107.9L52.1 109.6L52.5 109.3L52.8 107.0L53.2 103.0L53.6 97.3L54.0 90.3L54.3 82.3L54.7 73.6L55.1 64.8L55.5 56.2L55.8 48.2L56.2 41.2L56.6 35.5L57.0 31.3L57.4 28.9L57.7 28.3L58.1 29.6L58.5 32.6L58.9 37.2L59.2 43.3L59.6 50.4L60.0 58.4L60.4 66.8L60.7 75.3L61.1 83.5L61.5 91.0L61.9 97.6L62.2 102.9L62.6 106.8L63.0 109.1L63.4 109.7L63.8 108.6L64.1 105.9L64.5 101.6L64.9 96.1L65.3 89.4L65.6 82.0L66.0 74.1L66.4 66.0L66.8 58.0L67.1 50.5L67.5 43.8L67.9 38.0L68.3 33.5L68.7 30.3L69.0 28.6L69.4 28.4L69.8 29.7L70.2 32.5L70.5 36.6L70.9 41.8L71.3 48.0L71.7 55.0L72.0 62.4L72.4 70.0L72.8 77.5L73.2 84.8L73.6 91.4L73.9 97.3L74.3 102.1L74.7 105.9L75.1 108.4L75.4 109.6L75.8 109.5L76.2 108.1L76.6 105.4L76.9 101.6L77.3 96.7L77.7 91.1L78.1 84.8L78.4 78.0L78.8 71.0L79.2 64.0L79.6 57.1L80.0 50.6L80.3 44.7L80.7 39.6L81.1 35.3L81.5 31.9L81.8 29.6L82.2 28.5L82.6 28.4L83.0 29.4L83.3 31.5L83.7 34.6L84.1 38.6L84.5 43.3L84.8 48.7L85.2 54.5L85.6 60.7L86.0 67.1L86.4 73.4L86.7 79.7L87.1 85.6L87.5 91.1L87.9 96.1L88.2 100.4L88.6 103.9L89.0 106.7L89.4 108.6L89.7 109.5L90.1 109.6L90.5 108.9L90.9 107.2L91.3 104.8L91.6 101.6L92.0 97.8L92.4 93.4L92.8 88.6L93.1 83.4L93.5 77.9L93.9 72.3L94.3 66.7L94.6 61.2L95.0 55.8L95.4 50.7L95.8 46.0L96.2 41.7L96.5 37.9L96.9 34.7L97.3 32.2L97.7 30.2L98.0 28.9L98.4 28.3L98.8 28.4L99.2 29.1L99.5 30.5L99.9 32.4L100.3 34.9L100.7 38.0L101.0 41.4L101.4 45.3L101.8 49.4L102.2 53.8L102.6 58.5L102.9 63.2L103.3 68.0L103.7 72.7L104.1 77.4L104.4 81.9L104.8 86.2L105.2 90.3L105.6 94.1L105.9 97.5L106.3 100.6L106.7 103.2L107.1 105.4L107.5 107.2L107.8 108.5L108.2 109.3L108.6 109.7L109.0 109.6L109.3 109.1L109.7 108.1L110.1 106.7L110.5 105.0L110.8 102.8L111.2 100.4L111.6 97.6L112.0 94.6L112.3 91.3L112.7 87.9L113.1 84.3L113.5 80.6L113.9 76.8L114.2 72.9L114.6 69.1L115.0 65.2L115.4 61.5L115.7 57.8L116.1 54.2L116.5 50.8L116.9 47.6L117.2 44.6L117.6 41.8L118.0 39.2L118.4 36.9L118.8 34.8L119.1 33.0L119.5 31.5L119.9 30.3L120.3 29.4L120.6 28.7L121.0 28.4L121.4 28.3L121.8 28.5L122.1 29.0L122.5 29.7L122.9 30.7L123.3 32.0L123.6 33.5L124.0 35.2L124.4 37.1L124.8 39.1L125.2 41.4L125.5 43.8L125.9 46.3L126.3 49.0L126.7 51.7L127.0 54.5L127.4 57.4L127.8 60.4L128.2 63.3L128.5 66.3L128.9 69.3L129.3 72.3L129.7 75.2L130.1 78.1L130.4 80.9L130.8 83.7L131.2 86.3L131.6 88.9L131.9 91.3L132.3 93.6L132.7 95.8L133.1 97.9L133.4 99.8L133.8 101.5L134.2 103.1L134.6 104.6L134.9 105.8L135.3 106.9L135.7 107.8L136.1 108.5L136.5 109.1L136.8 109.5L137.2 109.7L137.6 109.7L138.0 109.5L138.3 109.2L138.7 108.7L139.1 108.1L139.5 107.2L139.8 106.3L140.2 105.1L140.6 103.8L141.0 102.4L141.4 100.9L141.7 99.2L142.1 97.4L142.5 95.5L142.9 93.5L143.2 91.3L143.6 89.1L144.0 86.9L144.4 84.5L144.7 82.1L145.1 79.7L145.5 77.2L145.9 74.6L146.2 72.1L146.6 69.5L147.0 66.9L147.4 64.4L147.8 61.9L148.1 59.3L148.5 56.9L148.9 54.4L149.3 52.1L149.6 49.8L150.0 47.5L150.4 45.4L150.8 43.3L151.1 41.4L151.5 39.5L151.9 37.8L152.3 36.2L152.7 34.7L153.0 33.4L153.4 32.2L153.8 31.1L154.2 30.2L154.5 29.5L154.9 29.0L155.3 28.6L155.7 28.3L156.0 28.3L156.4 28.4L156.8 28.7L157.2 29.2L157.5 29.9L157.9 30.7L158.3 31.7L158.7 32.9L159.1 34.3L159.4 35.8L159.8 37.5L160.2 39.3L160.6 41.3L160.9 43.5L161.3 45.8L161.7 48.1L162.1 50.7L162.4 53.3L162.8 56.0L163.2 58.8L163.6 61.6L164.0 64.5L164.3 67.5L164.7 70.5L165.1 73.5L165.5 76.4L165.8 79.4L166.2 82.3L166.6 85.2L167.0 88.0L167.3 90.7L167.7 93.2L168.1 95.7L168.5 98.0L168.8 100.1L169.2 102.1L169.6 103.9L170.0 105.4L170.4 106.8L170.7 107.9L171.1 108.7L171.5 109.3L171.9 109.7L172.2 109.7L172.6 109.5L173.0 108.9L173.4 108.1L173.7 107.0L174.1 105.6L174.5 103.9L174.9 102.0L175.2 99.8L175.6 97.3L176.0 94.6L176.4 91.6L176.8 88.5L177.1 85.1L177.5 81.6L177.9 78.0L178.3 74.3L178.6 70.5L179.0 66.6L179.4 62.8L179.8 58.9L180.1 55.2L180.5 51.5L180.9 48.0L181.3 44.7L181.7 41.6L182.0 38.7L182.4 36.1L182.8 33.8L183.2 31.9L183.5 30.4L183.9 29.3L184.3 28.6L184.7 28.3L185.0 28.5L185.4 29.1L185.8 30.3L186.2 31.8L186.6 33.9L186.9 36.3L187.3 39.2L187.7 42.5L188.1 46.2L188.4 50.1L188.8 54.3L189.2 58.8L189.6 63.4L189.9 68.1L190.3 72.9L190.7 77.7L191.1 82.3L191.4 86.8L191.8 91.1L192.2 95.1L192.6 98.7L193.0 101.9L193.3 104.6L193.7 106.8L194.1 108.4L194.5 109.4L194.8 109.7L195.2 109.4L195.6 108.4L196.0 106.7L196.3 104.4L196.7 101.4L197.1 97.9L197.5 93.8L197.8 89.2L198.2 84.3L198.6 79.0L199.0 73.5L199.4 67.9L199.7 62.3L200.1 56.8L200.5 51.4L200.9 46.4L201.2 41.9L201.6 37.8L202.0 34.4L202.4 31.6L202.7 29.7L203.1 28.6L203.5 28.3L203.9 28.9L204.3 30.5L204.6 32.9L205.0 36.1L205.4 40.1L205.8 44.8L206.1 50.1L206.5 55.9L206.9 62.1L207.3 68.4L207.6 74.8L208.0 81.1L208.4 87.1L208.8 92.6L209.2 97.6L209.5 101.9L209.9 105.4L210.3 107.9L210.7 109.3L211.0 109.7L211.4 109.0L211.8 107.1L212.2 104.2L212.5 100.3L212.9 95.4L213.3 89.8L213.7 83.5L214.0 76.8L214.4 69.8L214.8 62.8L215.2 55.9L215.6 49.4L215.9 43.4L216.3 38.2L216.7 34.0L217.1 30.9L217.4 28.9L217.8 28.3L218.2 29.0L218.6 31.0L218.9 34.2L219.3 38.7L219.7 44.2L220.1 50.5L220.4 57.5L220.8 65.0L221.2 72.6L221.6 80.1L222.0 87.3L222.3 93.8L222.7 99.5L223.1 104.0L223.5 107.4L223.8 109.3L224.2 109.7L224.6 108.6L225.0 106.0L225.3 101.9L225.7 96.6L226.1 90.3L226.5 83.0L226.9 75.2L227.2 67.1L227.6 59.1L228.0 51.4L228.4 44.4L228.7 38.4L229.1 33.7L229.5 30.3L229.9 28.5L230.2 28.5L230.6 30.1L231.0 33.3L231.4 38.1L231.8 44.2L232.1 51.4L232.5 59.4L232.9 67.8L233.3 76.3L233.6 84.4L234.0 92.0L234.4 98.5L234.8 103.7L235.1 107.4L235.5 109.4L235.9 109.5L236.3 107.8L236.6 104.4L237.0 99.2L237.4 92.7L237.8 85.1L238.2 76.7L238.5 67.9L238.9 59.1L239.3 50.8L239.7 43.4L240.0 37.1L240.4 32.4L240.8 29.4L241.2 28.3L241.5 29.2L241.9 32.0L242.3 36.6L242.7 42.8L243.0 50.4L243.4 58.8L243.8 67.8L244.2 76.8L244.6 85.5L244.9 93.4L245.3 100.0L245.7 105.1L246.1 108.4L246.4 109.7L246.8 108.9L247.2 106.1L247.6 101.5L247.9 95.1L248.3 87.4L248.7 78.7L249.1 69.6L249.5 60.4L249.8 51.6L250.2 43.7L250.6 37.2L251.0 32.2L251.3 29.2L251.7 28.3L252.1 29.5L252.5 32.7L252.8 37.9L253.2 44.7L253.6 52.8L254.0 61.7L254.4 71.0L254.7 80.3L255.1 88.9L255.5 96.5L255.9 102.6L256.2 107.0L256.6 109.3L257.0 109.5L257.4 107.6L257.7 103.6L258.1 97.8L258.5 90.4L258.9 81.9L259.2 72.7L259.6 63.4L260.0 54.3\" class=\"\" stroke-width=\"2.2\"/><text x=\"147.0\" y=\"155\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">time</text></svg>"
+    },
+    {
+     "text": "Peak deviation 75 kHz and a 15 kHz audio maximum. What bandwidth (Carson's rule)?",
+     "more": {
+      "text": "About 180 kHz."
+     }
+    }
+   ],
+   "id": "ee-i-122"
+  },
+  {
+   "sides": [
+    {
+     "text": "Digital modulation",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "ASK, FSK, and PSK",
+     "more": {
+      "text": "Amplitude, frequency, or phase shift keying changes the carrier in steps to send bits. QPSK uses four phases to send two bits per symbol."
+     },
+     "svg": "<svg viewBox=\"0 0 220 200\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" font-family=\"system-ui,sans-serif\" font-size=\"13\"><path d=\"M29.0 95.0H191.0M110.0 22.099999999999994V167.9\" stroke-width=\"1.5\"/><circle cx=\"155.0\" cy=\"54.5\" r=\"3.5\" class=\"acc\"/><text x=\"169.0\" y=\"46.5\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">00</text><circle cx=\"65.0\" cy=\"54.5\" r=\"3.5\" class=\"acc\"/><text x=\"51.0\" y=\"46.5\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">01</text><circle cx=\"65.0\" cy=\"135.5\" r=\"3.5\" class=\"acc\"/><text x=\"51.0\" y=\"151.5\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">11</text><circle cx=\"155.0\" cy=\"135.5\" r=\"3.5\" class=\"acc\"/><text x=\"169.0\" y=\"151.5\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">10</text><text x=\"195.5\" y=\"89.0\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">I</text><text x=\"120.0\" y=\"20.07499999999999\" text-anchor=\"middle\" fill=\"currentColor\" stroke=\"none\">Q</text></svg>"
+    },
+    {
+     "text": "How many bits does one QPSK symbol carry?",
+     "more": {
+      "text": "Two."
+     }
+    }
+   ],
+   "id": "ee-i-123"
+  },
+  {
+   "sides": [
+    {
+     "text": "Bit rate and baud",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "Bit rate = symbol rate × bits per symbol",
+     "more": {
+      "text": "Baud is symbols per second. Higher-order modulation sends more bits per symbol but needs a better signal."
+     }
+    },
+    {
+     "text": "QPSK at 1 Msymbol/s. What bit rate?",
+     "more": {
+      "text": "2 Mbit/s."
+     }
+    }
+   ],
+   "id": "ee-i-124"
+  },
+  {
+   "sides": [
+    {
+     "text": "Signal-to-noise ratio (SNR)",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "Signal power divided by noise power",
+     "more": {
+      "text": "Usually expressed in dB: 10 log₁₀(Ps/Pn). Higher SNR allows faster, more reliable data."
+     }
+    },
+    {
+     "text": "Signal 1 mW and noise 1 µW. What's the SNR in dB?",
+     "more": {
+      "text": "30 dB."
+     }
+    }
+   ],
+   "id": "ee-i-125"
+  },
+  {
+   "sides": [
+    {
+     "text": "Thermal noise power",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "N = kTB",
+     "more": {
+      "text": "At room temperature the noise floor is about −174 dBm/Hz, plus 10 log₁₀(bandwidth)."
+     }
+    },
+    {
+     "text": "Thermal noise in a 1 MHz bandwidth at room temperature?",
+     "more": {
+      "text": "About −114 dBm."
+     }
+    }
+   ],
+   "id": "ee-i-126"
+  },
+  {
+   "sides": [
+    {
+     "text": "Sampling theorem",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "Sample faster than twice the highest frequency",
+     "more": {
+      "text": "Below that, aliasing folds high frequencies down as false low ones. An anti-aliasing filter removes frequencies above half the sample rate first."
+     }
+    },
+    {
+     "text": "Why put a low-pass filter before an ADC?",
+     "more": {
+      "text": "To remove frequencies that would alias."
+     }
+    }
+   ],
+   "id": "ee-i-127"
+  },
+  {
+   "sides": [
+    {
+     "text": "Quantization noise",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "Rounding error from finite bits",
+     "more": {
+      "text": "The best-case signal-to-quantization-noise ratio is about 6.02 N + 1.76 dB for N bits."
+     }
+    },
+    {
+     "text": "What is the ideal SQNR of a 12-bit ADC?",
+     "more": {
+      "text": "About 74 dB."
+     }
+    }
+   ],
+   "id": "ee-i-128"
+  },
+  {
+   "sides": [
+    {
+     "text": "Dipole antenna",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "A half-wavelength rod",
+     "more": {
+      "text": "A half-wave dipole is about λ/2 long, with λ = c/f."
+     }
+    },
+    {
+     "text": "At 2.4 GHz, about how long is a half-wave dipole?",
+     "more": {
+      "text": "About 6.25 cm (λ = 12.5 cm)."
+     }
+    }
+   ],
+   "id": "ee-i-129"
+  },
+  {
+   "sides": [
+    {
+     "text": "Free-space path loss",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "Signal weakens with distance and frequency",
+     "more": {
+      "text": "FSPL grows with the square of distance and of frequency: 20 log₁₀(d) + 20 log₁₀(f) + 32.44 dB (d in km, f in MHz). Doubling distance adds 6 dB."
+     }
+    },
+    {
+     "text": "How much extra loss does doubling the distance add in free space?",
+     "more": {
+      "text": "About 6 dB."
+     }
+    }
+   ],
+   "id": "ee-i-130"
+  },
+  {
+   "sides": [
+    {
+     "text": "Link budget",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "Add gains and subtract losses along the link",
+     "more": {
+      "text": "Received power = transmit power + antenna gains − path loss − other losses. It must exceed the receiver's sensitivity."
+     }
+    },
+    {
+     "text": "What must the received power exceed to decode a signal?",
+     "more": {
+      "text": "The receiver's sensitivity."
+     }
+    }
+   ],
+   "id": "ee-i-131"
+  },
+  {
+   "sides": [
+    {
+     "text": "Wi-Fi bands and standards",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "2.4 GHz, 5 GHz, and 6 GHz",
+     "more": {
+      "text": "2.4 GHz reaches further but is crowded. 5 and 6 GHz are faster with shorter range. Standards: 802.11n (Wi-Fi 4), ac (5), ax (6), be (7)."
+     }
+    },
+    {
+     "text": "Which Wi-Fi band reaches further through walls, 2.4 GHz or 5 GHz?",
+     "more": {
+      "text": "2.4 GHz."
+     }
+    }
+   ],
+   "id": "ee-i-132"
+  },
+  {
+   "sides": [
+    {
+     "text": "Bluetooth Classic and BLE",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "Streaming audio vs low-energy sensors",
+     "more": {
+      "text": "Classic Bluetooth carries audio and data continuously. Bluetooth Low Energy sends small bursts and runs for months on a coin cell."
+     }
+    },
+    {
+     "text": "Which suits a sensor on a coin cell, Classic or BLE?",
+     "more": {
+      "text": "BLE."
+     }
+    }
+   ],
+   "id": "ee-i-133"
+  },
+  {
+   "sides": [
+    {
+     "text": "Zigbee, Thread, and LoRa",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "Low-power wireless for IoT",
+     "more": {
+      "text": "Zigbee and Thread form short-range mesh networks for home devices. LoRa trades data rate for range of many kilometers."
+     }
+    },
+    {
+     "text": "Which technology reaches several kilometers at low data rates?",
+     "more": {
+      "text": "LoRa."
+     }
+    }
+   ],
+   "id": "ee-i-134"
+  },
+  {
+   "sides": [
+    {
+     "text": "Cellular concept",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "Cells reuse frequencies",
+     "more": {
+      "text": "Coverage is split into cells with base stations. Distant cells can reuse the same frequencies. Handover moves a call between cells."
+     }
+    },
+    {
+     "text": "Why can cellular networks reuse frequencies?",
+     "more": {
+      "text": "Distant cells don't interfere with each other."
+     }
+    }
+   ],
+   "id": "ee-i-135"
+  },
+  {
+   "sides": [
+    {
+     "text": "Multiplexing",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "Sharing one channel among many signals",
+     "more": {
+      "text": "FDM gives each signal its own frequency band. TDM gives each its own time slot."
+     }
+    },
+    {
+     "text": "Which method assigns users time slots on one channel?",
+     "more": {
+      "text": "TDM (time-division multiplexing)."
+     }
+    }
+   ],
+   "id": "ee-i-136"
+  },
+  {
+   "sides": [
+    {
+     "text": "Error detection",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "Parity, checksums, and CRC",
+     "more": {
+      "text": "A CRC treats data as a polynomial and appends a remainder. Detects burst errors well and is used in Ethernet, USB, and storage."
+     }
+    },
+    {
+     "text": "Which scheme is common in Ethernet frames?",
+     "more": {
+      "text": "A CRC."
+     }
+    }
+   ],
+   "id": "ee-i-137"
+  },
+  {
+   "sides": [
+    {
+     "text": "Error correction",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "Add redundancy to repair errors",
+     "more": {
+      "text": "The simplest idea is repeating bits. Hamming codes correct single-bit errors with a few parity bits."
+     }
+    },
+    {
+     "text": "What does a Hamming code do that parity can't?",
+     "more": {
+      "text": "It corrects single-bit errors."
+     }
+    }
+   ],
+   "id": "ee-i-138"
+  },
+  {
+   "sides": [
+    {
+     "text": "OSI layers",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "Seven layers of network communication",
+     "more": {
+      "text": "Physical, data link, network, transport, session, presentation, application. Each layer serves the one above it."
+     }
+    },
+    {
+     "text": "Which layer routes packets between networks?",
+     "more": {
+      "text": "The network layer."
+     }
+    }
+   ],
+   "id": "ee-i-139"
+  },
+  {
+   "sides": [
+    {
+     "text": "Ethernet and addresses",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "MAC addresses on a link, IP addresses across networks",
+     "more": {
+      "text": "A MAC address identifies a network interface within a local network. IP addresses identify hosts and help route traffic across networks."
+     }
+    },
+    {
+     "text": "Which address is used within a local network segment?",
+     "more": {
+      "text": "The MAC address."
+     }
+    }
+   ],
+   "id": "ee-i-140"
+  },
+  {
+   "sides": [
+    {
+     "text": "TCP vs UDP",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "Reliable and ordered vs fast and best-effort",
+     "more": {
+      "text": "TCP retransmits lost data and keeps order. UDP skips that for lower delay, used for voice, video, and games."
+     }
+    },
+    {
+     "text": "Which is better for live voice calls, TCP or UDP?",
+     "more": {
+      "text": "UDP."
+     }
+    }
+   ],
+   "id": "ee-i-141"
+  },
+  {
+   "sides": [
+    {
+     "text": "Twisted pair and coax",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "Cable types and why they're shaped that way",
+     "more": {
+      "text": "Twisted pairs cancel interference (Ethernet). Coax has a shielded center conductor for RF, cable TV, and antennas, with 50 Ω or 75 Ω impedance."
+     }
+    },
+    {
+     "text": "Which cable type has a 50 Ω version for RF, twisted pair or coax?",
+     "more": {
+      "text": "Coax."
+     }
+    }
+   ],
+   "id": "ee-i-142"
+  },
+  {
+   "sides": [
+    {
+     "text": "Differential signaling",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "Sending a signal on two wires as opposites",
+     "more": {
+      "text": "The receiver looks at the difference, so noise picked up equally by both wires cancels. Used in USB, RS-485, CAN, and Ethernet."
+     }
+    },
+    {
+     "text": "Why is differential signaling noise-resistant?",
+     "more": {
+      "text": "Noise affects both wires equally and cancels in the difference."
+     }
+    }
+   ],
+   "id": "ee-i-143"
+  },
+  {
+   "sides": [
+    {
+     "text": "RS-232 and RS-485",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "Classic serial standards",
+     "more": {
+      "text": "RS-232 is single-ended, short range, and point-to-point. RS-485 is differential, long range (over 1 km), and multi-drop."
+     }
+    },
+    {
+     "text": "Which supports long runs and many devices on one bus?",
+     "more": {
+      "text": "RS-485."
+     }
+    }
+   ],
+   "id": "ee-i-144"
+  },
+  {
+   "sides": [
+    {
+     "text": "Fiber optics",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "Light in glass carries data",
+     "more": {
+      "text": "Very high bandwidth, low loss, and immune to electromagnetic interference. Single-mode fiber goes long distances; multimode is for shorter links."
+     }
+    },
+    {
+     "text": "Which fiber type is used for long distances?",
+     "more": {
+      "text": "Single-mode."
+     }
+    }
+   ],
+   "id": "ee-i-145"
+  },
+  {
+   "sides": [
+    {
+     "text": "Radio receiver basics",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "Antenna, filter, amplifier, mixer, detector",
+     "more": {
+      "text": "A superheterodyne receiver mixes the incoming signal down to a fixed intermediate frequency (IF) where filtering and amplification are easier."
+     }
+    },
+    {
+     "text": "What is the purpose of the intermediate frequency in a superheterodyne receiver?",
+     "more": {
+      "text": "It's a fixed frequency where filtering and gain are easier to do well."
+     }
+    }
+   ],
+   "id": "ee-i-146"
+  },
+  {
+   "sides": [
+    {
+     "text": "Boolean algebra",
+     "sub": "Digital · Intermediate"
+    },
+    {
+     "text": "Rules for logic expressions",
+     "more": {
+      "text": "Examples: A + A = A, A·A = A, A + A' = 1, and A·A' = 0. They simplify logic into fewer gates."
+     }
+    },
+    {
+     "text": "What is A AND NOT A?",
+     "more": {
+      "text": "0."
+     }
+    }
+   ],
+   "id": "ee-i-147"
+  },
+  {
+   "sides": [
+    {
+     "text": "De Morgan's laws",
+     "sub": "Digital · Intermediate"
+    },
+    {
+     "text": "(AB)' = A' + B', and (A + B)' = A'B'",
+     "more": {
+      "text": "Inverting an AND gives an OR of inverted inputs, and vice versa. Useful for rewriting logic with only NAND or NOR gates."
+     }
+    },
+    {
+     "text": "What is NOT (A AND B) in terms of NOT A and NOT B?",
+     "more": {
+      "text": "(NOT A) OR (NOT B)."
+     }
+    }
+   ],
+   "id": "ee-i-148"
+  },
+  {
+   "sides": [
+    {
+     "text": "Karnaugh maps",
+     "sub": "Digital · Intermediate"
+    },
+    {
+     "text": "A visual way to simplify logic",
+     "more": {
+      "text": "Group adjacent 1s in powers of two. Each group becomes a simplified product term."
+     }
+    },
+    {
+     "text": "How large can a K-map group of 1s be?",
+     "more": {
+      "text": "1, 2, 4, 8… cells (powers of two)."
+     }
+    }
+   ],
+   "id": "ee-i-149"
+  },
+  {
+   "sides": [
+    {
+     "text": "Adders",
+     "sub": "Digital · Intermediate"
+    },
+    {
+     "text": "Half adder and full adder",
+     "more": {
+      "text": "A half adder adds two bits (sum = XOR, carry = AND). A full adder adds a carry-in as well. Chain full adders to add multi-bit numbers."
+     }
+    },
+    {
+     "text": "What gate gives the sum bit of a half adder?",
+     "more": {
+      "text": "XOR."
+     }
+    }
+   ],
+   "id": "ee-i-150"
+  },
+  {
+   "sides": [
+    {
+     "text": "Multiplexer and decoder",
+     "sub": "Digital · Intermediate"
+    },
+    {
+     "text": "Choose one of many; pick one output of many",
+     "more": {
+      "text": "A multiplexer selects one of 2ⁿ inputs using n select lines. A decoder turns an n-bit code into one of 2ⁿ outputs."
+     }
+    },
+    {
+     "text": "A multiplexer has 3 select lines. How many inputs?",
+     "more": {
+      "text": "8."
+     }
+    }
+   ],
+   "id": "ee-i-151"
+  },
+  {
+   "sides": [
+    {
+     "text": "Latches and flip-flops",
+     "sub": "Digital · Intermediate"
+    },
+    {
+     "text": "Memory elements",
+     "more": {
+      "text": "A latch is level-sensitive. A flip-flop changes only on a clock edge. A D flip-flop captures its input at each clock edge."
+     }
+    },
+    {
+     "text": "When does a D flip-flop capture its input?",
+     "more": {
+      "text": "On the active clock edge."
+     }
+    }
+   ],
+   "id": "ee-i-152"
+  },
+  {
+   "sides": [
+    {
+     "text": "Counters and shift registers",
+     "sub": "Digital · Intermediate"
+    },
+    {
+     "text": "Sequential building blocks",
+     "more": {
+      "text": "A counter steps through binary values. A shift register moves bits along a chain, converting between serial and parallel data."
+     }
+    },
+    {
+     "text": "Which block converts serial data to parallel?",
+     "more": {
+      "text": "A shift register."
+     }
+    }
+   ],
+   "id": "ee-i-153"
+  },
+  {
+   "sides": [
+    {
+     "text": "Finite state machines",
+     "sub": "Digital · Intermediate"
+    },
+    {
+     "text": "States, inputs, outputs, and transitions",
+     "more": {
+      "text": "A Moore machine's outputs depend only on the state; a Mealy machine's also depend on inputs. Used for controllers and protocols."
+     }
+    },
+    {
+     "text": "In which type do outputs depend only on the current state?",
+     "more": {
+      "text": "A Moore machine."
+     }
+    }
+   ],
+   "id": "ee-i-154"
+  },
+  {
+   "sides": [
+    {
+     "text": "Memory types",
+     "sub": "Digital · Intermediate"
+    },
+    {
+     "text": "SRAM, DRAM, and flash",
+     "more": {
+      "text": "SRAM is fast and costs more per bit (caches). DRAM is dense and needs refreshing (main memory). Flash keeps data without power."
+     }
+    },
+    {
+     "text": "Which memory needs periodic refreshing?",
+     "more": {
+      "text": "DRAM."
+     }
+    }
+   ],
+   "id": "ee-i-155"
+  },
+  {
+   "sides": [
+    {
+     "text": "Two's complement",
+     "sub": "Digital · Intermediate"
+    },
+    {
+     "text": "How computers store negative integers",
+     "more": {
+      "text": "Invert the bits and add 1. An n-bit value ranges from −2ⁿ⁻¹ to 2ⁿ⁻¹ − 1."
+     }
+    },
+    {
+     "text": "What range does an 8-bit two's complement integer cover?",
+     "more": {
+      "text": "−128 to 127."
+     }
+    }
+   ],
+   "id": "ee-i-156"
+  },
+  {
+   "sides": [
+    {
+     "text": "Propagation delay and timing",
+     "sub": "Digital · Intermediate"
+    },
+    {
+     "text": "Gates take time",
+     "more": {
+      "text": "A signal needs time to pass through logic. Setup and hold times set how stable data must be around a clock edge. The clock period must exceed the longest path."
+     }
+    },
+    {
+     "text": "What limits the maximum clock speed of a synchronous circuit?",
+     "more": {
+      "text": "The longest logic path (propagation delay) plus setup time."
+     }
+    }
+   ],
+   "id": "ee-i-157"
+  },
+  {
+   "sides": [
+    {
+     "text": "Logic levels and noise margin",
+     "sub": "Digital · Intermediate"
+    },
+    {
+     "text": "How far a signal can drift and still read correctly",
+     "more": {
+      "text": "Noise margin = the difference between what an output guarantees and what an input requires. CMOS has large margins."
+     }
+    },
+    {
+     "text": "What does a larger noise margin give?",
+     "more": {
+      "text": "Better tolerance to noise."
+     }
+    }
+   ],
+   "id": "ee-i-158"
+  },
+  {
+   "sides": [
+    {
+     "text": "ASCII and text",
+     "sub": "Digital · Intermediate"
+    },
+    {
+     "text": "Characters as numbers",
+     "more": {
+      "text": "ASCII uses 7 bits per character: 'A' is 65 and 'a' is 97. UTF-8 extends it to all languages."
+     }
+    },
+    {
+     "text": "What decimal value is ASCII 'A'?",
+     "more": {
+      "text": "65."
+     }
+    }
+   ],
+   "id": "ee-i-159"
+  },
+  {
+   "sides": [
+    {
+     "text": "Oscilloscope probes",
+     "sub": "Tools · Intermediate"
+    },
+    {
+     "text": "10× probes and bandwidth",
+     "more": {
+      "text": "A 10× probe divides the signal by ten but loads the circuit less. Check the scope's and probe's bandwidth, and compensate the probe with the calibration square wave."
+     }
+    },
+    {
+     "text": "What does a 10× probe do to the signal amplitude?",
+     "more": {
+      "text": "Divides it by 10 (and loads the circuit less)."
+     }
+    }
+   ],
+   "id": "ee-i-160"
+  },
+  {
+   "sides": [
+    {
+     "text": "Triggering",
+     "sub": "Tools · Intermediate"
+    },
+    {
+     "text": "Stabilizes a repeating waveform",
+     "more": {
+      "text": "The scope starts each sweep when the signal crosses a chosen level and slope, so the trace stays still."
+     }
+    },
+    {
+     "text": "What does the trigger control on a scope?",
+     "more": {
+      "text": "Where each sweep starts, so the display is stable."
+     }
+    }
+   ],
+   "id": "ee-i-161"
+  },
+  {
+   "sides": [
+    {
+     "text": "AC and DC coupling",
+     "sub": "Tools · Intermediate"
+    },
+    {
+     "text": "Show the DC offset or remove it",
+     "more": {
+      "text": "DC coupling shows the full signal. AC coupling blocks DC so you can see small ripple on a large DC level."
+     }
+    },
+    {
+     "text": "Which coupling mode shows ripple on a 12 V rail better?",
+     "more": {
+      "text": "AC coupling."
+     }
+    }
+   ],
+   "id": "ee-i-162"
+  },
+  {
+   "sides": [
+    {
+     "text": "Multimeter details",
+     "sub": "Tools · Intermediate"
+    },
+    {
+     "text": "Diode test, continuity, and true RMS",
+     "more": {
+      "text": "Continuity beeps for a low-resistance path. Diode mode shows the forward drop. Current ranges have a fuse and a burden voltage."
+     }
+    },
+    {
+     "text": "Which multimeter mode finds broken wires?",
+     "more": {
+      "text": "Continuity."
+     }
+    }
+   ],
+   "id": "ee-i-163"
+  },
+  {
+   "sides": [
+    {
+     "text": "Spectrum analyzer",
+     "sub": "Tools · Intermediate"
+    },
+    {
+     "text": "Shows power versus frequency",
+     "more": {
+      "text": "Reveals harmonics, noise, and interference. Used for radio and EMC work."
+     }
+    },
+    {
+     "text": "Which instrument shows signal power versus frequency?",
+     "more": {
+      "text": "A spectrum analyzer."
+     }
+    }
+   ],
+   "id": "ee-i-164"
+  },
+  {
+   "sides": [
+    {
+     "text": "LCR meter",
+     "sub": "Tools · Intermediate"
+    },
+    {
+     "text": "Measures inductance, capacitance, and resistance",
+     "more": {
+      "text": "Useful for checking unmarked parts and for characterizing components at a chosen test frequency."
+     }
+    },
+    {
+     "text": "Which instrument measures inductance?",
+     "more": {
+      "text": "An LCR meter."
+     }
+    }
+   ],
+   "id": "ee-i-165"
+  },
+  {
+   "sides": [
+    {
+     "text": "Reading schematics",
+     "sub": "Practical · Intermediate"
+    },
+    {
+     "text": "Signals flow left to right, power on top",
+     "more": {
+      "text": "Net labels connect points without drawn wires. Reference designators (R1, C2, U3) identify parts, which link to the bill of materials."
+     }
+    },
+    {
+     "text": "What does a reference designator like U3 identify?",
+     "more": {
+      "text": "A specific part on the board (here an IC)."
+     }
+    }
+   ],
+   "id": "ee-i-166"
+  },
+  {
+   "sides": [
+    {
+     "text": "PCB basics",
+     "sub": "Practical · Intermediate"
+    },
+    {
+     "text": "Copper traces on a fiberglass board",
+     "more": {
+      "text": "Layers, vias, pads, and a ground plane. Wider traces carry more current. Keep power and ground paths short."
+     }
+    },
+    {
+     "text": "What does a via do?",
+     "more": {
+      "text": "Connects copper on different layers."
+     }
+    }
+   ],
+   "id": "ee-i-167"
+  },
+  {
+   "sides": [
+    {
+     "text": "Breadboard limits",
+     "sub": "Practical · Intermediate"
+    },
+    {
+     "text": "Handy but not for fast or noisy circuits",
+     "more": {
+      "text": "Contact resistance and stray capacitance matter at high frequency, and high current can overheat the strips."
+     }
+    },
+    {
+     "text": "Why is a breadboard poor for high-frequency circuits?",
+     "more": {
+      "text": "Its stray capacitance and inductance degrade signals."
+     }
+    }
+   ],
+   "id": "ee-i-168"
+  },
+  {
+   "sides": [
+    {
+     "text": "Troubleshooting method",
+     "sub": "Practical · Intermediate"
+    },
+    {
+     "text": "Check power first, then work from the output back",
+     "more": {
+      "text": "Verify supply voltages, grounds, and connections. Compare against a known-good circuit. Change one thing at a time."
+     }
+    },
+    {
+     "text": "What's the first thing to check on a dead circuit?",
+     "more": {
+      "text": "The power supply and ground connections."
+     }
+    }
+   ],
+   "id": "ee-i-169"
+  },
+  {
+   "sides": [
+    {
+     "text": "Resistive, inductive, and capacitive loads",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "Different phase relationships between V and I",
+     "more": {
+      "text": "Resistive loads (heaters) draw current in phase with voltage. Inductive loads (motors, transformers) draw current that lags. Capacitive loads draw current that leads."
+     }
+    },
+    {
+     "text": "A motor's current lags its voltage. What type of load is it?",
+     "more": {
+      "text": "Inductive."
+     }
+    }
+   ],
+   "id": "ee-i-170"
+  },
+  {
+   "sides": [
+    {
+     "text": "Inrush current",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "A brief surge when equipment switches on",
+     "more": {
+      "text": "Capacitors and transformers can draw many times their running current at start. An NTC thermistor or soft-start circuit limits it."
+     }
+    },
+    {
+     "text": "What commonly limits inrush current in a power supply?",
+     "more": {
+      "text": "An NTC thermistor or a soft-start circuit."
+     }
+    }
+   ],
+   "id": "ee-i-171"
+  },
+  {
+   "sides": [
+    {
+     "text": "Power over Ethernet",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "Power and data on one cable",
+     "more": {
+      "text": "IEEE 802.3af supplies up to 15.4 W per port, 802.3at (PoE+) up to 30 W, and 802.3bt up to about 60 to 90 W. Used for cameras, access points, and phones."
+     }
+    },
+    {
+     "text": "Which PoE standard supplies up to about 15 W per port?",
+     "more": {
+      "text": "802.3af."
+     }
+    }
+   ],
+   "id": "ee-i-172"
+  },
+  {
+   "sides": [
+    {
+     "text": "USB Power Delivery",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "Negotiated higher voltage and power over USB-C",
+     "more": {
+      "text": "Devices and chargers agree on voltages such as 5, 9, 15, and 20 V, up to 100 W (240 W with extended power range)."
+     }
+    },
+    {
+     "text": "A 3 A USB-C PD supply delivers 60 W. What voltage is it using?",
+     "more": {
+      "text": "20 V (60 / 3)."
+     }
+    }
+   ],
+   "id": "ee-i-173"
+  },
+  {
+   "sides": [
+    {
+     "text": "Wireless charging",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "Inductive coupling between two coils",
+     "more": {
+      "text": "A transmitter coil's changing magnetic field induces a voltage in a receiver coil. Efficiency falls with distance and misalignment. Qi is the common standard."
+     }
+    },
+    {
+     "text": "What principle does Qi wireless charging use?",
+     "more": {
+      "text": "Inductive coupling (electromagnetic induction)."
+     }
+    }
+   ],
+   "id": "ee-i-174"
+  },
+  {
+   "sides": [
+    {
+     "text": "Lead-acid batteries",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "Cheap, heavy, and good at surge current",
+     "more": {
+      "text": "About 2 V per cell, so a 12 V battery has six cells. Used in cars and backup power. Deep discharges shorten their life."
+     }
+    },
+    {
+     "text": "How many cells make a 12 V lead-acid battery?",
+     "more": {
+      "text": "Six."
+     }
+    }
+   ],
+   "id": "ee-i-175"
+  },
+  {
+   "sides": [
+    {
+     "text": "Depth of discharge and cycle life",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "Shallower cycles last longer",
+     "more": {
+      "text": "Cycle life falls as the discharge depth rises. Li-ion cells last much longer if kept between about 20% and 80%."
+     }
+    },
+    {
+     "text": "Which treatment extends Li-ion life: full cycles or partial cycles?",
+     "more": {
+      "text": "Partial cycles."
+     }
+    }
+   ],
+   "id": "ee-i-176"
+  },
+  {
+   "sides": [
+    {
+     "text": "Solar energy estimate",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "Daily energy = panel watts × peak sun hours",
+     "more": {
+      "text": "Peak sun hours are the hours at a full 1,000 W/m². Real output is lower after losses (often 75 to 80% of the ideal)."
+     }
+    },
+    {
+     "text": "A 100 W panel gets 5 peak sun hours. What is the ideal daily energy?",
+     "more": {
+      "text": "500 Wh."
+     }
+    }
+   ],
+   "id": "ee-i-177"
+  },
+  {
+   "sides": [
+    {
+     "text": "Battery sizing",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "Amp-hours = watt-hours ÷ volts",
+     "more": {
+      "text": "Divide the energy needed by the battery voltage, then allow for depth of discharge and losses."
+     }
+    },
+    {
+     "text": "A load needs 120 Wh per day from a 12 V battery. How many amp-hours is that?",
+     "more": {
+      "text": "10 Ah, before allowing for depth of discharge."
+     }
+    }
+   ],
+   "id": "ee-i-178"
+  },
+  {
+   "sides": [
+    {
+     "text": "Buck-boost converter",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "Can step up or down, usually inverting",
+     "more": {
+      "text": "The basic inverting topology gives Vout = −Vin × D / (1 − D)."
+     }
+    },
+    {
+     "text": "At D = 0.5, how does |Vout| compare with Vin in an inverting buck-boost?",
+     "more": {
+      "text": "They're equal in magnitude (the output is inverted)."
+     }
+    }
+   ],
+   "id": "ee-i-179"
+  },
+  {
+   "sides": [
+    {
+     "text": "Synchronous vs asynchronous buck",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "A MOSFET replaces the catch diode",
+     "more": {
+      "text": "Synchronous buck converters lose less in the low-side switch than a diode's 0.4 to 0.7 V drop, improving efficiency at low output voltages."
+     }
+    },
+    {
+     "text": "Which buck type is more efficient at low output voltage?",
+     "more": {
+      "text": "Synchronous."
+     }
+    }
+   ],
+   "id": "ee-i-180"
+  },
+  {
+   "sides": [
+    {
+     "text": "Switching frequency trade-off",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "Higher frequency allows smaller parts",
+     "more": {
+      "text": "Faster switching shrinks the inductor and capacitors but raises switching loss and EMI."
+     }
+    },
+    {
+     "text": "What do you gain and lose by raising a converter's switching frequency?",
+     "more": {
+      "text": "Smaller inductor and capacitors, but higher switching losses and EMI."
+     }
+    }
+   ],
+   "id": "ee-i-181"
+  },
+  {
+   "sides": [
+    {
+     "text": "Efficiency calculation",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "η = P_out / P_in",
+     "more": {
+      "text": "Work in watts at both ends, not just voltages. The difference is lost as heat."
+     }
+    },
+    {
+     "text": "A converter takes 12 V at 1 A and delivers 5 V at 2 A. What is the efficiency?",
+     "more": {
+      "text": "83.3% (10 W / 12 W)."
+     }
+    }
+   ],
+   "id": "ee-i-182"
+  },
+  {
+   "sides": [
+    {
+     "text": "Solid-state relay and TRIAC",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "Switch AC loads without moving contacts",
+     "more": {
+      "text": "An SSR uses a TRIAC or MOSFETs and an optocoupler. Zero-crossing types switch at the AC zero crossing to reduce noise. TRIACs also give phase-angle dimming."
+     }
+    },
+    {
+     "text": "Why use a zero-crossing SSR?",
+     "more": {
+      "text": "To switch at the AC zero crossing and reduce noise and inrush."
+     }
+    }
+   ],
+   "id": "ee-i-183"
+  },
+  {
+   "sides": [
+    {
+     "text": "Motor starting current",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "Several times the running current",
+     "more": {
+      "text": "An induction motor can draw 5 to 7 times its rated current at start. Soft starters or variable-frequency drives reduce it."
+     }
+    },
+    {
+     "text": "What reduces an induction motor's starting current?",
+     "more": {
+      "text": "A soft starter or a variable-frequency drive."
+     }
+    }
+   ],
+   "id": "ee-i-184"
+  },
+  {
+   "sides": [
+    {
+     "text": "Microstepping",
+     "sub": "Power · Intermediate"
+    },
+    {
+     "text": "Driving a stepper in fractions of a step",
+     "more": {
+      "text": "Sine and cosine currents in the coils give smoother motion and finer positioning, though torque per microstep is lower."
+     }
+    },
+    {
+     "text": "What resolution does 1/16 microstepping give a 200-step motor?",
+     "more": {
+      "text": "3,200 microsteps per revolution."
+     }
+    }
+   ],
+   "id": "ee-i-185"
+  },
+  {
+   "sides": [
+    {
+     "text": "Preferred values (E-series)",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "Standard resistor values",
+     "more": {
+      "text": "E12 has 12 values per decade (10, 12, 15, 18, 22, 27, 33, 39, 47, 56, 68, 82) at ±10%. E24 and E96 give finer steps with tighter tolerance."
+     }
+    },
+    {
+     "text": "Which standard E12 value is nearest 4.9 kΩ?",
+     "more": {
+      "text": "4.7 kΩ."
+     }
+    }
+   ],
+   "id": "ee-i-186"
+  },
+  {
+   "sides": [
+    {
+     "text": "Capacitors in series and parallel",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "Parallel adds; series reduces",
+     "more": {
+      "text": "C_total = C₁ + C₂ in parallel, and 1/C = 1/C₁ + 1/C₂ in series (opposite to resistors)."
+     }
+    },
+    {
+     "text": "Two 10 µF capacitors in series. What is the total?",
+     "more": {
+      "text": "5 µF."
+     }
+    }
+   ],
+   "id": "ee-i-187"
+  },
+  {
+   "sides": [
+    {
+     "text": "Inductors in series and parallel",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "Combine like resistors",
+     "more": {
+      "text": "In series, L_total = L₁ + L₂ (with no coupling). In parallel, 1/L = 1/L₁ + 1/L₂."
+     }
+    },
+    {
+     "text": "Two 10 mH inductors in parallel (no coupling). What is the total?",
+     "more": {
+      "text": "5 mH."
+     }
+    }
+   ],
+   "id": "ee-i-188"
+  },
+  {
+   "sides": [
+    {
+     "text": "Loading effect",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "A load changes the voltage it's connected to",
+     "more": {
+      "text": "The source resistance and the load form a divider. A load much larger than the source resistance causes little change."
+     }
+    },
+    {
+     "text": "A divider output with a 2 kΩ Thévenin resistance and 5 V open-circuit drives a 2 kΩ load. What's the loaded voltage?",
+     "more": {
+      "text": "2.5 V."
+     }
+    }
+   ],
+   "id": "ee-i-189"
+  },
+  {
+   "sides": [
+    {
+     "text": "Input and output impedance",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "Voltage amplifiers want high in, low out",
+     "more": {
+      "text": "High input impedance avoids loading the source, and low output impedance avoids being loaded by the next stage."
+     }
+    },
+    {
+     "text": "Why does a voltage amplifier want a high input impedance?",
+     "more": {
+      "text": "So it doesn't load the source."
+     }
+    }
+   ],
+   "id": "ee-i-190"
+  },
+  {
+   "sides": [
+    {
+     "text": "Wheatstone bridge",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "Two dividers compared by a meter",
+     "more": {
+      "text": "The bridge is balanced (zero output) when R₁/R₂ = R₃/R₄. Used with strain gauges and other resistive sensors for sensitive readings."
+     }
+    },
+    {
+     "text": "When is a Wheatstone bridge balanced?",
+     "more": {
+      "text": "When the two resistor ratios are equal."
+     }
+    }
+   ],
+   "id": "ee-i-191"
+  },
+  {
+   "sides": [
+    {
+     "text": "Strain gauge",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "Resistance changes when stretched",
+     "more": {
+      "text": "The gauge factor is about 2, so ΔR/R ≈ 2 × strain. Read with a bridge and an amplifier."
+     }
+    },
+    {
+     "text": "What circuit is typically used to read a strain gauge?",
+     "more": {
+      "text": "A Wheatstone bridge with an amplifier."
+     }
+    }
+   ],
+   "id": "ee-i-192"
+  },
+  {
+   "sides": [
+    {
+     "text": "Thermocouple",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "Two metals produce a voltage that depends on temperature",
+     "more": {
+      "text": "Output is tens of microvolts per degree, so it needs amplification and cold-junction compensation. Type K is common."
+     }
+    },
+    {
+     "text": "Why do thermocouples need cold-junction compensation?",
+     "more": {
+      "text": "The measured voltage depends on the temperature difference between the junctions."
+     }
+    }
+   ],
+   "id": "ee-i-193"
+  },
+  {
+   "sides": [
+    {
+     "text": "Hall-effect sensor",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "Voltage from a magnetic field",
+     "more": {
+      "text": "Detects magnets and position without contact. Also used for current sensing."
+     }
+    },
+    {
+     "text": "Which sensor detects a magnet without touching it?",
+     "more": {
+      "text": "A Hall-effect sensor."
+     }
+    }
+   ],
+   "id": "ee-i-194"
+  },
+  {
+   "sides": [
+    {
+     "text": "Photodiode",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "Light creates current",
+     "more": {
+      "text": "A reverse-biased photodiode's current is proportional to light. A transimpedance amplifier turns it into a voltage."
+     }
+    },
+    {
+     "text": "What converts a photodiode's current into a voltage?",
+     "more": {
+      "text": "A transimpedance amplifier."
+     }
+    }
+   ],
+   "id": "ee-i-195"
+  },
+  {
+   "sides": [
+    {
+     "text": "Thyristor (SCR) and TRIAC",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "Latch on until the current falls",
+     "more": {
+      "text": "An SCR turns on with a gate pulse and stays on until its current drops near zero. A TRIAC conducts in both directions, for AC control such as dimmers."
+     }
+    },
+    {
+     "text": "What turns a thyristor off?",
+     "more": {
+      "text": "The current falling to near zero."
+     }
+    }
+   ],
+   "id": "ee-i-196"
+  },
+  {
+   "sides": [
+    {
+     "text": "Darlington pair",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "Two BJTs for very high current gain",
+     "more": {
+      "text": "Overall β ≈ β₁ × β₂, but V_BE is about 1.4 V and switching is slower."
+     }
+    },
+    {
+     "text": "Two transistors with β = 100 form a Darlington. What is the overall gain?",
+     "more": {
+      "text": "About 10,000."
+     }
+    }
+   ],
+   "id": "ee-i-197"
+  },
+  {
+   "sides": [
+    {
+     "text": "MOSFET operating regions",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "Cutoff, linear (triode), and saturation",
+     "more": {
+      "text": "As a switch it operates in the linear region (low R_DS(on)). As an amplifier it operates in saturation."
+     }
+    },
+    {
+     "text": "In which region is a MOSFET fully on as a switch?",
+     "more": {
+      "text": "The linear (triode) region."
+     }
+    }
+   ],
+   "id": "ee-i-198"
+  },
+  {
+   "sides": [
+    {
+     "text": "Instrumentation amplifier",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "Precision differential amplifier",
+     "more": {
+      "text": "Three op-amps give very high input impedance and CMRR, with gain set by one resistor: G = 1 + 2R / R_g."
+     }
+    },
+    {
+     "text": "R = 25 kΩ and R_g = 1 kΩ. What is the gain?",
+     "more": {
+      "text": "51."
+     }
+    }
+   ],
+   "id": "ee-i-199"
+  },
+  {
+   "sides": [
+    {
+     "text": "Sallen–Key filter",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "A simple active second-order filter",
+     "more": {
+      "text": "One op-amp and two resistors and capacitors give a low-pass or high-pass response without inductors."
+     }
+    },
+    {
+     "text": "What does a Sallen–Key stage replace compared with passive LC filters?",
+     "more": {
+      "text": "Inductors."
+     }
+    }
+   ],
+   "id": "ee-i-200"
+  },
+  {
+   "sides": [
+    {
+     "text": "Rail-to-rail op-amps",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "Inputs and outputs swing to the supply",
+     "more": {
+      "text": "Useful on low supply voltages, since standard op-amps lose about a volt at each rail."
+     }
+    },
+    {
+     "text": "Why use a rail-to-rail op-amp on a 3.3 V supply?",
+     "more": {
+      "text": "It can use almost the full supply range."
+     }
+    }
+   ],
+   "id": "ee-i-201"
+  },
+  {
+   "sides": [
+    {
+     "text": "Open-collector comparators",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "Need a pull-up resistor",
+     "more": {
+      "text": "The output only pulls low. A pull-up sets the high level, and outputs can be wired together."
+     }
+    },
+    {
+     "text": "What must you add to an open-collector comparator output?",
+     "more": {
+      "text": "A pull-up resistor."
+     }
+    }
+   ],
+   "id": "ee-i-202"
+  },
+  {
+   "sides": [
+    {
+     "text": "Voltage multipliers",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "Diodes and capacitors that boost AC",
+     "more": {
+      "text": "A voltage doubler charges capacitors on alternate half-cycles to get about twice the peak voltage. Cockcroft–Walton stages stack the idea."
+     }
+    },
+    {
+     "text": "What roughly is a voltage doubler's DC output compared with the AC peak?",
+     "more": {
+      "text": "About twice the peak."
+     }
+    }
+   ],
+   "id": "ee-i-203"
+  },
+  {
+   "sides": [
+    {
+     "text": "Ferrite beads and chokes",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "Block high-frequency noise",
+     "more": {
+      "text": "A ferrite bead is mostly resistive at high frequencies, absorbing noise. A common-mode choke blocks noise on both lines of a cable."
+     }
+    },
+    {
+     "text": "Which component absorbs high-frequency noise on a supply line?",
+     "more": {
+      "text": "A ferrite bead."
+     }
+    }
+   ],
+   "id": "ee-i-204"
+  },
+  {
+   "sides": [
+    {
+     "text": "Capacitor ESR",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "Equivalent series resistance heats and ripples",
+     "more": {
+      "text": "Ripple current through ESR makes heat and limits life. Low-ESR types suit switching supplies."
+     }
+    },
+    {
+     "text": "Why does ESR matter in a switching supply's output capacitor?",
+     "more": {
+      "text": "It sets ripple voltage and heating."
+     }
+    }
+   ],
+   "id": "ee-i-205"
+  },
+  {
+   "sides": [
+    {
+     "text": "Resistor power derating",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "Rated power falls with temperature",
+     "more": {
+      "text": "Above about 70 °C the allowed power drops. Run resistors well below their ratings."
+     }
+    },
+    {
+     "text": "How should you run resistors relative to their rated power?",
+     "more": {
+      "text": "Well below it, especially at high temperature."
+     }
+    }
+   ],
+   "id": "ee-i-206"
+  },
+  {
+   "sides": [
+    {
+     "text": "Zener power rating",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "P = Vz × Iz",
+     "more": {
+      "text": "Choose a Zener whose power rating exceeds the worst-case dissipation."
+     }
+    },
+    {
+     "text": "A 5.1 V Zener carries 31 mA. How much power does it dissipate?",
+     "more": {
+      "text": "About 158 mW, so use a 0.5 W part."
+     }
+    }
+   ],
+   "id": "ee-i-207"
+  },
+  {
+   "sides": [
+    {
+     "text": "BJT thermal runaway",
+     "sub": "Electronics · Intermediate"
+    },
+    {
+     "text": "Heat raises current, which raises heat",
+     "more": {
+      "text": "A BJT's current rises with temperature, so a hot device draws more current. An emitter resistor adds negative feedback to stop it."
+     }
+    },
+    {
+     "text": "What simple part reduces BJT thermal runaway?",
+     "more": {
+      "text": "An emitter resistor."
+     }
+    }
+   ],
+   "id": "ee-i-208"
+  },
+  {
+   "sides": [
+    {
+     "text": "Bitwise operations",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "Set, clear, toggle, and test bits with masks",
+     "more": {
+      "text": "Set: reg |= (1<<n). Clear: reg &= ~(1<<n). Toggle: reg ^= (1<<n). Test: reg & (1<<n)."
+     }
+    },
+    {
+     "text": "Which operation clears bit 3 of a register?",
+     "more": {
+      "text": "reg &= ~(1 << 3)."
+     }
+    }
+   ],
+   "id": "ee-i-209"
+  },
+  {
+   "sides": [
+    {
+     "text": "Non-blocking timing",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "millis() instead of delay()",
+     "more": {
+      "text": "delay() halts the program. Comparing the current time with a stored time lets the loop keep running other tasks."
+     }
+    },
+    {
+     "text": "Why avoid delay() in programs that do several things?",
+     "more": {
+      "text": "It blocks everything else from running."
+     }
+    }
+   ],
+   "id": "ee-i-210"
+  },
+  {
+   "sides": [
+    {
+     "text": "The volatile keyword",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "Tells the compiler a value can change by itself",
+     "more": {
+      "text": "Needed for variables changed in ISRs or hardware registers, so the compiler doesn't cache them in a register."
+     }
+    },
+    {
+     "text": "When must a variable be declared volatile?",
+     "more": {
+      "text": "When it can change outside the normal program flow, such as in an ISR."
+     }
+    }
+   ],
+   "id": "ee-i-211"
+  },
+  {
+   "sides": [
+    {
+     "text": "Integer overflow",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "Fixed-size integers wrap around",
+     "more": {
+      "text": "An 8-bit unsigned value wraps from 255 to 0. Overflow bugs cause strange behavior in counters and timers."
+     }
+    },
+    {
+     "text": "A uint8_t holds 250 and adds 10. What is the result?",
+     "more": {
+      "text": "4 (260 − 256)."
+     }
+    }
+   ],
+   "id": "ee-i-212"
+  },
+  {
+   "sides": [
+    {
+     "text": "Endianness",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "Byte order in memory",
+     "more": {
+      "text": "Little-endian stores the least significant byte first (ARM and x86 do this). Network protocols often use big-endian."
+     }
+    },
+    {
+     "text": "In which byte order do most microcontrollers store multi-byte numbers?",
+     "more": {
+      "text": "Little-endian."
+     }
+    }
+   ],
+   "id": "ee-i-213"
+  },
+  {
+   "sides": [
+    {
+     "text": "Pin multiplexing",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "One pin, several possible functions",
+     "more": {
+      "text": "Registers select whether a pin is GPIO, UART, SPI, or a timer output. Check the datasheet's alternate function table."
+     }
+    },
+    {
+     "text": "How does a single pin serve as either GPIO or a UART TX?",
+     "more": {
+      "text": "Pin multiplexing (alternate function selection)."
+     }
+    }
+   ],
+   "id": "ee-i-214"
+  },
+  {
+   "sides": [
+    {
+     "text": "Timer input capture",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "Timestamps an edge precisely",
+     "more": {
+      "text": "The hardware records the timer count at an edge, so pulse width and frequency are measured accurately without CPU polling."
+     }
+    },
+    {
+     "text": "Which timer feature measures a pulse's width precisely?",
+     "more": {
+      "text": "Input capture."
+     }
+    }
+   ],
+   "id": "ee-i-215"
+  },
+  {
+   "sides": [
+    {
+     "text": "Quadrature encoder",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "Two signals give direction and position",
+     "more": {
+      "text": "Channels A and B are 90° apart, so their order shows direction. Counting all edges (×4) gives four times the pulses per revolution."
+     }
+    },
+    {
+     "text": "A 600 PPR encoder is decoded ×4. How many counts per revolution?",
+     "more": {
+      "text": "2,400."
+     }
+    }
+   ],
+   "id": "ee-i-216"
+  },
+  {
+   "sides": [
+    {
+     "text": "Keypad matrix scanning",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "Rows and columns share pins",
+     "more": {
+      "text": "Drive one row at a time and read the columns. A 4×4 keypad needs 8 pins for 16 keys."
+     }
+    },
+    {
+     "text": "How many pins does a 4×4 matrix keypad need?",
+     "more": {
+      "text": "Eight."
+     }
+    }
+   ],
+   "id": "ee-i-217"
+  },
+  {
+   "sides": [
+    {
+     "text": "Shift register outputs",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "Add many outputs with three pins",
+     "more": {
+      "text": "A 74HC595 takes serial data, a clock, and a latch signal to drive 8 outputs. Chain several for more."
+     }
+    },
+    {
+     "text": "How many MCU pins drive a chain of 74HC595 shift registers?",
+     "more": {
+      "text": "Three (data, clock, latch)."
+     }
+    }
+   ],
+   "id": "ee-i-218"
+  },
+  {
+   "sides": [
+    {
+     "text": "ADC oversampling",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "Averaging gains resolution",
+     "more": {
+      "text": "Each extra bit takes 4 times the samples, assuming noise dithers the signal."
+     }
+    },
+    {
+     "text": "How many samples give 2 extra bits of resolution?",
+     "more": {
+      "text": "16."
+     }
+    }
+   ],
+   "id": "ee-i-219"
+  },
+  {
+   "sides": [
+    {
+     "text": "Reading a thermistor",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "Voltage divider plus a conversion equation",
+     "more": {
+      "text": "Put the thermistor in a divider and convert the reading with the beta or Steinhart–Hart equation. Linearize or use a lookup table."
+     }
+    },
+    {
+     "text": "What equation converts a thermistor's resistance to temperature accurately?",
+     "more": {
+      "text": "The Steinhart–Hart (or beta) equation."
+     }
+    }
+   ],
+   "id": "ee-i-220"
+  },
+  {
+   "sides": [
+    {
+     "text": "1-Wire and DS18B20",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "A digital temperature sensor on one data line",
+     "more": {
+      "text": "Each sensor has a unique ID, so many share one pin with a pull-up resistor."
+     }
+    },
+    {
+     "text": "How many data wires does a DS18B20 need besides power and ground?",
+     "more": {
+      "text": "One."
+     }
+    }
+   ],
+   "id": "ee-i-221"
+  },
+  {
+   "sides": [
+    {
+     "text": "SPI modes",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "CPOL and CPHA",
+     "more": {
+      "text": "The four combinations define the clock's idle level and which edge samples data. Master and slave must use the same mode."
+     }
+    },
+    {
+     "text": "What happens if master and slave use different SPI modes?",
+     "more": {
+      "text": "Data is sampled at the wrong time and is garbled."
+     }
+    }
+   ],
+   "id": "ee-i-222"
+  },
+  {
+   "sides": [
+    {
+     "text": "Battery voltage monitoring",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "Divide down before the ADC",
+     "more": {
+      "text": "A divider scales the battery to the ADC's range. Keep the divider's current low for battery life."
+     }
+    },
+    {
+     "text": "A 30 kΩ / 10 kΩ divider (10 kΩ to ground) reads a 12 V battery. What does the ADC see?",
+     "more": {
+      "text": "3.0 V."
+     }
+    }
+   ],
+   "id": "ee-i-223"
+  },
+  {
+   "sides": [
+    {
+     "text": "Open-drain pull-up sizing",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "R = (Vcc − V_OL) / I_OL",
+     "more": {
+      "text": "Smaller resistors give faster edges but burn more current. I2C pull-ups are often 2.2 to 10 kΩ."
+     }
+    },
+    {
+     "text": "3.3 V supply, V_OL = 0.4 V, and 3 mA sink current. What minimum pull-up?",
+     "more": {
+      "text": "About 967 Ω, so use about 1 kΩ."
+     }
+    }
+   ],
+   "id": "ee-i-224"
+  },
+  {
+   "sides": [
+    {
+     "text": "EEPROM wear",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "Limited write cycles",
+     "more": {
+      "text": "Typical EEPROM survives around 100,000 writes per cell. Don't write in a fast loop. Write only when a value changes."
+     }
+    },
+    {
+     "text": "Why shouldn't firmware write EEPROM continuously?",
+     "more": {
+      "text": "The cells wear out after a limited number of writes."
+     }
+    }
+   ],
+   "id": "ee-i-225"
+  },
+  {
+   "sides": [
+    {
+     "text": "GPS modules",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "NMEA sentences over UART",
+     "more": {
+      "text": "GPS modules stream text such as $GPGGA with time, position, and fix quality at 9,600 baud by default."
+     }
+    },
+    {
+     "text": "What data format do many GPS modules send over a serial port?",
+     "more": {
+      "text": "NMEA text sentences."
+     }
+    }
+   ],
+   "id": "ee-i-226"
+  },
+  {
+   "sides": [
+    {
+     "text": "Real-time clock modules",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "Accurate time with backup power",
+     "more": {
+      "text": "A DS3231 has a temperature-compensated crystal, about ±2 ppm, and runs from a coin cell when main power is off."
+     }
+    },
+    {
+     "text": "Why is a DS3231 more accurate than a basic crystal RTC?",
+     "more": {
+      "text": "It has a temperature-compensated oscillator."
+     }
+    }
+   ],
+   "id": "ee-i-227"
+  },
+  {
+   "sides": [
+    {
+     "text": "SD cards and filesystems",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "SPI mode and FAT",
+     "more": {
+      "text": "Most microcontrollers talk to SD cards over SPI and use a FAT library. Power loss during a write can corrupt the file system."
+     }
+    },
+    {
+     "text": "How can a microcontroller commonly interface with an SD card?",
+     "more": {
+      "text": "Over SPI, with a FAT filesystem library."
+     }
+    }
+   ],
+   "id": "ee-i-228"
+  },
+  {
+   "sides": [
+    {
+     "text": "Capacitive touch",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "Measures a change in capacitance",
+     "more": {
+      "text": "A finger adds capacitance to a pad. The MCU measures charge time or frequency and compares it to a baseline."
+     }
+    },
+    {
+     "text": "What does a capacitive touch sensor measure?",
+     "more": {
+      "text": "The small change in capacitance caused by a finger."
+     }
+    }
+   ],
+   "id": "ee-i-229"
+  },
+  {
+   "sides": [
+    {
+     "text": "Wireless modules for hobby projects",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "nRF24, HC-05, LoRa, and ESP-NOW",
+     "more": {
+      "text": "Use ready-made modules over SPI or UART for radio links. ESP-NOW is a low-latency peer-to-peer protocol on ESP chips."
+     }
+    },
+    {
+     "text": "Which protocol on ESP chips offers low-latency peer-to-peer messaging?",
+     "more": {
+      "text": "ESP-NOW."
+     }
+    }
+   ],
+   "id": "ee-i-230"
+  },
+  {
+   "sides": [
+    {
+     "text": "Raspberry Pi peripherals",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "Enable I2C and SPI, then use Python libraries",
+     "more": {
+      "text": "The Pi exposes I2C, SPI, and UART on the GPIO header. Libraries such as gpiozero and smbus handle them."
+     }
+    },
+    {
+     "text": "Which Python library family makes basic Pi GPIO simple?",
+     "more": {
+      "text": "gpiozero."
+     }
+    }
+   ],
+   "id": "ee-i-231"
+  },
+  {
+   "sides": [
+    {
+     "text": "Stack and heap",
+     "sub": "Embedded · Intermediate"
+    },
+    {
+     "text": "Where variables live in RAM",
+     "more": {
+      "text": "Local variables use the stack. Dynamic allocation uses the heap, which can fragment. Overflowing either crashes small systems."
+     }
+    },
+    {
+     "text": "Which memory area can fragment over time with dynamic allocation?",
+     "more": {
+      "text": "The heap."
+     }
+    }
+   ],
+   "id": "ee-i-232"
+  },
+  {
+   "sides": [
+    {
+     "text": "Simplex, half-duplex, and full-duplex",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "One way, take turns, or both at once",
+     "more": {
+      "text": "Radio broadcast is simplex, a walkie-talkie is half-duplex, and a phone call is full-duplex."
+     }
+    },
+    {
+     "text": "Which mode lets both ends transmit at once?",
+     "more": {
+      "text": "Full-duplex."
+     }
+    }
+   ],
+   "id": "ee-i-233"
+  },
+  {
+   "sides": [
+    {
+     "text": "Baseband and passband",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "Signal at its original frequencies vs shifted up",
+     "more": {
+      "text": "Baseband signals sit near zero hertz (audio, digital pulses). Passband signals are modulated onto a carrier for transmission."
+     }
+    },
+    {
+     "text": "Which type is a signal modulated onto a radio carrier?",
+     "more": {
+      "text": "Passband."
+     }
+    }
+   ],
+   "id": "ee-i-234"
+  },
+  {
+   "sides": [
+    {
+     "text": "Sidebands: DSB and SSB",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "AM creates two sidebands",
+     "more": {
+      "text": "Double-sideband sends both. Single-sideband sends just one, halving the bandwidth and saving power."
+     }
+    },
+    {
+     "text": "How much bandwidth does SSB use compared with AM?",
+     "more": {
+      "text": "About half."
+     }
+    }
+   ],
+   "id": "ee-i-235"
+  },
+  {
+   "sides": [
+    {
+     "text": "dBm and dBW",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "Absolute power in decibels",
+     "more": {
+      "text": "0 dBm is 1 mW, 30 dBm is 1 W, and each 10 dB is a factor of 10."
+     }
+    },
+    {
+     "text": "What is 20 dBm in milliwatts?",
+     "more": {
+      "text": "100 mW."
+     }
+    }
+   ],
+   "id": "ee-i-236"
+  },
+  {
+   "sides": [
+    {
+     "text": "Radio frequency bands",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "HF, VHF, UHF, and microwave",
+     "more": {
+      "text": "HF is 3 to 30 MHz, VHF 30 to 300 MHz, UHF 300 MHz to 3 GHz, and microwave runs above that. Higher bands give more bandwidth but shorter range."
+     }
+    },
+    {
+     "text": "Which band is 300 MHz to 3 GHz?",
+     "more": {
+      "text": "UHF."
+     }
+    }
+   ],
+   "id": "ee-i-237"
+  },
+  {
+   "sides": [
+    {
+     "text": "ISM bands",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "Licence-free bands with limits",
+     "more": {
+      "text": "Common ones: 433 MHz, 915 MHz (US), 2.4 GHz, and 5.8 GHz. Devices must follow power limits."
+     }
+    },
+    {
+     "text": "Which common ISM band do Wi-Fi and Bluetooth share?",
+     "more": {
+      "text": "2.4 GHz."
+     }
+    }
+   ],
+   "id": "ee-i-238"
+  },
+  {
+   "sides": [
+    {
+     "text": "NFC and RFID",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "Short-range tags and cards",
+     "more": {
+      "text": "NFC works at 13.56 MHz within a few centimeters. RFID bands: LF at 125 kHz, HF at 13.56 MHz, and UHF at about 860 to 960 MHz."
+     }
+    },
+    {
+     "text": "Which frequency does NFC use?",
+     "more": {
+      "text": "13.56 MHz."
+     }
+    }
+   ],
+   "id": "ee-i-239"
+  },
+  {
+   "sides": [
+    {
+     "text": "RF connectors",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "SMA, BNC, and N-type",
+     "more": {
+      "text": "Most RF gear uses 50 Ω connectors. SMA is small and common to antennas, BNC is quick-connect on bench gear, and N-type handles higher power."
+     }
+    },
+    {
+     "text": "Which small RF connector is common on antennas and modules?",
+     "more": {
+      "text": "SMA."
+     }
+    }
+   ],
+   "id": "ee-i-240"
+  },
+  {
+   "sides": [
+    {
+     "text": "Antenna polarization",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "Direction of the electric field",
+     "more": {
+      "text": "Transmit and receive antennas should match (both vertical or both horizontal), or the signal loses strength."
+     }
+    },
+    {
+     "text": "What happens if transmit and receive polarizations are mismatched?",
+     "more": {
+      "text": "Signal strength drops."
+     }
+    }
+   ],
+   "id": "ee-i-241"
+  },
+  {
+   "sides": [
+    {
+     "text": "Radiation patterns",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "Omni vs directional antennas",
+     "more": {
+      "text": "An omnidirectional antenna spreads energy around it. Yagi and patch antennas focus it in one direction for more range."
+     }
+    },
+    {
+     "text": "Which antenna type gives more range in one direction?",
+     "more": {
+      "text": "A directional antenna."
+     }
+    }
+   ],
+   "id": "ee-i-242"
+  },
+  {
+   "sides": [
+    {
+     "text": "Wi-Fi channels",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "Channels 1, 6, and 11 don't overlap",
+     "more": {
+      "text": "In the 2.4 GHz band in the US, channels are 5 MHz apart but 20 MHz wide, so only 1, 6, and 11 avoid overlap."
+     }
+    },
+    {
+     "text": "Which three 2.4 GHz Wi-Fi channels don't overlap in the US?",
+     "more": {
+      "text": "1, 6, and 11."
+     }
+    }
+   ],
+   "id": "ee-i-243"
+  },
+  {
+   "sides": [
+    {
+     "text": "Wi-Fi security",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "WPA2 and WPA3 replaced WEP",
+     "more": {
+      "text": "WEP is broken. WPA2 uses AES-CCMP, and WPA3 adds stronger key exchange."
+     }
+    },
+    {
+     "text": "Which Wi-Fi security protocol is considered broken?",
+     "more": {
+      "text": "WEP."
+     }
+    }
+   ],
+   "id": "ee-i-244"
+  },
+  {
+   "sides": [
+    {
+     "text": "Latency, jitter, and packet loss",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "Delay, delay variation, and dropped packets",
+     "more": {
+      "text": "Real-time applications such as voice and games are sensitive to all three. Throughput alone doesn't tell the story."
+     }
+    },
+    {
+     "text": "What does jitter describe?",
+     "more": {
+      "text": "Variation in packet delay."
+     }
+    }
+   ],
+   "id": "ee-i-245"
+  },
+  {
+   "sides": [
+    {
+     "text": "Throughput vs bandwidth",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "Capacity vs what you actually get",
+     "more": {
+      "text": "Throughput is lower than the link's nominal rate because of protocol overhead, errors, and contention."
+     }
+    },
+    {
+     "text": "Why is real throughput below the nominal link rate?",
+     "more": {
+      "text": "Protocol overhead, retransmissions, and contention."
+     }
+    }
+   ],
+   "id": "ee-i-246"
+  },
+  {
+   "sides": [
+    {
+     "text": "Router, switch, and hub",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "Forward by IP, by MAC, or to everyone",
+     "more": {
+      "text": "A switch learns MAC addresses and forwards frames only where needed. A router forwards between networks by IP. A hub repeats to all ports."
+     }
+    },
+    {
+     "text": "Which device forwards packets between different IP networks?",
+     "more": {
+      "text": "A router."
+     }
+    }
+   ],
+   "id": "ee-i-247"
+  },
+  {
+   "sides": [
+    {
+     "text": "NAT",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "Many devices share one public IP",
+     "more": {
+      "text": "Network address translation rewrites addresses and ports so private devices can use one public address."
+     }
+    },
+    {
+     "text": "What does NAT let many home devices share?",
+     "more": {
+      "text": "One public IP address."
+     }
+    }
+   ],
+   "id": "ee-i-248"
+  },
+  {
+   "sides": [
+    {
+     "text": "IP addresses and subnets",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "/24 means 24 network bits",
+     "more": {
+      "text": "A /24 network has 256 addresses, 254 usable for hosts."
+     }
+    },
+    {
+     "text": "How many usable host addresses are in a /24 subnet?",
+     "more": {
+      "text": "254."
+     }
+    }
+   ],
+   "id": "ee-i-249"
+  },
+  {
+   "sides": [
+    {
+     "text": "DNS",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "Turns names into IP addresses",
+     "more": {
+      "text": "A resolver asks DNS servers for the address that matches a domain name and caches the result."
+     }
+    },
+    {
+     "text": "What does DNS translate?",
+     "more": {
+      "text": "Domain names into IP addresses."
+     }
+    }
+   ],
+   "id": "ee-i-250"
+  },
+  {
+   "sides": [
+    {
+     "text": "Line coding",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "NRZ and Manchester",
+     "more": {
+      "text": "NRZ uses levels directly. Manchester encodes data in transitions, so it carries its own clock but needs twice the bandwidth."
+     }
+    },
+    {
+     "text": "Which line code carries its own clock?",
+     "more": {
+      "text": "Manchester."
+     }
+    }
+   ],
+   "id": "ee-i-251"
+  },
+  {
+   "sides": [
+    {
+     "text": "Broadband access",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "DSL, cable, fiber, and fixed wireless",
+     "more": {
+      "text": "DSL uses telephone wires, cable uses coax, fiber uses light, and fixed wireless uses radio links. Fiber offers the most bandwidth."
+     }
+    },
+    {
+     "text": "Which broadband access type usually offers the highest speed?",
+     "more": {
+      "text": "Fiber."
+     }
+    }
+   ],
+   "id": "ee-i-252"
+  },
+  {
+   "sides": [
+    {
+     "text": "AM modulation index",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "m = Vm / Vc",
+     "more": {
+      "text": "Over-modulation (m > 1) distorts the signal. Typical values are 0.3 to 0.9."
+     }
+    },
+    {
+     "text": "Message peak 3 V and carrier peak 5 V. What is m?",
+     "more": {
+      "text": "0.6."
+     }
+    }
+   ],
+   "id": "ee-i-253"
+  },
+  {
+   "sides": [
+    {
+     "text": "Maximum symbol rate",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "Nyquist: 2B symbols per second",
+     "more": {
+      "text": "An ideal noiseless channel of bandwidth B carries at most 2B symbols per second."
+     }
+    },
+    {
+     "text": "A 4 kHz channel. What is the maximum symbol rate?",
+     "more": {
+      "text": "8,000 symbols/s."
+     }
+    }
+   ],
+   "id": "ee-i-254"
+  },
+  {
+   "sides": [
+    {
+     "text": "Image frequency",
+     "sub": "Communications · Intermediate"
+    },
+    {
+     "text": "The unwanted mirror of a superheterodyne receiver",
+     "more": {
+      "text": "With a high-side local oscillator, f_image = f_RF + 2 × f_IF. A front-end filter must reject it."
+     }
+    },
+    {
+     "text": "Receiving 100 MHz with a 10.7 MHz IF and a high-side LO. What is the image frequency?",
+     "more": {
+      "text": "121.4 MHz."
+     }
+    }
+   ],
+   "id": "ee-i-255"
+  }
+ ]
+}

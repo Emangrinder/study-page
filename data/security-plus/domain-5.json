@@ -1,0 +1,3093 @@
+{
+ "id": "security-plus-domain-5",
+ "name": "5 · Program Management and Oversight",
+ "cards": [
+  {
+   "id": "sec-d5-1",
+   "sides": [
+    {
+     "text": "Guidelines",
+     "sub": "5.1 · Governance documents"
+    },
+    {
+     "text": "Advice that isn't mandatory",
+     "more": {
+      "text": "Recommended practices that give flexibility. Contrast policies (mandatory), standards (specific requirements), and procedures (steps)."
+     }
+    },
+    {
+     "text": "A document suggests an approach but doesn't require it. Which type?",
+     "more": {
+      "text": "A guideline."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-2",
+   "sides": [
+    {
+     "text": "Policy, standard, procedure, guideline",
+     "sub": "5.1 · Governance documents"
+    },
+    {
+     "text": "Four layers of governance documents",
+     "more": {
+      "text": "Policy: what and why (mandatory, high-level). Standard: required specifics. Procedure: step-by-step how. Guideline: optional advice."
+     }
+    },
+    {
+     "text": "A document lists the exact steps to configure a firewall. Which type?",
+     "more": {
+      "text": "A procedure."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-3",
+   "sides": [
+    {
+     "text": "Acceptable use policy",
+     "sub": "5.1 · Governance documents"
+    },
+    {
+     "text": "Rules for acceptable use",
+     "more": {
+      "text": "Defines how employees may use company systems and data, and what's prohibited. Usually signed at onboarding."
+     }
+    },
+    {
+     "text": "Employees must agree not to install unapproved software. Which policy?",
+     "more": {
+      "text": "The acceptable use policy (AUP)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-4",
+   "sides": [
+    {
+     "text": "Information security policies",
+     "sub": "5.1 · Governance documents"
+    },
+    {
+     "text": "Overall rules for protecting information",
+     "more": {
+      "text": "The overarching policy for protecting information assets: roles, classification, access, and responsibilities. Other policies sit beneath it."
+     }
+    },
+    {
+     "text": "Which policy sets organization-wide rules for protecting information?",
+     "more": {
+      "text": "The information security policy."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-5",
+   "sides": [
+    {
+     "text": "Business continuity policy",
+     "sub": "5.1 · Governance documents"
+    },
+    {
+     "text": "Keep critical operations running",
+     "more": {
+      "text": "Defines how essential business functions continue during and after a disruption, tied to the BIA and recovery objectives."
+     }
+    },
+    {
+     "text": "Which policy ensures critical operations continue during a disruption?",
+     "more": {
+      "text": "The business continuity policy."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-6",
+   "sides": [
+    {
+     "text": "Disaster recovery policy",
+     "sub": "5.1 · Governance documents"
+    },
+    {
+     "text": "Restore IT after a disaster",
+     "more": {
+      "text": "Defines how IT systems and data are restored after a major outage, including priorities, RTO, and RPO."
+     }
+    },
+    {
+     "text": "Which policy governs how systems are restored after a disaster?",
+     "more": {
+      "text": "The disaster recovery policy."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-7",
+   "sides": [
+    {
+     "text": "Incident response policy",
+     "sub": "5.1 · Governance documents"
+    },
+    {
+     "text": "Rules for handling incidents",
+     "more": {
+      "text": "Defines what an incident is, who responds, how to report, and the authority of the response team."
+     }
+    },
+    {
+     "text": "Which policy defines roles and reporting for security incidents?",
+     "more": {
+      "text": "The incident response policy."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-8",
+   "sides": [
+    {
+     "text": "SDLC policy",
+     "sub": "5.1 · Governance documents"
+    },
+    {
+     "text": "Secure software development rules",
+     "more": {
+      "text": "Requires security at every stage of development: requirements, design, coding, testing, deployment, and maintenance."
+     }
+    },
+    {
+     "text": "Which policy requires security reviews at each development stage?",
+     "more": {
+      "text": "The SDLC policy."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-9",
+   "sides": [
+    {
+     "text": "Change management policy",
+     "sub": "5.1 · Governance documents"
+    },
+    {
+     "text": "Controls on making changes",
+     "more": {
+      "text": "Requires requests, approvals, testing, and documentation before changes, to avoid unauthorized or disruptive changes."
+     }
+    },
+    {
+     "text": "Which policy requires approval before altering production systems?",
+     "more": {
+      "text": "The change management policy."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-10",
+   "sides": [
+    {
+     "text": "Password standard",
+     "sub": "5.1 · Standards and procedures"
+    },
+    {
+     "text": "Required password rules",
+     "more": {
+      "text": "Specifies minimum password requirements such as length, complexity, history, and lockout."
+     }
+    },
+    {
+     "text": "A document requires passwords of at least 14 characters. Which type?",
+     "more": {
+      "text": "A standard (the password standard)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-11",
+   "sides": [
+    {
+     "text": "Access control standard",
+     "sub": "5.1 · Standards and procedures"
+    },
+    {
+     "text": "Required access rules",
+     "more": {
+      "text": "Specifies how access is granted and reviewed: least privilege, MFA, role definitions, and review frequency."
+     }
+    },
+    {
+     "text": "A document requires quarterly access reviews and MFA for admins. Which type?",
+     "more": {
+      "text": "A standard (access control)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-12",
+   "sides": [
+    {
+     "text": "Physical security standard",
+     "sub": "5.1 · Standards and procedures"
+    },
+    {
+     "text": "Required physical protections",
+     "more": {
+      "text": "Specifies required physical controls: badges, locks, cameras, visitor handling, and environmental protection."
+     }
+    },
+    {
+     "text": "A document requires badge readers on all server room doors. Which type?",
+     "more": {
+      "text": "A standard (physical security)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-13",
+   "sides": [
+    {
+     "text": "Encryption standard",
+     "sub": "5.1 · Standards and procedures"
+    },
+    {
+     "text": "Required cryptography",
+     "more": {
+      "text": "Specifies approved algorithms, key lengths, and when encryption is mandatory, such as AES-256 for data at rest."
+     }
+    },
+    {
+     "text": "A document requires AES-256 for data at rest. Which type?",
+     "more": {
+      "text": "A standard (encryption)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-14",
+   "sides": [
+    {
+     "text": "Change management procedure",
+     "sub": "5.1 · Standards and procedures"
+    },
+    {
+     "text": "Steps to make a change",
+     "more": {
+      "text": "The step-by-step process to request, approve, test, implement, and document changes."
+     }
+    },
+    {
+     "text": "Which document walks staff through each step of making a change?",
+     "more": {
+      "text": "A change management procedure."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-15",
+   "sides": [
+    {
+     "text": "Onboarding and offboarding",
+     "sub": "5.1 · Standards and procedures"
+    },
+    {
+     "text": "Joining and leaving steps",
+     "more": {
+      "text": "Onboarding: create accounts, give training, and sign agreements. Offboarding: revoke access, recover assets, and remind staff of obligations. Prompt offboarding prevents insider risk."
+     }
+    },
+    {
+     "text": "A departing employee's access should be removed promptly. Which procedure?",
+     "more": {
+      "text": "Offboarding."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-16",
+   "sides": [
+    {
+     "text": "Playbooks",
+     "sub": "5.1 · Standards and procedures"
+    },
+    {
+     "text": "Step-by-step response guides",
+     "more": {
+      "text": "Predefined procedures for specific scenarios (ransomware, phishing) so responders act consistently and quickly. Can be automated in SOAR."
+     }
+    },
+    {
+     "text": "A checklist tells responders exactly what to do during a ransomware incident. What is it?",
+     "more": {
+      "text": "A playbook."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-17",
+   "sides": [
+    {
+     "text": "Regulatory requirements",
+     "sub": "5.1 · External considerations"
+    },
+    {
+     "text": "Requirements set by regulators",
+     "more": {
+      "text": "Rules from regulators, such as HIPAA or PCI DSS, that carry penalties for non-compliance."
+     }
+    },
+    {
+     "text": "A regulator requires breach notification within a set time. Which type of requirement?",
+     "more": {
+      "text": "Regulatory."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-18",
+   "sides": [
+    {
+     "text": "Legal requirements",
+     "sub": "5.1 · External considerations"
+    },
+    {
+     "text": "Laws that apply",
+     "more": {
+      "text": "Statutes and contracts governing data handling, breach notification, and liability."
+     }
+    },
+    {
+     "text": "Which external factor covers laws on data handling and liability?",
+     "more": {
+      "text": "Legal."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-19",
+   "sides": [
+    {
+     "text": "Industry requirements",
+     "sub": "5.1 · External considerations"
+    },
+    {
+     "text": "Sector standards",
+     "more": {
+      "text": "Requirements from industry bodies and standards, such as PCI DSS for payments and ISO 27001."
+     }
+    },
+    {
+     "text": "Card handling rules set by the payment industry. Which type?",
+     "more": {
+      "text": "Industry."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-20",
+   "sides": [
+    {
+     "text": "Local and regional",
+     "sub": "5.1 · External considerations"
+    },
+    {
+     "text": "State or area laws",
+     "more": {
+      "text": "Laws that apply in a specific area, such as state breach-notification laws or California's CCPA."
+     }
+    },
+    {
+     "text": "A state law requires notifying residents of a breach. Which level?",
+     "more": {
+      "text": "Local/regional."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-21",
+   "sides": [
+    {
+     "text": "National",
+     "sub": "5.1 · External considerations"
+    },
+    {
+     "text": "Country-level laws",
+     "more": {
+      "text": "Country-wide laws such as US HIPAA and SOX."
+     }
+    },
+    {
+     "text": "A US federal law governs health data. Which level?",
+     "more": {
+      "text": "National."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-22",
+   "sides": [
+    {
+     "text": "Global",
+     "sub": "5.1 · External considerations"
+    },
+    {
+     "text": "Laws that apply across borders",
+     "more": {
+      "text": "International regimes such as the EU GDPR, which applies to data about EU residents wherever the organization is."
+     }
+    },
+    {
+     "text": "A US company serves EU customers and must follow GDPR. Which level?",
+     "more": {
+      "text": "Global."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-23",
+   "sides": [
+    {
+     "text": "Monitoring and revision",
+     "sub": "5.1 · External considerations"
+    },
+    {
+     "text": "Review and update regularly",
+     "more": {
+      "text": "Policies must be reviewed periodically and after incidents or changes (regulation, technology) to stay effective."
+     }
+    },
+    {
+     "text": "A policy hasn't been updated since before the company moved to the cloud. What was missed?",
+     "more": {
+      "text": "Monitoring and revision."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-24",
+   "sides": [
+    {
+     "text": "Boards",
+     "sub": "5.1 · Governance structures and roles"
+    },
+    {
+     "text": "Top-level oversight",
+     "more": {
+      "text": "A board of directors sets strategy and oversees risk and security governance at the highest level."
+     }
+    },
+    {
+     "text": "Which body provides top-level oversight of security governance?",
+     "more": {
+      "text": "The board."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-25",
+   "sides": [
+    {
+     "text": "Committees",
+     "sub": "5.1 · Governance structures and roles"
+    },
+    {
+     "text": "Groups that oversee security",
+     "more": {
+      "text": "Cross-functional groups (security steering, risk, or audit committees) that review and approve policies and risks."
+     }
+    },
+    {
+     "text": "A cross-functional group reviews and approves security policies. What is it?",
+     "more": {
+      "text": "A committee."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-26",
+   "sides": [
+    {
+     "text": "Government entities",
+     "sub": "5.1 · Governance structures and roles"
+    },
+    {
+     "text": "Public oversight bodies",
+     "more": {
+      "text": "Regulators and agencies that set and enforce rules for sectors or data."
+     }
+    },
+    {
+     "text": "Which governance body enforces rules for a regulated industry?",
+     "more": {
+      "text": "A government entity (regulator)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-27",
+   "sides": [
+    {
+     "text": "Centralized vs decentralized governance",
+     "sub": "5.1 · Governance structures and roles"
+    },
+    {
+     "text": "One authority vs distributed authority",
+     "more": {
+      "text": "Centralized: consistent policy from one authority. Decentralized: units set their own, fitting local needs but risking inconsistency."
+     }
+    },
+    {
+     "text": "Each business unit sets its own security rules. Which structure?",
+     "more": {
+      "text": "Decentralized."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-28",
+   "sides": [
+    {
+     "text": "Data owner",
+     "sub": "5.1 · Governance structures and roles"
+    },
+    {
+     "text": "Accountable for the data",
+     "more": {
+      "text": "A senior person accountable for a data set, who classifies it and approves access."
+     }
+    },
+    {
+     "text": "Who approves access to the finance database?",
+     "more": {
+      "text": "The data owner."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-29",
+   "sides": [
+    {
+     "text": "Data controller",
+     "sub": "5.1 · Governance structures and roles"
+    },
+    {
+     "text": "Decides why and how data is processed",
+     "more": {
+      "text": "Determines the purposes and means of processing personal data (GDPR). Holds primary responsibility to data subjects."
+     }
+    },
+    {
+     "text": "Which role decides why personal data is collected?",
+     "more": {
+      "text": "The data controller."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-30",
+   "sides": [
+    {
+     "text": "Data processor",
+     "sub": "5.1 · Governance structures and roles"
+    },
+    {
+     "text": "Processes data on the controller's behalf",
+     "more": {
+      "text": "Processes personal data under the controller's instructions, such as a cloud provider or payroll vendor."
+     }
+    },
+    {
+     "text": "A payroll vendor processes employee data only on a company's instructions. What's the vendor's role?",
+     "more": {
+      "text": "Data processor."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-31",
+   "sides": [
+    {
+     "text": "Data custodian and steward",
+     "sub": "5.1 · Governance structures and roles"
+    },
+    {
+     "text": "Manages and protects data day to day",
+     "more": {
+      "text": "Custodians implement technical protections and handle storage and backups. Stewards ensure data quality and proper use."
+     }
+    },
+    {
+     "text": "Who handles backups and technical protection of a data set?",
+     "more": {
+      "text": "The data custodian."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-32",
+   "sides": [
+    {
+     "text": "Risk identification",
+     "sub": "5.2 · Risk assessment"
+    },
+    {
+     "text": "Find what could go wrong",
+     "more": {
+      "text": "Identify assets, threats, and vulnerabilities that could cause harm, using assessments, scans, and input from owners."
+     }
+    },
+    {
+     "text": "A team lists assets and the threats against them. Which step?",
+     "more": {
+      "text": "Risk identification."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-33",
+   "sides": [
+    {
+     "text": "Risk assessment",
+     "sub": "5.2 · Risk assessment"
+    },
+    {
+     "text": "Evaluate identified risks",
+     "more": {
+      "text": "Evaluate likelihood and impact to rank risks. Can be ad hoc, recurring, one-time, or continuous."
+     }
+    },
+    {
+     "text": "Which activity ranks risks by likelihood and impact?",
+     "more": {
+      "text": "Risk assessment."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-34",
+   "sides": [
+    {
+     "text": "Ad hoc assessment",
+     "sub": "5.2 · Risk assessment"
+    },
+    {
+     "text": "Done when needed",
+     "more": {
+      "text": "Triggered by an event, such as a new system or an incident, with no fixed schedule."
+     }
+    },
+    {
+     "text": "A risk review is triggered by a major breach at a competitor. Which type?",
+     "more": {
+      "text": "Ad hoc."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-35",
+   "sides": [
+    {
+     "text": "Recurring assessment",
+     "sub": "5.2 · Risk assessment"
+    },
+    {
+     "text": "On a schedule",
+     "more": {
+      "text": "Performed regularly, such as annually or quarterly, so the risk picture stays current."
+     }
+    },
+    {
+     "text": "A risk assessment is done every year. Which type?",
+     "more": {
+      "text": "Recurring."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-36",
+   "sides": [
+    {
+     "text": "One-time assessment",
+     "sub": "5.2 · Risk assessment"
+    },
+    {
+     "text": "Single point in time",
+     "more": {
+      "text": "Performed once, for a project or event such as an acquisition."
+     }
+    },
+    {
+     "text": "A risk assessment is done once before buying another company. Which type?",
+     "more": {
+      "text": "One-time."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-37",
+   "sides": [
+    {
+     "text": "Continuous assessment",
+     "sub": "5.2 · Risk assessment"
+    },
+    {
+     "text": "Always on",
+     "more": {
+      "text": "Ongoing, often automated, monitoring that updates risk in near real time."
+     }
+    },
+    {
+     "text": "Risk scores update automatically as conditions change. Which type?",
+     "more": {
+      "text": "Continuous."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-38",
+   "sides": [
+    {
+     "text": "Qualitative analysis",
+     "sub": "5.2 · Risk analysis"
+    },
+    {
+     "text": "Rate risk by category",
+     "more": {
+      "text": "Uses descriptive ratings (low, medium, high) and judgment. Quick and subjective; needs no dollar values."
+     }
+    },
+    {
+     "text": "Risks are rated low, medium, or high. Which analysis?",
+     "more": {
+      "text": "Qualitative."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-39",
+   "sides": [
+    {
+     "text": "Quantitative analysis",
+     "sub": "5.2 · Risk analysis"
+    },
+    {
+     "text": "Rate risk in numbers",
+     "more": {
+      "text": "Uses numeric values and dollar figures (SLE, ALE, ARO). More objective, but needs good data."
+     }
+    },
+    {
+     "text": "A risk is expressed as an expected loss of $50,000 per year. Which analysis?",
+     "more": {
+      "text": "Quantitative."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-40",
+   "sides": [
+    {
+     "text": "Single loss expectancy",
+     "sub": "5.2 · Risk analysis"
+    },
+    {
+     "text": "Cost of a single event",
+     "more": {
+      "text": "SLE = asset value × exposure factor."
+     }
+    },
+    {
+     "text": "An asset worth $200,000 has an exposure factor of 25%. What's the SLE?",
+     "more": {
+      "text": "$50,000."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-41",
+   "sides": [
+    {
+     "text": "Annualized rate of occurrence",
+     "sub": "5.2 · Risk analysis"
+    },
+    {
+     "text": "Expected events per year",
+     "more": {
+      "text": "ARO: how many times a year a threat is expected to occur."
+     }
+    },
+    {
+     "text": "A flood is expected once every 5 years. What's the ARO?",
+     "more": {
+      "text": "0.2."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-42",
+   "sides": [
+    {
+     "text": "Annualized loss expectancy",
+     "sub": "5.2 · Risk analysis"
+    },
+    {
+     "text": "Expected yearly loss",
+     "more": {
+      "text": "ALE = SLE × ARO. Used to compare the yearly cost of a risk with the cost of a control."
+     }
+    },
+    {
+     "text": "SLE is $50,000 and ARO is 0.2. What's the ALE?",
+     "more": {
+      "text": "$10,000 per year."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-43",
+   "sides": [
+    {
+     "text": "Probability and likelihood",
+     "sub": "5.2 · Risk analysis"
+    },
+    {
+     "text": "Chance of occurring",
+     "more": {
+      "text": "Probability: the numeric chance. Likelihood: how probable an event is, often rated qualitatively. Combine with impact to rate risk."
+     }
+    },
+    {
+     "text": "A threat is rated unlikely. Which concept?",
+     "more": {
+      "text": "Likelihood."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-44",
+   "sides": [
+    {
+     "text": "Impact",
+     "sub": "5.2 · Risk analysis"
+    },
+    {
+     "text": "Consequence if it happens",
+     "more": {
+      "text": "The harm to the business if the risk occurs: financial, operational, reputational, or legal."
+     }
+    },
+    {
+     "text": "Which factor measures the damage if a risk event occurs?",
+     "more": {
+      "text": "Impact."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-45",
+   "sides": [
+    {
+     "text": "Exposure factor (risk)",
+     "sub": "5.2 · Risk analysis"
+    },
+    {
+     "text": "Percent of asset value lost",
+     "more": {
+      "text": "The fraction of an asset's value lost in an event. Feeds the SLE calculation."
+     }
+    },
+    {
+     "text": "A fire would destroy 60% of a $500,000 facility. What's the SLE?",
+     "more": {
+      "text": "$300,000."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-46",
+   "sides": [
+    {
+     "text": "Risk register",
+     "sub": "5.2 · Risk register and appetite"
+    },
+    {
+     "text": "Central list of risks",
+     "more": {
+      "text": "A document tracking each risk with description, owner, rating, treatment, and status."
+     }
+    },
+    {
+     "text": "Which document lists identified risks, their owners, and treatments?",
+     "more": {
+      "text": "A risk register."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-47",
+   "sides": [
+    {
+     "text": "Key risk indicators",
+     "sub": "5.2 · Risk register and appetite"
+    },
+    {
+     "text": "Metrics signaling rising risk",
+     "more": {
+      "text": "KRIs are measurable signals, like patch backlog or failed logins, that warn that risk exposure is increasing."
+     }
+    },
+    {
+     "text": "A growing number of unpatched critical systems warns of rising risk. What is this metric?",
+     "more": {
+      "text": "A key risk indicator (KRI)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-48",
+   "sides": [
+    {
+     "text": "Risk owners",
+     "sub": "5.2 · Risk register and appetite"
+    },
+    {
+     "text": "Person accountable for a risk",
+     "more": {
+      "text": "A named individual responsible for managing a risk and its treatment."
+     }
+    },
+    {
+     "text": "Who is accountable for deciding how a specific risk is treated?",
+     "more": {
+      "text": "The risk owner."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-49",
+   "sides": [
+    {
+     "text": "Risk threshold",
+     "sub": "5.2 · Risk register and appetite"
+    },
+    {
+     "text": "Limit that triggers action",
+     "more": {
+      "text": "The level at which risk becomes unacceptable and must be treated or escalated."
+     }
+    },
+    {
+     "text": "When a risk score exceeds 15, it must be escalated. What is 15?",
+     "more": {
+      "text": "The risk threshold."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-50",
+   "sides": [
+    {
+     "text": "Risk tolerance",
+     "sub": "5.2 · Risk register and appetite"
+    },
+    {
+     "text": "Acceptable variation for an activity",
+     "more": {
+      "text": "How much risk the organization will accept for a specific activity or objective."
+     }
+    },
+    {
+     "text": "Management accepts up to 4 hours of downtime for a non-critical system. Which concept?",
+     "more": {
+      "text": "Risk tolerance."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-51",
+   "sides": [
+    {
+     "text": "Risk appetite",
+     "sub": "5.2 · Risk register and appetite"
+    },
+    {
+     "text": "Overall willingness to take risk",
+     "more": {
+      "text": "The broad amount and type of risk an organization is willing to pursue to meet its goals. Types: expansionary, conservative, neutral."
+     }
+    },
+    {
+     "text": "A startup willingly takes on high risk to grow quickly. Which risk appetite?",
+     "more": {
+      "text": "Expansionary."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-52",
+   "sides": [
+    {
+     "text": "Expansionary appetite",
+     "sub": "5.2 · Risk register and appetite"
+    },
+    {
+     "text": "Willing to take more risk for growth",
+     "more": {
+      "text": "Accepts higher risk in pursuit of growth and returns."
+     }
+    },
+    {
+     "text": "A company launches in new markets despite uncertainty. Which appetite?",
+     "more": {
+      "text": "Expansionary."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-53",
+   "sides": [
+    {
+     "text": "Conservative appetite",
+     "sub": "5.2 · Risk register and appetite"
+    },
+    {
+     "text": "Prefers low risk",
+     "more": {
+      "text": "Avoids risk and favors stability and protection."
+     }
+    },
+    {
+     "text": "A bank rejects any change that might increase risk. Which appetite?",
+     "more": {
+      "text": "Conservative."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-54",
+   "sides": [
+    {
+     "text": "Neutral appetite",
+     "sub": "5.2 · Risk register and appetite"
+    },
+    {
+     "text": "Balanced approach",
+     "more": {
+      "text": "Weighs risk and reward evenly, accepting moderate risk."
+     }
+    },
+    {
+     "text": "A company takes moderate risks when the return justifies it. Which appetite?",
+     "more": {
+      "text": "Neutral."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-55",
+   "sides": [
+    {
+     "text": "Risk transfer",
+     "sub": "5.2 · Risk management strategies"
+    },
+    {
+     "text": "Shift the risk to a third party",
+     "more": {
+      "text": "Move the financial impact through insurance or contracts. Responsibility still remains."
+     }
+    },
+    {
+     "text": "A company buys insurance against data breach costs. Which strategy?",
+     "more": {
+      "text": "Transfer."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-56",
+   "sides": [
+    {
+     "text": "Risk acceptance",
+     "sub": "5.2 · Risk management strategies"
+    },
+    {
+     "text": "Live with the risk",
+     "more": {
+      "text": "Knowingly tolerate the risk when the cost to treat it exceeds the benefit, with management approval and documentation."
+     }
+    },
+    {
+     "text": "Management decides the fix costs more than the possible loss. Which strategy?",
+     "more": {
+      "text": "Accept."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-57",
+   "sides": [
+    {
+     "text": "Exemption",
+     "sub": "5.2 · Risk management strategies"
+    },
+    {
+     "text": "Formal permission to skip a requirement",
+     "more": {
+      "text": "A documented approval to not comply with a requirement, with defined scope and review."
+     }
+    },
+    {
+     "text": "A system is formally excused from a patch requirement. What is this?",
+     "more": {
+      "text": "An exemption."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-58",
+   "sides": [
+    {
+     "text": "Exception",
+     "sub": "5.2 · Risk management strategies"
+    },
+    {
+     "text": "Temporary approved deviation",
+     "more": {
+      "text": "A time-limited approved departure from policy, with compensating controls and a review date."
+     }
+    },
+    {
+     "text": "A temporary approved deviation from policy, with compensating controls. Which term?",
+     "more": {
+      "text": "An exception."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-59",
+   "sides": [
+    {
+     "text": "Risk avoidance",
+     "sub": "5.2 · Risk management strategies"
+    },
+    {
+     "text": "Stop the risky activity",
+     "more": {
+      "text": "Eliminate the risk by not doing the activity or by removing the asset."
+     }
+    },
+    {
+     "text": "A company stops offering a service because it's too risky. Which strategy?",
+     "more": {
+      "text": "Avoid."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-60",
+   "sides": [
+    {
+     "text": "Risk mitigation",
+     "sub": "5.2 · Risk management strategies"
+    },
+    {
+     "text": "Reduce likelihood or impact",
+     "more": {
+      "text": "Apply controls to lower the risk to an acceptable level. The most common strategy."
+     }
+    },
+    {
+     "text": "Adding MFA reduces the chance of account takeover. Which strategy?",
+     "more": {
+      "text": "Mitigate."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-61",
+   "sides": [
+    {
+     "text": "Residual risk",
+     "sub": "5.2 · Risk management strategies"
+    },
+    {
+     "text": "Risk left after controls",
+     "more": {
+      "text": "The remaining risk after controls are applied. It must fit within the risk appetite."
+     }
+    },
+    {
+     "text": "After applying controls, some risk remains. What is it?",
+     "more": {
+      "text": "Residual risk."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-62",
+   "sides": [
+    {
+     "text": "Inherent risk",
+     "sub": "5.2 · Risk management strategies"
+    },
+    {
+     "text": "Risk before controls",
+     "more": {
+      "text": "The level of risk that exists before any controls are applied."
+     }
+    },
+    {
+     "text": "Which term describes risk before controls are considered?",
+     "more": {
+      "text": "Inherent risk."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-63",
+   "sides": [
+    {
+     "text": "Risk reporting",
+     "sub": "5.2 · Risk management strategies"
+    },
+    {
+     "text": "Communicate risk status",
+     "more": {
+      "text": "Regularly reporting risks, KRIs, and treatment progress to management so decisions can be made."
+     }
+    },
+    {
+     "text": "A quarterly summary tells leadership the top risks and their status. Which activity?",
+     "more": {
+      "text": "Risk reporting."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-64",
+   "sides": [
+    {
+     "text": "Business impact analysis",
+     "sub": "5.2 · Business impact analysis"
+    },
+    {
+     "text": "Assess the impact of disruption",
+     "more": {
+      "text": "A BIA identifies critical functions and the impact of losing them, and determines RTO, RPO, and priorities."
+     }
+    },
+    {
+     "text": "Which analysis determines which functions must be restored first?",
+     "more": {
+      "text": "A BIA."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-65",
+   "sides": [
+    {
+     "text": "RTO",
+     "sub": "5.2 · Business impact analysis"
+    },
+    {
+     "text": "Time to restore",
+     "more": {
+      "text": "Recovery Time Objective: the maximum acceptable time to restore a function after disruption."
+     }
+    },
+    {
+     "text": "A service must be back within 4 hours. Which metric?",
+     "more": {
+      "text": "RTO."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-66",
+   "sides": [
+    {
+     "text": "RPO",
+     "sub": "5.2 · Business impact analysis"
+    },
+    {
+     "text": "Acceptable data loss",
+     "more": {
+      "text": "Recovery Point Objective: the maximum acceptable data loss, measured in time since the last good backup."
+     }
+    },
+    {
+     "text": "A company can lose at most 30 minutes of data. Which metric?",
+     "more": {
+      "text": "RPO."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-67",
+   "sides": [
+    {
+     "text": "MTTR",
+     "sub": "5.2 · Business impact analysis"
+    },
+    {
+     "text": "Average repair time",
+     "more": {
+      "text": "Mean Time to Repair: the average time to fix a failed component and restore service."
+     }
+    },
+    {
+     "text": "On average, repairs take 3 hours. Which metric?",
+     "more": {
+      "text": "MTTR."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-68",
+   "sides": [
+    {
+     "text": "MTBF",
+     "sub": "5.2 · Business impact analysis"
+    },
+    {
+     "text": "Average time between failures",
+     "more": {
+      "text": "Mean Time Between Failures: the average operating time between failures of a repairable system, a measure of reliability."
+     }
+    },
+    {
+     "text": "A device fails on average every 10,000 hours. Which metric?",
+     "more": {
+      "text": "MTBF."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-69",
+   "sides": [
+    {
+     "text": "Vendor assessment",
+     "sub": "5.3 · Vendor assessment"
+    },
+    {
+     "text": "Evaluate a vendor's security",
+     "more": {
+      "text": "Assess a vendor's security and reliability before and during the relationship using testing, audit evidence, and questionnaires."
+     }
+    },
+    {
+     "text": "Before signing, a company reviews a vendor's security practices. Which process?",
+     "more": {
+      "text": "Vendor assessment."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-70",
+   "sides": [
+    {
+     "text": "Vendor penetration testing",
+     "sub": "5.3 · Vendor assessment"
+    },
+    {
+     "text": "Testing the vendor's defenses",
+     "more": {
+      "text": "Reviewing, or with permission performing, penetration tests of a vendor's systems to confirm they hold up."
+     }
+    },
+    {
+     "text": "A company asks to review a vendor's recent penetration test results. Which assessment method?",
+     "more": {
+      "text": "Penetration testing."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-71",
+   "sides": [
+    {
+     "text": "Right-to-audit clause",
+     "sub": "5.3 · Vendor assessment"
+    },
+    {
+     "text": "Contract lets you audit the vendor",
+     "more": {
+      "text": "A contract provision allowing the customer or its auditor to inspect the vendor's security practices and records."
+     }
+    },
+    {
+     "text": "A contract allows the customer to inspect the vendor's controls. Which clause?",
+     "more": {
+      "text": "A right-to-audit clause."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-72",
+   "sides": [
+    {
+     "text": "Evidence of internal audits",
+     "sub": "5.3 · Vendor assessment"
+    },
+    {
+     "text": "The vendor's own audit results",
+     "more": {
+      "text": "Reports from a vendor's internal audits show how it checks its own controls. Useful, but self-reported."
+     }
+    },
+    {
+     "text": "A vendor shares its own audit reports. What type of evidence?",
+     "more": {
+      "text": "Evidence of internal audits."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-73",
+   "sides": [
+    {
+     "text": "Independent assessments",
+     "sub": "5.3 · Vendor assessment"
+    },
+    {
+     "text": "Third-party verification",
+     "more": {
+      "text": "Assessments from independent auditors, such as SOC 2 reports or ISO 27001 certification, provide more objective assurance."
+     }
+    },
+    {
+     "text": "A vendor provides a SOC 2 report from an outside auditor. Which evidence?",
+     "more": {
+      "text": "An independent assessment."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-74",
+   "sides": [
+    {
+     "text": "Supply chain analysis",
+     "sub": "5.3 · Vendor assessment"
+    },
+    {
+     "text": "Look at the vendor's suppliers",
+     "more": {
+      "text": "Understanding the vendor's own suppliers and dependencies, since risk flows through the chain."
+     }
+    },
+    {
+     "text": "A company checks which subcontractors its vendor relies on. Which analysis?",
+     "more": {
+      "text": "Supply chain analysis."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-75",
+   "sides": [
+    {
+     "text": "Due diligence",
+     "sub": "5.3 · Vendor selection and agreements"
+    },
+    {
+     "text": "Investigate before engaging",
+     "more": {
+      "text": "Careful investigation of a vendor's security, finances, and reputation before selecting it."
+     }
+    },
+    {
+     "text": "Which process investigates a vendor before choosing it?",
+     "more": {
+      "text": "Due diligence."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-76",
+   "sides": [
+    {
+     "text": "Conflict of interest",
+     "sub": "5.3 · Vendor selection and agreements"
+    },
+    {
+     "text": "Interests that compromise objectivity",
+     "more": {
+      "text": "When a decision-maker has a personal or financial interest in a vendor, which can bias selection. Disclose and manage it."
+     }
+    },
+    {
+     "text": "A manager picks a vendor owned by a relative. What's the issue?",
+     "more": {
+      "text": "A conflict of interest."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-77",
+   "sides": [
+    {
+     "text": "SLA",
+     "sub": "5.3 · Vendor selection and agreements"
+    },
+    {
+     "text": "Defined service levels",
+     "more": {
+      "text": "Service-level agreement: specifies performance, availability, and response commitments, with remedies if missed."
+     }
+    },
+    {
+     "text": "A contract guarantees 99.9% uptime. Which agreement?",
+     "more": {
+      "text": "An SLA."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-78",
+   "sides": [
+    {
+     "text": "MOA",
+     "sub": "5.3 · Vendor selection and agreements"
+    },
+    {
+     "text": "Formal agreement on responsibilities",
+     "more": {
+      "text": "Memorandum of Agreement: documents agreed responsibilities between parties, with more commitment than an MOU."
+     }
+    },
+    {
+     "text": "Which memorandum records formal agreed responsibilities?",
+     "more": {
+      "text": "An MOA."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-79",
+   "sides": [
+    {
+     "text": "MOU",
+     "sub": "5.3 · Vendor selection and agreements"
+    },
+    {
+     "text": "Non-binding statement of intent",
+     "more": {
+      "text": "Memorandum of Understanding: outlines shared intentions and general terms, usually non-binding."
+     }
+    },
+    {
+     "text": "Two organizations record their intention to cooperate without legal obligations. Which document?",
+     "more": {
+      "text": "An MOU."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-80",
+   "sides": [
+    {
+     "text": "MSA",
+     "sub": "5.3 · Vendor selection and agreements"
+    },
+    {
+     "text": "Master terms for future work",
+     "more": {
+      "text": "Master Service Agreement: standing terms under which future work orders or SOWs are issued, saving renegotiation."
+     }
+    },
+    {
+     "text": "A contract sets general terms for all future projects. Which agreement?",
+     "more": {
+      "text": "An MSA."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-81",
+   "sides": [
+    {
+     "text": "SOW and work order",
+     "sub": "5.3 · Vendor selection and agreements"
+    },
+    {
+     "text": "Defines a specific project",
+     "more": {
+      "text": "Statement of Work or Work Order: details specific deliverables, timelines, and cost under an MSA."
+     }
+    },
+    {
+     "text": "A document defines one project's deliverables and schedule. Which document?",
+     "more": {
+      "text": "A statement of work (SOW)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-82",
+   "sides": [
+    {
+     "text": "NDA",
+     "sub": "5.3 · Vendor selection and agreements"
+    },
+    {
+     "text": "Confidentiality agreement",
+     "more": {
+      "text": "Non-disclosure agreement: legally binds parties to keep information confidential."
+     }
+    },
+    {
+     "text": "A vendor must keep shared designs secret. Which agreement?",
+     "more": {
+      "text": "An NDA."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-83",
+   "sides": [
+    {
+     "text": "BPA",
+     "sub": "5.3 · Vendor selection and agreements"
+    },
+    {
+     "text": "Terms for business partners",
+     "more": {
+      "text": "Business Partners Agreement: defines how partners share resources, profits, and responsibilities."
+     }
+    },
+    {
+     "text": "Two companies define shared responsibilities in a joint project. Which agreement?",
+     "more": {
+      "text": "A BPA."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-84",
+   "sides": [
+    {
+     "text": "Vendor monitoring",
+     "sub": "5.3 · Vendor selection and agreements"
+    },
+    {
+     "text": "Keep checking the vendor",
+     "more": {
+      "text": "Ongoing review of vendor performance, security posture, and compliance throughout the relationship."
+     }
+    },
+    {
+     "text": "Which activity continues after signing to ensure the vendor stays secure?",
+     "more": {
+      "text": "Vendor monitoring."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-85",
+   "sides": [
+    {
+     "text": "Questionnaires",
+     "sub": "5.3 · Vendor selection and agreements"
+    },
+    {
+     "text": "Structured security questions",
+     "more": {
+      "text": "Standardized questions a vendor answers about its controls to assess risk. Easy to scale but self-reported."
+     }
+    },
+    {
+     "text": "A vendor completes a long list of security questions. What is it?",
+     "more": {
+      "text": "A questionnaire."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-86",
+   "sides": [
+    {
+     "text": "Rules of engagement",
+     "sub": "5.3 · Vendor selection and agreements"
+    },
+    {
+     "text": "Boundaries for a test or engagement",
+     "more": {
+      "text": "Define scope, timing, methods, and communication for activities like penetration tests. Prevents accidental harm and legal issues."
+     }
+    },
+    {
+     "text": "A pen test document defines what's in scope and when testing may occur. What is it?",
+     "more": {
+      "text": "Rules of engagement."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-87",
+   "sides": [
+    {
+     "text": "Internal compliance reporting",
+     "sub": "5.4 · Compliance reporting and consequences"
+    },
+    {
+     "text": "Reports to management",
+     "more": {
+      "text": "Regular reports to leadership on compliance status, findings, and remediation."
+     }
+    },
+    {
+     "text": "A monthly report to executives tracks compliance gaps. Which type?",
+     "more": {
+      "text": "Internal reporting."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-88",
+   "sides": [
+    {
+     "text": "External compliance reporting",
+     "sub": "5.4 · Compliance reporting and consequences"
+    },
+    {
+     "text": "Reports to regulators or customers",
+     "more": {
+      "text": "Required disclosure to regulators, auditors, or customers demonstrating compliance."
+     }
+    },
+    {
+     "text": "A company files compliance evidence with a regulator. Which type?",
+     "more": {
+      "text": "External reporting."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-89",
+   "sides": [
+    {
+     "text": "Fines",
+     "sub": "5.4 · Compliance reporting and consequences"
+    },
+    {
+     "text": "Monetary penalties",
+     "more": {
+      "text": "Regulators can fine non-compliant organizations. GDPR fines can reach up to 4% of global annual revenue."
+     }
+    },
+    {
+     "text": "A regulator charges a company for a privacy violation. Which consequence?",
+     "more": {
+      "text": "A fine."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-90",
+   "sides": [
+    {
+     "text": "Sanctions",
+     "sub": "5.4 · Compliance reporting and consequences"
+    },
+    {
+     "text": "Penalties or restrictions",
+     "more": {
+      "text": "Official penalties beyond fines, such as restrictions on operations or legal penalties."
+     }
+    },
+    {
+     "text": "A regulator restricts a firm's operations. Which consequence?",
+     "more": {
+      "text": "Sanctions."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-91",
+   "sides": [
+    {
+     "text": "Reputational damage",
+     "sub": "5.4 · Compliance reporting and consequences"
+    },
+    {
+     "text": "Lost trust",
+     "more": {
+      "text": "Public exposure of non-compliance or breaches harms trust, customers, and revenue."
+     }
+    },
+    {
+     "text": "Customers leave after a publicized breach. Which consequence?",
+     "more": {
+      "text": "Reputational damage."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-92",
+   "sides": [
+    {
+     "text": "Loss of license",
+     "sub": "5.4 · Compliance reporting and consequences"
+    },
+    {
+     "text": "Authority to operate removed",
+     "more": {
+      "text": "Regulators can revoke permission to operate in regulated industries."
+     }
+    },
+    {
+     "text": "A regulator revokes a firm's right to operate. Which consequence?",
+     "more": {
+      "text": "Loss of license."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-93",
+   "sides": [
+    {
+     "text": "Contractual impacts",
+     "sub": "5.4 · Compliance reporting and consequences"
+    },
+    {
+     "text": "Breach of agreements",
+     "more": {
+      "text": "Non-compliance can breach contracts, causing penalties, termination, or loss of business."
+     }
+    },
+    {
+     "text": "A customer terminates a contract over a compliance failure. Which consequence?",
+     "more": {
+      "text": "Contractual impacts."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-94",
+   "sides": [
+    {
+     "text": "Due diligence and due care",
+     "sub": "5.4 · Compliance monitoring"
+    },
+    {
+     "text": "Reasonable effort to comply",
+     "more": {
+      "text": "Taking reasonable, documented steps to meet obligations. Failure can amount to negligence."
+     }
+    },
+    {
+     "text": "A company documents its reasonable efforts to protect customer data. Which concept?",
+     "more": {
+      "text": "Due care and due diligence."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-95",
+   "sides": [
+    {
+     "text": "Attestation and acknowledgement",
+     "sub": "5.4 · Compliance monitoring"
+    },
+    {
+     "text": "Formal confirmation",
+     "more": {
+      "text": "Formal statements confirming compliance, or employees' acknowledgement that they've read policies."
+     }
+    },
+    {
+     "text": "Employees sign that they've read the security policy. Which activity?",
+     "more": {
+      "text": "Acknowledgement."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-96",
+   "sides": [
+    {
+     "text": "Internal and external monitoring",
+     "sub": "5.4 · Compliance monitoring"
+    },
+    {
+     "text": "Review by own staff and outsiders",
+     "more": {
+      "text": "Internal teams and external auditors both monitor compliance."
+     }
+    },
+    {
+     "text": "Which monitoring involves outside auditors?",
+     "more": {
+      "text": "External."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-97",
+   "sides": [
+    {
+     "text": "Compliance automation",
+     "sub": "5.4 · Compliance monitoring"
+    },
+    {
+     "text": "Auto-check compliance",
+     "more": {
+      "text": "Tools continuously check configurations and controls against requirements and produce evidence."
+     }
+    },
+    {
+     "text": "A tool continuously checks systems against a standard and reports gaps. Which approach?",
+     "more": {
+      "text": "Compliance automation."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-98",
+   "sides": [
+    {
+     "text": "Privacy legal implications",
+     "sub": "5.4 · Privacy"
+    },
+    {
+     "text": "Local, national, and global laws",
+     "more": {
+      "text": "Privacy law varies by level: local/regional (such as California's CCPA), national (such as HIPAA), and global (such as the EU GDPR). Know which apply to your data."
+     }
+    },
+    {
+     "text": "A company handles data of residents in several countries. What must it consider?",
+     "more": {
+      "text": "Local, national, and global privacy laws."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-99",
+   "sides": [
+    {
+     "text": "Data subject",
+     "sub": "5.4 · Privacy"
+    },
+    {
+     "text": "Person the data is about",
+     "more": {
+      "text": "The individual whose personal data is collected, with rights over it such as access, correction, and erasure."
+     }
+    },
+    {
+     "text": "Which term describes the person whose data is collected?",
+     "more": {
+      "text": "The data subject."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-100",
+   "sides": [
+    {
+     "text": "Controller vs processor",
+     "sub": "5.4 · Privacy"
+    },
+    {
+     "text": "Decides vs does",
+     "more": {
+      "text": "The controller determines why and how data is processed; the processor processes it on the controller's behalf. Both have obligations under GDPR."
+     }
+    },
+    {
+     "text": "A company chooses why customer data is collected and hires a vendor to process it. Which is the controller?",
+     "more": {
+      "text": "The company is the controller; the vendor is the processor."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-101",
+   "sides": [
+    {
+     "text": "Data ownership",
+     "sub": "5.4 · Privacy"
+    },
+    {
+     "text": "Who is responsible for the data",
+     "more": {
+      "text": "Data owners are accountable for classification and access. Individuals also hold rights over their personal data."
+     }
+    },
+    {
+     "text": "Who is accountable for approving access to a data set?",
+     "more": {
+      "text": "The data owner."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-102",
+   "sides": [
+    {
+     "text": "Data inventory and retention",
+     "sub": "5.4 · Privacy"
+    },
+    {
+     "text": "Know what you hold and how long",
+     "more": {
+      "text": "Maintain a record of personal data and where it lives, and retain it no longer than needed."
+     }
+    },
+    {
+     "text": "A company can't say where customer data is stored. What's missing?",
+     "more": {
+      "text": "A data inventory."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-103",
+   "sides": [
+    {
+     "text": "Right to be forgotten",
+     "sub": "5.4 · Privacy"
+    },
+    {
+     "text": "Individuals can request erasure",
+     "more": {
+      "text": "The GDPR right to have personal data erased in certain circumstances. Requires knowing where the data lives."
+     }
+    },
+    {
+     "text": "A customer asks a company to delete all their personal data. Which right?",
+     "more": {
+      "text": "The right to be forgotten (erasure)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-104",
+   "sides": [
+    {
+     "text": "GDPR",
+     "sub": "5.4 · Regulations and frameworks"
+    },
+    {
+     "text": "EU data protection regulation",
+     "more": {
+      "text": "Applies to personal data of EU residents, wherever the organization is. Requires lawful basis, data subject rights, and breach notification within 72 hours, with large fines."
+     }
+    },
+    {
+     "text": "A US company processes data of EU customers. Which regulation applies?",
+     "more": {
+      "text": "GDPR."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-105",
+   "sides": [
+    {
+     "text": "HIPAA",
+     "sub": "5.4 · Regulations and frameworks"
+    },
+    {
+     "text": "US health information privacy",
+     "more": {
+      "text": "Protects protected health information (PHI) held by covered entities and their business associates. Includes Privacy and Security Rules."
+     }
+    },
+    {
+     "text": "A hospital must protect patient records. Which US law?",
+     "more": {
+      "text": "HIPAA."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-106",
+   "sides": [
+    {
+     "text": "PCI DSS",
+     "sub": "5.4 · Regulations and frameworks"
+    },
+    {
+     "text": "Payment card security standard",
+     "more": {
+      "text": "An industry standard for protecting cardholder data: segmentation, encryption, access control, and regular testing. Enforced through card brands and acquirers, not law."
+     }
+    },
+    {
+     "text": "A merchant stores credit card data. Which standard applies?",
+     "more": {
+      "text": "PCI DSS."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-107",
+   "sides": [
+    {
+     "text": "SOX",
+     "sub": "5.4 · Regulations and frameworks"
+    },
+    {
+     "text": "Financial reporting controls",
+     "more": {
+      "text": "Sarbanes-Oxley: requires accurate financial reporting and internal controls, including IT controls, for public companies."
+     }
+    },
+    {
+     "text": "A public company needs controls over financial reporting systems. Which law?",
+     "more": {
+      "text": "SOX."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-108",
+   "sides": [
+    {
+     "text": "NIST Cybersecurity Framework",
+     "sub": "5.4 · Regulations and frameworks"
+    },
+    {
+     "text": "Voluntary security framework",
+     "more": {
+      "text": "Organizes security outcomes into functions: Govern, Identify, Protect, Detect, Respond, Recover (Govern was added in version 2.0)."
+     }
+    },
+    {
+     "text": "Which framework's functions include Identify, Protect, Detect, Respond, and Recover?",
+     "more": {
+      "text": "The NIST Cybersecurity Framework."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-109",
+   "sides": [
+    {
+     "text": "NIST RMF",
+     "sub": "5.4 · Regulations and frameworks"
+    },
+    {
+     "text": "US federal risk management process",
+     "more": {
+      "text": "Prepare, categorize, select controls, implement, assess, authorize, and monitor."
+     }
+    },
+    {
+     "text": "Which process has steps to categorize, select, implement, assess, authorize, and monitor?",
+     "more": {
+      "text": "The NIST Risk Management Framework."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-110",
+   "sides": [
+    {
+     "text": "ISO 27001",
+     "sub": "5.4 · Regulations and frameworks"
+    },
+    {
+     "text": "International security management standard",
+     "more": {
+      "text": "Specifies requirements for an information security management system (ISMS) and can be certified. ISO 27002 provides control guidance."
+     }
+    },
+    {
+     "text": "Which international standard can an organization be certified against for its ISMS?",
+     "more": {
+      "text": "ISO/IEC 27001."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-111",
+   "sides": [
+    {
+     "text": "CIS Controls",
+     "sub": "5.4 · Regulations and frameworks"
+    },
+    {
+     "text": "Prioritized security safeguards",
+     "more": {
+      "text": "The CIS Critical Security Controls are prioritized, practical safeguards. CIS Benchmarks provide hardening configurations."
+     }
+    },
+    {
+     "text": "Which resource gives prioritized, practical safeguards and hardening benchmarks?",
+     "more": {
+      "text": "The CIS Controls and Benchmarks."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-112",
+   "sides": [
+    {
+     "text": "Attestation (audit)",
+     "sub": "5.5 · Internal audits and assessments"
+    },
+    {
+     "text": "Formal statement of assurance",
+     "more": {
+      "text": "A formal declaration by an auditor or responsible party that controls or statements are accurate, such as a SOC 2 report."
+     }
+    },
+    {
+     "text": "An auditor provides a signed report on a vendor's controls. What is this?",
+     "more": {
+      "text": "Attestation."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-113",
+   "sides": [
+    {
+     "text": "Internal compliance audit",
+     "sub": "5.5 · Internal audits and assessments"
+    },
+    {
+     "text": "Own team checks compliance",
+     "more": {
+      "text": "Staff or an internal audit team check compliance with policy and regulation."
+     }
+    },
+    {
+     "text": "An internal team checks whether departments follow policy. Which audit?",
+     "more": {
+      "text": "An internal compliance audit."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-114",
+   "sides": [
+    {
+     "text": "Audit committee",
+     "sub": "5.5 · Internal audits and assessments"
+    },
+    {
+     "text": "Board-level oversight of audits",
+     "more": {
+      "text": "A board committee that oversees the audit process, its independence, and its findings."
+     }
+    },
+    {
+     "text": "Which body provides board-level oversight of audits?",
+     "more": {
+      "text": "The audit committee."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-115",
+   "sides": [
+    {
+     "text": "Self-assessments",
+     "sub": "5.5 · Internal audits and assessments"
+    },
+    {
+     "text": "Organization checks itself",
+     "more": {
+      "text": "Staff evaluate their own controls against a framework. Cheap and frequent, but less objective."
+     }
+    },
+    {
+     "text": "Departments rate their own compliance using a checklist. Which type?",
+     "more": {
+      "text": "A self-assessment."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-116",
+   "sides": [
+    {
+     "text": "Regulatory audit",
+     "sub": "5.5 · External audits and assessments"
+    },
+    {
+     "text": "Required by regulators",
+     "more": {
+      "text": "An audit performed because law or regulation demands it, to prove compliance."
+     }
+    },
+    {
+     "text": "A regulator requires an annual compliance audit. Which type?",
+     "more": {
+      "text": "A regulatory audit."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-117",
+   "sides": [
+    {
+     "text": "Examinations",
+     "sub": "5.5 · External audits and assessments"
+    },
+    {
+     "text": "Regulator inspections",
+     "more": {
+      "text": "Formal inspections by regulators, such as bank examinations."
+     }
+    },
+    {
+     "text": "A banking regulator inspects a bank's controls. What is it called?",
+     "more": {
+      "text": "An examination."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-118",
+   "sides": [
+    {
+     "text": "External assessment",
+     "sub": "5.5 · External audits and assessments"
+    },
+    {
+     "text": "Outside review of controls",
+     "more": {
+      "text": "An evaluation by outside experts to find gaps and recommend improvements."
+     }
+    },
+    {
+     "text": "Outside experts review a company's security program. Which type?",
+     "more": {
+      "text": "An external assessment."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-119",
+   "sides": [
+    {
+     "text": "Independent third-party audit",
+     "sub": "5.5 · External audits and assessments"
+    },
+    {
+     "text": "Objective outside auditor",
+     "more": {
+      "text": "An unbiased review by a qualified outside party, giving the highest credibility (SOC 2, ISO 27001 certification)."
+     }
+    },
+    {
+     "text": "An impartial outside firm audits a company's controls. Which audit?",
+     "more": {
+      "text": "An independent third-party audit."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-120",
+   "sides": [
+    {
+     "text": "Physical penetration testing",
+     "sub": "5.5 · Penetration testing"
+    },
+    {
+     "text": "Testing physical security",
+     "more": {
+      "text": "Attempting to bypass locks, badges, guards, and cameras to gain physical access, including tailgating."
+     }
+    },
+    {
+     "text": "A tester tries to walk into a server room by following an employee. Which test?",
+     "more": {
+      "text": "Physical penetration testing."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-121",
+   "sides": [
+    {
+     "text": "Offensive testing",
+     "sub": "5.5 · Penetration testing"
+    },
+    {
+     "text": "Red team: attack",
+     "more": {
+      "text": "Offensive (red team) testing simulates attackers to find weaknesses."
+     }
+    },
+    {
+     "text": "A team simulates real attackers to break into systems. Which approach?",
+     "more": {
+      "text": "Offensive (red team)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-122",
+   "sides": [
+    {
+     "text": "Defensive testing",
+     "sub": "5.5 · Penetration testing"
+    },
+    {
+     "text": "Blue team: defend",
+     "more": {
+      "text": "Defensive (blue team) work tests and improves detection and response."
+     }
+    },
+    {
+     "text": "A team tests how well it detects and responds to attacks. Which approach?",
+     "more": {
+      "text": "Defensive (blue team)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-123",
+   "sides": [
+    {
+     "text": "Integrated testing",
+     "sub": "5.5 · Penetration testing"
+    },
+    {
+     "text": "Red and blue together",
+     "more": {
+      "text": "An integrated (purple team) approach combines offensive and defensive efforts, sharing results in real time to improve both."
+     }
+    },
+    {
+     "text": "Attackers and defenders work together and share findings as they go. Which approach?",
+     "more": {
+      "text": "Integrated (purple team)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-124",
+   "sides": [
+    {
+     "text": "Known environment test",
+     "sub": "5.5 · Penetration testing"
+    },
+    {
+     "text": "Tester has full knowledge",
+     "more": {
+      "text": "White box: the tester gets full information such as diagrams and source code. Thorough and efficient."
+     }
+    },
+    {
+     "text": "A tester is given network diagrams and source code. Which test?",
+     "more": {
+      "text": "Known environment (white box)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-125",
+   "sides": [
+    {
+     "text": "Partially known environment test",
+     "sub": "5.5 · Penetration testing"
+    },
+    {
+     "text": "Some knowledge",
+     "more": {
+      "text": "Gray box: the tester has limited information, such as credentials or an architecture overview."
+     }
+    },
+    {
+     "text": "A tester is given a user account but no network diagrams. Which test?",
+     "more": {
+      "text": "Partially known environment (gray box)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-126",
+   "sides": [
+    {
+     "text": "Unknown environment test",
+     "sub": "5.5 · Penetration testing"
+    },
+    {
+     "text": "No prior knowledge",
+     "more": {
+      "text": "Black box: the tester has no information, simulating an external attacker. Time-consuming."
+     }
+    },
+    {
+     "text": "A tester is told only the company name. Which test?",
+     "more": {
+      "text": "Unknown environment (black box)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-127",
+   "sides": [
+    {
+     "text": "Reconnaissance",
+     "sub": "5.5 · Penetration testing"
+    },
+    {
+     "text": "Gathering information about the target",
+     "more": {
+      "text": "The first phase: gather information before attacking. Can be passive or active."
+     }
+    },
+    {
+     "text": "Which penetration testing phase gathers information about the target?",
+     "more": {
+      "text": "Reconnaissance."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-128",
+   "sides": [
+    {
+     "text": "Passive reconnaissance",
+     "sub": "5.5 · Penetration testing"
+    },
+    {
+     "text": "No direct interaction with the target",
+     "more": {
+      "text": "Collecting information without touching the target: OSINT, public records, WHOIS. Hard to detect."
+     }
+    },
+    {
+     "text": "A tester reads job postings and public records about a target. Which reconnaissance?",
+     "more": {
+      "text": "Passive."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-129",
+   "sides": [
+    {
+     "text": "Active reconnaissance",
+     "sub": "5.5 · Penetration testing"
+    },
+    {
+     "text": "Directly probing the target",
+     "more": {
+      "text": "Interacting with the target through port scans and ping sweeps, which can be detected."
+     }
+    },
+    {
+     "text": "A tester runs a port scan against a target. Which reconnaissance?",
+     "more": {
+      "text": "Active."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-130",
+   "sides": [
+    {
+     "text": "Phishing campaigns",
+     "sub": "5.6 · Phishing awareness"
+    },
+    {
+     "text": "Simulated phishing exercises",
+     "more": {
+      "text": "Send simulated phishing emails to measure and train users, then give immediate feedback on mistakes."
+     }
+    },
+    {
+     "text": "The company sends fake phishing emails to employees to test them. What is this?",
+     "more": {
+      "text": "A phishing campaign (simulation)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-131",
+   "sides": [
+    {
+     "text": "Recognizing a phishing attempt",
+     "sub": "5.6 · Phishing awareness"
+    },
+    {
+     "text": "Spot the signs",
+     "more": {
+      "text": "Red flags: unexpected requests, urgency, mismatched sender or links, poor grammar, requests for credentials, and unusual attachments."
+     }
+    },
+    {
+     "text": "An email creates urgency and links to a mismatched domain. What should you suspect?",
+     "more": {
+      "text": "Phishing."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-132",
+   "sides": [
+    {
+     "text": "Responding to reported suspicious messages",
+     "sub": "5.6 · Phishing awareness"
+    },
+    {
+     "text": "Report, don't engage",
+     "more": {
+      "text": "Users report suspicious messages through a defined channel, such as a report button, and don't click. The security team analyzes and responds."
+     }
+    },
+    {
+     "text": "An employee receives a suspicious email. What should they do?",
+     "more": {
+      "text": "Report it through the defined channel without clicking."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-133",
+   "sides": [
+    {
+     "text": "Risky behavior",
+     "sub": "5.6 · Anomalous behavior"
+    },
+    {
+     "text": "Actions that raise risk",
+     "more": {
+      "text": "Using unapproved software, reusing passwords, or bypassing controls increases risk."
+     }
+    },
+    {
+     "text": "An employee installs unauthorized software to save time. Which type of behavior?",
+     "more": {
+      "text": "Risky."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-134",
+   "sides": [
+    {
+     "text": "Unexpected behavior",
+     "sub": "5.6 · Anomalous behavior"
+    },
+    {
+     "text": "Out of the ordinary",
+     "more": {
+      "text": "Actions outside normal patterns, like odd access times or unusual data transfers. May signal compromise."
+     }
+    },
+    {
+     "text": "An account downloads huge amounts of data at 3 a.m. Which type of behavior?",
+     "more": {
+      "text": "Unexpected."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-135",
+   "sides": [
+    {
+     "text": "Unintentional behavior",
+     "sub": "5.6 · Anomalous behavior"
+    },
+    {
+     "text": "Honest mistakes",
+     "more": {
+      "text": "Mistakes that cause exposure, like sending data to the wrong recipient or falling for phishing. Training reduces it."
+     }
+    },
+    {
+     "text": "An employee emails a file to the wrong person by accident. Which type of behavior?",
+     "more": {
+      "text": "Unintentional."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-136",
+   "sides": [
+    {
+     "text": "Policy and handbooks",
+     "sub": "5.6 · User guidance and training"
+    },
+    {
+     "text": "Documented expectations",
+     "more": {
+      "text": "Policies and employee handbooks communicate rules and consequences. Staff acknowledge them."
+     }
+    },
+    {
+     "text": "Where are security expectations documented for all employees?",
+     "more": {
+      "text": "Policies and handbooks."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-137",
+   "sides": [
+    {
+     "text": "Situational awareness",
+     "sub": "5.6 · User guidance and training"
+    },
+    {
+     "text": "Notice what's around you",
+     "more": {
+      "text": "Staying aware of surroundings and threats: shoulder surfing, tailgating, suspicious devices, and unattended items."
+     }
+    },
+    {
+     "text": "An employee notices someone watching their screen in a cafe. Which skill?",
+     "more": {
+      "text": "Situational awareness."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-138",
+   "sides": [
+    {
+     "text": "Insider threat awareness",
+     "sub": "5.6 · User guidance and training"
+    },
+    {
+     "text": "Spot and report insider risk",
+     "more": {
+      "text": "Teach staff to recognize and report risky insider behavior, such as unusual data copying or disgruntlement."
+     }
+    },
+    {
+     "text": "Staff are trained to report a coworker who is copying large amounts of data. Which topic?",
+     "more": {
+      "text": "Insider threat awareness."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-139",
+   "sides": [
+    {
+     "text": "Password management (awareness)",
+     "sub": "5.6 · User guidance and training"
+    },
+    {
+     "text": "Good password habits",
+     "more": {
+      "text": "Use unique, long passwords, a password manager, and MFA. Never share passwords."
+     }
+    },
+    {
+     "text": "Staff are taught to use a password manager and never share passwords. Which topic?",
+     "more": {
+      "text": "Password management."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-140",
+   "sides": [
+    {
+     "text": "Removable media and cables",
+     "sub": "5.6 · User guidance and training"
+    },
+    {
+     "text": "Don't plug in unknown devices",
+     "more": {
+      "text": "Unknown USB drives or charging cables can carry malware or steal data (USB drop attacks, malicious cables). Use trusted devices."
+     }
+    },
+    {
+     "text": "A found USB drive is labeled Payroll. What should an employee do?",
+     "more": {
+      "text": "Not plug it in. Report it."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-141",
+   "sides": [
+    {
+     "text": "Social engineering awareness",
+     "sub": "5.6 · User guidance and training"
+    },
+    {
+     "text": "Recognize manipulation",
+     "more": {
+      "text": "Teach staff to verify identity, resist urgency, and follow procedures when asked for access or information."
+     }
+    },
+    {
+     "text": "A caller demands urgent access and claims to be an executive. What should staff do?",
+     "more": {
+      "text": "Verify identity through a trusted channel."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-142",
+   "sides": [
+    {
+     "text": "Operational security",
+     "sub": "5.6 · User guidance and training"
+    },
+    {
+     "text": "Protect sensitive details",
+     "more": {
+      "text": "OPSEC: avoid revealing information that helps attackers, such as details on social media, discussing work in public, or sharing schedules."
+     }
+    },
+    {
+     "text": "An employee posts photos of their badge and workstation online. Which risk?",
+     "more": {
+      "text": "An operational security failure."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-143",
+   "sides": [
+    {
+     "text": "Hybrid and remote work environments",
+     "sub": "5.6 · User guidance and training"
+    },
+    {
+     "text": "Security outside the office",
+     "more": {
+      "text": "Secure home networks, use a VPN, lock screens, protect devices, avoid public Wi-Fi, and keep work and personal use separate."
+     }
+    },
+    {
+     "text": "An employee works from a coffee shop. What should they use?",
+     "more": {
+      "text": "A VPN, and avoid open Wi-Fi."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-144",
+   "sides": [
+    {
+     "text": "Reporting and monitoring: initial",
+     "sub": "5.6 · Awareness program"
+    },
+    {
+     "text": "Baseline training results",
+     "more": {
+      "text": "Initial reporting captures baseline awareness and training completion to measure improvement."
+     }
+    },
+    {
+     "text": "First-time results show how aware staff are before training. Which stage?",
+     "more": {
+      "text": "Initial reporting."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-145",
+   "sides": [
+    {
+     "text": "Reporting and monitoring: recurring",
+     "sub": "5.6 · Awareness program"
+    },
+    {
+     "text": "Track results over time",
+     "more": {
+      "text": "Recurring reports and tests show progress, trends, and repeat offenders, so training can be adjusted."
+     }
+    },
+    {
+     "text": "Quarterly phishing results are compared over time. Which stage?",
+     "more": {
+      "text": "Recurring reporting."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-146",
+   "sides": [
+    {
+     "text": "Awareness program development",
+     "sub": "5.6 · Awareness program"
+    },
+    {
+     "text": "Build the program",
+     "more": {
+      "text": "Design content for the audience, role, and risks, and update it with new threats."
+     }
+    },
+    {
+     "text": "Training is tailored to roles and updated for new threats. Which phase?",
+     "more": {
+      "text": "Development."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-d5-147",
+   "sides": [
+    {
+     "text": "Awareness program execution",
+     "sub": "5.6 · Awareness program"
+    },
+    {
+     "text": "Roll it out",
+     "more": {
+      "text": "Deliver training through varied methods (live, online, simulations), at onboarding and regularly, and measure effectiveness."
+     }
+    },
+    {
+     "text": "Training is delivered at onboarding and every quarter. Which phase?",
+     "more": {
+      "text": "Execution."
+     }
+    }
+   ]
+  }
+ ]
+}

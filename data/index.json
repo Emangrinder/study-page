@@ -1,0 +1,194 @@
+{
+  "exams": [
+    {
+      "id": "security-plus",
+      "name": "Security+",
+      "accent": "152 70% 48%",
+      "accent2": "170 85% 55%",
+      "decks": [
+        {
+          "id": "security-plus-domain-1",
+          "name": "1 · General Security Concepts",
+          "subtitle": "Controls, concepts, change management, cryptography",
+          "file": "data/security-plus/domain-1.json",
+          "section": "Domains"
+        },
+        {
+          "id": "security-plus-domain-2",
+          "name": "2 · Threats, Vulnerabilities, Mitigations",
+          "subtitle": "Actors, vectors, vulnerabilities, indicators, mitigations",
+          "file": "data/security-plus/domain-2.json",
+          "section": "Domains"
+        },
+        {
+          "id": "security-plus-domain-3",
+          "name": "3 · Security Architecture",
+          "subtitle": "Cloud, infrastructure, data protection, resilience",
+          "file": "data/security-plus/domain-3.json",
+          "section": "Domains"
+        },
+        {
+          "id": "security-plus-domain-4",
+          "name": "4 · Security Operations",
+          "subtitle": "Hardening, vulnerability management, monitoring, IAM, incident response",
+          "file": "data/security-plus/domain-4.json",
+          "section": "Domains"
+        },
+        {
+          "id": "security-plus-domain-5",
+          "name": "5 · Program Management and Oversight",
+          "subtitle": "Governance, risk, third parties, compliance, audits, awareness",
+          "file": "data/security-plus/domain-5.json",
+          "section": "Domains"
+        },
+        {
+          "id": "security-plus-practice-1",
+          "name": "Practice · 1 General Security Concepts",
+          "subtitle": "25 questions, options beneath",
+          "file": "data/security-plus/practice-1.json",
+          "section": "Practice exams"
+        },
+        {
+          "id": "security-plus-practice-2",
+          "name": "Practice · 2 Threats, Vulnerabilities, Mitigations",
+          "subtitle": "25 questions, options beneath",
+          "file": "data/security-plus/practice-2.json",
+          "section": "Practice exams"
+        },
+        {
+          "id": "security-plus-practice-3",
+          "name": "Practice · 3 Security Architecture",
+          "subtitle": "25 questions, options beneath",
+          "file": "data/security-plus/practice-3.json",
+          "section": "Practice exams"
+        },
+        {
+          "id": "security-plus-practice-4",
+          "name": "Practice · 4 Security Operations",
+          "subtitle": "25 questions, options beneath",
+          "file": "data/security-plus/practice-4.json",
+          "section": "Practice exams"
+        },
+        {
+          "id": "security-plus-practice-5",
+          "name": "Practice · 5 Program Management and Oversight",
+          "subtitle": "25 questions, options beneath",
+          "file": "data/security-plus/practice-5.json",
+          "section": "Practice exams"
+        },
+        {
+          "id": "security-plus-practice-mixed",
+          "name": "Practice · Mixed 90",
+          "subtitle": "90 questions weighted like the exam",
+          "file": "data/security-plus/practice-mixed.json",
+          "section": "Practice exams"
+        },
+        {
+          "id": "security-plus-acronyms",
+          "name": "Acronyms",
+          "subtitle": "Term, what it stands for, what it means",
+          "file": "data/security-plus/acronyms.json",
+          "section": "Reference"
+        }
+      ]
+    },
+    {
+      "id": "korean",
+      "name": "Korean",
+      "accent": "330 85% 68%",
+      "accent2": "280 85% 72%",
+      "decks": [
+        {
+          "id": "korean-alphabet",
+          "name": "Alphabet",
+          "subtitle": "Letters, sounds, example words",
+          "file": "data/korean/alphabet.json"
+        },
+        {
+          "id": "korean-starter",
+          "name": "Starter words",
+          "subtitle": "Word, in a sentence, in English",
+          "file": "data/korean/starter.json"
+        }
+      ]
+    },
+    {
+      "id": "ee",
+      "name": "EE",
+      "accent": "48 96% 56%",
+      "accent2": "28 96% 60%",
+      "decks": [
+        {
+          "id": "ee-beginner",
+          "name": "1 · Beginner",
+          "subtitle": "Units, circuits, components, power, embedded, communications",
+          "file": "data/ee/beginner.json",
+          "section": "Levels"
+        },
+        {
+          "id": "ee-intermediate",
+          "name": "2 · Intermediate",
+          "subtitle": "AC analysis, semiconductors, op-amps, regulators, embedded, wireless, digital",
+          "file": "data/ee/intermediate.json",
+          "section": "Levels"
+        },
+        {
+          "id": "ee-advanced",
+          "name": "3 · Advanced",
+          "subtitle": "Signals, analog design, power electronics, real-time embedded, modulation and RF",
+          "file": "data/ee/advanced.json",
+          "section": "Levels"
+        },
+        {
+          "id": "ee-expert",
+          "name": "4 · Expert",
+          "subtitle": "Fields and waves, RF and analog IC design, devices, power control, secure embedded, coding theory",
+          "file": "data/ee/expert.json",
+          "section": "Levels"
+        },
+        {
+          "id": "ee-commercial",
+          "name": "5 · Commercial",
+          "subtitle": "Chip makers, embedded, gaming, DIY, power storage, people, papers, standards",
+          "file": "data/ee/commercial.json",
+          "section": "Levels"
+        },
+        {
+          "id": "ee-practice-beginner",
+          "name": "Practice · Beginner",
+          "subtitle": "30 questions, options beneath",
+          "file": "data/ee/practice-beginner.json",
+          "section": "Practice exams"
+        },
+        {
+          "id": "ee-practice-intermediate",
+          "name": "Practice · Intermediate",
+          "subtitle": "29 questions, options beneath",
+          "file": "data/ee/practice-intermediate.json",
+          "section": "Practice exams"
+        },
+        {
+          "id": "ee-practice-advanced",
+          "name": "Practice · Advanced",
+          "subtitle": "30 questions, options beneath",
+          "file": "data/ee/practice-advanced.json",
+          "section": "Practice exams"
+        },
+        {
+          "id": "ee-practice-expert",
+          "name": "Practice · Expert",
+          "subtitle": "30 questions, options beneath",
+          "file": "data/ee/practice-expert.json",
+          "section": "Practice exams"
+        },
+        {
+          "id": "ee-practice-mixed",
+          "name": "Practice · Mixed 60",
+          "subtitle": "60 questions across all levels",
+          "file": "data/ee/practice-mixed.json",
+          "section": "Practice exams"
+        }
+      ]
+    }
+  ]
+}

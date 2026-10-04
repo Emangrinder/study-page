@@ -1,0 +1,606 @@
+{
+ "id": "ee-practice-beginner",
+ "name": "Practice · Beginner",
+ "cards": [
+  {
+   "id": "ee-p-beg-1",
+   "sides": [
+    {
+     "text": "A 12 V battery is connected across a 240 Ω resistor. What current flows?",
+     "options": [
+      "5 mA",
+      "500 mA",
+      "50 mA",
+      "2.9 A"
+     ]
+    },
+    {
+     "text": "C. 50 mA",
+     "more": {
+      "text": "Ohm's law: I = V / R = 12 / 240 = 0.05 A."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-beg-2",
+   "sides": [
+    {
+     "text": "A 10 Ω resistor carries 2 A. How much power does it dissipate?",
+     "options": [
+      "40 W",
+      "5 W",
+      "20 W",
+      "12 W"
+     ]
+    },
+    {
+     "text": "A. 40 W",
+     "more": {
+      "text": "P = I²R = 2² × 10 = 40 W."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-beg-3",
+   "sides": [
+    {
+     "text": "100 Ω, 220 Ω, and 330 Ω resistors are in series. What is the total resistance?",
+     "options": [
+      "57 Ω",
+      "650 Ω",
+      "220 Ω",
+      "330 Ω"
+     ]
+    },
+    {
+     "text": "B. 650 Ω",
+     "more": {
+      "text": "Series resistances add. 57 Ω would be the parallel value."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-beg-4",
+   "sides": [
+    {
+     "text": "Two 100 Ω resistors are in parallel. What is the total resistance?",
+     "options": [
+      "200 Ω",
+      "100 Ω",
+      "50 Ω",
+      "25 Ω"
+     ]
+    },
+    {
+     "text": "C. 50 Ω",
+     "more": {
+      "text": "Equal resistors in parallel give half the value."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-beg-5",
+   "sides": [
+    {
+     "text": "A 9 V source feeds a 6 kΩ resistor in series with a 3 kΩ resistor. What is the voltage across the 3 kΩ resistor?",
+     "options": [
+      "4.5 V",
+      "1 V",
+      "6 V",
+      "3 V"
+     ]
+    },
+    {
+     "text": "D. 3 V",
+     "more": {
+      "text": "Vout = 9 × 3k / (6k + 3k) = 3 V."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-beg-6",
+   "sides": [
+    {
+     "text": "A 5 V supply drives a red LED (Vf = 2 V) at 20 mA. Which series resistor is needed?",
+     "options": [
+      "350 Ω",
+      "250 Ω",
+      "100 Ω",
+      "150 Ω"
+     ]
+    },
+    {
+     "text": "D. 150 Ω",
+     "more": {
+      "text": "R = (5 − 2) / 0.02 = 150 Ω."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-beg-7",
+   "sides": [
+    {
+     "text": "A 60 W bulb runs for 5 hours. How much energy does it use?",
+     "options": [
+      "300 kWh",
+      "3 kWh",
+      "0.06 kWh",
+      "0.3 kWh"
+     ]
+    },
+    {
+     "text": "D. 0.3 kWh",
+     "more": {
+      "text": "60 W × 5 h = 300 Wh = 0.3 kWh."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-beg-8",
+   "sides": [
+    {
+     "text": "Which unit measures capacitance?",
+     "options": [
+      "Farad",
+      "Henry",
+      "Coulomb",
+      "Siemens"
+     ]
+    },
+    {
+     "text": "A. Farad",
+     "more": {
+      "text": "The farad. Henries measure inductance and coulombs measure charge."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-beg-9",
+   "sides": [
+    {
+     "text": "A resistor's bands are brown, black, red, gold. What is its value?",
+     "options": [
+      "10 kΩ ±5%",
+      "1 kΩ ±10%",
+      "1 kΩ ±5%",
+      "100 Ω ±5%"
+     ]
+    },
+    {
+     "text": "C. 1 kΩ ±5%",
+     "more": {
+      "text": "Brown 1, black 0, red ×100 gives 1,000 Ω. Gold is ±5%."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-beg-10",
+   "sides": [
+    {
+     "text": "Which component passes current in only one direction?",
+     "options": [
+      "Potentiometer",
+      "Inductor",
+      "Capacitor",
+      "Diode"
+     ]
+    },
+    {
+     "text": "D. Diode",
+     "more": {
+      "text": "A diode conducts forward and blocks in reverse."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-beg-11",
+   "sides": [
+    {
+     "text": "A 10:1 step-down transformer has 120 V in. What is the output?",
+     "options": [
+      "12 V",
+      "0.1 V",
+      "1,200 V",
+      "10 V"
+     ]
+    },
+    {
+     "text": "A. 12 V",
+     "more": {
+      "text": "The voltage ratio equals the turns ratio, so 120 / 10 = 12 V."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-beg-12",
+   "sides": [
+    {
+     "text": "Which tool shows a signal's shape over time?",
+     "options": [
+      "Bench power supply",
+      "Multimeter",
+      "Oscilloscope",
+      "Soldering iron"
+     ]
+    },
+    {
+     "text": "C. Oscilloscope",
+     "more": {
+      "text": "A multimeter gives numbers. A scope shows the waveform."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-beg-13",
+   "sides": [
+    {
+     "text": "To measure the current through a load, how should a multimeter be connected?",
+     "options": [
+      "In parallel across the load",
+      "In series with the load",
+      "Across the supply with the load removed",
+      "Only to ground"
+     ]
+    },
+    {
+     "text": "B. In series with the load",
+     "more": {
+      "text": "Current must flow through the meter, so it's connected in series."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-beg-14",
+   "sides": [
+    {
+     "text": "A 2,000 mAh battery powers a 100 mA device. About how long does it last?",
+     "options": [
+      "About 200 hours",
+      "About 20 hours",
+      "About 2 hours",
+      "About 0.2 hours"
+     ]
+    },
+    {
+     "text": "B. About 20 hours",
+     "more": {
+      "text": "2,000 mAh / 100 mA = 20 h (ideally)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-beg-15",
+   "sides": [
+    {
+     "text": "Why do power lines use very high voltage?",
+     "options": [
+      "To reduce current and I²R loss",
+      "To make them safe to touch",
+      "To use thicker wires",
+      "To increase current"
+     ]
+    },
+    {
+     "text": "A. To reduce current and I²R loss",
+     "more": {
+      "text": "For the same power, higher voltage means lower current and much lower loss."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-beg-16",
+   "sides": [
+    {
+     "text": "A 5 V PWM signal has a 40% duty cycle. What is its average voltage?",
+     "options": [
+      "4 V",
+      "2 V",
+      "0.4 V",
+      "5 V"
+     ]
+    },
+    {
+     "text": "B. 2 V",
+     "more": {
+      "text": "Average = 0.4 × 5 = 2 V."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-beg-17",
+   "sides": [
+    {
+     "text": "Which of these is a full computer running Linux?",
+     "options": [
+      "Arduino Uno",
+      "ESP8266 chip",
+      "Raspberry Pi",
+      "ATmega328P"
+     ]
+    },
+    {
+     "text": "C. Raspberry Pi",
+     "more": {
+      "text": "The Raspberry Pi runs Linux. The others are microcontrollers."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-beg-18",
+   "sides": [
+    {
+     "text": "A 5 V sensor output drives a 3.3 V microcontroller pin. What is the risk?",
+     "options": [
+      "None, 5 V is always safe",
+      "The pin will read zero",
+      "Damage to the input",
+      "The sensor will fail"
+     ]
+    },
+    {
+     "text": "C. Damage to the input",
+     "more": {
+      "text": "Over-voltage can damage the input. Use a level shifter or divider."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-beg-19",
+   "sides": [
+    {
+     "text": "What is 1101 in binary as a decimal number?",
+     "options": [
+      "13",
+      "9",
+      "11",
+      "15"
+     ]
+    },
+    {
+     "text": "A. 13",
+     "more": {
+      "text": "8 + 4 + 0 + 1 = 13."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-beg-20",
+   "sides": [
+    {
+     "text": "An AND gate has inputs 1 and 0. What is the output?",
+     "options": [
+      "1",
+      "0",
+      "Undefined",
+      "Floating"
+     ]
+    },
+    {
+     "text": "B. 0",
+     "more": {
+      "text": "AND is high only when both inputs are high."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-beg-21",
+   "sides": [
+    {
+     "text": "What is the wavelength of a 100 MHz radio signal?",
+     "options": [
+      "30 m",
+      "3 m",
+      "300 m",
+      "0.3 m"
+     ]
+    },
+    {
+     "text": "B. 3 m",
+     "more": {
+      "text": "λ = c / f = 3 × 10⁸ / 10⁸ = 3 m."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-beg-22",
+   "sides": [
+    {
+     "text": "About how many megabytes per second does a 100 Mbit/s link move?",
+     "options": [
+      "1.25 MB/s",
+      "12.5 MB/s",
+      "100 MB/s",
+      "800 MB/s"
+     ]
+    },
+    {
+     "text": "B. 12.5 MB/s",
+     "more": {
+      "text": "Divide by 8 bits per byte."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-beg-23",
+   "sides": [
+    {
+     "text": "Which radio method varies the carrier's frequency to carry the signal?",
+     "options": [
+      "AM",
+      "ASK",
+      "PWM",
+      "FM"
+     ]
+    },
+    {
+     "text": "D. FM",
+     "more": {
+      "text": "FM varies frequency; AM varies amplitude."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-beg-24",
+   "sides": [
+    {
+     "text": "Four 1.5 V cells are connected in series. What is the voltage?",
+     "options": [
+      "0.375 V",
+      "3 V",
+      "6 V",
+      "1.5 V"
+     ]
+    },
+    {
+     "text": "C. 6 V",
+     "more": {
+      "text": "Series voltages add: 4 × 1.5 = 6 V."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-beg-25",
+   "sides": [
+    {
+     "text": "A 100 µF capacitor is charged to 5 V. How much charge does it hold?",
+     "options": [
+      "5 mC",
+      "20 µC",
+      "500 µC",
+      "0.5 µC"
+     ]
+    },
+    {
+     "text": "C. 500 µC",
+     "more": {
+      "text": "Q = C × V = 100 µF × 5 V = 500 µC."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-beg-26",
+   "sides": [
+    {
+     "text": "Which part is placed beside an MCU's power pin to supply quick current bursts?",
+     "options": [
+      "A Zener diode",
+      "A potentiometer",
+      "A large inductor",
+      "A 0.1 µF decoupling capacitor"
+     ]
+    },
+    {
+     "text": "D. A 0.1 µF decoupling capacitor",
+     "more": {
+      "text": "Decoupling capacitors supply fast current and filter noise."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-beg-27",
+   "sides": [
+    {
+     "text": "A button input reads random values when it isn't pressed. What is the fix?",
+     "options": [
+      "Add a capacitor in series",
+      "Add a pull-up or pull-down resistor",
+      "Use a bigger button",
+      "Raise the clock speed"
+     ]
+    },
+    {
+     "text": "B. Add a pull-up or pull-down resistor",
+     "more": {
+      "text": "A floating input needs a defined level."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-beg-28",
+   "sides": [
+    {
+     "text": "Which component stores energy in a magnetic field?",
+     "options": [
+      "Capacitor",
+      "Inductor",
+      "Resistor",
+      "Diode"
+     ]
+    },
+    {
+     "text": "B. Inductor",
+     "more": {
+      "text": "Inductors store energy in magnetic fields; capacitors in electric fields."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-beg-29",
+   "sides": [
+    {
+     "text": "A 12 V source feeds two series resistors, and the first drops 5 V. What does the second drop?",
+     "options": [
+      "12 V",
+      "7 V",
+      "5 V",
+      "17 V"
+     ]
+    },
+    {
+     "text": "B. 7 V",
+     "more": {
+      "text": "Kirchhoff's voltage law: 12 − 5 = 7 V."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-beg-30",
+   "sides": [
+    {
+     "text": "A wire is connected across a battery's terminals. What happens?",
+     "options": [
+      "Resistance rises",
+      "No current flows",
+      "Lower voltage with no heat",
+      "Very high current and heating"
+     ]
+    },
+    {
+     "text": "D. Very high current and heating",
+     "more": {
+      "text": "That's a short circuit: only the source and wire limit the current."
+     }
+    }
+   ]
+  }
+ ]
+}

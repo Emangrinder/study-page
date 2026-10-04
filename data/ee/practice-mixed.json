@@ -1,0 +1,1206 @@
+{
+ "id": "ee-practice-mixed",
+ "name": "Practice · Mixed 60",
+ "cards": [
+  {
+   "id": "ee-pm-1",
+   "sides": [
+    {
+     "text": "A 5 V supply drives a red LED (Vf = 2 V) at 20 mA. Which series resistor is needed?",
+     "options": [
+      "350 Ω",
+      "250 Ω",
+      "100 Ω",
+      "150 Ω"
+     ]
+    },
+    {
+     "text": "D. 150 Ω",
+     "more": {
+      "text": "R = (5 − 2) / 0.02 = 150 Ω."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-2",
+   "sides": [
+    {
+     "text": "Which Wi-Fi generation introduced OFDMA?",
+     "options": [
+      "Wi-Fi 5",
+      "Wi-Fi 4",
+      "Wi-Fi 6",
+      "Wi-Fi 7"
+     ]
+    },
+    {
+     "text": "C. Wi-Fi 6",
+     "more": {
+      "text": "Wi-Fi 6 (802.11ax)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-3",
+   "sides": [
+    {
+     "text": "A 5%-droop generator runs at 60 Hz with no load. What is its frequency at full load?",
+     "options": [
+      "55 Hz",
+      "63 Hz",
+      "59.5 Hz",
+      "57 Hz"
+     ]
+    },
+    {
+     "text": "D. 57 Hz",
+     "more": {
+      "text": "60 × 0.95 = 57 Hz."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-4",
+   "sides": [
+    {
+     "text": "An ADC has a SINAD of 62 dB. What is its ENOB?",
+     "options": [
+      "About 8 bits",
+      "About 62 bits",
+      "About 12 bits",
+      "About 10 bits"
+     ]
+    },
+    {
+     "text": "D. About 10 bits",
+     "more": {
+      "text": "(62 − 1.76) / 6.02 ≈ 10."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-5",
+   "sides": [
+    {
+     "text": "Which scheduler can reach 100% utilization on a single core?",
+     "options": [
+      "Rate-monotonic",
+      "Earliest deadline first",
+      "Round-robin",
+      "FIFO"
+     ]
+    },
+    {
+     "text": "B. Earliest deadline first",
+     "more": {
+      "text": "EDF is optimal for preemptive single-processor scheduling."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-6",
+   "sides": [
+    {
+     "text": "A 16 MHz clock has a prescaler of 64 and a count of 250. What frequency results?",
+     "options": [
+      "1,000 Hz",
+      "4,000 Hz",
+      "250 Hz",
+      "64,000 Hz"
+     ]
+    },
+    {
+     "text": "A. 1,000 Hz",
+     "more": {
+      "text": "16 MHz / 64 / 250 = 1,000 Hz."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-7",
+   "sides": [
+    {
+     "text": "Which HVDC converter type can black-start a dead grid?",
+     "options": [
+      "Thyristor bridge",
+      "Diode rectifier",
+      "Line-commutated converter (LCC)",
+      "Voltage-source converter (VSC)"
+     ]
+    },
+    {
+     "text": "D. Voltage-source converter (VSC)",
+     "more": {
+      "text": "VSCs don't need a strong AC grid to commutate."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-8",
+   "sides": [
+    {
+     "text": "What is the phase offset between phases in a 4-phase interleaved buck converter?",
+     "options": [
+      "90°",
+      "180°",
+      "120°",
+      "45°"
+     ]
+    },
+    {
+     "text": "A. 90°",
+     "more": {
+      "text": "360° / 4."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-9",
+   "sides": [
+    {
+     "text": "Which unit measures capacitance?",
+     "options": [
+      "Farad",
+      "Henry",
+      "Coulomb",
+      "Siemens"
+     ]
+    },
+    {
+     "text": "A. Farad",
+     "more": {
+      "text": "The farad. Henries measure inductance and coulombs measure charge."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-10",
+   "sides": [
+    {
+     "text": "A 10:1 step-down transformer has 120 V in. What is the output?",
+     "options": [
+      "12 V",
+      "0.1 V",
+      "1,200 V",
+      "10 V"
+     ]
+    },
+    {
+     "text": "A. 12 V",
+     "more": {
+      "text": "The voltage ratio equals the turns ratio, so 120 / 10 = 12 V."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-11",
+   "sides": [
+    {
+     "text": "What is the wavelength of a 100 MHz radio signal?",
+     "options": [
+      "30 m",
+      "3 m",
+      "300 m",
+      "0.3 m"
+     ]
+    },
+    {
+     "text": "B. 3 m",
+     "more": {
+      "text": "λ = c / f = 3 × 10⁸ / 10⁸ = 3 m."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-12",
+   "sides": [
+    {
+     "text": "What is the maximum theoretical efficiency of a class B amplifier?",
+     "options": [
+      "About 78.5%",
+      "About 25%",
+      "About 100%",
+      "About 50%"
+     ]
+    },
+    {
+     "text": "A. About 78.5%",
+     "more": {
+      "text": "π/4 ≈ 78.5%."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-13",
+   "sides": [
+    {
+     "text": "To measure the current through a load, how should a multimeter be connected?",
+     "options": [
+      "In parallel across the load",
+      "In series with the load",
+      "Across the supply with the load removed",
+      "Only to ground"
+     ]
+    },
+    {
+     "text": "B. In series with the load",
+     "more": {
+      "text": "Current must flow through the meter, so it's connected in series."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-14",
+   "sides": [
+    {
+     "text": "A 100 µF capacitor is charged to 5 V. How much charge does it hold?",
+     "options": [
+      "5 mC",
+      "20 µC",
+      "500 µC",
+      "0.5 µC"
+     ]
+    },
+    {
+     "text": "C. 500 µC",
+     "more": {
+      "text": "Q = C × V = 100 µF × 5 V = 500 µC."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-15",
+   "sides": [
+    {
+     "text": "An RC low-pass filter has R = 1.6 kΩ and C = 100 nF. What is its cutoff frequency?",
+     "options": [
+      "About 10 kHz",
+      "About 995 Hz",
+      "About 63 Hz",
+      "About 159 Hz"
+     ]
+    },
+    {
+     "text": "B. About 995 Hz",
+     "more": {
+      "text": "f_c = 1 / (2πRC) ≈ 995 Hz."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-16",
+   "sides": [
+    {
+     "text": "Which PID term removes steady-state error?",
+     "options": [
+      "A lower sampling rate",
+      "Proportional alone",
+      "Integral",
+      "Derivative"
+     ]
+    },
+    {
+     "text": "C. Integral",
+     "more": {
+      "text": "Integral action accumulates the error until it's zero."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-17",
+   "sides": [
+    {
+     "text": "What is 1101 in binary as a decimal number?",
+     "options": [
+      "13",
+      "9",
+      "11",
+      "15"
+     ]
+    },
+    {
+     "text": "A. 13",
+     "more": {
+      "text": "8 + 4 + 0 + 1 = 13."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-18",
+   "sides": [
+    {
+     "text": "An inverting amplifier has Rf = 100 kΩ and Rin = 10 kΩ. What is the gain?",
+     "options": [
+      "−11",
+      "0.1",
+      "−10",
+      "10"
+     ]
+    },
+    {
+     "text": "C. −10",
+     "more": {
+      "text": "Gain = −Rf / Rin = −10."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-19",
+   "sides": [
+    {
+     "text": "What does a differential pair reject?",
+     "options": [
+      "DC supply only",
+      "All noise",
+      "Common-mode signals",
+      "Differential signals"
+     ]
+    },
+    {
+     "text": "C. Common-mode signals",
+     "more": {
+      "text": "It amplifies the difference between inputs."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-20",
+   "sides": [
+    {
+     "text": "What does an OFDM cyclic prefix handle?",
+     "options": [
+      "Thermal noise",
+      "Quantization noise",
+      "Phase noise",
+      "Multipath delay spread"
+     ]
+    },
+    {
+     "text": "D. Multipath delay spread",
+     "more": {
+      "text": "It absorbs delay spread to avoid intersymbol interference."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-21",
+   "sides": [
+    {
+     "text": "In an integer-N PLL, what is the output frequency?",
+     "options": [
+      "N × f_ref",
+      "f_ref / N",
+      "f_ref + N",
+      "N² × f_ref"
+     ]
+    },
+    {
+     "text": "A. N × f_ref",
+     "more": {
+      "text": "The divider forces f_out / N = f_ref."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-22",
+   "sides": [
+    {
+     "text": "A power loop has 10 nH of inductance and switches at 1 A/ns. How large is the voltage spike?",
+     "options": [
+      "1 V",
+      "100 V",
+      "10 V",
+      "0.1 V"
+     ]
+    },
+    {
+     "text": "C. 10 V",
+     "more": {
+      "text": "V = L × di/dt = 10 nH × 1 A/ns."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-23",
+   "sides": [
+    {
+     "text": "A 9 V source feeds a 6 kΩ resistor in series with a 3 kΩ resistor. What is the voltage across the 3 kΩ resistor?",
+     "options": [
+      "4.5 V",
+      "1 V",
+      "6 V",
+      "3 V"
+     ]
+    },
+    {
+     "text": "D. 3 V",
+     "more": {
+      "text": "Vout = 9 × 3k / (6k + 3k) = 3 V."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-24",
+   "sides": [
+    {
+     "text": "An induction motor has a synchronous speed of 1,800 rpm and runs at 1,750 rpm. What is the slip?",
+     "options": [
+      "About 0.28%",
+      "About 28%",
+      "About 2.8%",
+      "About 5%"
+     ]
+    },
+    {
+     "text": "C. About 2.8%",
+     "more": {
+      "text": "(1,800 − 1,750) / 1,800."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-25",
+   "sides": [
+    {
+     "text": "Which radio method varies the carrier's frequency to carry the signal?",
+     "options": [
+      "AM",
+      "ASK",
+      "PWM",
+      "FM"
+     ]
+    },
+    {
+     "text": "D. FM",
+     "more": {
+      "text": "FM varies frequency; AM varies amplitude."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-26",
+   "sides": [
+    {
+     "text": "What is the reactance of a 1 µF capacitor at 1 kHz?",
+     "options": [
+      "About 1 kΩ",
+      "About 6.3 kΩ",
+      "About 159 Ω",
+      "About 0.16 Ω"
+     ]
+    },
+    {
+     "text": "C. About 159 Ω",
+     "more": {
+      "text": "X_C = 1 / (2π × 1000 × 10⁻⁶) ≈ 159 Ω."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-27",
+   "sides": [
+    {
+     "text": "An air-filled WR-90 waveguide has a = 2.286 cm. What is the TE₁₀ cutoff?",
+     "options": [
+      "About 3.3 GHz",
+      "About 2.2 GHz",
+      "About 6.56 GHz",
+      "About 13 GHz"
+     ]
+    },
+    {
+     "text": "C. About 6.56 GHz",
+     "more": {
+      "text": "f_c = c / (2a)."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-28",
+   "sides": [
+    {
+     "text": "Which component stores energy in a magnetic field?",
+     "options": [
+      "Capacitor",
+      "Inductor",
+      "Resistor",
+      "Diode"
+     ]
+    },
+    {
+     "text": "B. Inductor",
+     "more": {
+      "text": "Inductors store energy in magnetic fields; capacitors in electric fields."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-29",
+   "sides": [
+    {
+     "text": "Which bus decides priority by message ID, with the lowest ID winning?",
+     "options": [
+      "CAN",
+      "I2C",
+      "SPI",
+      "UART"
+     ]
+    },
+    {
+     "text": "A. CAN",
+     "more": {
+      "text": "CAN uses bitwise arbitration on the ID."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-30",
+   "sides": [
+    {
+     "text": "A 1 V rail with ±5% tolerance sees a 5 A load step. What is the target PDN impedance?",
+     "options": [
+      "1 mΩ",
+      "50 mΩ",
+      "10 mΩ",
+      "100 mΩ"
+     ]
+    },
+    {
+     "text": "C. 10 mΩ",
+     "more": {
+      "text": "0.05 V / 5 A."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-31",
+   "sides": [
+    {
+     "text": "Which regulator type is more efficient when the input and output voltages differ greatly?",
+     "options": [
+      "They are equal",
+      "Zener",
+      "Switching",
+      "Linear"
+     ]
+    },
+    {
+     "text": "C. Switching",
+     "more": {
+      "text": "A switching regulator doesn't burn the excess voltage as heat."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-32",
+   "sides": [
+    {
+     "text": "What is 20 dBm in milliwatts?",
+     "options": [
+      "20 mW",
+      "2 mW",
+      "200 mW",
+      "100 mW"
+     ]
+    },
+    {
+     "text": "D. 100 mW",
+     "more": {
+      "text": "0 dBm = 1 mW, and each 10 dB is ×10."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-33",
+   "sides": [
+    {
+     "text": "A MOSFET has μCox = 100 µA/V², W/L = 20, and Vov = 0.2 V. What is I_D?",
+     "options": [
+      "4 µA",
+      "40 µA",
+      "400 µA",
+      "80 µA"
+     ]
+    },
+    {
+     "text": "B. 40 µA",
+     "more": {
+      "text": "I_D = ½ × 100 µ × 20 × 0.04 = 40 µA."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-34",
+   "sides": [
+    {
+     "text": "A coin lands heads 25% of the time. What is its entropy?",
+     "options": [
+      "About 0.81 bits",
+      "1 bit",
+      "0.5 bits",
+      "0.25 bits"
+     ]
+    },
+    {
+     "text": "A. About 0.81 bits",
+     "more": {
+      "text": "−0.25 log₂ 0.25 − 0.75 log₂ 0.75 ≈ 0.81."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-35",
+   "sides": [
+    {
+     "text": "What anchors a secure boot chain of trust?",
+     "options": [
+      "External flash",
+      "A bootloader password",
+      "A firmware version number",
+      "A hardware root of trust"
+     ]
+    },
+    {
+     "text": "D. A hardware root of trust",
+     "more": {
+      "text": "Immutable ROM and keys anchor verification."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-36",
+   "sides": [
+    {
+     "text": "A BJT has β = 100 and a base current of 50 µA. What is the collector current?",
+     "options": [
+      "5 mA",
+      "50 mA",
+      "0.5 mA",
+      "2 mA"
+     ]
+    },
+    {
+     "text": "A. 5 mA",
+     "more": {
+      "text": "Ic = β × Ib = 100 × 50 µA = 5 mA."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-37",
+   "sides": [
+    {
+     "text": "A channel has B = 1 MHz and a linear SNR of 31. What is the Shannon capacity?",
+     "options": [
+      "1 Mbit/s",
+      "5 Mbit/s",
+      "31 Mbit/s",
+      "10 Mbit/s"
+     ]
+    },
+    {
+     "text": "B. 5 Mbit/s",
+     "more": {
+      "text": "B × log₂(32) = 5 Mbit/s."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-38",
+   "sides": [
+    {
+     "text": "Why do power lines use very high voltage?",
+     "options": [
+      "To reduce current and I²R loss",
+      "To make them safe to touch",
+      "To use thicker wires",
+      "To increase current"
+     ]
+    },
+    {
+     "text": "A. To reduce current and I²R loss",
+     "more": {
+      "text": "For the same power, higher voltage means lower current and much lower loss."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-39",
+   "sides": [
+    {
+     "text": "A fundamental of 100 V has a 5 V fifth harmonic and a 3 V seventh. What is the THD?",
+     "options": [
+      "About 15%",
+      "About 8%",
+      "About 5.8%",
+      "About 3%"
+     ]
+    },
+    {
+     "text": "C. About 5.8%",
+     "more": {
+      "text": "√(5² + 3²) / 100."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-40",
+   "sides": [
+    {
+     "text": "What prevents both switches of a half-bridge conducting at once?",
+     "options": [
+      "Snubber",
+      "Dead time",
+      "Bootstrap",
+      "Soft start"
+     ]
+    },
+    {
+     "text": "B. Dead time",
+     "more": {
+      "text": "Dead time delays turn-on after turn-off."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-41",
+   "sides": [
+    {
+     "text": "Which system is stable: a pole at s = −3 or a pole at s = +2?",
+     "options": [
+      "Neither",
+      "Both",
+      "The pole at +2",
+      "The pole at −3"
+     ]
+    },
+    {
+     "text": "D. The pole at −3",
+     "more": {
+      "text": "Stable poles lie in the left half-plane."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-42",
+   "sides": [
+    {
+     "text": "How many comparison cycles does a 12-bit SAR ADC need per conversion?",
+     "options": [
+      "2",
+      "24",
+      "4,096",
+      "12"
+     ]
+    },
+    {
+     "text": "D. 12",
+     "more": {
+      "text": "One per bit."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-43",
+   "sides": [
+    {
+     "text": "A signal is 1 mW and the noise is 1 µW. What is the SNR in dB?",
+     "options": [
+      "30 dB",
+      "10 dB",
+      "60 dB",
+      "3 dB"
+     ]
+    },
+    {
+     "text": "A. 30 dB",
+     "more": {
+      "text": "10 log₁₀(1000) = 30 dB."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-44",
+   "sides": [
+    {
+     "text": "A 7 kHz tone is sampled at 10 kHz. At what frequency does it appear?",
+     "options": [
+      "3 kHz",
+      "5 kHz",
+      "17 kHz",
+      "7 kHz"
+     ]
+    },
+    {
+     "text": "A. 3 kHz",
+     "more": {
+      "text": "It aliases to |7 − 10| = 3 kHz."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-45",
+   "sides": [
+    {
+     "text": "L = 10 mH and C = 100 nF. What is the resonant frequency?",
+     "options": [
+      "About 50 kHz",
+      "About 1 kHz",
+      "About 5.03 kHz",
+      "About 159 Hz"
+     ]
+    },
+    {
+     "text": "C. About 5.03 kHz",
+     "more": {
+      "text": "f₀ = 1 / (2π√(LC)) ≈ 5.03 kHz."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-46",
+   "sides": [
+    {
+     "text": "Which MOSFET dimension increases output resistance when it grows?",
+     "options": [
+      "Gate width",
+      "Drain doping",
+      "Channel length",
+      "Oxide thickness"
+     ]
+    },
+    {
+     "text": "C. Channel length",
+     "more": {
+      "text": "Longer channels reduce channel-length modulation."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-47",
+   "sides": [
+    {
+     "text": "A sine wave is 3.3 V peak-to-peak. What is its RMS value?",
+     "options": [
+      "About 0.58 V",
+      "About 3.3 V",
+      "About 2.33 V",
+      "About 1.17 V"
+     ]
+    },
+    {
+     "text": "D. About 1.17 V",
+     "more": {
+      "text": "Vp = 1.65 V, and RMS = Vp / √2 ≈ 1.17 V."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-48",
+   "sides": [
+    {
+     "text": "A 60 W bulb runs for 5 hours. How much energy does it use?",
+     "options": [
+      "300 kWh",
+      "3 kWh",
+      "0.06 kWh",
+      "0.3 kWh"
+     ]
+    },
+    {
+     "text": "D. 0.3 kWh",
+     "more": {
+      "text": "60 W × 5 h = 300 Wh = 0.3 kWh."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-49",
+   "sides": [
+    {
+     "text": "A quarter-wave line matches 50 Ω to 200 Ω. What impedance must the line have?",
+     "options": [
+      "75 Ω",
+      "125 Ω",
+      "100 Ω",
+      "150 Ω"
+     ]
+    },
+    {
+     "text": "C. 100 Ω",
+     "more": {
+      "text": "Z = √(50 × 200) = 100 Ω."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-50",
+   "sides": [
+    {
+     "text": "A boost converter has Vin = 5 V and D = 0.5. What is Vout?",
+     "options": [
+      "10 V",
+      "5 V",
+      "7.5 V",
+      "2.5 V"
+     ]
+    },
+    {
+     "text": "A. 10 V",
+     "more": {
+      "text": "Vout = Vin / (1 − D) = 5 / 0.5 = 10 V."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-51",
+   "sides": [
+    {
+     "text": "A relay coil is switched off by a transistor. What protects the transistor?",
+     "options": [
+      "A series Zener",
+      "A series capacitor",
+      "A pull-up resistor",
+      "A flyback diode"
+     ]
+    },
+    {
+     "text": "D. A flyback diode",
+     "more": {
+      "text": "The coil's collapsing field creates a spike. The diode gives it a safe path."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-52",
+   "sides": [
+    {
+     "text": "Two 100 Ω resistors are in parallel. What is the total resistance?",
+     "options": [
+      "200 Ω",
+      "100 Ω",
+      "50 Ω",
+      "25 Ω"
+     ]
+    },
+    {
+     "text": "C. 50 Ω",
+     "more": {
+      "text": "Equal resistors in parallel give half the value."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-53",
+   "sides": [
+    {
+     "text": "What is the maximum Doppler shift at 2 GHz and 30 m/s?",
+     "options": [
+      "600 Hz",
+      "2 kHz",
+      "200 Hz",
+      "20 Hz"
+     ]
+    },
+    {
+     "text": "C. 200 Hz",
+     "more": {
+      "text": "f_D = v f_c / c."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-54",
+   "sides": [
+    {
+     "text": "Which bus uses only two signal wires, SDA and SCL?",
+     "options": [
+      "SPI",
+      "CAN",
+      "I2C",
+      "UART"
+     ]
+    },
+    {
+     "text": "C. I2C",
+     "more": {
+      "text": "I2C uses SDA and SCL with pull-ups."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-55",
+   "sides": [
+    {
+     "text": "At 115,200 baud with 8N1 framing, about how many bytes per second can UART move?",
+     "options": [
+      "About 115,200",
+      "About 9,600",
+      "About 11,520",
+      "About 14,400"
+     ]
+    },
+    {
+     "text": "C. About 11,520",
+     "more": {
+      "text": "Each byte uses 10 bits on the wire."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-56",
+   "sides": [
+    {
+     "text": "Which MCU feature reacts immediately to a rare event without polling?",
+     "options": [
+      "Prescaler",
+      "Watchdog",
+      "Interrupt",
+      "Delay loop"
+     ]
+    },
+    {
+     "text": "C. Interrupt",
+     "more": {
+      "text": "Interrupts pause the main program for the event."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-57",
+   "sides": [
+    {
+     "text": "A 12 V battery is connected across a 240 Ω resistor. What current flows?",
+     "options": [
+      "5 mA",
+      "500 mA",
+      "50 mA",
+      "2.9 A"
+     ]
+    },
+    {
+     "text": "C. 50 mA",
+     "more": {
+      "text": "Ohm's law: I = V / R = 12 / 240 = 0.05 A."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-58",
+   "sides": [
+    {
+     "text": "A three-phase load draws 10 A at 400 V line voltage with pf 0.9. What is the real power?",
+     "options": [
+      "About 10.8 kW",
+      "About 3.6 kW",
+      "About 6.2 kW",
+      "About 4 kW"
+     ]
+    },
+    {
+     "text": "C. About 6.2 kW",
+     "more": {
+      "text": "P = √3 × 400 × 10 × 0.9."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-59",
+   "sides": [
+    {
+     "text": "A second-order system has ζ = 0.5. What is the approximate step overshoot?",
+     "options": [
+      "About 0%",
+      "About 5%",
+      "About 16%",
+      "About 50%"
+     ]
+    },
+    {
+     "text": "C. About 16%",
+     "more": {
+      "text": "Overshoot ≈ e^(−πζ/√(1−ζ²)) ≈ 16%."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-pm-60",
+   "sides": [
+    {
+     "text": "Which of these is a full computer running Linux?",
+     "options": [
+      "Arduino Uno",
+      "ESP8266 chip",
+      "Raspberry Pi",
+      "ATmega328P"
+     ]
+    },
+    {
+     "text": "C. Raspberry Pi",
+     "more": {
+      "text": "The Raspberry Pi runs Linux. The others are microcontrollers."
+     }
+    }
+   ]
+  }
+ ]
+}

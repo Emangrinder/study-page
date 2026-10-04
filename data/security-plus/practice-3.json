@@ -1,0 +1,506 @@
+{
+ "id": "security-plus-practice-3",
+ "name": "Practice · 3 Security Architecture",
+ "cards": [
+  {
+   "id": "sec-p3-1",
+   "sides": [
+    {
+     "text": "A company wants to avoid buying servers and pay only for what it uses. Which model fits?",
+     "options": [
+      "Physical isolation",
+      "Cloud computing",
+      "Air-gapped",
+      "On-premises"
+     ]
+    },
+    {
+     "text": "B. Cloud computing",
+     "more": {
+      "text": "Cloud computing is on-demand and billed by usage."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p3-2",
+   "sides": [
+    {
+     "text": "In an IaaS deployment, who is responsible for patching the guest operating system?",
+     "options": [
+      "The customer",
+      "The hypervisor vendor",
+      "Both equally",
+      "The provider"
+     ]
+    },
+    {
+     "text": "A. The customer",
+     "more": {
+      "text": "In IaaS the provider secures the infrastructure; the customer manages the OS and above."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p3-3",
+   "sides": [
+    {
+     "text": "Servers and networks are deployed from version-controlled templates. What is this called?",
+     "options": [
+      "Serverless",
+      "Infrastructure as code",
+      "Containerization",
+      "Air-gapping"
+     ]
+    },
+    {
+     "text": "B. Infrastructure as code",
+     "more": {
+      "text": "IaC provisions infrastructure from machine-readable files."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p3-4",
+   "sides": [
+    {
+     "text": "A critical system has no connection to any other network, including the internet. What is this called?",
+     "options": [
+      "Hybrid",
+      "Software-defined",
+      "Air-gapped",
+      "Logically segmented"
+     ]
+    },
+    {
+     "text": "C. Air-gapped",
+     "more": {
+      "text": "An air gap is complete physical disconnection."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p3-5",
+   "sides": [
+    {
+     "text": "Which technology separates the control plane from the data plane so a controller programs network devices?",
+     "options": [
+      "NAC",
+      "VPN",
+      "SDN",
+      "VLAN"
+     ]
+    },
+    {
+     "text": "C. SDN",
+     "more": {
+      "text": "Software-defined networking centralizes control in a controller."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p3-6",
+   "sides": [
+    {
+     "text": "A factory control system can't be patched without stopping production. What is the best approach?",
+     "options": [
+      "Share the admin credentials",
+      "Remove all logging",
+      "Connect it to the internet for updates",
+      "Isolate it and add compensating controls"
+     ]
+    },
+    {
+     "text": "D. Isolate it and add compensating controls",
+     "more": {
+      "text": "When patching isn't possible, isolation and monitoring reduce risk."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p3-7",
+   "sides": [
+    {
+     "text": "Which firewall failure mode prioritizes security over availability?",
+     "options": [
+      "Inline mode",
+      "Fail-open",
+      "Passive mode",
+      "Fail-closed"
+     ]
+    },
+    {
+     "text": "D. Fail-closed",
+     "more": {
+      "text": "Fail-closed blocks traffic when the device fails."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p3-8",
+   "sides": [
+    {
+     "text": "A sensor receives a copy of traffic from a switch and can alert but not block. Which deployment is this?",
+     "options": [
+      "Passive tap or monitor",
+      "Jump server",
+      "Reverse proxy",
+      "Inline IPS"
+     ]
+    },
+    {
+     "text": "A. Passive tap or monitor",
+     "more": {
+      "text": "A tap or monitor sees a copy of traffic and can't block it."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p3-9",
+   "sides": [
+    {
+     "text": "Which device distributes requests across several web servers and skips failed ones?",
+     "options": [
+      "Jump server",
+      "WAF",
+      "Load balancer",
+      "Forward proxy"
+     ]
+    },
+    {
+     "text": "C. Load balancer",
+     "more": {
+      "text": "A load balancer spreads traffic and uses health checks."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p3-10",
+   "sides": [
+    {
+     "text": "A firewall inspects HTTP traffic to block SQL injection against a web app. Which device is this?",
+     "options": [
+      "NAC",
+      "Router ACL",
+      "WAF",
+      "Port security"
+     ]
+    },
+    {
+     "text": "C. WAF",
+     "more": {
+      "text": "A web application firewall works at Layer 7 against web attacks."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p3-11",
+   "sides": [
+    {
+     "text": "A device must authenticate through a RADIUS server before a switch port forwards traffic. Which standard is this?",
+     "options": [
+      "STP",
+      "802.1X",
+      "WPS",
+      "Port mirroring"
+     ]
+    },
+    {
+     "text": "B. 802.1X",
+     "more": {
+      "text": "802.1X provides port-based network access control."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p3-12",
+   "sides": [
+    {
+     "text": "Which VPN setup sends only corporate-bound traffic through the tunnel?",
+     "options": [
+      "Full tunnel",
+      "Reverse proxy",
+      "Split tunnel",
+      "Air gap"
+     ]
+    },
+    {
+     "text": "C. Split tunnel",
+     "more": {
+      "text": "A split tunnel sends only designated traffic through the VPN."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p3-13",
+   "sides": [
+    {
+     "text": "Branch offices use low-cost internet links managed centrally by policy. Which technology is this?",
+     "options": [
+      "MPLS",
+      "HSM",
+      "SCADA",
+      "SD-WAN"
+     ]
+    },
+    {
+     "text": "D. SD-WAN",
+     "more": {
+      "text": "SD-WAN routes traffic over multiple links by policy with central management."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p3-14",
+   "sides": [
+    {
+     "text": "A company labels data whose loss would halt operations. Which classification fits?",
+     "options": [
+      "Public",
+      "Private",
+      "Restricted",
+      "Critical"
+     ]
+    },
+    {
+     "text": "D. Critical",
+     "more": {
+      "text": "Critical data is essential to operations."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p3-15",
+   "sides": [
+    {
+     "text": "A US firm must keep EU customer data inside the EU. Which concept applies?",
+     "options": [
+      "Data masking",
+      "Key escrow",
+      "Tokenization",
+      "Data sovereignty"
+     ]
+    },
+    {
+     "text": "D. Data sovereignty",
+     "more": {
+      "text": "Data is subject to the laws of where it's stored or processed."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p3-16",
+   "sides": [
+    {
+     "text": "Data being processed in memory is in which state?",
+     "options": [
+      "Archived data",
+      "Data in use",
+      "Data at rest",
+      "Data in transit"
+     ]
+    },
+    {
+     "text": "B. Data in use",
+     "more": {
+      "text": "In use means actively processed, such as in RAM."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p3-17",
+   "sides": [
+    {
+     "text": "A call center agent sees only the last four digits of a card number. Which technique is this?",
+     "options": [
+      "Hashing",
+      "Salting",
+      "Masking",
+      "Tokenization"
+     ]
+    },
+    {
+     "text": "C. Masking",
+     "more": {
+      "text": "Masking hides parts of a value in display."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p3-18",
+   "sides": [
+    {
+     "text": "Which recovery site offers the fastest failover but costs the most?",
+     "options": [
+      "Hot site",
+      "Mobile site",
+      "Cold site",
+      "Warm site"
+     ]
+    },
+    {
+     "text": "A. Hot site",
+     "more": {
+      "text": "A hot site is fully equipped with current data."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p3-19",
+   "sides": [
+    {
+     "text": "Which backup type needs the last full backup plus only the most recent backup to restore?",
+     "options": [
+      "Differential",
+      "Snapshot",
+      "Journal",
+      "Incremental"
+     ]
+    },
+    {
+     "text": "A. Differential",
+     "more": {
+      "text": "Differential backups contain all changes since the last full backup."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p3-20",
+   "sides": [
+    {
+     "text": "A company can tolerate losing at most 15 minutes of data. Which metric states this?",
+     "options": [
+      "RPO",
+      "MTBF",
+      "MTTR",
+      "RTO"
+     ]
+    },
+    {
+     "text": "A. RPO",
+     "more": {
+      "text": "RPO is the maximum acceptable data loss measured in time."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p3-21",
+   "sides": [
+    {
+     "text": "A team talks through a ransomware scenario in a meeting without touching any systems. Which test is this?",
+     "options": [
+      "Parallel processing",
+      "Tabletop exercise",
+      "Failover test",
+      "Simulation"
+     ]
+    },
+    {
+     "text": "B. Tabletop exercise",
+     "more": {
+      "text": "A tabletop is a discussion-based walkthrough."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p3-22",
+   "sides": [
+    {
+     "text": "Which power component bridges a short outage until generators start?",
+     "options": [
+      "UPS",
+      "Load balancer",
+      "Generator",
+      "PDU"
+     ]
+    },
+    {
+     "text": "A. UPS",
+     "more": {
+      "text": "A UPS provides immediate battery power for short outages."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p3-23",
+   "sides": [
+    {
+     "text": "A company uses two different cloud providers to avoid depending on one. What is this called?",
+     "options": [
+      "Hybrid cloud",
+      "Multi-cloud",
+      "Community cloud",
+      "Private cloud"
+     ]
+    },
+    {
+     "text": "B. Multi-cloud",
+     "more": {
+      "text": "Multi-cloud uses more than one provider for resilience."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p3-24",
+   "sides": [
+    {
+     "text": "Which appliance sits in front of internal servers, hiding them and distributing requests?",
+     "options": [
+      "Honeypot",
+      "Reverse proxy",
+      "Forward proxy",
+      "Jump server"
+     ]
+    },
+    {
+     "text": "B. Reverse proxy",
+     "more": {
+      "text": "A reverse proxy fronts servers. A forward proxy fronts users."
+     }
+    }
+   ]
+  },
+  {
+   "id": "sec-p3-25",
+   "sides": [
+    {
+     "text": "Which secure protocol and port replace Telnet?",
+     "options": [
+      "SSH on port 22",
+      "FTP on port 21",
+      "SNMP on port 161",
+      "HTTPS on port 443"
+     ]
+    },
+    {
+     "text": "A. SSH on port 22",
+     "more": {
+      "text": "SSH encrypts remote administration and uses port 22."
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,586 @@
+{
+ "id": "ee-practice-intermediate",
+ "name": "Practice · Intermediate",
+ "cards": [
+  {
+   "id": "ee-p-int-1",
+   "sides": [
+    {
+     "text": "R = 10 kΩ and C = 100 µF. What is the RC time constant?",
+     "options": [
+      "10 s",
+      "1 s",
+      "100 s",
+      "0.1 s"
+     ]
+    },
+    {
+     "text": "B. 1 s",
+     "more": {
+      "text": "τ = R × C = 10,000 × 0.0001 = 1 s."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-int-2",
+   "sides": [
+    {
+     "text": "An RC low-pass filter has R = 1.6 kΩ and C = 100 nF. What is its cutoff frequency?",
+     "options": [
+      "About 10 kHz",
+      "About 995 Hz",
+      "About 63 Hz",
+      "About 159 Hz"
+     ]
+    },
+    {
+     "text": "B. About 995 Hz",
+     "more": {
+      "text": "f_c = 1 / (2πRC) ≈ 995 Hz."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-int-3",
+   "sides": [
+    {
+     "text": "A sine wave is 3.3 V peak-to-peak. What is its RMS value?",
+     "options": [
+      "About 0.58 V",
+      "About 3.3 V",
+      "About 2.33 V",
+      "About 1.17 V"
+     ]
+    },
+    {
+     "text": "D. About 1.17 V",
+     "more": {
+      "text": "Vp = 1.65 V, and RMS = Vp / √2 ≈ 1.17 V."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-int-4",
+   "sides": [
+    {
+     "text": "What is the reactance of a 1 µF capacitor at 1 kHz?",
+     "options": [
+      "About 1 kΩ",
+      "About 6.3 kΩ",
+      "About 159 Ω",
+      "About 0.16 Ω"
+     ]
+    },
+    {
+     "text": "C. About 159 Ω",
+     "more": {
+      "text": "X_C = 1 / (2π × 1000 × 10⁻⁶) ≈ 159 Ω."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-int-5",
+   "sides": [
+    {
+     "text": "L = 10 mH and C = 100 nF. What is the resonant frequency?",
+     "options": [
+      "About 50 kHz",
+      "About 1 kHz",
+      "About 5.03 kHz",
+      "About 159 Hz"
+     ]
+    },
+    {
+     "text": "C. About 5.03 kHz",
+     "more": {
+      "text": "f₀ = 1 / (2π√(LC)) ≈ 5.03 kHz."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-int-6",
+   "sides": [
+    {
+     "text": "An inverting amplifier has Rf = 100 kΩ and Rin = 10 kΩ. What is the gain?",
+     "options": [
+      "−11",
+      "0.1",
+      "−10",
+      "10"
+     ]
+    },
+    {
+     "text": "C. −10",
+     "more": {
+      "text": "Gain = −Rf / Rin = −10."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-int-7",
+   "sides": [
+    {
+     "text": "A non-inverting amplifier has Rf = 90 kΩ and Rg = 10 kΩ. What is the gain?",
+     "options": [
+      "9",
+      "−9",
+      "10",
+      "11"
+     ]
+    },
+    {
+     "text": "C. 10",
+     "more": {
+      "text": "Gain = 1 + Rf / Rg = 10."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-int-8",
+   "sides": [
+    {
+     "text": "A 7805 regulator takes 12 V in and delivers 5 V at 0.5 A. How much power does it dissipate?",
+     "options": [
+      "3.5 W",
+      "0.5 W",
+      "2.5 W",
+      "6 W"
+     ]
+    },
+    {
+     "text": "A. 3.5 W",
+     "more": {
+      "text": "(12 − 5) × 0.5 = 3.5 W as heat."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-int-9",
+   "sides": [
+    {
+     "text": "What is the ideal duty cycle of a buck converter taking 12 V to 5 V?",
+     "options": [
+      "About 41.7%",
+      "About 71%",
+      "About 58.3%",
+      "About 20%"
+     ]
+    },
+    {
+     "text": "A. About 41.7%",
+     "more": {
+      "text": "Vout = D × Vin, so D = 5 / 12."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-int-10",
+   "sides": [
+    {
+     "text": "A boost converter has Vin = 5 V and D = 0.5. What is Vout?",
+     "options": [
+      "10 V",
+      "5 V",
+      "7.5 V",
+      "2.5 V"
+     ]
+    },
+    {
+     "text": "A. 10 V",
+     "more": {
+      "text": "Vout = Vin / (1 − D) = 5 / 0.5 = 10 V."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-int-11",
+   "sides": [
+    {
+     "text": "A BJT has β = 100 and a base current of 50 µA. What is the collector current?",
+     "options": [
+      "5 mA",
+      "50 mA",
+      "0.5 mA",
+      "2 mA"
+     ]
+    },
+    {
+     "text": "A. 5 mA",
+     "more": {
+      "text": "Ic = β × Ib = 100 × 50 µA = 5 mA."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-int-12",
+   "sides": [
+    {
+     "text": "A 10 V peak sine goes through an ideal half-wave rectifier. What is the average output?",
+     "options": [
+      "10 V",
+      "About 7.07 V",
+      "About 3.18 V",
+      "About 6.37 V"
+     ]
+    },
+    {
+     "text": "C. About 3.18 V",
+     "more": {
+      "text": "Average = Vp / π ≈ 3.18 V."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-int-13",
+   "sides": [
+    {
+     "text": "A 12-bit ADC uses a 3.3 V reference. What is one LSB?",
+     "options": [
+      "About 1.6 mV",
+      "About 3.3 mV",
+      "About 0.806 mV",
+      "About 0.2 mV"
+     ]
+    },
+    {
+     "text": "C. About 0.806 mV",
+     "more": {
+      "text": "3.3 / 4096 ≈ 0.806 mV."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-int-14",
+   "sides": [
+    {
+     "text": "At 115,200 baud with 8N1 framing, about how many bytes per second can UART move?",
+     "options": [
+      "About 115,200",
+      "About 9,600",
+      "About 11,520",
+      "About 14,400"
+     ]
+    },
+    {
+     "text": "C. About 11,520",
+     "more": {
+      "text": "Each byte uses 10 bits on the wire."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-int-15",
+   "sides": [
+    {
+     "text": "A 16 MHz clock has a prescaler of 64 and a count of 250. What frequency results?",
+     "options": [
+      "1,000 Hz",
+      "4,000 Hz",
+      "250 Hz",
+      "64,000 Hz"
+     ]
+    },
+    {
+     "text": "A. 1,000 Hz",
+     "more": {
+      "text": "16 MHz / 64 / 250 = 1,000 Hz."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-int-16",
+   "sides": [
+    {
+     "text": "A 12 V source feeds 6 kΩ in series, with 3 kΩ to ground at the output. What are Vth and Rth at that node?",
+     "options": [
+      "6 V and 3 kΩ",
+      "12 V and 9 kΩ",
+      "4 V and 2 kΩ",
+      "4 V and 9 kΩ"
+     ]
+    },
+    {
+     "text": "C. 4 V and 2 kΩ",
+     "more": {
+      "text": "Vth = 12 × 3/9 = 4 V. Rth = 6k ∥ 3k = 2 kΩ."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-int-17",
+   "sides": [
+    {
+     "text": "A first-order low-pass has f_c = 1 kHz. What is the gain at 10 kHz?",
+     "options": [
+      "About −3 dB",
+      "About −10 dB",
+      "About −20 dB",
+      "About −40 dB"
+     ]
+    },
+    {
+     "text": "C. About −20 dB",
+     "more": {
+      "text": "−20 dB per decade beyond the cutoff."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-int-18",
+   "sides": [
+    {
+     "text": "An AC load draws 5 A from 120 V with a power factor of 0.8. What is the real power?",
+     "options": [
+      "750 W",
+      "480 W",
+      "384 W",
+      "600 W"
+     ]
+    },
+    {
+     "text": "B. 480 W",
+     "more": {
+      "text": "P = V × I × pf = 120 × 5 × 0.8 = 480 W."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-int-19",
+   "sides": [
+    {
+     "text": "Audio up to 5 kHz is sent by AM. What bandwidth is needed?",
+     "options": [
+      "20 kHz",
+      "10 kHz",
+      "5 kHz",
+      "2.5 kHz"
+     ]
+    },
+    {
+     "text": "B. 10 kHz",
+     "more": {
+      "text": "AM bandwidth is twice the highest message frequency."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-int-20",
+   "sides": [
+    {
+     "text": "Which regulator type is more efficient when the input and output voltages differ greatly?",
+     "options": [
+      "They are equal",
+      "Zener",
+      "Switching",
+      "Linear"
+     ]
+    },
+    {
+     "text": "C. Switching",
+     "more": {
+      "text": "A switching regulator doesn't burn the excess voltage as heat."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-int-21",
+   "sides": [
+    {
+     "text": "A 2 Ah cell is discharged at 0.5C. What current is that?",
+     "options": [
+      "0.5 A",
+      "1 A",
+      "2 A",
+      "4 A"
+     ]
+    },
+    {
+     "text": "B. 1 A",
+     "more": {
+      "text": "0.5C × 2 Ah = 1 A."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-int-22",
+   "sides": [
+    {
+     "text": "A signal is 1 mW and the noise is 1 µW. What is the SNR in dB?",
+     "options": [
+      "30 dB",
+      "10 dB",
+      "60 dB",
+      "3 dB"
+     ]
+    },
+    {
+     "text": "A. 30 dB",
+     "more": {
+      "text": "10 log₁₀(1000) = 30 dB."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-int-23",
+   "sides": [
+    {
+     "text": "Which diode holds a roughly fixed voltage in reverse breakdown?",
+     "options": [
+      "Rectifier",
+      "LED",
+      "Schottky",
+      "Zener"
+     ]
+    },
+    {
+     "text": "D. Zener",
+     "more": {
+      "text": "Zener diodes are used as references and simple regulators."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-int-24",
+   "sides": [
+    {
+     "text": "In which region does a BJT work as a fully-on switch?",
+     "options": [
+      "Active",
+      "Reverse active",
+      "Cutoff",
+      "Saturation"
+     ]
+    },
+    {
+     "text": "D. Saturation",
+     "more": {
+      "text": "Saturation gives a low Vce, like a closed switch."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-int-25",
+   "sides": [
+    {
+     "text": "A relay coil is switched off by a transistor. What protects the transistor?",
+     "options": [
+      "A series Zener",
+      "A series capacitor",
+      "A pull-up resistor",
+      "A flyback diode"
+     ]
+    },
+    {
+     "text": "D. A flyback diode",
+     "more": {
+      "text": "The coil's collapsing field creates a spike. The diode gives it a safe path."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-int-26",
+   "sides": [
+    {
+     "text": "Which bus uses only two signal wires, SDA and SCL?",
+     "options": [
+      "SPI",
+      "CAN",
+      "I2C",
+      "UART"
+     ]
+    },
+    {
+     "text": "C. I2C",
+     "more": {
+      "text": "I2C uses SDA and SCL with pull-ups."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-int-27",
+   "sides": [
+    {
+     "text": "What is 20 dBm in milliwatts?",
+     "options": [
+      "20 mW",
+      "2 mW",
+      "200 mW",
+      "100 mW"
+     ]
+    },
+    {
+     "text": "D. 100 mW",
+     "more": {
+      "text": "0 dBm = 1 mW, and each 10 dB is ×10."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-int-28",
+   "sides": [
+    {
+     "text": "Which MCU feature reacts immediately to a rare event without polling?",
+     "options": [
+      "Prescaler",
+      "Watchdog",
+      "Interrupt",
+      "Delay loop"
+     ]
+    },
+    {
+     "text": "C. Interrupt",
+     "more": {
+      "text": "Interrupts pause the main program for the event."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee-p-int-29",
+   "sides": [
+    {
+     "text": "A rectified supply feeds 100 mA with 120 Hz ripple and a 1,000 µF capacitor. What is the approximate ripple voltage?",
+     "options": [
+      "About 0.083 V",
+      "About 8.3 V",
+      "About 1.2 V",
+      "About 0.83 V"
+     ]
+    },
+    {
+     "text": "D. About 0.83 V",
+     "more": {
+      "text": "Ripple ≈ I / (f C) = 0.1 / (120 × 0.001) ≈ 0.83 V."
+     }
+    }
+   ]
+  }
+ ]
+}
