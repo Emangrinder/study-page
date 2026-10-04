@@ -65,7 +65,117 @@
           "name": "Data structures",
           "subtitle": "Arrays to advanced structures",
           "file": "data/review/datastructures.json",
-          "section": "Computer science"
+          "section": "Computer science",
+          "math": true
+        },
+        {
+          "id": "algorithms",
+          "name": "Algorithms",
+          "subtitle": "Sorting to complexity theory",
+          "file": "data/review/algorithms.json",
+          "section": "Computer science",
+          "math": true
+        },
+        {
+          "id": "cryptography",
+          "name": "Cryptography",
+          "subtitle": "Ciphers to post-quantum",
+          "file": "data/review/cryptography.json",
+          "section": "Computer science",
+          "math": true
+        },
+        {
+          "id": "cybersecurity",
+          "name": "Cyber security",
+          "subtitle": "Threats, defenses, operations",
+          "file": "data/review/cybersecurity.json",
+          "section": "Computer science",
+          "math": true
+        },
+        {
+          "id": "databases",
+          "name": "Databases",
+          "subtitle": "SQL, design, transactions, NoSQL",
+          "file": "data/review/databases.json",
+          "section": "Computer science",
+          "math": true
+        },
+        {
+          "id": "python",
+          "name": "Python",
+          "subtitle": "Language tour with output",
+          "file": "data/review/python.json",
+          "section": "Programming languages"
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "subtitle": "Language tour with output",
+          "file": "data/review/javascript.json",
+          "section": "Programming languages"
+        },
+        {
+          "id": "c",
+          "name": "C",
+          "subtitle": "Pointers to undefined behavior",
+          "file": "data/review/c.json",
+          "section": "Programming languages"
+        },
+        {
+          "id": "cpp",
+          "name": "C++",
+          "subtitle": "Classes to modern C++20",
+          "file": "data/review/cpp.json",
+          "section": "Programming languages"
+        },
+        {
+          "id": "java",
+          "name": "Java",
+          "subtitle": "OOP to records and streams",
+          "file": "data/review/java.json",
+          "section": "Programming languages"
+        },
+        {
+          "id": "haskell",
+          "name": "Haskell",
+          "subtitle": "Pure functional programming",
+          "file": "data/review/haskell.json",
+          "section": "Programming languages"
+        },
+        {
+          "id": "plsql",
+          "name": "PL/SQL",
+          "subtitle": "Oracle procedural SQL",
+          "file": "data/review/plsql.json",
+          "section": "Programming languages"
+        },
+        {
+          "id": "css",
+          "name": "CSS",
+          "subtitle": "Selectors to container queries",
+          "file": "data/review/css.json",
+          "section": "Programming languages"
+        },
+        {
+          "id": "html",
+          "name": "HTML",
+          "subtitle": "Markup, forms, accessibility",
+          "file": "data/review/html.json",
+          "section": "Programming languages"
+        },
+        {
+          "id": "computerparts",
+          "name": "Computer parts",
+          "subtitle": "Parts with current examples and specs",
+          "file": "data/review/computerparts.json",
+          "section": "Reference"
+        },
+        {
+          "id": "literature",
+          "name": "Literature",
+          "subtitle": "Culturally significant works",
+          "file": "data/review/literature.json",
+          "section": "Reference"
         }
       ]
     },
