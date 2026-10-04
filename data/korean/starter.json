@@ -6,99 +6,23 @@
    "id": "ko-starter-1",
    "sides": [
     {
-     "text": "사과",
-     "sub": "sa-gwa",
+     "text": "안녕하세요",
+     "sub": "an-nyeong-ha-se-yo",
      "more": {
-      "text": "사과를 먹어요.",
-      "sub": "sa-gwa-reul meo-geo-yo."
+      "text": "안녕하세요, 만나서 반갑습니다.",
+      "sub": "an-nyeong-ha-se-yo, man-na-seo ban-gap-seum-ni-da."
      }
     },
     {
-     "text": "apple",
+     "text": "Hello",
      "more": {
-      "text": "I eat an apple."
+      "text": "Hello, nice to meet you."
      }
     }
    ]
   },
   {
    "id": "ko-starter-2",
-   "sides": [
-    {
-     "text": "물",
-     "sub": "mul",
-     "more": {
-      "text": "물을 마셔요.",
-      "sub": "mul-eul ma-syeo-yo."
-     }
-    },
-    {
-     "text": "water",
-     "more": {
-      "text": "I drink water."
-     }
-    }
-   ]
-  },
-  {
-   "id": "ko-starter-3",
-   "sides": [
-    {
-     "text": "책",
-     "sub": "chaek",
-     "more": {
-      "text": "책을 읽어요.",
-      "sub": "chaek-eul il-geo-yo."
-     }
-    },
-    {
-     "text": "book",
-     "more": {
-      "text": "I read a book."
-     }
-    }
-   ]
-  },
-  {
-   "id": "ko-starter-4",
-   "sides": [
-    {
-     "text": "친구",
-     "sub": "chin-gu",
-     "more": {
-      "text": "친구를 만나요.",
-      "sub": "chin-gu-reul man-na-yo."
-     }
-    },
-    {
-     "text": "friend",
-     "more": {
-      "text": "I meet a friend."
-     }
-    }
-   ]
-  },
-  {
-   "id": "ko-starter-5",
-   "sides": [
-    {
-     "text": "학교",
-     "sub": "hak-gyo",
-     "more": {
-      "text": "학교에 가요.",
-      "sub": "hak-gyo-e ga-yo."
-     }
-    },
-    {
-     "text": "school",
-     "more": {
-      "text": "I go to school."
-     }
-    }
-   ]
-  },
-  {
-   "id": "ko-starter-6",
    "sides": [
     {
      "text": "감사합니다",
@@ -109,9 +33,3353 @@
      }
     },
     {
-     "text": "thank you",
+     "text": "Thank you",
      "more": {
       "text": "Thank you for helping me."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-3",
+   "sides": [
+    {
+     "text": "고마워요",
+     "sub": "go-ma-wo-yo",
+     "more": {
+      "text": "도와줘서 고마워요.",
+      "sub": "do-wa-jwo-seo go-ma-wo-yo."
+     }
+    },
+    {
+     "text": "Thanks (casual polite)",
+     "more": {
+      "text": "Thanks for helping."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-4",
+   "sides": [
+    {
+     "text": "네",
+     "sub": "ne",
+     "more": {
+      "text": "네, 맞아요.",
+      "sub": "ne, ma-ja-yo."
+     }
+    },
+    {
+     "text": "Yes",
+     "more": {
+      "text": "Yes, that's right."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-5",
+   "sides": [
+    {
+     "text": "아니요",
+     "sub": "a-ni-yo",
+     "more": {
+      "text": "아니요, 괜찮아요.",
+      "sub": "a-ni-yo, gwaen-chan-a-yo."
+     }
+    },
+    {
+     "text": "No",
+     "more": {
+      "text": "No, it's okay."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-6",
+   "sides": [
+    {
+     "text": "괜찮아요",
+     "sub": "gwaen-chan-a-yo",
+     "more": {
+      "text": "저는 괜찮아요.",
+      "sub": "jeo-neun gwaen-chan-a-yo."
+     }
+    },
+    {
+     "text": "It's okay",
+     "more": {
+      "text": "I'm okay."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-7",
+   "sides": [
+    {
+     "text": "미안합니다",
+     "sub": "mi-an-ham-ni-da",
+     "more": {
+      "text": "늦어서 미안합니다.",
+      "sub": "neu-jeo-seo mi-an-ham-ni-da."
+     }
+    },
+    {
+     "text": "I'm sorry",
+     "more": {
+      "text": "I'm sorry for being late."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-8",
+   "sides": [
+    {
+     "text": "안녕히 가세요",
+     "sub": "an-nyeong-hi ga-se-yo",
+     "more": {
+      "text": "안녕히 가세요, 내일 봐요.",
+      "sub": "an-nyeong-hi ga-se-yo, nae-il bwa-yo."
+     }
+    },
+    {
+     "text": "Goodbye (to someone leaving)",
+     "more": {
+      "text": "Goodbye, see you tomorrow."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-9",
+   "sides": [
+    {
+     "text": "주세요",
+     "sub": "ju-se-yo",
+     "more": {
+      "text": "물 좀 주세요.",
+      "sub": "mul jom ju-se-yo."
+     }
+    },
+    {
+     "text": "Please give me",
+     "more": {
+      "text": "Please give me some water."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-10",
+   "sides": [
+    {
+     "text": "잠깐만요",
+     "sub": "jam-kkan-man-yo",
+     "more": {
+      "text": "잠깐만요, 지금 가요.",
+      "sub": "jam-kkan-man-yo, ji-geum ga-yo."
+     }
+    },
+    {
+     "text": "Just a moment",
+     "more": {
+      "text": "Just a moment, I'm coming now."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-11",
+   "sides": [
+    {
+     "text": "축하합니다",
+     "sub": "chu-ka-ham-ni-da",
+     "more": {
+      "text": "생일 축하합니다.",
+      "sub": "saeng-il chu-ka-ham-ni-da."
+     }
+    },
+    {
+     "text": "Congratulations",
+     "more": {
+      "text": "Happy birthday."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-12",
+   "sides": [
+    {
+     "text": "이름",
+     "sub": "i-reum",
+     "more": {
+      "text": "제 이름은 민수예요.",
+      "sub": "je i-reu-meun min-su-ye-yo."
+     }
+    },
+    {
+     "text": "Name",
+     "more": {
+      "text": "My name is Minsu."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-13",
+   "sides": [
+    {
+     "text": "저",
+     "sub": "jeo",
+     "more": {
+      "text": "저는 학생이에요.",
+      "sub": "jeo-neun hak-saeng-i-e-yo."
+     }
+    },
+    {
+     "text": "I (polite)",
+     "more": {
+      "text": "I am a student."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-14",
+   "sides": [
+    {
+     "text": "나",
+     "sub": "na",
+     "more": {
+      "text": "나는 커피를 마셔.",
+      "sub": "na-neun keo-pi-reul ma-syeo."
+     }
+    },
+    {
+     "text": "I (casual)",
+     "more": {
+      "text": "I drink coffee."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-15",
+   "sides": [
+    {
+     "text": "우리",
+     "sub": "u-ri",
+     "more": {
+      "text": "우리는 친구예요.",
+      "sub": "u-ri-neun chin-gu-ye-yo."
+     }
+    },
+    {
+     "text": "We",
+     "more": {
+      "text": "We are friends."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-16",
+   "sides": [
+    {
+     "text": "사람",
+     "sub": "sa-ram",
+     "more": {
+      "text": "그 사람은 친절해요.",
+      "sub": "geu sa-ra-meun chin-jeol-hae-yo."
+     }
+    },
+    {
+     "text": "Person",
+     "more": {
+      "text": "That person is kind."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-17",
+   "sides": [
+    {
+     "text": "친구",
+     "sub": "chin-gu",
+     "more": {
+      "text": "친구를 만나요.",
+      "sub": "chin-gu-reul man-na-yo."
+     }
+    },
+    {
+     "text": "Friend",
+     "more": {
+      "text": "I meet a friend."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-18",
+   "sides": [
+    {
+     "text": "학생",
+     "sub": "hak-saeng",
+     "more": {
+      "text": "학생이 공부해요.",
+      "sub": "hak-saeng-i gong-bu-hae-yo."
+     }
+    },
+    {
+     "text": "Student",
+     "more": {
+      "text": "The student studies."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-19",
+   "sides": [
+    {
+     "text": "선생님",
+     "sub": "seon-saeng-nim",
+     "more": {
+      "text": "선생님이 가르쳐요.",
+      "sub": "seon-saeng-ni-mi ga-reu-chyeo-yo."
+     }
+    },
+    {
+     "text": "Teacher",
+     "more": {
+      "text": "The teacher teaches."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-20",
+   "sides": [
+    {
+     "text": "의사",
+     "sub": "ui-sa",
+     "more": {
+      "text": "의사가 병원에 있어요.",
+      "sub": "ui-sa-ga byeong-wo-ne i-sseo-yo."
+     }
+    },
+    {
+     "text": "Doctor",
+     "more": {
+      "text": "The doctor is at the hospital."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-21",
+   "sides": [
+    {
+     "text": "남자",
+     "sub": "nam-ja",
+     "more": {
+      "text": "저 남자는 의사예요.",
+      "sub": "jeo nam-ja-neun ui-sa-ye-yo."
+     }
+    },
+    {
+     "text": "Man",
+     "more": {
+      "text": "That man is a doctor."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-22",
+   "sides": [
+    {
+     "text": "여자",
+     "sub": "yeo-ja",
+     "more": {
+      "text": "저 여자는 선생님이에요.",
+      "sub": "jeo yeo-ja-neun seon-saeng-ni-mi-e-yo."
+     }
+    },
+    {
+     "text": "Woman",
+     "more": {
+      "text": "That woman is a teacher."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-23",
+   "sides": [
+    {
+     "text": "아이",
+     "sub": "a-i",
+     "more": {
+      "text": "아이가 웃어요.",
+      "sub": "a-i-ga u-seo-yo."
+     }
+    },
+    {
+     "text": "Child",
+     "more": {
+      "text": "The child laughs."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-24",
+   "sides": [
+    {
+     "text": "가족",
+     "sub": "ga-jok",
+     "more": {
+      "text": "우리 가족은 네 명이에요.",
+      "sub": "u-ri ga-jo-geun ne myeong-i-e-yo."
+     }
+    },
+    {
+     "text": "Family",
+     "more": {
+      "text": "My family has four people."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-25",
+   "sides": [
+    {
+     "text": "엄마",
+     "sub": "eom-ma",
+     "more": {
+      "text": "엄마가 요리해요.",
+      "sub": "eom-ma-ga yo-ri-hae-yo."
+     }
+    },
+    {
+     "text": "Mom",
+     "more": {
+      "text": "Mom cooks."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-26",
+   "sides": [
+    {
+     "text": "아빠",
+     "sub": "a-ppa",
+     "more": {
+      "text": "아빠는 회사에 가요.",
+      "sub": "a-ppa-neun hoe-sa-e ga-yo."
+     }
+    },
+    {
+     "text": "Dad",
+     "more": {
+      "text": "Dad goes to the office."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-27",
+   "sides": [
+    {
+     "text": "동생",
+     "sub": "dong-saeng",
+     "more": {
+      "text": "제 동생은 열 살이에요.",
+      "sub": "je dong-saeng-eun yeol sa-ri-e-yo."
+     }
+    },
+    {
+     "text": "Younger sibling",
+     "more": {
+      "text": "My younger sibling is ten years old."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-28",
+   "sides": [
+    {
+     "text": "하나",
+     "sub": "ha-na",
+     "more": {
+      "text": "사과가 하나 있어요.",
+      "sub": "sa-gwa-ga ha-na i-sseo-yo."
+     }
+    },
+    {
+     "text": "One (native Korean)",
+     "more": {
+      "text": "There is one apple."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-29",
+   "sides": [
+    {
+     "text": "둘",
+     "sub": "dul",
+     "more": {
+      "text": "친구가 둘 있어요.",
+      "sub": "chin-gu-ga dul i-sseo-yo."
+     }
+    },
+    {
+     "text": "Two (native Korean)",
+     "more": {
+      "text": "I have two friends."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-30",
+   "sides": [
+    {
+     "text": "셋",
+     "sub": "set",
+     "more": {
+      "text": "책이 셋 있어요.",
+      "sub": "chae-gi set i-sseo-yo."
+     }
+    },
+    {
+     "text": "Three (native Korean)",
+     "more": {
+      "text": "There are three books."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-31",
+   "sides": [
+    {
+     "text": "일, 이, 삼",
+     "sub": "il, i, sam",
+     "more": {
+      "text": "일 더하기 이는 삼이에요.",
+      "sub": "il deo-ha-gi i-neun sa-mi-e-yo."
+     }
+    },
+    {
+     "text": "One, two, three (Sino-Korean)",
+     "more": {
+      "text": "One plus two is three."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-32",
+   "sides": [
+    {
+     "text": "십",
+     "sub": "sip",
+     "more": {
+      "text": "십 분만 기다려요.",
+      "sub": "sip bun-man gi-da-ryeo-yo."
+     }
+    },
+    {
+     "text": "Ten (Sino-Korean)",
+     "more": {
+      "text": "I'll wait just ten minutes."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-33",
+   "sides": [
+    {
+     "text": "백",
+     "sub": "baek",
+     "more": {
+      "text": "백 원이에요.",
+      "sub": "baek wo-ni-e-yo."
+     }
+    },
+    {
+     "text": "Hundred",
+     "more": {
+      "text": "It's one hundred won."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-34",
+   "sides": [
+    {
+     "text": "오늘",
+     "sub": "o-neul",
+     "more": {
+      "text": "오늘은 월요일이에요.",
+      "sub": "o-neu-reun wo-ryo-i-ri-e-yo."
+     }
+    },
+    {
+     "text": "Today",
+     "more": {
+      "text": "Today is Monday."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-35",
+   "sides": [
+    {
+     "text": "내일",
+     "sub": "nae-il",
+     "more": {
+      "text": "내일 만나요.",
+      "sub": "nae-il man-na-yo."
+     }
+    },
+    {
+     "text": "Tomorrow",
+     "more": {
+      "text": "Let's meet tomorrow."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-36",
+   "sides": [
+    {
+     "text": "어제",
+     "sub": "eo-je",
+     "more": {
+      "text": "어제 영화를 봤어요.",
+      "sub": "eo-je yeong-hwa-reul bwa-sseo-yo."
+     }
+    },
+    {
+     "text": "Yesterday",
+     "more": {
+      "text": "I watched a movie yesterday."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-37",
+   "sides": [
+    {
+     "text": "지금",
+     "sub": "ji-geum",
+     "more": {
+      "text": "지금 몇 시예요?",
+      "sub": "ji-geum myeot si-ye-yo?"
+     }
+    },
+    {
+     "text": "Now",
+     "more": {
+      "text": "What time is it now?"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-38",
+   "sides": [
+    {
+     "text": "시간",
+     "sub": "si-gan",
+     "more": {
+      "text": "시간이 없어요.",
+      "sub": "si-ga-ni eop-seo-yo."
+     }
+    },
+    {
+     "text": "Time",
+     "more": {
+      "text": "I don't have time."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-39",
+   "sides": [
+    {
+     "text": "아침",
+     "sub": "a-chim",
+     "more": {
+      "text": "아침에 커피를 마셔요.",
+      "sub": "a-chi-me keo-pi-reul ma-syeo-yo."
+     }
+    },
+    {
+     "text": "Morning",
+     "more": {
+      "text": "I drink coffee in the morning."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-40",
+   "sides": [
+    {
+     "text": "저녁",
+     "sub": "jeo-nyeok",
+     "more": {
+      "text": "저녁에 운동해요.",
+      "sub": "jeo-nyeo-ge un-dong-hae-yo."
+     }
+    },
+    {
+     "text": "Evening",
+     "more": {
+      "text": "I exercise in the evening."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-41",
+   "sides": [
+    {
+     "text": "밤",
+     "sub": "bam",
+     "more": {
+      "text": "밤에 자요.",
+      "sub": "ba-me ja-yo."
+     }
+    },
+    {
+     "text": "Night",
+     "more": {
+      "text": "I sleep at night."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-42",
+   "sides": [
+    {
+     "text": "주말",
+     "sub": "ju-mal",
+     "more": {
+      "text": "주말에 쉬어요.",
+      "sub": "ju-ma-re swi-eo-yo."
+     }
+    },
+    {
+     "text": "Weekend",
+     "more": {
+      "text": "I rest on the weekend."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-43",
+   "sides": [
+    {
+     "text": "매일",
+     "sub": "mae-il",
+     "more": {
+      "text": "매일 한국어를 공부해요.",
+      "sub": "mae-il han-gu-geo-reul gong-bu-hae-yo."
+     }
+    },
+    {
+     "text": "Every day",
+     "more": {
+      "text": "I study Korean every day."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-44",
+   "sides": [
+    {
+     "text": "뭐",
+     "sub": "mwo",
+     "more": {
+      "text": "이게 뭐예요?",
+      "sub": "i-ge mwo-ye-yo?"
+     }
+    },
+    {
+     "text": "What",
+     "more": {
+      "text": "What is this?"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-45",
+   "sides": [
+    {
+     "text": "누구",
+     "sub": "nu-gu",
+     "more": {
+      "text": "누구예요?",
+      "sub": "nu-gu-ye-yo?"
+     }
+    },
+    {
+     "text": "Who",
+     "more": {
+      "text": "Who is it?"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-46",
+   "sides": [
+    {
+     "text": "어디",
+     "sub": "eo-di",
+     "more": {
+      "text": "화장실이 어디예요?",
+      "sub": "hwa-jang-si-ri eo-di-ye-yo?"
+     }
+    },
+    {
+     "text": "Where",
+     "more": {
+      "text": "Where is the restroom?"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-47",
+   "sides": [
+    {
+     "text": "언제",
+     "sub": "eon-je",
+     "more": {
+      "text": "언제 와요?",
+      "sub": "eon-je wa-yo?"
+     }
+    },
+    {
+     "text": "When",
+     "more": {
+      "text": "When are you coming?"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-48",
+   "sides": [
+    {
+     "text": "왜",
+     "sub": "wae",
+     "more": {
+      "text": "왜 늦었어요?",
+      "sub": "wae neu-jeo-sseo-yo?"
+     }
+    },
+    {
+     "text": "Why",
+     "more": {
+      "text": "Why are you late?"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-49",
+   "sides": [
+    {
+     "text": "어떻게",
+     "sub": "eo-tteo-ke",
+     "more": {
+      "text": "어떻게 가요?",
+      "sub": "eo-tteo-ke ga-yo?"
+     }
+    },
+    {
+     "text": "How",
+     "more": {
+      "text": "How do I get there?"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-50",
+   "sides": [
+    {
+     "text": "얼마",
+     "sub": "eol-ma",
+     "more": {
+      "text": "이거 얼마예요?",
+      "sub": "i-geo eol-ma-ye-yo?"
+     }
+    },
+    {
+     "text": "How much",
+     "more": {
+      "text": "How much is this?"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-51",
+   "sides": [
+    {
+     "text": "몇",
+     "sub": "myeot",
+     "more": {
+      "text": "몇 살이에요?",
+      "sub": "myeot sa-ri-e-yo?"
+     }
+    },
+    {
+     "text": "How many (a number)",
+     "more": {
+      "text": "How old are you?"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-52",
+   "sides": [
+    {
+     "text": "이것",
+     "sub": "i-geot",
+     "more": {
+      "text": "이것은 책이에요.",
+      "sub": "i-geo-seun chae-gi-e-yo."
+     }
+    },
+    {
+     "text": "This",
+     "more": {
+      "text": "This is a book."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-53",
+   "sides": [
+    {
+     "text": "그것",
+     "sub": "geu-geot",
+     "more": {
+      "text": "그것은 가방이에요.",
+      "sub": "geu-geo-seun ga-bang-i-e-yo."
+     }
+    },
+    {
+     "text": "That",
+     "more": {
+      "text": "That is a bag."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-54",
+   "sides": [
+    {
+     "text": "저것",
+     "sub": "jeo-geot",
+     "more": {
+      "text": "저것은 무엇이에요?",
+      "sub": "jeo-geo-seun mu-eo-si-e-yo?"
+     }
+    },
+    {
+     "text": "That over there",
+     "more": {
+      "text": "What is that over there?"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-55",
+   "sides": [
+    {
+     "text": "물",
+     "sub": "mul",
+     "more": {
+      "text": "물을 마셔요.",
+      "sub": "mu-reul ma-syeo-yo."
+     }
+    },
+    {
+     "text": "Water",
+     "more": {
+      "text": "I drink water."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-56",
+   "sides": [
+    {
+     "text": "밥",
+     "sub": "bap",
+     "more": {
+      "text": "밥을 먹어요.",
+      "sub": "ba-beul meo-geo-yo."
+     }
+    },
+    {
+     "text": "Rice, a meal",
+     "more": {
+      "text": "I eat a meal."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-57",
+   "sides": [
+    {
+     "text": "사과",
+     "sub": "sa-gwa",
+     "more": {
+      "text": "사과를 먹어요.",
+      "sub": "sa-gwa-reul meo-geo-yo."
+     }
+    },
+    {
+     "text": "Apple",
+     "more": {
+      "text": "I eat an apple."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-58",
+   "sides": [
+    {
+     "text": "과일",
+     "sub": "gwa-il",
+     "more": {
+      "text": "과일이 맛있어요.",
+      "sub": "gwa-i-ri ma-si-sseo-yo."
+     }
+    },
+    {
+     "text": "Fruit",
+     "more": {
+      "text": "The fruit is delicious."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-59",
+   "sides": [
+    {
+     "text": "김치",
+     "sub": "gim-chi",
+     "more": {
+      "text": "김치를 먹어요.",
+      "sub": "gim-chi-reul meo-geo-yo."
+     }
+    },
+    {
+     "text": "Kimchi",
+     "more": {
+      "text": "I eat kimchi."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-60",
+   "sides": [
+    {
+     "text": "커피",
+     "sub": "keo-pi",
+     "more": {
+      "text": "커피를 좋아해요.",
+      "sub": "keo-pi-reul jo-a-hae-yo."
+     }
+    },
+    {
+     "text": "Coffee",
+     "more": {
+      "text": "I like coffee."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-61",
+   "sides": [
+    {
+     "text": "차",
+     "sub": "cha",
+     "more": {
+      "text": "차를 마셔요.",
+      "sub": "cha-reul ma-syeo-yo."
+     }
+    },
+    {
+     "text": "Tea (also: car)",
+     "more": {
+      "text": "I drink tea."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-62",
+   "sides": [
+    {
+     "text": "빵",
+     "sub": "ppang",
+     "more": {
+      "text": "아침에 빵을 먹어요.",
+      "sub": "a-chi-me ppang-eul meo-geo-yo."
+     }
+    },
+    {
+     "text": "Bread",
+     "more": {
+      "text": "I eat bread in the morning."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-63",
+   "sides": [
+    {
+     "text": "우유",
+     "sub": "u-yu",
+     "more": {
+      "text": "우유를 마셔요.",
+      "sub": "u-yu-reul ma-syeo-yo."
+     }
+    },
+    {
+     "text": "Milk",
+     "more": {
+      "text": "I drink milk."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-64",
+   "sides": [
+    {
+     "text": "고기",
+     "sub": "go-gi",
+     "more": {
+      "text": "고기를 구워요.",
+      "sub": "go-gi-reul gu-wo-yo."
+     }
+    },
+    {
+     "text": "Meat",
+     "more": {
+      "text": "I grill meat."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-65",
+   "sides": [
+    {
+     "text": "생선",
+     "sub": "saeng-seon",
+     "more": {
+      "text": "생선이 신선해요.",
+      "sub": "saeng-seon-i sin-seon-hae-yo."
+     }
+    },
+    {
+     "text": "Fish (as food)",
+     "more": {
+      "text": "The fish is fresh."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-66",
+   "sides": [
+    {
+     "text": "야채",
+     "sub": "ya-chae",
+     "more": {
+      "text": "야채를 많이 먹어요.",
+      "sub": "ya-chae-reul ma-ni meo-geo-yo."
+     }
+    },
+    {
+     "text": "Vegetables",
+     "more": {
+      "text": "I eat lots of vegetables."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-67",
+   "sides": [
+    {
+     "text": "음식",
+     "sub": "eum-sik",
+     "more": {
+      "text": "한국 음식을 좋아해요.",
+      "sub": "han-guk eum-si-geul jo-a-hae-yo."
+     }
+    },
+    {
+     "text": "Food",
+     "more": {
+      "text": "I like Korean food."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-68",
+   "sides": [
+    {
+     "text": "점심",
+     "sub": "jeom-sim",
+     "more": {
+      "text": "점심은 한 시에 먹어요.",
+      "sub": "jeom-si-meun han si-e meo-geo-yo."
+     }
+    },
+    {
+     "text": "Lunch",
+     "more": {
+      "text": "I eat lunch at one o'clock."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-69",
+   "sides": [
+    {
+     "text": "맛있어요",
+     "sub": "ma-si-sseo-yo",
+     "more": {
+      "text": "이 음식은 맛있어요.",
+      "sub": "i eum-si-geun ma-si-sseo-yo."
+     }
+    },
+    {
+     "text": "It's delicious",
+     "more": {
+      "text": "This food is delicious."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-70",
+   "sides": [
+    {
+     "text": "집",
+     "sub": "jip",
+     "more": {
+      "text": "집에 가요.",
+      "sub": "ji-be ga-yo."
+     }
+    },
+    {
+     "text": "Home, house",
+     "more": {
+      "text": "I go home."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-71",
+   "sides": [
+    {
+     "text": "학교",
+     "sub": "hak-gyo",
+     "more": {
+      "text": "학교에 가요.",
+      "sub": "hak-gyo-e ga-yo."
+     }
+    },
+    {
+     "text": "School",
+     "more": {
+      "text": "I go to school."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-72",
+   "sides": [
+    {
+     "text": "회사",
+     "sub": "hoe-sa",
+     "more": {
+      "text": "회사에서 일해요.",
+      "sub": "hoe-sa-e-seo il-hae-yo."
+     }
+    },
+    {
+     "text": "Company, office",
+     "more": {
+      "text": "I work at the company."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-73",
+   "sides": [
+    {
+     "text": "식당",
+     "sub": "sik-dang",
+     "more": {
+      "text": "식당에서 점심을 먹어요.",
+      "sub": "sik-dang-e-seo jeom-si-meul meo-geo-yo."
+     }
+    },
+    {
+     "text": "Restaurant",
+     "more": {
+      "text": "I eat lunch at the restaurant."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-74",
+   "sides": [
+    {
+     "text": "병원",
+     "sub": "byeong-won",
+     "more": {
+      "text": "병원이 가까워요.",
+      "sub": "byeong-wo-ni ga-kka-wo-yo."
+     }
+    },
+    {
+     "text": "Hospital",
+     "more": {
+      "text": "The hospital is close."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-75",
+   "sides": [
+    {
+     "text": "가게",
+     "sub": "ga-ge",
+     "more": {
+      "text": "가게에서 우유를 사요.",
+      "sub": "ga-ge-e-seo u-yu-reul sa-yo."
+     }
+    },
+    {
+     "text": "Shop",
+     "more": {
+      "text": "I buy milk at the shop."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-76",
+   "sides": [
+    {
+     "text": "은행",
+     "sub": "eun-haeng",
+     "more": {
+      "text": "은행은 어디예요?",
+      "sub": "eun-haeng-eun eo-di-ye-yo?"
+     }
+    },
+    {
+     "text": "Bank",
+     "more": {
+      "text": "Where is the bank?"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-77",
+   "sides": [
+    {
+     "text": "공원",
+     "sub": "gong-won",
+     "more": {
+      "text": "공원에서 걸어요.",
+      "sub": "gong-wo-ne-seo geo-reo-yo."
+     }
+    },
+    {
+     "text": "Park",
+     "more": {
+      "text": "I walk in the park."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-78",
+   "sides": [
+    {
+     "text": "도서관",
+     "sub": "do-seo-gwan",
+     "more": {
+      "text": "도서관에서 책을 읽어요.",
+      "sub": "do-seo-gwa-ne-seo chae-geul il-geo-yo."
+     }
+    },
+    {
+     "text": "Library",
+     "more": {
+      "text": "I read books at the library."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-79",
+   "sides": [
+    {
+     "text": "한국",
+     "sub": "han-guk",
+     "more": {
+      "text": "한국에 가고 싶어요.",
+      "sub": "han-gu-ge ga-go si-peo-yo."
+     }
+    },
+    {
+     "text": "Korea",
+     "more": {
+      "text": "I want to go to Korea."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-80",
+   "sides": [
+    {
+     "text": "한국어",
+     "sub": "han-gu-geo",
+     "more": {
+      "text": "한국어를 공부해요.",
+      "sub": "han-gu-geo-reul gong-bu-hae-yo."
+     }
+    },
+    {
+     "text": "Korean (language)",
+     "more": {
+      "text": "I study Korean."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-81",
+   "sides": [
+    {
+     "text": "나라",
+     "sub": "na-ra",
+     "more": {
+      "text": "어느 나라 사람이에요?",
+      "sub": "eo-neu na-ra sa-ra-mi-e-yo?"
+     }
+    },
+    {
+     "text": "Country",
+     "more": {
+      "text": "Which country are you from?"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-82",
+   "sides": [
+    {
+     "text": "도시",
+     "sub": "do-si",
+     "more": {
+      "text": "서울은 큰 도시예요.",
+      "sub": "seo-u-reun keun do-si-ye-yo."
+     }
+    },
+    {
+     "text": "City",
+     "more": {
+      "text": "Seoul is a big city."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-83",
+   "sides": [
+    {
+     "text": "책",
+     "sub": "chaek",
+     "more": {
+      "text": "책을 읽어요.",
+      "sub": "chae-geul il-geo-yo."
+     }
+    },
+    {
+     "text": "Book",
+     "more": {
+      "text": "I read a book."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-84",
+   "sides": [
+    {
+     "text": "가방",
+     "sub": "ga-bang",
+     "more": {
+      "text": "가방이 무거워요.",
+      "sub": "ga-bang-i mu-geo-wo-yo."
+     }
+    },
+    {
+     "text": "Bag",
+     "more": {
+      "text": "The bag is heavy."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-85",
+   "sides": [
+    {
+     "text": "휴대폰",
+     "sub": "hyu-dae-pon",
+     "more": {
+      "text": "휴대폰이 없어요.",
+      "sub": "hyu-dae-po-ni eop-seo-yo."
+     }
+    },
+    {
+     "text": "Mobile phone",
+     "more": {
+      "text": "I don't have my phone."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-86",
+   "sides": [
+    {
+     "text": "컴퓨터",
+     "sub": "keom-pyu-teo",
+     "more": {
+      "text": "컴퓨터를 사용해요.",
+      "sub": "keom-pyu-teo-reul sa-yong-hae-yo."
+     }
+    },
+    {
+     "text": "Computer",
+     "more": {
+      "text": "I use a computer."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-87",
+   "sides": [
+    {
+     "text": "문",
+     "sub": "mun",
+     "more": {
+      "text": "문을 열어요.",
+      "sub": "mu-neul yeo-reo-yo."
+     }
+    },
+    {
+     "text": "Door",
+     "more": {
+      "text": "I open the door."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-88",
+   "sides": [
+    {
+     "text": "창문",
+     "sub": "chang-mun",
+     "more": {
+      "text": "창문을 닫아요.",
+      "sub": "chang-mu-neul da-da-yo."
+     }
+    },
+    {
+     "text": "Window",
+     "more": {
+      "text": "I close the window."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-89",
+   "sides": [
+    {
+     "text": "의자",
+     "sub": "ui-ja",
+     "more": {
+      "text": "의자에 앉아요.",
+      "sub": "ui-ja-e an-ja-yo."
+     }
+    },
+    {
+     "text": "Chair",
+     "more": {
+      "text": "I sit on the chair."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-90",
+   "sides": [
+    {
+     "text": "책상",
+     "sub": "chaek-sang",
+     "more": {
+      "text": "책상 위에 책이 있어요.",
+      "sub": "chaek-sang wi-e chae-gi i-sseo-yo."
+     }
+    },
+    {
+     "text": "Desk",
+     "more": {
+      "text": "There's a book on the desk."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-91",
+   "sides": [
+    {
+     "text": "돈",
+     "sub": "don",
+     "more": {
+      "text": "돈이 필요해요.",
+      "sub": "do-ni pi-ryo-hae-yo."
+     }
+    },
+    {
+     "text": "Money",
+     "more": {
+      "text": "I need money."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-92",
+   "sides": [
+    {
+     "text": "우산",
+     "sub": "u-san",
+     "more": {
+      "text": "우산을 가져가요.",
+      "sub": "u-sa-neul ga-jyeo-ga-yo."
+     }
+    },
+    {
+     "text": "Umbrella",
+     "more": {
+      "text": "I take an umbrella."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-93",
+   "sides": [
+    {
+     "text": "신발",
+     "sub": "sin-bal",
+     "more": {
+      "text": "신발을 신어요.",
+      "sub": "sin-ba-reul si-neo-yo."
+     }
+    },
+    {
+     "text": "Shoes",
+     "more": {
+      "text": "I put on shoes."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-94",
+   "sides": [
+    {
+     "text": "옷",
+     "sub": "ot",
+     "more": {
+      "text": "옷이 예뻐요.",
+      "sub": "o-si ye-ppeo-yo."
+     }
+    },
+    {
+     "text": "Clothes",
+     "more": {
+      "text": "The clothes are pretty."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-95",
+   "sides": [
+    {
+     "text": "선물",
+     "sub": "seon-mul",
+     "more": {
+      "text": "친구에게 선물을 줘요.",
+      "sub": "chin-gu-e-ge seon-mu-reul jwo-yo."
+     }
+    },
+    {
+     "text": "Gift",
+     "more": {
+      "text": "I give my friend a gift."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-96",
+   "sides": [
+    {
+     "text": "먹다",
+     "sub": "meok-da",
+     "more": {
+      "text": "저녁에 고기를 먹어요.",
+      "sub": "jeo-nyeo-ge go-gi-reul meo-geo-yo."
+     }
+    },
+    {
+     "text": "To eat",
+     "more": {
+      "text": "I eat meat in the evening."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-97",
+   "sides": [
+    {
+     "text": "마시다",
+     "sub": "ma-si-da",
+     "more": {
+      "text": "주스를 마셔요.",
+      "sub": "ju-seu-reul ma-syeo-yo."
+     }
+    },
+    {
+     "text": "To drink",
+     "more": {
+      "text": "I drink juice."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-98",
+   "sides": [
+    {
+     "text": "가다",
+     "sub": "ga-da",
+     "more": {
+      "text": "시장에 가요.",
+      "sub": "si-jang-e ga-yo."
+     }
+    },
+    {
+     "text": "To go",
+     "more": {
+      "text": "I go to the market."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-99",
+   "sides": [
+    {
+     "text": "오다",
+     "sub": "o-da",
+     "more": {
+      "text": "친구가 와요.",
+      "sub": "chin-gu-ga wa-yo."
+     }
+    },
+    {
+     "text": "To come",
+     "more": {
+      "text": "My friend is coming."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-100",
+   "sides": [
+    {
+     "text": "보다",
+     "sub": "bo-da",
+     "more": {
+      "text": "영화를 봐요.",
+      "sub": "yeong-hwa-reul bwa-yo."
+     }
+    },
+    {
+     "text": "To see, to watch",
+     "more": {
+      "text": "I watch a movie."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-101",
+   "sides": [
+    {
+     "text": "하다",
+     "sub": "ha-da",
+     "more": {
+      "text": "숙제를 해요.",
+      "sub": "suk-je-reul hae-yo."
+     }
+    },
+    {
+     "text": "To do",
+     "more": {
+      "text": "I do homework."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-102",
+   "sides": [
+    {
+     "text": "읽다",
+     "sub": "ik-da",
+     "more": {
+      "text": "신문을 읽어요.",
+      "sub": "sin-mu-neul il-geo-yo."
+     }
+    },
+    {
+     "text": "To read",
+     "more": {
+      "text": "I read the newspaper."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-103",
+   "sides": [
+    {
+     "text": "쓰다",
+     "sub": "sseu-da",
+     "more": {
+      "text": "편지를 써요.",
+      "sub": "pyeon-ji-reul sseo-yo."
+     }
+    },
+    {
+     "text": "To write",
+     "more": {
+      "text": "I write a letter."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-104",
+   "sides": [
+    {
+     "text": "듣다",
+     "sub": "deut-da",
+     "more": {
+      "text": "음악을 들어요.",
+      "sub": "eu-ma-geul deu-reo-yo."
+     }
+    },
+    {
+     "text": "To listen",
+     "more": {
+      "text": "I listen to music."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-105",
+   "sides": [
+    {
+     "text": "말하다",
+     "sub": "mal-ha-da",
+     "more": {
+      "text": "한국어로 말해요.",
+      "sub": "han-gu-geo-ro mal-hae-yo."
+     }
+    },
+    {
+     "text": "To speak",
+     "more": {
+      "text": "I speak in Korean."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-106",
+   "sides": [
+    {
+     "text": "공부하다",
+     "sub": "gong-bu-ha-da",
+     "more": {
+      "text": "도서관에서 공부해요.",
+      "sub": "do-seo-gwa-ne-seo gong-bu-hae-yo."
+     }
+    },
+    {
+     "text": "To study",
+     "more": {
+      "text": "I study at the library."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-107",
+   "sides": [
+    {
+     "text": "일하다",
+     "sub": "il-ha-da",
+     "more": {
+      "text": "매일 열심히 일해요.",
+      "sub": "mae-il yeol-sim-hi il-hae-yo."
+     }
+    },
+    {
+     "text": "To work",
+     "more": {
+      "text": "I work hard every day."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-108",
+   "sides": [
+    {
+     "text": "자다",
+     "sub": "ja-da",
+     "more": {
+      "text": "열한 시에 자요.",
+      "sub": "yeol-han si-e ja-yo."
+     }
+    },
+    {
+     "text": "To sleep",
+     "more": {
+      "text": "I sleep at eleven."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-109",
+   "sides": [
+    {
+     "text": "일어나다",
+     "sub": "i-reo-na-da",
+     "more": {
+      "text": "일곱 시에 일어나요.",
+      "sub": "il-gop si-e i-reo-na-yo."
+     }
+    },
+    {
+     "text": "To wake up",
+     "more": {
+      "text": "I wake up at seven."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-110",
+   "sides": [
+    {
+     "text": "만나다",
+     "sub": "man-na-da",
+     "more": {
+      "text": "선생님을 만나요.",
+      "sub": "seon-saeng-ni-meul man-na-yo."
+     }
+    },
+    {
+     "text": "To meet",
+     "more": {
+      "text": "I meet the teacher."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-111",
+   "sides": [
+    {
+     "text": "사다",
+     "sub": "sa-da",
+     "more": {
+      "text": "시장에서 과일을 사요.",
+      "sub": "si-jang-e-seo gwa-i-reul sa-yo."
+     }
+    },
+    {
+     "text": "To buy",
+     "more": {
+      "text": "I buy fruit at the market."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-112",
+   "sides": [
+    {
+     "text": "주다",
+     "sub": "ju-da",
+     "more": {
+      "text": "동생에게 책을 줘요.",
+      "sub": "dong-saeng-e-ge chae-geul jwo-yo."
+     }
+    },
+    {
+     "text": "To give",
+     "more": {
+      "text": "I give my younger sibling a book."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-113",
+   "sides": [
+    {
+     "text": "좋아하다",
+     "sub": "jo-a-ha-da",
+     "more": {
+      "text": "저는 음악을 좋아해요.",
+      "sub": "jeo-neun eu-ma-geul jo-a-hae-yo."
+     }
+    },
+    {
+     "text": "To like",
+     "more": {
+      "text": "I like music."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-114",
+   "sides": [
+    {
+     "text": "사랑하다",
+     "sub": "sa-rang-ha-da",
+     "more": {
+      "text": "가족을 사랑해요.",
+      "sub": "ga-jo-geul sa-rang-hae-yo."
+     }
+    },
+    {
+     "text": "To love",
+     "more": {
+      "text": "I love my family."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-115",
+   "sides": [
+    {
+     "text": "알다",
+     "sub": "al-da",
+     "more": {
+      "text": "그 사람을 알아요.",
+      "sub": "geu sa-ra-meul a-ra-yo."
+     }
+    },
+    {
+     "text": "To know",
+     "more": {
+      "text": "I know that person."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-116",
+   "sides": [
+    {
+     "text": "모르다",
+     "sub": "mo-reu-da",
+     "more": {
+      "text": "답을 몰라요.",
+      "sub": "da-beul mol-la-yo."
+     }
+    },
+    {
+     "text": "To not know",
+     "more": {
+      "text": "I don't know the answer."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-117",
+   "sides": [
+    {
+     "text": "있다",
+     "sub": "it-da",
+     "more": {
+      "text": "집에 있어요.",
+      "sub": "ji-be i-sseo-yo."
+     }
+    },
+    {
+     "text": "To be (somewhere), to have",
+     "more": {
+      "text": "I'm at home."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-118",
+   "sides": [
+    {
+     "text": "없다",
+     "sub": "eop-da",
+     "more": {
+      "text": "돈이 없어요.",
+      "sub": "do-ni eop-seo-yo."
+     }
+    },
+    {
+     "text": "To not be, to not have",
+     "more": {
+      "text": "I don't have money."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-119",
+   "sides": [
+    {
+     "text": "걷다",
+     "sub": "geot-da",
+     "more": {
+      "text": "천천히 걸어요.",
+      "sub": "cheon-cheon-hi geo-reo-yo."
+     }
+    },
+    {
+     "text": "To walk",
+     "more": {
+      "text": "I walk slowly."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-120",
+   "sides": [
+    {
+     "text": "도와주다",
+     "sub": "do-wa-ju-da",
+     "more": {
+      "text": "저를 도와주세요.",
+      "sub": "jeo-reul do-wa-ju-se-yo."
+     }
+    },
+    {
+     "text": "To help",
+     "more": {
+      "text": "Please help me."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-121",
+   "sides": [
+    {
+     "text": "기다리다",
+     "sub": "gi-da-ri-da",
+     "more": {
+      "text": "잠깐만 기다리세요.",
+      "sub": "jam-kkan-man gi-da-ri-se-yo."
+     }
+    },
+    {
+     "text": "To wait",
+     "more": {
+      "text": "Please wait a moment."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-122",
+   "sides": [
+    {
+     "text": "배우다",
+     "sub": "bae-u-da",
+     "more": {
+      "text": "한국어를 배워요.",
+      "sub": "han-gu-geo-reul bae-wo-yo."
+     }
+    },
+    {
+     "text": "To learn",
+     "more": {
+      "text": "I learn Korean."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-123",
+   "sides": [
+    {
+     "text": "보고 싶다",
+     "sub": "bo-go sip-da",
+     "more": {
+      "text": "가족이 보고 싶어요.",
+      "sub": "ga-jo-gi bo-go si-peo-yo."
+     }
+    },
+    {
+     "text": "To miss (someone)",
+     "more": {
+      "text": "I miss my family."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-124",
+   "sides": [
+    {
+     "text": "좋다",
+     "sub": "jo-ta",
+     "more": {
+      "text": "이 책이 좋아요.",
+      "sub": "i chae-gi jo-a-yo."
+     }
+    },
+    {
+     "text": "To be good",
+     "more": {
+      "text": "This book is good."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-125",
+   "sides": [
+    {
+     "text": "나쁘다",
+     "sub": "na-ppeu-da",
+     "more": {
+      "text": "기분이 나빠요.",
+      "sub": "gi-bu-ni na-ppa-yo."
+     }
+    },
+    {
+     "text": "To be bad",
+     "more": {
+      "text": "I feel bad."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-126",
+   "sides": [
+    {
+     "text": "크다",
+     "sub": "keu-da",
+     "more": {
+      "text": "집이 커요.",
+      "sub": "ji-bi keo-yo."
+     }
+    },
+    {
+     "text": "To be big",
+     "more": {
+      "text": "The house is big."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-127",
+   "sides": [
+    {
+     "text": "작다",
+     "sub": "jak-da",
+     "more": {
+      "text": "가방이 작아요.",
+      "sub": "ga-bang-i ja-ga-yo."
+     }
+    },
+    {
+     "text": "To be small",
+     "more": {
+      "text": "The bag is small."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-128",
+   "sides": [
+    {
+     "text": "많다",
+     "sub": "man-ta",
+     "more": {
+      "text": "사람이 많아요.",
+      "sub": "sa-ra-mi ma-na-yo."
+     }
+    },
+    {
+     "text": "To be many",
+     "more": {
+      "text": "There are many people."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-129",
+   "sides": [
+    {
+     "text": "적다",
+     "sub": "jeok-da",
+     "more": {
+      "text": "돈이 적어요.",
+      "sub": "do-ni jeo-geo-yo."
+     }
+    },
+    {
+     "text": "To be few",
+     "more": {
+      "text": "There's little money."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-130",
+   "sides": [
+    {
+     "text": "예쁘다",
+     "sub": "ye-ppeu-da",
+     "more": {
+      "text": "꽃이 예뻐요.",
+      "sub": "kko-chi ye-ppeo-yo."
+     }
+    },
+    {
+     "text": "To be pretty",
+     "more": {
+      "text": "The flower is pretty."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-131",
+   "sides": [
+    {
+     "text": "맵다",
+     "sub": "maep-da",
+     "more": {
+      "text": "이 음식은 매워요.",
+      "sub": "i eum-si-geun mae-wo-yo."
+     }
+    },
+    {
+     "text": "To be spicy",
+     "more": {
+      "text": "This food is spicy."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-132",
+   "sides": [
+    {
+     "text": "뜨겁다",
+     "sub": "tteu-geop-da",
+     "more": {
+      "text": "커피가 뜨거워요.",
+      "sub": "keo-pi-ga tteu-geo-wo-yo."
+     }
+    },
+    {
+     "text": "To be hot (to touch)",
+     "more": {
+      "text": "The coffee is hot."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-133",
+   "sides": [
+    {
+     "text": "차갑다",
+     "sub": "cha-gap-da",
+     "more": {
+      "text": "물이 차가워요.",
+      "sub": "mu-ri cha-ga-wo-yo."
+     }
+    },
+    {
+     "text": "To be cold (to touch)",
+     "more": {
+      "text": "The water is cold."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-134",
+   "sides": [
+    {
+     "text": "덥다",
+     "sub": "deop-da",
+     "more": {
+      "text": "오늘은 더워요.",
+      "sub": "o-neu-reun deo-wo-yo."
+     }
+    },
+    {
+     "text": "To be hot (weather)",
+     "more": {
+      "text": "It's hot today."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-135",
+   "sides": [
+    {
+     "text": "춥다",
+     "sub": "chup-da",
+     "more": {
+      "text": "겨울은 추워요.",
+      "sub": "gyeo-u-reun chu-wo-yo."
+     }
+    },
+    {
+     "text": "To be cold (weather)",
+     "more": {
+      "text": "Winter is cold."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-136",
+   "sides": [
+    {
+     "text": "어렵다",
+     "sub": "eo-ryeop-da",
+     "more": {
+      "text": "한국어는 어려워요.",
+      "sub": "han-gu-geo-neun eo-ryeo-wo-yo."
+     }
+    },
+    {
+     "text": "To be difficult",
+     "more": {
+      "text": "Korean is difficult."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-137",
+   "sides": [
+    {
+     "text": "쉽다",
+     "sub": "swip-da",
+     "more": {
+      "text": "이 문제는 쉬워요.",
+      "sub": "i mun-je-neun swi-wo-yo."
+     }
+    },
+    {
+     "text": "To be easy",
+     "more": {
+      "text": "This problem is easy."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-138",
+   "sides": [
+    {
+     "text": "바쁘다",
+     "sub": "ba-ppeu-da",
+     "more": {
+      "text": "저는 바빠요.",
+      "sub": "jeo-neun ba-ppa-yo."
+     }
+    },
+    {
+     "text": "To be busy",
+     "more": {
+      "text": "I'm busy."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-139",
+   "sides": [
+    {
+     "text": "피곤하다",
+     "sub": "pi-gon-ha-da",
+     "more": {
+      "text": "저는 피곤해요.",
+      "sub": "jeo-neun pi-gon-hae-yo."
+     }
+    },
+    {
+     "text": "To be tired",
+     "more": {
+      "text": "I'm tired."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-140",
+   "sides": [
+    {
+     "text": "행복하다",
+     "sub": "haeng-bok-ha-da",
+     "more": {
+      "text": "저는 행복해요.",
+      "sub": "jeo-neun haeng-bok-hae-yo."
+     }
+    },
+    {
+     "text": "To be happy",
+     "more": {
+      "text": "I'm happy."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-141",
+   "sides": [
+    {
+     "text": "재미있다",
+     "sub": "jae-mi-it-da",
+     "more": {
+      "text": "이 영화는 재미있어요.",
+      "sub": "i yeong-hwa-neun jae-mi-i-sseo-yo."
+     }
+    },
+    {
+     "text": "To be fun",
+     "more": {
+      "text": "This movie is fun."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-142",
+   "sides": [
+    {
+     "text": "빠르다",
+     "sub": "ppa-reu-da",
+     "more": {
+      "text": "기차가 빨라요.",
+      "sub": "gi-cha-ga ppal-la-yo."
+     }
+    },
+    {
+     "text": "To be fast",
+     "more": {
+      "text": "The train is fast."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-143",
+   "sides": [
+    {
+     "text": "느리다",
+     "sub": "neu-ri-da",
+     "more": {
+      "text": "거북이는 느려요.",
+      "sub": "geo-bu-gi-neun neu-ryeo-yo."
+     }
+    },
+    {
+     "text": "To be slow",
+     "more": {
+      "text": "The turtle is slow."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-144",
+   "sides": [
+    {
+     "text": "새",
+     "sub": "sae",
+     "more": {
+      "text": "새 가방이에요.",
+      "sub": "sae ga-bang-i-e-yo."
+     }
+    },
+    {
+     "text": "New",
+     "more": {
+      "text": "It's a new bag."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-145",
+   "sides": [
+    {
+     "text": "아주",
+     "sub": "a-ju",
+     "more": {
+      "text": "아주 맛있어요.",
+      "sub": "a-ju ma-si-sseo-yo."
+     }
+    },
+    {
+     "text": "Very",
+     "more": {
+      "text": "It's very delicious."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-146",
+   "sides": [
+    {
+     "text": "정말",
+     "sub": "jeong-mal",
+     "more": {
+      "text": "정말 고마워요.",
+      "sub": "jeong-mal go-ma-wo-yo."
+     }
+    },
+    {
+     "text": "Really",
+     "more": {
+      "text": "Thank you so much."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-147",
+   "sides": [
+    {
+     "text": "천천히",
+     "sub": "cheon-cheon-hi",
+     "more": {
+      "text": "천천히 말해 주세요.",
+      "sub": "cheon-cheon-hi mal-hae ju-se-yo."
+     }
+    },
+    {
+     "text": "Slowly",
+     "more": {
+      "text": "Please speak slowly."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-148",
+   "sides": [
+    {
+     "text": "빨간색",
+     "sub": "ppal-gan-saek",
+     "more": {
+      "text": "빨간색 사과예요.",
+      "sub": "ppal-gan-saek sa-gwa-ye-yo."
+     }
+    },
+    {
+     "text": "Red",
+     "more": {
+      "text": "It's a red apple."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-149",
+   "sides": [
+    {
+     "text": "파란색",
+     "sub": "pa-ran-saek",
+     "more": {
+      "text": "하늘은 파란색이에요.",
+      "sub": "ha-neu-reun pa-ran-sae-gi-e-yo."
+     }
+    },
+    {
+     "text": "Blue",
+     "more": {
+      "text": "The sky is blue."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-150",
+   "sides": [
+    {
+     "text": "노란색",
+     "sub": "no-ran-saek",
+     "more": {
+      "text": "바나나는 노란색이에요.",
+      "sub": "ba-na-na-neun no-ran-sae-gi-e-yo."
+     }
+    },
+    {
+     "text": "Yellow",
+     "more": {
+      "text": "Bananas are yellow."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-151",
+   "sides": [
+    {
+     "text": "초록색",
+     "sub": "cho-rok-saek",
+     "more": {
+      "text": "나뭇잎은 초록색이에요.",
+      "sub": "na-mun-ni-peun cho-rok-sae-gi-e-yo."
+     }
+    },
+    {
+     "text": "Green",
+     "more": {
+      "text": "Leaves are green."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-152",
+   "sides": [
+    {
+     "text": "검은색",
+     "sub": "geo-meun-saek",
+     "more": {
+      "text": "고양이는 검은색이에요.",
+      "sub": "go-yang-i-neun geo-meun-sae-gi-e-yo."
+     }
+    },
+    {
+     "text": "Black",
+     "more": {
+      "text": "The cat is black."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-153",
+   "sides": [
+    {
+     "text": "하얀색",
+     "sub": "ha-yan-saek",
+     "more": {
+      "text": "눈은 하얀색이에요.",
+      "sub": "nu-neun ha-yan-sae-gi-e-yo."
+     }
+    },
+    {
+     "text": "White",
+     "more": {
+      "text": "Snow is white."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-154",
+   "sides": [
+    {
+     "text": "눈",
+     "sub": "nun",
+     "more": {
+      "text": "눈이 아파요.",
+      "sub": "nu-ni a-pa-yo."
+     }
+    },
+    {
+     "text": "Eye (also: snow)",
+     "more": {
+      "text": "My eyes hurt."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-155",
+   "sides": [
+    {
+     "text": "머리",
+     "sub": "meo-ri",
+     "more": {
+      "text": "머리가 아파요.",
+      "sub": "meo-ri-ga a-pa-yo."
+     }
+    },
+    {
+     "text": "Head, hair",
+     "more": {
+      "text": "I have a headache."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-156",
+   "sides": [
+    {
+     "text": "입",
+     "sub": "ip",
+     "more": {
+      "text": "입을 벌려요.",
+      "sub": "i-beul beol-lyeo-yo."
+     }
+    },
+    {
+     "text": "Mouth",
+     "more": {
+      "text": "I open my mouth."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-157",
+   "sides": [
+    {
+     "text": "손",
+     "sub": "son",
+     "more": {
+      "text": "손을 씻어요.",
+      "sub": "so-neul ssi-seo-yo."
+     }
+    },
+    {
+     "text": "Hand",
+     "more": {
+      "text": "I wash my hands."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-158",
+   "sides": [
+    {
+     "text": "발",
+     "sub": "bal",
+     "more": {
+      "text": "발이 커요.",
+      "sub": "ba-ri keo-yo."
+     }
+    },
+    {
+     "text": "Foot",
+     "more": {
+      "text": "My feet are big."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-159",
+   "sides": [
+    {
+     "text": "몸",
+     "sub": "mom",
+     "more": {
+      "text": "몸이 건강해요.",
+      "sub": "mo-mi geon-gang-hae-yo."
+     }
+    },
+    {
+     "text": "Body",
+     "more": {
+      "text": "My body is healthy."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-160",
+   "sides": [
+    {
+     "text": "날씨",
+     "sub": "nal-ssi",
+     "more": {
+      "text": "오늘 날씨가 좋아요.",
+      "sub": "o-neul nal-ssi-ga jo-a-yo."
+     }
+    },
+    {
+     "text": "Weather",
+     "more": {
+      "text": "The weather is nice today."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-161",
+   "sides": [
+    {
+     "text": "비",
+     "sub": "bi",
+     "more": {
+      "text": "비가 와요.",
+      "sub": "bi-ga wa-yo."
+     }
+    },
+    {
+     "text": "Rain",
+     "more": {
+      "text": "It's raining."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-162",
+   "sides": [
+    {
+     "text": "바람",
+     "sub": "ba-ram",
+     "more": {
+      "text": "바람이 불어요.",
+      "sub": "ba-ra-mi bu-reo-yo."
+     }
+    },
+    {
+     "text": "Wind",
+     "more": {
+      "text": "The wind is blowing."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-163",
+   "sides": [
+    {
+     "text": "하늘",
+     "sub": "ha-neul",
+     "more": {
+      "text": "하늘이 맑아요.",
+      "sub": "ha-neu-ri mal-ga-yo."
+     }
+    },
+    {
+     "text": "Sky",
+     "more": {
+      "text": "The sky is clear."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-164",
+   "sides": [
+    {
+     "text": "바다",
+     "sub": "ba-da",
+     "more": {
+      "text": "바다에 가요.",
+      "sub": "ba-da-e ga-yo."
+     }
+    },
+    {
+     "text": "Sea",
+     "more": {
+      "text": "I go to the sea."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-165",
+   "sides": [
+    {
+     "text": "산",
+     "sub": "san",
+     "more": {
+      "text": "산이 높아요.",
+      "sub": "sa-ni no-pa-yo."
+     }
+    },
+    {
+     "text": "Mountain",
+     "more": {
+      "text": "The mountain is high."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-166",
+   "sides": [
+    {
+     "text": "꽃",
+     "sub": "kkot",
+     "more": {
+      "text": "꽃이 피어요.",
+      "sub": "kko-chi pi-eo-yo."
+     }
+    },
+    {
+     "text": "Flower",
+     "more": {
+      "text": "Flowers bloom."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-167",
+   "sides": [
+    {
+     "text": "나무",
+     "sub": "na-mu",
+     "more": {
+      "text": "나무가 커요.",
+      "sub": "na-mu-ga keo-yo."
+     }
+    },
+    {
+     "text": "Tree",
+     "more": {
+      "text": "The tree is big."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-168",
+   "sides": [
+    {
+     "text": "봄",
+     "sub": "bom",
+     "more": {
+      "text": "봄에는 따뜻해요.",
+      "sub": "bo-me-neun tta-tteu-tae-yo."
+     }
+    },
+    {
+     "text": "Spring",
+     "more": {
+      "text": "It's warm in spring."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-169",
+   "sides": [
+    {
+     "text": "여름",
+     "sub": "yeo-reum",
+     "more": {
+      "text": "여름에 수영해요.",
+      "sub": "yeo-reu-me su-yeong-hae-yo."
+     }
+    },
+    {
+     "text": "Summer",
+     "more": {
+      "text": "I swim in summer."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-170",
+   "sides": [
+    {
+     "text": "가을",
+     "sub": "ga-eul",
+     "more": {
+      "text": "가을에 단풍이 예뻐요.",
+      "sub": "ga-eu-re dan-pung-i ye-ppeo-yo."
+     }
+    },
+    {
+     "text": "Autumn",
+     "more": {
+      "text": "The autumn leaves are pretty."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-171",
+   "sides": [
+    {
+     "text": "겨울",
+     "sub": "gyeo-ul",
+     "more": {
+      "text": "겨울에 눈이 와요.",
+      "sub": "gyeo-u-re nu-ni wa-yo."
+     }
+    },
+    {
+     "text": "Winter",
+     "more": {
+      "text": "It snows in winter."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-172",
+   "sides": [
+    {
+     "text": "버스",
+     "sub": "beo-seu",
+     "more": {
+      "text": "버스를 타요.",
+      "sub": "beo-seu-reul ta-yo."
+     }
+    },
+    {
+     "text": "Bus",
+     "more": {
+      "text": "I take the bus."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-173",
+   "sides": [
+    {
+     "text": "지하철",
+     "sub": "ji-ha-cheol",
+     "more": {
+      "text": "지하철이 빨라요.",
+      "sub": "ji-ha-cheo-ri ppal-la-yo."
+     }
+    },
+    {
+     "text": "Subway",
+     "more": {
+      "text": "The subway is fast."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-174",
+   "sides": [
+    {
+     "text": "택시",
+     "sub": "taek-si",
+     "more": {
+      "text": "택시를 불러요.",
+      "sub": "taek-si-reul bul-leo-yo."
+     }
+    },
+    {
+     "text": "Taxi",
+     "more": {
+      "text": "I call a taxi."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-175",
+   "sides": [
+    {
+     "text": "기차",
+     "sub": "gi-cha",
+     "more": {
+      "text": "기차역에서 만나요.",
+      "sub": "gi-cha-yeo-ge-seo man-na-yo."
+     }
+    },
+    {
+     "text": "Train",
+     "more": {
+      "text": "Let's meet at the train station."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-176",
+   "sides": [
+    {
+     "text": "비행기",
+     "sub": "bi-haeng-gi",
+     "more": {
+      "text": "비행기를 타고 가요.",
+      "sub": "bi-haeng-gi-reul ta-go ga-yo."
+     }
+    },
+    {
+     "text": "Airplane",
+     "more": {
+      "text": "I go by airplane."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-177",
+   "sides": [
+    {
+     "text": "자전거",
+     "sub": "ja-jeon-geo",
+     "more": {
+      "text": "자전거를 타요.",
+      "sub": "ja-jeon-geo-reul ta-yo."
+     }
+    },
+    {
+     "text": "Bicycle",
+     "more": {
+      "text": "I ride a bicycle."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ko-starter-178",
+   "sides": [
+    {
+     "text": "길",
+     "sub": "gil",
+     "more": {
+      "text": "길을 몰라요.",
+      "sub": "gi-reul mol-la-yo."
+     }
+    },
+    {
+     "text": "Road, way",
+     "more": {
+      "text": "I don't know the way."
      }
     }
    ]

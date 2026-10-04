@@ -107,7 +107,7 @@
         {
           "id": "korean-starter",
           "name": "Starter words",
-          "subtitle": "Word, in a sentence, in English",
+          "subtitle": "Everyday words; hold for a sentence",
           "file": "data/korean/starter.json"
         }
       ]
