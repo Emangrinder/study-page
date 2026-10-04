@@ -156,3 +156,19 @@ body {
   opacity: .6;
   animation: spin 6s linear infinite;
 }
+
+.searchbox { left: auto; right: 0; width: min(360px, 100%); padding: 8px; }
+.searchbox input {
+  width: 100%;
+  padding: 11px 14px;
+  border: 0;
+  border-radius: 12px;
+  background: hsl(0 0% 100% / .08);
+  color: var(--ink);
+  font: inherit;
+  outline: none;
+}
+.searchbox input:focus { box-shadow: 0 0 0 2px hsl(var(--accent) / .6); }
+#hits { margin-top: 6px; max-height: min(52dvh, 420px); overflow-y: auto; }
+#hits .none { padding: 12px; color: var(--ink-dim); font-size: 14px; }
+.menu .empty { padding: 4px 14px 12px 28px; color: var(--ink-dim); font-size: 13px; }

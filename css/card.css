@@ -131,3 +131,30 @@
 .figure svg text.acc, .figure svg circle.acc { fill: hsl(var(--accent2)); stroke: none; }
 .face.hasfig { padding-inline: 12px; }
 .face.hasfig .text { font-size: clamp(18px, 4.8vw, 22px); font-weight: 600; line-height: 1.3; }
+
+.text:empty { display: none; }
+.text { white-space: pre-line; }
+.face.peek .text.longer { font-size: clamp(16px, 4.4vw, 19px); line-height: 1.5; }
+.figure img { width: 100%; max-width: 300px; height: auto; border-radius: 10px; box-shadow: 0 0 0 1px hsl(0 0% 100% / .12), 0 14px 30px -14px #000a; }
+.code {
+  width: 100%;
+  margin: 0;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: hsl(235 40% 8% / .75);
+  box-shadow: inset 0 0 0 1px hsl(0 0% 100% / .08);
+  color: #e8eaff;
+  font: 13px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  text-align: left;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.code:empty { display: none; }
+.face.hascode { padding-inline: 14px; }
+.face.hascode .text { font-size: clamp(17px, 4.6vw, 21px); font-weight: 600; line-height: 1.3; }
+.face.peek .code { font-size: 12.5px; }
+.katex { font-size: 1.08em; }
+.text .katex-display, .opt .katex-display { margin: .5em 0; }
+.face.quiz .katex { font-size: 1em; }
+.katex-display > .katex { font-size: .95em; }
+.katex-display { max-width: 100%; overflow-wrap: anywhere; }

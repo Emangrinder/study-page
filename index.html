@@ -16,10 +16,17 @@
       </button>
       <div class="title" id="title"></div>
       <div class="count" id="count" aria-live="polite"></div>
+      <button class="shuffle search-btn" id="search-btn" aria-label="Find a card" title="Find a card">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      </button>
       <button class="shuffle" id="shuffle" aria-pressed="false" aria-label="Shuffle the deck order" title="Shuffle after this card">
         <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3h5v5"/><path d="M4 20 21 3"/><path d="M21 16v5h-5"/><path d="m15 15 6 6"/><path d="m4 4 5 5"/></svg>
       </button>
       <div class="menu" id="menu" role="menu" hidden></div>
+      <div class="menu searchbox" id="search" hidden>
+        <input id="q" type="search" placeholder="Find a card in this deck" autocomplete="off" enterkeyhint="search">
+        <div id="hits"></div>
+      </div>
     </header>
 
     <section class="stage" id="stage" aria-label="Flashcard">
@@ -28,8 +35,8 @@
       <div class="ghost g1"></div>
       <article class="card" id="card">
         <div class="flipper" id="flipper">
-          <div class="face front"><div class="figure"></div><p class="text"></p><p class="sub"></p><div class="options"></div></div>
-          <div class="face back"><div class="figure"></div><p class="text"></p><p class="sub"></p><div class="options"></div></div>
+          <div class="face front"><div class="figure"></div><p class="text"></p><p class="sub"></p><pre class="code"></pre><div class="options"></div></div>
+          <div class="face back"><div class="figure"></div><p class="text"></p><p class="sub"></p><pre class="code"></pre><div class="options"></div></div>
         </div>
       </article>
     </section>

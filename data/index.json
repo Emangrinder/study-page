@@ -1,6 +1,28 @@
 {
   "exams": [
     {
+      "id": "review",
+      "name": "Review",
+      "accent": "265 82% 68%",
+      "accent2": "190 90% 60%",
+      "decks": [
+        {
+          "id": "countries",
+          "name": "World countries",
+          "subtitle": "197 flags · capitals · people",
+          "file": "data/review/countries.json",
+          "section": "Geography"
+        },
+        {
+          "id": "us-states",
+          "name": "US states",
+          "subtitle": "51 flags · capitals · people",
+          "file": "data/review/us-states.json",
+          "section": "Geography"
+        }
+      ]
+    },
+    {
       "id": "security-plus",
       "name": "Security+",
       "accent": "152 70% 48%",
@@ -189,6 +211,20 @@
           "section": "Practice exams"
         }
       ]
+    },
+    {
+      "id": "aws-saa",
+      "name": "AWS SAA",
+      "accent": "28 96% 58%",
+      "accent2": "48 98% 58%",
+      "decks": []
+    },
+    {
+      "id": "ccna",
+      "name": "CCNA",
+      "accent": "215 95% 62%",
+      "accent2": "190 95% 58%",
+      "decks": []
     }
   ]
 }

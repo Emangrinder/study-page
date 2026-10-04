@@ -15,6 +15,11 @@ export class Deck {
   get top() { return this.cards.get(this.queue[0]); }
   get size() { return this.queue.length; }
 
+  jumpTo(id) {
+    this.queue = [id, ...this.queue.filter((x) => x !== id)];
+    saveQueue(this.meta.id, this.queue);
+  }
+
   shuffle() {
     for (let i = this.queue.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));

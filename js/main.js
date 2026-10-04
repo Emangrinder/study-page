@@ -2,6 +2,7 @@ import { Deck } from "./deck.js";
 import { CardView } from "./card-view.js";
 import { attachGestures } from "./gestures.js";
 import { lastExam, lastDeckFor, setLast, shuffleOn, setShuffleOn } from "./store.js";
+import { mathReady } from "./rich.js";
 
 const $ = (id) => document.getElementById(id);
 const stage = $("stage");
@@ -18,6 +19,7 @@ const getJSON = async (url) => (await fetch(url)).json();
 
 async function openDeck(nextExam, meta) {
   const { cards } = await getJSON(meta.file);
+  if (meta.math) await mathReady();
   exam = nextExam;
   deck = new Deck(meta, cards);
   if (shuffling) deck.shuffle();
@@ -68,17 +70,67 @@ function renderMenu() {
     const loose = e.decks.filter((d) => !d.section).map((d) => deckButton(e, d));
     const grouped = sections.map((name) => dropdown("section", `${e.id}:${name}`, name,
       e.decks.filter((d) => d.section === name).map((d) => deckButton(e, d))));
+    if (!e.decks.length) {
+      const note = document.createElement("div");
+      note.className = "empty";
+      note.textContent = "No decks yet";
+      return dropdown("group", e.id, e.name, [note], e.accent);
+    }
     return dropdown("group", e.id, e.name, [...loose, ...grouped], e.accent);
   }));
 }
 
 function setMenu(open) {
+  if (open) closeSearch();
   $("menu").hidden = !open;
   $("waffle").setAttribute("aria-expanded", open);
 }
 
 function toggleMenu() { setMenu($("menu").hidden); }
 function closeMenu() { if (!$("menu").hidden) setMenu(false); }
+
+function closeSearch() { $("search").hidden = true; }
+
+function openSearch() {
+  closeMenu();
+  $("search").hidden = false;
+  $("q").value = "";
+  $("hits").replaceChildren();
+  $("q").focus();
+}
+
+// find a card by any of its text, then bring it to the top of the deck
+function runSearch(query) {
+  const q = query.trim().toLowerCase();
+  const hits = $("hits");
+  if (q.length < 2) return hits.replaceChildren();
+  const found = [];
+  for (const card of deck.cards.values()) {
+    const text = card.sides.flatMap((s) => [s.text, s.sub, s.code, s.more?.text, ...(s.options || [])]).filter(Boolean).join(" ").toLowerCase();
+    if (text.includes(q)) found.push(card);
+    if (found.length >= 30) break;
+  }
+  if (!found.length) {
+    const none = document.createElement("div");
+    none.className = "none";
+    none.textContent = "No matching cards";
+    return hits.replaceChildren(none);
+  }
+  hits.replaceChildren(...found.map((card) => {
+    const b = document.createElement("button");
+    b.innerHTML = "<span></span><small></small>";
+    b.firstChild.textContent = card.sides[0].text || card.sides[0].more?.text || "(image)";
+    b.lastChild.textContent = card.sides[0].sub || "";
+    b.addEventListener("click", () => {
+      if (busy) return;
+      deck.jumpTo(card.id);
+      closeSearch();
+      view.show(deck.top);
+      hud();
+    });
+    return b;
+  }));
+}
 
 function hud() {
   $("count").textContent = deck.size;
@@ -116,7 +168,7 @@ async function start() {
     locked: () => busy,
     hover: (p) => view.hover(p),
     hoverEnd: () => view.hoverEnd(),
-    press: (p) => { closeMenu(); view.press(p); },
+    press: (p) => { closeMenu(); closeSearch(); view.press(p); },
     hold: (on) => view.peek(on),
     move: (d) => view.drag(d),
     release: ({ action, px }) => {
@@ -130,7 +182,8 @@ async function start() {
 
   view = new CardView({ stage, card: $("card"), flipper: $("flipper") }, GRADE_DIST);
 
-  const startExam = exams.find((e) => e.id === lastExam()) || exams[0];
+  const ready = exams.filter((e) => e.decks.length);
+  const startExam = ready.find((e) => e.id === lastExam()) || ready[0];
   const startDeck = startExam.decks.find((d) => d.id === lastDeckFor(startExam.id)) || startExam.decks[0];
   await openDeck(startExam, startDeck);
 
@@ -142,9 +195,15 @@ async function start() {
     $("shuffle").setAttribute("aria-pressed", shuffling);
   });
   $("waffle").addEventListener("click", (e) => { e.stopPropagation(); toggleMenu(); });
-  document.addEventListener("click", (e) => { if (!$("menu").contains(e.target)) closeMenu(); });
+  $("search-btn").addEventListener("click", (e) => { e.stopPropagation(); $("search").hidden ? openSearch() : closeSearch(); });
+  $("q").addEventListener("input", (e) => runSearch(e.target.value));
+  document.addEventListener("click", (e) => {
+    if (!$("menu").contains(e.target)) closeMenu();
+    if (!$("search").contains(e.target)) closeSearch();
+  });
   window.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") return closeMenu();
+    if (e.key === "Escape") { closeMenu(); return closeSearch(); }
+    if (e.target instanceof HTMLInputElement) return;
     const map = { ArrowLeft: () => flip(1), ArrowRight: () => flip(-1), " ": () => flip(1), ArrowUp: () => grade("up"), ArrowDown: () => grade("down") };
     if (map[e.key]) { e.preventDefault(); map[e.key](); }
   });

@@ -1,11 +1,6 @@
 {
   "version": "0.0.1",
   "configurations": [
-    {
-      "name": "study-page",
-      "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "8123"],
-      "port": 8123
-    }
+    {"name": "study-deck", "runtimeExecutable": "python3", "runtimeArgs": ["-m", "http.server", "5188"], "port": 5188}
   ]
 }

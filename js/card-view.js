@@ -1,11 +1,21 @@
+import { rich, plainLength } from "./rich.js";
+
 const wait = (ms) => new Promise((r) => setTimeout(r, ms));
 const clamp = (v, lo = 0, hi = 1) => Math.min(hi, Math.max(lo, v));
 
-// Schematic drawings come from our own data files; strip anything scriptable anyway.
-function setFigure(box, markup) {
+// Schematic drawings and flags come from our own data files; strip anything scriptable anyway.
+function setFigure(box, side) {
   box.replaceChildren();
-  if (!markup) return;
-  const svg = new DOMParser().parseFromString(markup, "image/svg+xml").documentElement;
+  if (side.img) {
+    const img = document.createElement("img");
+    img.src = side.img;
+    img.alt = side.alt || "";
+    img.decoding = "async";
+    box.append(img);
+    return;
+  }
+  if (!side.svg) return;
+  const svg = new DOMParser().parseFromString(side.svg, "image/svg+xml").documentElement;
   if (svg.nodeName !== "svg") return;
   svg.querySelectorAll("script, foreignObject").forEach((n) => n.remove());
   [svg, ...svg.querySelectorAll("*")].forEach((n) => {
@@ -32,13 +42,17 @@ export class CardView {
   get visibleFace() { return ((Math.round(this.angle / 180) % 2) + 2) % 2; }
 
   fill(face, side) {
-    setFigure(face.querySelector(".figure"), side.svg);
-    face.classList.toggle("hasfig", Boolean(side.svg));
-    const text = face.querySelector(".text");
-    text.textContent = side.text;
-    text.classList.toggle("long", side.text.length > 60);
-    text.classList.toggle("longer", side.text.length > 110);
-    face.querySelector(".sub").textContent = side.sub || "";
+    const text = side.text || "";
+    setFigure(face.querySelector(".figure"), side);
+    face.classList.toggle("hasfig", Boolean(side.svg || side.img));
+    face.classList.toggle("hascode", Boolean(side.code));
+    const textEl = face.querySelector(".text");
+    rich(textEl, text);
+    const size = plainLength(text);
+    textEl.classList.toggle("long", size > 60);
+    textEl.classList.toggle("longer", size > 110);
+    rich(face.querySelector(".sub"), side.sub || "");
+    face.querySelector(".code").textContent = side.code || "";
     face.classList.toggle("anchored", !!side.low);
     face.classList.toggle("quiz", Boolean(side.options));
     face.querySelector(".options").replaceChildren(...(side.options || []).map((option, i) => {
@@ -46,7 +60,7 @@ export class CardView {
       row.className = "opt";
       row.innerHTML = "<b></b><span></span>";
       row.firstChild.textContent = "ABCD"[i];
-      row.lastChild.textContent = option;
+      rich(row.lastChild, option);
       return row;
     }));
   }
