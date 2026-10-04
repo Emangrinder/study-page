@@ -43,6 +43,22 @@
           "subtitle": "51 flags · capitals · people",
           "file": "data/review/us-states.json",
           "section": "Geography"
+        },
+        {
+          "id": "microeconomics",
+          "name": "Microeconomics",
+          "subtitle": "Markets to mechanism design",
+          "file": "data/review/micro.json",
+          "section": "Economics",
+          "math": true
+        },
+        {
+          "id": "macroeconomics",
+          "name": "Macroeconomics",
+          "subtitle": "GDP to dynamic models",
+          "file": "data/review/macro.json",
+          "section": "Economics",
+          "math": true
         }
       ]
     },
