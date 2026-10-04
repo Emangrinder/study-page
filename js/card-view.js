@@ -46,6 +46,9 @@ export class CardView {
     setFigure(face.querySelector(".figure"), side);
     face.classList.toggle("hasfig", Boolean(side.svg || side.img));
     face.classList.toggle("hascode", Boolean(side.code));
+    face.classList.toggle("steps", side.sub === "Steps");
+    face.querySelector(".head").textContent = side.head || "";
+    face.classList.toggle("hashead", Boolean(side.head));
     const textEl = face.querySelector(".text");
     rich(textEl, text);
     const size = plainLength(text);

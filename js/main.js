@@ -106,7 +106,7 @@ function runSearch(query) {
   if (q.length < 2) return hits.replaceChildren();
   const found = [];
   for (const card of deck.cards.values()) {
-    const text = card.sides.flatMap((s) => [s.text, s.sub, s.code, s.more?.text, ...(s.options || [])]).filter(Boolean).join(" ").toLowerCase();
+    const text = card.sides.flatMap((s) => [s.head, s.text, s.sub, s.code, s.more?.text, ...(s.options || [])]).filter(Boolean).join(" ").toLowerCase();
     if (text.includes(q)) found.push(card);
     if (found.length >= 30) break;
   }
@@ -119,7 +119,8 @@ function runSearch(query) {
   hits.replaceChildren(...found.map((card) => {
     const b = document.createElement("button");
     b.innerHTML = "<span></span><small></small>";
-    b.firstChild.textContent = card.sides[0].text || card.sides[0].more?.text || "(image)";
+    const first = card.sides[0];
+    b.firstChild.textContent = [first.head, first.text].filter(Boolean).join(" ") || first.more?.text || "(image)";
     b.lastChild.textContent = card.sides[0].sub || "";
     b.addEventListener("click", () => {
       if (busy) return;
