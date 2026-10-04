@@ -23,10 +23,27 @@ export function plainLength(str = "") {
   return str.replace(MATH, "xxxx").length;
 }
 
-export function rich(el, str = "") {
+// "Label: value" lines get the label styled so names stand apart from their values
+const LABEL = /^([\p{L}\d][^:\n=⇒→(]{1,28}):(?=\s|$)/u;
+
+function addText(el, text, labels, atLineStart) {
+  if (!labels) return el.append(text);
+  text.split("\n").forEach((line, i) => {
+    if (i) el.append("\n");
+    const m = (i || atLineStart) && LABEL.exec(line);
+    if (!m) return line && el.append(line);
+    const k = document.createElement("b");
+    k.className = "k";
+    k.textContent = m[1] + ":";
+    el.append(k, line.slice(m[0].length));
+  });
+}
+
+export function rich(el, str = "", labels = false) {
   el.replaceChildren();
-  if (!window.katex || !MATH.test(str)) { MATH.lastIndex = 0; el.textContent = str; return; }
+  if (!window.katex || !MATH.test(str)) { MATH.lastIndex = 0; addText(el, str, labels, true); return; }
   MATH.lastIndex = 0;
+  let prev = "\n";
   for (const part of str.split(MATH)) {
     if (!part) continue;
     const display = part.startsWith("\\[");
@@ -35,7 +52,8 @@ export function rich(el, str = "") {
       span.innerHTML = window.katex.renderToString(part.slice(2, -2), { displayMode: display, throwOnError: false });
       el.append(span);
     } else {
-      el.append(part);
+      addText(el, part, labels, prev.endsWith("\n"));
     }
+    prev = part;
   }
 }

@@ -170,3 +170,5 @@
 .face.steps { align-items: stretch; }
 .face.steps .text { font-size: clamp(15px, 4.3vw, 18px); font-weight: 450; line-height: 1.55; text-align: left; text-wrap: pretty; }
 .face.steps .sub { text-align: center; }
+.text .k { color: hsl(var(--accent2)); font-weight: 700; }
+.face.steps .text .k { font-weight: 650; }

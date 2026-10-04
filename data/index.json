@@ -59,6 +59,13 @@
           "file": "data/review/macro.json",
           "section": "Economics",
           "math": true
+        },
+        {
+          "id": "datastructures",
+          "name": "Data structures",
+          "subtitle": "Arrays to advanced structures",
+          "file": "data/review/datastructures.json",
+          "section": "Computer science"
         }
       ]
     },

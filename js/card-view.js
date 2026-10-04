@@ -41,7 +41,7 @@ export class CardView {
   get sideCount() { return this.sides.length; }
   get visibleFace() { return ((Math.round(this.angle / 180) % 2) + 2) % 2; }
 
-  fill(face, side) {
+  fill(face, side, hold = false) {
     const text = side.text || "";
     setFigure(face.querySelector(".figure"), side);
     face.classList.toggle("hasfig", Boolean(side.svg || side.img));
@@ -50,7 +50,7 @@ export class CardView {
     face.querySelector(".head").textContent = side.head || "";
     face.classList.toggle("hashead", Boolean(side.head));
     const textEl = face.querySelector(".text");
-    rich(textEl, text);
+    rich(textEl, text, hold || text.includes("\n"));
     const size = plainLength(text);
     textEl.classList.toggle("long", size > 60);
     textEl.classList.toggle("longer", size > 110);
@@ -90,7 +90,7 @@ export class CardView {
     const side = this.sides[this.side];
     const face = this.faces[this.visibleFace];
     if (on && !side.more) return false;
-    this.fill(face, on ? side.more : side);
+    this.fill(face, on ? side.more : side, on);
     face.classList.toggle("peek", on);
     if (on) navigator.vibrate?.(10);
     return true;
