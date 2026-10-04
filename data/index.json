@@ -7,6 +7,30 @@
       "accent2": "190 90% 60%",
       "decks": [
         {
+          "id": "calculus",
+          "name": "Calculus",
+          "subtitle": "Limits to vector calculus",
+          "file": "data/review/calculus.json",
+          "section": "Mathematics",
+          "math": true
+        },
+        {
+          "id": "diffeq",
+          "name": "Differential equations",
+          "subtitle": "First-order to PDEs",
+          "file": "data/review/diffeq.json",
+          "section": "Mathematics",
+          "math": true
+        },
+        {
+          "id": "linalg",
+          "name": "Linear algebra",
+          "subtitle": "Systems to SVD",
+          "file": "data/review/linalg.json",
+          "section": "Mathematics",
+          "math": true
+        },
+        {
           "id": "countries",
           "name": "World countries",
           "subtitle": "197 flags · capitals · people",
