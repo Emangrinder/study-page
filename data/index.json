@@ -374,14 +374,184 @@
       "name": "AWS SAA",
       "accent": "28 96% 58%",
       "accent2": "48 98% 58%",
-      "decks": []
+      "decks": [
+        {
+          "id": "saa-d1",
+          "name": "1 · Secure Architectures",
+          "subtitle": "IAM, multi-account, network security, encryption",
+          "file": "data/aws/d1.json",
+          "section": "Domains"
+        },
+        {
+          "id": "saa-d2",
+          "name": "2 · Resilient Architectures",
+          "subtitle": "Decoupling, scaling, HA, DR, containers, serverless",
+          "file": "data/aws/d2.json",
+          "section": "Domains"
+        },
+        {
+          "id": "saa-d3",
+          "name": "3 · High-Performing Architectures",
+          "subtitle": "Storage, compute, databases, networking, ingestion",
+          "file": "data/aws/d3.json",
+          "section": "Domains"
+        },
+        {
+          "id": "saa-d4",
+          "name": "4 · Cost-Optimized Architectures",
+          "subtitle": "Storage tiers, purchasing, tools, network costs",
+          "file": "data/aws/d4.json",
+          "section": "Domains"
+        },
+        {
+          "id": "saa-practice-d1",
+          "name": "Practice · 1 Secure",
+          "subtitle": "Scenario question, answer with reasoning",
+          "file": "data/aws/practice-d1.json",
+          "section": "Practice exams"
+        },
+        {
+          "id": "saa-practice-d2",
+          "name": "Practice · 2 Resilient",
+          "subtitle": "Scenario question, answer with reasoning",
+          "file": "data/aws/practice-d2.json",
+          "section": "Practice exams"
+        },
+        {
+          "id": "saa-practice-d3",
+          "name": "Practice · 3 High-Performing",
+          "subtitle": "Scenario question, answer with reasoning",
+          "file": "data/aws/practice-d3.json",
+          "section": "Practice exams"
+        },
+        {
+          "id": "saa-practice-d4",
+          "name": "Practice · 4 Cost-Optimized",
+          "subtitle": "Scenario question, answer with reasoning",
+          "file": "data/aws/practice-d4.json",
+          "section": "Practice exams"
+        },
+        {
+          "id": "saa-practice-mixed",
+          "name": "Practice · Mixed 65",
+          "subtitle": "Scenario question, answer with reasoning",
+          "file": "data/aws/practice-mixed.json",
+          "section": "Practice exams"
+        },
+        {
+          "id": "saa-ref",
+          "name": "Services: when to use",
+          "subtitle": "Every in-scope service, plus Well-Architected",
+          "file": "data/aws/reference.json",
+          "section": "Reference"
+        }
+      ]
     },
     {
       "id": "ccna",
       "name": "CCNA",
       "accent": "215 95% 62%",
       "accent2": "190 95% 58%",
-      "decks": []
+      "decks": [
+        {
+          "id": "ccna-d1",
+          "name": "1 · Network Fundamentals",
+          "subtitle": "Components, cabling, TCP/UDP, subnetting, IPv6, wireless basics",
+          "file": "data/ccna/d1.json",
+          "section": "Domains"
+        },
+        {
+          "id": "ccna-d2",
+          "name": "2 · Network Access",
+          "subtitle": "VLANs, trunks, STP, EtherChannel, wireless architectures",
+          "file": "data/ccna/d2.json",
+          "section": "Domains"
+        },
+        {
+          "id": "ccna-d3",
+          "name": "3 · IP Connectivity",
+          "subtitle": "Routing table, static routes, OSPF, FHRP",
+          "file": "data/ccna/d3.json",
+          "section": "Domains"
+        },
+        {
+          "id": "ccna-d4",
+          "name": "4 · IP Services",
+          "subtitle": "NAT, NTP, DHCP/DNS, SNMP, syslog, QoS, SSH",
+          "file": "data/ccna/d4.json",
+          "section": "Domains"
+        },
+        {
+          "id": "ccna-d5",
+          "name": "5 · Security Fundamentals",
+          "subtitle": "Threats, ACLs, Layer 2 security, VPNs, AAA, WPA",
+          "file": "data/ccna/d5.json",
+          "section": "Domains"
+        },
+        {
+          "id": "ccna-d6",
+          "name": "6 · Automation and Programmability",
+          "subtitle": "SDN, REST, JSON, Ansible, Terraform, AI",
+          "file": "data/ccna/d6.json",
+          "section": "Domains"
+        },
+        {
+          "id": "ccna-practice-d1",
+          "name": "Practice · 1 Fundamentals",
+          "subtitle": "Question, then answer with reasoning",
+          "file": "data/ccna/practice-d1.json",
+          "section": "Practice exams"
+        },
+        {
+          "id": "ccna-practice-d2",
+          "name": "Practice · 2 Network Access",
+          "subtitle": "Question, then answer with reasoning",
+          "file": "data/ccna/practice-d2.json",
+          "section": "Practice exams"
+        },
+        {
+          "id": "ccna-practice-d3",
+          "name": "Practice · 3 IP Connectivity",
+          "subtitle": "Question, then answer with reasoning",
+          "file": "data/ccna/practice-d3.json",
+          "section": "Practice exams"
+        },
+        {
+          "id": "ccna-practice-d4",
+          "name": "Practice · 4 IP Services",
+          "subtitle": "Question, then answer with reasoning",
+          "file": "data/ccna/practice-d4.json",
+          "section": "Practice exams"
+        },
+        {
+          "id": "ccna-practice-d5",
+          "name": "Practice · 5 Security",
+          "subtitle": "Question, then answer with reasoning",
+          "file": "data/ccna/practice-d5.json",
+          "section": "Practice exams"
+        },
+        {
+          "id": "ccna-practice-d6",
+          "name": "Practice · 6 Automation",
+          "subtitle": "Question, then answer with reasoning",
+          "file": "data/ccna/practice-d6.json",
+          "section": "Practice exams"
+        },
+        {
+          "id": "ccna-practice-mixed",
+          "name": "Practice · Mixed 60",
+          "subtitle": "Question, then answer with reasoning",
+          "file": "data/ccna/practice-mixed.json",
+          "section": "Practice exams"
+        },
+        {
+          "id": "ccna-acronyms",
+          "name": "Acronyms",
+          "subtitle": "106 networking acronyms",
+          "file": "data/ccna/acronyms.json",
+          "section": "Reference"
+        }
+      ]
     }
   ]
 }

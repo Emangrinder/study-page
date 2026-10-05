@@ -54,6 +54,8 @@ export class CardView {
     const size = plainLength(text);
     textEl.classList.toggle("long", size > 60);
     textEl.classList.toggle("longer", size > 110);
+    textEl.classList.toggle("huge", size > 170);
+    textEl.classList.toggle("tok", /\S{22,}/.test(text.replace(/\\[\(\[][\s\S]*?\\[\)\]]/g, "")));
     rich(face.querySelector(".sub"), side.sub || "");
     face.querySelector(".code").textContent = side.code || "";
     face.classList.toggle("anchored", !!side.low);
