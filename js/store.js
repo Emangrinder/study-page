@@ -30,3 +30,7 @@ export function setLast(examId, deckId) {
 
 export function shuffleOn() { return Boolean(data.shuffle); }
 export function setShuffleOn(on) { data.shuffle = on; save(); }
+
+// delay before the small caption under a card's text fades in: milliseconds, 0 = instant, -1 = never
+export function subDelay() { return Number.isFinite(data.subDelay) ? data.subDelay : 0; }
+export function setSubDelay(ms) { data.subDelay = ms; save(); }

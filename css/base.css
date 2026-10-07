@@ -172,3 +172,6 @@ body {
 #hits { margin-top: 6px; max-height: min(52dvh, 420px); overflow-y: auto; }
 #hits .none { padding: 12px; color: var(--ink-dim); font-size: 14px; }
 .menu .empty { padding: 4px 14px 12px 28px; color: var(--ink-dim); font-size: 13px; }
+.bottom { position: relative; }
+.fadebtn { position: absolute; left: 0; bottom: -4px; min-width: 40px; height: 32px; padding: 0 10px; border: 0; border-radius: 16px; background: hsl(0 0% 100% / .07); color: var(--ink); font-size: 12px; font-weight: 600; opacity: .7; touch-action: none; user-select: none; -webkit-user-select: none; transition: background .2s, opacity .2s; }
+.fadebtn.holding { background: hsl(var(--accent) / .35); opacity: 1; }

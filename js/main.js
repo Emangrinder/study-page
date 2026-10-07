@@ -1,7 +1,7 @@
 import { Deck } from "./deck.js";
 import { CardView } from "./card-view.js";
 import { attachGestures } from "./gestures.js";
-import { lastExam, lastDeckFor, setLast, shuffleOn, setShuffleOn } from "./store.js";
+import { lastExam, lastDeckFor, setLast, shuffleOn, setShuffleOn, subDelay, setSubDelay } from "./store.js";
 import { mathReady } from "./rich.js";
 
 const $ = (id) => document.getElementById(id);
@@ -168,6 +168,40 @@ function speedTap() {
   grade("down");
 }
 
+// hold the fade button to set the caption delay: a tap is instant, up to 5 s sets that delay, longer means never
+const NEVER_AFTER = 5000;
+const TAP_MS = 250;
+const delayLabel = (ms) => (ms < 0 ? "off" : ms === 0 ? "0" : `${(ms / 1000).toFixed(1)}s`);
+
+function setupFadeButton() {
+  const btn = $("fadebtn");
+  const val = $("fadeval");
+  let t0 = 0;
+  let timer = 0;
+  const heldMs = () => performance.now() - t0;
+  const value = () => (heldMs() < TAP_MS ? 0 : heldMs() > NEVER_AFTER ? -1 : Math.round(heldMs() / 100) * 100);
+  val.textContent = delayLabel(subDelay());
+  btn.addEventListener("pointerdown", (e) => {
+    try { btn.setPointerCapture(e.pointerId); } catch { /* synthetic pointer */ }
+    t0 = performance.now();
+    btn.classList.add("holding");
+    timer = setInterval(() => { val.textContent = delayLabel(heldMs() < TAP_MS ? 0 : value()); }, 80);
+  });
+  const end = () => {
+    if (!t0) return;
+    clearInterval(timer);
+    btn.classList.remove("holding");
+    const ms = value();
+    t0 = 0;
+    setSubDelay(ms);
+    val.textContent = delayLabel(ms);
+    view.refreshSubs();
+  };
+  btn.addEventListener("pointerup", end);
+  btn.addEventListener("pointercancel", end);
+  btn.addEventListener("contextmenu", (e) => e.preventDefault());
+}
+
 async function start() {
   ({ exams } = await getJSON("data/index.json"));
 
@@ -196,6 +230,7 @@ async function start() {
   const startDeck = startExam.decks.find((d) => d.id === lastDeckFor(startExam.id)) || startExam.decks[0];
   await openDeck(startExam, startDeck);
 
+  setupFadeButton();
   $("shuffle").setAttribute("aria-pressed", shuffling);
   $("shuffle").addEventListener("click", () => {
     shuffling = !shuffling;

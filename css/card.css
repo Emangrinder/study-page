@@ -177,3 +177,7 @@
 .text.tok { font-size: clamp(14px, 4.3vw, 19px); font-weight: 600; }
 .face.hashead .text.huge { font-size: clamp(15px, 4.2vw, 18px); }
 .tapzone { position: absolute; z-index: 3; left: 50%; bottom: 9px; width: 34px; height: 4px; margin-left: -17px; border-radius: 4px; background: hsl(0 0% 100% / .14); pointer-events: none; }
+.sub.fade { opacity: 0; animation: subin 1.2s ease-out var(--sub-delay, 0ms) forwards; }
+.sub.never { opacity: 0; }
+@keyframes subin { to { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .sub.fade { animation-duration: .01s; } }

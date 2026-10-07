@@ -1,4 +1,5 @@
 import { rich, plainLength } from "./rich.js";
+import { subDelay } from "./store.js";
 
 const wait = (ms) => new Promise((r) => setTimeout(r, ms));
 const clamp = (v, lo = 0, hi = 1) => Math.min(hi, Math.max(lo, v));
@@ -56,7 +57,9 @@ export class CardView {
     textEl.classList.toggle("longer", size > 110);
     textEl.classList.toggle("huge", size > 170);
     textEl.classList.toggle("tok", /\S{22,}/.test(text.replace(/\\[\(\[][\s\S]*?\\[\)\]]/g, "")));
-    rich(face.querySelector(".sub"), side.sub || "");
+    const subEl = face.querySelector(".sub");
+    rich(subEl, side.sub || "");
+    this.fadeSub(subEl);
     face.querySelector(".code").textContent = side.code || "";
     face.classList.toggle("anchored", !!side.low);
     face.classList.toggle("quiz", Boolean(side.options));
@@ -69,6 +72,19 @@ export class CardView {
       return row;
     }));
   }
+
+  // the caption under the text appears after the saved delay, fading in gradually
+  fadeSub(el) {
+    const ms = subDelay();
+    el.classList.remove("fade", "never");
+    if (ms === 0 || !el.textContent) return;
+    if (ms < 0) return el.classList.add("never");
+    el.style.setProperty("--sub-delay", `${ms}ms`);
+    void el.offsetWidth;
+    el.classList.add("fade");
+  }
+
+  refreshSubs() { this.faces.forEach((f) => this.fadeSub(f.querySelector(".sub"))); }
 
   show(card) {
     this.sides = card.sides;
