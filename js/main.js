@@ -168,8 +168,8 @@ function speedTap() {
   grade("down");
 }
 
-// hold the fade button to set the caption delay: a tap is instant, up to 5 s sets that delay, longer means never
-const NEVER_AFTER = 5000;
+// hold the fade button to set the caption delay: a tap is instant, up to 2.5 s sets that delay, longer means never
+const NEVER_AFTER = 2500;
 const TAP_MS = 250;
 const delayLabel = (ms) => (ms < 0 ? "off" : ms === 0 ? "0" : `${(ms / 1000).toFixed(1)}s`);
 
