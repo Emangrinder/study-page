@@ -162,6 +162,12 @@ function flip(dir) {
   hud();
 }
 
+function speedTap() {
+  if (busy) return;
+  if (view.side < view.sideCount - 1) return flip(1);
+  grade("down");
+}
+
 async function start() {
   ({ exams } = await getJSON("data/index.json"));
 
@@ -172,9 +178,11 @@ async function start() {
     press: (p) => { closeMenu(); closeSearch(); view.press(p); },
     hold: (on) => view.peek(on),
     move: (d) => view.drag(d),
-    release: ({ action, px }) => {
+    release: ({ action, px, py }) => {
       if (action === "up" || action === "down") return grade(action);
       view.settle();
+      // speed tap: bottom center steps through the sides, then moves on to the next card
+      if (action === "tap" && py > 0.8 && px > 0.3 && px < 0.7) return speedTap();
       // a tap turns the card away from the side you pressed, like a swipe toward that side
       if (action === "flipNext" || (action === "tap" && px < 0.5)) flip(1);
       if (action === "flipPrev" || (action === "tap" && px >= 0.5)) flip(-1);

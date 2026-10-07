@@ -61,7 +61,8 @@ export function attachGestures(el, cb) {
       else if (axis === "x" && (Math.abs(dx) > FLIP_DIST || Math.abs(vx) > FLICK_SPEED)) action = dx < 0 || vx < -FLICK_SPEED ? "flipNext" : "flipPrev";
       else if (axis === "y" && (Math.abs(dy) > GRADE_DIST || Math.abs(vy) > FLICK_SPEED)) action = dy < 0 || vy < -FLICK_SPEED ? "up" : "down";
     }
-    cb.release({ action, dx, dy, px: local(e).px });
+    const { px, py } = local(e);
+    cb.release({ action, dx, dy, px, py });
   };
 
   el.addEventListener("contextmenu", (e) => e.preventDefault());

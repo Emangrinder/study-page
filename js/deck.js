@@ -1,7 +1,7 @@
 import { savedQueue, saveQueue } from "./store.js";
 
-const AGAIN_MIN = 2; // a missed card returns 2-4 cards from now
-const AGAIN_MAX = 4;
+const AGAIN_MIN = 10; // a missed card returns 10-20 cards from now
+const AGAIN_MAX = 20;
 
 export class Deck {
   constructor(meta, cards) {
