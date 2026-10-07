@@ -168,8 +168,8 @@ function speedTap() {
   grade("down");
 }
 
-// hold the fade button to set the caption delay: a tap is instant, up to 2.5 s sets that delay, longer means never
-const NEVER_AFTER = 2500;
+// hold the fade button to set the caption delay: a tap is instant; holding 0-3 s sets the delay (seconds held, squared past 1 s, so 2 s held = 4 s); longer means never
+const NEVER_AFTER = 3100; // 3 s plus a little grace
 const TAP_MS = 250;
 const delayLabel = (ms) => (ms < 0 ? "off" : ms === 0 ? "0" : `${(ms / 1000).toFixed(1)}s`);
 
@@ -179,7 +179,13 @@ function setupFadeButton() {
   let t0 = 0;
   let timer = 0;
   const heldMs = () => performance.now() - t0;
-  const value = () => (heldMs() < TAP_MS ? 0 : heldMs() > NEVER_AFTER ? -1 : Math.round(heldMs() / 100) * 100);
+  const value = () => {
+    const ms = heldMs();
+    if (ms < TAP_MS) return 0;
+    if (ms > NEVER_AFTER) return -1;
+    const s = ms / 1000;
+    return Math.round((s < 1 ? s : s * s) * 10) * 100;
+  };
   val.textContent = delayLabel(subDelay());
   btn.addEventListener("pointerdown", (e) => {
     try { btn.setPointerCapture(e.pointerId); } catch { /* synthetic pointer */ }
