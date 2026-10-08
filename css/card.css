@@ -1,4 +1,4 @@
-@property --ang { syntax: "<angle>"; inherits: false; initial-value: 0deg; }
+@property --ang { syntax: "<angle>"; inherits: true; initial-value: 0deg; }
 @property --t { syntax: "<number>"; inherits: true; initial-value: 0; }
 
 .stage {
@@ -72,8 +72,8 @@
     linear-gradient(160deg, hsl(235 32% 20%), hsl(235 36% 13%));
   box-shadow: 0 24px 50px -18px hsl(var(--accent) / .45), 0 2px 0 hsl(0 0% 100% / .05) inset, 0 0 0 2.5px hsl(var(--tint) / calc(var(--t) * .9)) inset;
 }
-.face { transform: translateZ(3px); }
-.face.back { transform: rotateY(180deg) translateZ(3px); }
+.face { transform: translateZ(5px); }
+.face.back { transform: rotateY(180deg) translateZ(5px); }
 
 .face::before {
   content: "";
@@ -85,9 +85,9 @@
   -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
-  animation: spin 5.5s linear infinite;
   pointer-events: none;
 }
+.stage { animation: spin 5.5s linear infinite; }
 @keyframes spin { to { --ang: 360deg; } }
 
 .face::after {
@@ -114,7 +114,7 @@
 @keyframes enter { from { transform: translateY(20px) scale(.92); opacity: 0; } }
 
 @media (prefers-reduced-motion: reduce) {
-  .face::before { animation-duration: 16s; }
+  .stage { animation-duration: 16s; }
   .flipper { transition-duration: .01s; }
 }
 
@@ -193,8 +193,8 @@
 }
 .under.track { transition: none; }
 .under.rise { transform: none; filter: none; }
-.under .face::before, .under .face::after { display: none; }
-.under .sub { opacity: 0; }
+.under .face::after { display: none; }
+.under .sub.fade, .under .sub.never { animation: none; opacity: 0; }
 .stage.advance .ghost.g1 { transform: translateY(0) scaleX(1); filter: none; }
 .stage.advance .ghost.g2 { transform: translateY(12px) scaleX(.96); filter: brightness(.92); }
 .stage.advance .ghost.g3 { transform: translateY(24px) scaleX(.92); filter: brightness(.8); }
@@ -209,6 +209,15 @@
 .face.hasextra .text { font-size: clamp(20px, 5.6vw, 26px); }
 .face.hasextra .katex-display { margin: 0; }
 
-/* card thickness: slim layers between the two faces show as an edge when the card turns or tilts */
-.slab { position: absolute; inset: 0; border-radius: inherit; pointer-events: none; transform: translateZ(var(--z, 0px)); background: hsl(235 38% 11%); box-shadow: inset 0 0 0 1px hsl(var(--accent) / .28); backface-visibility: visible; }
-.slab.lip { transform: translateZ(-3px) translateY(5px); background: hsl(235 40% 8%); box-shadow: 0 8px 18px -6px #000a; }
+
+/* card thickness: layers between the faces form an edge that carries the same cycling shimmer as the ring */
+.slab, .under::before {
+  position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+  --edge: hsl(235 38% 11%);
+  background: conic-gradient(from var(--ang), var(--edge) 0 52%, var(--ring-soft) 66%, var(--ring) 84%, var(--ring-head) 92%, var(--edge) 100%);
+  box-shadow: inset 0 0 0 1px hsl(var(--accent) / .22);
+}
+.slab { transform: translateZ(var(--z, 0px)); }
+.slab.lip { transform: translateZ(-5px) translateY(7px); filter: brightness(.62); box-shadow: 0 10px 20px -6px #000b; }
+.under { --ring-soft: hsl(var(--accent) / .25); --ring: hsl(var(--accent2)); --ring-head: #fff; }
+.under::before { content: ""; z-index: -1; transform: translateY(7px); filter: brightness(.62); box-shadow: 0 10px 20px -6px #000b; }
