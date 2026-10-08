@@ -16,12 +16,16 @@ html, body {
   background: var(--bg);
   color: var(--ink);
   font: 16px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif;
+  overflow: hidden;
   overscroll-behavior: none;
   -webkit-user-select: none;
   user-select: none;
 }
 
 body {
+  position: fixed;
+  inset: 0;
+  width: 100%;
   background:
     radial-gradient(120% 60% at 50% -10%, hsl(var(--accent) / .22), transparent 60%),
     var(--bg);
