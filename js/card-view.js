@@ -106,6 +106,7 @@ export class CardView {
     this.under.style.transform = "translateZ(4px)";
     this.under.style.filter = "none";
     this.under.style.setProperty("--ringo", "1");
+    this.under.style.setProperty("--cnt", "1");
     this.stage.classList.add("advance");
   }
 
@@ -116,10 +117,12 @@ export class CardView {
     this.under.style.transform = `translateY(${12 * (1 - a)}px) scaleX(${0.96 + 0.04 * a}) translateZ(4px)`;
     this.under.style.filter = `brightness(${0.92 + 0.08 * a})`;
     this.under.style.setProperty("--ringo", String(0.35 + 0.65 * a));
+    this.under.style.setProperty("--cnt", String(0.4 + 0.6 * a));
   }
 
   unfollow() {
     this.under.style.removeProperty("--ringo");
+    this.under.style.removeProperty("--cnt");
     this.under.classList.remove("track");
     this.under.style.transform = "";
     this.under.style.filter = "";
@@ -134,6 +137,7 @@ export class CardView {
     this.under.style.transform = "";
     this.under.style.filter = "";
     this.under.style.removeProperty("--ringo");
+    this.under.style.removeProperty("--cnt");
     if (next) this.setUnder(next);
     void this.stage.offsetWidth;
     this.stage.classList.remove("snap");
@@ -287,7 +291,8 @@ export class CardView {
     } else {
       this.set({ ry: tiltY, rx: tiltX });
     }
-    this.follow(Math.hypot(dx, dy) / (this.gradeDist * 1.6));
+    // the card beneath only rises when the card is being swiped away, not while it turns
+    if (axis === "y") this.follow(Math.hypot(dx, dy) / (this.gradeDist * 1.6));
     this.glare({ px, py });
   }
 

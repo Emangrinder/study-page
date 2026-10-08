@@ -230,3 +230,7 @@
 .card.arrive { animation: arrive .16s linear; }
 @keyframes arrive { from { opacity: 0; } }
 .flipper.dragturn { transition: transform .07s linear; }
+
+/* text on the card beneath is dimmed so it never competes with the card being read; it brightens as the card rises */
+.under .face > * { opacity: var(--cnt, .4); transition: opacity .34s; }
+.under.track .face > * { transition: none; }
