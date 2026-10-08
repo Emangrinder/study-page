@@ -27,7 +27,9 @@ function setFigure(box, side) {
 
 // Owns the card element: tilt, drag follow-through, multi-sided flipping, exit animation.
 export class CardView {
-  constructor({ stage, card, flipper, under }, gradeDist) {
+  constructor({ stage, card, flipper, under }, gradeDist, fullDist = 140) {
+    this.fullDist = fullDist;
+    this.previewDir = 0;
     this.stage = stage;
     this.under = under;
     this.underFace = under.querySelector(".face");
@@ -183,8 +185,33 @@ export class CardView {
     return true;
   }
 
+  // while dragging sideways the card turns with the finger; the direction is fixed when the drag starts
+  previewStart(dir) {
+    if (this.sides.length < 2) return;
+    this.previewDir = dir;
+    const n = this.sides.length;
+    this.fill(this.faces[1 - this.visibleFace], this.sides[(this.side + dir + n) % n]);
+    this.flipper.classList.add("dragturn");
+  }
+
+  preview(dx) {
+    if (!this.previewDir) return;
+    const mag = Math.max(0, -this.previewDir * dx);
+    const turn = Math.min(170, (mag / this.fullDist) * 180);
+    this.flipper.style.transform = `rotateY(${this.angle - this.previewDir * turn}deg)`;
+  }
+
+  endPreview() {
+    if (!this.previewDir) return;
+    this.previewDir = 0;
+    this.flipper.classList.remove("dragturn");
+    this.flipper.style.transform = `rotateY(${this.angle}deg)`;
+  }
+
   flip(dir) {
     const n = this.sides.length;
+    this.previewDir = 0;
+    this.flipper.classList.remove("dragturn");
     if (n < 2) return this.nudge();
     this.side = (this.side + dir + n) % n;
     this.fill(this.faces[1 - this.visibleFace], this.sides[this.side]);
@@ -216,6 +243,7 @@ export class CardView {
   }
 
   settle() {
+    this.endPreview();
     this.unfollow();
     this.card.classList.remove("dragging");
     this.card.classList.add("settle");
@@ -250,7 +278,8 @@ export class CardView {
     const tiltY = (px - 0.5) * 14;
     const tiltX = -(py - 0.5) * 14;
     if (axis === "x") {
-      this.set({ tx: dx * 0.45, ty: dy * 0.1, rz: dx * 0.015, ry: tiltY + dx * 0.1, rx: tiltX });
+      this.set({ tx: 0, ty: 0, rz: 0, ry: 0, rx: 0 });
+      this.preview(dx);
       this.tint(0);
     } else if (axis === "y") {
       this.set({ tx: dx * 0.3, ty: dy, rz: dx * 0.03, ry: tiltY, rx: tiltX - dy * 0.03 });

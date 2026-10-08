@@ -1,5 +1,7 @@
 const AXIS_LOCK = 8;      // px before we decide horizontal vs vertical
-const FLIP_DIST = 55;     // px sideways to flip
+const FULL_DIST = 140;    // px of sideways drag that turns the card a full 180 degrees
+const FLIP_DIST = 70;     // release past halfway (90 degrees) and it finishes the flip
+const TRIGGER_DIST = 78;  // a little past halfway while still holding: it flips over by itself
 const FLICK_SPEED = 0.45; // px/ms counts as a flick
 const GRADE_DIST = 90;    // px vertically to grade
 const TAP_MAX = 8;
@@ -34,14 +36,15 @@ export function attachGestures(el, cb) {
     const dy = e.clientY - st.y;
     if (!st.axis && Math.hypot(dx, dy) > AXIS_LOCK) {
       st.axis = Math.abs(dx) > Math.abs(dy) ? "x" : "y";
+      if (st.axis === "x") { st.dir = dx < 0 ? 1 : -1; cb.previewStart(st.dir); }
       clearTimeout(st.timer);
       if (st.held) { st.held = false; cb.hold(false); }
     }
 
     // past the flip distance while still holding: flip right away and let go of the drag
-    if (st.axis === "x" && Math.abs(dx) > FLIP_DIST) {
+    if (st.axis === "x" && -st.dir * dx > TRIGGER_DIST) {
       st.fired = true;
-      cb.trigger(dx < 0 ? "flipNext" : "flipPrev");
+      cb.trigger(st.dir);
       return;
     }
 
@@ -51,22 +54,22 @@ export function attachGestures(el, cb) {
     st.vy = 0.7 * st.vy + 0.3 * ((e.clientY - st.ly) / dt);
     st.lx = e.clientX; st.ly = e.clientY; st.lt = now;
 
-    cb.move({ dx, dy, axis: st.axis, ...local(e) });
+    cb.move({ dx, dy, axis: st.axis, dir: st.dir, ...local(e) });
   });
 
   const end = (e, cancelled) => {
     if (!st) return;
     const dx = e.clientX - st.x;
     const dy = e.clientY - st.y;
-    const { axis, vx, vy, held, timer, fired } = st;
+    const { axis, vx, vy, held, timer, fired, dir } = st;
     st = null;
     clearTimeout(timer);
     if (held) cb.hold(false);
 
     let action = "none";
     if (!cancelled && !held && !fired) {
-      if (Math.hypot(dx, dy) < TAP_MAX) action = "tap";
-      else if (axis === "x" && (Math.abs(dx) > FLIP_DIST || Math.abs(vx) > FLICK_SPEED)) action = dx < 0 || vx < -FLICK_SPEED ? "flipNext" : "flipPrev";
+      if (!axis && Math.hypot(dx, dy) < TAP_MAX) action = "tap";
+      else if (axis === "x" && (-dir * dx > FLIP_DIST || -dir * vx > FLICK_SPEED)) action = dir === 1 ? "flipNext" : "flipPrev";
       else if (axis === "y" && (Math.abs(dy) > GRADE_DIST || Math.abs(vy) > FLICK_SPEED)) action = dy < 0 || vy < -FLICK_SPEED ? "up" : "down";
     }
     const { px, py } = local(e);
@@ -78,5 +81,5 @@ export function attachGestures(el, cb) {
   el.addEventListener("pointercancel", (e) => end(e, true));
   el.addEventListener("pointerleave", (e) => { if (!st && e.pointerType === "mouse") cb.hoverEnd(); });
 
-  return { GRADE_DIST };
+  return { GRADE_DIST, FULL_DIST };
 }

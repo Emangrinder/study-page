@@ -229,3 +229,4 @@
 .under.track .face::before { transition: none; }
 .card.arrive { animation: arrive .16s linear; }
 @keyframes arrive { from { opacity: 0; } }
+.flipper.dragturn { transition: transform .07s linear; }

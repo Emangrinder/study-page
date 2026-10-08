@@ -227,14 +227,15 @@ function setupFadeButton() {
 async function start() {
   ({ exams } = await getJSON("data/index.json"));
 
-  const { GRADE_DIST } = attachGestures($("card"), {
+  const { GRADE_DIST, FULL_DIST } = attachGestures($("card"), {
     locked: () => busy,
     hover: (p) => view.hover(p),
     hoverEnd: () => view.hoverEnd(),
     press: (p) => { closeMenu(); closeSearch(); view.press(p); },
     hold: (on) => view.peek(on),
     move: (d) => view.drag(d),
-    trigger: (a) => { view.settle(); flip(a === "flipNext" ? 1 : -1); },
+    previewStart: (dir) => view.previewStart(dir),
+    trigger: (dir) => { lastFlip = performance.now(); view.flip(dir); view.settle(); hud(); },
     release: ({ action, px, py }) => {
       if (action === "up" || action === "down") return grade(action);
       view.settle();
@@ -246,7 +247,7 @@ async function start() {
     },
   });
 
-  view = new CardView({ stage, card: $("card"), flipper: $("flipper"), under: $("under") }, GRADE_DIST);
+  view = new CardView({ stage, card: $("card"), flipper: $("flipper"), under: $("under") }, GRADE_DIST, FULL_DIST);
 
   const ready = exams.filter((e) => e.decks.length);
   const startExam = ready.find((e) => e.id === lastExam()) || ready[0];
