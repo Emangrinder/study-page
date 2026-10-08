@@ -30,7 +30,7 @@ async function openDeck(nextExam, meta) {
   root.setProperty("--accent2", exam.accent2);
   $("title").textContent = `${exam.name} · ${meta.name}`;
   renderMenu();
-  view.show(deck.top);
+  view.show(deck.top, deck.next);
   hud();
 }
 
@@ -126,7 +126,7 @@ function runSearch(query) {
       if (busy) return;
       deck.jumpTo(card.id);
       closeSearch();
-      view.show(deck.top);
+      view.show(deck.top, deck.next);
       hud();
     });
     return b;
@@ -148,10 +148,12 @@ async function grade(direction) {
   if (busy) return;
   busy = true;
   navigator.vibrate?.(direction === "up" ? [10, 40, 10] : 14);
-  await view.leave(direction);
+  // settle the new order first so the card beneath is the one that really comes next
   direction === "up" ? deck.again() : deck.got();
   if (shufflePending) { deck.shuffle(); shufflePending = false; }
-  view.show(deck.top);
+  view.promote(deck.top);
+  await view.leave(direction);
+  view.show(deck.top, deck.next, true);
   hud();
   busy = false;
 }
@@ -229,7 +231,7 @@ async function start() {
     },
   });
 
-  view = new CardView({ stage, card: $("card"), flipper: $("flipper") }, GRADE_DIST);
+  view = new CardView({ stage, card: $("card"), flipper: $("flipper"), under: $("under") }, GRADE_DIST);
 
   const ready = exams.filter((e) => e.decks.length);
   const startExam = ready.find((e) => e.id === lastExam()) || ready[0];

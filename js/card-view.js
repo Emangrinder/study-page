@@ -27,8 +27,10 @@ function setFigure(box, side) {
 
 // Owns the card element: tilt, drag follow-through, multi-sided flipping, exit animation.
 export class CardView {
-  constructor({ stage, card, flipper }, gradeDist) {
+  constructor({ stage, card, flipper, under }, gradeDist) {
     this.stage = stage;
+    this.under = under;
+    this.underFace = under.querySelector(".face");
     this.card = card;
     this.flipper = flipper;
     this.faces = [...flipper.querySelectorAll(".face")];
@@ -86,7 +88,47 @@ export class CardView {
 
   refreshSubs() { this.faces.forEach((f) => this.fadeSub(f.querySelector(".sub"))); }
 
-  show(card) {
+  // the card beneath shows the next card; it rises into place as the top card leaves
+  setUnder(card) {
+    this.fill(this.underFace, card.sides[0]);
+    this.under.classList.remove("rise", "track");
+    this.under.style.transform = "";
+  }
+
+  promote(card) {
+    this.fill(this.underFace, card.sides[0]);
+    this.under.classList.remove("track");
+    this.under.style.transform = "none";
+    this.under.style.filter = "none";
+    this.stage.classList.add("advance");
+  }
+
+  // while dragging, the card beneath moves up in proportion to the drag
+  follow(amount) {
+    const a = clamp(amount);
+    this.under.classList.add("track");
+    this.under.style.transform = `translateY(${12 * (1 - a)}px) scaleX(${0.96 + 0.04 * a})`;
+    this.under.style.filter = `brightness(${0.92 + 0.08 * a})`;
+  }
+
+  unfollow() {
+    this.under.classList.remove("track");
+    this.under.style.transform = "";
+    this.under.style.filter = "";
+  }
+
+  show(card, next, quiet = false) {
+    this.stage.classList.add("snap");
+    this.stage.classList.remove("advance");
+    this.under.classList.add("track");
+    this.under.classList.remove("rise");
+    this.under.style.transform = "";
+    this.under.style.filter = "";
+    if (next) this.setUnder(next);
+    void this.stage.offsetWidth;
+    this.stage.classList.remove("snap");
+    this.under.classList.remove("track");
+
     this.sides = card.sides;
     this.side = 0;
     this.angle = 0;
@@ -100,7 +142,7 @@ export class CardView {
     this.reset();
     this.card.classList.remove("enter");
     void this.card.offsetWidth;
-    this.card.classList.add("enter");
+    if (!quiet) this.card.classList.add("enter");
   }
 
   // hold: swap the visible face to its hidden "more" layer; release puts the side back
@@ -147,6 +189,7 @@ export class CardView {
   }
 
   settle() {
+    this.unfollow();
     this.card.classList.remove("dragging");
     this.card.classList.add("settle");
     this.set({ tx: 0, ty: 0, rx: 0, ry: 0, rz: 0, s: 1 });
@@ -187,6 +230,7 @@ export class CardView {
     } else {
       this.set({ ry: tiltY, rx: tiltX });
     }
+    this.follow(Math.hypot(dx, dy) / (this.gradeDist * 1.6));
     this.glare({ px, py });
   }
 

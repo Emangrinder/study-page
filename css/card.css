@@ -181,3 +181,21 @@
 .sub.never { opacity: 0; }
 @keyframes subin { to { opacity: 1; } }
 @media (prefers-reduced-motion: reduce) { .sub.fade { animation-duration: .01s; } }
+
+/* the next card waits beneath the current one and rises as it leaves */
+.under {
+  position: absolute; top: 0; left: 0; width: 100%; height: min(calc(100% - 40px), 560px); border-radius: 30px;
+  --tint: var(--got); --t: 0;
+  transform: translateY(12px) scaleX(.96); filter: brightness(.92);
+  transition: transform .34s cubic-bezier(.2, .9, .3, 1), filter .34s;
+  pointer-events: none;
+}
+.under.track { transition: none; }
+.under.rise { transform: none; filter: none; }
+.under .face::before, .under .face::after { display: none; }
+.under .sub { opacity: 0; }
+.stage.advance .ghost.g1 { transform: translateY(0) scaleX(1); filter: none; }
+.stage.advance .ghost.g2 { transform: translateY(12px) scaleX(.96); filter: brightness(.92); }
+.stage.advance .ghost.g3 { transform: translateY(24px) scaleX(.92); filter: brightness(.8); }
+.stage.advance .ghost { transition: transform .34s cubic-bezier(.2, .9, .3, 1), filter .34s; }
+.stage.snap .ghost, .stage.snap .under { transition: none; }

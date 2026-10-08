@@ -13,6 +13,7 @@ export class Deck {
   }
 
   get top() { return this.cards.get(this.queue[0]); }
+  get next() { return this.cards.get(this.queue[1]) || this.top; }
   get size() { return this.queue.length; }
 
   jumpTo(id) {
