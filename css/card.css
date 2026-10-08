@@ -72,8 +72,8 @@
     linear-gradient(160deg, hsl(235 32% 20%), hsl(235 36% 13%));
   box-shadow: 0 24px 50px -18px hsl(var(--accent) / .45), 0 2px 0 hsl(0 0% 100% / .05) inset, 0 0 0 2.5px hsl(var(--tint) / calc(var(--t) * .9)) inset;
 }
-.face { transform: translateZ(5px); }
-.face.back { transform: rotateY(180deg) translateZ(5px); }
+.face { transform: translateZ(4px); }
+.face.back { transform: rotateY(180deg) translateZ(4px); }
 
 .face::before {
   content: "";
@@ -218,6 +218,14 @@
   box-shadow: inset 0 0 0 1px hsl(var(--accent) / .22);
 }
 .slab { transform: translateZ(var(--z, 0px)); }
-.slab.lip { transform: translateZ(-5px) translateY(7px); filter: brightness(.62); box-shadow: 0 10px 20px -6px #000b; }
+.slab.lip { transform: translateZ(-4px) translateY(6px); filter: brightness(.62); box-shadow: 0 10px 20px -6px #000b; }
 .under { --ring-soft: hsl(var(--accent) / .25); --ring: hsl(var(--accent2)); --ring-head: #fff; }
-.under::before { content: ""; z-index: -1; transform: translateY(7px); filter: brightness(.62); box-shadow: 0 10px 20px -6px #000b; }
+.under::before { content: ""; z-index: -1; transform: translateY(6px); filter: brightness(.62); box-shadow: 0 10px 20px -6px #000b; }
+
+/* the card beneath matches the top card exactly (same depth and perspective) so the handoff is invisible */
+.under { transform: translateY(12px) scaleX(.96) translateZ(4px); will-change: transform; }
+.under.rise { transform: translateZ(4px); }
+.under .face::before { opacity: var(--ringo, .35); transition: opacity .34s; }
+.under.track .face::before { transition: none; }
+.card.arrive { animation: arrive .16s linear; }
+@keyframes arrive { from { opacity: 0; } }

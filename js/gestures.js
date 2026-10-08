@@ -29,12 +29,20 @@ export function attachGestures(el, cb) {
       if (e.pointerType === "mouse") cb.hover(local(e));
       return;
     }
+    if (st.fired) return;
     const dx = e.clientX - st.x;
     const dy = e.clientY - st.y;
     if (!st.axis && Math.hypot(dx, dy) > AXIS_LOCK) {
       st.axis = Math.abs(dx) > Math.abs(dy) ? "x" : "y";
       clearTimeout(st.timer);
       if (st.held) { st.held = false; cb.hold(false); }
+    }
+
+    // past the flip distance while still holding: flip right away and let go of the drag
+    if (st.axis === "x" && Math.abs(dx) > FLIP_DIST) {
+      st.fired = true;
+      cb.trigger(dx < 0 ? "flipNext" : "flipPrev");
+      return;
     }
 
     const now = performance.now();
@@ -50,13 +58,13 @@ export function attachGestures(el, cb) {
     if (!st) return;
     const dx = e.clientX - st.x;
     const dy = e.clientY - st.y;
-    const { axis, vx, vy, held, timer } = st;
+    const { axis, vx, vy, held, timer, fired } = st;
     st = null;
     clearTimeout(timer);
     if (held) cb.hold(false);
 
     let action = "none";
-    if (!cancelled && !held) {
+    if (!cancelled && !held && !fired) {
       if (Math.hypot(dx, dy) < TAP_MAX) action = "tap";
       else if (axis === "x" && (Math.abs(dx) > FLIP_DIST || Math.abs(vx) > FLICK_SPEED)) action = dx < 0 || vx < -FLICK_SPEED ? "flipNext" : "flipPrev";
       else if (axis === "y" && (Math.abs(dy) > GRADE_DIST || Math.abs(vy) > FLICK_SPEED)) action = dy < 0 || vy < -FLICK_SPEED ? "up" : "down";

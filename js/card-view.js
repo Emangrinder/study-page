@@ -101,8 +101,9 @@ export class CardView {
   promote(card) {
     this.fill(this.underFace, card.sides[0]);
     this.under.classList.remove("track");
-    this.under.style.transform = "none";
+    this.under.style.transform = "translateZ(4px)";
     this.under.style.filter = "none";
+    this.under.style.setProperty("--ringo", "1");
     this.stage.classList.add("advance");
   }
 
@@ -110,27 +111,44 @@ export class CardView {
   follow(amount) {
     const a = clamp(amount);
     this.under.classList.add("track");
-    this.under.style.transform = `translateY(${12 * (1 - a)}px) scaleX(${0.96 + 0.04 * a})`;
+    this.under.style.transform = `translateY(${12 * (1 - a)}px) scaleX(${0.96 + 0.04 * a}) translateZ(4px)`;
     this.under.style.filter = `brightness(${0.92 + 0.08 * a})`;
+    this.under.style.setProperty("--ringo", String(0.35 + 0.65 * a));
   }
 
   unfollow() {
+    this.under.style.removeProperty("--ringo");
     this.under.classList.remove("track");
     this.under.style.transform = "";
     this.under.style.filter = "";
   }
 
-  show(card, next, quiet = false) {
+  // put the card beneath back at its resting place once the new top card has taken over
+  snapUnder(next) {
     this.stage.classList.add("snap");
     this.stage.classList.remove("advance");
     this.under.classList.add("track");
     this.under.classList.remove("rise");
     this.under.style.transform = "";
     this.under.style.filter = "";
+    this.under.style.removeProperty("--ringo");
     if (next) this.setUnder(next);
     void this.stage.offsetWidth;
     this.stage.classList.remove("snap");
     this.under.classList.remove("track");
+    this.card.classList.remove("arrive");
+  }
+
+  flushSnap() {
+    if (!this.snapTimer) return;
+    clearTimeout(this.snapTimer);
+    this.snapTimer = 0;
+    this.snapUnder(this.snapNext);
+  }
+
+  show(card, next, quiet = false) {
+    this.flushSnap();
+    if (!quiet) this.snapUnder(next);
 
     this.sides = card.sides;
     this.side = 0;
@@ -146,6 +164,12 @@ export class CardView {
     this.card.classList.remove("enter");
     void this.card.offsetWidth;
     if (!quiet) this.card.classList.add("enter");
+    if (quiet) {
+      // dissolve the new top card in over its identical twin, then retire the twin
+      this.card.classList.add("arrive");
+      this.snapNext = next;
+      this.snapTimer = setTimeout(() => { this.snapTimer = 0; this.snapUnder(this.snapNext); }, 160);
+    }
   }
 
   // hold: swap the visible face to its hidden "more" layer; release puts the side back
@@ -215,6 +239,7 @@ export class CardView {
   hoverEnd() { this.settle(); }
 
   press(p) {
+    this.flushSnap();
     this.card.classList.remove("settle");
     this.card.classList.add("dragging");
     this.set({ s: 0.965, ry: (p.px - 0.5) * 18, rx: -(p.py - 0.5) * 18 });

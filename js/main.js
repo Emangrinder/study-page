@@ -234,6 +234,7 @@ async function start() {
     press: (p) => { closeMenu(); closeSearch(); view.press(p); },
     hold: (on) => view.peek(on),
     move: (d) => view.drag(d),
+    trigger: (a) => { view.settle(); flip(a === "flipNext" ? 1 : -1); },
     release: ({ action, px, py }) => {
       if (action === "up" || action === "down") return grade(action);
       view.settle();
