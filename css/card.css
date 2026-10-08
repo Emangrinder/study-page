@@ -50,7 +50,7 @@
   inset: 0;
   border-radius: inherit;
   transform-style: preserve-3d;
-  transition: transform .6s cubic-bezier(.3, 1.35, .5, 1);
+  transition: transform .55s cubic-bezier(.3, .85, .35, 1);
 }
 .flipper.instant { transition: none; }
 
@@ -72,7 +72,8 @@
     linear-gradient(160deg, hsl(235 32% 20%), hsl(235 36% 13%));
   box-shadow: 0 24px 50px -18px hsl(var(--accent) / .45), 0 2px 0 hsl(0 0% 100% / .05) inset, 0 0 0 2.5px hsl(var(--tint) / calc(var(--t) * .9)) inset;
 }
-.face.back { transform: rotateY(180deg); }
+.face { transform: translateZ(3px); }
+.face.back { transform: rotateY(180deg) translateZ(3px); }
 
 .face::before {
   content: "";
@@ -199,3 +200,15 @@
 .stage.advance .ghost.g3 { transform: translateY(24px) scaleX(.92); filter: brightness(.8); }
 .stage.advance .ghost { transition: transform .34s cubic-bezier(.2, .9, .3, 1), filter .34s; }
 .stage.snap .ghost, .stage.snap .under { transition: none; }
+
+/* worked steps under an answer on the hold layer */
+.extra { margin: 0; width: 100%; text-align: left; font-size: clamp(15px, 4.2vw, 17px); line-height: 1.5; color: hsl(0 0% 100% / .82); white-space: pre-line; text-wrap: pretty; }
+.extra:empty { display: none; }
+.extra .k { color: hsl(var(--accent2)); font-weight: 650; }
+.face.hasextra { gap: 14px; justify-content: center; }
+.face.hasextra .text { font-size: clamp(20px, 5.6vw, 26px); }
+.face.hasextra .katex-display { margin: 0; }
+
+/* card thickness: slim layers between the two faces show as an edge when the card turns or tilts */
+.slab { position: absolute; inset: 0; border-radius: inherit; pointer-events: none; transform: translateZ(var(--z, 0px)); background: hsl(235 38% 11%); box-shadow: inset 0 0 0 1px hsl(var(--accent) / .28); backface-visibility: visible; }
+.slab.lip { transform: translateZ(-3px) translateY(5px); background: hsl(235 40% 8%); box-shadow: 0 8px 18px -6px #000a; }

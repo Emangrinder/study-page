@@ -59,6 +59,9 @@ export class CardView {
     textEl.classList.toggle("longer", size > 110);
     textEl.classList.toggle("huge", size > 170);
     textEl.classList.toggle("tok", /\S{22,}/.test(text.replace(/\\[\(\[][\s\S]*?\\[\)\]]/g, "")));
+    const extraEl = face.querySelector(".extra");
+    rich(extraEl, side.extra || "", true);
+    face.classList.toggle("hasextra", Boolean(side.extra));
     const subEl = face.querySelector(".sub");
     rich(subEl, side.sub || "");
     this.fadeSub(subEl);

@@ -106,7 +106,7 @@ function runSearch(query) {
   if (q.length < 2) return hits.replaceChildren();
   const found = [];
   for (const card of deck.cards.values()) {
-    const text = card.sides.flatMap((s) => [s.head, s.text, s.sub, s.code, s.more?.text, ...(s.options || [])]).filter(Boolean).join(" ").toLowerCase();
+    const text = card.sides.flatMap((s) => [s.head, s.text, s.sub, s.code, s.more?.text, s.more?.extra, ...(s.options || [])]).filter(Boolean).join(" ").toLowerCase();
     if (text.includes(q)) found.push(card);
     if (found.length >= 30) break;
   }
@@ -158,14 +158,28 @@ async function grade(direction) {
   busy = false;
 }
 
+// flips are paced so quick taps cannot stack up or change a face while it is turning
+const FLIP_GAP = 320;
+let lastFlip = 0;
+let pendingFlip = null;
+let pendingTimer = 0;
+
 function flip(dir) {
   if (busy) return;
+  const wait = lastFlip + FLIP_GAP - performance.now();
+  if (wait > 0) {
+    pendingFlip = dir;
+    clearTimeout(pendingTimer);
+    pendingTimer = setTimeout(() => { const d = pendingFlip; pendingFlip = null; flip(d); }, wait);
+    return;
+  }
+  lastFlip = performance.now();
   view.flip(dir);
   hud();
 }
 
 function speedTap() {
-  if (busy) return;
+  if (busy || pendingFlip !== null || performance.now() - lastFlip < FLIP_GAP) return;
   if (view.side < view.sideCount - 1) return flip(1);
   grade("down");
 }
